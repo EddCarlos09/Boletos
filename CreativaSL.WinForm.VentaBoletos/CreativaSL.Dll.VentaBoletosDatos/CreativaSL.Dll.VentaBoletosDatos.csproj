@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CDC8AD4-C39D-4C9A-8C45-954FF7B2B902}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CreativaSL.Dll.VentaBoletosDatos</RootNamespace>
+    <AssemblyName>CreativaSL.Dll.VentaBoletosDatos</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ApplicationBlocks.Data">
+      <HintPath>..\_ExternalComponent\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Apartados_Datos.cs" />
+    <Compile Include="Asistencia_Datos.cs" />
+    <Compile Include="Banco_Datos.cs" />
+    <Compile Include="BuscarCliente_Datos.cs" />
+    <Compile Include="BusquedaCambio_Datos.cs" />
+    <Compile Include="Busqueda_Datos.cs" />
+    <Compile Include="Caja_Datos.cs" />
+    <Compile Include="CambioCamionBoletos_Datos.cs" />
+    <Compile Include="Camion_Datos.cs" />
+    <Compile Include="Cancelacion_Datos.cs" />
+    <Compile Include="Chofer_Datos.cs" />
+    <Compile Include="Cliente_Datos.cs" />
+    <Compile Include="Combo_Datos.cs" />
+    <Compile Include="Comun_Datos.cs" />
+    <Compile Include="Configuracion_Datos.cs" />
+    <Compile Include="DisenioCamion_Datos.cs" />
+    <Compile Include="Home_Datos.cs" />
+    <Compile Include="LoginValidator_Datos.cs" />
+    <Compile Include="Login_Datos.cs" />
+    <Compile Include="Maletas_Datos.cs" />
+    <Compile Include="Marca_Datos.cs" />
+    <Compile Include="PorcentajeMonedero_Datos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes_Datos.cs" />
+    <Compile Include="Ruta_Datos.cs" />
+    <Compile Include="SubMarca_Datos.cs" />
+    <Compile Include="Tarifa_Datos.cs" />
+    <Compile Include="Terminal_Datos.cs" />
+    <Compile Include="Ticket_Datos.cs" />
+    <Compile Include="TipoCamion_Datos.cs" />
+    <Compile Include="TipoDocumento_Datos.cs" />
+    <Compile Include="Usuario_Datos.cs" />
+    <Compile Include="ClasificacionCliente_Datos.cs" />
+    <Compile Include="V2Cliente_Datos.cs" />
+    <Compile Include="V2Tarjeta_Datos.cs" />
+    <Compile Include="VentaBoleto_Datos.cs" />
+    <Compile Include="ViajesXFecha_Datos.cs" />
+    <Compile Include="Viaje_Datos.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CreativaSL.Dll.VentaBoletosGlobal\CreativaSL.Dll.VentaBoletosGlobal.csproj">
+      <Project>{6d5cbfe6-d836-41eb-a519-73cf3f03bf4e}</Project>
+      <Name>CreativaSL.Dll.VentaBoletosGlobal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

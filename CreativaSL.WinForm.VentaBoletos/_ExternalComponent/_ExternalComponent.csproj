@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88BE8F37-2826-43C1-9991-80C12DD46D48}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_ExternalComponent</RootNamespace>
+    <AssemblyName>_ExternalComponent</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AForge.dll" />
+    <Content Include="AForge.Video.DirectShow.dll" />
+    <Content Include="AForge.Video.dll" />
+    <Content Include="CreativaSL.LibControls.WinForms.dll" />
+    <Content Include="EnvDTE.dll" />
+    <Content Include="EnvDTE80.dll" />
+    <Content Include="GenCode128.dll" />
+    <Content Include="Microsoft.ApplicationBlocks.Data.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.BulletGraph.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Calculate.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Calculate.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Chart.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Chart.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Compression.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Core.WinForms.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Data.WinForms.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.DataSource.WinForms.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Diagram.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Diagram.Utility.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Diagram.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.DICOM.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.DocIO.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.DocIO.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.DocToPDFConverter.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Edit.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.ExcelChartToImageConverter.WPF.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.ExcelToPDFConverter.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Gauge.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Grid.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Grid.Grouping.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Grid.Grouping.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Grid.Grouping.Windows.XmlSerializers.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Grid.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Grid.Windows.XmlSerializers.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.GridCommon.WinForms.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.GridConverter.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.GridHelperClasses.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Grouping.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Grouping.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.HighContrastTheme.WinForms.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.HtmlConverter.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.HTMLUI.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.HTMLUI.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Licensing.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Linq.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Maps.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.MIME.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Office2016Theme.WinForms.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Office2019Theme.WinForms.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.OfficeChart.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.OfficeChartToImageConverter.WPF.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Olap.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Pdf.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Pdf.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.PdfViewer.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.PivotAnalysis.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.PivotAnalysis.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.PivotChart.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.PivotConverter.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.PMML.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Presentation.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.PresentationToPdfConverter.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.ProjIO.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Schedule.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Schedule.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Scripting.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Scripting.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.SfBarcode.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.SfChart.WPF.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.SfDataGrid.WinForms.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.SfDataGridConverter.WinForms.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.SfInput.WinForms.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.SfListView.WinForms.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.SfSmithChart.WinForms.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Shared.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Shared.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Shared.WPF.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.SpellChecker.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Spreadsheet.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.SpreadsheetHelper.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Tools.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.Tools.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.TreeMap.Windows.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.XlsIO.Base.dll" />
+    <EmbeddedResource Include="Syncfusion Windows Forms\Syncfusion.XlsIO.Windows.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

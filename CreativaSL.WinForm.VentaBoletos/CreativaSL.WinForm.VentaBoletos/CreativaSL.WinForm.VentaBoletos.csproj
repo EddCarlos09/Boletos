@@ -1,0 +1,1537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F5F7AF8-0DBB-443C-A782-513E484D8825}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CreativaSL.WinForm.VentaBoletos</RootNamespace>
+    <AssemblyName>CreativaSL.WinForm.VentaBoletos</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\_ExternalComponent\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\_ExternalComponent\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\_ExternalComponent\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="CreativaSL.LibControls.WinForms">
+      <HintPath>..\_ExternalComponent\CreativaSL.LibControls.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="GenCode128">
+      <HintPath>..\_ExternalComponent\GenCode128.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.BulletGraph.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.BulletGraph.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Calculate.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Calculate.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Calculate.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Calculate.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Chart.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Chart.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Chart.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Chart.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Core.WinForms, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Core.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Data.WinForms, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Data.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DataSource.WinForms, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.DataSource.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Diagram.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Diagram.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Diagram.Utility.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Diagram.Utility.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Diagram.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Diagram.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DICOM.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.DICOM.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocIO.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.DocIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocIO.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.DocIO.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocToPDFConverter.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.DocToPDFConverter.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Edit.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Edit.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.ExcelChartToImageConverter.WPF, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.ExcelChartToImageConverter.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.ExcelToPDFConverter.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.ExcelToPDFConverter.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Gauge.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Gauge.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Grid.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Grouping.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Grid.Grouping.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Grouping.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Grid.Grouping.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Grouping.Windows.XmlSerializers, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Grid.Grouping.Windows.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Grid.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Windows.XmlSerializers, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Grid.Windows.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.WinForms, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.GridCommon.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridConverter.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.GridConverter.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridHelperClasses.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.GridHelperClasses.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grouping.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Grouping.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grouping.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Grouping.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.HighContrastTheme.WinForms">
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.HighContrastTheme.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.HtmlConverter.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.HtmlConverter.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.HTMLUI.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.HTMLUI.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.HTMLUI.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.HTMLUI.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Linq.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Linq.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Maps.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Maps.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.MIME.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.MIME.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Office2016Theme.WinForms, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Office2016Theme.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Office2019Theme.WinForms, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Office2019Theme.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.OfficeChart.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.OfficeChart.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.OfficeChartToImageConverter.WPF, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.OfficeChartToImageConverter.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Olap.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Olap.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Pdf.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.PdfViewer.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.PdfViewer.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.PivotAnalysis.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.PivotAnalysis.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.PivotAnalysis.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.PivotAnalysis.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.PivotChart.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.PivotChart.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.PivotConverter.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.PivotConverter.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.PMML.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.PMML.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Presentation.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Presentation.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.PresentationToPdfConverter.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.PresentationToPdfConverter.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.ProjIO.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.ProjIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Schedule.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Schedule.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Schedule.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Schedule.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Scripting.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Scripting.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Scripting.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Scripting.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfBarcode.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.SfBarcode.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.WPF, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.SfChart.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGrid.WinForms, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.SfDataGrid.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGridConverter.WinForms, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.SfDataGridConverter.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfInput.WinForms, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.SfInput.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfListView.WinForms, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.SfListView.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSmithChart.WinForms, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.SfSmithChart.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Shared.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Shared.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.WPF, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Shared.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SpellChecker.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.SpellChecker.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Spreadsheet.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Spreadsheet.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SpreadsheetHelper.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.SpreadsheetHelper.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Tools.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.Tools.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.TreeMap.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.TreeMap.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.XlsIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Windows, Version=17.1450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ExternalComponent\Syncfusion Windows Forms\Syncfusion.XlsIO.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClasesAux\LogError.cs" />
+    <Compile Include="Clientes\frm_v2_AsignarTarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_AsignarTarjeta.designer.cs">
+      <DependentUpon>frm_v2_AsignarTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_CambiarTarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_CambiarTarjeta.designer.cs">
+      <DependentUpon>frm_v2_CambiarTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_ClasificacionClienteAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_ClasificacionClienteAdd.designer.cs">
+      <DependentUpon>frm_v2_ClasificacionClienteAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_ClasificacionUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_ClasificacionUsuario.designer.cs">
+      <DependentUpon>frm_v2_ClasificacionUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_Cliente.Designer.cs">
+      <DependentUpon>frm_v2_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_ClienteAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_ClienteAdd.Designer.cs">
+      <DependentUpon>frm_v2_ClienteAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frm_WebCams_Equipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_WebCams_Equipo.designer.cs">
+      <DependentUpon>frm_WebCams_Equipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ButtonHome.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CSLDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WebCamCapture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WebcamEventArgs.cs" />
+    <Compile Include="frmAsistenciaPasajeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsistenciaPasajeros.Designer.cs">
+      <DependentUpon>frmAsistenciaPasajeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCancelacionesTransferenciasGrupal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelacionesTransferenciasGrupal.Designer.cs">
+      <DependentUpon>frmCancelacionesTransferenciasGrupal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatCobroMultiFormasPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatCobroMultiFormasPago.Designer.cs">
+      <DependentUpon>frmCatCobroMultiFormasPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosTarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosTarjeta.Designer.cs">
+      <DependentUpon>frmDatosTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosTransferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosTransferencia.Designer.cs">
+      <DependentUpon>frmDatosTransferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosViajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosViajes.Designer.cs">
+      <DependentUpon>frmDatosViajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambioBoletosViaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioBoletosViaje.Designer.cs">
+      <DependentUpon>frmCambioBoletosViaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFechasViajesDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFechasViajesDetalle.Designer.cs">
+      <DependentUpon>frmFechasViajesDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHomeSF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHomeSF.Designer.cs">
+      <DependentUpon>frmHomeSF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevaFechaViaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevaFechaViaje.Designer.cs">
+      <DependentUpon>frmNuevaFechaViaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatMaletasNueva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatMaletasNueva.Designer.cs">
+      <DependentUpon>frmCatMaletasNueva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCancelacionesTransferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelacionesTransferencias.Designer.cs">
+      <DependentUpon>frmCancelacionesTransferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnticipoGenerico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnticipoGenerico.Designer.cs">
+      <DependentUpon>frmAnticipoGenerico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAsignarCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsignarCaja.Designer.cs">
+      <DependentUpon>frmAsignarCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCliente.Designer.cs">
+      <DependentUpon>frmBuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusquedaCambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusquedaCambio.Designer.cs">
+      <DependentUpon>frmBusquedaCambio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaja_AperturaCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaja_AperturaCaja.Designer.cs">
+      <DependentUpon>frmCaja_AperturaCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaja_CierreCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaja_CierreCaja.Designer.cs">
+      <DependentUpon>frmCaja_CierreCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatCamiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatCamiones.Designer.cs">
+      <DependentUpon>frmCatCamiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatChoferes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatChoferes.Designer.cs">
+      <DependentUpon>frmCatChoferes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatClientes.Designer.cs">
+      <DependentUpon>frmCatClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatCobro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatCobro.Designer.cs">
+      <DependentUpon>frmCatCobro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatDisenio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatDisenio.Designer.cs">
+      <DependentUpon>frmCatDisenio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatMaletas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatMaletas.Designer.cs">
+      <DependentUpon>frmCatMaletas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatMarcas.Designer.cs">
+      <DependentUpon>frmCatMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatSubMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatSubMarcas.Designer.cs">
+      <DependentUpon>frmCatSubMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatTarifas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatTarifas.Designer.cs">
+      <DependentUpon>frmCatTarifas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatSalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatSalidas.Designer.cs">
+      <DependentUpon>frmCatSalidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatTerminales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatTerminales.Designer.cs">
+      <DependentUpon>frmCatTerminales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatTerminalIntermedia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatTerminalIntermedia.Designer.cs">
+      <DependentUpon>frmCatTerminalIntermedia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatRutas.Designer.cs">
+      <DependentUpon>frmCatRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatTipoCamion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatTipoCamion.Designer.cs">
+      <DependentUpon>frmCatTipoCamion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatUsuarios.Designer.cs">
+      <DependentUpon>frmCatUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracion.Designer.cs">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosCaja.Designer.cs">
+      <DependentUpon>frmDatosCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosViaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosViaje.Designer.cs">
+      <DependentUpon>frmDatosViaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepositosRetiros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepositosRetiros.Designer.cs">
+      <DependentUpon>frmDepositosRetiros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDescuentoGenerico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDescuentoGenerico.Designer.cs">
+      <DependentUpon>frmDescuentoGenerico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginValidator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginValidator.Designer.cs">
+      <DependentUpon>frmLoginValidator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaletas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaletas.Designer.cs">
+      <DependentUpon>frmMaletas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNombreBoleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNombreBoleto.Designer.cs">
+      <DependentUpon>frmNombreBoleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagoExtra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagoExtra.Designer.cs">
+      <DependentUpon>frmPagoExtra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPorcentajeMonedero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPorcentajeMonedero.Designer.cs">
+      <DependentUpon>frmPorcentajeMonedero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrecio.designer.cs">
+      <DependentUpon>frmPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes.designer.cs">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportesMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportesMenu.designer.cs">
+      <DependentUpon>frmReportesMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuariosDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuariosDatos.Designer.cs">
+      <DependentUpon>frmUsuariosDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentaBoletoSF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentaBoletoSF.Designer.cs">
+      <DependentUpon>frmVentaBoletoSF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentaGrupal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentaGrupal.Designer.cs">
+      <DependentUpon>frmVentaGrupal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentas.Designer.cs">
+      <DependentUpon>frmVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdministrador.Designer.cs">
+      <DependentUpon>frmAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmApartados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApartados.Designer.cs">
+      <DependentUpon>frmApartados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatDiseñoCamion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatDiseñoCamion.Designer.cs">
+      <DependentUpon>frmCatDiseñoCamion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoObjeto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoObjeto.Designer.cs">
+      <DependentUpon>frmTipoObjeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentaBoleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentaBoleto.Designer.cs">
+      <DependentUpon>frmVentaBoleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentasGrupal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentasGrupal.Designer.cs">
+      <DependentUpon>frmVentasGrupal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViajesXFechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViajesXFechas.Designer.cs">
+      <DependentUpon>frmViajesXFechas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimirTicket.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Validaciones.cs" />
+    <EmbeddedResource Include="Clientes\frm_v2_AsignarTarjeta.resx">
+      <DependentUpon>frm_v2_AsignarTarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frm_v2_CambiarTarjeta.resx">
+      <DependentUpon>frm_v2_CambiarTarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frm_v2_ClasificacionClienteAdd.resx">
+      <DependentUpon>frm_v2_ClasificacionClienteAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frm_v2_ClasificacionUsuario.resx">
+      <DependentUpon>frm_v2_ClasificacionUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frm_v2_Cliente.resx">
+      <DependentUpon>frm_v2_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frm_v2_ClienteAdd.resx">
+      <DependentUpon>frm_v2_ClienteAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frm_WebCams_Equipo.resx">
+      <DependentUpon>frm_WebCams_Equipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\Informe_FoliosDisponibles.rdlc" />
+    <EmbeddedResource Include="Controls\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsistenciaPasajeros.resx">
+      <DependentUpon>frmAsistenciaPasajeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelacionesTransferenciasGrupal.resx">
+      <DependentUpon>frmCancelacionesTransferenciasGrupal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatCobroMultiFormasPago.resx">
+      <DependentUpon>frmCatCobroMultiFormasPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosTarjeta.resx">
+      <DependentUpon>frmDatosTarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosTransferencia.resx">
+      <DependentUpon>frmDatosTransferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHomeSF.resx">
+      <DependentUpon>frmHomeSF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrecio.resx">
+      <DependentUpon>frmPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentaBoletoSF.resx">
+      <DependentUpon>frmVentaBoletoSF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentaGrupal.resx">
+      <DependentUpon>frmVentaGrupal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentasGrupal.resx">
+      <DependentUpon>frmVentasGrupal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informe_CajasFechasMod.rdlc" />
+    <EmbeddedResource Include="Informe_CajasMod.rdlc" />
+    <EmbeddedResource Include="Informe_Contrato_Servicio_HecoTours2.rdlc" />
+    <EmbeddedResource Include="Informe_ContratoServicio_HecoTours.rdlc" />
+    <EmbeddedResource Include="frmDatosViajes.resx">
+      <DependentUpon>frmDatosViajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambioBoletosViaje.resx">
+      <DependentUpon>frmCambioBoletosViaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFechasViajesDetalle.resx">
+      <DependentUpon>frmFechasViajesDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevaFechaViaje.resx">
+      <DependentUpon>frmNuevaFechaViaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatMaletasNueva.resx">
+      <DependentUpon>frmCatMaletasNueva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelacionesTransferencias.resx">
+      <DependentUpon>frmCancelacionesTransferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatMarcas.resx">
+      <DependentUpon>frmCatMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informe_CajasFechas.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatTipoCamion.resx">
+      <DependentUpon>frmCatTipoCamion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informe_MaletaComanda.rdlc" />
+    <EmbeddedResource Include="Informe_TotalesVendedorXFechas.rdlc" />
+    <EmbeddedResource Include="Informe_DetalleBoleto.rdlc" />
+    <EmbeddedResource Include="frmAnticipoGenerico.resx">
+      <DependentUpon>frmAnticipoGenerico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsignarCaja.resx">
+      <DependentUpon>frmAsignarCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarCliente.resx">
+      <DependentUpon>frmBuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusquedaCambio.resx">
+      <DependentUpon>frmBusquedaCambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaja_AperturaCaja.resx">
+      <DependentUpon>frmCaja_AperturaCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaja_CierreCaja.resx">
+      <DependentUpon>frmCaja_CierreCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatCamiones.resx">
+      <DependentUpon>frmCatCamiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatChoferes.resx">
+      <DependentUpon>frmCatChoferes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatClientes.resx">
+      <DependentUpon>frmCatClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatCobro.resx">
+      <DependentUpon>frmCatCobro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatDisenio.resx">
+      <DependentUpon>frmCatDisenio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatMaletas.resx">
+      <DependentUpon>frmCatMaletas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatSubMarcas.resx">
+      <DependentUpon>frmCatSubMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatTarifas.resx">
+      <DependentUpon>frmCatTarifas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatSalidas.resx">
+      <DependentUpon>frmCatSalidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatTerminales.resx">
+      <DependentUpon>frmCatTerminales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatTerminalIntermedia.resx">
+      <DependentUpon>frmCatTerminalIntermedia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatRutas.resx">
+      <DependentUpon>frmCatRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatUsuarios.resx">
+      <DependentUpon>frmCatUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracion.resx">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosCaja.resx">
+      <DependentUpon>frmDatosCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosViaje.resx">
+      <DependentUpon>frmDatosViaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepositosRetiros.resx">
+      <DependentUpon>frmDepositosRetiros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDescuentoGenerico.resx">
+      <DependentUpon>frmDescuentoGenerico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginValidator.resx">
+      <DependentUpon>frmLoginValidator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaletas.resx">
+      <DependentUpon>frmMaletas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNombreBoleto.resx">
+      <DependentUpon>frmNombreBoleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagoExtra.resx">
+      <DependentUpon>frmPagoExtra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPorcentajeMonedero.resx">
+      <DependentUpon>frmPorcentajeMonedero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes.resx">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportesMenu.resx">
+      <DependentUpon>frmReportesMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuariosDatos.resx">
+      <DependentUpon>frmUsuariosDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentas.resx">
+      <DependentUpon>frmVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdministrador.resx">
+      <DependentUpon>frmAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApartados.resx">
+      <DependentUpon>frmApartados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatDiseñoCamion.resx">
+      <DependentUpon>frmCatDiseñoCamion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoObjeto.resx">
+      <DependentUpon>frmTipoObjeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentaBoleto.resx">
+      <DependentUpon>frmVentaBoleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViajesXFechas.resx">
+      <DependentUpon>frmViajesXFechas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informe_Boletos_Viaje.rdlc" />
+    <EmbeddedResource Include="Informe_Cajas.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informe_ClienteComprador.rdlc" />
+    <EmbeddedResource Include="Informe_ClienteFrecuente.rdlc" />
+    <EmbeddedResource Include="Informe_MaletasViajes.rdlc" />
+    <EmbeddedResource Include="Informe_TotalesCajas.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Apartados.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Boleto.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Busqueda.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Caja.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.CajaCierre.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.CambioCamion.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Camion.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Chofer.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.ClasificacionCliente.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Cliente.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Comun.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Configuracion.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Corrida.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Depositos_Retiros.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.DisenioCamion.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Home.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Item.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Maletas.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Marca.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.PorcentajeMonedero.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.ReportesAnualesTotales.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.ReportesBoletosViaje.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.ReportesClienteComprador.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.ReportesClienteFrecuente.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.ReportesDatosReportes.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.ReportesMaletasViaje.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.ReportesMensualesTotales.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.ReportesVentasCaja.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.ReporteUsuarios.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Ruta.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.SubMarca.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Tarifa.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Terminal.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.TipoCamion.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Usuario.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.V2Tarjeta.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.VentaBoleto.datasource" />
+    <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Viaje.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11salir.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disponible.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espera.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ocupado.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13reporte.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5administrador.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21clientes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20venta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30apartado.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35aceptar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10cancelar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19guardar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31modificar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7eliminar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4agregar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22usuarios.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21clientes1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9sucursales.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administrator.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14continuar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diseño.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camiones.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rutas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viajes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarifas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagoonline.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagoefectivo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelacion_boletos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\primer_piso.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\segundo_piso.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambiar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descuento.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anticipo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambio boletos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asiento_apartado.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asiento_apartado1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puerta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28caja.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuracion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asiento_apartado_anticipo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apartadoAnticipo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\documents\Heco.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\ImagenDefault.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\ocupado _asistencia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\diamas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\diamenos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\dia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\dia%282%29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\%24this.Icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="bin\Debug\Resources\10cancelar.bmp" />
+    <None Include="bin\Debug\Resources\10cancelar.png" />
+    <None Include="bin\Debug\Resources\11salir.png" />
+    <None Include="bin\Debug\Resources\13reporte.png" />
+    <None Include="bin\Debug\Resources\14continuar.png" />
+    <None Include="bin\Debug\Resources\19guardar.png" />
+    <None Include="bin\Debug\Resources\20venta.png" />
+    <None Include="bin\Debug\Resources\21clientes.png" />
+    <None Include="bin\Debug\Resources\21clientes1.png" />
+    <None Include="bin\Debug\Resources\22usuarios.png" />
+    <None Include="bin\Debug\Resources\28caja.png" />
+    <None Include="bin\Debug\Resources\30apartado.png" />
+    <None Include="bin\Debug\Resources\31modificar.png" />
+    <None Include="bin\Debug\Resources\35aceptar.png" />
+    <None Include="bin\Debug\Resources\4agregar.png" />
+    <None Include="bin\Debug\Resources\5administrador.png" />
+    <None Include="bin\Debug\Resources\7eliminar.png" />
+    <None Include="bin\Debug\Resources\9sucursales.png" />
+    <None Include="bin\Debug\Resources\Administrator.png" />
+    <None Include="bin\Debug\Resources\anticipo.png" />
+    <None Include="bin\Debug\Resources\apartadoAnticipo.jpg" />
+    <None Include="bin\Debug\Resources\asiento_apartado.png" />
+    <None Include="bin\Debug\Resources\asiento_apartado_anticipo.png" />
+    <None Include="bin\Debug\Resources\asiento_apartado1.png" />
+    <None Include="bin\Debug\Resources\bar.png" />
+    <None Include="bin\Debug\Resources\cambiar.png" />
+    <None Include="bin\Debug\Resources\cambio boletos.png" />
+    <None Include="bin\Debug\Resources\camiones.png" />
+    <None Include="bin\Debug\Resources\cancelacion_boletos.png" />
+    <None Include="bin\Debug\Resources\configuracion.png" />
+    <None Include="bin\Debug\Resources\descuento.png" />
+    <None Include="bin\Debug\Resources\dia%282%29.png" />
+    <None Include="bin\Debug\Resources\dia.png" />
+    <None Include="bin\Debug\Resources\diamas.png" />
+    <None Include="bin\Debug\Resources\diamenos.png" />
+    <None Include="bin\Debug\Resources\diseño.png" />
+    <None Include="bin\Debug\Resources\disponible.png" />
+    <None Include="bin\Debug\Resources\espera.png" />
+    <Content Include="bin\Debug\Resources\Estatus\GLOBES_GREEN.png" />
+    <Content Include="bin\Debug\Resources\Estatus\GLOBES_ORANGE.png" />
+    <Content Include="bin\Debug\Resources\Estatus\GLOBES_RED.png" />
+    <None Include="Resources\10cancelar.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="bin\Debug\Resources\fondo.png" />
+    <None Include="bin\Debug\Resources\fondo1.png" />
+    <None Include="bin\Debug\Resources\imprimir.png" />
+    <None Include="bin\Debug\Resources\maleta.png" />
+    <None Include="bin\Debug\Resources\ocupado _asistencia.png" />
+    <None Include="bin\Debug\Resources\ocupado.png" />
+    <None Include="bin\Debug\Resources\pagoefectivo.png" />
+    <None Include="bin\Debug\Resources\pagoonline.png" />
+    <None Include="bin\Debug\Resources\primer_piso.png" />
+    <None Include="bin\Debug\Resources\puerta.png" />
+    <None Include="bin\Debug\Resources\rutas.png" />
+    <None Include="bin\Debug\Resources\segundo_piso.png" />
+    <None Include="bin\Debug\Resources\tarifas.png" />
+    <None Include="bin\Debug\Resources\viajes.png" />
+    <None Include="bin\Debug\Resources\wc.png" />
+    <None Include="Resources\10cancelar1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\34busqueda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\CardBron.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\CardGold.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\CardSilver.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Controls\CAMERA.ICO" />
+    <Content Include="Resources\Estatus\GLOBES_BLACK.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estatus\GLOBES_BLUE.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estatus\GLOBES_GREEN.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estatus\GLOBES_GREY.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estatus\GLOBES_ORANGE.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estatus\GLOBES_RED.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Estatus\GLOBES_YELLOW.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CreativaSL.Dll.VentaBoletosGlobal\CreativaSL.Dll.VentaBoletosGlobal.csproj">
+      <Project>{6d5cbfe6-d836-41eb-a519-73cf3f03bf4e}</Project>
+      <Name>CreativaSL.Dll.VentaBoletosGlobal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CreativaSL.Dll.VentaBoletosNegocio\CreativaSL.Dll.VentaBoletosNegocio.csproj">
+      <Project>{187b21a6-9469-49bc-ac88-59fd91502627}</Project>
+      <Name>CreativaSL.Dll.VentaBoletosNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
