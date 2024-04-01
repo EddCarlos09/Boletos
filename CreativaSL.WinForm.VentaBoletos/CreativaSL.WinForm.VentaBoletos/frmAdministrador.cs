@@ -11,10 +11,13 @@ using CreativaSL.LibControls.WinForms;
 using CreativaSL.Dll.VentaBoletosGlobal;
 using CreativaSL.Dll.VentaBoletosNegocio;
 using CreativaSL.WinForm.VentaBoletos.Clientes;
+using static CreativaSL.WinForm.VentaBoletos.MaterialUI;
+using MaterialSkin.Controls;
+
 
 namespace CreativaSL.WinForm.VentaBoletos
 {
-    public partial class frmAdministrador : Form_Creativa
+    public partial class frmAdministrador : MaterialForm
     {
         int tipoCatalogo = 0;
         DataTable lstAuxBuscadorDisenio = new DataTable();
@@ -54,6 +57,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 InitializeComponent();
+                loadMaterial(this);
                 this.CargarGridPropiedades();
             }
             catch (Exception ex)
