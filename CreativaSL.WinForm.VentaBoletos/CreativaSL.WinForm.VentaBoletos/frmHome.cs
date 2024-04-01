@@ -583,7 +583,8 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.Venta() == false)
                 {
                     this.Inicializar();
-                    frmAdministrador frma = new frmAdministrador();
+                    //frmAdministrador frma = new frmAdministrador();
+                    FormAdministrador frma = new FormAdministrador();
                     frma.ShowDialog();
                     frma.Dispose();
                     this.Inicializar();

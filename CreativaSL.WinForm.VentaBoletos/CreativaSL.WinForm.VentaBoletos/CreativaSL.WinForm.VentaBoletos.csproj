@@ -485,11 +485,11 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\WebcamEventArgs.cs" />
-    <Compile Include="frmAdministradorv2.cs">
+    <Compile Include="FormAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAdministradorv2.Designer.cs">
-      <DependentUpon>frmAdministradorv2.cs</DependentUpon>
+    <Compile Include="FormAdministrador.Designer.cs">
+      <DependentUpon>FormAdministrador.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAsistenciaPasajeros.cs">
       <SubType>Form</SubType>
@@ -893,8 +893,8 @@
     <EmbeddedResource Include="Controls\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAdministradorv2.resx">
-      <DependentUpon>frmAdministradorv2.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdministrador.resx">
+      <DependentUpon>FormAdministrador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAsistenciaPasajeros.resx">
       <DependentUpon>frmAsistenciaPasajeros.cs</DependentUpon>
