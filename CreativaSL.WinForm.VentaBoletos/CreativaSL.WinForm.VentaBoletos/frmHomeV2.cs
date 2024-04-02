@@ -22,7 +22,7 @@ namespace CreativaSL.WinForm.VentaBoletos
 
         private void frmHomeV2_Load(object sender, EventArgs e)
         {
-
+          
         }
     }
 }

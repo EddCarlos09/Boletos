@@ -569,6 +569,12 @@
     <Compile Include="frmHomeSF.Designer.cs">
       <DependentUpon>frmHomeSF.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHomeV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHomeV2.Designer.cs">
+      <DependentUpon>frmHomeV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNuevaFechaViaje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -943,6 +949,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHomeSF.resx">
       <DependentUpon>frmHomeSF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHomeV2.resx">
+      <DependentUpon>frmHomeV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrecio.resx">
       <DependentUpon>frmPrecio.cs</DependentUpon>
