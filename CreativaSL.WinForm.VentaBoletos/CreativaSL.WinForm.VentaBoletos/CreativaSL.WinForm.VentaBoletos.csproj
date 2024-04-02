@@ -509,11 +509,29 @@
     <Compile Include="frmCancelacionesTransferenciasGrupal.Designer.cs">
       <DependentUpon>frmCancelacionesTransferenciasGrupal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCatCamionesV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatCamionesV2.Designer.cs">
+      <DependentUpon>frmCatCamionesV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCatCobroMultiFormasPago.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCatCobroMultiFormasPago.Designer.cs">
       <DependentUpon>frmCatCobroMultiFormasPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatDisenioV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatDisenioV2.Designer.cs">
+      <DependentUpon>frmCatDisenioV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatTerminalesV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatTerminalesV2.Designer.cs">
+      <DependentUpon>frmCatTerminalesV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDatosTarjeta.cs">
       <SubType>Form</SubType>
@@ -905,8 +923,17 @@
     <EmbeddedResource Include="frmCancelacionesTransferenciasGrupal.resx">
       <DependentUpon>frmCancelacionesTransferenciasGrupal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCatCamionesV2.resx">
+      <DependentUpon>frmCatCamionesV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCatCobroMultiFormasPago.resx">
       <DependentUpon>frmCatCobroMultiFormasPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatDisenioV2.resx">
+      <DependentUpon>frmCatDisenioV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatTerminalesV2.resx">
+      <DependentUpon>frmCatTerminalesV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatosTarjeta.resx">
       <DependentUpon>frmDatosTarjeta.cs</DependentUpon>
