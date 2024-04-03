@@ -341,7 +341,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 if (this.tipoCatalogo == 1)
                 {
-                    frmCatDisenio frmd = new frmCatDisenio(new DisenioCamion());
+                    frmCatDisenioV2 frmd = new frmCatDisenioV2(new DisenioCamion());
                     frmd.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -350,7 +350,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 2)
                 {
-                    frmCatCamiones frmc = new frmCatCamiones();
+                    frmCatCamionesV2 frmc = new frmCatCamionesV2();
                     frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -358,7 +358,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 3)
                 {
-                    frmCatTerminales frmt = new frmCatTerminales();
+                    frmCatTerminalesV2 frmt = new frmCatTerminalesV2();
                     frmt.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -472,7 +472,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 if (this.tipoCatalogo == 1)
                 {
-                    frmCatDisenio frmd = new frmCatDisenio((DisenioCamion)obj);
+                    frmCatDisenioV2 frmd = new frmCatDisenioV2((DisenioCamion)obj);
                     frmd.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -480,7 +480,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 2)
                 {
-                    frmCatCamiones frmc = new frmCatCamiones((Camion) obj);
+                    frmCatCamionesV2 frmc = new frmCatCamionesV2((Camion) obj);
                     frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -488,7 +488,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 3)
                 {
-                    frmCatTerminales frmt = new frmCatTerminales((Terminal)obj);
+                    frmCatTerminalesV2 frmt = new frmCatTerminalesV2((Terminal)obj);
                     frmt.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();

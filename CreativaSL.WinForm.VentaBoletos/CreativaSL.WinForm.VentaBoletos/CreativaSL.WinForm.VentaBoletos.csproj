@@ -485,6 +485,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\WebcamEventArgs.cs" />
+    <Compile Include="fmrCatRutasV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrCatRutasV2.Designer.cs">
+      <DependentUpon>fmrCatRutasV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -916,6 +922,9 @@
     <EmbeddedResource Include="Clientes\Informe_FoliosDisponibles.rdlc" />
     <EmbeddedResource Include="Controls\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrCatRutasV2.resx">
+      <DependentUpon>fmrCatRutasV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdministrador.resx">
       <DependentUpon>FormAdministrador.cs</DependentUpon>

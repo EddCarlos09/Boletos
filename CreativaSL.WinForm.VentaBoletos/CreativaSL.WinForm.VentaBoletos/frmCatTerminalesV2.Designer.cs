@@ -103,6 +103,7 @@
             this.btnGuardar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnGuardar.UseAccentColor = false;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtTelefono
             // 
@@ -120,6 +121,7 @@
             this.txtTelefono.TabIndex = 13;
             this.txtTelefono.Text = "";
             this.txtTelefono.TrailingIcon = null;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // label5
             // 
@@ -144,6 +146,7 @@
             this.txtDireccion.Size = new System.Drawing.Size(239, 62);
             this.txtDireccion.TabIndex = 11;
             this.txtDireccion.Text = "";
+            this.txtDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // label4
             // 
@@ -176,6 +179,7 @@
             this.cmbMunicipio.Size = new System.Drawing.Size(239, 49);
             this.cmbMunicipio.StartIndex = 0;
             this.cmbMunicipio.TabIndex = 9;
+            this.cmbMunicipio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbPais_KeyPress);
             // 
             // label10
             // 
@@ -208,6 +212,8 @@
             this.cmbEstado.Size = new System.Drawing.Size(231, 49);
             this.cmbEstado.StartIndex = 0;
             this.cmbEstado.TabIndex = 7;
+            this.cmbEstado.SelectedIndexChanged += new System.EventHandler(this.cmbEstado_SelectedIndexChanged);
+            this.cmbEstado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbPais_KeyPress);
             // 
             // label3
             // 
@@ -240,6 +246,8 @@
             this.cmbPais.Size = new System.Drawing.Size(239, 49);
             this.cmbPais.StartIndex = 0;
             this.cmbPais.TabIndex = 5;
+            this.cmbPais.SelectedIndexChanged += new System.EventHandler(this.cmbPais_SelectedIndexChanged);
+            this.cmbPais.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbPais_KeyPress);
             // 
             // label2
             // 
@@ -267,6 +275,7 @@
             this.txtNombreSucursal.TabIndex = 3;
             this.txtNombreSucursal.Text = "";
             this.txtNombreSucursal.TrailingIcon = null;
+            this.txtNombreSucursal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreSucursal_KeyPress);
             // 
             // label1
             // 

@@ -33,10 +33,10 @@
             this.Txt_NumBares = new MaterialSkin.Controls.MaterialTextBox();
             this.Txt_NumPuertas = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_NumWC = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
+            this.btnGuardar = new MaterialSkin.Controls.MaterialButton();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.btnSegundoPiso = new MaterialSkin.Controls.MaterialButton();
+            this.btnPrimerPiso = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.Txt_NumAsientos = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -59,10 +59,10 @@
             this.panel1.Controls.Add(this.Txt_NumBares);
             this.panel1.Controls.Add(this.Txt_NumPuertas);
             this.panel1.Controls.Add(this.txt_NumWC);
-            this.panel1.Controls.Add(this.materialButton4);
+            this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.materialButton3);
-            this.panel1.Controls.Add(this.materialButton2);
-            this.panel1.Controls.Add(this.materialButton1);
+            this.panel1.Controls.Add(this.btnSegundoPiso);
+            this.panel1.Controls.Add(this.btnPrimerPiso);
             this.panel1.Controls.Add(this.materialLabel3);
             this.panel1.Controls.Add(this.Txt_NumAsientos);
             this.panel1.Controls.Add(this.materialLabel2);
@@ -89,7 +89,7 @@
             this.Txt_NumBares.AnimateReadOnly = false;
             this.Txt_NumBares.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Txt_NumBares.Depth = 0;
-            this.Txt_NumBares.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Txt_NumBares.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
             this.Txt_NumBares.LeadingIcon = null;
             this.Txt_NumBares.Location = new System.Drawing.Point(620, 238);
             this.Txt_NumBares.MaxLength = 50;
@@ -98,7 +98,7 @@
             this.Txt_NumBares.Name = "Txt_NumBares";
             this.Txt_NumBares.Size = new System.Drawing.Size(59, 50);
             this.Txt_NumBares.TabIndex = 23;
-            this.Txt_NumBares.Text = "";
+            this.Txt_NumBares.Text = "0";
             this.Txt_NumBares.TrailingIcon = null;
             // 
             // Txt_NumPuertas
@@ -123,7 +123,7 @@
             this.txt_NumWC.AnimateReadOnly = false;
             this.txt_NumWC.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_NumWC.Depth = 0;
-            this.txt_NumWC.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_NumWC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
             this.txt_NumWC.LeadingIcon = null;
             this.txt_NumWC.Location = new System.Drawing.Point(373, 238);
             this.txt_NumWC.MaxLength = 50;
@@ -132,28 +132,29 @@
             this.txt_NumWC.Name = "txt_NumWC";
             this.txt_NumWC.Size = new System.Drawing.Size(59, 50);
             this.txt_NumWC.TabIndex = 21;
-            this.txt_NumWC.Text = "";
+            this.txt_NumWC.Text = "0";
             this.txt_NumWC.TrailingIcon = null;
             // 
-            // materialButton4
+            // btnGuardar
             // 
-            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton4.Depth = 0;
-            this.materialButton4.HighEmphasis = true;
-            this.materialButton4.Icon = null;
-            this.materialButton4.Image = ((System.Drawing.Image)(resources.GetObject("materialButton4.Image")));
-            this.materialButton4.Location = new System.Drawing.Point(591, 450);
-            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton4.Name = "materialButton4";
-            this.materialButton4.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton4.Size = new System.Drawing.Size(88, 36);
-            this.materialButton4.TabIndex = 20;
-            this.materialButton4.Text = "Guardar";
-            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton4.UseAccentColor = false;
-            this.materialButton4.UseVisualStyleBackColor = true;
+            this.btnGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGuardar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnGuardar.Depth = 0;
+            this.btnGuardar.HighEmphasis = true;
+            this.btnGuardar.Icon = null;
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.Location = new System.Drawing.Point(591, 450);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGuardar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnGuardar.Size = new System.Drawing.Size(88, 36);
+            this.btnGuardar.TabIndex = 20;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnGuardar.UseAccentColor = false;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // materialButton3
             // 
@@ -174,46 +175,49 @@
             this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton3.UseAccentColor = false;
             this.materialButton3.UseVisualStyleBackColor = true;
+            this.materialButton3.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // materialButton2
+            // btnSegundoPiso
             // 
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = null;
-            this.materialButton2.Image = ((System.Drawing.Image)(resources.GetObject("materialButton2.Image")));
-            this.materialButton2.Location = new System.Drawing.Point(576, 335);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(80, 36);
-            this.materialButton2.TabIndex = 18;
-            this.materialButton2.Text = "2.o Piso";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = false;
-            this.materialButton2.UseVisualStyleBackColor = true;
+            this.btnSegundoPiso.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnSegundoPiso.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnSegundoPiso.Depth = 0;
+            this.btnSegundoPiso.HighEmphasis = true;
+            this.btnSegundoPiso.Icon = null;
+            this.btnSegundoPiso.Image = ((System.Drawing.Image)(resources.GetObject("btnSegundoPiso.Image")));
+            this.btnSegundoPiso.Location = new System.Drawing.Point(576, 335);
+            this.btnSegundoPiso.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnSegundoPiso.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnSegundoPiso.Name = "btnSegundoPiso";
+            this.btnSegundoPiso.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnSegundoPiso.Size = new System.Drawing.Size(80, 36);
+            this.btnSegundoPiso.TabIndex = 18;
+            this.btnSegundoPiso.Text = "2.o Piso";
+            this.btnSegundoPiso.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnSegundoPiso.UseAccentColor = false;
+            this.btnSegundoPiso.UseVisualStyleBackColor = true;
+            this.btnSegundoPiso.Click += new System.EventHandler(this.btnSegundoPiso_Click);
             // 
-            // materialButton1
+            // btnPrimerPiso
             // 
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Image = global::CreativaSL.WinForm.VentaBoletos.Properties.Resources.primer_piso;
-            this.materialButton1.Location = new System.Drawing.Point(449, 335);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(91, 36);
-            this.materialButton1.TabIndex = 17;
-            this.materialButton1.Text = "1. er piso";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.btnPrimerPiso.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPrimerPiso.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnPrimerPiso.Depth = 0;
+            this.btnPrimerPiso.HighEmphasis = true;
+            this.btnPrimerPiso.Icon = null;
+            this.btnPrimerPiso.Image = global::CreativaSL.WinForm.VentaBoletos.Properties.Resources.primer_piso;
+            this.btnPrimerPiso.Location = new System.Drawing.Point(449, 335);
+            this.btnPrimerPiso.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnPrimerPiso.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnPrimerPiso.Name = "btnPrimerPiso";
+            this.btnPrimerPiso.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnPrimerPiso.Size = new System.Drawing.Size(91, 36);
+            this.btnPrimerPiso.TabIndex = 17;
+            this.btnPrimerPiso.Text = "1. er piso";
+            this.btnPrimerPiso.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnPrimerPiso.UseAccentColor = false;
+            this.btnPrimerPiso.UseVisualStyleBackColor = true;
+            this.btnPrimerPiso.Click += new System.EventHandler(this.btnPrimerPiso_Click);
             // 
             // materialLabel3
             // 
@@ -349,13 +353,17 @@
             this.cmbNumPisos.FormattingEnabled = true;
             this.cmbNumPisos.IntegralHeight = false;
             this.cmbNumPisos.ItemHeight = 43;
+            this.cmbNumPisos.Items.AddRange(new object[] {
+            "1",
+            "2"});
             this.cmbNumPisos.Location = new System.Drawing.Point(558, 80);
             this.cmbNumPisos.MaxDropDownItems = 4;
             this.cmbNumPisos.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbNumPisos.Name = "cmbNumPisos";
             this.cmbNumPisos.Size = new System.Drawing.Size(121, 49);
             this.cmbNumPisos.StartIndex = 0;
-            this.cmbNumPisos.TabIndex = 4;
+            this.cmbNumPisos.TabIndex = 2;
+            this.cmbNumPisos.SelectedIndexChanged += new System.EventHandler(this.cmbNumPisos_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -374,7 +382,7 @@
             this.txt_Nombre.AnimateReadOnly = false;
             this.txt_Nombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_Nombre.Depth = 0;
-            this.txt_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_Nombre.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_Nombre.LeadingIcon = null;
             this.txt_Nombre.Location = new System.Drawing.Point(164, 81);
             this.txt_Nombre.MaxLength = 50;
@@ -445,10 +453,10 @@
         private MaterialSkin.Controls.MaterialTextBox Txt_NumAsientos;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialButton btnPrimerPiso;
+        private MaterialSkin.Controls.MaterialButton btnSegundoPiso;
         private MaterialSkin.Controls.MaterialButton materialButton3;
-        private MaterialSkin.Controls.MaterialButton materialButton4;
+        private MaterialSkin.Controls.MaterialButton btnGuardar;
         private MaterialSkin.Controls.MaterialTextBox Txt_NumBares;
         private MaterialSkin.Controls.MaterialTextBox Txt_NumPuertas;
         private MaterialSkin.Controls.MaterialTextBox txt_NumWC;
