@@ -297,6 +297,8 @@ namespace CreativaSL.WinForm.VentaBoletos
                     this.txtUsuario.Text = "AdminTGZ";
                     this.txtContraseña.Text = "AdminTGZ";
                 }
+                this.txtUsuario.Text = "AdminTGZ";
+                this.txtContraseña.Text = "AdminTGZ";
             }
             catch(Exception ex)
             {
