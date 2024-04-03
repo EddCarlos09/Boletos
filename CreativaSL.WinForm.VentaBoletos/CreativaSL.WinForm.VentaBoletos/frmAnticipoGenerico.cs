@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static CreativaSL.WinForm.VentaBoletos.MaterialUI;
+using MaterialSkin.Controls;
 
 namespace CreativaSL.WinForm.VentaBoletos
 {

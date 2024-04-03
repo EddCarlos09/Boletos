@@ -10,10 +10,12 @@ using System.Windows.Forms;
 using CreativaSL.Dll.VentaBoletosGlobal;
 using CreativaSL.Dll.VentaBoletosNegocio;
 using System.Globalization;
+using static CreativaSL.WinForm.VentaBoletos.MaterialUI;
+using MaterialSkin.Controls;
 
 namespace CreativaSL.WinForm.VentaBoletos
 {
-    public partial class frmCatMaletasNueva : Form
+    public partial class frmCatMaletasNueva : MaterialForm
     {
         private Maletas infoMaletas = new Maletas();
         private int Verificador;
@@ -22,6 +24,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 InitializeComponent();
+                loadMaterial(this);
                 infoMaletas = maletas;
                 this.Inicializar();
 

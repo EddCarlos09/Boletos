@@ -78,7 +78,8 @@
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.ImageList = this.imageList1;
-            this.materialTabControl1.Location = new System.Drawing.Point(3, 64);
+            this.materialTabControl1.Location = new System.Drawing.Point(4, 79);
+            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
@@ -92,7 +93,8 @@
             this.tabPage1.Controls.Add(this.materialCard4);
             this.tabPage1.Controls.Add(this.materialCard1);
             this.tabPage1.ImageKey = "icons8-design-96 (1).png";
-            this.tabPage1.Location = new System.Drawing.Point(4, 74);
+            this.tabPage1.Location = new System.Drawing.Point(4, 39);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(996, 337);
@@ -184,7 +186,8 @@
             // 
             this.tabPage2.Controls.Add(this.materialCard3);
             this.tabPage2.ImageKey = "icons8-bus-50.png";
-            this.tabPage2.Location = new System.Drawing.Point(4, 74);
+            this.tabPage2.Location = new System.Drawing.Point(4, 39);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(996, 337);
@@ -231,7 +234,8 @@
             // tabPage3
             // 
             this.tabPage3.ImageKey = "icons8-train-station-96.png";
-            this.tabPage3.Location = new System.Drawing.Point(4, 74);
+            this.tabPage3.Location = new System.Drawing.Point(4, 39);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(996, 337);
             this.tabPage3.TabIndex = 2;
@@ -241,7 +245,8 @@
             // tabPage4
             // 
             this.tabPage4.ImageKey = "icons8-route-64.png";
-            this.tabPage4.Location = new System.Drawing.Point(4, 74);
+            this.tabPage4.Location = new System.Drawing.Point(4, 39);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(996, 337);
             this.tabPage4.TabIndex = 3;
@@ -251,7 +256,8 @@
             // tabPage5
             // 
             this.tabPage5.ImageKey = "icons8-traveler-96.png";
-            this.tabPage5.Location = new System.Drawing.Point(4, 74);
+            this.tabPage5.Location = new System.Drawing.Point(4, 39);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(996, 337);
             this.tabPage5.TabIndex = 4;
@@ -261,7 +267,8 @@
             // tabPage6
             // 
             this.tabPage6.ImageKey = "icons8-price-100.png";
-            this.tabPage6.Location = new System.Drawing.Point(4, 74);
+            this.tabPage6.Location = new System.Drawing.Point(4, 39);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(996, 337);
             this.tabPage6.TabIndex = 5;
@@ -271,7 +278,8 @@
             // tabPage7
             // 
             this.tabPage7.ImageKey = "icons8-client-96.png";
-            this.tabPage7.Location = new System.Drawing.Point(4, 74);
+            this.tabPage7.Location = new System.Drawing.Point(4, 39);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Size = new System.Drawing.Size(996, 337);
             this.tabPage7.TabIndex = 6;
@@ -281,7 +289,8 @@
             // tabPage8
             // 
             this.tabPage8.ImageKey = "icons8-users-96.png";
-            this.tabPage8.Location = new System.Drawing.Point(4, 74);
+            this.tabPage8.Location = new System.Drawing.Point(4, 39);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Size = new System.Drawing.Size(996, 337);
             this.tabPage8.TabIndex = 7;
@@ -291,7 +300,8 @@
             // tabPage9
             // 
             this.tabPage9.ImageKey = "icons8-group-objects-96.png";
-            this.tabPage9.Location = new System.Drawing.Point(4, 74);
+            this.tabPage9.Location = new System.Drawing.Point(4, 39);
+            this.tabPage9.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Size = new System.Drawing.Size(996, 337);
             this.tabPage9.TabIndex = 8;
@@ -301,7 +311,8 @@
             // tabPage10
             // 
             this.tabPage10.ImageKey = "icons8-driver-96.png";
-            this.tabPage10.Location = new System.Drawing.Point(4, 74);
+            this.tabPage10.Location = new System.Drawing.Point(4, 39);
+            this.tabPage10.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Size = new System.Drawing.Size(996, 337);
             this.tabPage10.TabIndex = 9;
@@ -311,7 +322,8 @@
             // tabPage11
             // 
             this.tabPage11.ImageKey = "icons8-smart-card-100.png";
-            this.tabPage11.Location = new System.Drawing.Point(4, 74);
+            this.tabPage11.Location = new System.Drawing.Point(4, 39);
+            this.tabPage11.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Size = new System.Drawing.Size(996, 337);
             this.tabPage11.TabIndex = 10;
@@ -321,7 +333,8 @@
             // tabPage12
             // 
             this.tabPage12.ImageKey = "icons8-settings-96.png";
-            this.tabPage12.Location = new System.Drawing.Point(4, 74);
+            this.tabPage12.Location = new System.Drawing.Point(4, 39);
+            this.tabPage12.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Size = new System.Drawing.Size(996, 337);
             this.tabPage12.TabIndex = 11;
@@ -388,7 +401,7 @@
             // 
             // FormAdministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -396,7 +409,9 @@
             this.Controls.Add(this.materialTabControl1);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAdministrador";
+            this.Padding = new System.Windows.Forms.Padding(4, 79, 4, 4);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Administrador";
