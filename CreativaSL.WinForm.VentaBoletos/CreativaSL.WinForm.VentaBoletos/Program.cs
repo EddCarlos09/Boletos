@@ -18,7 +18,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("es-MX");
-            Application.Run(new frmDepositosRetirosV2());
+            Application.Run(new frmFechasViajesDetalleV2());
             
         }
     }
