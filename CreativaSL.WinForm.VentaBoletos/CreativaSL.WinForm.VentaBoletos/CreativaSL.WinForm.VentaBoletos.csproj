@@ -539,6 +539,12 @@
     <Compile Include="frmCatDisenioV2.Designer.cs">
       <DependentUpon>frmCatDisenioV2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCatSalidasV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatSalidasV2.Designer.cs">
+      <DependentUpon>frmCatSalidasV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCatTerminalesV2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -952,6 +958,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatDisenioV2.resx">
       <DependentUpon>frmCatDisenioV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatSalidasV2.resx">
+      <DependentUpon>frmCatSalidasV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatTerminalesV2.resx">
       <DependentUpon>frmCatTerminalesV2.cs</DependentUpon>

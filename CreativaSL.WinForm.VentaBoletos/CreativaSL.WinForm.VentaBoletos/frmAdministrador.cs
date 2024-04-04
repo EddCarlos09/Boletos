@@ -366,7 +366,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 4)
                 {
-                    frmCatRutas frmr = new frmCatRutas();
+                    frmCatRutasV2 frmr = new frmCatRutasV2();
                     frmr.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -374,7 +374,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 5)
                 {
-                    frmCatSalidas frms = new frmCatSalidas();
+                    frmCatSalidasV2 frms = new frmCatSalidasV2();
                     frms.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -496,7 +496,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 4)
                 {
-                    frmCatRutas frmr = new frmCatRutas((Ruta)obj);
+                    frmCatRutasV2 frmr = new frmCatRutasV2((Ruta)obj);
                     frmr.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -504,7 +504,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 5)
                 {
-                    frmCatSalidas frms = new frmCatSalidas((Viaje)obj);
+                    frmCatSalidasV2 frms = new frmCatSalidasV2((Viaje)obj);
                     frms.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
