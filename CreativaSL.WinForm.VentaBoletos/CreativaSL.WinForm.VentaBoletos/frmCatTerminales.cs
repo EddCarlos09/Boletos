@@ -208,21 +208,6 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
 
-        private void cmbEstado_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                Terminal pais = (Terminal)this.cmbPais.SelectedItem;
-                Terminal estado = (Terminal)this.cmbEstado.SelectedItem;
-                pais.id_estado = estado.id_estado;
-                this.llenarComboMunicipio(pais);
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
-
         private void cmbPais_KeyPress(object sender, KeyPressEventArgs e)
         {
             try
@@ -278,5 +263,9 @@ namespace CreativaSL.WinForm.VentaBoletos
 
         #endregion
 
+        private void cmbEstado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -491,6 +491,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\WebcamEventArgs.cs" />
+    <Compile Include="fmrCatRutasV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrCatRutasV2.Designer.cs">
+      <DependentUpon>fmrCatRutasV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -532,6 +538,12 @@
     </Compile>
     <Compile Include="frmCatDisenioV2.Designer.cs">
       <DependentUpon>frmCatDisenioV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatSalidasV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatSalidasV2.Designer.cs">
+      <DependentUpon>frmCatSalidasV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCatTerminalesV2.cs">
       <SubType>Form</SubType>
@@ -923,6 +935,9 @@
     <EmbeddedResource Include="Controls\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fmrCatRutasV2.resx">
+      <DependentUpon>fmrCatRutasV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAdministrador.resx">
       <DependentUpon>FormAdministrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -943,6 +958,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatDisenioV2.resx">
       <DependentUpon>frmCatDisenioV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatSalidasV2.resx">
+      <DependentUpon>frmCatSalidasV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatTerminalesV2.resx">
       <DependentUpon>frmCatTerminalesV2.cs</DependentUpon>

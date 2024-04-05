@@ -173,7 +173,7 @@
             this.label6.ForeColor = System.Drawing.Color.Navy;
             this.label6.Location = new System.Drawing.Point(209, 3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 21);
+            this.label6.Size = new System.Drawing.Size(123, 26);
             this.label6.TabIndex = 0;
             this.label6.Text = "Terminales";
             // 
@@ -196,7 +196,7 @@
             // 
             this.txtTelefono.Location = new System.Drawing.Point(103, 260);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(212, 26);
+            this.txtTelefono.Size = new System.Drawing.Size(212, 30);
             this.txtTelefono.TabIndex = 6;
             this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
@@ -206,7 +206,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label5.Location = new System.Drawing.Point(16, 263);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 20);
+            this.label5.Size = new System.Drawing.Size(97, 25);
             this.label5.TabIndex = 0;
             this.label5.Text = "Teléfono";
             // 
@@ -225,7 +225,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(12, 200);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 20);
+            this.label4.Size = new System.Drawing.Size(102, 25);
             this.label4.TabIndex = 0;
             this.label4.Text = "Dirección";
             // 
@@ -237,7 +237,7 @@
             this.cmbMunicipio.FormattingEnabled = true;
             this.cmbMunicipio.Location = new System.Drawing.Point(103, 153);
             this.cmbMunicipio.Name = "cmbMunicipio";
-            this.cmbMunicipio.Size = new System.Drawing.Size(329, 28);
+            this.cmbMunicipio.Size = new System.Drawing.Size(329, 33);
             this.cmbMunicipio.TabIndex = 4;
             this.cmbMunicipio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbPais_KeyPress);
             // 
@@ -249,7 +249,7 @@
             this.cmbEstado.FormattingEnabled = true;
             this.cmbEstado.Location = new System.Drawing.Point(103, 114);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(329, 28);
+            this.cmbEstado.Size = new System.Drawing.Size(329, 33);
             this.cmbEstado.TabIndex = 3;
             this.cmbEstado.SelectedIndexChanged += new System.EventHandler(this.cmbEstado_SelectedIndexChanged);
             this.cmbEstado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbPais_KeyPress);
@@ -263,7 +263,7 @@
             this.cmbPais.FormattingEnabled = true;
             this.cmbPais.Location = new System.Drawing.Point(103, 73);
             this.cmbPais.Name = "cmbPais";
-            this.cmbPais.Size = new System.Drawing.Size(329, 28);
+            this.cmbPais.Size = new System.Drawing.Size(329, 33);
             this.cmbPais.TabIndex = 2;
             this.cmbPais.SelectedIndexChanged += new System.EventHandler(this.cmbPais_SelectedIndexChanged);
             this.cmbPais.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbPais_KeyPress);
@@ -274,7 +274,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label10.Location = new System.Drawing.Point(9, 156);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 20);
+            this.label10.Size = new System.Drawing.Size(104, 25);
             this.label10.TabIndex = 0;
             this.label10.Text = "Municipio";
             // 
@@ -284,7 +284,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(27, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 20);
+            this.label3.Size = new System.Drawing.Size(79, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "Estado";
             // 
@@ -292,7 +292,7 @@
             // 
             this.txtNombreSucursal.Location = new System.Drawing.Point(103, 35);
             this.txtNombreSucursal.Name = "txtNombreSucursal";
-            this.txtNombreSucursal.Size = new System.Drawing.Size(377, 26);
+            this.txtNombreSucursal.Size = new System.Drawing.Size(377, 30);
             this.txtNombreSucursal.TabIndex = 1;
             this.txtNombreSucursal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreSucursal_KeyPress);
             // 
@@ -302,7 +302,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(48, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 20);
+            this.label2.Size = new System.Drawing.Size(54, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "País";
             // 
@@ -312,13 +312,13 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(22, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.Size = new System.Drawing.Size(87, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
             // frmCatTerminales
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(497, 437);

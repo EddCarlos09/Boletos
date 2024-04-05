@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_mensaje = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new MaterialSkin.Controls.MaterialButton();
             this.txtCaracteristicas = new MaterialSkin.Controls.MaterialMultiLineTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnVerDiseñoCamion = new MaterialSkin.Controls.MaterialButton();
@@ -45,8 +47,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnGuardar = new MaterialSkin.Controls.MaterialButton();
-            this.txt_mensaje = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +76,41 @@
             this.panel1.Size = new System.Drawing.Size(855, 693);
             this.panel1.TabIndex = 0;
             // 
+            // txt_mensaje
+            // 
+            this.txt_mensaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_mensaje.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_mensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mensaje.Location = new System.Drawing.Point(98, 577);
+            this.txt_mensaje.Multiline = true;
+            this.txt_mensaje.Name = "txt_mensaje";
+            this.txt_mensaje.ReadOnly = true;
+            this.txt_mensaje.Size = new System.Drawing.Size(615, 32);
+            this.txt_mensaje.TabIndex = 18;
+            this.txt_mensaje.Text = "Ocurrió un Error";
+            this.txt_mensaje.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_mensaje.Visible = false;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGuardar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnGuardar.Depth = 0;
+            this.btnGuardar.HighEmphasis = true;
+            this.btnGuardar.Icon = null;
+            this.btnGuardar.Location = new System.Drawing.Point(342, 614);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGuardar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnGuardar.Size = new System.Drawing.Size(88, 36);
+            this.btnGuardar.TabIndex = 17;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnGuardar.UseAccentColor = false;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // txtCaracteristicas
             // 
             this.txtCaracteristicas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -89,6 +124,7 @@
             this.txtCaracteristicas.Size = new System.Drawing.Size(615, 62);
             this.txtCaracteristicas.TabIndex = 16;
             this.txtCaracteristicas.Text = "";
+            this.txtCaracteristicas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCaracteristicas_KeyPress);
             // 
             // label8
             // 
@@ -118,6 +154,7 @@
             this.btnVerDiseñoCamion.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnVerDiseñoCamion.UseAccentColor = false;
             this.btnVerDiseñoCamion.UseVisualStyleBackColor = true;
+            this.btnVerDiseñoCamion.Click += new System.EventHandler(this.btnVerDiseñoCamion_Click);
             // 
             // cmbDisenio
             // 
@@ -140,6 +177,7 @@
             this.cmbDisenio.Size = new System.Drawing.Size(247, 49);
             this.cmbDisenio.StartIndex = 0;
             this.cmbDisenio.TabIndex = 13;
+            this.cmbDisenio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbDisenio_KeyPress);
             // 
             // label7
             // 
@@ -174,6 +212,7 @@
             this.txtDescripcion.Size = new System.Drawing.Size(615, 62);
             this.txtDescripcion.TabIndex = 10;
             this.txtDescripcion.Text = "";
+            this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDescripcion_KeyPress);
             // 
             // txtnumCamion
             // 
@@ -191,6 +230,7 @@
             this.txtnumCamion.TabIndex = 9;
             this.txtnumCamion.Text = "";
             this.txtnumCamion.TrailingIcon = null;
+            this.txtnumCamion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnumCamion_KeyPress);
             // 
             // label5
             // 
@@ -223,6 +263,7 @@
             this.cmbSubmarcas.Size = new System.Drawing.Size(247, 49);
             this.cmbSubmarcas.StartIndex = 0;
             this.cmbSubmarcas.TabIndex = 7;
+            this.cmbSubmarcas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbMarcas_KeyPress);
             // 
             // label4
             // 
@@ -255,6 +296,7 @@
             this.cmbMarcas.Size = new System.Drawing.Size(243, 49);
             this.cmbMarcas.StartIndex = 0;
             this.cmbMarcas.TabIndex = 5;
+            this.cmbMarcas.SelectedIndexChanged += new System.EventHandler(this.cmbMarcas_SelectedIndexChanged);
             // 
             // cmbTipoCamion
             // 
@@ -277,6 +319,7 @@
             this.cmbTipoCamion.Size = new System.Drawing.Size(247, 49);
             this.cmbTipoCamion.StartIndex = 0;
             this.cmbTipoCamion.TabIndex = 4;
+            this.cmbTipoCamion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbTipoCamion_KeyPress);
             // 
             // label3
             // 
@@ -308,40 +351,6 @@
             this.label1.Size = new System.Drawing.Size(110, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "camiones";
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGuardar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnGuardar.Depth = 0;
-            this.btnGuardar.HighEmphasis = true;
-            this.btnGuardar.Icon = null;
-            this.btnGuardar.Location = new System.Drawing.Point(342, 614);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnGuardar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnGuardar.Size = new System.Drawing.Size(88, 36);
-            this.btnGuardar.TabIndex = 17;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnGuardar.UseAccentColor = false;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            // 
-            // txt_mensaje
-            // 
-            this.txt_mensaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txt_mensaje.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_mensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mensaje.Location = new System.Drawing.Point(98, 577);
-            this.txt_mensaje.Multiline = true;
-            this.txt_mensaje.Name = "txt_mensaje";
-            this.txt_mensaje.ReadOnly = true;
-            this.txt_mensaje.Size = new System.Drawing.Size(615, 32);
-            this.txt_mensaje.TabIndex = 18;
-            this.txt_mensaje.Text = "Ocurrió un Error";
-            this.txt_mensaje.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_mensaje.Visible = false;
             // 
             // frmCatCamionesV2
             // 
