@@ -21,7 +21,7 @@ namespace CreativaSL.WinForm.VentaBoletos
 {
     public partial class FormAdministrador : MaterialForm
     {
-        int tipoCatalogo = 0;
+        int tipoCatalogo = 1;
         DataTable lstAuxBuscadorDisenio = new DataTable();
         DataTable lstAuxDatosDisenio = new DataTable();
         DataTable lstAuxBuscadorCamiones = new DataTable();
@@ -81,38 +81,27 @@ namespace CreativaSL.WinForm.VentaBoletos
 
             // Configurar el MaterialListView
             materialListView.BorderStyle = BorderStyle.None;
-            //materialListView.Size = new Size(this.Width - 40, this.Height - 40);
 
-
-            // Ajustar el tamaño del MaterialCard según el tamaño del formulario
-            // this.materialCard2.Size = new Size(this.Width - 40, this.Height- 500);
-            // Obtener las dimensiones preferidas del MaterialCard
             
-            this.materialCard2.Width = this.Width;
-            
-            //this.materialCard4.Width = this.Width;
-            //this.materialListView2.MinimumSize = new Size(this.Width, this.Height);
-            //this.materialCard3.MinimumSize = new Size(this.Width, this.Height);
-             //this.materialListView2.Width = this.Width;
-              this.materialCard3.MinimumSize = new Size(this.Width-100, this.Height-200);
-            //this.materialCard4.Width = this.Width - 100;
-            //this.materialCard4.Height = this.Height - 500;
-           
-
-            // Crear e inicializar un botón
-            MaterialButton materialButton = new MaterialButton();
-            materialButton.Text = "Guardar";
-            materialButton.Location = new Point(100, 100);
-            materialButton.Size = new Size(100, 50);
-
+            this.materialCard3.MinimumSize = new Size(this.Width - 140, this.Height - 200);
+            this.materialCard4.MinimumSize = new Size(this.Width - 140, this.Height-200);
+            this.materialCard9.MinimumSize = new Size(this.Width - 140, this.Height - 200);
+            this.materialCard12.MinimumSize = new Size(this.Width - 140, this.Height - 200);
+            this.materialCard15.MinimumSize = new Size(this.Width - 140, this.Height - 200);
+            this.materialCard18.MinimumSize = new Size(this.Width - 140, this.Height - 200);
+            this.materialCard21.MinimumSize = new Size(this.Width - 140, this.Height - 200);
+            this.materialCard24.MinimumSize = new Size(this.Width - 140, this.Height - 200);
+            this.materialCard27.MinimumSize = new Size(this.Width - 140, this.Height - 200);
+            this.materialCard30.MinimumSize = new Size(this.Width - 140, this.Height - 200);
+            this.materialCard33.MinimumSize = new Size(this.Width - 140, this.Height - 200);
 
             // Agregar el botón al formulario
             //materialTabControl.TabPages[0].Controls.Add(materialButton);
-           
 
-          
-           // this.CargarGridPropiedades();
-           // this.CargarGridCatalogos();
+
+
+            this.CargarGridPropiedades();
+           this.CargarGridCatalogos();
 
 
 
@@ -215,10 +204,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
               
-                if (this.tipoCatalogo == 0)
-                {
-                  
-                }
+                
                 if (this.tipoCatalogo == 1)
                 {
                     this.EstablecerPropiedadesGridDisenio();
@@ -264,7 +250,8 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 11)
                 {
-                    this.EstablecerPropiedadesGridSubMarcas();
+                    this.EstablecerPropiedadesGridTarjetas();
+                    
                 }
                 else if (this.tipoCatalogo == 12)
                 {
@@ -282,9 +269,9 @@ namespace CreativaSL.WinForm.VentaBoletos
                 else if (this.tipoCatalogo == 15)
                 {
 
-                    this.EstablecerPropiedadesGridTarjetas();
+                    this.EstablecerPropiedadesGridSubMarcas();
 
-                
+
                 }
             }
             catch (Exception ex)
@@ -339,7 +326,8 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 11)
                 {
-                    this.CargarGridSubMarcas();
+                    this.CargarGridTarjetas();
+                    
                 }
                 else if (this.tipoCatalogo == 12)
                 {
@@ -351,7 +339,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 15)
                 {
-                    this.CargarGridTarjetas();
+                    this.CargarGridSubMarcas();
                 }
                 else if (this.tipoCatalogo == 14)
                 {
@@ -674,6 +662,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 this.ObtenerDatosGridSubMarca(ref Datos);
             }
+            //este punto estara agrupago en camiones
             else if (this.tipoCatalogo == 12)
             {
                 this.ObtenerDatosGridTipoCamion(ref Datos);
@@ -1006,17 +995,28 @@ namespace CreativaSL.WinForm.VentaBoletos
         #endregion
         #region Grid
         #region GridCatDisenio
-        private void CargarGridDisenio()
+        private void CargarGridDisenio(bool mostrarDatosBusqueda = false)
         {
             try
             {
                 DisenioCamion_Negocio DisenioCamion_Negocio = new DisenioCamion_Negocio();
                 DisenioCamion DisenioCamion = new DisenioCamion();
-                DisenioCamion_Negocio.LlenarGridDisenio(Comun.Conexion, ref DisenioCamion);
-                lstAuxDatosDisenio = DisenioCamion.DisenioCamiones;
                 
+                this.materialListView1.Items.Clear();
+                DataTable lista = new DataTable();
+                if (mostrarDatosBusqueda == true)
+                {
+                     lista = lstAuxBuscadorDisenio;
+
+                }
+                else
+                {
+                    DisenioCamion_Negocio.LlenarGridDisenio(Comun.Conexion, ref DisenioCamion);
+                    lstAuxDatosDisenio = DisenioCamion.DisenioCamiones;
+                     lista = DisenioCamion.DisenioCamiones;
+                }
                 // Agregar filas al ListView
-                foreach (DataRow fila in lstAuxDatosDisenio.Rows)
+                foreach (DataRow fila in lista.Rows)
                 {
                     
                     List<string> dataList = new List<string>();
@@ -1110,6 +1110,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 Camion camiones = new Camion(Comun.Conexion);
                 camiones = cn.obtenerCamiones(camiones);
                 lstAuxDatosCamiones = camiones.datatable_camiones;
+                this.materialListView2.Items.Clear();
                 // Agregar filas al ListView
                 foreach (DataRow fila in lstAuxDatosCamiones.Rows)
                 {
@@ -1201,7 +1202,24 @@ namespace CreativaSL.WinForm.VentaBoletos
                 Terminal terminales = new Terminal(Comun.Conexion);
                 terminales = tn.obtenerTerminales(terminales);
                 lstAuxDatosTerminales = terminales.datatable_terminales;
-              
+                this.materialListView3.Items.Clear();
+                // Agregar filas al ListView
+                foreach (DataRow fila in lstAuxDatosTerminales.Rows)
+                {
+
+                    List<string> dataList = new List<string>();
+                    foreach (var field in this.dbFieldList)
+                    {
+                        string nombre = fila[field].ToString();
+                        dataList.Add(nombre);
+                    }
+
+                    string[] valores = dataList.ToArray();
+
+                    ListViewItem item = new ListViewItem(valores);
+                    this.materialListView3.Items.Add(item);
+                }
+
             }
             catch (Exception ex)
             {
@@ -1215,7 +1233,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 var Headertexts = new List<string> { "id_terminal", "Nombre Sucursal", "País", "Estado", "Municipio", "Dirección", "Teléfono" };
                 var Names = new List<string> { "id_terminal", "nombre", "pais", "estado", "municipio", "direccion", "telefonos", "id_pais", "id_estado", "id_municipio" };
                 this.dbFieldList = Names;
-                this.RecorrerFor(Headertexts, this.materialListView1);
+                this.RecorrerFor(Headertexts, this.materialListView3);
 
 
             }
@@ -1276,7 +1294,23 @@ namespace CreativaSL.WinForm.VentaBoletos
                 Ruta rutas = new Ruta(Comun.Conexion);
                 rutas = rn.obtenerRutasPrincipales(rutas);
                 lstAuxDatosRutas = rutas.dataTable_terminalesintermedias;
-               
+                this.materialListView4.Items.Clear();
+                // Agregar filas al ListView
+                foreach (DataRow fila in lstAuxDatosRutas.Rows)
+                {
+
+                    List<string> dataList = new List<string>();
+                    foreach (var field in this.dbFieldList)
+                    {
+                        string nombre = fila[field].ToString();
+                        dataList.Add(nombre);
+                    }
+
+                    string[] valores = dataList.ToArray();
+
+                    ListViewItem item = new ListViewItem(valores);
+                    this.materialListView4.Items.Add(item);
+                }
             }
             catch (Exception ex)
             {
@@ -1291,7 +1325,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 var Headertexts = new List<string> { "id_terminalXruta", "Terminal Origen", "Terminal Destino", "Tiempo de recorrido", "id_terminalSalida", "id_terminalDestino", "id_tipoTerminal", "tiempo_int", "id_ruta", "indice" };
                 var Names = new List<string> { "id_terminalXruta", "terminalOrigen", "terminalDestino", "tiempo", "id_terminalSalida", "id_terminalDestino", "id_tipoTerminal", "tiempoMinutos", "id_ruta", "indice" };
                 this.dbFieldList = Names;
-                this.RecorrerFor(Headertexts, this.materialListView1);
+                this.RecorrerFor(Headertexts, this.materialListView4);
 
 
 
@@ -1361,7 +1395,23 @@ namespace CreativaSL.WinForm.VentaBoletos
                 Viaje viajes = new Viaje(Comun.Conexion);
                 viajes = vn.obtenerViajes(viajes);
                 lstAuxDatosViajes = viajes.datatable_viajes;
-                
+                this.materialListView5.Items.Clear();
+                // Agregar filas al ListView
+                foreach (DataRow fila in lstAuxDatosViajes.Rows)
+                {
+
+                    List<string> dataList = new List<string>();
+                    foreach (var field in this.dbFieldList)
+                    {
+                        string nombre = fila[field].ToString();
+                        dataList.Add(nombre);
+                    }
+
+                    string[] valores = dataList.ToArray();
+
+                    ListViewItem item = new ListViewItem(valores);
+                    this.materialListView5.Items.Add(item);
+                }
                 ImagenGrid();
             }
             catch (Exception ex)
@@ -1377,7 +1427,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 var Headertexts = new List<string> { "id_identificador", "id_ruta", "id_camion", "id_tipoViaje", "fec_PeriodoIni", "fec_PeriodoFin", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo", "Nombre Viaje", "Camión", "T. Origen", "T. Destino", "Periodo", "Hora" };
                 var Names = new List<string> { "id_identificador", "id_ruta", "id_camion", "id_tipoViaje", "fec_PeriodoIni", "fec_PeriodoFin", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo", "nombre", "descripcion", "terminalOrigen", "terminalDestino", "Periodo", "horario", "status_viaje" };
                 this.dbFieldList = Names;
-                this.RecorrerFor(Headertexts, this.materialListView1);
+                this.RecorrerFor(Headertexts, this.materialListView5);
 
             }
             catch (Exception ex)
@@ -1448,7 +1498,24 @@ namespace CreativaSL.WinForm.VentaBoletos
                 Tarifa tarifas = new Tarifa(Comun.Conexion);
                 tarifas = tn.obtenerDataGridTarifas(tarifas);
                 lstAuxDatosTarifas = tarifas.datatable_tarifas;
-                
+                this.materialListView6.Items.Clear();
+                // Agregar filas al ListView
+                foreach (DataRow fila in lstAuxDatosTarifas .Rows)
+                {
+
+                    List<string> dataList = new List<string>();
+                    foreach (var field in this.dbFieldList)
+                    {
+                        string nombre = fila[field].ToString();
+                        dataList.Add(nombre);
+                    }
+
+                    string[] valores = dataList.ToArray();
+
+                    ListViewItem item = new ListViewItem(valores);
+                    this.materialListView6.Items.Add(item);
+                }
+
             }
             catch (Exception ex)
             {
@@ -1462,7 +1529,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 var Headertexts = new List<string> { "id_tarifa", "id_identificador", "id_terminalXruta", "Nombre Viaje", "Camión", "Terminal Origen", "Terminal Destino", "Precio 1 Piso", "Precio Especial", "Precio Infantil", "Precio Tercera Edad", "Precio 2 Piso" };
                 var Names = new List<string> { "id_tarifa", "id_identificador", "id_terminalXruta", "nombre", "descripcion", "terminalOrigen", "terminalDestino", "precioNormal1", "precioEspecial1", "precioInfantil1", "precioTerceraEdad1", "precioNormal2", "precioEspecial2", "precioInfantil2", "precioTerceraEdad2" };
                 this.dbFieldList = Names;
-                this.RecorrerFor(Headertexts, this.materialListView1);
+                this.RecorrerFor(Headertexts, this.materialListView6);
 
 
 
@@ -1499,7 +1566,24 @@ namespace CreativaSL.WinForm.VentaBoletos
                 Cliente Clientes = new Cliente();
                 Cliente_Negocio.LlenarGridCliente(Comun.Conexion, ref Clientes);
                 lstAuxDatosClientes = Clientes.Clientes;
-               
+                this.materialListView7.Items.Clear();
+                // Agregar filas al ListView
+                foreach (DataRow fila in lstAuxDatosClientes.Rows)
+                {
+
+                    List<string> dataList = new List<string>();
+                    foreach (var field in this.dbFieldList)
+                    {
+                        string nombre = fila[field].ToString();
+                        dataList.Add(nombre);
+                    }
+
+                    string[] valores = dataList.ToArray();
+
+                    ListViewItem item = new ListViewItem(valores);
+                    this.materialListView7.Items.Add(item);
+
+                }
             }
             catch (Exception ex)
             {
@@ -1514,7 +1598,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 var Names = new List<string> { "Codigo", "Nombre", "FechaNacimiento", "CorreoElectronico", "Pais", "Estado", "Municipio", "Monedero", "saldoRetenido", "saldoDisponible", "IDCliente", "IDPais", "IDEstado", "IDMunicipio" };
 
                 this.dbFieldList = Names;
-                this.RecorrerFor(Headertexts, this.materialListView1);
+                this.RecorrerFor(Headertexts, this.materialListView7);
 
             }
             catch (Exception ex)
@@ -1583,7 +1667,24 @@ namespace CreativaSL.WinForm.VentaBoletos
                 Usuario Usuarios = new Usuario();
                 Usuario_Negocio.LlenarGridUsuario(Comun.Conexion, ref Usuarios);
                 lstAuxDatosUsuarios = Usuarios.Usuarios;
-               
+                this.materialListView8.Items.Clear();
+                // Agregar filas al ListView
+                foreach (DataRow fila in lstAuxDatosUsuarios.Rows)
+                {
+
+                    List<string> dataList = new List<string>();
+                    foreach (var field in this.dbFieldList)
+                    {
+                        string nombre = fila[field].ToString();
+                        dataList.Add(nombre);
+                    }
+
+                    string[] valores = dataList.ToArray();
+
+                    ListViewItem item = new ListViewItem(valores);
+                    this.materialListView8.Items.Add(item);
+
+                }
             }
             catch (Exception ex)
             {
@@ -1597,7 +1698,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 var Headertexts = new List<string> { "Nombre", "Calle", "Colonia", "Número", "Fecha de nacimiento", "Usuario", "Tipo usuario", "Turno", "Sucursal" };
                 var Names = new List<string> { "NombreCompleto", "U_DirCalle", "U_DirColonia", "U_DirNumero", "U_FechaNac_Short", "Cu_User", "Tu_Descripcion", "Turno", "Nombre_Sucursal", "Id_Turno", "U_Nombre", "U_Apellidop", "U_Apellidom", "Cu_Pass", "Id_Tu", "Id_U", "id_sucursal", "U_FechaNac" };
                 this.dbFieldList = Names;
-                this.RecorrerFor(Headertexts, this.materialListView1);
+                this.RecorrerFor(Headertexts, this.materialListView8);
 
             }
             catch (Exception ex)
@@ -1663,7 +1764,24 @@ namespace CreativaSL.WinForm.VentaBoletos
                 Chofer Choferes = new Chofer();
                 Chofer_Negocio.LlenarGridChofer(Comun.Conexion, ref Choferes);
                 lstAuxDatosChoferes = Choferes.Choferes;
-                
+                this.materialListView10.Items.Clear();
+                // Agregar filas al ListView
+                foreach (DataRow fila in lstAuxDatosChoferes.Rows)
+                {
+
+                    List<string> dataList = new List<string>();
+                    foreach (var field in this.dbFieldList)
+                    {
+                        string nombre = fila[field].ToString();
+                        dataList.Add(nombre);
+                    }
+
+                    string[] valores = dataList.ToArray();
+
+                    ListViewItem item = new ListViewItem(valores);
+                    this.materialListView10.Items.Add(item);
+
+                }
             }
             catch (Exception ex)
             {
@@ -1677,7 +1795,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 var Headertexts = new List<string> { "Nombre", "Curp", "Fecha de nacimiento", "Observaciones" };
                 var Names = new List<string> { "NombreCompleto", "Curp", "FechaNacimiento", "Observaciones", "Nombre", "ApellidoPaterno", "ApellidoMaterno", "IDChofer" };
                 this.dbFieldList = Names;
-                this.RecorrerFor(Headertexts, this.materialListView1);
+                this.RecorrerFor(Headertexts, this.materialListView10);
 
 
             }
@@ -1738,7 +1856,25 @@ namespace CreativaSL.WinForm.VentaBoletos
                 Marca Marcas = new Marca();
                 Marca_Negocio.LlenarGridMarca(Comun.Conexion, ref Marcas);
                 lstAuxDatosMarca = Marcas.Marcas;
-                
+                this.materialListView10.Items.Clear();
+                // Agregar filas al ListView
+                foreach (DataRow fila in lstAuxDatosMarca.Rows)
+                {
+
+                    List<string> dataList = new List<string>();
+                    foreach (var field in this.dbFieldList)
+                    {
+                        string nombre = fila[field].ToString();
+                        dataList.Add(nombre);
+                    }
+
+                    string[] valores = dataList.ToArray();
+
+                    ListViewItem item = new ListViewItem(valores);
+                    this.materialListView10.Items.Add(item);
+
+                }
+
             }
             catch (Exception ex)
             {
@@ -1752,7 +1888,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 var Headertexts = new List<string> { "Marca" };
                 var Names = new List<string> { "marca", "id_marca" };
                 this.dbFieldList = Names;
-                this.RecorrerFor(Headertexts, this.materialListView1);
+                this.RecorrerFor(Headertexts, this.materialListView10);
 
 
             }
@@ -1810,6 +1946,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 SubMarca_Negocio.LlenarGridSubMarca(Comun.Conexion, ref SubMarcas);
                 lstAuxDatosSubMarca = SubMarcas.SubMarcas;
                
+
             }
             catch (Exception ex)
             {
@@ -1823,7 +1960,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 var Headertexts = new List<string> { "SubMarca", "Marca" };
                 var Names = new List<string> { "submarca", "marca", "id_submarca", "id_marca" };
                 this.dbFieldList = Names;
-                this.RecorrerFor(Headertexts, this.materialListView1);
+                this.RecorrerFor(Headertexts, this.materialListView11);
 
 
             }
@@ -1882,7 +2019,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 var Headertexts = new List<string> { "Folio", "Estatus", "Imagen" };
                 var Names = new List<string> { "folio", "estatus", "EstatusIMG", "id_tarjeta" };
                 this.dbFieldList = Names;
-                this.RecorrerFor(Headertexts, this.materialListView1);
+                this.RecorrerFor(Headertexts, this.materialListView11);
 
 
             }
@@ -1899,7 +2036,24 @@ namespace CreativaSL.WinForm.VentaBoletos
                 V2Tarjeta Tarjetas = new V2Tarjeta();
                 Tarjeta_Negocio.LlenarGridTarjeta(Comun.Conexion, ref Tarjetas);
                 lstAuxDatosTarjeta = Tarjetas.FolioTarjeta;
-               
+                this.materialListView11.Items.Clear();
+                // Agregar filas al ListView
+                foreach (DataRow fila in lstAuxDatosTarjeta.Rows)
+                {
+
+                    List<string> dataList = new List<string>();
+                    foreach (var field in this.dbFieldList)
+                    {
+                        string nombre = fila[field].ToString();
+                        dataList.Add(nombre);
+                    }
+
+                    string[] valores = dataList.ToArray();
+
+                    ListViewItem item = new ListViewItem(valores);
+                    this.materialListView11.Items.Add(item);
+
+                }
                 ImagenGridTarjeta();
             }
             catch (Exception ex)
@@ -2250,6 +2404,50 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 throw ex;
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataRow[] rows;
+                lstAuxBuscadorDisenio = null;
+                if (!string.IsNullOrEmpty(materialTextBox21.Text))
+                {
+                    rows = this.lstAuxDatosDisenio.Select("nombre like '%" + this.materialTextBox21.Text + "%' OR descripcion like '%" + this.materialTextBox21.Text + "%' OR numasientos =" + this.materialTextBox21.Text + "");
+                    if (rows.Count() > 0)
+                    {
+                        lstAuxBuscadorDisenio = rows.CopyToDataTable();
+                        this.CargarGridDisenio(true);
+                    }
+                }
+                else
+                {
+                    this.CargarGridDisenio();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
+            
+            
         }
     }
 }
