@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatSalidasV2));
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbRutas = new MaterialSkin.Controls.MaterialComboBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.txt_mensaje = new System.Windows.Forms.TextBox();
             this.dtpHora = new System.Windows.Forms.DateTimePicker();
             this.txtDisenioCamion = new MaterialSkin.Controls.MaterialTextBox();
@@ -64,8 +66,6 @@
             this.txtNombreViaje = new MaterialSkin.Controls.MaterialTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelFechas.SuspendLayout();
             this.panelDias.SuspendLayout();
@@ -127,6 +127,36 @@
             this.cmbRutas.SelectedIndexChanged += new System.EventHandler(this.cmbRutas_SelectedIndexChanged);
             this.cmbRutas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbRutas_KeyPress);
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(497, 641);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnCancelar.Size = new System.Drawing.Size(154, 52);
+            this.btnCancelar.TabIndex = 58;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(305, 641);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnGuardar.Size = new System.Drawing.Size(154, 52);
+            this.btnGuardar.TabIndex = 57;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // txt_mensaje
             // 
             this.txt_mensaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -160,7 +190,7 @@
             this.txtDisenioCamion.AnimateReadOnly = false;
             this.txtDisenioCamion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDisenioCamion.Depth = 0;
-            this.txtDisenioCamion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDisenioCamion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDisenioCamion.LeadingIcon = null;
             this.txtDisenioCamion.Location = new System.Drawing.Point(627, 523);
             this.txtDisenioCamion.MaxLength = 50;
@@ -177,7 +207,7 @@
             this.txtTipoCamion.AnimateReadOnly = false;
             this.txtTipoCamion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTipoCamion.Depth = 0;
-            this.txtTipoCamion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTipoCamion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTipoCamion.LeadingIcon = null;
             this.txtTipoCamion.Location = new System.Drawing.Point(433, 524);
             this.txtTipoCamion.MaxLength = 50;
@@ -224,7 +254,7 @@
             this.txtNumCamion.AnimateReadOnly = false;
             this.txtNumCamion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNumCamion.Depth = 0;
-            this.txtNumCamion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNumCamion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNumCamion.LeadingIcon = null;
             this.txtNumCamion.Location = new System.Drawing.Point(840, 434);
             this.txtNumCamion.MaxLength = 50;
@@ -508,7 +538,7 @@
             this.txtNombreViaje.AnimateReadOnly = false;
             this.txtNombreViaje.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreViaje.Depth = 0;
-            this.txtNombreViaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreViaje.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreViaje.LeadingIcon = null;
             this.txtNombreViaje.Location = new System.Drawing.Point(33, 94);
             this.txtNombreViaje.MaxLength = 50;
@@ -540,34 +570,6 @@
             this.label10.Size = new System.Drawing.Size(74, 26);
             this.label10.TabIndex = 1;
             this.label10.Text = "Viajes";
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(497, 641);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnCancelar.Size = new System.Drawing.Size(154, 52);
-            this.btnCancelar.TabIndex = 58;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(305, 641);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnGuardar.Size = new System.Drawing.Size(154, 52);
-            this.btnGuardar.TabIndex = 57;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.UseVisualStyleBackColor = true;
             // 
             // frmCatSalidasV2
             // 

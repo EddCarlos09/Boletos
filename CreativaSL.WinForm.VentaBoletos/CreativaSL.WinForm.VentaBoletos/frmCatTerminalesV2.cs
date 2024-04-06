@@ -28,7 +28,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 this.llenarCombos();
                 this.cmbPais.SelectedValue = 143;
                 this.cmbPais.Enabled = false;
-                loadMaterial(this);
+                
             }
             catch (Exception ex)
             {
@@ -46,7 +46,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 trm = term;
                 this.llenarDatos();
                 this.cmbPais.Enabled = false;
-                loadMaterial(this);
+                
             }
             catch (Exception ex)
             {
@@ -194,7 +194,8 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
             }
         }
 
