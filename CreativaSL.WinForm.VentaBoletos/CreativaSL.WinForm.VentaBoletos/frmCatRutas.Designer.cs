@@ -97,7 +97,7 @@
             this.label8.ForeColor = System.Drawing.Color.Navy;
             this.label8.Location = new System.Drawing.Point(346, 6);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 21);
+            this.label8.Size = new System.Drawing.Size(72, 26);
             this.label8.TabIndex = 0;
             this.label8.Text = "Rutas";
             // 
@@ -122,7 +122,7 @@
             this.txtTiempo2.Mask = "00:00";
             this.txtTiempo2.Name = "txtTiempo2";
             this.txtTiempo2.PromptChar = '0';
-            this.txtTiempo2.Size = new System.Drawing.Size(83, 26);
+            this.txtTiempo2.Size = new System.Drawing.Size(83, 30);
             this.txtTiempo2.TabIndex = 3;
             this.txtTiempo2.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals;
             this.txtTiempo2.ValidatingType = typeof(System.DateTime);
@@ -228,7 +228,7 @@
             this.lblGrid.Location = new System.Drawing.Point(12, 171);
             this.lblGrid.Name = "lblGrid";
             this.lblGrid.ReadOnly = true;
-            this.lblGrid.Size = new System.Drawing.Size(725, 19);
+            this.lblGrid.Size = new System.Drawing.Size(725, 23);
             this.lblGrid.TabIndex = 0;
             this.lblGrid.TabStop = false;
             this.lblGrid.Text = "TERMINALES INTERMEDIAS";
@@ -251,6 +251,7 @@
             this.dgv_Rutasinter.MultiSelect = false;
             this.dgv_Rutasinter.Name = "dgv_Rutasinter";
             this.dgv_Rutasinter.ReadOnly = true;
+            this.dgv_Rutasinter.RowHeadersWidth = 51;
             this.dgv_Rutasinter.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Rutasinter.Size = new System.Drawing.Size(663, 301);
             this.dgv_Rutasinter.TabIndex = 4;
@@ -259,44 +260,53 @@
             // 
             this.id_ruta.DataPropertyName = "id_ruta";
             this.id_ruta.HeaderText = "id_ruta";
+            this.id_ruta.MinimumWidth = 6;
             this.id_ruta.Name = "id_ruta";
             this.id_ruta.ReadOnly = true;
             this.id_ruta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.id_ruta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.id_ruta.Visible = false;
+            this.id_ruta.Width = 125;
             // 
             // id_tipoTerminal
             // 
             this.id_tipoTerminal.DataPropertyName = "id_tipoTerminal";
             this.id_tipoTerminal.HeaderText = "id_tipoTerminal";
+            this.id_tipoTerminal.MinimumWidth = 6;
             this.id_tipoTerminal.Name = "id_tipoTerminal";
             this.id_tipoTerminal.ReadOnly = true;
             this.id_tipoTerminal.Visible = false;
+            this.id_tipoTerminal.Width = 125;
             // 
             // id_terminalOrigen
             // 
             this.id_terminalOrigen.DataPropertyName = "id_terminalOrigen";
             this.id_terminalOrigen.HeaderText = "id_terminalOrigen";
+            this.id_terminalOrigen.MinimumWidth = 6;
             this.id_terminalOrigen.Name = "id_terminalOrigen";
             this.id_terminalOrigen.ReadOnly = true;
             this.id_terminalOrigen.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.id_terminalOrigen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.id_terminalOrigen.Visible = false;
+            this.id_terminalOrigen.Width = 125;
             // 
             // id_terminalDestino
             // 
             this.id_terminalDestino.DataPropertyName = "id_terminalDestino";
             this.id_terminalDestino.HeaderText = "id_terminalDestino";
+            this.id_terminalDestino.MinimumWidth = 6;
             this.id_terminalDestino.Name = "id_terminalDestino";
             this.id_terminalDestino.ReadOnly = true;
             this.id_terminalDestino.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.id_terminalDestino.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.id_terminalDestino.Visible = false;
+            this.id_terminalDestino.Width = 125;
             // 
             // terminalOrigen
             // 
             this.terminalOrigen.DataPropertyName = "terminalOrigen";
             this.terminalOrigen.HeaderText = "Terminal Origen";
+            this.terminalOrigen.MinimumWidth = 6;
             this.terminalOrigen.Name = "terminalOrigen";
             this.terminalOrigen.ReadOnly = true;
             this.terminalOrigen.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -307,6 +317,7 @@
             // 
             this.terminalDestino.DataPropertyName = "terminalDestino";
             this.terminalDestino.HeaderText = "Terminal Destino";
+            this.terminalDestino.MinimumWidth = 6;
             this.terminalDestino.Name = "terminalDestino";
             this.terminalDestino.ReadOnly = true;
             this.terminalDestino.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -317,6 +328,7 @@
             // 
             this.tiempo.DataPropertyName = "tiempo";
             this.tiempo.HeaderText = "Tiempo";
+            this.tiempo.MinimumWidth = 6;
             this.tiempo.Name = "tiempo";
             this.tiempo.ReadOnly = true;
             this.tiempo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -327,9 +339,11 @@
             // 
             this.tiempo_minutos.DataPropertyName = "tiempo_minutos";
             this.tiempo_minutos.HeaderText = "tiempo_minutos";
+            this.tiempo_minutos.MinimumWidth = 6;
             this.tiempo_minutos.Name = "tiempo_minutos";
             this.tiempo_minutos.ReadOnly = true;
             this.tiempo_minutos.Visible = false;
+            this.tiempo_minutos.Width = 125;
             // 
             // label3
             // 
@@ -337,7 +351,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(51, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 20);
+            this.label3.Size = new System.Drawing.Size(139, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "Tiempo Viaje";
             // 
@@ -346,7 +360,7 @@
             this.cmbDestino.FormattingEnabled = true;
             this.cmbDestino.Location = new System.Drawing.Point(173, 82);
             this.cmbDestino.Name = "cmbDestino";
-            this.cmbDestino.Size = new System.Drawing.Size(564, 28);
+            this.cmbDestino.Size = new System.Drawing.Size(564, 33);
             this.cmbDestino.TabIndex = 2;
             // 
             // label2
@@ -355,7 +369,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(27, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 20);
+            this.label2.Size = new System.Drawing.Size(175, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Terminal Destino";
             // 
@@ -365,7 +379,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(35, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 20);
+            this.label1.Size = new System.Drawing.Size(167, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Terminal Origen";
             // 
@@ -374,7 +388,7 @@
             this.cmbOrigen.FormattingEnabled = true;
             this.cmbOrigen.Location = new System.Drawing.Point(173, 45);
             this.cmbOrigen.Name = "cmbOrigen";
-            this.cmbOrigen.Size = new System.Drawing.Size(564, 28);
+            this.cmbOrigen.Size = new System.Drawing.Size(564, 33);
             this.cmbOrigen.TabIndex = 1;
             // 
             // panel_Creativa1
@@ -460,7 +474,7 @@
             // 
             // frmCatRutas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(754, 633);

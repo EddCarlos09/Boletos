@@ -27,7 +27,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 InitializeComponent();
                 this.inicializarCombos();
-                loadMaterial(this);
+                
             }
             catch (Exception ex)
             {
@@ -213,7 +213,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     Diseño.Nombre = disenio.descripciondisenio.ToString();
                     Diseño.id_disenioCamion = this.cmbDisenio.SelectedValue.ToString();
                     Diseño.Descripcion = disenio.descripciondisenio.ToString();
-                    frmCatDisenio frmd = new frmCatDisenio(Diseño, 2);
+                    frmCatDisenioV2 frmd = new frmCatDisenioV2(Diseño, 2);
                     frmd.ShowDialog();
                     frmd.Dispose();
                 }

@@ -18,7 +18,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
 
             // Configure color schema
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Indigo500, Primary.Indigo700, Primary.Indigo100, Accent.Pink200, TextShade.WHITE);
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Indigo500, Primary.Indigo700, Primary.Indigo100, Accent.Blue700, TextShade.WHITE);
             //materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900,Primary.Blue500, Accent.Indigo700,TextShade.WHITE);
             return materialSkinManager;
         }
