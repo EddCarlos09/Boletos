@@ -382,7 +382,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 6)
                 {
-                    frmCatTarifas frms = new frmCatTarifas();
+                    frmCatTarifasV2cs frms = new frmCatTarifasV2cs();
                     frms.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -406,7 +406,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 //}
                 else if (this.tipoCatalogo == 8)
                 {
-                    frmCatUsuarios frmu = new frmCatUsuarios(new Usuario());
+                    frmCatUsuariosV2 frmu = new frmCatUsuariosV2(new Usuario());
                     frmu.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -512,7 +512,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 6)
                 {
-                    frmCatTarifas frms = new frmCatTarifas((Tarifa) obj);
+                    frmCatTarifasV2cs frms = new frmCatTarifasV2cs((Tarifa) obj);
                     frms.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -537,7 +537,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 //}
                 else if (this.tipoCatalogo == 8)
                 {
-                    frmCatUsuarios frmu = new frmCatUsuarios((Usuario)obj);
+                    frmCatUsuariosV2 frmu = new frmCatUsuariosV2((Usuario)obj);
                     frmu.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();

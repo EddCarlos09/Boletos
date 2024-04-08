@@ -100,7 +100,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1027, 645);
+            this.panel1.Size = new System.Drawing.Size(1061, 690);
             this.panel1.TabIndex = 0;
             // 
             // cmbRutas
@@ -140,6 +140,7 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -154,6 +155,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txt_mensaje
             // 
@@ -180,7 +182,7 @@
             this.dtpHora.Location = new System.Drawing.Point(830, 533);
             this.dtpHora.Name = "dtpHora";
             this.dtpHora.ShowUpDown = true;
-            this.dtpHora.Size = new System.Drawing.Size(153, 22);
+            this.dtpHora.Size = new System.Drawing.Size(187, 22);
             this.dtpHora.TabIndex = 19;
             // 
             // txtDisenioCamion
@@ -573,7 +575,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1033, 712);
+            this.ClientSize = new System.Drawing.Size(1067, 757);
             this.Controls.Add(this.panel1);
             this.Name = "frmCatSalidasV2";
             this.Text = "frmCatSalidasV2";
