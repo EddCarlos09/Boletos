@@ -55,15 +55,6 @@
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
             this.materialListView2 = new MaterialSkin.Controls.MaterialListView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.tabPage12 = new System.Windows.Forms.TabPage();
             this.materialCard7 = new MaterialSkin.Controls.MaterialCard();
             this.button11 = new System.Windows.Forms.Button();
             this.materialCard8 = new MaterialSkin.Controls.MaterialCard();
@@ -74,6 +65,7 @@
             this.materialTextBox23 = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialCard9 = new MaterialSkin.Controls.MaterialCard();
             this.materialListView3 = new MaterialSkin.Controls.MaterialListView();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.materialCard10 = new MaterialSkin.Controls.MaterialCard();
             this.button16 = new System.Windows.Forms.Button();
             this.materialCard11 = new MaterialSkin.Controls.MaterialCard();
@@ -84,6 +76,7 @@
             this.materialTextBox24 = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialCard12 = new MaterialSkin.Controls.MaterialCard();
             this.materialListView4 = new MaterialSkin.Controls.MaterialListView();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.materialCard13 = new MaterialSkin.Controls.MaterialCard();
             this.button21 = new System.Windows.Forms.Button();
             this.materialCard14 = new MaterialSkin.Controls.MaterialCard();
@@ -94,6 +87,7 @@
             this.materialTextBox25 = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialCard15 = new MaterialSkin.Controls.MaterialCard();
             this.materialListView5 = new MaterialSkin.Controls.MaterialListView();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.materialCard16 = new MaterialSkin.Controls.MaterialCard();
             this.button26 = new System.Windows.Forms.Button();
             this.materialCard17 = new MaterialSkin.Controls.MaterialCard();
@@ -104,6 +98,7 @@
             this.materialTextBox26 = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialCard18 = new MaterialSkin.Controls.MaterialCard();
             this.materialListView6 = new MaterialSkin.Controls.MaterialListView();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.materialCard19 = new MaterialSkin.Controls.MaterialCard();
             this.button31 = new System.Windows.Forms.Button();
             this.materialCard20 = new MaterialSkin.Controls.MaterialCard();
@@ -114,6 +109,7 @@
             this.materialTextBox27 = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialCard21 = new MaterialSkin.Controls.MaterialCard();
             this.materialListView7 = new MaterialSkin.Controls.MaterialListView();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.materialCard22 = new MaterialSkin.Controls.MaterialCard();
             this.button36 = new System.Windows.Forms.Button();
             this.materialCard23 = new MaterialSkin.Controls.MaterialCard();
@@ -124,6 +120,7 @@
             this.materialTextBox28 = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialCard24 = new MaterialSkin.Controls.MaterialCard();
             this.materialListView8 = new MaterialSkin.Controls.MaterialListView();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.materialCard25 = new MaterialSkin.Controls.MaterialCard();
             this.button41 = new System.Windows.Forms.Button();
             this.materialCard26 = new MaterialSkin.Controls.MaterialCard();
@@ -134,6 +131,7 @@
             this.materialTextBox29 = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialCard27 = new MaterialSkin.Controls.MaterialCard();
             this.materialListView9 = new MaterialSkin.Controls.MaterialListView();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
             this.materialCard28 = new MaterialSkin.Controls.MaterialCard();
             this.button46 = new System.Windows.Forms.Button();
             this.materialCard29 = new MaterialSkin.Controls.MaterialCard();
@@ -144,6 +142,7 @@
             this.materialTextBox210 = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialCard30 = new MaterialSkin.Controls.MaterialCard();
             this.materialListView10 = new MaterialSkin.Controls.MaterialListView();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
             this.materialCard31 = new MaterialSkin.Controls.MaterialCard();
             this.button51 = new System.Windows.Forms.Button();
             this.materialCard32 = new MaterialSkin.Controls.MaterialCard();
@@ -154,6 +153,7 @@
             this.materialTextBox211 = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialCard33 = new MaterialSkin.Controls.MaterialCard();
             this.materialListView11 = new MaterialSkin.Controls.MaterialListView();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
             this.materialCard34 = new MaterialSkin.Controls.MaterialCard();
             this.button56 = new System.Windows.Forms.Button();
             this.materialCard35 = new MaterialSkin.Controls.MaterialCard();
@@ -174,42 +174,42 @@
             this.materialCard6.SuspendLayout();
             this.materialCard3.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.tabPage9.SuspendLayout();
-            this.tabPage10.SuspendLayout();
-            this.tabPage11.SuspendLayout();
-            this.tabPage12.SuspendLayout();
             this.materialCard7.SuspendLayout();
             this.materialCard8.SuspendLayout();
             this.materialCard9.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.materialCard10.SuspendLayout();
             this.materialCard11.SuspendLayout();
             this.materialCard12.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.materialCard13.SuspendLayout();
             this.materialCard14.SuspendLayout();
             this.materialCard15.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.materialCard16.SuspendLayout();
             this.materialCard17.SuspendLayout();
             this.materialCard18.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.materialCard19.SuspendLayout();
             this.materialCard20.SuspendLayout();
             this.materialCard21.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             this.materialCard22.SuspendLayout();
             this.materialCard23.SuspendLayout();
             this.materialCard24.SuspendLayout();
+            this.tabPage9.SuspendLayout();
             this.materialCard25.SuspendLayout();
             this.materialCard26.SuspendLayout();
             this.materialCard27.SuspendLayout();
+            this.tabPage10.SuspendLayout();
             this.materialCard28.SuspendLayout();
             this.materialCard29.SuspendLayout();
             this.materialCard30.SuspendLayout();
+            this.tabPage11.SuspendLayout();
             this.materialCard31.SuspendLayout();
             this.materialCard32.SuspendLayout();
             this.materialCard33.SuspendLayout();
+            this.tabPage12.SuspendLayout();
             this.materialCard34.SuspendLayout();
             this.materialCard35.SuspendLayout();
             this.materialCard36.SuspendLayout();
@@ -237,7 +237,7 @@
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1561, 410);
+            this.materialTabControl1.Size = new System.Drawing.Size(1380, 410);
             this.materialTabControl1.TabIndex = 0;
             this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.MaterialTabControl1_SelectedIndexChanged);
             // 
@@ -250,7 +250,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(1553, 367);
+            this.tabPage1.Size = new System.Drawing.Size(1372, 367);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Diseño";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -262,7 +262,7 @@
             this.materialCard2.Controls.Add(this.button5);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(1298, 11);
+            this.materialCard2.Location = new System.Drawing.Point(1117, 11);
             this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
@@ -450,7 +450,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 39);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(1553, 367);
+            this.tabPage2.Size = new System.Drawing.Size(1372, 367);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Camiones";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -462,7 +462,7 @@
             this.materialCard5.Controls.Add(this.button6);
             this.materialCard5.Depth = 0;
             this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard5.Location = new System.Drawing.Point(1296, 11);
+            this.materialCard5.Location = new System.Drawing.Point(1115, 11);
             this.materialCard5.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard5.Name = "materialCard5";
@@ -542,6 +542,7 @@
             this.button10.Size = new System.Drawing.Size(58, 47);
             this.button10.TabIndex = 6;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // materialTextBox22
             // 
@@ -622,123 +623,6 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Terminales";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.materialCard10);
-            this.tabPage4.Controls.Add(this.materialCard11);
-            this.tabPage4.Controls.Add(this.materialCard12);
-            this.tabPage4.ImageKey = "icons8-route-64.png";
-            this.tabPage4.Location = new System.Drawing.Point(4, 39);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1553, 367);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Rutas";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.materialCard13);
-            this.tabPage5.Controls.Add(this.materialCard14);
-            this.tabPage5.Controls.Add(this.materialCard15);
-            this.tabPage5.ImageKey = "icons8-traveler-96.png";
-            this.tabPage5.Location = new System.Drawing.Point(4, 39);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1553, 367);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Viajes";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.materialCard16);
-            this.tabPage6.Controls.Add(this.materialCard17);
-            this.tabPage6.Controls.Add(this.materialCard18);
-            this.tabPage6.ImageKey = "icons8-price-100.png";
-            this.tabPage6.Location = new System.Drawing.Point(4, 39);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1553, 367);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Tarifas";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.materialCard19);
-            this.tabPage7.Controls.Add(this.materialCard20);
-            this.tabPage7.Controls.Add(this.materialCard21);
-            this.tabPage7.ImageKey = "icons8-client-96.png";
-            this.tabPage7.Location = new System.Drawing.Point(4, 39);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1553, 367);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Clientes";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.materialCard22);
-            this.tabPage8.Controls.Add(this.materialCard23);
-            this.tabPage8.Controls.Add(this.materialCard24);
-            this.tabPage8.ImageKey = "icons8-users-96.png";
-            this.tabPage8.Location = new System.Drawing.Point(4, 39);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1553, 367);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Usuarios";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.materialCard25);
-            this.tabPage9.Controls.Add(this.materialCard26);
-            this.tabPage9.Controls.Add(this.materialCard27);
-            this.tabPage9.ImageKey = "icons8-group-objects-96.png";
-            this.tabPage9.Location = new System.Drawing.Point(4, 39);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(1553, 367);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Clasificación";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.Controls.Add(this.materialCard28);
-            this.tabPage10.Controls.Add(this.materialCard29);
-            this.tabPage10.Controls.Add(this.materialCard30);
-            this.tabPage10.ImageKey = "icons8-driver-96.png";
-            this.tabPage10.Location = new System.Drawing.Point(4, 39);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1553, 367);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "Choferes";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
-            // tabPage11
-            // 
-            this.tabPage11.Controls.Add(this.materialCard31);
-            this.tabPage11.Controls.Add(this.materialCard32);
-            this.tabPage11.Controls.Add(this.materialCard33);
-            this.tabPage11.ImageKey = "icons8-smart-card-100.png";
-            this.tabPage11.Location = new System.Drawing.Point(4, 39);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1553, 367);
-            this.tabPage11.TabIndex = 10;
-            this.tabPage11.Text = "Tarjetas";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // tabPage12
-            // 
-            this.tabPage12.Controls.Add(this.materialCard34);
-            this.tabPage12.Controls.Add(this.materialCard35);
-            this.tabPage12.Controls.Add(this.materialCard36);
-            this.tabPage12.ImageKey = "icons8-settings-96.png";
-            this.tabPage12.Location = new System.Drawing.Point(4, 39);
-            this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(1553, 367);
-            this.tabPage12.TabIndex = 11;
-            this.tabPage12.Text = "Configuración";
-            this.tabPage12.UseVisualStyleBackColor = true;
             // 
             // materialCard7
             // 
@@ -895,6 +779,19 @@
             this.materialListView3.UseCompatibleStateImageBehavior = false;
             this.materialListView3.View = System.Windows.Forms.View.Details;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.materialCard10);
+            this.tabPage4.Controls.Add(this.materialCard11);
+            this.tabPage4.Controls.Add(this.materialCard12);
+            this.tabPage4.ImageKey = "icons8-route-64.png";
+            this.tabPage4.Location = new System.Drawing.Point(4, 39);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1553, 367);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Rutas";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // materialCard10
             // 
             this.materialCard10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1049,6 +946,19 @@
             this.materialListView4.TabIndex = 0;
             this.materialListView4.UseCompatibleStateImageBehavior = false;
             this.materialListView4.View = System.Windows.Forms.View.Details;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.materialCard13);
+            this.tabPage5.Controls.Add(this.materialCard14);
+            this.tabPage5.Controls.Add(this.materialCard15);
+            this.tabPage5.ImageKey = "icons8-traveler-96.png";
+            this.tabPage5.Location = new System.Drawing.Point(4, 39);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1553, 367);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Viajes";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // materialCard13
             // 
@@ -1205,6 +1115,19 @@
             this.materialListView5.UseCompatibleStateImageBehavior = false;
             this.materialListView5.View = System.Windows.Forms.View.Details;
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.materialCard16);
+            this.tabPage6.Controls.Add(this.materialCard17);
+            this.tabPage6.Controls.Add(this.materialCard18);
+            this.tabPage6.ImageKey = "icons8-price-100.png";
+            this.tabPage6.Location = new System.Drawing.Point(4, 39);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(1553, 367);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Tarifas";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
             // materialCard16
             // 
             this.materialCard16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1359,6 +1282,19 @@
             this.materialListView6.TabIndex = 0;
             this.materialListView6.UseCompatibleStateImageBehavior = false;
             this.materialListView6.View = System.Windows.Forms.View.Details;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.materialCard19);
+            this.tabPage7.Controls.Add(this.materialCard20);
+            this.tabPage7.Controls.Add(this.materialCard21);
+            this.tabPage7.ImageKey = "icons8-client-96.png";
+            this.tabPage7.Location = new System.Drawing.Point(4, 39);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(1553, 367);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Clientes";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // materialCard19
             // 
@@ -1515,6 +1451,19 @@
             this.materialListView7.UseCompatibleStateImageBehavior = false;
             this.materialListView7.View = System.Windows.Forms.View.Details;
             // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.materialCard22);
+            this.tabPage8.Controls.Add(this.materialCard23);
+            this.tabPage8.Controls.Add(this.materialCard24);
+            this.tabPage8.ImageKey = "icons8-users-96.png";
+            this.tabPage8.Location = new System.Drawing.Point(4, 39);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(1553, 367);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Usuarios";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
             // materialCard22
             // 
             this.materialCard22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1669,6 +1618,19 @@
             this.materialListView8.TabIndex = 0;
             this.materialListView8.UseCompatibleStateImageBehavior = false;
             this.materialListView8.View = System.Windows.Forms.View.Details;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.materialCard25);
+            this.tabPage9.Controls.Add(this.materialCard26);
+            this.tabPage9.Controls.Add(this.materialCard27);
+            this.tabPage9.ImageKey = "icons8-group-objects-96.png";
+            this.tabPage9.Location = new System.Drawing.Point(4, 39);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Size = new System.Drawing.Size(1553, 367);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Clasificación";
+            this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // materialCard25
             // 
@@ -1825,6 +1787,19 @@
             this.materialListView9.UseCompatibleStateImageBehavior = false;
             this.materialListView9.View = System.Windows.Forms.View.Details;
             // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.materialCard28);
+            this.tabPage10.Controls.Add(this.materialCard29);
+            this.tabPage10.Controls.Add(this.materialCard30);
+            this.tabPage10.ImageKey = "icons8-driver-96.png";
+            this.tabPage10.Location = new System.Drawing.Point(4, 39);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(1553, 367);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "Choferes";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
             // materialCard28
             // 
             this.materialCard28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1980,6 +1955,19 @@
             this.materialListView10.UseCompatibleStateImageBehavior = false;
             this.materialListView10.View = System.Windows.Forms.View.Details;
             // 
+            // tabPage11
+            // 
+            this.tabPage11.Controls.Add(this.materialCard31);
+            this.tabPage11.Controls.Add(this.materialCard32);
+            this.tabPage11.Controls.Add(this.materialCard33);
+            this.tabPage11.ImageKey = "icons8-smart-card-100.png";
+            this.tabPage11.Location = new System.Drawing.Point(4, 39);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Size = new System.Drawing.Size(1553, 367);
+            this.tabPage11.TabIndex = 10;
+            this.tabPage11.Text = "Tarjetas";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            // 
             // materialCard31
             // 
             this.materialCard31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -2134,6 +2122,19 @@
             this.materialListView11.TabIndex = 0;
             this.materialListView11.UseCompatibleStateImageBehavior = false;
             this.materialListView11.View = System.Windows.Forms.View.Details;
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.Controls.Add(this.materialCard34);
+            this.tabPage12.Controls.Add(this.materialCard35);
+            this.tabPage12.Controls.Add(this.materialCard36);
+            this.tabPage12.ImageKey = "icons8-settings-96.png";
+            this.tabPage12.Location = new System.Drawing.Point(4, 39);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Size = new System.Drawing.Size(1553, 367);
+            this.tabPage12.TabIndex = 11;
+            this.tabPage12.Text = "Configuración";
+            this.tabPage12.UseVisualStyleBackColor = true;
             // 
             // materialCard34
             // 
@@ -2296,7 +2297,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1567, 477);
+            this.ClientSize = new System.Drawing.Size(1386, 477);
             this.Controls.Add(this.materialTabControl1);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;
@@ -2318,51 +2319,51 @@
             this.materialCard3.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
-            this.tabPage9.ResumeLayout(false);
-            this.tabPage9.PerformLayout();
-            this.tabPage10.ResumeLayout(false);
-            this.tabPage10.PerformLayout();
-            this.tabPage11.ResumeLayout(false);
-            this.tabPage11.PerformLayout();
-            this.tabPage12.ResumeLayout(false);
-            this.tabPage12.PerformLayout();
             this.materialCard7.ResumeLayout(false);
             this.materialCard8.ResumeLayout(false);
             this.materialCard9.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.materialCard10.ResumeLayout(false);
             this.materialCard11.ResumeLayout(false);
             this.materialCard12.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.materialCard13.ResumeLayout(false);
             this.materialCard14.ResumeLayout(false);
             this.materialCard15.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.materialCard16.ResumeLayout(false);
             this.materialCard17.ResumeLayout(false);
             this.materialCard18.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.materialCard19.ResumeLayout(false);
             this.materialCard20.ResumeLayout(false);
             this.materialCard21.ResumeLayout(false);
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
             this.materialCard22.ResumeLayout(false);
             this.materialCard23.ResumeLayout(false);
             this.materialCard24.ResumeLayout(false);
+            this.tabPage9.ResumeLayout(false);
+            this.tabPage9.PerformLayout();
             this.materialCard25.ResumeLayout(false);
             this.materialCard26.ResumeLayout(false);
             this.materialCard27.ResumeLayout(false);
+            this.tabPage10.ResumeLayout(false);
+            this.tabPage10.PerformLayout();
             this.materialCard28.ResumeLayout(false);
             this.materialCard29.ResumeLayout(false);
             this.materialCard30.ResumeLayout(false);
+            this.tabPage11.ResumeLayout(false);
+            this.tabPage11.PerformLayout();
             this.materialCard31.ResumeLayout(false);
             this.materialCard32.ResumeLayout(false);
             this.materialCard33.ResumeLayout(false);
+            this.tabPage12.ResumeLayout(false);
+            this.tabPage12.PerformLayout();
             this.materialCard34.ResumeLayout(false);
             this.materialCard35.ResumeLayout(false);
             this.materialCard36.ResumeLayout(false);
