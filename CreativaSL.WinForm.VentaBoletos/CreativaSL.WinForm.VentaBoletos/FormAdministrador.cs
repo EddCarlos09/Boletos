@@ -737,17 +737,7 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
         private void btnSalidas_Click(object sender, EventArgs e)
         {
-            try
-            {
-                this.tipoCatalogo = 5;
-                this.CargarGridPropiedades();
-                this.CargarGridCatalogos();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
-            }
+
         }
         private void btnCatTarifas_Click(object sender, EventArgs e)
         {
@@ -1133,17 +1123,26 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
         #endregion
         #region GridCatCamiones
-        private void CargarGridCamiones()
+        private void CargarGridCamiones(bool mostrarDatosBusqueda = false)
         {
             try
             {
                 Camion_Negocio cn = new Camion_Negocio();
                 Camion camiones = new Camion(Comun.Conexion);
-                camiones = cn.obtenerCamiones(camiones);
-                lstAuxDatosCamiones = camiones.datatable_camiones;
                 this.materialListView2.Items.Clear();
+                DataTable lista = new DataTable();
+                if (mostrarDatosBusqueda == true)
+                {
+                    lista = this.lstAuxBuscadorCamiones;
+                }
+                else
+                {
+                    camiones = cn.obtenerCamiones(camiones);
+                    lstAuxDatosCamiones = camiones.datatable_camiones;
+                    lista = camiones.datatable_camiones;
+                }
                 // Agregar filas al ListView
-                foreach (DataRow fila in lstAuxDatosCamiones.Rows)
+                foreach (DataRow fila in lista.Rows)
                 {
 
                     List<string> dataList = new List<string>();
@@ -2461,9 +2460,34 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 throw ex;
             }
-            
-            
-            
+    
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataRow[] rows;
+                lstAuxDatosCamiones = null;
+                if (!string.IsNullOrEmpty(materialTextBox21.Text))
+                {
+                    rows = this.lstAuxDatosCamiones.Select("descripcion like '%" + this.materialTextBox22.Text + "%' OR marca like '%" + this.materialTextBox22.Text + "%' OR submarca like '%" + this.materialTextBox22.Text + "%'");
+                    if (rows.Count() > 0)
+                    {
+                        lstAuxDatosCamiones = rows.CopyToDataTable();
+                        this.CargarGridCamiones(true);
+                    }
+                }
+                else
+                {
+                    this.CargarGridCamiones();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
     }
 }
