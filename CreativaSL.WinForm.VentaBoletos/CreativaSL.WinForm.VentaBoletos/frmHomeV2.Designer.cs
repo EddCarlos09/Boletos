@@ -30,665 +30,3371 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHomeV2));
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.btnEnviar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.materialMaskedTextBox3 = new MaterialSkin.Controls.MaterialMaskedTextBox();
-            this.materialMaskedTextBox2 = new MaterialSkin.Controls.MaterialMaskedTextBox();
-            this.materialMaskedTextBox1 = new MaterialSkin.Controls.MaterialMaskedTextBox();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.GridViewViajes = new System.Windows.Forms.DataGridView();
+            this.btn_CancelarBuscarViajes = new MaterialSkin.Controls.MaterialButton();
+            this.btn_BuscarViajes = new MaterialSkin.Controls.MaterialButton();
+            this.cmbComboDestino = new MaterialSkin.Controls.MaterialComboBox();
+            this.cmbComboOrigen = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.dtmFechaSalida = new System.Windows.Forms.DateTimePicker();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.Txt_NumAsientosDisponibles = new MaterialSkin.Controls.MaterialTextBox2();
+            this.Txt_NumAsientosApartados = new MaterialSkin.Controls.MaterialTextBox2();
+            this.Txt_Recorrido = new MaterialSkin.Controls.MaterialTextBox2();
+            this.Txt_FechaHoraSistema = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialCheckbox1 = new MaterialSkin.Controls.MaterialCheckbox();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.GridViewVentaBoletos = new System.Windows.Forms.DataGridView();
+            this.btn_Vender = new MaterialSkin.Controls.MaterialButton();
+            this.btn_Cancelar = new MaterialSkin.Controls.MaterialButton();
+            this.checkBoxVentaGrupal = new MaterialSkin.Controls.MaterialCheckbox();
+            this.Txt_TiempoVenta = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
+            this.panel_Camion = new CreativaSL.LibControls.WinForms.Panel_Creativa(this.components);
+            this.puerta13 = new System.Windows.Forms.PictureBox();
+            this.puerta12 = new System.Windows.Forms.PictureBox();
+            this.puerta11 = new System.Windows.Forms.PictureBox();
+            this.puerta10 = new System.Windows.Forms.PictureBox();
+            this.puerta9 = new System.Windows.Forms.PictureBox();
+            this.puerta8 = new System.Windows.Forms.PictureBox();
+            this.puerta7 = new System.Windows.Forms.PictureBox();
+            this.puerta6 = new System.Windows.Forms.PictureBox();
+            this.puerta5 = new System.Windows.Forms.PictureBox();
+            this.puerta4 = new System.Windows.Forms.PictureBox();
+            this.puerta3 = new System.Windows.Forms.PictureBox();
+            this.puerta2 = new System.Windows.Forms.PictureBox();
+            this.puerta1 = new System.Windows.Forms.PictureBox();
+            this.asiento63 = new System.Windows.Forms.PictureBox();
+            this.asiento28 = new System.Windows.Forms.PictureBox();
+            this.asiento33 = new System.Windows.Forms.PictureBox();
+            this.asiento38 = new System.Windows.Forms.PictureBox();
+            this.asiento43 = new System.Windows.Forms.PictureBox();
+            this.asiento48 = new System.Windows.Forms.PictureBox();
+            this.asiento53 = new System.Windows.Forms.PictureBox();
+            this.asiento58 = new System.Windows.Forms.PictureBox();
+            this.asiento23 = new System.Windows.Forms.PictureBox();
+            this.asiento18 = new System.Windows.Forms.PictureBox();
+            this.asiento13 = new System.Windows.Forms.PictureBox();
+            this.asiento8 = new System.Windows.Forms.PictureBox();
+            this.asiento3 = new System.Windows.Forms.PictureBox();
+            this.asiento65 = new System.Windows.Forms.PictureBox();
+            this.asiento64 = new System.Windows.Forms.PictureBox();
+            this.asiento62 = new System.Windows.Forms.PictureBox();
+            this.asiento61 = new System.Windows.Forms.PictureBox();
+            this.asiento60 = new System.Windows.Forms.PictureBox();
+            this.asiento59 = new System.Windows.Forms.PictureBox();
+            this.asiento57 = new System.Windows.Forms.PictureBox();
+            this.asiento56 = new System.Windows.Forms.PictureBox();
+            this.asiento55 = new System.Windows.Forms.PictureBox();
+            this.asiento54 = new System.Windows.Forms.PictureBox();
+            this.asiento52 = new System.Windows.Forms.PictureBox();
+            this.asiento51 = new System.Windows.Forms.PictureBox();
+            this.asiento50 = new System.Windows.Forms.PictureBox();
+            this.asiento49 = new System.Windows.Forms.PictureBox();
+            this.asiento47 = new System.Windows.Forms.PictureBox();
+            this.asiento46 = new System.Windows.Forms.PictureBox();
+            this.asiento45 = new System.Windows.Forms.PictureBox();
+            this.asiento44 = new System.Windows.Forms.PictureBox();
+            this.asiento42 = new System.Windows.Forms.PictureBox();
+            this.asiento41 = new System.Windows.Forms.PictureBox();
+            this.asiento40 = new System.Windows.Forms.PictureBox();
+            this.asiento39 = new System.Windows.Forms.PictureBox();
+            this.asiento37 = new System.Windows.Forms.PictureBox();
+            this.asiento36 = new System.Windows.Forms.PictureBox();
+            this.asiento35 = new System.Windows.Forms.PictureBox();
+            this.asiento34 = new System.Windows.Forms.PictureBox();
+            this.asiento32 = new System.Windows.Forms.PictureBox();
+            this.asiento31 = new System.Windows.Forms.PictureBox();
+            this.asiento30 = new System.Windows.Forms.PictureBox();
+            this.asiento29 = new System.Windows.Forms.PictureBox();
+            this.asiento27 = new System.Windows.Forms.PictureBox();
+            this.asiento26 = new System.Windows.Forms.PictureBox();
+            this.asiento25 = new System.Windows.Forms.PictureBox();
+            this.asiento24 = new System.Windows.Forms.PictureBox();
+            this.asiento22 = new System.Windows.Forms.PictureBox();
+            this.asiento21 = new System.Windows.Forms.PictureBox();
+            this.asiento20 = new System.Windows.Forms.PictureBox();
+            this.asiento19 = new System.Windows.Forms.PictureBox();
+            this.asiento17 = new System.Windows.Forms.PictureBox();
+            this.asiento16 = new System.Windows.Forms.PictureBox();
+            this.asiento15 = new System.Windows.Forms.PictureBox();
+            this.asiento14 = new System.Windows.Forms.PictureBox();
+            this.asiento12 = new System.Windows.Forms.PictureBox();
+            this.asiento11 = new System.Windows.Forms.PictureBox();
+            this.asiento10 = new System.Windows.Forms.PictureBox();
+            this.asiento9 = new System.Windows.Forms.PictureBox();
+            this.asiento7 = new System.Windows.Forms.PictureBox();
+            this.asiento6 = new System.Windows.Forms.PictureBox();
+            this.asiento5 = new System.Windows.Forms.PictureBox();
+            this.asiento4 = new System.Windows.Forms.PictureBox();
+            this.asiento2 = new System.Windows.Forms.PictureBox();
+            this.asiento1 = new System.Windows.Forms.PictureBox();
+            this.pasilloasiento64 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento63 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento62 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento61 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento65 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento59 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento58 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento57 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento56 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento60 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento55 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento54 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento53 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento52 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento51 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento50 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento49 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento48 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento47 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento46 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento45 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento44 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento43 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento42 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento41 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento40 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento39 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento38 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento37 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento36 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento35 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento34 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento33 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento32 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento31 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento30 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento29 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento28 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento27 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento26 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento25 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento24 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento23 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento22 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento21 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento20 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento19 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento18 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento17 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento16 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento15 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento14 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento13 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento12 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento11 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento10 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento9 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento8 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento7 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento6 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento5 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento4 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento3 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento2 = new System.Windows.Forms.TextBox();
+            this.pasilloasiento1 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox131 = new System.Windows.Forms.TextBox();
+            this.pasillo1 = new System.Windows.Forms.TextBox();
+            this.textBox133 = new System.Windows.Forms.TextBox();
+            this.textBox134 = new System.Windows.Forms.TextBox();
+            this.btnPlantaBaja = new MaterialSkin.Controls.MaterialButton();
+            this.btnPlantaAlta = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialTabControl1.SuspendLayout();
+            this.tabPage12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridViewViajes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridViewVentaBoletos)).BeginInit();
+            this.panel_Camion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento63)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento58)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento65)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento64)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento62)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento61)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento60)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento59)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento57)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento56)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento55)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento1)).BeginInit();
             this.SuspendLayout();
             // 
-            // imageList1
+            // materialTabControl1
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "icons8-checkout-96.png");
-            this.imageList1.Images.SetKeyName(1, "icons8-checkout-96.png");
-            this.imageList1.Images.SetKeyName(2, "icons8-book-96.png");
-            this.imageList1.Images.SetKeyName(3, "icons8-account-96.png");
-            this.imageList1.Images.SetKeyName(4, "icons8-box-96.png");
-            this.imageList1.Images.SetKeyName(5, "icons8-suitcase-96.png");
-            this.imageList1.Images.SetKeyName(6, "icons8-admin-96.png");
-            this.imageList1.Images.SetKeyName(7, "icons8-document-50.png");
-            this.imageList1.Images.SetKeyName(8, "icons8-settings-50.png");
-            this.imageList1.Images.SetKeyName(9, "icons8-administrator-male-96.png");
+            this.materialTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.materialTabControl1.Controls.Add(this.tabPage12);
+            this.materialTabControl1.Controls.Add(this.tabPage1);
+            this.materialTabControl1.Controls.Add(this.tabPage2);
+            this.materialTabControl1.Controls.Add(this.tabPage3);
+            this.materialTabControl1.Controls.Add(this.tabPage4);
+            this.materialTabControl1.Controls.Add(this.tabPage5);
+            this.materialTabControl1.Controls.Add(this.tabPage6);
+            this.materialTabControl1.Controls.Add(this.tabPage7);
+            this.materialTabControl1.Controls.Add(this.tabPage8);
+            this.materialTabControl1.Controls.Add(this.tabPage9);
+            this.materialTabControl1.Controls.Add(this.tabPage10);
+            this.materialTabControl1.Controls.Add(this.tabPage11);
+            this.materialTabControl1.Depth = 0;
+            this.materialTabControl1.ImageList = this.imageList1;
+            this.materialTabControl1.Location = new System.Drawing.Point(6, 79);
+            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabControl1.Multiline = true;
+            this.materialTabControl1.Name = "materialTabControl1";
+            this.materialTabControl1.SelectedIndex = 0;
+            this.materialTabControl1.Size = new System.Drawing.Size(1862, 999);
+            this.materialTabControl1.TabIndex = 19;
+            this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
             // 
-            // btnEnviar
+            // tabPage12
             // 
-            this.btnEnviar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnEnviar.Location = new System.Drawing.Point(19, 182);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(136, 60);
-            this.btnEnviar.TabIndex = 0;
-            this.btnEnviar.Text = "Ventas G";
-            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.tabPage12.Controls.Add(this.materialLabel10);
+            this.tabPage12.Controls.Add(this.btnPlantaAlta);
+            this.tabPage12.Controls.Add(this.btnPlantaBaja);
+            this.tabPage12.Controls.Add(this.panel_Camion);
+            this.tabPage12.Controls.Add(this.materialLabel8);
+            this.tabPage12.Controls.Add(this.Txt_TiempoVenta);
+            this.tabPage12.Controls.Add(this.checkBoxVentaGrupal);
+            this.tabPage12.Controls.Add(this.btn_Cancelar);
+            this.tabPage12.Controls.Add(this.btn_Vender);
+            this.tabPage12.Controls.Add(this.GridViewVentaBoletos);
+            this.tabPage12.Controls.Add(this.materialLabel7);
+            this.tabPage12.Controls.Add(this.Txt_FechaHoraSistema);
+            this.tabPage12.Controls.Add(this.Txt_Recorrido);
+            this.tabPage12.Controls.Add(this.Txt_NumAsientosApartados);
+            this.tabPage12.Controls.Add(this.Txt_NumAsientosDisponibles);
+            this.tabPage12.Controls.Add(this.materialLabel6);
+            this.tabPage12.Controls.Add(this.materialLabel5);
+            this.tabPage12.Controls.Add(this.materialLabel1);
+            this.tabPage12.Controls.Add(this.dtmFechaSalida);
+            this.tabPage12.Controls.Add(this.GridViewViajes);
+            this.tabPage12.Controls.Add(this.btn_CancelarBuscarViajes);
+            this.tabPage12.Controls.Add(this.btn_BuscarViajes);
+            this.tabPage12.Controls.Add(this.cmbComboDestino);
+            this.tabPage12.Controls.Add(this.cmbComboOrigen);
+            this.tabPage12.Controls.Add(this.materialLabel4);
+            this.tabPage12.Controls.Add(this.materialLabel3);
+            this.tabPage12.Controls.Add(this.materialLabel2);
+            this.tabPage12.ImageKey = "icons8-home-144.png";
+            this.tabPage12.Location = new System.Drawing.Point(4, 25);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Size = new System.Drawing.Size(1854, 970);
+            this.tabPage12.TabIndex = 12;
+            this.tabPage12.Text = "Home";
+            this.tabPage12.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // GridViewViajes
             // 
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.Location = new System.Drawing.Point(19, 98);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 60);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Ventas";
-            this.button1.UseVisualStyleBackColor = true;
+            this.GridViewViajes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridViewViajes.Location = new System.Drawing.Point(683, 22);
+            this.GridViewViajes.Name = "GridViewViajes";
+            this.GridViewViajes.RowHeadersWidth = 51;
+            this.GridViewViajes.RowTemplate.Height = 24;
+            this.GridViewViajes.Size = new System.Drawing.Size(739, 396);
+            this.GridViewViajes.TabIndex = 31;
             // 
-            // button2
+            // btn_CancelarBuscarViajes
             // 
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.Location = new System.Drawing.Point(19, 597);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 60);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Admin";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_CancelarBuscarViajes.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_CancelarBuscarViajes.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CancelarBuscarViajes.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_CancelarBuscarViajes.Depth = 0;
+            this.btn_CancelarBuscarViajes.HighEmphasis = true;
+            this.btn_CancelarBuscarViajes.Icon = null;
+            this.btn_CancelarBuscarViajes.Location = new System.Drawing.Point(530, 127);
+            this.btn_CancelarBuscarViajes.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_CancelarBuscarViajes.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_CancelarBuscarViajes.Name = "btn_CancelarBuscarViajes";
+            this.btn_CancelarBuscarViajes.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_CancelarBuscarViajes.Size = new System.Drawing.Size(96, 36);
+            this.btn_CancelarBuscarViajes.TabIndex = 30;
+            this.btn_CancelarBuscarViajes.Text = "Cancelar";
+            this.btn_CancelarBuscarViajes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_CancelarBuscarViajes.UseAccentColor = false;
+            this.btn_CancelarBuscarViajes.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btn_BuscarViajes
             // 
-            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button3.Location = new System.Drawing.Point(19, 514);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(136, 60);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Maletas";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_BuscarViajes.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_BuscarViajes.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_BuscarViajes.Depth = 0;
+            this.btn_BuscarViajes.HighEmphasis = true;
+            this.btn_BuscarViajes.Icon = null;
+            this.btn_BuscarViajes.Location = new System.Drawing.Point(549, 63);
+            this.btn_BuscarViajes.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_BuscarViajes.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_BuscarViajes.Name = "btn_BuscarViajes";
+            this.btn_BuscarViajes.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_BuscarViajes.Size = new System.Drawing.Size(77, 36);
+            this.btn_BuscarViajes.TabIndex = 29;
+            this.btn_BuscarViajes.Text = "Buscar";
+            this.btn_BuscarViajes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_BuscarViajes.UseAccentColor = false;
+            this.btn_BuscarViajes.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // cmbComboDestino
             // 
-            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button4.Location = new System.Drawing.Point(19, 435);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(136, 60);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Caja";
-            this.button4.UseVisualStyleBackColor = true;
+            this.cmbComboDestino.AutoResize = false;
+            this.cmbComboDestino.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbComboDestino.Depth = 0;
+            this.cmbComboDestino.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbComboDestino.DropDownHeight = 174;
+            this.cmbComboDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbComboDestino.DropDownWidth = 121;
+            this.cmbComboDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cmbComboDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cmbComboDestino.FormattingEnabled = true;
+            this.cmbComboDestino.IntegralHeight = false;
+            this.cmbComboDestino.ItemHeight = 43;
+            this.cmbComboDestino.Location = new System.Drawing.Point(189, 441);
+            this.cmbComboDestino.MaxDropDownItems = 4;
+            this.cmbComboDestino.MouseState = MaterialSkin.MouseState.OUT;
+            this.cmbComboDestino.Name = "cmbComboDestino";
+            this.cmbComboDestino.Size = new System.Drawing.Size(214, 49);
+            this.cmbComboDestino.StartIndex = 0;
+            this.cmbComboDestino.TabIndex = 28;
             // 
-            // button5
+            // cmbComboOrigen
             // 
-            this.button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button5.Location = new System.Drawing.Point(19, 684);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(136, 60);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Reportes";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button6.Location = new System.Drawing.Point(19, 347);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(136, 60);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Clientes";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button7.Location = new System.Drawing.Point(19, 269);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(136, 60);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "Apartados";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button8.Location = new System.Drawing.Point(19, 933);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(136, 60);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "Salir";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button9.Location = new System.Drawing.Point(19, 855);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(136, 60);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Asistencia";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button10.Location = new System.Drawing.Point(19, 769);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(136, 60);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "Config";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.materialMaskedTextBox3);
-            this.groupBox1.Controls.Add(this.materialMaskedTextBox2);
-            this.groupBox1.Controls.Add(this.materialMaskedTextBox1);
-            this.groupBox1.Controls.Add(this.materialLabel6);
-            this.groupBox1.Controls.Add(this.materialLabel5);
-            this.groupBox1.Controls.Add(this.materialLabel4);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.button12);
-            this.groupBox1.Controls.Add(this.button11);
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.materialLabel3);
-            this.groupBox1.Controls.Add(this.materialLabel2);
-            this.groupBox1.Controls.Add(this.materialLabel1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Teal;
-            this.groupBox1.Location = new System.Drawing.Point(193, 83);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1184, 499);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Salidas";
-            // 
-            // materialMaskedTextBox3
-            // 
-            this.materialMaskedTextBox3.AllowPromptAsInput = true;
-            this.materialMaskedTextBox3.AnimateReadOnly = false;
-            this.materialMaskedTextBox3.AsciiOnly = false;
-            this.materialMaskedTextBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMaskedTextBox3.BeepOnError = false;
-            this.materialMaskedTextBox3.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox3.Depth = 0;
-            this.materialMaskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialMaskedTextBox3.HidePromptOnLeave = false;
-            this.materialMaskedTextBox3.HideSelection = true;
-            this.materialMaskedTextBox3.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.materialMaskedTextBox3.LeadingIcon = null;
-            this.materialMaskedTextBox3.Location = new System.Drawing.Point(985, 396);
-            this.materialMaskedTextBox3.Mask = "";
-            this.materialMaskedTextBox3.MaxLength = 32767;
-            this.materialMaskedTextBox3.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMaskedTextBox3.Name = "materialMaskedTextBox3";
-            this.materialMaskedTextBox3.PasswordChar = '\0';
-            this.materialMaskedTextBox3.PrefixSuffixText = null;
-            this.materialMaskedTextBox3.PromptChar = '_';
-            this.materialMaskedTextBox3.ReadOnly = false;
-            this.materialMaskedTextBox3.RejectInputOnFirstFailure = false;
-            this.materialMaskedTextBox3.ResetOnPrompt = true;
-            this.materialMaskedTextBox3.ResetOnSpace = true;
-            this.materialMaskedTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialMaskedTextBox3.SelectedText = "";
-            this.materialMaskedTextBox3.SelectionLength = 0;
-            this.materialMaskedTextBox3.SelectionStart = 0;
-            this.materialMaskedTextBox3.ShortcutsEnabled = true;
-            this.materialMaskedTextBox3.Size = new System.Drawing.Size(145, 48);
-            this.materialMaskedTextBox3.SkipLiterals = true;
-            this.materialMaskedTextBox3.TabIndex = 17;
-            this.materialMaskedTextBox3.TabStop = false;
-            this.materialMaskedTextBox3.Text = "materialMaskedTextBox3";
-            this.materialMaskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMaskedTextBox3.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox3.TrailingIcon = null;
-            this.materialMaskedTextBox3.UseSystemPasswordChar = false;
-            this.materialMaskedTextBox3.ValidatingType = null;
-            // 
-            // materialMaskedTextBox2
-            // 
-            this.materialMaskedTextBox2.AllowPromptAsInput = true;
-            this.materialMaskedTextBox2.AnimateReadOnly = false;
-            this.materialMaskedTextBox2.AsciiOnly = false;
-            this.materialMaskedTextBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMaskedTextBox2.BeepOnError = false;
-            this.materialMaskedTextBox2.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox2.Depth = 0;
-            this.materialMaskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialMaskedTextBox2.HidePromptOnLeave = false;
-            this.materialMaskedTextBox2.HideSelection = true;
-            this.materialMaskedTextBox2.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.materialMaskedTextBox2.LeadingIcon = null;
-            this.materialMaskedTextBox2.Location = new System.Drawing.Point(663, 396);
-            this.materialMaskedTextBox2.Mask = "";
-            this.materialMaskedTextBox2.MaxLength = 32767;
-            this.materialMaskedTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMaskedTextBox2.Name = "materialMaskedTextBox2";
-            this.materialMaskedTextBox2.PasswordChar = '\0';
-            this.materialMaskedTextBox2.PrefixSuffixText = null;
-            this.materialMaskedTextBox2.PromptChar = '_';
-            this.materialMaskedTextBox2.ReadOnly = false;
-            this.materialMaskedTextBox2.RejectInputOnFirstFailure = false;
-            this.materialMaskedTextBox2.ResetOnPrompt = true;
-            this.materialMaskedTextBox2.ResetOnSpace = true;
-            this.materialMaskedTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialMaskedTextBox2.SelectedText = "";
-            this.materialMaskedTextBox2.SelectionLength = 0;
-            this.materialMaskedTextBox2.SelectionStart = 0;
-            this.materialMaskedTextBox2.ShortcutsEnabled = true;
-            this.materialMaskedTextBox2.Size = new System.Drawing.Size(145, 48);
-            this.materialMaskedTextBox2.SkipLiterals = true;
-            this.materialMaskedTextBox2.TabIndex = 16;
-            this.materialMaskedTextBox2.TabStop = false;
-            this.materialMaskedTextBox2.Text = "materialMaskedTextBox2";
-            this.materialMaskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMaskedTextBox2.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox2.TrailingIcon = null;
-            this.materialMaskedTextBox2.UseSystemPasswordChar = false;
-            this.materialMaskedTextBox2.ValidatingType = null;
-            // 
-            // materialMaskedTextBox1
-            // 
-            this.materialMaskedTextBox1.AllowPromptAsInput = true;
-            this.materialMaskedTextBox1.AnimateReadOnly = false;
-            this.materialMaskedTextBox1.AsciiOnly = false;
-            this.materialMaskedTextBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMaskedTextBox1.BeepOnError = false;
-            this.materialMaskedTextBox1.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox1.Depth = 0;
-            this.materialMaskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialMaskedTextBox1.HidePromptOnLeave = false;
-            this.materialMaskedTextBox1.HideSelection = true;
-            this.materialMaskedTextBox1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.materialMaskedTextBox1.LeadingIcon = null;
-            this.materialMaskedTextBox1.Location = new System.Drawing.Point(298, 396);
-            this.materialMaskedTextBox1.Mask = "";
-            this.materialMaskedTextBox1.MaxLength = 32767;
-            this.materialMaskedTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMaskedTextBox1.Name = "materialMaskedTextBox1";
-            this.materialMaskedTextBox1.PasswordChar = '\0';
-            this.materialMaskedTextBox1.PrefixSuffixText = null;
-            this.materialMaskedTextBox1.PromptChar = '_';
-            this.materialMaskedTextBox1.ReadOnly = false;
-            this.materialMaskedTextBox1.RejectInputOnFirstFailure = false;
-            this.materialMaskedTextBox1.ResetOnPrompt = true;
-            this.materialMaskedTextBox1.ResetOnSpace = true;
-            this.materialMaskedTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialMaskedTextBox1.SelectedText = "";
-            this.materialMaskedTextBox1.SelectionLength = 0;
-            this.materialMaskedTextBox1.SelectionStart = 0;
-            this.materialMaskedTextBox1.ShortcutsEnabled = true;
-            this.materialMaskedTextBox1.Size = new System.Drawing.Size(145, 48);
-            this.materialMaskedTextBox1.SkipLiterals = true;
-            this.materialMaskedTextBox1.TabIndex = 15;
-            this.materialMaskedTextBox1.TabStop = false;
-            this.materialMaskedTextBox1.Text = "materialMaskedTextBox1";
-            this.materialMaskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMaskedTextBox1.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox1.TrailingIcon = null;
-            this.materialMaskedTextBox1.UseSystemPasswordChar = false;
-            this.materialMaskedTextBox1.ValidatingType = null;
-            // 
-            // materialLabel6
-            // 
-            this.materialLabel6.AutoSize = true;
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.Location = new System.Drawing.Point(841, 409);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(86, 19);
-            this.materialLabel6.TabIndex = 14;
-            this.materialLabel6.Text = "# Recorrido:";
-            // 
-            // materialLabel5
-            // 
-            this.materialLabel5.AutoSize = true;
-            this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel5.Location = new System.Drawing.Point(505, 409);
-            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(92, 19);
-            this.materialLabel5.TabIndex = 13;
-            this.materialLabel5.Text = "# Apartados:";
+            this.cmbComboOrigen.AutoResize = false;
+            this.cmbComboOrigen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbComboOrigen.Depth = 0;
+            this.cmbComboOrigen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbComboOrigen.DropDownHeight = 174;
+            this.cmbComboOrigen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbComboOrigen.DropDownWidth = 121;
+            this.cmbComboOrigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cmbComboOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cmbComboOrigen.FormattingEnabled = true;
+            this.cmbComboOrigen.IntegralHeight = false;
+            this.cmbComboOrigen.ItemHeight = 43;
+            this.cmbComboOrigen.Location = new System.Drawing.Point(189, 272);
+            this.cmbComboOrigen.MaxDropDownItems = 4;
+            this.cmbComboOrigen.MouseState = MaterialSkin.MouseState.OUT;
+            this.cmbComboOrigen.Name = "cmbComboOrigen";
+            this.cmbComboOrigen.Size = new System.Drawing.Size(214, 49);
+            this.cmbComboOrigen.StartIndex = 0;
+            this.cmbComboOrigen.TabIndex = 27;
             // 
             // materialLabel4
             // 
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(203, 418);
+            this.materialLabel4.Location = new System.Drawing.Point(267, 378);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(49, 19);
-            this.materialLabel4.TabIndex = 12;
-            this.materialLabel4.Text = "# disp:";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(80, 280);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(151, 44);
-            this.comboBox3.TabIndex = 11;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(80, 176);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(151, 44);
-            this.comboBox2.TabIndex = 10;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(80, 82);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 44);
-            this.comboBox1.TabIndex = 9;
-            // 
-            // button12
-            // 
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button12.Location = new System.Drawing.Point(178, 340);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(81, 38);
-            this.button12.TabIndex = 8;
-            this.button12.Text = "Eliminar";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button11.Location = new System.Drawing.Point(69, 340);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(81, 38);
-            this.button11.TabIndex = 7;
-            this.button11.Text = "Buscar";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(391, 44);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(720, 324);
-            this.dataGridView1.TabIndex = 6;
+            this.materialLabel4.Size = new System.Drawing.Size(47, 19);
+            this.materialLabel4.TabIndex = 26;
+            this.materialLabel4.Text = "Origen";
             // 
             // materialLabel3
             // 
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(127, 242);
+            this.materialLabel3.Location = new System.Drawing.Point(267, 200);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(55, 19);
-            this.materialLabel3.TabIndex = 2;
-            this.materialLabel3.Text = "Destino";
+            this.materialLabel3.Size = new System.Drawing.Size(47, 19);
+            this.materialLabel3.TabIndex = 25;
+            this.materialLabel3.Text = "Origen";
             // 
             // materialLabel2
             // 
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(127, 142);
+            this.materialLabel2.Location = new System.Drawing.Point(231, 29);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(47, 19);
-            this.materialLabel2.TabIndex = 1;
-            this.materialLabel2.Text = "Origen";
+            this.materialLabel2.Size = new System.Drawing.Size(114, 19);
+            this.materialLabel2.TabIndex = 24;
+            this.materialLabel2.Text = "Fecha de Salida";
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.ImageKey = "ImagenVenta";
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1500, 970);
+            this.tabPage1.TabIndex = 10;
+            this.tabPage1.Text = "Ventas";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.ImageKey = "ImagenVenta2";
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1500, 970);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Ventas G";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.ImageKey = "ApartadosImagen";
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1500, 970);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Apartados";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.ImageKey = "ClientesImagen";
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1500, 970);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Clientes";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.ImageKey = "CajaImagen";
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1500, 970);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Caja";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.ImageKey = "MaletaImagen";
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(1500, 970);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Maleta";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.ImageKey = "AdminImagen";
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(1500, 970);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Admin";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.ImageKey = "ReportesImagen";
+            this.tabPage8.Location = new System.Drawing.Point(4, 25);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(1500, 970);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Reportes";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.ImageKey = "ConfigImagen";
+            this.tabPage9.Location = new System.Drawing.Point(4, 25);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Size = new System.Drawing.Size(1500, 970);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Config";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.ImageKey = "AsistenciaImagen";
+            this.tabPage10.Location = new System.Drawing.Point(4, 25);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(1500, 970);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "Asistencia";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.Location = new System.Drawing.Point(4, 25);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Size = new System.Drawing.Size(1500, 970);
+            this.tabPage11.TabIndex = 11;
+            this.tabPage11.Text = "Salir";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "ImagenVenta");
+            this.imageList1.Images.SetKeyName(1, "ImagenVenta2");
+            this.imageList1.Images.SetKeyName(2, "ApartadosImagen");
+            this.imageList1.Images.SetKeyName(3, "ClientesImagen");
+            this.imageList1.Images.SetKeyName(4, "CajaImagen");
+            this.imageList1.Images.SetKeyName(5, "MaletaImagen");
+            this.imageList1.Images.SetKeyName(6, "AdminImagen");
+            this.imageList1.Images.SetKeyName(7, "ReportesImagen");
+            this.imageList1.Images.SetKeyName(8, "ConfigImagen");
+            this.imageList1.Images.SetKeyName(9, "AsistenciaImagen");
+            this.imageList1.Images.SetKeyName(10, "icons8-home-144.png");
+            // 
+            // dtmFechaSalida
+            // 
+            this.dtmFechaSalida.Checked = false;
+            this.dtmFechaSalida.Location = new System.Drawing.Point(164, 94);
+            this.dtmFechaSalida.Name = "dtmFechaSalida";
+            this.dtmFechaSalida.Size = new System.Drawing.Size(267, 22);
+            this.dtmFechaSalida.TabIndex = 32;
+            this.dtmFechaSalida.ValueChanged += new System.EventHandler(this.dtmFechaSalida_ValueChanged);
             // 
             // materialLabel1
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.ForeColor = System.Drawing.Color.MediumTurquoise;
-            this.materialLabel1.Location = new System.Drawing.Point(95, 44);
+            this.materialLabel1.Location = new System.Drawing.Point(68, 629);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(114, 19);
-            this.materialLabel1.TabIndex = 0;
-            this.materialLabel1.Text = "Fecha de Salida";
+            this.materialLabel1.Size = new System.Drawing.Size(49, 19);
+            this.materialLabel1.TabIndex = 33;
+            this.materialLabel1.Text = "# disp:";
             // 
-            // button13
+            // materialLabel5
             // 
-            this.button13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button13.Location = new System.Drawing.Point(1464, 282);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(0, 0);
-            this.button13.TabIndex = 12;
-            this.button13.Text = "Apartados";
-            this.button13.UseVisualStyleBackColor = true;
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.Location = new System.Drawing.Point(252, 631);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(84, 19);
+            this.materialLabel5.TabIndex = 34;
+            this.materialLabel5.Text = "# Apartado:";
             // 
-            // button14
+            // materialLabel6
             // 
-            this.button14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button14.Location = new System.Drawing.Point(1774, 272);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(0, 0);
-            this.button14.TabIndex = 13;
-            this.button14.Text = "Apartados";
-            this.button14.UseVisualStyleBackColor = true;
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel6.Location = new System.Drawing.Point(446, 631);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(82, 19);
+            this.materialLabel6.TabIndex = 35;
+            this.materialLabel6.Text = "# Recorrido";
             // 
-            // button15
+            // Txt_NumAsientosDisponibles
             // 
-            this.button15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button15.Location = new System.Drawing.Point(1606, 282);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(0, 0);
-            this.button15.TabIndex = 14;
-            this.button15.Text = "Apartados";
-            this.button15.UseVisualStyleBackColor = true;
+            this.Txt_NumAsientosDisponibles.AnimateReadOnly = false;
+            this.Txt_NumAsientosDisponibles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Txt_NumAsientosDisponibles.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Txt_NumAsientosDisponibles.Depth = 0;
+            this.Txt_NumAsientosDisponibles.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Txt_NumAsientosDisponibles.HideSelection = true;
+            this.Txt_NumAsientosDisponibles.LeadingIcon = null;
+            this.Txt_NumAsientosDisponibles.Location = new System.Drawing.Point(39, 683);
+            this.Txt_NumAsientosDisponibles.MaxLength = 32767;
+            this.Txt_NumAsientosDisponibles.MouseState = MaterialSkin.MouseState.OUT;
+            this.Txt_NumAsientosDisponibles.Name = "Txt_NumAsientosDisponibles";
+            this.Txt_NumAsientosDisponibles.PasswordChar = '\0';
+            this.Txt_NumAsientosDisponibles.PrefixSuffixText = null;
+            this.Txt_NumAsientosDisponibles.ReadOnly = false;
+            this.Txt_NumAsientosDisponibles.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Txt_NumAsientosDisponibles.SelectedText = "";
+            this.Txt_NumAsientosDisponibles.SelectionLength = 0;
+            this.Txt_NumAsientosDisponibles.SelectionStart = 0;
+            this.Txt_NumAsientosDisponibles.ShortcutsEnabled = true;
+            this.Txt_NumAsientosDisponibles.Size = new System.Drawing.Size(131, 48);
+            this.Txt_NumAsientosDisponibles.TabIndex = 36;
+            this.Txt_NumAsientosDisponibles.TabStop = false;
+            this.Txt_NumAsientosDisponibles.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Txt_NumAsientosDisponibles.TrailingIcon = null;
+            this.Txt_NumAsientosDisponibles.UseSystemPasswordChar = false;
             // 
-            // button16
+            // Txt_NumAsientosApartados
             // 
-            this.button16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button16.Location = new System.Drawing.Point(1747, 376);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(0, 0);
-            this.button16.TabIndex = 15;
-            this.button16.Text = "Apartados";
-            this.button16.UseVisualStyleBackColor = true;
+            this.Txt_NumAsientosApartados.AnimateReadOnly = false;
+            this.Txt_NumAsientosApartados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Txt_NumAsientosApartados.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Txt_NumAsientosApartados.Depth = 0;
+            this.Txt_NumAsientosApartados.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Txt_NumAsientosApartados.HideSelection = true;
+            this.Txt_NumAsientosApartados.LeadingIcon = null;
+            this.Txt_NumAsientosApartados.Location = new System.Drawing.Point(215, 683);
+            this.Txt_NumAsientosApartados.MaxLength = 32767;
+            this.Txt_NumAsientosApartados.MouseState = MaterialSkin.MouseState.OUT;
+            this.Txt_NumAsientosApartados.Name = "Txt_NumAsientosApartados";
+            this.Txt_NumAsientosApartados.PasswordChar = '\0';
+            this.Txt_NumAsientosApartados.PrefixSuffixText = null;
+            this.Txt_NumAsientosApartados.ReadOnly = false;
+            this.Txt_NumAsientosApartados.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Txt_NumAsientosApartados.SelectedText = "";
+            this.Txt_NumAsientosApartados.SelectionLength = 0;
+            this.Txt_NumAsientosApartados.SelectionStart = 0;
+            this.Txt_NumAsientosApartados.ShortcutsEnabled = true;
+            this.Txt_NumAsientosApartados.Size = new System.Drawing.Size(142, 48);
+            this.Txt_NumAsientosApartados.TabIndex = 37;
+            this.Txt_NumAsientosApartados.TabStop = false;
+            this.Txt_NumAsientosApartados.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Txt_NumAsientosApartados.TrailingIcon = null;
+            this.Txt_NumAsientosApartados.UseSystemPasswordChar = false;
             // 
-            // groupBox2
+            // Txt_Recorrido
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.materialLabel7);
-            this.groupBox2.Controls.Add(this.materialCheckbox1);
-            this.groupBox2.Controls.Add(this.button18);
-            this.groupBox2.Controls.Add(this.button17);
-            this.groupBox2.Controls.Add(this.dataGridView2);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.Teal;
-            this.groupBox2.Location = new System.Drawing.Point(193, 601);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1184, 390);
-            this.groupBox2.TabIndex = 16;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Boletos";
+            this.Txt_Recorrido.AnimateReadOnly = false;
+            this.Txt_Recorrido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Txt_Recorrido.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Txt_Recorrido.Depth = 0;
+            this.Txt_Recorrido.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Txt_Recorrido.HideSelection = true;
+            this.Txt_Recorrido.LeadingIcon = null;
+            this.Txt_Recorrido.Location = new System.Drawing.Point(416, 683);
+            this.Txt_Recorrido.MaxLength = 32767;
+            this.Txt_Recorrido.MouseState = MaterialSkin.MouseState.OUT;
+            this.Txt_Recorrido.Name = "Txt_Recorrido";
+            this.Txt_Recorrido.PasswordChar = '\0';
+            this.Txt_Recorrido.PrefixSuffixText = null;
+            this.Txt_Recorrido.ReadOnly = false;
+            this.Txt_Recorrido.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Txt_Recorrido.SelectedText = "";
+            this.Txt_Recorrido.SelectionLength = 0;
+            this.Txt_Recorrido.SelectionStart = 0;
+            this.Txt_Recorrido.ShortcutsEnabled = true;
+            this.Txt_Recorrido.Size = new System.Drawing.Size(142, 48);
+            this.Txt_Recorrido.TabIndex = 38;
+            this.Txt_Recorrido.TabStop = false;
+            this.Txt_Recorrido.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Txt_Recorrido.TrailingIcon = null;
+            this.Txt_Recorrido.UseSystemPasswordChar = false;
             // 
-            // textBox1
+            // Txt_FechaHoraSistema
             // 
-            this.textBox1.Location = new System.Drawing.Point(778, 320);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(95, 41);
-            this.textBox1.TabIndex = 13;
+            this.Txt_FechaHoraSistema.AnimateReadOnly = false;
+            this.Txt_FechaHoraSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Txt_FechaHoraSistema.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Txt_FechaHoraSistema.Depth = 0;
+            this.Txt_FechaHoraSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Txt_FechaHoraSistema.HideSelection = true;
+            this.Txt_FechaHoraSistema.LeadingIcon = null;
+            this.Txt_FechaHoraSistema.Location = new System.Drawing.Point(215, 813);
+            this.Txt_FechaHoraSistema.MaxLength = 32767;
+            this.Txt_FechaHoraSistema.MouseState = MaterialSkin.MouseState.OUT;
+            this.Txt_FechaHoraSistema.Name = "Txt_FechaHoraSistema";
+            this.Txt_FechaHoraSistema.PasswordChar = '\0';
+            this.Txt_FechaHoraSistema.PrefixSuffixText = null;
+            this.Txt_FechaHoraSistema.ReadOnly = false;
+            this.Txt_FechaHoraSistema.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Txt_FechaHoraSistema.SelectedText = "";
+            this.Txt_FechaHoraSistema.SelectionLength = 0;
+            this.Txt_FechaHoraSistema.SelectionStart = 0;
+            this.Txt_FechaHoraSistema.ShortcutsEnabled = true;
+            this.Txt_FechaHoraSistema.Size = new System.Drawing.Size(142, 48);
+            this.Txt_FechaHoraSistema.TabIndex = 39;
+            this.Txt_FechaHoraSistema.TabStop = false;
+            this.Txt_FechaHoraSistema.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Txt_FechaHoraSistema.TrailingIcon = null;
+            this.Txt_FechaHoraSistema.UseSystemPasswordChar = false;
             // 
             // materialLabel7
             // 
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.Location = new System.Drawing.Point(604, 332);
+            this.materialLabel7.Location = new System.Drawing.Point(212, 776);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(125, 19);
-            this.materialLabel7.TabIndex = 12;
-            this.materialLabel7.Text = "Tiempo de Venta:";
+            this.materialLabel7.Size = new System.Drawing.Size(152, 19);
+            this.materialLabel7.TabIndex = 40;
+            this.materialLabel7.Text = "Fecha - Hora Sistema";
             // 
-            // materialCheckbox1
+            // GridViewVentaBoletos
             // 
-            this.materialCheckbox1.AutoSize = true;
-            this.materialCheckbox1.Depth = 0;
-            this.materialCheckbox1.Location = new System.Drawing.Point(197, 321);
-            this.materialCheckbox1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckbox1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckbox1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckbox1.Name = "materialCheckbox1";
-            this.materialCheckbox1.ReadOnly = false;
-            this.materialCheckbox1.Ripple = true;
-            this.materialCheckbox1.Size = new System.Drawing.Size(127, 37);
-            this.materialCheckbox1.TabIndex = 11;
-            this.materialCheckbox1.Text = "Venta Grupal";
-            this.materialCheckbox1.UseVisualStyleBackColor = true;
+            this.GridViewVentaBoletos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridViewVentaBoletos.Location = new System.Drawing.Point(683, 441);
+            this.GridViewVentaBoletos.Name = "GridViewVentaBoletos";
+            this.GridViewVentaBoletos.RowHeadersWidth = 51;
+            this.GridViewVentaBoletos.RowTemplate.Height = 24;
+            this.GridViewVentaBoletos.Size = new System.Drawing.Size(739, 396);
+            this.GridViewVentaBoletos.TabIndex = 41;
             // 
-            // button18
+            // btn_Vender
             // 
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button18.Location = new System.Drawing.Point(475, 320);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(81, 38);
-            this.button18.TabIndex = 10;
-            this.button18.Text = "Cancelar";
-            this.button18.UseVisualStyleBackColor = true;
+            this.btn_Vender.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Vender.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_Vender.Depth = 0;
+            this.btn_Vender.HighEmphasis = true;
+            this.btn_Vender.Icon = null;
+            this.btn_Vender.Location = new System.Drawing.Point(720, 883);
+            this.btn_Vender.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_Vender.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_Vender.Name = "btn_Vender";
+            this.btn_Vender.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_Vender.Size = new System.Drawing.Size(77, 36);
+            this.btn_Vender.TabIndex = 42;
+            this.btn_Vender.Text = "Vender";
+            this.btn_Vender.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_Vender.UseAccentColor = false;
+            this.btn_Vender.UseVisualStyleBackColor = true;
             // 
-            // button17
+            // btn_Cancelar
             // 
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button17.Location = new System.Drawing.Point(382, 320);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(81, 38);
-            this.button17.TabIndex = 9;
-            this.button17.Text = "Vender";
-            this.button17.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Cancelar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_Cancelar.Depth = 0;
+            this.btn_Cancelar.HighEmphasis = true;
+            this.btn_Cancelar.Icon = null;
+            this.btn_Cancelar.Location = new System.Drawing.Point(849, 883);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_Cancelar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_Cancelar.Size = new System.Drawing.Size(96, 36);
+            this.btn_Cancelar.TabIndex = 43;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_Cancelar.UseAccentColor = false;
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // checkBoxVentaGrupal
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(52, 52);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1099, 262);
-            this.dataGridView2.TabIndex = 0;
+            this.checkBoxVentaGrupal.AutoSize = true;
+            this.checkBoxVentaGrupal.Depth = 0;
+            this.checkBoxVentaGrupal.Location = new System.Drawing.Point(510, 882);
+            this.checkBoxVentaGrupal.Margin = new System.Windows.Forms.Padding(0);
+            this.checkBoxVentaGrupal.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.checkBoxVentaGrupal.MouseState = MaterialSkin.MouseState.HOVER;
+            this.checkBoxVentaGrupal.Name = "checkBoxVentaGrupal";
+            this.checkBoxVentaGrupal.ReadOnly = false;
+            this.checkBoxVentaGrupal.Ripple = true;
+            this.checkBoxVentaGrupal.Size = new System.Drawing.Size(127, 37);
+            this.checkBoxVentaGrupal.TabIndex = 44;
+            this.checkBoxVentaGrupal.Text = "Venta Grupal";
+            this.checkBoxVentaGrupal.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // Txt_TiempoVenta
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Location = new System.Drawing.Point(1420, 117);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(455, 874);
-            this.panel1.TabIndex = 17;
+            this.Txt_TiempoVenta.AnimateReadOnly = false;
+            this.Txt_TiempoVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Txt_TiempoVenta.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Txt_TiempoVenta.Depth = 0;
+            this.Txt_TiempoVenta.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Txt_TiempoVenta.HideSelection = true;
+            this.Txt_TiempoVenta.LeadingIcon = null;
+            this.Txt_TiempoVenta.Location = new System.Drawing.Point(1206, 871);
+            this.Txt_TiempoVenta.MaxLength = 32767;
+            this.Txt_TiempoVenta.MouseState = MaterialSkin.MouseState.OUT;
+            this.Txt_TiempoVenta.Name = "Txt_TiempoVenta";
+            this.Txt_TiempoVenta.PasswordChar = '\0';
+            this.Txt_TiempoVenta.PrefixSuffixText = null;
+            this.Txt_TiempoVenta.ReadOnly = false;
+            this.Txt_TiempoVenta.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Txt_TiempoVenta.SelectedText = "";
+            this.Txt_TiempoVenta.SelectionLength = 0;
+            this.Txt_TiempoVenta.SelectionStart = 0;
+            this.Txt_TiempoVenta.ShortcutsEnabled = true;
+            this.Txt_TiempoVenta.Size = new System.Drawing.Size(163, 48);
+            this.Txt_TiempoVenta.TabIndex = 45;
+            this.Txt_TiempoVenta.TabStop = false;
+            this.Txt_TiempoVenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Txt_TiempoVenta.TrailingIcon = null;
+            this.Txt_TiempoVenta.UseSystemPasswordChar = false;
+            // 
+            // materialLabel8
+            // 
+            this.materialLabel8.AutoSize = true;
+            this.materialLabel8.Depth = 0;
+            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel8.Location = new System.Drawing.Point(1025, 893);
+            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel8.Name = "materialLabel8";
+            this.materialLabel8.Size = new System.Drawing.Size(100, 19);
+            this.materialLabel8.TabIndex = 46;
+            this.materialLabel8.Text = "Tiempo Venta";
+            // 
+            // panel_Camion
+            // 
+            this.panel_Camion.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel_Camion.BorderRound = true;
+            this.panel_Camion.Controls.Add(this.puerta13);
+            this.panel_Camion.Controls.Add(this.puerta12);
+            this.panel_Camion.Controls.Add(this.puerta11);
+            this.panel_Camion.Controls.Add(this.puerta10);
+            this.panel_Camion.Controls.Add(this.puerta9);
+            this.panel_Camion.Controls.Add(this.puerta8);
+            this.panel_Camion.Controls.Add(this.puerta7);
+            this.panel_Camion.Controls.Add(this.puerta6);
+            this.panel_Camion.Controls.Add(this.puerta5);
+            this.panel_Camion.Controls.Add(this.puerta4);
+            this.panel_Camion.Controls.Add(this.puerta3);
+            this.panel_Camion.Controls.Add(this.puerta2);
+            this.panel_Camion.Controls.Add(this.puerta1);
+            this.panel_Camion.Controls.Add(this.asiento63);
+            this.panel_Camion.Controls.Add(this.asiento28);
+            this.panel_Camion.Controls.Add(this.asiento33);
+            this.panel_Camion.Controls.Add(this.asiento38);
+            this.panel_Camion.Controls.Add(this.asiento43);
+            this.panel_Camion.Controls.Add(this.asiento48);
+            this.panel_Camion.Controls.Add(this.asiento53);
+            this.panel_Camion.Controls.Add(this.asiento58);
+            this.panel_Camion.Controls.Add(this.asiento23);
+            this.panel_Camion.Controls.Add(this.asiento18);
+            this.panel_Camion.Controls.Add(this.asiento13);
+            this.panel_Camion.Controls.Add(this.asiento8);
+            this.panel_Camion.Controls.Add(this.asiento3);
+            this.panel_Camion.Controls.Add(this.asiento65);
+            this.panel_Camion.Controls.Add(this.asiento64);
+            this.panel_Camion.Controls.Add(this.asiento62);
+            this.panel_Camion.Controls.Add(this.asiento61);
+            this.panel_Camion.Controls.Add(this.asiento60);
+            this.panel_Camion.Controls.Add(this.asiento59);
+            this.panel_Camion.Controls.Add(this.asiento57);
+            this.panel_Camion.Controls.Add(this.asiento56);
+            this.panel_Camion.Controls.Add(this.asiento55);
+            this.panel_Camion.Controls.Add(this.asiento54);
+            this.panel_Camion.Controls.Add(this.asiento52);
+            this.panel_Camion.Controls.Add(this.asiento51);
+            this.panel_Camion.Controls.Add(this.asiento50);
+            this.panel_Camion.Controls.Add(this.asiento49);
+            this.panel_Camion.Controls.Add(this.asiento47);
+            this.panel_Camion.Controls.Add(this.asiento46);
+            this.panel_Camion.Controls.Add(this.asiento45);
+            this.panel_Camion.Controls.Add(this.asiento44);
+            this.panel_Camion.Controls.Add(this.asiento42);
+            this.panel_Camion.Controls.Add(this.asiento41);
+            this.panel_Camion.Controls.Add(this.asiento40);
+            this.panel_Camion.Controls.Add(this.asiento39);
+            this.panel_Camion.Controls.Add(this.asiento37);
+            this.panel_Camion.Controls.Add(this.asiento36);
+            this.panel_Camion.Controls.Add(this.asiento35);
+            this.panel_Camion.Controls.Add(this.asiento34);
+            this.panel_Camion.Controls.Add(this.asiento32);
+            this.panel_Camion.Controls.Add(this.asiento31);
+            this.panel_Camion.Controls.Add(this.asiento30);
+            this.panel_Camion.Controls.Add(this.asiento29);
+            this.panel_Camion.Controls.Add(this.asiento27);
+            this.panel_Camion.Controls.Add(this.asiento26);
+            this.panel_Camion.Controls.Add(this.asiento25);
+            this.panel_Camion.Controls.Add(this.asiento24);
+            this.panel_Camion.Controls.Add(this.asiento22);
+            this.panel_Camion.Controls.Add(this.asiento21);
+            this.panel_Camion.Controls.Add(this.asiento20);
+            this.panel_Camion.Controls.Add(this.asiento19);
+            this.panel_Camion.Controls.Add(this.asiento17);
+            this.panel_Camion.Controls.Add(this.asiento16);
+            this.panel_Camion.Controls.Add(this.asiento15);
+            this.panel_Camion.Controls.Add(this.asiento14);
+            this.panel_Camion.Controls.Add(this.asiento12);
+            this.panel_Camion.Controls.Add(this.asiento11);
+            this.panel_Camion.Controls.Add(this.asiento10);
+            this.panel_Camion.Controls.Add(this.asiento9);
+            this.panel_Camion.Controls.Add(this.asiento7);
+            this.panel_Camion.Controls.Add(this.asiento6);
+            this.panel_Camion.Controls.Add(this.asiento5);
+            this.panel_Camion.Controls.Add(this.asiento4);
+            this.panel_Camion.Controls.Add(this.asiento2);
+            this.panel_Camion.Controls.Add(this.asiento1);
+            this.panel_Camion.Controls.Add(this.pasilloasiento64);
+            this.panel_Camion.Controls.Add(this.pasilloasiento63);
+            this.panel_Camion.Controls.Add(this.pasilloasiento62);
+            this.panel_Camion.Controls.Add(this.pasilloasiento61);
+            this.panel_Camion.Controls.Add(this.pasilloasiento65);
+            this.panel_Camion.Controls.Add(this.pasilloasiento59);
+            this.panel_Camion.Controls.Add(this.pasilloasiento58);
+            this.panel_Camion.Controls.Add(this.pasilloasiento57);
+            this.panel_Camion.Controls.Add(this.pasilloasiento56);
+            this.panel_Camion.Controls.Add(this.pasilloasiento60);
+            this.panel_Camion.Controls.Add(this.pasilloasiento55);
+            this.panel_Camion.Controls.Add(this.pasilloasiento54);
+            this.panel_Camion.Controls.Add(this.pasilloasiento53);
+            this.panel_Camion.Controls.Add(this.pasilloasiento52);
+            this.panel_Camion.Controls.Add(this.pasilloasiento51);
+            this.panel_Camion.Controls.Add(this.pasilloasiento50);
+            this.panel_Camion.Controls.Add(this.pasilloasiento49);
+            this.panel_Camion.Controls.Add(this.pasilloasiento48);
+            this.panel_Camion.Controls.Add(this.pasilloasiento47);
+            this.panel_Camion.Controls.Add(this.pasilloasiento46);
+            this.panel_Camion.Controls.Add(this.pasilloasiento45);
+            this.panel_Camion.Controls.Add(this.pasilloasiento44);
+            this.panel_Camion.Controls.Add(this.pasilloasiento43);
+            this.panel_Camion.Controls.Add(this.pasilloasiento42);
+            this.panel_Camion.Controls.Add(this.pasilloasiento41);
+            this.panel_Camion.Controls.Add(this.pasilloasiento40);
+            this.panel_Camion.Controls.Add(this.pasilloasiento39);
+            this.panel_Camion.Controls.Add(this.pasilloasiento38);
+            this.panel_Camion.Controls.Add(this.pasilloasiento37);
+            this.panel_Camion.Controls.Add(this.pasilloasiento36);
+            this.panel_Camion.Controls.Add(this.pasilloasiento35);
+            this.panel_Camion.Controls.Add(this.pasilloasiento34);
+            this.panel_Camion.Controls.Add(this.pasilloasiento33);
+            this.panel_Camion.Controls.Add(this.pasilloasiento32);
+            this.panel_Camion.Controls.Add(this.pasilloasiento31);
+            this.panel_Camion.Controls.Add(this.pasilloasiento30);
+            this.panel_Camion.Controls.Add(this.pasilloasiento29);
+            this.panel_Camion.Controls.Add(this.pasilloasiento28);
+            this.panel_Camion.Controls.Add(this.pasilloasiento27);
+            this.panel_Camion.Controls.Add(this.pasilloasiento26);
+            this.panel_Camion.Controls.Add(this.pasilloasiento25);
+            this.panel_Camion.Controls.Add(this.pasilloasiento24);
+            this.panel_Camion.Controls.Add(this.pasilloasiento23);
+            this.panel_Camion.Controls.Add(this.pasilloasiento22);
+            this.panel_Camion.Controls.Add(this.pasilloasiento21);
+            this.panel_Camion.Controls.Add(this.pasilloasiento20);
+            this.panel_Camion.Controls.Add(this.pasilloasiento19);
+            this.panel_Camion.Controls.Add(this.pasilloasiento18);
+            this.panel_Camion.Controls.Add(this.pasilloasiento17);
+            this.panel_Camion.Controls.Add(this.pasilloasiento16);
+            this.panel_Camion.Controls.Add(this.pasilloasiento15);
+            this.panel_Camion.Controls.Add(this.pasilloasiento14);
+            this.panel_Camion.Controls.Add(this.pasilloasiento13);
+            this.panel_Camion.Controls.Add(this.pasilloasiento12);
+            this.panel_Camion.Controls.Add(this.pasilloasiento11);
+            this.panel_Camion.Controls.Add(this.pasilloasiento10);
+            this.panel_Camion.Controls.Add(this.pasilloasiento9);
+            this.panel_Camion.Controls.Add(this.pasilloasiento8);
+            this.panel_Camion.Controls.Add(this.pasilloasiento7);
+            this.panel_Camion.Controls.Add(this.pasilloasiento6);
+            this.panel_Camion.Controls.Add(this.pasilloasiento5);
+            this.panel_Camion.Controls.Add(this.pasilloasiento4);
+            this.panel_Camion.Controls.Add(this.pasilloasiento3);
+            this.panel_Camion.Controls.Add(this.pasilloasiento2);
+            this.panel_Camion.Controls.Add(this.pasilloasiento1);
+            this.panel_Camion.Controls.Add(this.textBox5);
+            this.panel_Camion.Controls.Add(this.textBox131);
+            this.panel_Camion.Controls.Add(this.pasillo1);
+            this.panel_Camion.Controls.Add(this.textBox133);
+            this.panel_Camion.Controls.Add(this.textBox134);
+            this.panel_Camion.DrawGradient = false;
+            this.panel_Camion.GradientTop = true;
+            this.panel_Camion.LinearGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.panel_Camion.LineColor = System.Drawing.Color.Transparent;
+            this.panel_Camion.Location = new System.Drawing.Point(1521, 75);
+            this.panel_Camion.Name = "panel_Camion";
+            this.panel_Camion.Size = new System.Drawing.Size(325, 720);
+            this.panel_Camion.TabIndex = 47;
+            // 
+            // puerta13
+            // 
+            this.puerta13.BackColor = System.Drawing.Color.White;
+            this.puerta13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta13.Location = new System.Drawing.Point(280, 674);
+            this.puerta13.Name = "puerta13";
+            this.puerta13.Size = new System.Drawing.Size(35, 35);
+            this.puerta13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta13.TabIndex = 221;
+            this.puerta13.TabStop = false;
+            this.puerta13.Tag = "0";
+            this.puerta13.Visible = false;
+            // 
+            // puerta12
+            // 
+            this.puerta12.BackColor = System.Drawing.Color.White;
+            this.puerta12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta12.Location = new System.Drawing.Point(280, 621);
+            this.puerta12.Name = "puerta12";
+            this.puerta12.Size = new System.Drawing.Size(35, 35);
+            this.puerta12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta12.TabIndex = 220;
+            this.puerta12.TabStop = false;
+            this.puerta12.Tag = "0";
+            this.puerta12.Visible = false;
+            // 
+            // puerta11
+            // 
+            this.puerta11.BackColor = System.Drawing.Color.White;
+            this.puerta11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta11.Location = new System.Drawing.Point(280, 568);
+            this.puerta11.Name = "puerta11";
+            this.puerta11.Size = new System.Drawing.Size(35, 35);
+            this.puerta11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta11.TabIndex = 219;
+            this.puerta11.TabStop = false;
+            this.puerta11.Tag = "0";
+            this.puerta11.Visible = false;
+            // 
+            // puerta10
+            // 
+            this.puerta10.BackColor = System.Drawing.Color.White;
+            this.puerta10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta10.Location = new System.Drawing.Point(280, 515);
+            this.puerta10.Name = "puerta10";
+            this.puerta10.Size = new System.Drawing.Size(35, 35);
+            this.puerta10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta10.TabIndex = 218;
+            this.puerta10.TabStop = false;
+            this.puerta10.Tag = "0";
+            this.puerta10.Visible = false;
+            // 
+            // puerta9
+            // 
+            this.puerta9.BackColor = System.Drawing.Color.White;
+            this.puerta9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta9.Location = new System.Drawing.Point(280, 462);
+            this.puerta9.Name = "puerta9";
+            this.puerta9.Size = new System.Drawing.Size(35, 35);
+            this.puerta9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta9.TabIndex = 217;
+            this.puerta9.TabStop = false;
+            this.puerta9.Tag = "0";
+            this.puerta9.Visible = false;
+            // 
+            // puerta8
+            // 
+            this.puerta8.BackColor = System.Drawing.Color.White;
+            this.puerta8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta8.Location = new System.Drawing.Point(279, 409);
+            this.puerta8.Name = "puerta8";
+            this.puerta8.Size = new System.Drawing.Size(35, 35);
+            this.puerta8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta8.TabIndex = 216;
+            this.puerta8.TabStop = false;
+            this.puerta8.Tag = "0";
+            this.puerta8.Visible = false;
+            // 
+            // puerta7
+            // 
+            this.puerta7.BackColor = System.Drawing.Color.White;
+            this.puerta7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta7.Location = new System.Drawing.Point(279, 356);
+            this.puerta7.Name = "puerta7";
+            this.puerta7.Size = new System.Drawing.Size(35, 35);
+            this.puerta7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta7.TabIndex = 215;
+            this.puerta7.TabStop = false;
+            this.puerta7.Tag = "0";
+            this.puerta7.Visible = false;
+            // 
+            // puerta6
+            // 
+            this.puerta6.BackColor = System.Drawing.Color.White;
+            this.puerta6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta6.Location = new System.Drawing.Point(279, 303);
+            this.puerta6.Name = "puerta6";
+            this.puerta6.Size = new System.Drawing.Size(35, 35);
+            this.puerta6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta6.TabIndex = 214;
+            this.puerta6.TabStop = false;
+            this.puerta6.Tag = "0";
+            this.puerta6.Visible = false;
+            // 
+            // puerta5
+            // 
+            this.puerta5.BackColor = System.Drawing.Color.White;
+            this.puerta5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta5.Location = new System.Drawing.Point(279, 250);
+            this.puerta5.Name = "puerta5";
+            this.puerta5.Size = new System.Drawing.Size(35, 35);
+            this.puerta5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta5.TabIndex = 213;
+            this.puerta5.TabStop = false;
+            this.puerta5.Tag = "0";
+            this.puerta5.Visible = false;
+            // 
+            // puerta4
+            // 
+            this.puerta4.BackColor = System.Drawing.Color.White;
+            this.puerta4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta4.Location = new System.Drawing.Point(279, 197);
+            this.puerta4.Name = "puerta4";
+            this.puerta4.Size = new System.Drawing.Size(35, 35);
+            this.puerta4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta4.TabIndex = 212;
+            this.puerta4.TabStop = false;
+            this.puerta4.Tag = "0";
+            this.puerta4.Visible = false;
+            // 
+            // puerta3
+            // 
+            this.puerta3.BackColor = System.Drawing.Color.White;
+            this.puerta3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta3.Location = new System.Drawing.Point(278, 144);
+            this.puerta3.Name = "puerta3";
+            this.puerta3.Size = new System.Drawing.Size(35, 35);
+            this.puerta3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta3.TabIndex = 211;
+            this.puerta3.TabStop = false;
+            this.puerta3.Tag = "0";
+            this.puerta3.Visible = false;
+            // 
+            // puerta2
+            // 
+            this.puerta2.BackColor = System.Drawing.Color.White;
+            this.puerta2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta2.Location = new System.Drawing.Point(278, 91);
+            this.puerta2.Name = "puerta2";
+            this.puerta2.Size = new System.Drawing.Size(35, 35);
+            this.puerta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta2.TabIndex = 210;
+            this.puerta2.TabStop = false;
+            this.puerta2.Tag = "0";
+            this.puerta2.Visible = false;
+            // 
+            // puerta1
+            // 
+            this.puerta1.BackColor = System.Drawing.Color.White;
+            this.puerta1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta1.Location = new System.Drawing.Point(278, 38);
+            this.puerta1.Name = "puerta1";
+            this.puerta1.Size = new System.Drawing.Size(35, 35);
+            this.puerta1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta1.TabIndex = 209;
+            this.puerta1.TabStop = false;
+            this.puerta1.Tag = "0";
+            this.puerta1.Visible = false;
+            // 
+            // asiento63
+            // 
+            this.asiento63.BackColor = System.Drawing.Color.White;
+            this.asiento63.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento63.Location = new System.Drawing.Point(117, 674);
+            this.asiento63.Name = "asiento63";
+            this.asiento63.Size = new System.Drawing.Size(55, 35);
+            this.asiento63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento63.TabIndex = 208;
+            this.asiento63.TabStop = false;
+            this.asiento63.Tag = "0";
+            // 
+            // asiento28
+            // 
+            this.asiento28.BackColor = System.Drawing.Color.White;
+            this.asiento28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento28.Location = new System.Drawing.Point(116, 303);
+            this.asiento28.Name = "asiento28";
+            this.asiento28.Size = new System.Drawing.Size(55, 35);
+            this.asiento28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento28.TabIndex = 207;
+            this.asiento28.TabStop = false;
+            this.asiento28.Tag = "0";
+            // 
+            // asiento33
+            // 
+            this.asiento33.BackColor = System.Drawing.Color.White;
+            this.asiento33.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento33.Location = new System.Drawing.Point(116, 356);
+            this.asiento33.Name = "asiento33";
+            this.asiento33.Size = new System.Drawing.Size(55, 35);
+            this.asiento33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento33.TabIndex = 206;
+            this.asiento33.TabStop = false;
+            this.asiento33.Tag = "0";
+            // 
+            // asiento38
+            // 
+            this.asiento38.BackColor = System.Drawing.Color.White;
+            this.asiento38.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento38.Location = new System.Drawing.Point(116, 409);
+            this.asiento38.Name = "asiento38";
+            this.asiento38.Size = new System.Drawing.Size(55, 35);
+            this.asiento38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento38.TabIndex = 205;
+            this.asiento38.TabStop = false;
+            this.asiento38.Tag = "0";
+            // 
+            // asiento43
+            // 
+            this.asiento43.BackColor = System.Drawing.Color.White;
+            this.asiento43.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento43.Location = new System.Drawing.Point(117, 462);
+            this.asiento43.Name = "asiento43";
+            this.asiento43.Size = new System.Drawing.Size(55, 35);
+            this.asiento43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento43.TabIndex = 204;
+            this.asiento43.TabStop = false;
+            this.asiento43.Tag = "0";
+            // 
+            // asiento48
+            // 
+            this.asiento48.BackColor = System.Drawing.Color.White;
+            this.asiento48.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento48.Location = new System.Drawing.Point(117, 515);
+            this.asiento48.Name = "asiento48";
+            this.asiento48.Size = new System.Drawing.Size(55, 35);
+            this.asiento48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento48.TabIndex = 203;
+            this.asiento48.TabStop = false;
+            this.asiento48.Tag = "0";
+            // 
+            // asiento53
+            // 
+            this.asiento53.BackColor = System.Drawing.Color.White;
+            this.asiento53.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento53.Location = new System.Drawing.Point(117, 568);
+            this.asiento53.Name = "asiento53";
+            this.asiento53.Size = new System.Drawing.Size(55, 35);
+            this.asiento53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento53.TabIndex = 202;
+            this.asiento53.TabStop = false;
+            this.asiento53.Tag = "0";
+            // 
+            // asiento58
+            // 
+            this.asiento58.BackColor = System.Drawing.Color.White;
+            this.asiento58.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento58.Location = new System.Drawing.Point(117, 621);
+            this.asiento58.Name = "asiento58";
+            this.asiento58.Size = new System.Drawing.Size(55, 35);
+            this.asiento58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento58.TabIndex = 201;
+            this.asiento58.TabStop = false;
+            this.asiento58.Tag = "0";
+            // 
+            // asiento23
+            // 
+            this.asiento23.BackColor = System.Drawing.Color.White;
+            this.asiento23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento23.Location = new System.Drawing.Point(116, 250);
+            this.asiento23.Name = "asiento23";
+            this.asiento23.Size = new System.Drawing.Size(55, 35);
+            this.asiento23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento23.TabIndex = 200;
+            this.asiento23.TabStop = false;
+            this.asiento23.Tag = "0";
+            // 
+            // asiento18
+            // 
+            this.asiento18.BackColor = System.Drawing.Color.White;
+            this.asiento18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento18.Location = new System.Drawing.Point(116, 197);
+            this.asiento18.Name = "asiento18";
+            this.asiento18.Size = new System.Drawing.Size(55, 35);
+            this.asiento18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento18.TabIndex = 199;
+            this.asiento18.TabStop = false;
+            this.asiento18.Tag = "0";
+            // 
+            // asiento13
+            // 
+            this.asiento13.BackColor = System.Drawing.Color.White;
+            this.asiento13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento13.Location = new System.Drawing.Point(115, 144);
+            this.asiento13.Name = "asiento13";
+            this.asiento13.Size = new System.Drawing.Size(55, 35);
+            this.asiento13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento13.TabIndex = 198;
+            this.asiento13.TabStop = false;
+            this.asiento13.Tag = "0";
+            // 
+            // asiento8
+            // 
+            this.asiento8.BackColor = System.Drawing.Color.White;
+            this.asiento8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento8.Location = new System.Drawing.Point(115, 91);
+            this.asiento8.Name = "asiento8";
+            this.asiento8.Size = new System.Drawing.Size(55, 35);
+            this.asiento8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento8.TabIndex = 197;
+            this.asiento8.TabStop = false;
+            this.asiento8.Tag = "0";
+            // 
+            // asiento3
+            // 
+            this.asiento3.BackColor = System.Drawing.Color.White;
+            this.asiento3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento3.Location = new System.Drawing.Point(115, 38);
+            this.asiento3.Name = "asiento3";
+            this.asiento3.Size = new System.Drawing.Size(55, 35);
+            this.asiento3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento3.TabIndex = 196;
+            this.asiento3.TabStop = false;
+            this.asiento3.Tag = "0";
+            // 
+            // asiento65
+            // 
+            this.asiento65.BackColor = System.Drawing.Color.White;
+            this.asiento65.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento65.Location = new System.Drawing.Point(225, 674);
+            this.asiento65.Name = "asiento65";
+            this.asiento65.Size = new System.Drawing.Size(55, 35);
+            this.asiento65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento65.TabIndex = 194;
+            this.asiento65.TabStop = false;
+            this.asiento65.Tag = "0";
+            // 
+            // asiento64
+            // 
+            this.asiento64.BackColor = System.Drawing.Color.White;
+            this.asiento64.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento64.Location = new System.Drawing.Point(171, 674);
+            this.asiento64.Name = "asiento64";
+            this.asiento64.Size = new System.Drawing.Size(55, 35);
+            this.asiento64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento64.TabIndex = 193;
+            this.asiento64.TabStop = false;
+            this.asiento64.Tag = "0";
+            // 
+            // asiento62
+            // 
+            this.asiento62.BackColor = System.Drawing.Color.White;
+            this.asiento62.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento62.Location = new System.Drawing.Point(63, 674);
+            this.asiento62.Name = "asiento62";
+            this.asiento62.Size = new System.Drawing.Size(55, 35);
+            this.asiento62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento62.TabIndex = 192;
+            this.asiento62.TabStop = false;
+            this.asiento62.Tag = "0";
+            // 
+            // asiento61
+            // 
+            this.asiento61.BackColor = System.Drawing.Color.White;
+            this.asiento61.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento61.Location = new System.Drawing.Point(9, 674);
+            this.asiento61.Name = "asiento61";
+            this.asiento61.Size = new System.Drawing.Size(55, 35);
+            this.asiento61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento61.TabIndex = 191;
+            this.asiento61.TabStop = false;
+            this.asiento61.Tag = "0";
+            // 
+            // asiento60
+            // 
+            this.asiento60.BackColor = System.Drawing.Color.White;
+            this.asiento60.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento60.Location = new System.Drawing.Point(225, 621);
+            this.asiento60.Name = "asiento60";
+            this.asiento60.Size = new System.Drawing.Size(55, 35);
+            this.asiento60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento60.TabIndex = 190;
+            this.asiento60.TabStop = false;
+            this.asiento60.Tag = "0";
+            // 
+            // asiento59
+            // 
+            this.asiento59.BackColor = System.Drawing.Color.White;
+            this.asiento59.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento59.Location = new System.Drawing.Point(171, 621);
+            this.asiento59.Name = "asiento59";
+            this.asiento59.Size = new System.Drawing.Size(55, 35);
+            this.asiento59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento59.TabIndex = 189;
+            this.asiento59.TabStop = false;
+            this.asiento59.Tag = "0";
+            // 
+            // asiento57
+            // 
+            this.asiento57.BackColor = System.Drawing.Color.White;
+            this.asiento57.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento57.Location = new System.Drawing.Point(63, 621);
+            this.asiento57.Name = "asiento57";
+            this.asiento57.Size = new System.Drawing.Size(55, 35);
+            this.asiento57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento57.TabIndex = 188;
+            this.asiento57.TabStop = false;
+            this.asiento57.Tag = "0";
+            // 
+            // asiento56
+            // 
+            this.asiento56.BackColor = System.Drawing.Color.White;
+            this.asiento56.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento56.Location = new System.Drawing.Point(9, 621);
+            this.asiento56.Name = "asiento56";
+            this.asiento56.Size = new System.Drawing.Size(55, 35);
+            this.asiento56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento56.TabIndex = 187;
+            this.asiento56.TabStop = false;
+            this.asiento56.Tag = "0";
+            // 
+            // asiento55
+            // 
+            this.asiento55.BackColor = System.Drawing.Color.White;
+            this.asiento55.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento55.Location = new System.Drawing.Point(225, 568);
+            this.asiento55.Name = "asiento55";
+            this.asiento55.Size = new System.Drawing.Size(55, 35);
+            this.asiento55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento55.TabIndex = 186;
+            this.asiento55.TabStop = false;
+            this.asiento55.Tag = "0";
+            // 
+            // asiento54
+            // 
+            this.asiento54.BackColor = System.Drawing.Color.White;
+            this.asiento54.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento54.Location = new System.Drawing.Point(171, 568);
+            this.asiento54.Name = "asiento54";
+            this.asiento54.Size = new System.Drawing.Size(55, 35);
+            this.asiento54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento54.TabIndex = 185;
+            this.asiento54.TabStop = false;
+            this.asiento54.Tag = "0";
+            // 
+            // asiento52
+            // 
+            this.asiento52.BackColor = System.Drawing.Color.White;
+            this.asiento52.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento52.Location = new System.Drawing.Point(63, 568);
+            this.asiento52.Name = "asiento52";
+            this.asiento52.Size = new System.Drawing.Size(55, 35);
+            this.asiento52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento52.TabIndex = 184;
+            this.asiento52.TabStop = false;
+            this.asiento52.Tag = "0";
+            // 
+            // asiento51
+            // 
+            this.asiento51.BackColor = System.Drawing.Color.White;
+            this.asiento51.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento51.Location = new System.Drawing.Point(9, 568);
+            this.asiento51.Name = "asiento51";
+            this.asiento51.Size = new System.Drawing.Size(55, 35);
+            this.asiento51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento51.TabIndex = 183;
+            this.asiento51.TabStop = false;
+            this.asiento51.Tag = "0";
+            // 
+            // asiento50
+            // 
+            this.asiento50.BackColor = System.Drawing.Color.White;
+            this.asiento50.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento50.Location = new System.Drawing.Point(225, 515);
+            this.asiento50.Name = "asiento50";
+            this.asiento50.Size = new System.Drawing.Size(55, 35);
+            this.asiento50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento50.TabIndex = 182;
+            this.asiento50.TabStop = false;
+            this.asiento50.Tag = "0";
+            // 
+            // asiento49
+            // 
+            this.asiento49.BackColor = System.Drawing.Color.White;
+            this.asiento49.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento49.Location = new System.Drawing.Point(171, 515);
+            this.asiento49.Name = "asiento49";
+            this.asiento49.Size = new System.Drawing.Size(55, 35);
+            this.asiento49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento49.TabIndex = 181;
+            this.asiento49.TabStop = false;
+            this.asiento49.Tag = "0";
+            // 
+            // asiento47
+            // 
+            this.asiento47.BackColor = System.Drawing.Color.White;
+            this.asiento47.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento47.Location = new System.Drawing.Point(63, 515);
+            this.asiento47.Name = "asiento47";
+            this.asiento47.Size = new System.Drawing.Size(55, 35);
+            this.asiento47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento47.TabIndex = 180;
+            this.asiento47.TabStop = false;
+            this.asiento47.Tag = "0";
+            // 
+            // asiento46
+            // 
+            this.asiento46.BackColor = System.Drawing.Color.White;
+            this.asiento46.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento46.Location = new System.Drawing.Point(9, 515);
+            this.asiento46.Name = "asiento46";
+            this.asiento46.Size = new System.Drawing.Size(55, 35);
+            this.asiento46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento46.TabIndex = 179;
+            this.asiento46.TabStop = false;
+            this.asiento46.Tag = "0";
+            // 
+            // asiento45
+            // 
+            this.asiento45.BackColor = System.Drawing.Color.White;
+            this.asiento45.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento45.Location = new System.Drawing.Point(225, 462);
+            this.asiento45.Name = "asiento45";
+            this.asiento45.Size = new System.Drawing.Size(55, 35);
+            this.asiento45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento45.TabIndex = 178;
+            this.asiento45.TabStop = false;
+            this.asiento45.Tag = "0";
+            // 
+            // asiento44
+            // 
+            this.asiento44.BackColor = System.Drawing.Color.White;
+            this.asiento44.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento44.Location = new System.Drawing.Point(171, 462);
+            this.asiento44.Name = "asiento44";
+            this.asiento44.Size = new System.Drawing.Size(55, 35);
+            this.asiento44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento44.TabIndex = 177;
+            this.asiento44.TabStop = false;
+            this.asiento44.Tag = "0";
+            // 
+            // asiento42
+            // 
+            this.asiento42.BackColor = System.Drawing.Color.White;
+            this.asiento42.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento42.Location = new System.Drawing.Point(63, 462);
+            this.asiento42.Name = "asiento42";
+            this.asiento42.Size = new System.Drawing.Size(55, 35);
+            this.asiento42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento42.TabIndex = 176;
+            this.asiento42.TabStop = false;
+            this.asiento42.Tag = "0";
+            // 
+            // asiento41
+            // 
+            this.asiento41.BackColor = System.Drawing.Color.White;
+            this.asiento41.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento41.Location = new System.Drawing.Point(9, 462);
+            this.asiento41.Name = "asiento41";
+            this.asiento41.Size = new System.Drawing.Size(55, 35);
+            this.asiento41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento41.TabIndex = 175;
+            this.asiento41.TabStop = false;
+            this.asiento41.Tag = "0";
+            // 
+            // asiento40
+            // 
+            this.asiento40.BackColor = System.Drawing.Color.White;
+            this.asiento40.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento40.Location = new System.Drawing.Point(224, 409);
+            this.asiento40.Name = "asiento40";
+            this.asiento40.Size = new System.Drawing.Size(55, 35);
+            this.asiento40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento40.TabIndex = 174;
+            this.asiento40.TabStop = false;
+            this.asiento40.Tag = "0";
+            // 
+            // asiento39
+            // 
+            this.asiento39.BackColor = System.Drawing.Color.White;
+            this.asiento39.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento39.Location = new System.Drawing.Point(170, 409);
+            this.asiento39.Name = "asiento39";
+            this.asiento39.Size = new System.Drawing.Size(55, 35);
+            this.asiento39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento39.TabIndex = 173;
+            this.asiento39.TabStop = false;
+            this.asiento39.Tag = "0";
+            // 
+            // asiento37
+            // 
+            this.asiento37.BackColor = System.Drawing.Color.White;
+            this.asiento37.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento37.Location = new System.Drawing.Point(62, 409);
+            this.asiento37.Name = "asiento37";
+            this.asiento37.Size = new System.Drawing.Size(55, 35);
+            this.asiento37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento37.TabIndex = 172;
+            this.asiento37.TabStop = false;
+            this.asiento37.Tag = "0";
+            // 
+            // asiento36
+            // 
+            this.asiento36.BackColor = System.Drawing.Color.White;
+            this.asiento36.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento36.Location = new System.Drawing.Point(8, 409);
+            this.asiento36.Name = "asiento36";
+            this.asiento36.Size = new System.Drawing.Size(55, 35);
+            this.asiento36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento36.TabIndex = 171;
+            this.asiento36.TabStop = false;
+            this.asiento36.Tag = "0";
+            // 
+            // asiento35
+            // 
+            this.asiento35.BackColor = System.Drawing.Color.White;
+            this.asiento35.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento35.Location = new System.Drawing.Point(224, 356);
+            this.asiento35.Name = "asiento35";
+            this.asiento35.Size = new System.Drawing.Size(55, 35);
+            this.asiento35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento35.TabIndex = 170;
+            this.asiento35.TabStop = false;
+            this.asiento35.Tag = "0";
+            // 
+            // asiento34
+            // 
+            this.asiento34.BackColor = System.Drawing.Color.White;
+            this.asiento34.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento34.Location = new System.Drawing.Point(170, 356);
+            this.asiento34.Name = "asiento34";
+            this.asiento34.Size = new System.Drawing.Size(55, 35);
+            this.asiento34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento34.TabIndex = 169;
+            this.asiento34.TabStop = false;
+            this.asiento34.Tag = "0";
+            // 
+            // asiento32
+            // 
+            this.asiento32.BackColor = System.Drawing.Color.White;
+            this.asiento32.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento32.Location = new System.Drawing.Point(62, 356);
+            this.asiento32.Name = "asiento32";
+            this.asiento32.Size = new System.Drawing.Size(55, 35);
+            this.asiento32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento32.TabIndex = 168;
+            this.asiento32.TabStop = false;
+            this.asiento32.Tag = "0";
+            // 
+            // asiento31
+            // 
+            this.asiento31.BackColor = System.Drawing.Color.White;
+            this.asiento31.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento31.Location = new System.Drawing.Point(8, 356);
+            this.asiento31.Name = "asiento31";
+            this.asiento31.Size = new System.Drawing.Size(55, 35);
+            this.asiento31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento31.TabIndex = 167;
+            this.asiento31.TabStop = false;
+            this.asiento31.Tag = "0";
+            // 
+            // asiento30
+            // 
+            this.asiento30.BackColor = System.Drawing.Color.White;
+            this.asiento30.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento30.Location = new System.Drawing.Point(224, 303);
+            this.asiento30.Name = "asiento30";
+            this.asiento30.Size = new System.Drawing.Size(55, 35);
+            this.asiento30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento30.TabIndex = 166;
+            this.asiento30.TabStop = false;
+            this.asiento30.Tag = "0";
+            // 
+            // asiento29
+            // 
+            this.asiento29.BackColor = System.Drawing.Color.White;
+            this.asiento29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento29.Location = new System.Drawing.Point(170, 303);
+            this.asiento29.Name = "asiento29";
+            this.asiento29.Size = new System.Drawing.Size(55, 35);
+            this.asiento29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento29.TabIndex = 165;
+            this.asiento29.TabStop = false;
+            this.asiento29.Tag = "0";
+            // 
+            // asiento27
+            // 
+            this.asiento27.BackColor = System.Drawing.Color.White;
+            this.asiento27.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento27.Location = new System.Drawing.Point(62, 303);
+            this.asiento27.Name = "asiento27";
+            this.asiento27.Size = new System.Drawing.Size(55, 35);
+            this.asiento27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento27.TabIndex = 164;
+            this.asiento27.TabStop = false;
+            this.asiento27.Tag = "0";
+            // 
+            // asiento26
+            // 
+            this.asiento26.BackColor = System.Drawing.Color.White;
+            this.asiento26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento26.Location = new System.Drawing.Point(8, 303);
+            this.asiento26.Name = "asiento26";
+            this.asiento26.Size = new System.Drawing.Size(55, 35);
+            this.asiento26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento26.TabIndex = 163;
+            this.asiento26.TabStop = false;
+            this.asiento26.Tag = "0";
+            // 
+            // asiento25
+            // 
+            this.asiento25.BackColor = System.Drawing.Color.White;
+            this.asiento25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento25.Location = new System.Drawing.Point(224, 250);
+            this.asiento25.Name = "asiento25";
+            this.asiento25.Size = new System.Drawing.Size(55, 35);
+            this.asiento25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento25.TabIndex = 162;
+            this.asiento25.TabStop = false;
+            this.asiento25.Tag = "0";
+            // 
+            // asiento24
+            // 
+            this.asiento24.BackColor = System.Drawing.Color.White;
+            this.asiento24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento24.Location = new System.Drawing.Point(170, 250);
+            this.asiento24.Name = "asiento24";
+            this.asiento24.Size = new System.Drawing.Size(55, 35);
+            this.asiento24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento24.TabIndex = 161;
+            this.asiento24.TabStop = false;
+            this.asiento24.Tag = "0";
+            // 
+            // asiento22
+            // 
+            this.asiento22.BackColor = System.Drawing.Color.White;
+            this.asiento22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento22.Location = new System.Drawing.Point(62, 250);
+            this.asiento22.Name = "asiento22";
+            this.asiento22.Size = new System.Drawing.Size(55, 35);
+            this.asiento22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento22.TabIndex = 160;
+            this.asiento22.TabStop = false;
+            this.asiento22.Tag = "0";
+            // 
+            // asiento21
+            // 
+            this.asiento21.BackColor = System.Drawing.Color.White;
+            this.asiento21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento21.Location = new System.Drawing.Point(8, 250);
+            this.asiento21.Name = "asiento21";
+            this.asiento21.Size = new System.Drawing.Size(55, 35);
+            this.asiento21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento21.TabIndex = 159;
+            this.asiento21.TabStop = false;
+            this.asiento21.Tag = "0";
+            // 
+            // asiento20
+            // 
+            this.asiento20.BackColor = System.Drawing.Color.White;
+            this.asiento20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento20.Location = new System.Drawing.Point(224, 197);
+            this.asiento20.Name = "asiento20";
+            this.asiento20.Size = new System.Drawing.Size(55, 35);
+            this.asiento20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento20.TabIndex = 158;
+            this.asiento20.TabStop = false;
+            this.asiento20.Tag = "0";
+            // 
+            // asiento19
+            // 
+            this.asiento19.BackColor = System.Drawing.Color.White;
+            this.asiento19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento19.Location = new System.Drawing.Point(170, 197);
+            this.asiento19.Name = "asiento19";
+            this.asiento19.Size = new System.Drawing.Size(55, 35);
+            this.asiento19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento19.TabIndex = 157;
+            this.asiento19.TabStop = false;
+            this.asiento19.Tag = "0";
+            // 
+            // asiento17
+            // 
+            this.asiento17.BackColor = System.Drawing.Color.White;
+            this.asiento17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento17.Location = new System.Drawing.Point(62, 197);
+            this.asiento17.Name = "asiento17";
+            this.asiento17.Size = new System.Drawing.Size(55, 35);
+            this.asiento17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento17.TabIndex = 156;
+            this.asiento17.TabStop = false;
+            this.asiento17.Tag = "0";
+            // 
+            // asiento16
+            // 
+            this.asiento16.BackColor = System.Drawing.Color.White;
+            this.asiento16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento16.Location = new System.Drawing.Point(8, 197);
+            this.asiento16.Name = "asiento16";
+            this.asiento16.Size = new System.Drawing.Size(55, 35);
+            this.asiento16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento16.TabIndex = 155;
+            this.asiento16.TabStop = false;
+            this.asiento16.Tag = "0";
+            // 
+            // asiento15
+            // 
+            this.asiento15.BackColor = System.Drawing.Color.White;
+            this.asiento15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento15.Location = new System.Drawing.Point(223, 144);
+            this.asiento15.Name = "asiento15";
+            this.asiento15.Size = new System.Drawing.Size(55, 35);
+            this.asiento15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento15.TabIndex = 154;
+            this.asiento15.TabStop = false;
+            this.asiento15.Tag = "0";
+            // 
+            // asiento14
+            // 
+            this.asiento14.BackColor = System.Drawing.Color.White;
+            this.asiento14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento14.Location = new System.Drawing.Point(169, 144);
+            this.asiento14.Name = "asiento14";
+            this.asiento14.Size = new System.Drawing.Size(55, 35);
+            this.asiento14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento14.TabIndex = 153;
+            this.asiento14.TabStop = false;
+            this.asiento14.Tag = "0";
+            // 
+            // asiento12
+            // 
+            this.asiento12.BackColor = System.Drawing.Color.White;
+            this.asiento12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento12.Location = new System.Drawing.Point(61, 144);
+            this.asiento12.Name = "asiento12";
+            this.asiento12.Size = new System.Drawing.Size(55, 35);
+            this.asiento12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento12.TabIndex = 152;
+            this.asiento12.TabStop = false;
+            this.asiento12.Tag = "0";
+            // 
+            // asiento11
+            // 
+            this.asiento11.BackColor = System.Drawing.Color.White;
+            this.asiento11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento11.Location = new System.Drawing.Point(7, 144);
+            this.asiento11.Name = "asiento11";
+            this.asiento11.Size = new System.Drawing.Size(55, 35);
+            this.asiento11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento11.TabIndex = 151;
+            this.asiento11.TabStop = false;
+            this.asiento11.Tag = "0";
+            // 
+            // asiento10
+            // 
+            this.asiento10.BackColor = System.Drawing.Color.White;
+            this.asiento10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento10.Location = new System.Drawing.Point(223, 91);
+            this.asiento10.Name = "asiento10";
+            this.asiento10.Size = new System.Drawing.Size(55, 35);
+            this.asiento10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento10.TabIndex = 150;
+            this.asiento10.TabStop = false;
+            this.asiento10.Tag = "0";
+            // 
+            // asiento9
+            // 
+            this.asiento9.BackColor = System.Drawing.Color.White;
+            this.asiento9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento9.Location = new System.Drawing.Point(169, 91);
+            this.asiento9.Name = "asiento9";
+            this.asiento9.Size = new System.Drawing.Size(55, 35);
+            this.asiento9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento9.TabIndex = 149;
+            this.asiento9.TabStop = false;
+            this.asiento9.Tag = "0";
+            // 
+            // asiento7
+            // 
+            this.asiento7.BackColor = System.Drawing.Color.White;
+            this.asiento7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento7.Location = new System.Drawing.Point(61, 91);
+            this.asiento7.Name = "asiento7";
+            this.asiento7.Size = new System.Drawing.Size(55, 35);
+            this.asiento7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento7.TabIndex = 148;
+            this.asiento7.TabStop = false;
+            this.asiento7.Tag = "0";
+            // 
+            // asiento6
+            // 
+            this.asiento6.BackColor = System.Drawing.Color.White;
+            this.asiento6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento6.Location = new System.Drawing.Point(7, 91);
+            this.asiento6.Name = "asiento6";
+            this.asiento6.Size = new System.Drawing.Size(55, 35);
+            this.asiento6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento6.TabIndex = 147;
+            this.asiento6.TabStop = false;
+            this.asiento6.Tag = "0";
+            // 
+            // asiento5
+            // 
+            this.asiento5.BackColor = System.Drawing.Color.White;
+            this.asiento5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento5.Location = new System.Drawing.Point(223, 38);
+            this.asiento5.Name = "asiento5";
+            this.asiento5.Size = new System.Drawing.Size(55, 35);
+            this.asiento5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento5.TabIndex = 146;
+            this.asiento5.TabStop = false;
+            this.asiento5.Tag = "0";
+            // 
+            // asiento4
+            // 
+            this.asiento4.BackColor = System.Drawing.Color.White;
+            this.asiento4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento4.Location = new System.Drawing.Point(169, 38);
+            this.asiento4.Name = "asiento4";
+            this.asiento4.Size = new System.Drawing.Size(55, 35);
+            this.asiento4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento4.TabIndex = 145;
+            this.asiento4.TabStop = false;
+            this.asiento4.Tag = "0";
+            // 
+            // asiento2
+            // 
+            this.asiento2.BackColor = System.Drawing.Color.White;
+            this.asiento2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento2.Location = new System.Drawing.Point(61, 38);
+            this.asiento2.Name = "asiento2";
+            this.asiento2.Size = new System.Drawing.Size(55, 35);
+            this.asiento2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento2.TabIndex = 144;
+            this.asiento2.TabStop = false;
+            this.asiento2.Tag = "0";
+            // 
+            // asiento1
+            // 
+            this.asiento1.BackColor = System.Drawing.Color.White;
+            this.asiento1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento1.Location = new System.Drawing.Point(7, 38);
+            this.asiento1.Name = "asiento1";
+            this.asiento1.Size = new System.Drawing.Size(55, 35);
+            this.asiento1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento1.TabIndex = 6;
+            this.asiento1.TabStop = false;
+            this.asiento1.Tag = "0";
+            // 
+            // pasilloasiento64
+            // 
+            this.pasilloasiento64.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento64.Enabled = false;
+            this.pasilloasiento64.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento64.Location = new System.Drawing.Point(171, 655);
+            this.pasilloasiento64.Multiline = true;
+            this.pasilloasiento64.Name = "pasilloasiento64";
+            this.pasilloasiento64.ReadOnly = true;
+            this.pasilloasiento64.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento64.TabIndex = 143;
+            this.pasilloasiento64.Tag = "0";
+            this.pasilloasiento64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento63
+            // 
+            this.pasilloasiento63.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento63.Enabled = false;
+            this.pasilloasiento63.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento63.Location = new System.Drawing.Point(117, 655);
+            this.pasilloasiento63.Multiline = true;
+            this.pasilloasiento63.Name = "pasilloasiento63";
+            this.pasilloasiento63.ReadOnly = true;
+            this.pasilloasiento63.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento63.TabIndex = 142;
+            this.pasilloasiento63.Tag = "0";
+            this.pasilloasiento63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento62
+            // 
+            this.pasilloasiento62.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento62.Enabled = false;
+            this.pasilloasiento62.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento62.Location = new System.Drawing.Point(63, 655);
+            this.pasilloasiento62.Multiline = true;
+            this.pasilloasiento62.Name = "pasilloasiento62";
+            this.pasilloasiento62.ReadOnly = true;
+            this.pasilloasiento62.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento62.TabIndex = 141;
+            this.pasilloasiento62.Tag = "0";
+            this.pasilloasiento62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento61
+            // 
+            this.pasilloasiento61.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento61.Enabled = false;
+            this.pasilloasiento61.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento61.Location = new System.Drawing.Point(9, 655);
+            this.pasilloasiento61.Multiline = true;
+            this.pasilloasiento61.Name = "pasilloasiento61";
+            this.pasilloasiento61.ReadOnly = true;
+            this.pasilloasiento61.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento61.TabIndex = 140;
+            this.pasilloasiento61.Tag = "0";
+            this.pasilloasiento61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento65
+            // 
+            this.pasilloasiento65.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento65.Enabled = false;
+            this.pasilloasiento65.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento65.Location = new System.Drawing.Point(225, 655);
+            this.pasilloasiento65.Multiline = true;
+            this.pasilloasiento65.Name = "pasilloasiento65";
+            this.pasilloasiento65.ReadOnly = true;
+            this.pasilloasiento65.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento65.TabIndex = 139;
+            this.pasilloasiento65.Tag = "0";
+            this.pasilloasiento65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento59
+            // 
+            this.pasilloasiento59.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento59.Enabled = false;
+            this.pasilloasiento59.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento59.Location = new System.Drawing.Point(171, 602);
+            this.pasilloasiento59.Multiline = true;
+            this.pasilloasiento59.Name = "pasilloasiento59";
+            this.pasilloasiento59.ReadOnly = true;
+            this.pasilloasiento59.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento59.TabIndex = 133;
+            this.pasilloasiento59.Tag = "0";
+            this.pasilloasiento59.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento58
+            // 
+            this.pasilloasiento58.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento58.Enabled = false;
+            this.pasilloasiento58.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento58.Location = new System.Drawing.Point(117, 602);
+            this.pasilloasiento58.Multiline = true;
+            this.pasilloasiento58.Name = "pasilloasiento58";
+            this.pasilloasiento58.ReadOnly = true;
+            this.pasilloasiento58.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento58.TabIndex = 132;
+            this.pasilloasiento58.Tag = "0";
+            this.pasilloasiento58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento57
+            // 
+            this.pasilloasiento57.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento57.Enabled = false;
+            this.pasilloasiento57.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento57.Location = new System.Drawing.Point(63, 602);
+            this.pasilloasiento57.Multiline = true;
+            this.pasilloasiento57.Name = "pasilloasiento57";
+            this.pasilloasiento57.ReadOnly = true;
+            this.pasilloasiento57.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento57.TabIndex = 131;
+            this.pasilloasiento57.Tag = "0";
+            this.pasilloasiento57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento56
+            // 
+            this.pasilloasiento56.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento56.Enabled = false;
+            this.pasilloasiento56.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento56.Location = new System.Drawing.Point(9, 602);
+            this.pasilloasiento56.Multiline = true;
+            this.pasilloasiento56.Name = "pasilloasiento56";
+            this.pasilloasiento56.ReadOnly = true;
+            this.pasilloasiento56.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento56.TabIndex = 130;
+            this.pasilloasiento56.Tag = "0";
+            this.pasilloasiento56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento60
+            // 
+            this.pasilloasiento60.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento60.Enabled = false;
+            this.pasilloasiento60.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento60.Location = new System.Drawing.Point(225, 602);
+            this.pasilloasiento60.Multiline = true;
+            this.pasilloasiento60.Name = "pasilloasiento60";
+            this.pasilloasiento60.ReadOnly = true;
+            this.pasilloasiento60.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento60.TabIndex = 124;
+            this.pasilloasiento60.Tag = "0";
+            this.pasilloasiento60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento55
+            // 
+            this.pasilloasiento55.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento55.Enabled = false;
+            this.pasilloasiento55.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento55.Location = new System.Drawing.Point(224, 549);
+            this.pasilloasiento55.Multiline = true;
+            this.pasilloasiento55.Name = "pasilloasiento55";
+            this.pasilloasiento55.ReadOnly = true;
+            this.pasilloasiento55.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento55.TabIndex = 114;
+            this.pasilloasiento55.Tag = "0";
+            this.pasilloasiento55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento54
+            // 
+            this.pasilloasiento54.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento54.Enabled = false;
+            this.pasilloasiento54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento54.Location = new System.Drawing.Point(171, 549);
+            this.pasilloasiento54.Multiline = true;
+            this.pasilloasiento54.Name = "pasilloasiento54";
+            this.pasilloasiento54.ReadOnly = true;
+            this.pasilloasiento54.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento54.TabIndex = 113;
+            this.pasilloasiento54.Tag = "0";
+            this.pasilloasiento54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento53
+            // 
+            this.pasilloasiento53.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento53.Enabled = false;
+            this.pasilloasiento53.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento53.Location = new System.Drawing.Point(117, 549);
+            this.pasilloasiento53.Multiline = true;
+            this.pasilloasiento53.Name = "pasilloasiento53";
+            this.pasilloasiento53.ReadOnly = true;
+            this.pasilloasiento53.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento53.TabIndex = 112;
+            this.pasilloasiento53.Tag = "0";
+            this.pasilloasiento53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento52
+            // 
+            this.pasilloasiento52.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento52.Enabled = false;
+            this.pasilloasiento52.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento52.Location = new System.Drawing.Point(63, 549);
+            this.pasilloasiento52.Multiline = true;
+            this.pasilloasiento52.Name = "pasilloasiento52";
+            this.pasilloasiento52.ReadOnly = true;
+            this.pasilloasiento52.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento52.TabIndex = 111;
+            this.pasilloasiento52.Tag = "0";
+            this.pasilloasiento52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento51
+            // 
+            this.pasilloasiento51.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento51.Enabled = false;
+            this.pasilloasiento51.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento51.Location = new System.Drawing.Point(9, 549);
+            this.pasilloasiento51.Multiline = true;
+            this.pasilloasiento51.Name = "pasilloasiento51";
+            this.pasilloasiento51.ReadOnly = true;
+            this.pasilloasiento51.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento51.TabIndex = 110;
+            this.pasilloasiento51.Tag = "0";
+            this.pasilloasiento51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento50
+            // 
+            this.pasilloasiento50.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento50.Enabled = false;
+            this.pasilloasiento50.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento50.Location = new System.Drawing.Point(224, 496);
+            this.pasilloasiento50.Multiline = true;
+            this.pasilloasiento50.Name = "pasilloasiento50";
+            this.pasilloasiento50.ReadOnly = true;
+            this.pasilloasiento50.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento50.TabIndex = 104;
+            this.pasilloasiento50.Tag = "0";
+            this.pasilloasiento50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento49
+            // 
+            this.pasilloasiento49.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento49.Enabled = false;
+            this.pasilloasiento49.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento49.Location = new System.Drawing.Point(171, 496);
+            this.pasilloasiento49.Multiline = true;
+            this.pasilloasiento49.Name = "pasilloasiento49";
+            this.pasilloasiento49.ReadOnly = true;
+            this.pasilloasiento49.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento49.TabIndex = 103;
+            this.pasilloasiento49.Tag = "0";
+            this.pasilloasiento49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento48
+            // 
+            this.pasilloasiento48.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento48.Enabled = false;
+            this.pasilloasiento48.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento48.Location = new System.Drawing.Point(117, 496);
+            this.pasilloasiento48.Multiline = true;
+            this.pasilloasiento48.Name = "pasilloasiento48";
+            this.pasilloasiento48.ReadOnly = true;
+            this.pasilloasiento48.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento48.TabIndex = 102;
+            this.pasilloasiento48.Tag = "0";
+            this.pasilloasiento48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento47
+            // 
+            this.pasilloasiento47.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento47.Enabled = false;
+            this.pasilloasiento47.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento47.Location = new System.Drawing.Point(63, 496);
+            this.pasilloasiento47.Multiline = true;
+            this.pasilloasiento47.Name = "pasilloasiento47";
+            this.pasilloasiento47.ReadOnly = true;
+            this.pasilloasiento47.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento47.TabIndex = 101;
+            this.pasilloasiento47.Tag = "0";
+            this.pasilloasiento47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento46
+            // 
+            this.pasilloasiento46.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento46.Enabled = false;
+            this.pasilloasiento46.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento46.Location = new System.Drawing.Point(9, 496);
+            this.pasilloasiento46.Multiline = true;
+            this.pasilloasiento46.Name = "pasilloasiento46";
+            this.pasilloasiento46.ReadOnly = true;
+            this.pasilloasiento46.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento46.TabIndex = 100;
+            this.pasilloasiento46.Tag = "0";
+            this.pasilloasiento46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento45
+            // 
+            this.pasilloasiento45.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento45.Enabled = false;
+            this.pasilloasiento45.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento45.Location = new System.Drawing.Point(224, 443);
+            this.pasilloasiento45.Multiline = true;
+            this.pasilloasiento45.Name = "pasilloasiento45";
+            this.pasilloasiento45.ReadOnly = true;
+            this.pasilloasiento45.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento45.TabIndex = 94;
+            this.pasilloasiento45.Tag = "0";
+            this.pasilloasiento45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento44
+            // 
+            this.pasilloasiento44.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento44.Enabled = false;
+            this.pasilloasiento44.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento44.Location = new System.Drawing.Point(171, 443);
+            this.pasilloasiento44.Multiline = true;
+            this.pasilloasiento44.Name = "pasilloasiento44";
+            this.pasilloasiento44.ReadOnly = true;
+            this.pasilloasiento44.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento44.TabIndex = 93;
+            this.pasilloasiento44.Tag = "0";
+            this.pasilloasiento44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento43
+            // 
+            this.pasilloasiento43.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento43.Enabled = false;
+            this.pasilloasiento43.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento43.Location = new System.Drawing.Point(117, 443);
+            this.pasilloasiento43.Multiline = true;
+            this.pasilloasiento43.Name = "pasilloasiento43";
+            this.pasilloasiento43.ReadOnly = true;
+            this.pasilloasiento43.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento43.TabIndex = 92;
+            this.pasilloasiento43.Tag = "0";
+            this.pasilloasiento43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento42
+            // 
+            this.pasilloasiento42.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento42.Enabled = false;
+            this.pasilloasiento42.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento42.Location = new System.Drawing.Point(63, 443);
+            this.pasilloasiento42.Multiline = true;
+            this.pasilloasiento42.Name = "pasilloasiento42";
+            this.pasilloasiento42.ReadOnly = true;
+            this.pasilloasiento42.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento42.TabIndex = 91;
+            this.pasilloasiento42.Tag = "0";
+            this.pasilloasiento42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento41
+            // 
+            this.pasilloasiento41.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento41.Enabled = false;
+            this.pasilloasiento41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento41.Location = new System.Drawing.Point(9, 443);
+            this.pasilloasiento41.Multiline = true;
+            this.pasilloasiento41.Name = "pasilloasiento41";
+            this.pasilloasiento41.ReadOnly = true;
+            this.pasilloasiento41.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento41.TabIndex = 90;
+            this.pasilloasiento41.Tag = "0";
+            this.pasilloasiento41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento40
+            // 
+            this.pasilloasiento40.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento40.Enabled = false;
+            this.pasilloasiento40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento40.Location = new System.Drawing.Point(224, 390);
+            this.pasilloasiento40.Multiline = true;
+            this.pasilloasiento40.Name = "pasilloasiento40";
+            this.pasilloasiento40.ReadOnly = true;
+            this.pasilloasiento40.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento40.TabIndex = 84;
+            this.pasilloasiento40.Tag = "0";
+            this.pasilloasiento40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento39
+            // 
+            this.pasilloasiento39.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento39.Enabled = false;
+            this.pasilloasiento39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento39.Location = new System.Drawing.Point(170, 390);
+            this.pasilloasiento39.Multiline = true;
+            this.pasilloasiento39.Name = "pasilloasiento39";
+            this.pasilloasiento39.ReadOnly = true;
+            this.pasilloasiento39.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento39.TabIndex = 83;
+            this.pasilloasiento39.Tag = "0";
+            this.pasilloasiento39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento38
+            // 
+            this.pasilloasiento38.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento38.Enabled = false;
+            this.pasilloasiento38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento38.Location = new System.Drawing.Point(116, 390);
+            this.pasilloasiento38.Multiline = true;
+            this.pasilloasiento38.Name = "pasilloasiento38";
+            this.pasilloasiento38.ReadOnly = true;
+            this.pasilloasiento38.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento38.TabIndex = 82;
+            this.pasilloasiento38.Tag = "0";
+            this.pasilloasiento38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento37
+            // 
+            this.pasilloasiento37.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento37.Enabled = false;
+            this.pasilloasiento37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento37.Location = new System.Drawing.Point(62, 390);
+            this.pasilloasiento37.Multiline = true;
+            this.pasilloasiento37.Name = "pasilloasiento37";
+            this.pasilloasiento37.ReadOnly = true;
+            this.pasilloasiento37.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento37.TabIndex = 81;
+            this.pasilloasiento37.Tag = "0";
+            this.pasilloasiento37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento36
+            // 
+            this.pasilloasiento36.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento36.Enabled = false;
+            this.pasilloasiento36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento36.Location = new System.Drawing.Point(8, 390);
+            this.pasilloasiento36.Multiline = true;
+            this.pasilloasiento36.Name = "pasilloasiento36";
+            this.pasilloasiento36.ReadOnly = true;
+            this.pasilloasiento36.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento36.TabIndex = 80;
+            this.pasilloasiento36.Tag = "0";
+            this.pasilloasiento36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento35
+            // 
+            this.pasilloasiento35.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento35.Enabled = false;
+            this.pasilloasiento35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento35.Location = new System.Drawing.Point(224, 337);
+            this.pasilloasiento35.Multiline = true;
+            this.pasilloasiento35.Name = "pasilloasiento35";
+            this.pasilloasiento35.ReadOnly = true;
+            this.pasilloasiento35.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento35.TabIndex = 74;
+            this.pasilloasiento35.Tag = "0";
+            this.pasilloasiento35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento34
+            // 
+            this.pasilloasiento34.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento34.Enabled = false;
+            this.pasilloasiento34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento34.Location = new System.Drawing.Point(170, 337);
+            this.pasilloasiento34.Multiline = true;
+            this.pasilloasiento34.Name = "pasilloasiento34";
+            this.pasilloasiento34.ReadOnly = true;
+            this.pasilloasiento34.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento34.TabIndex = 73;
+            this.pasilloasiento34.Tag = "0";
+            this.pasilloasiento34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento33
+            // 
+            this.pasilloasiento33.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento33.Enabled = false;
+            this.pasilloasiento33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento33.Location = new System.Drawing.Point(116, 337);
+            this.pasilloasiento33.Multiline = true;
+            this.pasilloasiento33.Name = "pasilloasiento33";
+            this.pasilloasiento33.ReadOnly = true;
+            this.pasilloasiento33.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento33.TabIndex = 72;
+            this.pasilloasiento33.Tag = "0";
+            this.pasilloasiento33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento32
+            // 
+            this.pasilloasiento32.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento32.Enabled = false;
+            this.pasilloasiento32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento32.Location = new System.Drawing.Point(62, 337);
+            this.pasilloasiento32.Multiline = true;
+            this.pasilloasiento32.Name = "pasilloasiento32";
+            this.pasilloasiento32.ReadOnly = true;
+            this.pasilloasiento32.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento32.TabIndex = 71;
+            this.pasilloasiento32.Tag = "0";
+            this.pasilloasiento32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento31
+            // 
+            this.pasilloasiento31.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento31.Enabled = false;
+            this.pasilloasiento31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento31.Location = new System.Drawing.Point(8, 337);
+            this.pasilloasiento31.Multiline = true;
+            this.pasilloasiento31.Name = "pasilloasiento31";
+            this.pasilloasiento31.ReadOnly = true;
+            this.pasilloasiento31.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento31.TabIndex = 70;
+            this.pasilloasiento31.Tag = "0";
+            this.pasilloasiento31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento30
+            // 
+            this.pasilloasiento30.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento30.Enabled = false;
+            this.pasilloasiento30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento30.Location = new System.Drawing.Point(224, 284);
+            this.pasilloasiento30.Multiline = true;
+            this.pasilloasiento30.Name = "pasilloasiento30";
+            this.pasilloasiento30.ReadOnly = true;
+            this.pasilloasiento30.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento30.TabIndex = 64;
+            this.pasilloasiento30.Tag = "0";
+            this.pasilloasiento30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento29
+            // 
+            this.pasilloasiento29.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento29.Enabled = false;
+            this.pasilloasiento29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento29.Location = new System.Drawing.Point(170, 284);
+            this.pasilloasiento29.Multiline = true;
+            this.pasilloasiento29.Name = "pasilloasiento29";
+            this.pasilloasiento29.ReadOnly = true;
+            this.pasilloasiento29.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento29.TabIndex = 63;
+            this.pasilloasiento29.Tag = "0";
+            this.pasilloasiento29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento28
+            // 
+            this.pasilloasiento28.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento28.Enabled = false;
+            this.pasilloasiento28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento28.Location = new System.Drawing.Point(116, 284);
+            this.pasilloasiento28.Multiline = true;
+            this.pasilloasiento28.Name = "pasilloasiento28";
+            this.pasilloasiento28.ReadOnly = true;
+            this.pasilloasiento28.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento28.TabIndex = 62;
+            this.pasilloasiento28.Tag = "0";
+            this.pasilloasiento28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento27
+            // 
+            this.pasilloasiento27.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento27.Enabled = false;
+            this.pasilloasiento27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento27.Location = new System.Drawing.Point(62, 284);
+            this.pasilloasiento27.Multiline = true;
+            this.pasilloasiento27.Name = "pasilloasiento27";
+            this.pasilloasiento27.ReadOnly = true;
+            this.pasilloasiento27.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento27.TabIndex = 61;
+            this.pasilloasiento27.Tag = "0";
+            this.pasilloasiento27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento26
+            // 
+            this.pasilloasiento26.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento26.Enabled = false;
+            this.pasilloasiento26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento26.Location = new System.Drawing.Point(8, 284);
+            this.pasilloasiento26.Multiline = true;
+            this.pasilloasiento26.Name = "pasilloasiento26";
+            this.pasilloasiento26.ReadOnly = true;
+            this.pasilloasiento26.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento26.TabIndex = 60;
+            this.pasilloasiento26.Tag = "0";
+            this.pasilloasiento26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento25
+            // 
+            this.pasilloasiento25.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento25.Enabled = false;
+            this.pasilloasiento25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento25.Location = new System.Drawing.Point(224, 231);
+            this.pasilloasiento25.Multiline = true;
+            this.pasilloasiento25.Name = "pasilloasiento25";
+            this.pasilloasiento25.ReadOnly = true;
+            this.pasilloasiento25.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento25.TabIndex = 54;
+            this.pasilloasiento25.Tag = "0";
+            this.pasilloasiento25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento24
+            // 
+            this.pasilloasiento24.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento24.Enabled = false;
+            this.pasilloasiento24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento24.Location = new System.Drawing.Point(170, 231);
+            this.pasilloasiento24.Multiline = true;
+            this.pasilloasiento24.Name = "pasilloasiento24";
+            this.pasilloasiento24.ReadOnly = true;
+            this.pasilloasiento24.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento24.TabIndex = 53;
+            this.pasilloasiento24.Tag = "0";
+            this.pasilloasiento24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento23
+            // 
+            this.pasilloasiento23.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento23.Enabled = false;
+            this.pasilloasiento23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento23.Location = new System.Drawing.Point(116, 231);
+            this.pasilloasiento23.Multiline = true;
+            this.pasilloasiento23.Name = "pasilloasiento23";
+            this.pasilloasiento23.ReadOnly = true;
+            this.pasilloasiento23.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento23.TabIndex = 52;
+            this.pasilloasiento23.Tag = "0";
+            this.pasilloasiento23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento22
+            // 
+            this.pasilloasiento22.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento22.Enabled = false;
+            this.pasilloasiento22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento22.Location = new System.Drawing.Point(62, 231);
+            this.pasilloasiento22.Multiline = true;
+            this.pasilloasiento22.Name = "pasilloasiento22";
+            this.pasilloasiento22.ReadOnly = true;
+            this.pasilloasiento22.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento22.TabIndex = 51;
+            this.pasilloasiento22.Tag = "0";
+            this.pasilloasiento22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento21
+            // 
+            this.pasilloasiento21.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento21.Enabled = false;
+            this.pasilloasiento21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento21.Location = new System.Drawing.Point(8, 231);
+            this.pasilloasiento21.Multiline = true;
+            this.pasilloasiento21.Name = "pasilloasiento21";
+            this.pasilloasiento21.ReadOnly = true;
+            this.pasilloasiento21.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento21.TabIndex = 50;
+            this.pasilloasiento21.Tag = "0";
+            this.pasilloasiento21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento20
+            // 
+            this.pasilloasiento20.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento20.Enabled = false;
+            this.pasilloasiento20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento20.Location = new System.Drawing.Point(224, 178);
+            this.pasilloasiento20.Multiline = true;
+            this.pasilloasiento20.Name = "pasilloasiento20";
+            this.pasilloasiento20.ReadOnly = true;
+            this.pasilloasiento20.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento20.TabIndex = 44;
+            this.pasilloasiento20.Tag = "0";
+            this.pasilloasiento20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento19
+            // 
+            this.pasilloasiento19.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento19.Enabled = false;
+            this.pasilloasiento19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento19.Location = new System.Drawing.Point(170, 178);
+            this.pasilloasiento19.Multiline = true;
+            this.pasilloasiento19.Name = "pasilloasiento19";
+            this.pasilloasiento19.ReadOnly = true;
+            this.pasilloasiento19.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento19.TabIndex = 43;
+            this.pasilloasiento19.Tag = "0";
+            this.pasilloasiento19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento18
+            // 
+            this.pasilloasiento18.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento18.Enabled = false;
+            this.pasilloasiento18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento18.Location = new System.Drawing.Point(116, 178);
+            this.pasilloasiento18.Multiline = true;
+            this.pasilloasiento18.Name = "pasilloasiento18";
+            this.pasilloasiento18.ReadOnly = true;
+            this.pasilloasiento18.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento18.TabIndex = 42;
+            this.pasilloasiento18.Tag = "0";
+            this.pasilloasiento18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento17
+            // 
+            this.pasilloasiento17.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento17.Enabled = false;
+            this.pasilloasiento17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento17.Location = new System.Drawing.Point(62, 178);
+            this.pasilloasiento17.Multiline = true;
+            this.pasilloasiento17.Name = "pasilloasiento17";
+            this.pasilloasiento17.ReadOnly = true;
+            this.pasilloasiento17.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento17.TabIndex = 41;
+            this.pasilloasiento17.Tag = "0";
+            this.pasilloasiento17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento16
+            // 
+            this.pasilloasiento16.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento16.Enabled = false;
+            this.pasilloasiento16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento16.Location = new System.Drawing.Point(8, 178);
+            this.pasilloasiento16.Multiline = true;
+            this.pasilloasiento16.Name = "pasilloasiento16";
+            this.pasilloasiento16.ReadOnly = true;
+            this.pasilloasiento16.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento16.TabIndex = 40;
+            this.pasilloasiento16.Tag = "0";
+            this.pasilloasiento16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento15
+            // 
+            this.pasilloasiento15.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento15.Enabled = false;
+            this.pasilloasiento15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento15.Location = new System.Drawing.Point(223, 125);
+            this.pasilloasiento15.Multiline = true;
+            this.pasilloasiento15.Name = "pasilloasiento15";
+            this.pasilloasiento15.ReadOnly = true;
+            this.pasilloasiento15.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento15.TabIndex = 34;
+            this.pasilloasiento15.Tag = "0";
+            this.pasilloasiento15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento14
+            // 
+            this.pasilloasiento14.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento14.Enabled = false;
+            this.pasilloasiento14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento14.Location = new System.Drawing.Point(169, 125);
+            this.pasilloasiento14.Multiline = true;
+            this.pasilloasiento14.Name = "pasilloasiento14";
+            this.pasilloasiento14.ReadOnly = true;
+            this.pasilloasiento14.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento14.TabIndex = 33;
+            this.pasilloasiento14.Tag = "0";
+            this.pasilloasiento14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento13
+            // 
+            this.pasilloasiento13.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento13.Enabled = false;
+            this.pasilloasiento13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento13.Location = new System.Drawing.Point(115, 125);
+            this.pasilloasiento13.Multiline = true;
+            this.pasilloasiento13.Name = "pasilloasiento13";
+            this.pasilloasiento13.ReadOnly = true;
+            this.pasilloasiento13.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento13.TabIndex = 32;
+            this.pasilloasiento13.Tag = "0";
+            this.pasilloasiento13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento12
+            // 
+            this.pasilloasiento12.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento12.Enabled = false;
+            this.pasilloasiento12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento12.Location = new System.Drawing.Point(61, 125);
+            this.pasilloasiento12.Multiline = true;
+            this.pasilloasiento12.Name = "pasilloasiento12";
+            this.pasilloasiento12.ReadOnly = true;
+            this.pasilloasiento12.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento12.TabIndex = 31;
+            this.pasilloasiento12.Tag = "0";
+            this.pasilloasiento12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento11
+            // 
+            this.pasilloasiento11.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento11.Enabled = false;
+            this.pasilloasiento11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento11.Location = new System.Drawing.Point(7, 125);
+            this.pasilloasiento11.Multiline = true;
+            this.pasilloasiento11.Name = "pasilloasiento11";
+            this.pasilloasiento11.ReadOnly = true;
+            this.pasilloasiento11.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento11.TabIndex = 30;
+            this.pasilloasiento11.Tag = "0";
+            this.pasilloasiento11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento10
+            // 
+            this.pasilloasiento10.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento10.Enabled = false;
+            this.pasilloasiento10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento10.Location = new System.Drawing.Point(223, 72);
+            this.pasilloasiento10.Multiline = true;
+            this.pasilloasiento10.Name = "pasilloasiento10";
+            this.pasilloasiento10.ReadOnly = true;
+            this.pasilloasiento10.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento10.TabIndex = 24;
+            this.pasilloasiento10.Tag = "0";
+            this.pasilloasiento10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento9
+            // 
+            this.pasilloasiento9.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento9.Enabled = false;
+            this.pasilloasiento9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento9.Location = new System.Drawing.Point(169, 72);
+            this.pasilloasiento9.Multiline = true;
+            this.pasilloasiento9.Name = "pasilloasiento9";
+            this.pasilloasiento9.ReadOnly = true;
+            this.pasilloasiento9.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento9.TabIndex = 23;
+            this.pasilloasiento9.Tag = "0";
+            this.pasilloasiento9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento8
+            // 
+            this.pasilloasiento8.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento8.Enabled = false;
+            this.pasilloasiento8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento8.Location = new System.Drawing.Point(115, 72);
+            this.pasilloasiento8.Multiline = true;
+            this.pasilloasiento8.Name = "pasilloasiento8";
+            this.pasilloasiento8.ReadOnly = true;
+            this.pasilloasiento8.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento8.TabIndex = 22;
+            this.pasilloasiento8.Tag = "0";
+            this.pasilloasiento8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento7
+            // 
+            this.pasilloasiento7.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento7.Enabled = false;
+            this.pasilloasiento7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento7.Location = new System.Drawing.Point(61, 72);
+            this.pasilloasiento7.Multiline = true;
+            this.pasilloasiento7.Name = "pasilloasiento7";
+            this.pasilloasiento7.ReadOnly = true;
+            this.pasilloasiento7.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento7.TabIndex = 21;
+            this.pasilloasiento7.Tag = "0";
+            this.pasilloasiento7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento6
+            // 
+            this.pasilloasiento6.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento6.Enabled = false;
+            this.pasilloasiento6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento6.Location = new System.Drawing.Point(7, 72);
+            this.pasilloasiento6.Multiline = true;
+            this.pasilloasiento6.Name = "pasilloasiento6";
+            this.pasilloasiento6.ReadOnly = true;
+            this.pasilloasiento6.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento6.TabIndex = 20;
+            this.pasilloasiento6.Tag = "0";
+            this.pasilloasiento6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento5
+            // 
+            this.pasilloasiento5.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento5.Enabled = false;
+            this.pasilloasiento5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento5.Location = new System.Drawing.Point(223, 19);
+            this.pasilloasiento5.Multiline = true;
+            this.pasilloasiento5.Name = "pasilloasiento5";
+            this.pasilloasiento5.ReadOnly = true;
+            this.pasilloasiento5.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento5.TabIndex = 14;
+            this.pasilloasiento5.Tag = "0";
+            this.pasilloasiento5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento4
+            // 
+            this.pasilloasiento4.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento4.Enabled = false;
+            this.pasilloasiento4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento4.Location = new System.Drawing.Point(169, 19);
+            this.pasilloasiento4.Multiline = true;
+            this.pasilloasiento4.Name = "pasilloasiento4";
+            this.pasilloasiento4.ReadOnly = true;
+            this.pasilloasiento4.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento4.TabIndex = 13;
+            this.pasilloasiento4.Tag = "0";
+            this.pasilloasiento4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento3
+            // 
+            this.pasilloasiento3.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento3.Enabled = false;
+            this.pasilloasiento3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento3.Location = new System.Drawing.Point(115, 19);
+            this.pasilloasiento3.Multiline = true;
+            this.pasilloasiento3.Name = "pasilloasiento3";
+            this.pasilloasiento3.ReadOnly = true;
+            this.pasilloasiento3.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento3.TabIndex = 12;
+            this.pasilloasiento3.Tag = "0";
+            this.pasilloasiento3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento2
+            // 
+            this.pasilloasiento2.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento2.Enabled = false;
+            this.pasilloasiento2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasilloasiento2.Location = new System.Drawing.Point(61, 19);
+            this.pasilloasiento2.Multiline = true;
+            this.pasilloasiento2.Name = "pasilloasiento2";
+            this.pasilloasiento2.ReadOnly = true;
+            this.pasilloasiento2.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento2.TabIndex = 11;
+            this.pasilloasiento2.Tag = "0";
+            this.pasilloasiento2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasilloasiento1
+            // 
+            this.pasilloasiento1.BackColor = System.Drawing.Color.Gainsboro;
+            this.pasilloasiento1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasilloasiento1.Enabled = false;
+            this.pasilloasiento1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.pasilloasiento1.ForeColor = System.Drawing.Color.White;
+            this.pasilloasiento1.Location = new System.Drawing.Point(7, 19);
+            this.pasilloasiento1.Multiline = true;
+            this.pasilloasiento1.Name = "pasilloasiento1";
+            this.pasilloasiento1.ReadOnly = true;
+            this.pasilloasiento1.Size = new System.Drawing.Size(55, 20);
+            this.pasilloasiento1.TabIndex = 10;
+            this.pasilloasiento1.Tag = "0";
+            this.pasilloasiento1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.CadetBlue;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.Enabled = false;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(224, 3);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(55, 13);
+            this.textBox5.TabIndex = 4;
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox131
+            // 
+            this.textBox131.BackColor = System.Drawing.Color.CadetBlue;
+            this.textBox131.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox131.Enabled = false;
+            this.textBox131.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox131.Location = new System.Drawing.Point(169, 3);
+            this.textBox131.Multiline = true;
+            this.textBox131.Name = "textBox131";
+            this.textBox131.ReadOnly = true;
+            this.textBox131.Size = new System.Drawing.Size(55, 13);
+            this.textBox131.TabIndex = 3;
+            this.textBox131.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pasillo1
+            // 
+            this.pasillo1.BackColor = System.Drawing.Color.CadetBlue;
+            this.pasillo1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pasillo1.Enabled = false;
+            this.pasillo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pasillo1.Location = new System.Drawing.Point(114, 3);
+            this.pasillo1.Multiline = true;
+            this.pasillo1.Name = "pasillo1";
+            this.pasillo1.ReadOnly = true;
+            this.pasillo1.Size = new System.Drawing.Size(55, 13);
+            this.pasillo1.TabIndex = 2;
+            this.pasillo1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox133
+            // 
+            this.textBox133.BackColor = System.Drawing.Color.CadetBlue;
+            this.textBox133.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox133.Enabled = false;
+            this.textBox133.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox133.Location = new System.Drawing.Point(60, 3);
+            this.textBox133.Multiline = true;
+            this.textBox133.Name = "textBox133";
+            this.textBox133.ReadOnly = true;
+            this.textBox133.Size = new System.Drawing.Size(55, 13);
+            this.textBox133.TabIndex = 1;
+            this.textBox133.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox134
+            // 
+            this.textBox134.BackColor = System.Drawing.Color.CadetBlue;
+            this.textBox134.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox134.Enabled = false;
+            this.textBox134.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox134.Location = new System.Drawing.Point(6, 3);
+            this.textBox134.Multiline = true;
+            this.textBox134.Name = "textBox134";
+            this.textBox134.ReadOnly = true;
+            this.textBox134.Size = new System.Drawing.Size(55, 13);
+            this.textBox134.TabIndex = 0;
+            this.textBox134.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnPlantaBaja
+            // 
+            this.btnPlantaBaja.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPlantaBaja.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnPlantaBaja.Depth = 0;
+            this.btnPlantaBaja.HighEmphasis = true;
+            this.btnPlantaBaja.Icon = null;
+            this.btnPlantaBaja.Location = new System.Drawing.Point(1460, 12);
+            this.btnPlantaBaja.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnPlantaBaja.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnPlantaBaja.Name = "btnPlantaBaja";
+            this.btnPlantaBaja.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnPlantaBaja.Size = new System.Drawing.Size(75, 36);
+            this.btnPlantaBaja.TabIndex = 222;
+            this.btnPlantaBaja.Text = "P. Baja";
+            this.btnPlantaBaja.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnPlantaBaja.UseAccentColor = false;
+            this.btnPlantaBaja.UseVisualStyleBackColor = true;
+            // 
+            // btnPlantaAlta
+            // 
+            this.btnPlantaAlta.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPlantaAlta.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnPlantaAlta.Depth = 0;
+            this.btnPlantaAlta.HighEmphasis = true;
+            this.btnPlantaAlta.Icon = null;
+            this.btnPlantaAlta.Location = new System.Drawing.Point(1771, 9);
+            this.btnPlantaAlta.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnPlantaAlta.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnPlantaAlta.Name = "btnPlantaAlta";
+            this.btnPlantaAlta.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnPlantaAlta.Size = new System.Drawing.Size(75, 36);
+            this.btnPlantaAlta.TabIndex = 223;
+            this.btnPlantaAlta.Text = "P. Alta";
+            this.btnPlantaAlta.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnPlantaAlta.UseAccentColor = false;
+            this.btnPlantaAlta.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel10
+            // 
+            this.materialLabel10.AutoSize = true;
+            this.materialLabel10.Depth = 0;
+            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel10.Location = new System.Drawing.Point(1591, 19);
+            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel10.Name = "materialLabel10";
+            this.materialLabel10.Size = new System.Drawing.Size(121, 19);
+            this.materialLabel10.TabIndex = 225;
+            this.materialLabel10.Text = "DISPONIBILIDAD";
             // 
             // frmHomeV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.AutoScrollMargin = new System.Drawing.Size(10, 10);
-            this.AutoScrollMinSize = new System.Drawing.Size(10, 10);
-            this.ClientSize = new System.Drawing.Size(1915, 1064);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnEnviar);
+            this.ClientSize = new System.Drawing.Size(1874, 1102);
+            this.Controls.Add(this.materialTabControl1);
+            this.DrawerShowIconsWhenHidden = true;
+            this.DrawerTabControl = this.materialTabControl1;
             this.Name = "frmHomeV2";
             this.Text = "frmHomeV2";
             this.Load += new System.EventHandler(this.frmHomeV2_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.materialTabControl1.ResumeLayout(false);
+            this.tabPage12.ResumeLayout(false);
+            this.tabPage12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridViewViajes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridViewVentaBoletos)).EndInit();
+            this.panel_Camion.ResumeLayout(false);
+            this.panel_Camion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puerta1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento63)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento58)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento65)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento64)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento62)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento61)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento60)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento59)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento57)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento56)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento55)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asiento1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.TabPage tabPage10;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button btnEnviar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.TabPage tabPage12;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private MaterialSkin.Controls.MaterialComboBox cmbComboDestino;
+        private MaterialSkin.Controls.MaterialComboBox cmbComboOrigen;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialButton btn_CancelarBuscarViajes;
+        private MaterialSkin.Controls.MaterialButton btn_BuscarViajes;
+        private System.Windows.Forms.DataGridView GridViewViajes;
+        private System.Windows.Forms.DateTimePicker dtmFechaSalida;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
-        private MaterialSkin.Controls.MaterialMaskedTextBox materialMaskedTextBox1;
-        private MaterialSkin.Controls.MaterialMaskedTextBox materialMaskedTextBox3;
-        private MaterialSkin.Controls.MaterialMaskedTextBox materialMaskedTextBox2;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private MaterialSkin.Controls.MaterialCheckbox materialCheckbox1;
+        private MaterialSkin.Controls.MaterialTextBox2 Txt_NumAsientosDisponibles;
+        private MaterialSkin.Controls.MaterialTextBox2 Txt_Recorrido;
+        private MaterialSkin.Controls.MaterialTextBox2 Txt_NumAsientosApartados;
+        private MaterialSkin.Controls.MaterialTextBox2 Txt_FechaHoraSistema;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView GridViewVentaBoletos;
+        private MaterialSkin.Controls.MaterialButton btn_Cancelar;
+        private MaterialSkin.Controls.MaterialButton btn_Vender;
+        private MaterialSkin.Controls.MaterialCheckbox checkBoxVentaGrupal;
+        private MaterialSkin.Controls.MaterialTextBox2 Txt_TiempoVenta;
+        private MaterialSkin.Controls.MaterialLabel materialLabel8;
+        private LibControls.WinForms.Panel_Creativa panel_Camion;
+        private System.Windows.Forms.PictureBox puerta13;
+        private System.Windows.Forms.PictureBox puerta12;
+        private System.Windows.Forms.PictureBox puerta11;
+        private System.Windows.Forms.PictureBox puerta10;
+        private System.Windows.Forms.PictureBox puerta9;
+        private System.Windows.Forms.PictureBox puerta8;
+        private System.Windows.Forms.PictureBox puerta7;
+        private System.Windows.Forms.PictureBox puerta6;
+        private System.Windows.Forms.PictureBox puerta5;
+        private System.Windows.Forms.PictureBox puerta4;
+        private System.Windows.Forms.PictureBox puerta3;
+        private System.Windows.Forms.PictureBox puerta2;
+        private System.Windows.Forms.PictureBox puerta1;
+        private System.Windows.Forms.PictureBox asiento63;
+        private System.Windows.Forms.PictureBox asiento28;
+        private System.Windows.Forms.PictureBox asiento33;
+        private System.Windows.Forms.PictureBox asiento38;
+        private System.Windows.Forms.PictureBox asiento43;
+        private System.Windows.Forms.PictureBox asiento48;
+        private System.Windows.Forms.PictureBox asiento53;
+        private System.Windows.Forms.PictureBox asiento58;
+        private System.Windows.Forms.PictureBox asiento23;
+        private System.Windows.Forms.PictureBox asiento18;
+        private System.Windows.Forms.PictureBox asiento13;
+        private System.Windows.Forms.PictureBox asiento8;
+        private System.Windows.Forms.PictureBox asiento3;
+        private System.Windows.Forms.PictureBox asiento65;
+        private System.Windows.Forms.PictureBox asiento64;
+        private System.Windows.Forms.PictureBox asiento62;
+        private System.Windows.Forms.PictureBox asiento61;
+        private System.Windows.Forms.PictureBox asiento60;
+        private System.Windows.Forms.PictureBox asiento59;
+        private System.Windows.Forms.PictureBox asiento57;
+        private System.Windows.Forms.PictureBox asiento56;
+        private System.Windows.Forms.PictureBox asiento55;
+        private System.Windows.Forms.PictureBox asiento54;
+        private System.Windows.Forms.PictureBox asiento52;
+        private System.Windows.Forms.PictureBox asiento51;
+        private System.Windows.Forms.PictureBox asiento50;
+        private System.Windows.Forms.PictureBox asiento49;
+        private System.Windows.Forms.PictureBox asiento47;
+        private System.Windows.Forms.PictureBox asiento46;
+        private System.Windows.Forms.PictureBox asiento45;
+        private System.Windows.Forms.PictureBox asiento44;
+        private System.Windows.Forms.PictureBox asiento42;
+        private System.Windows.Forms.PictureBox asiento41;
+        private System.Windows.Forms.PictureBox asiento40;
+        private System.Windows.Forms.PictureBox asiento39;
+        private System.Windows.Forms.PictureBox asiento37;
+        private System.Windows.Forms.PictureBox asiento36;
+        private System.Windows.Forms.PictureBox asiento35;
+        private System.Windows.Forms.PictureBox asiento34;
+        private System.Windows.Forms.PictureBox asiento32;
+        private System.Windows.Forms.PictureBox asiento31;
+        private System.Windows.Forms.PictureBox asiento30;
+        private System.Windows.Forms.PictureBox asiento29;
+        private System.Windows.Forms.PictureBox asiento27;
+        private System.Windows.Forms.PictureBox asiento26;
+        private System.Windows.Forms.PictureBox asiento25;
+        private System.Windows.Forms.PictureBox asiento24;
+        private System.Windows.Forms.PictureBox asiento22;
+        private System.Windows.Forms.PictureBox asiento21;
+        private System.Windows.Forms.PictureBox asiento20;
+        private System.Windows.Forms.PictureBox asiento19;
+        private System.Windows.Forms.PictureBox asiento17;
+        private System.Windows.Forms.PictureBox asiento16;
+        private System.Windows.Forms.PictureBox asiento15;
+        private System.Windows.Forms.PictureBox asiento14;
+        private System.Windows.Forms.PictureBox asiento12;
+        private System.Windows.Forms.PictureBox asiento11;
+        private System.Windows.Forms.PictureBox asiento10;
+        private System.Windows.Forms.PictureBox asiento9;
+        private System.Windows.Forms.PictureBox asiento7;
+        private System.Windows.Forms.PictureBox asiento6;
+        private System.Windows.Forms.PictureBox asiento5;
+        private System.Windows.Forms.PictureBox asiento4;
+        private System.Windows.Forms.PictureBox asiento2;
+        private System.Windows.Forms.PictureBox asiento1;
+        private System.Windows.Forms.TextBox pasilloasiento64;
+        private System.Windows.Forms.TextBox pasilloasiento63;
+        private System.Windows.Forms.TextBox pasilloasiento62;
+        private System.Windows.Forms.TextBox pasilloasiento61;
+        private System.Windows.Forms.TextBox pasilloasiento65;
+        private System.Windows.Forms.TextBox pasilloasiento59;
+        private System.Windows.Forms.TextBox pasilloasiento58;
+        private System.Windows.Forms.TextBox pasilloasiento57;
+        private System.Windows.Forms.TextBox pasilloasiento56;
+        private System.Windows.Forms.TextBox pasilloasiento60;
+        private System.Windows.Forms.TextBox pasilloasiento55;
+        private System.Windows.Forms.TextBox pasilloasiento54;
+        private System.Windows.Forms.TextBox pasilloasiento53;
+        private System.Windows.Forms.TextBox pasilloasiento52;
+        private System.Windows.Forms.TextBox pasilloasiento51;
+        private System.Windows.Forms.TextBox pasilloasiento50;
+        private System.Windows.Forms.TextBox pasilloasiento49;
+        private System.Windows.Forms.TextBox pasilloasiento48;
+        private System.Windows.Forms.TextBox pasilloasiento47;
+        private System.Windows.Forms.TextBox pasilloasiento46;
+        private System.Windows.Forms.TextBox pasilloasiento45;
+        private System.Windows.Forms.TextBox pasilloasiento44;
+        private System.Windows.Forms.TextBox pasilloasiento43;
+        private System.Windows.Forms.TextBox pasilloasiento42;
+        private System.Windows.Forms.TextBox pasilloasiento41;
+        private System.Windows.Forms.TextBox pasilloasiento40;
+        private System.Windows.Forms.TextBox pasilloasiento39;
+        private System.Windows.Forms.TextBox pasilloasiento38;
+        private System.Windows.Forms.TextBox pasilloasiento37;
+        private System.Windows.Forms.TextBox pasilloasiento36;
+        private System.Windows.Forms.TextBox pasilloasiento35;
+        private System.Windows.Forms.TextBox pasilloasiento34;
+        private System.Windows.Forms.TextBox pasilloasiento33;
+        private System.Windows.Forms.TextBox pasilloasiento32;
+        private System.Windows.Forms.TextBox pasilloasiento31;
+        private System.Windows.Forms.TextBox pasilloasiento30;
+        private System.Windows.Forms.TextBox pasilloasiento29;
+        private System.Windows.Forms.TextBox pasilloasiento28;
+        private System.Windows.Forms.TextBox pasilloasiento27;
+        private System.Windows.Forms.TextBox pasilloasiento26;
+        private System.Windows.Forms.TextBox pasilloasiento25;
+        private System.Windows.Forms.TextBox pasilloasiento24;
+        private System.Windows.Forms.TextBox pasilloasiento23;
+        private System.Windows.Forms.TextBox pasilloasiento22;
+        private System.Windows.Forms.TextBox pasilloasiento21;
+        private System.Windows.Forms.TextBox pasilloasiento20;
+        private System.Windows.Forms.TextBox pasilloasiento19;
+        private System.Windows.Forms.TextBox pasilloasiento18;
+        private System.Windows.Forms.TextBox pasilloasiento17;
+        private System.Windows.Forms.TextBox pasilloasiento16;
+        private System.Windows.Forms.TextBox pasilloasiento15;
+        private System.Windows.Forms.TextBox pasilloasiento14;
+        private System.Windows.Forms.TextBox pasilloasiento13;
+        private System.Windows.Forms.TextBox pasilloasiento12;
+        private System.Windows.Forms.TextBox pasilloasiento11;
+        private System.Windows.Forms.TextBox pasilloasiento10;
+        private System.Windows.Forms.TextBox pasilloasiento9;
+        private System.Windows.Forms.TextBox pasilloasiento8;
+        private System.Windows.Forms.TextBox pasilloasiento7;
+        private System.Windows.Forms.TextBox pasilloasiento6;
+        private System.Windows.Forms.TextBox pasilloasiento5;
+        private System.Windows.Forms.TextBox pasilloasiento4;
+        private System.Windows.Forms.TextBox pasilloasiento3;
+        private System.Windows.Forms.TextBox pasilloasiento2;
+        private System.Windows.Forms.TextBox pasilloasiento1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox131;
+        private System.Windows.Forms.TextBox pasillo1;
+        private System.Windows.Forms.TextBox textBox133;
+        private System.Windows.Forms.TextBox textBox134;
+        private MaterialSkin.Controls.MaterialButton btnPlantaAlta;
+        private MaterialSkin.Controls.MaterialButton btnPlantaBaja;
+        private MaterialSkin.Controls.MaterialLabel materialLabel10;
     }
 }

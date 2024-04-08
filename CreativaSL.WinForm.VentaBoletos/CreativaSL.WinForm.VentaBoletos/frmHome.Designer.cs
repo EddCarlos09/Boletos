@@ -95,8 +95,6 @@
             this.Column44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panelTitle_Creativa3 = new CreativaSL.LibControls.WinForms.PanelTitle_Creativa(this.components);
-            this.label12 = new System.Windows.Forms.Label();
             this.Txt_NumAsientosApartados = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.Txt_NumAsientosDisponibles = new System.Windows.Forms.TextBox();
@@ -307,11 +305,12 @@
             this.textBox134 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panelDisponibilidad = new CreativaSL.LibControls.WinForms.PanelTitle_Creativa(this.components);
+            this.label12 = new System.Windows.Forms.Label();
+            this.panelTitle_Creativa3 = new CreativaSL.LibControls.WinForms.PanelTitle_Creativa(this.components);
             this.panelBusqueda.SuspendLayout();
             this.panelTitle_Creativa1.SuspendLayout();
             this.PanelDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewViajes)).BeginInit();
-            this.panelTitle_Creativa3.SuspendLayout();
             this.PanelNuevaVenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewVentaBoletos)).BeginInit();
             this.panelTitle_Creativa2.SuspendLayout();
@@ -396,6 +395,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.asiento2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento1)).BeginInit();
             this.panelDisponibilidad.SuspendLayout();
+            this.panelTitle_Creativa3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBusqueda
@@ -1426,37 +1426,6 @@
             this.Column46.ReadOnly = true;
             this.Column46.Visible = false;
             this.Column46.Width = 19;
-            // 
-            // panelTitle_Creativa3
-            // 
-            this.panelTitle_Creativa3.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panelTitle_Creativa3.BorderColor = System.Drawing.Color.Transparent;
-            this.panelTitle_Creativa3.Controls.Add(this.label12);
-            this.panelTitle_Creativa3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle_Creativa3.DrawGradient = false;
-            this.panelTitle_Creativa3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelTitle_Creativa3.LinearGradientModeBgk = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.panelTitle_Creativa3.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle_Creativa3.Name = "panelTitle_Creativa3";
-            this.panelTitle_Creativa3.Size = new System.Drawing.Size(1038, 29);
-            this.panelTitle_Creativa3.SizeLine = 3;
-            this.panelTitle_Creativa3.SizeTitle = 20;
-            this.panelTitle_Creativa3.TabIndex = 0;
-            this.panelTitle_Creativa3.Title = "";
-            this.panelTitle_Creativa3.TitleColor = System.Drawing.Color.Transparent;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label12.Location = new System.Drawing.Point(393, 4);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(86, 26);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Salidas";
-            this.label12.UseMnemonic = false;
             // 
             // Txt_NumAsientosApartados
             // 
@@ -4420,6 +4389,37 @@
             this.panelDisponibilidad.Title = "";
             this.panelDisponibilidad.TitleColor = System.Drawing.Color.Transparent;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label12.Location = new System.Drawing.Point(393, 4);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(86, 26);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Salidas";
+            this.label12.UseMnemonic = false;
+            // 
+            // panelTitle_Creativa3
+            // 
+            this.panelTitle_Creativa3.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panelTitle_Creativa3.BorderColor = System.Drawing.Color.Transparent;
+            this.panelTitle_Creativa3.Controls.Add(this.label12);
+            this.panelTitle_Creativa3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle_Creativa3.DrawGradient = false;
+            this.panelTitle_Creativa3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelTitle_Creativa3.LinearGradientModeBgk = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.panelTitle_Creativa3.Location = new System.Drawing.Point(0, 0);
+            this.panelTitle_Creativa3.Name = "panelTitle_Creativa3";
+            this.panelTitle_Creativa3.Size = new System.Drawing.Size(1038, 29);
+            this.panelTitle_Creativa3.SizeLine = 3;
+            this.panelTitle_Creativa3.SizeTitle = 20;
+            this.panelTitle_Creativa3.TabIndex = 0;
+            this.panelTitle_Creativa3.Title = "";
+            this.panelTitle_Creativa3.TitleColor = System.Drawing.Color.Transparent;
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -4449,8 +4449,6 @@
             this.PanelDatos.ResumeLayout(false);
             this.PanelDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewViajes)).EndInit();
-            this.panelTitle_Creativa3.ResumeLayout(false);
-            this.panelTitle_Creativa3.PerformLayout();
             this.PanelNuevaVenta.ResumeLayout(false);
             this.PanelNuevaVenta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewVentaBoletos)).EndInit();
@@ -4539,6 +4537,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.asiento1)).EndInit();
             this.panelDisponibilidad.ResumeLayout(false);
             this.panelDisponibilidad.PerformLayout();
+            this.panelTitle_Creativa3.ResumeLayout(false);
+            this.panelTitle_Creativa3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4664,8 +4664,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column49;
         private System.Windows.Forms.CheckBox checkBoxVentaGrupal;
         private LibControls.WinForms.Button_Creativa btnVentasGrupal;
-        private LibControls.WinForms.PanelTitle_Creativa panelTitle_Creativa3;
-        private System.Windows.Forms.Label label12;
         private LibControls.WinForms.Button_Creativa btnAsistencia;
         private Syncfusion.Windows.Forms.ButtonAdv btnSeleccionar;
         private LibControls.WinForms.Button_Creativa btnPlantaBaja;
@@ -4821,5 +4819,7 @@
         private System.Windows.Forms.TextBox textBox134;
         private System.Windows.Forms.Label label14;
         private LibControls.WinForms.PanelTitle_Creativa panelDisponibilidad;
+        private LibControls.WinForms.PanelTitle_Creativa panelTitle_Creativa3;
+        private System.Windows.Forms.Label label12;
     }
 }
