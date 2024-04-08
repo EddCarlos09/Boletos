@@ -545,6 +545,12 @@
     <Compile Include="frmCatDisenioV2.Designer.cs">
       <DependentUpon>frmCatDisenioV2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCatMarcasV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatMarcasV2.Designer.cs">
+      <DependentUpon>frmCatMarcasV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCatSalidasV2.cs">
       <SubType>Form</SubType>
     </Compile>
