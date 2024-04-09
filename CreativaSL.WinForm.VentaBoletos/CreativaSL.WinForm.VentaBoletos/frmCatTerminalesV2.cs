@@ -1,4 +1,5 @@
 ﻿using System;
+using MaterialSkin.Controls;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,19 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CreativaSL.LibControls.WinForms;
+using static CreativaSL.WinForm.VentaBoletos.MaterialUI;
 using CreativaSL.Dll.VentaBoletosGlobal;
 using CreativaSL.Dll.VentaBoletosNegocio;
 
 namespace CreativaSL.WinForm.VentaBoletos
 {
-    public partial class frmCatTerminales : Form_Creativa
+    public partial class frmCatTerminalesV2 : MaterialForm
     {
         Terminal trm;
 
         #region Constructor
 
-        public frmCatTerminales()
+        public frmCatTerminalesV2()
         {
             try
             {
@@ -27,6 +28,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 this.llenarCombos();
                 this.cmbPais.SelectedValue = 143;
                 this.cmbPais.Enabled = false;
+                
             }
             catch (Exception ex)
             {
@@ -35,7 +37,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
 
-        public frmCatTerminales(Terminal term)
+        public frmCatTerminalesV2(Terminal term)
         {
             try
             {
@@ -44,6 +46,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 trm = term;
                 this.llenarDatos();
                 this.cmbPais.Enabled = false;
+                
             }
             catch (Exception ex)
             {
@@ -191,7 +194,8 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
             }
         }
 
@@ -201,6 +205,21 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 Terminal pais = (Terminal)this.cmbPais.SelectedItem;
                 this.llenarComboEstados(pais);
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void cmbEstado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Terminal pais = (Terminal)this.cmbPais.SelectedItem;
+                Terminal estado = (Terminal)this.cmbEstado.SelectedItem;
+                pais.id_estado = estado.id_estado;
+                this.llenarComboMunicipio(pais);
             }
             catch (Exception ex)
             {
@@ -262,10 +281,5 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
 
         #endregion
-
-        private void cmbEstado_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

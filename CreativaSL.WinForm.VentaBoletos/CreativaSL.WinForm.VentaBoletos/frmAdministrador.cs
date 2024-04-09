@@ -341,7 +341,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 if (this.tipoCatalogo == 1)
                 {
-                    frmCatDisenio frmd = new frmCatDisenio(new DisenioCamion());
+                    frmCatDisenioV2 frmd = new frmCatDisenioV2(new DisenioCamion());
                     frmd.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -350,7 +350,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 2)
                 {
-                    frmCatCamiones frmc = new frmCatCamiones();
+                    frmCatCamionesV2 frmc = new frmCatCamionesV2();
                     frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -358,7 +358,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 3)
                 {
-                    frmCatTerminales frmt = new frmCatTerminales();
+                    frmCatTerminalesV2 frmt = new frmCatTerminalesV2();
                     frmt.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -366,7 +366,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 4)
                 {
-                    frmCatRutas frmr = new frmCatRutas();
+                    frmCatRutasV2 frmr = new frmCatRutasV2();
                     frmr.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -374,7 +374,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 5)
                 {
-                    frmCatSalidas frms = new frmCatSalidas();
+                    frmCatSalidasV2 frms = new frmCatSalidasV2();
                     frms.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -382,7 +382,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 6)
                 {
-                    frmCatTarifas frms = new frmCatTarifas();
+                    frmCatTarifasV2cs frms = new frmCatTarifasV2cs();
                     frms.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -406,7 +406,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 //}
                 else if (this.tipoCatalogo == 8)
                 {
-                    frmCatUsuarios frmu = new frmCatUsuarios(new Usuario());
+                    frmCatUsuariosV2 frmu = new frmCatUsuariosV2(new Usuario());
                     frmu.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -472,7 +472,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 if (this.tipoCatalogo == 1)
                 {
-                    frmCatDisenio frmd = new frmCatDisenio((DisenioCamion)obj);
+                    frmCatDisenioV2 frmd = new frmCatDisenioV2((DisenioCamion)obj);
                     frmd.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -480,7 +480,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 2)
                 {
-                    frmCatCamiones frmc = new frmCatCamiones((Camion) obj);
+                    frmCatCamionesV2 frmc = new frmCatCamionesV2((Camion) obj);
                     frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -488,7 +488,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 3)
                 {
-                    frmCatTerminales frmt = new frmCatTerminales((Terminal)obj);
+                    frmCatTerminalesV2 frmt = new frmCatTerminalesV2((Terminal)obj);
                     frmt.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -496,7 +496,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 4)
                 {
-                    frmCatRutas frmr = new frmCatRutas((Ruta)obj);
+                    frmCatRutasV2 frmr = new frmCatRutasV2((Ruta)obj);
                     frmr.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -504,7 +504,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 5)
                 {
-                    frmCatSalidas frms = new frmCatSalidas((Viaje)obj);
+                    frmCatSalidasV2 frms = new frmCatSalidasV2((Viaje)obj);
                     frms.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -512,7 +512,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 6)
                 {
-                    frmCatTarifas frms = new frmCatTarifas((Tarifa) obj);
+                    frmCatTarifasV2cs frms = new frmCatTarifasV2cs((Tarifa) obj);
                     frms.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -537,7 +537,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 //}
                 else if (this.tipoCatalogo == 8)
                 {
-                    frmCatUsuarios frmu = new frmCatUsuarios((Usuario)obj);
+                    frmCatUsuariosV2 frmu = new frmCatUsuariosV2((Usuario)obj);
                     frmu.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
