@@ -13,22 +13,23 @@ using CreativaSL.Dll.VentaBoletosNegocio;
 
 namespace CreativaSL.WinForm.VentaBoletos
 {
-    public partial class frmCatMarcasV2 : MaterialForm
+    public partial class frmCatSubMarcasV2 : MaterialForm
     {
         private Validaciones Val;
-        private Marca infoMarca;
+        private SubMarca infoSubMarca;
         private bool _Exception = true;
         public bool Exception
         {
             get { return _Exception; }
             set { _Exception = value; }
         }
-        public frmCatMarcasV2(Marca marca)
+
+        public frmCatSubMarcasV2(SubMarca submarca)
         {
             try
             {
                 InitializeComponent();
-                this.infoMarca = marca;
+                this.infoSubMarca = submarca;
                 this.Inicializar();
             }
             catch (Exception ex)
@@ -38,24 +39,24 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
 
         #region Métodos
-        private void GuardarMarca()
+        private void GuardarSubMarca()
         {
             try
             {
                 Val = new Validaciones();
                 int Verificador = 0;
-                Marca_Negocio marcaNegocio = new Marca_Negocio();
-                Marca marca = new Marca();
-                this.ObtenerDatos(marca);
-                if (infoMarca.id_marca != 0)
+                SubMarca_Negocio submarcaNegocio = new SubMarca_Negocio();
+                SubMarca submarca = new SubMarca();
+                this.ObtenerDatos(submarca);
+                if (infoSubMarca.id_submarca != 0)
                 {
-                    marca.id_marca = infoMarca.id_marca;
-                    marcaNegocio.ModificarMarca(marca, Comun.Conexion, ref Verificador);
+                    submarca.id_submarca = infoSubMarca.id_submarca;
+                    submarcaNegocio.ModificarSubMarca(submarca, Comun.Conexion, ref Verificador);
                     this.VerifcarMensajeAccion(Verificador);
                 }
                 else
                 {
-                    marcaNegocio.InsertarMarca(marca, Comun.Conexion, ref Verificador);
+                    submarcaNegocio.InsertarSubMarca(submarca, Comun.Conexion, ref Verificador);
                     this.VerifcarMensajeAccion(Verificador);
                 }
             }
@@ -64,26 +65,24 @@ namespace CreativaSL.WinForm.VentaBoletos
                 throw ex;
             }
         }
-
-        private void ObtenerDatos(Marca marca)
+        private void ObtenerDatos(SubMarca submarca)
         {
             try
             {
-                marca.nombreMarca = this.TxtNombreMarca.Text;
-                //marca.Id_UModifico = Comun.Id_U;
-                //marca.Id_Turno = Convert.ToInt32(this.CmbTurno.SelectedValue);
+                submarca.nombreSubMarca = this.TxtNombreSubMarca.Text;
+                submarca.id_marca = Convert.ToInt32(this.CmbMarca.SelectedValue);
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
-
         private void Inicializar()
         {
             try
             {
-                if (infoMarca.id_marca != 0)
+                this.CargarCombos();
+                if (infoSubMarca.id_submarca != 0)
                     this.LlenarDatos();
             }
             catch (Exception ex)
@@ -91,27 +90,57 @@ namespace CreativaSL.WinForm.VentaBoletos
                 throw ex;
             }
         }
-
         private void LlenarDatos()
         {
             try
             {
-                this.TxtNombreMarca.Text = infoMarca.nombreMarca;
+                this.TxtNombreSubMarca.Text = infoSubMarca.nombreSubMarca;
+                this.CmbMarca.SelectedValue = infoSubMarca.id_marca;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
-
+        private void CargarCombos()
+        {
+            try
+            {
+                this.infoSubMarca.lista_Marcas = new List<SubMarca>();
+                SubMarca_Negocio SubMarca_Negocio = new SubMarca_Negocio();
+                SubMarca_Negocio.CargarComboMarcas(Comun.Conexion, ref this.infoSubMarca);
+                this.CmbMarca.DataSource = this.infoSubMarca.lista_Marcas;
+                this.CmbMarca.ValueMember = "id_marca";
+                this.CmbMarca.DisplayMember = "nombreMarca";
+                /*this.info.lista_Turno = new List<Usuario>();
+                this.infoUsuario.lista_Sucursal = new List<Usuario>();
+                Usuario_Negocio Usuario_Negocio = new Usuario_Negocio();
+                Usuario_Negocio.CargarComboTurno(Comun.Conexion, ref this.infoUsuario);
+                Usuario_Negocio.CargarComboSucursal(Comun.Conexion, ref this.infoUsuario);
+                Usuario_Negocio.CargarComboTipoUsuario(Comun.Conexion, ref this.infoUsuario);
+                this.CmbTipoUsuario.DataSource = this.infoUsuario.lista_TipoUsuarios;
+                this.CmbTipoUsuario.ValueMember = "Id_Tu";
+                this.CmbTipoUsuario.DisplayMember = "Tu_Descripcion";
+                this.CmbTurno.DataSource = this.infoUsuario.lista_Turno;
+                this.CmbTurno.ValueMember = "Id_Turno";
+                this.CmbTurno.DisplayMember = "Turno";
+                this.CmbSucursal.DataSource = this.infoUsuario.lista_Sucursal;
+                this.CmbSucursal.ValueMember = "id_sucursal";
+                this.CmbSucursal.DisplayMember = "Nombre_Sucursal";*/
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         private void VerifcarMensajeAccion(int Verificador)
         {
             try
             {
                 if (Verificador == 2)
                 {
-                    Val.Mensaje("Ya existe la marca", this);
-                    this.TxtNombreMarca.Focus();
+                    Val.Mensaje("Ya existe la submarca", this);
+                    this.TxtNombreSubMarca.Focus();
                 }
                 else if (Verificador == 0)
                 {
@@ -125,16 +154,15 @@ namespace CreativaSL.WinForm.VentaBoletos
                 throw ex;
             }
         }
-
         private bool ValidarCampos()
         {
             try
             {
                 Val = new Validaciones();
-                if (this.TxtNombreMarca.Text == string.Empty || this.TxtNombreMarca.Text == "")
+                if (this.TxtNombreSubMarca.Text == string.Empty || this.TxtNombreSubMarca.Text == "")
                 {
-                    MessageBox.Show("Debes ingresar una marca", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.TxtNombreMarca.Focus();
+                    MessageBox.Show("Debes ingresar una submarca ", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.TxtNombreSubMarca.Focus();
                     return false;
                 }
                 return true;
@@ -145,24 +173,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
         #endregion
-
         #region Eventos
-        private void btn_Guardar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (this.ValidarCampos())
-                {
-                    this.GuardarMarca();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
-            }
-        }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             try
@@ -176,7 +187,22 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
 
-        private void TxtNombreMarca_KeyPress(object sender, KeyPressEventArgs e)
+        private void btn_Guardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (this.ValidarCampos())
+                {
+                    this.GuardarSubMarca();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            }
+        }
+        private void TxtNombreSubMarca_KeyPress(object sender, KeyPressEventArgs e)
         {
             try
             {

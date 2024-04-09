@@ -422,7 +422,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 10)
                 {
-                    frmCatMarcas frmc = new frmCatMarcas(new Marca());
+                    frmCatMarcasV2 frmc = new frmCatMarcasV2(new Marca());
                     frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -430,7 +430,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 11)
                 {
-                    frmCatSubMarcas frmc = new frmCatSubMarcas(new SubMarca());
+                    frmCatSubMarcasV2 frmc = new frmCatSubMarcasV2(new SubMarca());
                     frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -438,7 +438,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 12)
                 {
-                    frmCatTipoCamion frmc = new frmCatTipoCamion(new TipoCamion());
+                    frmCatTipoCamionV2 frmc = new frmCatTipoCamionV2(new TipoCamion());
                     frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -545,7 +545,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 9)
                 {
-                    frmCatChoferes frmc = new frmCatChoferes((Chofer) obj);
+                    frmCatChoferesV2 frmc = new frmCatChoferesV2((Chofer) obj);
                     frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -553,7 +553,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 10)
                 {
-                    frmCatMarcas frmc = new frmCatMarcas((Marca)obj);
+                    frmCatMarcasV2 frmc = new frmCatMarcasV2((Marca)obj);
                     frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -561,7 +561,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 11)
                 {
-                    frmCatSubMarcas frmc = new frmCatSubMarcas((SubMarca)obj);
+                    frmCatSubMarcasV2 frmc = new frmCatSubMarcasV2((SubMarca)obj);
                     frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -569,7 +569,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 12)
                 {
-                    frmCatTipoCamion frmc = new frmCatTipoCamion((TipoCamion)obj);
+                    frmCatTipoCamionV2 frmc = new frmCatTipoCamionV2((TipoCamion)obj);
                     frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
@@ -886,7 +886,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 this.tipoCatalogo = 0;
                 this.CargarGridPropiedades();
-                frmCambioBoletosViaje frmC = new frmCambioBoletosViaje();
+                frmCambioBoletoViajeV2 frmC = new frmCambioBoletoViajeV2();
                 frmC.ShowDialog();
                 frmC.Dispose();
             }

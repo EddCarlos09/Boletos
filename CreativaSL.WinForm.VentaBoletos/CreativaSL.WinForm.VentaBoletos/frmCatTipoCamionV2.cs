@@ -5,30 +5,32 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using MaterialSkin.Controls;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using CreativaSL.Dll.VentaBoletosGlobal;
 using CreativaSL.Dll.VentaBoletosNegocio;
+using System.Globalization;
 
 namespace CreativaSL.WinForm.VentaBoletos
 {
-    public partial class frmCatMarcasV2 : MaterialForm
+    public partial class frmCatTipoCamionV2 : MaterialForm
     {
+        private CultureInfo provider = CultureInfo.CurrentCulture;
         private Validaciones Val;
-        private Marca infoMarca;
+        private TipoCamion infoTipoCamion;
         private bool _Exception = true;
         public bool Exception
         {
             get { return _Exception; }
             set { _Exception = value; }
         }
-        public frmCatMarcasV2(Marca marca)
+        public frmCatTipoCamionV2(TipoCamion tipocamion)
         {
             try
             {
                 InitializeComponent();
-                this.infoMarca = marca;
+                this.infoTipoCamion = tipocamion;
                 this.Inicializar();
             }
             catch (Exception ex)
@@ -38,24 +40,24 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
 
         #region Métodos
-        private void GuardarMarca()
+        private void GuardarTipoCamion()
         {
             try
             {
                 Val = new Validaciones();
                 int Verificador = 0;
-                Marca_Negocio marcaNegocio = new Marca_Negocio();
-                Marca marca = new Marca();
-                this.ObtenerDatos(marca);
-                if (infoMarca.id_marca != 0)
+                TipoCamion_Negocio tipocamionNegocio = new TipoCamion_Negocio();
+                TipoCamion tipocamion = new TipoCamion();
+                this.ObtenerDatos(tipocamion);
+                if (infoTipoCamion.id_tipocamion != 0)
                 {
-                    marca.id_marca = infoMarca.id_marca;
-                    marcaNegocio.ModificarMarca(marca, Comun.Conexion, ref Verificador);
+                    tipocamion.id_tipocamion = infoTipoCamion.id_tipocamion;
+                    tipocamionNegocio.ModificarTipoCamion(tipocamion, Comun.Conexion, ref Verificador);
                     this.VerifcarMensajeAccion(Verificador);
                 }
                 else
                 {
-                    marcaNegocio.InsertarMarca(marca, Comun.Conexion, ref Verificador);
+                    tipocamionNegocio.InsertarTipoCamion(tipocamion, Comun.Conexion, ref Verificador);
                     this.VerifcarMensajeAccion(Verificador);
                 }
             }
@@ -65,13 +67,18 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
 
-        private void ObtenerDatos(Marca marca)
+        private void ObtenerDatos(TipoCamion tipocamion)
         {
             try
             {
-                marca.nombreMarca = this.TxtNombreMarca.Text;
-                //marca.Id_UModifico = Comun.Id_U;
-                //marca.Id_Turno = Convert.ToInt32(this.CmbTurno.SelectedValue);
+                tipocamion.nombreTipoCamion = this.TxtNombreTipoCamion.Text;
+                /*
+                float aux = 0;
+                if (float.TryParse(this.TxtMaximoDescuento.Text, NumberStyles.Currency, provider, out aux))
+                    tipocamion.maximoDescuentoLinea = aux;
+                else
+                */
+                tipocamion.maximoDescuentoLinea = 0.0f;
             }
             catch (Exception ex)
             {
@@ -83,7 +90,7 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                if (infoMarca.id_marca != 0)
+                if (infoTipoCamion.id_tipocamion != 0)
                     this.LlenarDatos();
             }
             catch (Exception ex)
@@ -96,7 +103,8 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                this.TxtNombreMarca.Text = infoMarca.nombreMarca;
+                this.TxtNombreTipoCamion.Text = infoTipoCamion.nombreTipoCamion;
+                //this.TxtMaximoDescuento.Text = infoTipoCamion.maximoDescuentoLinea.ToString();
             }
             catch (Exception ex)
             {
@@ -110,8 +118,8 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 if (Verificador == 2)
                 {
-                    Val.Mensaje("Ya existe la marca", this);
-                    this.TxtNombreMarca.Focus();
+                    Val.Mensaje("Ya existe el tipo de camión", this);
+                    this.TxtNombreTipoCamion.Focus();
                 }
                 else if (Verificador == 0)
                 {
@@ -131,12 +139,20 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 Val = new Validaciones();
-                if (this.TxtNombreMarca.Text == string.Empty || this.TxtNombreMarca.Text == "")
+                if (this.TxtNombreTipoCamion.Text == string.Empty || this.TxtNombreTipoCamion.Text == "")
                 {
-                    MessageBox.Show("Debes ingresar una marca", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.TxtNombreMarca.Focus();
+                    MessageBox.Show("Debes ingresar un tipo de camión ", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.TxtNombreTipoCamion.Focus();
                     return false;
                 }
+                /*
+                if (this.TxtMaximoDescuento.Text == string.Empty || this.TxtMaximoDescuento.Text == "")
+                {
+                    MessageBox.Show("Debes ingresar un descuento maximo ", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.TxtMaximoDescuento.Focus();
+                    return false;
+                }
+                */
                 return true;
             }
             catch (Exception ex)
@@ -145,24 +161,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
         #endregion
-
         #region Eventos
-        private void btn_Guardar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (this.ValidarCampos())
-                {
-                    this.GuardarMarca();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
-            }
-        }
-
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             try
@@ -176,7 +175,22 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
 
-        private void TxtNombreMarca_KeyPress(object sender, KeyPressEventArgs e)
+        private void btn_Guardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (this.ValidarCampos())
+                {
+                    this.GuardarTipoCamion();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            }
+        }
+        private void TxtNombreTipoCamion_KeyPress(object sender, KeyPressEventArgs e)
         {
             try
             {
@@ -188,6 +202,20 @@ namespace CreativaSL.WinForm.VentaBoletos
                 MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void TxtMaximoDescuento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                Validaciones val = new Validaciones();
+                //val.PermitirSoloNumerosDecimales(e, this.TxtMaximoDescuento.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         #endregion
     }
 }
