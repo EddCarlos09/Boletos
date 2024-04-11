@@ -3327,6 +3327,48 @@
             this.tabPage11.Text = "Salir";
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "ImagenVenta");
+            this.imageList1.Images.SetKeyName(1, "ImagenVenta2");
+            this.imageList1.Images.SetKeyName(2, "ApartadosImagen");
+            this.imageList1.Images.SetKeyName(3, "ClientesImagen");
+            this.imageList1.Images.SetKeyName(4, "CajaImagen");
+            this.imageList1.Images.SetKeyName(5, "MaletaImagen");
+            this.imageList1.Images.SetKeyName(6, "AdminImagen");
+            this.imageList1.Images.SetKeyName(7, "ReportesImagen");
+            this.imageList1.Images.SetKeyName(8, "ConfigImagen");
+            this.imageList1.Images.SetKeyName(9, "AsistenciaImagen");
+            this.imageList1.Images.SetKeyName(10, "icons8-home-144.png");
+            this.imageList1.Images.SetKeyName(11, "icons8-search-300.png");
+            this.imageList1.Images.SetKeyName(12, "icons8-cancel-144.png");
+            // 
+            // btn_BuscarViajes
+            // 
+            this.btn_BuscarViajes.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_BuscarViajes.ImageKey = "icons8-search-300.png";
+            this.btn_BuscarViajes.ImageList = this.imageList1;
+            this.btn_BuscarViajes.Location = new System.Drawing.Point(240, 295);
+            this.btn_BuscarViajes.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_BuscarViajes.Name = "btn_BuscarViajes";
+            this.btn_BuscarViajes.Size = new System.Drawing.Size(50, 41);
+            this.btn_BuscarViajes.TabIndex = 43;
+            this.btn_BuscarViajes.UseVisualStyleBackColor = false;
+            // 
+            // btn_CancelarBuscarViajes
+            // 
+            this.btn_CancelarBuscarViajes.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_CancelarBuscarViajes.ImageKey = "icons8-cancel-144.png";
+            this.btn_CancelarBuscarViajes.ImageList = this.imageList1;
+            this.btn_CancelarBuscarViajes.Location = new System.Drawing.Point(334, 295);
+            this.btn_CancelarBuscarViajes.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_CancelarBuscarViajes.Name = "btn_CancelarBuscarViajes";
+            this.btn_CancelarBuscarViajes.Size = new System.Drawing.Size(50, 41);
+            this.btn_CancelarBuscarViajes.TabIndex = 44;
+            this.btn_CancelarBuscarViajes.UseVisualStyleBackColor = false;
+            // 
             // frmHomeV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
