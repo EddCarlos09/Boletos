@@ -1,4 +1,4 @@
-﻿using CreativaSL.WinForm.VentaBoletos.Clientes;
+using CreativaSL.WinForm.VentaBoletos.Clientes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +19,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             Application.SetCompatibleTextRenderingDefault(false);
             System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("es-MX");
             //Application.Run(new FormAdministrador());
-            Application.Run(new frmLogin());
+            Application.Run(new frmApartadosV2());
         }
     }
 }

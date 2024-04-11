@@ -75,6 +75,9 @@
     <Reference Include="CreativaSL.LibControls.WinForms">
       <HintPath>..\_ExternalComponent\CreativaSL.LibControls.WinForms.dll</HintPath>
     </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
     <Reference Include="GenCode128">
       <HintPath>..\_ExternalComponent\GenCode128.dll</HintPath>
     </Reference>
@@ -433,12 +436,6 @@
     <Compile Include="Clientes\frm_v2_AsignarTarjeta.designer.cs">
       <DependentUpon>frm_v2_AsignarTarjeta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Clientes\frm_v2_AsignarTarjetaV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Clientes\frm_v2_AsignarTarjetaV2.Designer.cs">
-      <DependentUpon>frm_v2_AsignarTarjetaV2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Clientes\frm_v2_CambiarTarjeta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -450,12 +447,6 @@
     </Compile>
     <Compile Include="Clientes\frm_v2_ClasificacionClienteAdd.designer.cs">
       <DependentUpon>frm_v2_ClasificacionClienteAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Clientes\frm_v2_ClasificacionClienteAddV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Clientes\frm_v2_ClasificacionClienteAddV2.Designer.cs">
-      <DependentUpon>frm_v2_ClasificacionClienteAddV2.cs</DependentUpon>
     </Compile>
     <Compile Include="Clientes\frm_v2_ClasificacionUsuario.cs">
       <SubType>Form</SubType>
@@ -474,6 +465,12 @@
     </Compile>
     <Compile Include="Clientes\frm_v2_ClienteAdd.Designer.cs">
       <DependentUpon>frm_v2_ClienteAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frm_v3_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_v3_Cliente.Designer.cs">
+      <DependentUpon>frm_v3_Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Clientes\frm_WebCams_Equipo.cs">
       <SubType>Form</SubType>
@@ -520,6 +517,11 @@
     </Compile>
     <Compile Include="frmCatTerminalIntermediaV2.Designer.cs">
       <DependentUpon>frmCatTerminalIntermediaV2.cs</DependentUpon>
+    <Compile Include="frmApartadosV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApartadosV2.Designer.cs">
+      <DependentUpon>frmApartadosV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAsistenciaPasajeros.cs">
       <SubType>Form</SubType>
@@ -532,12 +534,6 @@
     </Compile>
     <Compile Include="frmBase.Designer.cs">
       <DependentUpon>frmBase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCambioBoletoViajeV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCambioBoletoViajeV2.Designer.cs">
-      <DependentUpon>frmCambioBoletoViajeV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCancelacionesTransferenciasGrupal.cs">
       <SubType>Form</SubType>
@@ -569,23 +565,11 @@
     <Compile Include="frmCatDisenioV2.Designer.cs">
       <DependentUpon>frmCatDisenioV2.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCatMarcasV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCatMarcasV2.Designer.cs">
-      <DependentUpon>frmCatMarcasV2.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmCatSalidasV2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCatSalidasV2.Designer.cs">
       <DependentUpon>frmCatSalidasV2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCatSubMarcasV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCatSubMarcasV2.Designer.cs">
-      <DependentUpon>frmCatSubMarcasV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCatTarifasV2cs.cs">
       <SubType>Form</SubType>
@@ -599,17 +583,17 @@
     <Compile Include="frmCatTerminalesV2.Designer.cs">
       <DependentUpon>frmCatTerminalesV2.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCatTipoCamionV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCatTipoCamionV2.Designer.cs">
-      <DependentUpon>frmCatTipoCamionV2.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmCatUsuariosV2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCatUsuariosV2.Designer.cs">
       <DependentUpon>frmCatUsuariosV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguracionV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracionV2.Designer.cs">
+      <DependentUpon>frmConfiguracionV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDatosTarjeta.cs">
       <SubType>Form</SubType>
@@ -635,6 +619,18 @@
     <Compile Include="frmCambioBoletosViaje.Designer.cs">
       <DependentUpon>frmCambioBoletosViaje.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDepositosRetirosV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepositosRetirosV2.Designer.cs">
+      <DependentUpon>frmDepositosRetirosV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDescuentoGenericoV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDescuentoGenericoV2.Designer.cs">
+      <DependentUpon>frmDescuentoGenericoV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFechasViajesDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -646,6 +642,11 @@
     </Compile>
     <Compile Include="frmFechaViajeDetalleV2.Designer.cs">
       <DependentUpon>frmFechaViajeDetalleV2.cs</DependentUpon>
+    <Compile Include="frmFechasViajesDetalleV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFechasViajesDetalleV2.Designer.cs">
+      <DependentUpon>frmFechasViajesDetalleV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHomeSF.cs">
       <SubType>Form</SubType>
@@ -658,6 +659,12 @@
     </Compile>
     <Compile Include="frmHomeV2.Designer.cs">
       <DependentUpon>frmHomeV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaletasV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaletasV2.Designer.cs">
+      <DependentUpon>frmMaletasV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmNuevaFechaViaje.cs">
       <SubType>Form</SubType>
@@ -881,12 +888,6 @@
     <Compile Include="frmPorcentajeMonedero.Designer.cs">
       <DependentUpon>frmPorcentajeMonedero.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPorentajeMonederoV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPorentajeMonederoV2.Designer.cs">
-      <DependentUpon>frmPorentajeMonederoV2.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmPrecio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -922,6 +923,12 @@
     </Compile>
     <Compile Include="frmVentaGrupal.Designer.cs">
       <DependentUpon>frmVentaGrupal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentaGrupalV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentaGrupalV2.Designer.cs">
+      <DependentUpon>frmVentaGrupalV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVentas.cs">
       <SubType>Form</SubType>
@@ -971,6 +978,12 @@
     <Compile Include="frmVentasGrupal.Designer.cs">
       <DependentUpon>frmVentasGrupal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVentasV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentasV2.Designer.cs">
+      <DependentUpon>frmVentasV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmViajesXFechas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -979,6 +992,7 @@
     </Compile>
     <Compile Include="ImprimirTicket.cs" />
     <Compile Include="MaterialUI.cs" />
+    <Compile Include="Models\HeaderLabel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -991,17 +1005,11 @@
     <EmbeddedResource Include="Clientes\frm_v2_AsignarTarjeta.resx">
       <DependentUpon>frm_v2_AsignarTarjeta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Clientes\frm_v2_AsignarTarjetaV2.resx">
-      <DependentUpon>frm_v2_AsignarTarjetaV2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Clientes\frm_v2_CambiarTarjeta.resx">
       <DependentUpon>frm_v2_CambiarTarjeta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes\frm_v2_ClasificacionClienteAdd.resx">
       <DependentUpon>frm_v2_ClasificacionClienteAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Clientes\frm_v2_ClasificacionClienteAddV2.resx">
-      <DependentUpon>frm_v2_ClasificacionClienteAddV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes\frm_v2_ClasificacionUsuario.resx">
       <DependentUpon>frm_v2_ClasificacionUsuario.cs</DependentUpon>
@@ -1011,6 +1019,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes\frm_v2_ClienteAdd.resx">
       <DependentUpon>frm_v2_ClienteAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frm_v3_Cliente.resx">
+      <DependentUpon>frm_v3_Cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes\frm_WebCams_Equipo.resx">
       <DependentUpon>frm_WebCams_Equipo.cs</DependentUpon>
@@ -1025,14 +1036,14 @@
     <EmbeddedResource Include="FormAdministrador.resx">
       <DependentUpon>FormAdministrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmApartadosV2.resx">
+      <DependentUpon>frmApartadosV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAsistenciaPasajeros.resx">
       <DependentUpon>frmAsistenciaPasajeros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBase.resx">
       <DependentUpon>frmBase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCambioBoletoViajeV2.resx">
-      <DependentUpon>frmCambioBoletoViajeV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCancelacionesTransferenciasGrupal.resx">
       <DependentUpon>frmCancelacionesTransferenciasGrupal.cs</DependentUpon>
@@ -1049,14 +1060,8 @@
     <EmbeddedResource Include="frmCatDisenioV2.resx">
       <DependentUpon>frmCatDisenioV2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCatMarcasV2.resx">
-      <DependentUpon>frmCatMarcasV2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmCatSalidasV2.resx">
       <DependentUpon>frmCatSalidasV2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCatSubMarcasV2.resx">
-      <DependentUpon>frmCatSubMarcasV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatTarifasV2cs.resx">
       <DependentUpon>frmCatTarifasV2cs.cs</DependentUpon>
@@ -1073,6 +1078,9 @@
     <EmbeddedResource Include="frmCatUsuariosV2.resx">
       <DependentUpon>frmCatUsuariosV2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracionV2.resx">
+      <DependentUpon>frmConfiguracionV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDatosTarjeta.resx">
       <DependentUpon>frmDatosTarjeta.cs</DependentUpon>
     </EmbeddedResource>
@@ -1081,6 +1089,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFechaViajeDetalleV2.resx">
       <DependentUpon>frmFechaViajeDetalleV2.cs</DependentUpon>
+    <EmbeddedResource Include="frmDepositosRetirosV2.resx">
+      <DependentUpon>frmDepositosRetirosV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDescuentoGenericoV2.resx">
+      <DependentUpon>frmDescuentoGenericoV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFechasViajesDetalleV2.resx">
+      <DependentUpon>frmFechasViajesDetalleV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHomeSF.resx">
       <DependentUpon>frmHomeSF.cs</DependentUpon>
@@ -1090,6 +1106,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevaFechaViajeV2.resx">
       <DependentUpon>frmNuevaFechaViajeV2.cs</DependentUpon>
+    <EmbeddedResource Include="frmMaletasV2.resx">
+      <DependentUpon>frmMaletasV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPorentajeMonederoV2.resx">
       <DependentUpon>frmPorentajeMonederoV2.cs</DependentUpon>
@@ -1103,8 +1121,14 @@
     <EmbeddedResource Include="frmVentaGrupal.resx">
       <DependentUpon>frmVentaGrupal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmVentaGrupalV2.resx">
+      <DependentUpon>frmVentaGrupalV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmVentasGrupal.resx">
       <DependentUpon>frmVentasGrupal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentasV2.resx">
+      <DependentUpon>frmVentasV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Informe_CajasFechasMod.rdlc" />
     <EmbeddedResource Include="Informe_CajasMod.rdlc" />

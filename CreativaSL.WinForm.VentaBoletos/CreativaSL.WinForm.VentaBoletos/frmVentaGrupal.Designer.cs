@@ -36,9 +36,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_nombre = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.brn_Cancelar = new CreativaSL.LibControls.WinForms.Button_Creativa();
             this.btn_Aceptar = new CreativaSL.LibControls.WinForms.Button_Creativa();
-            this.lblNombre = new System.Windows.Forms.Label();
             this.panel_login_validator.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,8 +60,9 @@
             this.panel_login_validator.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel_login_validator.LinearGradientModeBgk = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.panel_login_validator.Location = new System.Drawing.Point(0, 0);
+            this.panel_login_validator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_login_validator.Name = "panel_login_validator";
-            this.panel_login_validator.Size = new System.Drawing.Size(453, 236);
+            this.panel_login_validator.Size = new System.Drawing.Size(604, 290);
             this.panel_login_validator.SizeLine = 3;
             this.panel_login_validator.SizeTitle = 20;
             this.panel_login_validator.TabIndex = 41;
@@ -70,10 +71,11 @@
             // 
             // txt_numeroTelefono
             // 
-            this.txt_numeroTelefono.Location = new System.Drawing.Point(186, 121);
+            this.txt_numeroTelefono.Location = new System.Drawing.Point(248, 149);
+            this.txt_numeroTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_numeroTelefono.MaxLength = 50;
             this.txt_numeroTelefono.Name = "txt_numeroTelefono";
-            this.txt_numeroTelefono.Size = new System.Drawing.Size(255, 26);
+            this.txt_numeroTelefono.Size = new System.Drawing.Size(339, 30);
             this.txt_numeroTelefono.TabIndex = 3;
             this.txt_numeroTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numeroTelefono_KeyPress);
             // 
@@ -82,18 +84,20 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 123);
+            this.label2.Location = new System.Drawing.Point(16, 151);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 22);
+            this.label2.Size = new System.Drawing.Size(185, 26);
             this.label2.TabIndex = 0;
             this.label2.Text = "Número Teléfono:";
             // 
             // dtpFechaNacimiento
             // 
             this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(186, 83);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(248, 102);
+            this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            this.dtpFechaNacimiento.Size = new System.Drawing.Size(255, 26);
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(339, 30);
             this.dtpFechaNacimiento.TabIndex = 2;
             // 
             // label1
@@ -101,9 +105,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 85);
+            this.label1.Location = new System.Drawing.Point(15, 105);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 22);
+            this.label1.Size = new System.Drawing.Size(194, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Fecha Nacimiento:";
             // 
@@ -113,20 +118,34 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(163, 3);
+            this.label4.Location = new System.Drawing.Point(217, 4);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 21);
+            this.label4.Size = new System.Drawing.Size(144, 26);
             this.label4.TabIndex = 122;
             this.label4.Text = "Venta Grupal";
             // 
             // txt_nombre
             // 
-            this.txt_nombre.Location = new System.Drawing.Point(186, 42);
+            this.txt_nombre.Location = new System.Drawing.Point(248, 52);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_nombre.MaxLength = 150;
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(255, 26);
+            this.txt_nombre.Size = new System.Drawing.Size(339, 30);
             this.txt_nombre.TabIndex = 1;
             this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(15, 55);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(164, 26);
+            this.lblNombre.TabIndex = 0;
+            this.lblNombre.Text = "Nombre Boleto:";
             // 
             // brn_Cancelar
             // 
@@ -148,12 +167,13 @@
             this.brn_Cancelar.ImageSize = new System.Drawing.Size(40, 40);
             this.brn_Cancelar.KeyButton = System.Windows.Forms.Keys.None;
             this.brn_Cancelar.KeyButtonView = false;
-            this.brn_Cancelar.Location = new System.Drawing.Point(110, 164);
+            this.brn_Cancelar.Location = new System.Drawing.Point(147, 202);
+            this.brn_Cancelar.Margin = new System.Windows.Forms.Padding(4);
             this.brn_Cancelar.ModeGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.brn_Cancelar.MouseOverColor = System.Drawing.Color.YellowGreen;
             this.brn_Cancelar.Name = "brn_Cancelar";
             this.brn_Cancelar.OffsetPressedContent = true;
-            this.brn_Cancelar.Size = new System.Drawing.Size(80, 65);
+            this.brn_Cancelar.Size = new System.Drawing.Size(107, 80);
             this.brn_Cancelar.TabIndex = 5;
             this.brn_Cancelar.Text = "Cancelar";
             this.brn_Cancelar.TextDropShadow = true;
@@ -180,37 +200,28 @@
             this.btn_Aceptar.ImageSize = new System.Drawing.Size(40, 40);
             this.btn_Aceptar.KeyButton = System.Windows.Forms.Keys.None;
             this.btn_Aceptar.KeyButtonView = false;
-            this.btn_Aceptar.Location = new System.Drawing.Point(254, 164);
+            this.btn_Aceptar.Location = new System.Drawing.Point(339, 202);
+            this.btn_Aceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Aceptar.ModeGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btn_Aceptar.MouseOverColor = System.Drawing.Color.YellowGreen;
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.OffsetPressedContent = true;
-            this.btn_Aceptar.Size = new System.Drawing.Size(80, 65);
+            this.btn_Aceptar.Size = new System.Drawing.Size(107, 80);
             this.btn_Aceptar.TabIndex = 4;
             this.btn_Aceptar.Text = "Aceptar";
             this.btn_Aceptar.TextDropShadow = true;
             this.btn_Aceptar.UseVisualStyleBackColor = false;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(11, 45);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(134, 22);
-            this.lblNombre.TabIndex = 0;
-            this.lblNombre.Text = "Nombre Boleto:";
-            // 
             // frmVentaGrupal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(453, 236);
+            this.ClientSize = new System.Drawing.Size(604, 290);
             this.ControlBox = false;
             this.Controls.Add(this.panel_login_validator);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmVentaGrupal";

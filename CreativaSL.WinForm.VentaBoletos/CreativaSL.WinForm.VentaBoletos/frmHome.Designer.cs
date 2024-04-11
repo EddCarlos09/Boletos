@@ -1031,6 +1031,7 @@
             this.GridViewViajes.AllowUserToResizeColumns = false;
             this.GridViewViajes.AllowUserToResizeRows = false;
             this.GridViewViajes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.GridViewViajes.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.GridViewViajes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridViewViajes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -4664,8 +4665,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column49;
         private System.Windows.Forms.CheckBox checkBoxVentaGrupal;
         private LibControls.WinForms.Button_Creativa btnVentasGrupal;
-        private LibControls.WinForms.PanelTitle_Creativa panelTitle_Creativa3;
-        private System.Windows.Forms.Label label12;
         private LibControls.WinForms.Button_Creativa btnAsistencia;
         private Syncfusion.Windows.Forms.ButtonAdv btnSeleccionar;
         private LibControls.WinForms.Button_Creativa btnPlantaBaja;
@@ -4821,5 +4820,7 @@
         private System.Windows.Forms.TextBox textBox134;
         private System.Windows.Forms.Label label14;
         private LibControls.WinForms.PanelTitle_Creativa panelDisponibilidad;
+        private LibControls.WinForms.PanelTitle_Creativa panelTitle_Creativa3;
+        private System.Windows.Forms.Label label12;
     }
 }
