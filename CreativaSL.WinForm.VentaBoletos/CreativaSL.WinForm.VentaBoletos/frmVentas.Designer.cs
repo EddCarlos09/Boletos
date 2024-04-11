@@ -128,7 +128,7 @@
             this.panelBusqueda.LinearGradientModeBgk = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.panelBusqueda.Location = new System.Drawing.Point(0, 0);
             this.panelBusqueda.Name = "panelBusqueda";
-            this.panelBusqueda.Size = new System.Drawing.Size(1084, 436);
+            this.panelBusqueda.Size = new System.Drawing.Size(1084, 441);
             this.panelBusqueda.SizeLine = 3;
             this.panelBusqueda.SizeTitle = 20;
             this.panelBusqueda.TabIndex = 8;
@@ -142,7 +142,7 @@
             this.chkFolioVenta.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolioVenta.Location = new System.Drawing.Point(7, 49);
             this.chkFolioVenta.Name = "chkFolioVenta";
-            this.chkFolioVenta.Size = new System.Drawing.Size(15, 14);
+            this.chkFolioVenta.Size = new System.Drawing.Size(18, 17);
             this.chkFolioVenta.TabIndex = 1;
             this.chkFolioVenta.UseVisualStyleBackColor = true;
             // 
@@ -150,7 +150,7 @@
             // 
             this.txt_folioVenta.Location = new System.Drawing.Point(130, 42);
             this.txt_folioVenta.Name = "txt_folioVenta";
-            this.txt_folioVenta.Size = new System.Drawing.Size(262, 26);
+            this.txt_folioVenta.Size = new System.Drawing.Size(262, 30);
             this.txt_folioVenta.TabIndex = 5;
             // 
             // label7
@@ -160,7 +160,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(30, 48);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 17);
+            this.label7.Size = new System.Drawing.Size(110, 20);
             this.label7.TabIndex = 0;
             this.label7.Text = "Folio Venta:";
             // 
@@ -214,6 +214,7 @@
             this.dgvdatosboleto.MultiSelect = false;
             this.dgvdatosboleto.Name = "dgvdatosboleto";
             this.dgvdatosboleto.ReadOnly = true;
+            this.dgvdatosboleto.RowHeadersWidth = 51;
             dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dgvdatosboleto.RowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -227,6 +228,7 @@
             // 
             this.id_boleto.DataPropertyName = "id_boleto";
             this.id_boleto.HeaderText = "id_boleto";
+            this.id_boleto.MinimumWidth = 6;
             this.id_boleto.Name = "id_boleto";
             this.id_boleto.ReadOnly = true;
             this.id_boleto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -238,6 +240,7 @@
             // 
             this.id_ventadetalle.DataPropertyName = "id_ventadetalle";
             this.id_ventadetalle.HeaderText = "id_ventadetalle";
+            this.id_ventadetalle.MinimumWidth = 6;
             this.id_ventadetalle.Name = "id_ventadetalle";
             this.id_ventadetalle.ReadOnly = true;
             this.id_ventadetalle.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -249,48 +252,53 @@
             // 
             this.folioVenta.DataPropertyName = "folioVenta";
             this.folioVenta.HeaderText = "Folio Venta";
+            this.folioVenta.MinimumWidth = 6;
             this.folioVenta.Name = "folioVenta";
             this.folioVenta.ReadOnly = true;
-            this.folioVenta.Width = 115;
+            this.folioVenta.Width = 140;
             // 
             // CodigoBarra
             // 
             this.CodigoBarra.DataPropertyName = "CodigoBarra";
             this.CodigoBarra.HeaderText = "Folio Boleto";
+            this.CodigoBarra.MinimumWidth = 6;
             this.CodigoBarra.Name = "CodigoBarra";
             this.CodigoBarra.ReadOnly = true;
             this.CodigoBarra.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.CodigoBarra.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.CodigoBarra.Width = 99;
+            this.CodigoBarra.Width = 120;
             // 
             // Viaje
             // 
             this.Viaje.DataPropertyName = "nombreViaje";
             this.Viaje.HeaderText = "Línea";
+            this.Viaje.MinimumWidth = 6;
             this.Viaje.Name = "Viaje";
             this.Viaje.ReadOnly = true;
-            this.Viaje.Width = 73;
+            this.Viaje.Width = 89;
             // 
             // Origen
             // 
             this.Origen.DataPropertyName = "Origen";
             this.Origen.HeaderText = "Origen";
+            this.Origen.MinimumWidth = 6;
             this.Origen.Name = "Origen";
             this.Origen.ReadOnly = true;
             this.Origen.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Origen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Origen.Width = 62;
+            this.Origen.Width = 77;
             // 
             // Destino
             // 
             this.Destino.DataPropertyName = "Destino";
             this.Destino.FillWeight = 85F;
             this.Destino.HeaderText = "Destino";
+            this.Destino.MinimumWidth = 6;
             this.Destino.Name = "Destino";
             this.Destino.ReadOnly = true;
             this.Destino.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Destino.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Destino.Width = 70;
+            this.Destino.Width = 84;
             // 
             // fecha_salidaV
             // 
@@ -299,31 +307,34 @@
             dataGridViewCellStyle1.NullValue = null;
             this.fecha_salidaV.DefaultCellStyle = dataGridViewCellStyle1;
             this.fecha_salidaV.HeaderText = "Fecha";
+            this.fecha_salidaV.MinimumWidth = 6;
             this.fecha_salidaV.Name = "fecha_salidaV";
             this.fecha_salidaV.ReadOnly = true;
             this.fecha_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.fecha_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.fecha_salidaV.Width = 60;
+            this.fecha_salidaV.Width = 73;
             // 
             // hora_salidaV
             // 
             this.hora_salidaV.DataPropertyName = "hora_salidaV";
             this.hora_salidaV.HeaderText = "Hora";
+            this.hora_salidaV.MinimumWidth = 6;
             this.hora_salidaV.Name = "hora_salidaV";
             this.hora_salidaV.ReadOnly = true;
             this.hora_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.hora_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.hora_salidaV.Width = 50;
+            this.hora_salidaV.Width = 60;
             // 
             // NombrePersona
             // 
             this.NombrePersona.DataPropertyName = "NombrePersona";
             this.NombrePersona.HeaderText = "Nombre";
+            this.NombrePersona.MinimumWidth = 6;
             this.NombrePersona.Name = "NombrePersona";
             this.NombrePersona.ReadOnly = true;
             this.NombrePersona.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.NombrePersona.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NombrePersona.Width = 71;
+            this.NombrePersona.Width = 87;
             // 
             // asiento
             // 
@@ -332,11 +343,12 @@
             dataGridViewCellStyle2.NullValue = null;
             this.asiento.DefaultCellStyle = dataGridViewCellStyle2;
             this.asiento.HeaderText = "Asiento";
+            this.asiento.MinimumWidth = 6;
             this.asiento.Name = "asiento";
             this.asiento.ReadOnly = true;
             this.asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.asiento.Width = 69;
+            this.asiento.Width = 84;
             // 
             // fechaNacimiento
             // 
@@ -344,23 +356,26 @@
             dataGridViewCellStyle3.Format = "d";
             this.fechaNacimiento.DefaultCellStyle = dataGridViewCellStyle3;
             this.fechaNacimiento.HeaderText = "Fecha_Nacimiento";
+            this.fechaNacimiento.MinimumWidth = 6;
             this.fechaNacimiento.Name = "fechaNacimiento";
             this.fechaNacimiento.ReadOnly = true;
             this.fechaNacimiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.fechaNacimiento.Width = 167;
+            this.fechaNacimiento.Width = 204;
             // 
             // numeroTelefono
             // 
             this.numeroTelefono.DataPropertyName = "numeroTelefono";
             this.numeroTelefono.HeaderText = "Teléfono";
+            this.numeroTelefono.MinimumWidth = 6;
             this.numeroTelefono.Name = "numeroTelefono";
             this.numeroTelefono.ReadOnly = true;
-            this.numeroTelefono.Width = 96;
+            this.numeroTelefono.Width = 118;
             // 
             // cantidad_venta
             // 
             this.cantidad_venta.DataPropertyName = "cantidad_venta";
             this.cantidad_venta.HeaderText = "cantidad_venta";
+            this.cantidad_venta.MinimumWidth = 6;
             this.cantidad_venta.Name = "cantidad_venta";
             this.cantidad_venta.ReadOnly = true;
             this.cantidad_venta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -375,11 +390,12 @@
             dataGridViewCellStyle4.NullValue = null;
             this.boletocosto.DefaultCellStyle = dataGridViewCellStyle4;
             this.boletocosto.HeaderText = "Precio";
+            this.boletocosto.MinimumWidth = 6;
             this.boletocosto.Name = "boletocosto";
             this.boletocosto.ReadOnly = true;
             this.boletocosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.boletocosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.boletocosto.Width = 59;
+            this.boletocosto.Width = 73;
             // 
             // vdcosto
             // 
@@ -387,6 +403,7 @@
             dataGridViewCellStyle5.Format = "C2";
             this.vdcosto.DefaultCellStyle = dataGridViewCellStyle5;
             this.vdcosto.HeaderText = "Costo";
+            this.vdcosto.MinimumWidth = 6;
             this.vdcosto.Name = "vdcosto";
             this.vdcosto.ReadOnly = true;
             this.vdcosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -400,6 +417,7 @@
             dataGridViewCellStyle6.Format = "C2";
             this.iva.DefaultCellStyle = dataGridViewCellStyle6;
             this.iva.HeaderText = "IVA";
+            this.iva.MinimumWidth = 6;
             this.iva.Name = "iva";
             this.iva.ReadOnly = true;
             this.iva.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -413,11 +431,12 @@
             dataGridViewCellStyle7.Format = "C2";
             this.pago.DefaultCellStyle = dataGridViewCellStyle7;
             this.pago.HeaderText = "Pago";
+            this.pago.MinimumWidth = 6;
             this.pago.Name = "pago";
             this.pago.ReadOnly = true;
             this.pago.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.pago.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pago.Width = 52;
+            this.pago.Width = 64;
             // 
             // pendiente
             // 
@@ -425,11 +444,12 @@
             dataGridViewCellStyle8.Format = "C2";
             this.pendiente.DefaultCellStyle = dataGridViewCellStyle8;
             this.pendiente.HeaderText = "Pendiente";
+            this.pendiente.MinimumWidth = 6;
             this.pendiente.Name = "pendiente";
             this.pendiente.ReadOnly = true;
             this.pendiente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.pendiente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pendiente.Width = 87;
+            this.pendiente.Width = 106;
             // 
             // Transf
             // 
@@ -438,36 +458,40 @@
             dataGridViewCellStyle9.NullValue = null;
             this.Transf.DefaultCellStyle = dataGridViewCellStyle9;
             this.Transf.HeaderText = "Transf";
+            this.Transf.MinimumWidth = 6;
             this.Transf.Name = "Transf";
             this.Transf.ReadOnly = true;
             this.Transf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Transf.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Transf.Width = 60;
+            this.Transf.Width = 74;
             // 
             // Usu_Ins
             // 
             this.Usu_Ins.DataPropertyName = "usuins";
             this.Usu_Ins.HeaderText = "Usu_Ins";
+            this.Usu_Ins.MinimumWidth = 6;
             this.Usu_Ins.Name = "Usu_Ins";
             this.Usu_Ins.ReadOnly = true;
             this.Usu_Ins.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Usu_Ins.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Usu_Ins.Width = 75;
+            this.Usu_Ins.Width = 90;
             // 
             // Usu_Mod
             // 
             this.Usu_Mod.DataPropertyName = "usuupd";
             this.Usu_Mod.HeaderText = "Usu_Mod";
+            this.Usu_Mod.MinimumWidth = 6;
             this.Usu_Mod.Name = "Usu_Mod";
             this.Usu_Mod.ReadOnly = true;
             this.Usu_Mod.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Usu_Mod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Usu_Mod.Width = 84;
+            this.Usu_Mod.Width = 103;
             // 
             // precio
             // 
             this.precio.DataPropertyName = "precio";
             this.precio.HeaderText = "Precio";
+            this.precio.MinimumWidth = 6;
             this.precio.Name = "precio";
             this.precio.ReadOnly = true;
             this.precio.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -479,6 +503,7 @@
             // 
             this.id_venta.DataPropertyName = "id_venta";
             this.id_venta.HeaderText = "id_venta";
+            this.id_venta.MinimumWidth = 6;
             this.id_venta.Name = "id_venta";
             this.id_venta.ReadOnly = true;
             this.id_venta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -490,6 +515,7 @@
             // 
             this.id_cliente.DataPropertyName = "id_cliente";
             this.id_cliente.HeaderText = "id_cliente";
+            this.id_cliente.MinimumWidth = 6;
             this.id_cliente.Name = "id_cliente";
             this.id_cliente.ReadOnly = true;
             this.id_cliente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -501,6 +527,7 @@
             // 
             this.cajero.DataPropertyName = "cajero";
             this.cajero.HeaderText = "cajero";
+            this.cajero.MinimumWidth = 6;
             this.cajero.Name = "cajero";
             this.cajero.ReadOnly = true;
             this.cajero.Visible = false;
@@ -510,6 +537,7 @@
             // 
             this.bloqueoCancelacionMonedero.DataPropertyName = "bloqueoCancelacionMonedero";
             this.bloqueoCancelacionMonedero.HeaderText = "bloqueoCancelacionMonedero";
+            this.bloqueoCancelacionMonedero.MinimumWidth = 6;
             this.bloqueoCancelacionMonedero.Name = "bloqueoCancelacionMonedero";
             this.bloqueoCancelacionMonedero.ReadOnly = true;
             this.bloqueoCancelacionMonedero.Visible = false;
@@ -519,6 +547,7 @@
             // 
             this.bloqueoCancelacionPorFormaDePago.DataPropertyName = "bloqueoCancelacionPorFormaDePago";
             this.bloqueoCancelacionPorFormaDePago.HeaderText = "bloqueoCancelacionPorFormaDePago";
+            this.bloqueoCancelacionPorFormaDePago.MinimumWidth = 6;
             this.bloqueoCancelacionPorFormaDePago.Name = "bloqueoCancelacionPorFormaDePago";
             this.bloqueoCancelacionPorFormaDePago.ReadOnly = true;
             this.bloqueoCancelacionPorFormaDePago.Visible = false;
@@ -531,7 +560,7 @@
             this.label6.ForeColor = System.Drawing.Color.Navy;
             this.label6.Location = new System.Drawing.Point(489, 146);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(201, 21);
+            this.label6.Size = new System.Drawing.Size(237, 26);
             this.label6.TabIndex = 0;
             this.label6.Text = "Resultados Búsqueda";
             // 
@@ -542,7 +571,7 @@
             this.label5.ForeColor = System.Drawing.Color.Navy;
             this.label5.Location = new System.Drawing.Point(814, 14);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 21);
+            this.label5.Size = new System.Drawing.Size(106, 26);
             this.label5.TabIndex = 36;
             this.label5.Text = "Acciones";
             // 
@@ -553,7 +582,7 @@
             this.label4.ForeColor = System.Drawing.Color.Navy;
             this.label4.Location = new System.Drawing.Point(197, 14);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 21);
+            this.label4.Size = new System.Drawing.Size(116, 26);
             this.label4.TabIndex = 0;
             this.label4.Text = "Búsqueda";
             // 
@@ -729,7 +758,7 @@
             this.chkNombre.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkNombre.Location = new System.Drawing.Point(7, 138);
             this.chkNombre.Name = "chkNombre";
-            this.chkNombre.Size = new System.Drawing.Size(15, 14);
+            this.chkNombre.Size = new System.Drawing.Size(18, 17);
             this.chkNombre.TabIndex = 4;
             this.chkNombre.UseVisualStyleBackColor = true;
             this.chkNombre.CheckedChanged += new System.EventHandler(this.chkNombre_CheckedChanged);
@@ -741,7 +770,7 @@
             this.chkFolio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolio.Location = new System.Drawing.Point(7, 106);
             this.chkFolio.Name = "chkFolio";
-            this.chkFolio.Size = new System.Drawing.Size(15, 14);
+            this.chkFolio.Size = new System.Drawing.Size(18, 17);
             this.chkFolio.TabIndex = 3;
             this.chkFolio.UseVisualStyleBackColor = true;
             this.chkFolio.CheckedChanged += new System.EventHandler(this.chkFolio_CheckedChanged);
@@ -753,7 +782,7 @@
             this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFecha.Location = new System.Drawing.Point(7, 76);
             this.chkFecha.Name = "chkFecha";
-            this.chkFecha.Size = new System.Drawing.Size(15, 14);
+            this.chkFecha.Size = new System.Drawing.Size(18, 17);
             this.chkFecha.TabIndex = 2;
             this.chkFecha.UseVisualStyleBackColor = true;
             this.chkFecha.CheckedChanged += new System.EventHandler(this.chkFecha_CheckedChanged);
@@ -765,7 +794,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(28, 134);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.Size = new System.Drawing.Size(80, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Nombre:";
             // 
@@ -773,7 +802,7 @@
             // 
             this.txtNombreCliente.Location = new System.Drawing.Point(130, 128);
             this.txtNombreCliente.Name = "txtNombreCliente";
-            this.txtNombreCliente.Size = new System.Drawing.Size(262, 26);
+            this.txtNombreCliente.Size = new System.Drawing.Size(262, 30);
             this.txtNombreCliente.TabIndex = 8;
             // 
             // btnBuscar
@@ -813,7 +842,7 @@
             // 
             this.txtFolioBoleto.Location = new System.Drawing.Point(130, 99);
             this.txtFolioBoleto.Name = "txtFolioBoleto";
-            this.txtFolioBoleto.Size = new System.Drawing.Size(262, 26);
+            this.txtFolioBoleto.Size = new System.Drawing.Size(262, 30);
             this.txtFolioBoleto.TabIndex = 7;
             // 
             // label2
@@ -823,7 +852,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(30, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 17);
+            this.label2.Size = new System.Drawing.Size(116, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Folio Boleto:";
             // 
@@ -833,7 +862,7 @@
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFecha.Location = new System.Drawing.Point(130, 74);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(165, 23);
+            this.dtpFecha.Size = new System.Drawing.Size(165, 26);
             this.dtpFecha.TabIndex = 6;
             this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
@@ -844,16 +873,16 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(29, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 17);
+            this.label1.Size = new System.Drawing.Size(66, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Fecha:";
             // 
             // frmVentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1084, 436);
+            this.ClientSize = new System.Drawing.Size(1084, 441);
             this.ControlBox = true;
             this.Controls.Add(this.panelBusqueda);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

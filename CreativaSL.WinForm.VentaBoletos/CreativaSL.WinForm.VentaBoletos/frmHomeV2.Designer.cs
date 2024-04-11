@@ -3117,13 +3117,14 @@
             this.imageList1.Images.SetKeyName(9, "AsistenciaImagen");
             this.imageList1.Images.SetKeyName(10, "icons8-home-144.png");
             this.imageList1.Images.SetKeyName(11, "icons8-search-300.png");
+            this.imageList1.Images.SetKeyName(12, "icons8-cancel-144.png");
             // 
             // btn_BuscarViajes
             // 
             this.btn_BuscarViajes.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btn_BuscarViajes.ImageKey = "icons8-search-300.png";
             this.btn_BuscarViajes.ImageList = this.imageList1;
-            this.btn_BuscarViajes.Location = new System.Drawing.Point(221, 298);
+            this.btn_BuscarViajes.Location = new System.Drawing.Point(240, 295);
             this.btn_BuscarViajes.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BuscarViajes.Name = "btn_BuscarViajes";
             this.btn_BuscarViajes.Size = new System.Drawing.Size(50, 41);
@@ -3133,7 +3134,7 @@
             // btn_CancelarBuscarViajes
             // 
             this.btn_CancelarBuscarViajes.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_CancelarBuscarViajes.ImageKey = "icons8-search-300.png";
+            this.btn_CancelarBuscarViajes.ImageKey = "icons8-cancel-144.png";
             this.btn_CancelarBuscarViajes.ImageList = this.imageList1;
             this.btn_CancelarBuscarViajes.Location = new System.Drawing.Point(334, 295);
             this.btn_CancelarBuscarViajes.Margin = new System.Windows.Forms.Padding(4);

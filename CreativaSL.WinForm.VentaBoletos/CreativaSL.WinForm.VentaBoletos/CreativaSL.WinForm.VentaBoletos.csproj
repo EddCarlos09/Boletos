@@ -463,6 +463,12 @@
     <Compile Include="Clientes\frm_v2_ClienteAdd.Designer.cs">
       <DependentUpon>frm_v2_ClienteAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clientes\frm_v3_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_v3_Cliente.Designer.cs">
+      <DependentUpon>frm_v3_Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clientes\frm_WebCams_Equipo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -502,6 +508,12 @@
     </Compile>
     <Compile Include="FormAdministrador.Designer.cs">
       <DependentUpon>FormAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmApartadosV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApartadosV2.Designer.cs">
+      <DependentUpon>frmApartadosV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAsistenciaPasajeros.cs">
       <SubType>Form</SubType>
@@ -568,6 +580,12 @@
     </Compile>
     <Compile Include="frmCatUsuariosV2.Designer.cs">
       <DependentUpon>frmCatUsuariosV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguracionV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracionV2.Designer.cs">
+      <DependentUpon>frmConfiguracionV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDatosTarjeta.cs">
       <SubType>Form</SubType>
@@ -887,6 +905,12 @@
     <Compile Include="frmVentaGrupal.Designer.cs">
       <DependentUpon>frmVentaGrupal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVentaGrupalV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentaGrupalV2.Designer.cs">
+      <DependentUpon>frmVentaGrupalV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -935,6 +959,12 @@
     <Compile Include="frmVentasGrupal.Designer.cs">
       <DependentUpon>frmVentasGrupal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVentasV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentasV2.Designer.cs">
+      <DependentUpon>frmVentasV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmViajesXFechas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -970,6 +1000,9 @@
     <EmbeddedResource Include="Clientes\frm_v2_ClienteAdd.resx">
       <DependentUpon>frm_v2_ClienteAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frm_v3_Cliente.resx">
+      <DependentUpon>frm_v3_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes\frm_WebCams_Equipo.resx">
       <DependentUpon>frm_WebCams_Equipo.cs</DependentUpon>
     </EmbeddedResource>
@@ -982,6 +1015,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdministrador.resx">
       <DependentUpon>FormAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApartadosV2.resx">
+      <DependentUpon>frmApartadosV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAsistenciaPasajeros.resx">
       <DependentUpon>frmAsistenciaPasajeros.cs</DependentUpon>
@@ -1016,6 +1052,9 @@
     <EmbeddedResource Include="frmCatUsuariosV2.resx">
       <DependentUpon>frmCatUsuariosV2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracionV2.resx">
+      <DependentUpon>frmConfiguracionV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDatosTarjeta.resx">
       <DependentUpon>frmDatosTarjeta.cs</DependentUpon>
     </EmbeddedResource>
@@ -1049,8 +1088,14 @@
     <EmbeddedResource Include="frmVentaGrupal.resx">
       <DependentUpon>frmVentaGrupal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmVentaGrupalV2.resx">
+      <DependentUpon>frmVentaGrupalV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmVentasGrupal.resx">
       <DependentUpon>frmVentasGrupal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentasV2.resx">
+      <DependentUpon>frmVentasV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Informe_CajasFechasMod.rdlc" />
     <EmbeddedResource Include="Informe_CajasMod.rdlc" />
