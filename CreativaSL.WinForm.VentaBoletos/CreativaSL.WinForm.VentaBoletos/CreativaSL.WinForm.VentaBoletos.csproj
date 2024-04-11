@@ -533,6 +533,12 @@
     <Compile Include="frmAsistenciaPasajeros.Designer.cs">
       <DependentUpon>frmAsistenciaPasajeros.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAsistenciaPasajerosV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsistenciaPasajerosV2.Designer.cs">
+      <DependentUpon>frmAsistenciaPasajerosV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -911,6 +917,11 @@
     <Compile Include="frmPorentajeMonederoV2.Designer.cs">
       <DependentUpon>frmPorentajeMonederoV2.cs</DependentUpon>
     </Compile>
+    <!-- <Compile Include="frmPorentajeMonederoV21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmPorentajeMonederoV2.resx</DependentUpon>
+    </Compile> -->
     <Compile Include="frmPrecio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -928,6 +939,18 @@
     </Compile>
     <Compile Include="frmReportesMenu.designer.cs">
       <DependentUpon>frmReportesMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportesMenuV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportesMenuV2.Designer.cs">
+      <DependentUpon>frmReportesMenuV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportesV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportesV2.Designer.cs">
+      <DependentUpon>frmReportesV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUsuariosDatos.cs">
       <SubType>Form</SubType>
@@ -1001,6 +1024,12 @@
     <Compile Include="frmVentasGrupal.Designer.cs">
       <DependentUpon>frmVentasGrupal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVentasGrupalV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentasGrupalV2.Designer.cs">
+      <DependentUpon>frmVentasGrupalV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVentasV2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1069,6 +1098,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAsistenciaPasajeros.resx">
       <DependentUpon>frmAsistenciaPasajeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsistenciaPasajerosV2.resx">
+      <DependentUpon>frmAsistenciaPasajerosV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBase.resx">
       <DependentUpon>frmBase.cs</DependentUpon>
@@ -1142,11 +1174,19 @@
     <EmbeddedResource Include="frmPorentajeMonederoV2.resx">
       <DependentUpon>frmPorentajeMonederoV2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPorentajeMonederoV2.resx">
+    <!-- <EmbeddedResource Include="frmPorentajeMonederoV2.resx">
       <DependentUpon>frmPorentajeMonederoV2.cs</DependentUpon>
-    </EmbeddedResource>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmPorentajeMonederoV21.Designer.cs</LastGenOutput>
+    </EmbeddedResource> -->
     <EmbeddedResource Include="frmPrecio.resx">
       <DependentUpon>frmPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportesMenuV2.resx">
+      <DependentUpon>frmReportesMenuV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportesV2.resx">
+      <DependentUpon>frmReportesV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentaBoletoSF.resx">
       <DependentUpon>frmVentaBoletoSF.cs</DependentUpon>
@@ -1159,6 +1199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentasGrupal.resx">
       <DependentUpon>frmVentasGrupal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentasGrupalV2.resx">
+      <DependentUpon>frmVentasGrupalV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentasV2.resx">
       <DependentUpon>frmVentasV2.cs</DependentUpon>
