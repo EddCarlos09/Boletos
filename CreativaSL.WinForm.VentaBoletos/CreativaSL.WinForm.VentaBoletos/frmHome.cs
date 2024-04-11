@@ -249,6 +249,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
         #endregion
+
         #region VentaBoletos
         private void AgregarBoletos(PictureBox PictureBoxAux)
         {
