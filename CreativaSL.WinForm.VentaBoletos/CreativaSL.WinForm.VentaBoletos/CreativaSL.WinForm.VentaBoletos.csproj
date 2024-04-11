@@ -515,6 +515,12 @@
     <Compile Include="FormAdministrador.Designer.cs">
       <DependentUpon>FormAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCatTerminalIntermediaV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatTerminalIntermediaV2.Designer.cs">
+      <DependentUpon>frmCatTerminalIntermediaV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAsistenciaPasajeros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -634,6 +640,12 @@
     </Compile>
     <Compile Include="frmFechasViajesDetalle.Designer.cs">
       <DependentUpon>frmFechasViajesDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFechaViajeDetalleV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFechaViajeDetalleV2.Designer.cs">
+      <DependentUpon>frmFechaViajeDetalleV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHomeSF.cs">
       <SubType>Form</SubType>
@@ -851,6 +863,12 @@
     <Compile Include="frmNombreBoleto.Designer.cs">
       <DependentUpon>frmNombreBoleto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNuevaFechaViajeV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevaFechaViajeV2.Designer.cs">
+      <DependentUpon>frmNuevaFechaViajeV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPagoExtra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1046,6 +1064,9 @@
     <EmbeddedResource Include="frmCatTerminalesV2.resx">
       <DependentUpon>frmCatTerminalesV2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCatTerminalIntermediaV2.resx">
+      <DependentUpon>frmCatTerminalIntermediaV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCatTipoCamionV2.resx">
       <DependentUpon>frmCatTipoCamionV2.cs</DependentUpon>
     </EmbeddedResource>
@@ -1058,11 +1079,17 @@
     <EmbeddedResource Include="frmDatosTransferencia.resx">
       <DependentUpon>frmDatosTransferencia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFechaViajeDetalleV2.resx">
+      <DependentUpon>frmFechaViajeDetalleV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHomeSF.resx">
       <DependentUpon>frmHomeSF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHomeV2.resx">
       <DependentUpon>frmHomeV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevaFechaViajeV2.resx">
+      <DependentUpon>frmNuevaFechaViajeV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPorentajeMonederoV2.resx">
       <DependentUpon>frmPorentajeMonederoV2.cs</DependentUpon>

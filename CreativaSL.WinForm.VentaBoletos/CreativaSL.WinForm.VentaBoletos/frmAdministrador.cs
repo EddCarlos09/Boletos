@@ -930,7 +930,7 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                frmNuevaFechaViaje nuevaFecha = new frmNuevaFechaViaje((Viaje)this.ObtenerDatos(), 1);
+                frmNuevaFechaViajeV2 nuevaFecha = new frmNuevaFechaViajeV2((Viaje)this.ObtenerDatos(), 1);
                 nuevaFecha.ShowDialog();
                 if (nuevaFecha.Guardar == true)
                 {
@@ -947,7 +947,7 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                frmNuevaFechaViaje eliminarFecha = new frmNuevaFechaViaje((Viaje)this.ObtenerDatos(), 2);
+                frmNuevaFechaViajeV2 eliminarFecha = new frmNuevaFechaViajeV2((Viaje)this.ObtenerDatos(), 2);
                 eliminarFecha.ShowDialog();
                 if (eliminarFecha.Guardar == true)
                 {
@@ -964,7 +964,7 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                frmFechasViajesDetalle fechaViajesDetalles = new frmFechasViajesDetalle((Viaje)this.ObtenerDatos());
+                frmFechaViajeDetalleV2 fechaViajesDetalles = new frmFechaViajeDetalleV2((Viaje)this.ObtenerDatos());
                 fechaViajesDetalles.ShowDialog();
                 fechaViajesDetalles.Dispose();
             }
