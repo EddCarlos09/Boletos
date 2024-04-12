@@ -517,6 +517,7 @@
     </Compile>
     <Compile Include="frmCatTerminalIntermediaV2.Designer.cs">
       <DependentUpon>frmCatTerminalIntermediaV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmApartadosV2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -642,6 +643,7 @@
     </Compile>
     <Compile Include="frmFechaViajeDetalleV2.Designer.cs">
       <DependentUpon>frmFechaViajeDetalleV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFechasViajesDetalleV2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1073,9 +1075,6 @@
     <EmbeddedResource Include="frmCatTerminalIntermediaV2.resx">
       <DependentUpon>frmCatTerminalIntermediaV2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCatTipoCamionV2.resx">
-      <DependentUpon>frmCatTipoCamionV2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmCatUsuariosV2.resx">
       <DependentUpon>frmCatUsuariosV2.cs</DependentUpon>
     </EmbeddedResource>
@@ -1090,6 +1089,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFechaViajeDetalleV2.resx">
       <DependentUpon>frmFechaViajeDetalleV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDepositosRetirosV2.resx">
       <DependentUpon>frmDepositosRetirosV2.cs</DependentUpon>
     </EmbeddedResource>
@@ -1107,6 +1107,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevaFechaViajeV2.resx">
       <DependentUpon>frmNuevaFechaViajeV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMaletasV2.resx">
       <DependentUpon>frmMaletasV2.cs</DependentUpon>
     </EmbeddedResource>
