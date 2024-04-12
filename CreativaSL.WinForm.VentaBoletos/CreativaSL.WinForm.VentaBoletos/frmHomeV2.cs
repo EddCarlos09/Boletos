@@ -24,7 +24,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 InitializeComponent();
-                this.Inicializar();
+                //this.Inicializar();
                 loadMaterial(this);
             }
             catch (Exception ex)
