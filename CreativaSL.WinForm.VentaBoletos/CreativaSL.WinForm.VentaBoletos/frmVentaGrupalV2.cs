@@ -18,11 +18,11 @@ namespace CreativaSL.WinForm.VentaBoletos
 
         public bool _banVentaGrupal = false;
         public BoletosGrupal infoBoletosGrupal;
-        public frmVentaGrupalV2()
+        public frmVentaGrupalV2(BoletosGrupal boletosGrupal)
         {
             InitializeComponent();
             loadMaterial(this);
-            //infoBoletosGrupal = boletosGrupal;
+            infoBoletosGrupal = boletosGrupal;
         }
 
         private void brn_Cancelar_Click_1(object sender, EventArgs e)
