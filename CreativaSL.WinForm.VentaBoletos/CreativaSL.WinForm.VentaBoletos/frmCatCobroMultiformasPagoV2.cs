@@ -17,7 +17,7 @@ using static CreativaSL.WinForm.VentaBoletos.MaterialUI;
 
 namespace CreativaSL.WinForm.VentaBoletos
 {
-    public partial class frmCatCobroMultiformasPagoV2 : MaterialForm
+    public partial class frmCatCobroMultiFormasPagoV2 : MaterialForm
     {
         #region Variables
 
@@ -45,7 +45,7 @@ namespace CreativaSL.WinForm.VentaBoletos
 
         #endregion
         #region Constructor
-        public frmCatCobroMultiformasPagoV2(float total, float pagar, float pendiente, float monederoCliente, string cliente, float nuevoMontoMonedero, V2Cliente clienteV2)
+        public frmCatCobroMultiFormasPagoV2(float total, float pagar, float pendiente, float monederoCliente, string cliente, float nuevoMontoMonedero, V2Cliente clienteV2)
         {
             InitializeComponent();
             Total = total;
@@ -58,7 +58,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             loadMaterial(this);
             Inicializar();
         }
-        public frmCatCobroMultiformasPagoV2(float total, float pagar, float pendiente, float monederoCliente, string cliente, float nuevoMontoMonedero)
+        public frmCatCobroMultiFormasPagoV2(float total, float pagar, float pendiente, float monederoCliente, string cliente, float nuevoMontoMonedero)
         {
             InitializeComponent();
             Total = total;
@@ -70,7 +70,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             Inicializar();
             loadMaterial(this);
         }
-        public frmCatCobroMultiformasPagoV2(float total, float pagar, float pendiente, float monederoCliente, string cliente, float nuevoMontoMonedero, int tipo)
+        public frmCatCobroMultiFormasPagoV2(float total, float pagar, float pendiente, float monederoCliente, string cliente, float nuevoMontoMonedero, int tipo)
         {
             InitializeComponent();
             Total = total;

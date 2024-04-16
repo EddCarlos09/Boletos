@@ -12,10 +12,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static CreativaSL.WinForm.VentaBoletos.MaterialUI;
 
+
 namespace CreativaSL.WinForm.VentaBoletos
 {
-    public partial class frmCancelacionesTransferenciasGrupalV2 : MaterialForm
+    public partial class frmCancelacionesTransferenciasV2 : MaterialForm
     {
+        private Boleto _DatosBoletos;
         private List<MotivoCancelacionesTrasferencias> lstMotivoCancelacionesTrasferencias;
         private int _tipoCancelacionesTransferencias = 0;
         private int _tipoCancelaciones = 0;
@@ -31,22 +33,17 @@ namespace CreativaSL.WinForm.VentaBoletos
             get { return _motivoCancelacionesTransferencias; }
             set { _motivoCancelacionesTransferencias = value; }
         }
-
-        private int _numeroBoletos;
-        public int numeroBoletos
-        {
-            get { return _numeroBoletos; }
-            set { _numeroBoletos = value; }
-        }
-        public frmCancelacionesTransferenciasGrupalV2(int tipoCancelacionesTransferencias, int tipoCancelaciones, int numeroBoletos)
+        public frmCancelacionesTransferenciasV2(int tipoCancelacionesTransferencias, int tipoCancelaciones, Boleto DatosBoletos)
         {
             InitializeComponent();
             loadMaterial(this);
             _tipoCancelacionesTransferencias = tipoCancelacionesTransferencias;
             _tipoCancelaciones = tipoCancelaciones;
-            _numeroBoletos = numeroBoletos;
+            _DatosBoletos = DatosBoletos;
             inicializar();
+
         }
+
 
 
         #region Metodos Generales
@@ -69,12 +66,21 @@ namespace CreativaSL.WinForm.VentaBoletos
         private void inicializar()
         {
             this._CancelacionTrasfencia = false;
+            this.txt_folio.Text = _DatosBoletos.folio;
+            this.txt_linea.Text = _DatosBoletos.lineaMarca;
+            this.txt_origen.Text = _DatosBoletos.origen;
+            this.txt_destino.Text = _DatosBoletos.destino;
+            this.txt_fecha.Text = _DatosBoletos.fechaSalida.ToShortDateString();
+            this.txt_hora.Text = _DatosBoletos.horaSalida;
+            this.txt_nombre.Text = _DatosBoletos.cliente_nombre;
+            this.txt_precio.Text = string.Format("{0:c}", _DatosBoletos.precioIva);
+            this.txt_asiento.Text = _DatosBoletos.asiento.ToString();
             this.txt_FechaCancelacionTransferencia.Text = DateTime.Now.ToShortDateString();
             this.txt_horaCancelacionTransferencia.Text = DateTime.Now.ToString("HH:mm:ss");
             this.txt_usuarioCancelacionTransferencia.Text = Comun.U_Nombre + " " + Comun.U_Apellidop + " " + Comun.U_Apellidom;
             if (_tipoCancelacionesTransferencias == 1)
                 if (_tipoCancelaciones == 1)
-                    this.txt_penalizacion.Text = string.Format("{0:c}", Comun.monto_cancelacion * numeroBoletos);
+                    this.txt_penalizacion.Text = string.Format("{0:c}", Comun.monto_cancelacion);
                 else
                     this.txt_penalizacion.Text = string.Format("{0:c}", 0.0);
             else
@@ -165,11 +171,21 @@ namespace CreativaSL.WinForm.VentaBoletos
                 motivoCancelacionesTransferencias.descripcion = this.txt_motivoCancelacionTransferencia.Text;
                 motivoCancelacionesTransferencias.id_tipo = _tipoCancelacionesTransferencias;
                 motivoCancelacionesTransferencias.ID_U = Comun.Id_U;
+                motivoCancelacionesTransferencias.id_boletoTransferencia = this._DatosBoletos.id_boleto;
+                motivoCancelacionesTransferencias.transferenciaCompleta = this.chkTransferenciaCompleta.Checked;
             }
             catch (Exception ex)
             {
             }
         }
         #endregion
+
+        private void FrmCancelacionesTransferencias_Load(object sender, EventArgs e)
+        {
+            if (_tipoCancelacionesTransferencias == 1)
+                this.chkTransferenciaCompleta.Enabled = false;
+            else
+                this.chkTransferenciaCompleta.Enabled = true;
+        }
     }
 }
