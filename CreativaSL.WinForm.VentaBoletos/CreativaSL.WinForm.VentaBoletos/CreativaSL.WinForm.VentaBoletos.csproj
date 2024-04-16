@@ -429,6 +429,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="buttonRadius.cs" />
     <Compile Include="ClasesAux\LogError.cs" />
     <Compile Include="Clientes\frm_v2_AsignarTarjeta.cs">
       <SubType>Form</SubType>
@@ -477,6 +478,12 @@
     </Compile>
     <Compile Include="Clientes\frm_v2_ClienteAdd.Designer.cs">
       <DependentUpon>frm_v2_ClienteAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_ClienteAddV2_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\frm_v2_ClienteAddV2_.Designer.cs">
+      <DependentUpon>frm_v2_ClienteAddV2_.cs</DependentUpon>
     </Compile>
     <Compile Include="Clientes\frm_v3_Cliente.cs">
       <SubType>Form</SubType>
@@ -703,6 +710,12 @@
     </Compile>
     <Compile Include="frmHomeV2.Designer.cs">
       <DependentUpon>frmHomeV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginV2.Designer.cs">
+      <DependentUpon>frmLoginV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMaletasV2.cs">
       <SubType>Form</SubType>
@@ -1099,6 +1112,9 @@
     <EmbeddedResource Include="Clientes\frm_v2_ClienteAdd.resx">
       <DependentUpon>frm_v2_ClienteAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\frm_v2_ClienteAddV2_.resx">
+      <DependentUpon>frm_v2_ClienteAddV2_.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes\frm_v3_Cliente.resx">
       <DependentUpon>frm_v3_Cliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -1196,6 +1212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHomeV2.resx">
       <DependentUpon>frmHomeV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginV2.resx">
+      <DependentUpon>frmLoginV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevaFechaViajeV2.resx">
       <DependentUpon>frmNuevaFechaViajeV2.cs</DependentUpon>
