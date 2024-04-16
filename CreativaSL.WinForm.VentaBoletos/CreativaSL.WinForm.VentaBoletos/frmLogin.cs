@@ -60,7 +60,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                                     aperturaCaja.Dispose();
                                 }
                                 this.Visible = false;
-                                frmHome home = new frmHome();
+                                frmHomeV2 home = new frmHomeV2();
                                 home.ShowDialog();
                                 if (home.Salir)
                                 {
