@@ -345,7 +345,7 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                frmCatTerminalIntermedia frmt = new frmCatTerminalIntermedia();
+                frmCatTerminalIntermediaV2 frmt = new frmCatTerminalIntermediaV2();
                 frmt.ShowDialog();
                 if (frmt.DialogResult == DialogResult.OK)
                 {

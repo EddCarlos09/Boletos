@@ -24,7 +24,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 InitializeComponent();
-                this.Inicializar();
+                //this.Inicializar();
                 loadMaterial(this);
             }
             catch (Exception ex)
@@ -95,7 +95,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             switch (indexSeleccionado)
             {
                 case 1:
-                    frmVentas frmv1 = new frmVentas();
+                    frmVentasV2 frmv1 = new frmVentasV2();
                     frmv1.ShowDialog();
                     frmv1.Dispose();
                     materialTabControl1.SelectedIndex = 0;
@@ -105,17 +105,17 @@ namespace CreativaSL.WinForm.VentaBoletos
 
                     break;
                 case 2:
-                    frmVentasGrupal frmvg2 = new frmVentasGrupal();
+                    frmVentasGrupalV2 frmvg2 = new frmVentasGrupalV2();
                     frmvg2.ShowDialog();
                     frmvg2.Dispose();
                     break;
                 case 3:
-                    frmApartados frma3 = new frmApartados();
+                    frmApartadosV2 frma3 = new frmApartadosV2();
                     frma3.ShowDialog();
                     frma3.Dispose();
                     break;
                 case 4:
-                    frm_v2_Cliente frmcl4 = new frm_v2_Cliente();
+                    frm_v3_Cliente frmcl4 = new frm_v3_Cliente();
                     frmcl4.ShowDialog();
                     frmcl4.Dispose();
                     break;
@@ -137,22 +137,22 @@ namespace CreativaSL.WinForm.VentaBoletos
                 case 8:
                     if (Comun.Id_Tu == 4)
                     {
-                        frmReportes frmReportesVista8 = new frmReportes(15);
+                        frmReportesV2 frmReportesVista8 = new frmReportesV2();
                         frmReportesVista8.ShowDialog();
                     }
                     else
                     {
-                        frmReportesMenu frmr8 = new frmReportesMenu();
+                        frmReportesMenuV2 frmr8 = new frmReportesMenuV2();
                         frmr8.ShowDialog();
                     }
                     break;
                 case 9:
-                    frmConfiguracion frmC9 = new frmConfiguracion();
+                    frmConfiguracionV2 frmC9 = new frmConfiguracionV2();
                     frmC9.ShowDialog();
                     frmC9.Dispose();
                     break;
                 case 10:
-                    frmAsistenciaPasajeros frmC10 = new frmAsistenciaPasajeros();
+                    frmAsistenciaPasajerosV2 frmC10 = new frmAsistenciaPasajerosV2();
                     frmC10.ShowDialog();
                     frmC10.Dispose();
                     break;

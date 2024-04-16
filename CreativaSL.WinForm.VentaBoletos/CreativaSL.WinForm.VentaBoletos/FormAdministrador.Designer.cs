@@ -219,13 +219,12 @@
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.ImageList = this.imageList1;
-            this.materialTabControl1.Location = new System.Drawing.Point(4, 79);
-            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTabControl1.Location = new System.Drawing.Point(3, 64);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1934, 504);
+            this.materialTabControl1.Size = new System.Drawing.Size(1561, 410);
             this.materialTabControl1.TabIndex = 0;
             this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.MaterialTabControl1_SelectedIndexChanged);
             this.materialTabControl1.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -237,10 +236,9 @@
             this.tabPage1.Controls.Add(this.materialCard1);
             this.tabPage1.ImageKey = "icons8-design-96 (1).png";
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1926, 461);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(1553, 367);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Diseño";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -253,7 +251,7 @@
             this.button5.ImageList = this.imageList1;
             this.button5.Location = new System.Drawing.Point(1463, 20);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(77, 58);
+            this.button5.Size = new System.Drawing.Size(58, 47);
             this.button5.TabIndex = 10;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.btnSalir_Click);
@@ -290,12 +288,12 @@
             this.materialCard4.Controls.Add(this.materialListView1);
             this.materialCard4.Depth = 0;
             this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard4.Location = new System.Drawing.Point(49, 146);
-            this.materialCard4.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard4.Location = new System.Drawing.Point(37, 119);
+            this.materialCard4.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard4.Name = "materialCard4";
-            this.materialCard4.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard4.Size = new System.Drawing.Size(1979, 180);
+            this.materialCard4.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard4.Size = new System.Drawing.Size(1484, 146);
             this.materialCard4.TabIndex = 4;
             // 
             // materialListView1
@@ -317,7 +315,7 @@
             this.materialListView1.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView1.Name = "materialListView1";
             this.materialListView1.OwnerDraw = true;
-            this.materialListView1.Size = new System.Drawing.Size(1953, 152);
+            this.materialListView1.Size = new System.Drawing.Size(1464, 124);
             this.materialListView1.TabIndex = 0;
             this.materialListView1.UseCompatibleStateImageBehavior = false;
             this.materialListView1.View = System.Windows.Forms.View.Details;
@@ -333,8 +331,8 @@
             this.materialCard1.Controls.Add(this.materialTextBox21);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(49, 14);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard1.Location = new System.Drawing.Point(37, 11);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
@@ -348,7 +346,7 @@
             this.button4.ImageList = this.imageList1;
             this.button4.Location = new System.Drawing.Point(663, 12);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(77, 58);
+            this.button4.Size = new System.Drawing.Size(58, 47);
             this.button4.TabIndex = 9;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -360,7 +358,7 @@
             this.button3.ImageList = this.imageList1;
             this.button3.Location = new System.Drawing.Point(741, 12);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(77, 58);
+            this.button3.Size = new System.Drawing.Size(58, 47);
             this.button3.TabIndex = 8;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -382,10 +380,9 @@
             this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button1.ImageKey = "icons8-search-100.png";
             this.button1.ImageList = this.imageList1;
-            this.button1.Location = new System.Drawing.Point(409, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(307, 9);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 58);
+            this.button1.Size = new System.Drawing.Size(58, 47);
             this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -400,8 +397,7 @@
             this.materialTextBox21.HideSelection = true;
             this.materialTextBox21.Hint = "Buscar:";
             this.materialTextBox21.LeadingIcon = null;
-            this.materialTextBox21.Location = new System.Drawing.Point(29, 11);
-            this.materialTextBox21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTextBox21.Location = new System.Drawing.Point(22, 9);
             this.materialTextBox21.MaxLength = 32767;
             this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox21.Name = "materialTextBox21";
@@ -413,7 +409,7 @@
             this.materialTextBox21.SelectionLength = 0;
             this.materialTextBox21.SelectionStart = 0;
             this.materialTextBox21.ShortcutsEnabled = true;
-            this.materialTextBox21.Size = new System.Drawing.Size(365, 48);
+            this.materialTextBox21.Size = new System.Drawing.Size(274, 48);
             this.materialTextBox21.TabIndex = 5;
             this.materialTextBox21.TabStop = false;
             this.materialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -428,10 +424,9 @@
             this.tabPage2.Controls.Add(this.materialCard3);
             this.tabPage2.ImageKey = "icons8-bus-50.png";
             this.tabPage2.Location = new System.Drawing.Point(4, 39);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(2073, 462);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Size = new System.Drawing.Size(1553, 367);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Camiones";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -553,8 +548,8 @@
             this.materialCard6.Controls.Add(this.materialTextBox22);
             this.materialCard6.Depth = 0;
             this.materialCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard6.Location = new System.Drawing.Point(49, 14);
-            this.materialCard6.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard6.Location = new System.Drawing.Point(37, 11);
+            this.materialCard6.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard6.Name = "materialCard6";
             this.materialCard6.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
@@ -568,7 +563,7 @@
             this.button7.ImageList = this.imageList1;
             this.button7.Location = new System.Drawing.Point(506, 9);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(77, 58);
+            this.button7.Size = new System.Drawing.Size(58, 47);
             this.button7.TabIndex = 9;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -580,7 +575,7 @@
             this.button8.ImageList = this.imageList1;
             this.button8.Location = new System.Drawing.Point(646, 9);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(77, 58);
+            this.button8.Size = new System.Drawing.Size(58, 47);
             this.button8.TabIndex = 8;
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -592,7 +587,7 @@
             this.button9.ImageList = this.imageList1;
             this.button9.Location = new System.Drawing.Point(578, 9);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(77, 58);
+            this.button9.Size = new System.Drawing.Size(58, 47);
             this.button9.TabIndex = 7;
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.btnModificar_Click);
@@ -602,10 +597,9 @@
             this.button10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button10.ImageKey = "icons8-search-100.png";
             this.button10.ImageList = this.imageList1;
-            this.button10.Location = new System.Drawing.Point(409, 11);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button10.Location = new System.Drawing.Point(307, 9);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(77, 58);
+            this.button10.Size = new System.Drawing.Size(58, 47);
             this.button10.TabIndex = 6;
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
@@ -620,8 +614,7 @@
             this.materialTextBox22.HideSelection = true;
             this.materialTextBox22.Hint = "Buscar:";
             this.materialTextBox22.LeadingIcon = null;
-            this.materialTextBox22.Location = new System.Drawing.Point(29, 11);
-            this.materialTextBox22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTextBox22.Location = new System.Drawing.Point(22, 9);
             this.materialTextBox22.MaxLength = 32767;
             this.materialTextBox22.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox22.Name = "materialTextBox22";
@@ -633,7 +626,7 @@
             this.materialTextBox22.SelectionLength = 0;
             this.materialTextBox22.SelectionStart = 0;
             this.materialTextBox22.ShortcutsEnabled = true;
-            this.materialTextBox22.Size = new System.Drawing.Size(365, 48);
+            this.materialTextBox22.Size = new System.Drawing.Size(274, 48);
             this.materialTextBox22.TabIndex = 5;
             this.materialTextBox22.TabStop = false;
             this.materialTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -647,12 +640,12 @@
             this.materialCard3.Controls.Add(this.materialListView2);
             this.materialCard3.Depth = 0;
             this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard3.Location = new System.Drawing.Point(49, 146);
-            this.materialCard3.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard3.Location = new System.Drawing.Point(37, 119);
+            this.materialCard3.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard3.Name = "materialCard3";
-            this.materialCard3.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard3.Size = new System.Drawing.Size(1975, 169);
+            this.materialCard3.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard3.Size = new System.Drawing.Size(1481, 137);
             this.materialCard3.TabIndex = 0;
             // 
             // materialListView2
@@ -666,14 +659,14 @@
             this.materialListView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialListView2.FullRowSelect = true;
             this.materialListView2.HideSelection = false;
-            this.materialListView2.Location = new System.Drawing.Point(13, 14);
-            this.materialListView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialListView2.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView2.Location = new System.Drawing.Point(10, 11);
+            this.materialListView2.Margin = new System.Windows.Forms.Padding(2);
+            this.materialListView2.MinimumSize = new System.Drawing.Size(150, 81);
             this.materialListView2.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView2.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView2.Name = "materialListView2";
             this.materialListView2.OwnerDraw = true;
-            this.materialListView2.Size = new System.Drawing.Size(1949, 141);
+            this.materialListView2.Size = new System.Drawing.Size(1461, 115);
             this.materialListView2.TabIndex = 0;
             this.materialListView2.UseCompatibleStateImageBehavior = false;
             this.materialListView2.View = System.Windows.Forms.View.Details;
@@ -685,9 +678,8 @@
             this.tabPage3.Controls.Add(this.materialCard9);
             this.tabPage3.ImageKey = "icons8-train-station-96.png";
             this.tabPage3.Location = new System.Drawing.Point(4, 39);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1926, 461);
+            this.tabPage3.Size = new System.Drawing.Size(1553, 367);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Terminales";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -700,7 +692,7 @@
             this.button11.ImageList = this.imageList1;
             this.button11.Location = new System.Drawing.Point(1435, 20);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(77, 58);
+            this.button11.Size = new System.Drawing.Size(58, 47);
             this.button11.TabIndex = 10;
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.btnSalir_Click);
@@ -715,12 +707,12 @@
             this.materialCard8.Controls.Add(this.materialTextBox23);
             this.materialCard8.Depth = 0;
             this.materialCard8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard8.Location = new System.Drawing.Point(49, 14);
-            this.materialCard8.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard8.Location = new System.Drawing.Point(37, 11);
+            this.materialCard8.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard8.Name = "materialCard8";
-            this.materialCard8.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard8.Size = new System.Drawing.Size(1319, 90);
+            this.materialCard8.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard8.Size = new System.Drawing.Size(989, 73);
             this.materialCard8.TabIndex = 9;
             // 
             // button12
@@ -728,10 +720,9 @@
             this.button12.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button12.ImageKey = "icons8-add-100.png";
             this.button12.ImageList = this.imageList1;
-            this.button12.Location = new System.Drawing.Point(1003, 11);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button12.Location = new System.Drawing.Point(752, 9);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(77, 58);
+            this.button12.Size = new System.Drawing.Size(58, 47);
             this.button12.TabIndex = 9;
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -741,10 +732,9 @@
             this.button13.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button13.ImageKey = "icons8-delete-90.png";
             this.button13.ImageList = this.imageList1;
-            this.button13.Location = new System.Drawing.Point(1209, 11);
-            this.button13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button13.Location = new System.Drawing.Point(907, 9);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(77, 58);
+            this.button13.Size = new System.Drawing.Size(58, 47);
             this.button13.TabIndex = 8;
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -754,10 +744,9 @@
             this.button14.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button14.ImageKey = "icons8-edit-100.png";
             this.button14.ImageList = this.imageList1;
-            this.button14.Location = new System.Drawing.Point(1108, 11);
-            this.button14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button14.Location = new System.Drawing.Point(831, 9);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(77, 58);
+            this.button14.Size = new System.Drawing.Size(58, 47);
             this.button14.TabIndex = 7;
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Click += new System.EventHandler(this.btnModificar_Click);
@@ -767,10 +756,9 @@
             this.button15.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button15.ImageKey = "icons8-search-100.png";
             this.button15.ImageList = this.imageList1;
-            this.button15.Location = new System.Drawing.Point(409, 11);
-            this.button15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button15.Location = new System.Drawing.Point(307, 9);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(77, 58);
+            this.button15.Size = new System.Drawing.Size(58, 47);
             this.button15.TabIndex = 6;
             this.button15.UseVisualStyleBackColor = false;
             this.button15.Click += new System.EventHandler(this.button15_Click);
@@ -785,8 +773,7 @@
             this.materialTextBox23.HideSelection = true;
             this.materialTextBox23.Hint = "Buscar:";
             this.materialTextBox23.LeadingIcon = null;
-            this.materialTextBox23.Location = new System.Drawing.Point(29, 11);
-            this.materialTextBox23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTextBox23.Location = new System.Drawing.Point(22, 9);
             this.materialTextBox23.MaxLength = 32767;
             this.materialTextBox23.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox23.Name = "materialTextBox23";
@@ -798,7 +785,7 @@
             this.materialTextBox23.SelectionLength = 0;
             this.materialTextBox23.SelectionStart = 0;
             this.materialTextBox23.ShortcutsEnabled = true;
-            this.materialTextBox23.Size = new System.Drawing.Size(365, 48);
+            this.materialTextBox23.Size = new System.Drawing.Size(274, 48);
             this.materialTextBox23.TabIndex = 5;
             this.materialTextBox23.TabStop = false;
             this.materialTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -812,12 +799,12 @@
             this.materialCard9.Controls.Add(this.materialListView3);
             this.materialCard9.Depth = 0;
             this.materialCard9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard9.Location = new System.Drawing.Point(49, 146);
-            this.materialCard9.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard9.Location = new System.Drawing.Point(37, 119);
+            this.materialCard9.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard9.Name = "materialCard9";
-            this.materialCard9.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard9.Size = new System.Drawing.Size(1941, 169);
+            this.materialCard9.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard9.Size = new System.Drawing.Size(1456, 137);
             this.materialCard9.TabIndex = 8;
             // 
             // materialListView3
@@ -831,14 +818,14 @@
             this.materialListView3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialListView3.FullRowSelect = true;
             this.materialListView3.HideSelection = false;
-            this.materialListView3.Location = new System.Drawing.Point(13, 14);
-            this.materialListView3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialListView3.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView3.Location = new System.Drawing.Point(10, 11);
+            this.materialListView3.Margin = new System.Windows.Forms.Padding(2);
+            this.materialListView3.MinimumSize = new System.Drawing.Size(150, 81);
             this.materialListView3.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView3.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView3.Name = "materialListView3";
             this.materialListView3.OwnerDraw = true;
-            this.materialListView3.Size = new System.Drawing.Size(1915, 141);
+            this.materialListView3.Size = new System.Drawing.Size(1436, 115);
             this.materialListView3.TabIndex = 0;
             this.materialListView3.UseCompatibleStateImageBehavior = false;
             this.materialListView3.View = System.Windows.Forms.View.Details;
@@ -850,9 +837,8 @@
             this.tabPage4.Controls.Add(this.materialCard12);
             this.tabPage4.ImageKey = "icons8-route-64.png";
             this.tabPage4.Location = new System.Drawing.Point(4, 39);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1926, 461);
+            this.tabPage4.Size = new System.Drawing.Size(1553, 367);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Rutas";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -865,7 +851,7 @@
             this.button16.ImageList = this.imageList1;
             this.button16.Location = new System.Drawing.Point(1435, 21);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(77, 58);
+            this.button16.Size = new System.Drawing.Size(58, 47);
             this.button16.TabIndex = 10;
             this.button16.UseVisualStyleBackColor = false;
             this.button16.Click += new System.EventHandler(this.btnSalir_Click);
@@ -880,12 +866,12 @@
             this.materialCard11.Controls.Add(this.materialTextBox24);
             this.materialCard11.Depth = 0;
             this.materialCard11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard11.Location = new System.Drawing.Point(49, 14);
-            this.materialCard11.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard11.Location = new System.Drawing.Point(37, 11);
+            this.materialCard11.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard11.Name = "materialCard11";
-            this.materialCard11.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard11.Size = new System.Drawing.Size(1319, 90);
+            this.materialCard11.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard11.Size = new System.Drawing.Size(989, 73);
             this.materialCard11.TabIndex = 9;
             // 
             // button17
@@ -893,10 +879,9 @@
             this.button17.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button17.ImageKey = "icons8-add-100.png";
             this.button17.ImageList = this.imageList1;
-            this.button17.Location = new System.Drawing.Point(1003, 11);
-            this.button17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button17.Location = new System.Drawing.Point(752, 9);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(77, 58);
+            this.button17.Size = new System.Drawing.Size(58, 47);
             this.button17.TabIndex = 9;
             this.button17.UseVisualStyleBackColor = false;
             this.button17.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -906,10 +891,9 @@
             this.button18.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button18.ImageKey = "icons8-delete-90.png";
             this.button18.ImageList = this.imageList1;
-            this.button18.Location = new System.Drawing.Point(1209, 11);
-            this.button18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button18.Location = new System.Drawing.Point(907, 9);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(77, 58);
+            this.button18.Size = new System.Drawing.Size(58, 47);
             this.button18.TabIndex = 8;
             this.button18.UseVisualStyleBackColor = false;
             this.button18.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -919,10 +903,9 @@
             this.button19.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button19.ImageKey = "icons8-edit-100.png";
             this.button19.ImageList = this.imageList1;
-            this.button19.Location = new System.Drawing.Point(1108, 11);
-            this.button19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button19.Location = new System.Drawing.Point(831, 9);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(77, 58);
+            this.button19.Size = new System.Drawing.Size(58, 47);
             this.button19.TabIndex = 7;
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.btnModificar_Click);
@@ -932,10 +915,9 @@
             this.button20.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button20.ImageKey = "icons8-search-100.png";
             this.button20.ImageList = this.imageList1;
-            this.button20.Location = new System.Drawing.Point(409, 11);
-            this.button20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button20.Location = new System.Drawing.Point(307, 9);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(77, 58);
+            this.button20.Size = new System.Drawing.Size(58, 47);
             this.button20.TabIndex = 6;
             this.button20.UseVisualStyleBackColor = false;
             this.button20.Click += new System.EventHandler(this.button20_Click);
@@ -950,8 +932,7 @@
             this.materialTextBox24.HideSelection = true;
             this.materialTextBox24.Hint = "Buscar:";
             this.materialTextBox24.LeadingIcon = null;
-            this.materialTextBox24.Location = new System.Drawing.Point(29, 11);
-            this.materialTextBox24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTextBox24.Location = new System.Drawing.Point(22, 9);
             this.materialTextBox24.MaxLength = 32767;
             this.materialTextBox24.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox24.Name = "materialTextBox24";
@@ -963,7 +944,7 @@
             this.materialTextBox24.SelectionLength = 0;
             this.materialTextBox24.SelectionStart = 0;
             this.materialTextBox24.ShortcutsEnabled = true;
-            this.materialTextBox24.Size = new System.Drawing.Size(365, 48);
+            this.materialTextBox24.Size = new System.Drawing.Size(274, 48);
             this.materialTextBox24.TabIndex = 5;
             this.materialTextBox24.TabStop = false;
             this.materialTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -977,12 +958,12 @@
             this.materialCard12.Controls.Add(this.materialListView4);
             this.materialCard12.Depth = 0;
             this.materialCard12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard12.Location = new System.Drawing.Point(49, 130);
-            this.materialCard12.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard12.Location = new System.Drawing.Point(37, 106);
+            this.materialCard12.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard12.Name = "materialCard12";
-            this.materialCard12.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard12.Size = new System.Drawing.Size(1941, 169);
+            this.materialCard12.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard12.Size = new System.Drawing.Size(1456, 137);
             this.materialCard12.TabIndex = 8;
             // 
             // materialListView4
@@ -996,14 +977,14 @@
             this.materialListView4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialListView4.FullRowSelect = true;
             this.materialListView4.HideSelection = false;
-            this.materialListView4.Location = new System.Drawing.Point(13, 14);
-            this.materialListView4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialListView4.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView4.Location = new System.Drawing.Point(10, 11);
+            this.materialListView4.Margin = new System.Windows.Forms.Padding(2);
+            this.materialListView4.MinimumSize = new System.Drawing.Size(150, 81);
             this.materialListView4.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView4.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView4.Name = "materialListView4";
             this.materialListView4.OwnerDraw = true;
-            this.materialListView4.Size = new System.Drawing.Size(1915, 141);
+            this.materialListView4.Size = new System.Drawing.Size(1436, 115);
             this.materialListView4.TabIndex = 0;
             this.materialListView4.UseCompatibleStateImageBehavior = false;
             this.materialListView4.View = System.Windows.Forms.View.Details;
@@ -1015,9 +996,8 @@
             this.tabPage5.Controls.Add(this.materialCard15);
             this.tabPage5.ImageKey = "icons8-traveler-96.png";
             this.tabPage5.Location = new System.Drawing.Point(4, 39);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1926, 461);
+            this.tabPage5.Size = new System.Drawing.Size(1553, 367);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Viajes";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1030,7 +1010,7 @@
             this.button21.ImageList = this.imageList1;
             this.button21.Location = new System.Drawing.Point(1435, 21);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(77, 58);
+            this.button21.Size = new System.Drawing.Size(58, 47);
             this.button21.TabIndex = 10;
             this.button21.UseVisualStyleBackColor = false;
             this.button21.Click += new System.EventHandler(this.btnSalir_Click);
@@ -1045,12 +1025,12 @@
             this.materialCard14.Controls.Add(this.materialTextBox25);
             this.materialCard14.Depth = 0;
             this.materialCard14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard14.Location = new System.Drawing.Point(49, 14);
-            this.materialCard14.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard14.Location = new System.Drawing.Point(37, 11);
+            this.materialCard14.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard14.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard14.Name = "materialCard14";
-            this.materialCard14.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard14.Size = new System.Drawing.Size(1319, 90);
+            this.materialCard14.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard14.Size = new System.Drawing.Size(989, 73);
             this.materialCard14.TabIndex = 9;
             // 
             // button22
@@ -1058,10 +1038,9 @@
             this.button22.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button22.ImageKey = "icons8-add-100.png";
             this.button22.ImageList = this.imageList1;
-            this.button22.Location = new System.Drawing.Point(1003, 11);
-            this.button22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button22.Location = new System.Drawing.Point(752, 9);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(77, 58);
+            this.button22.Size = new System.Drawing.Size(58, 47);
             this.button22.TabIndex = 9;
             this.button22.UseVisualStyleBackColor = false;
             this.button22.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -1071,10 +1050,9 @@
             this.button23.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button23.ImageKey = "icons8-delete-90.png";
             this.button23.ImageList = this.imageList1;
-            this.button23.Location = new System.Drawing.Point(1209, 11);
-            this.button23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button23.Location = new System.Drawing.Point(907, 9);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(77, 58);
+            this.button23.Size = new System.Drawing.Size(58, 47);
             this.button23.TabIndex = 8;
             this.button23.UseVisualStyleBackColor = false;
             this.button23.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -1084,10 +1062,9 @@
             this.button24.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button24.ImageKey = "icons8-edit-100.png";
             this.button24.ImageList = this.imageList1;
-            this.button24.Location = new System.Drawing.Point(1108, 11);
-            this.button24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button24.Location = new System.Drawing.Point(831, 9);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(77, 58);
+            this.button24.Size = new System.Drawing.Size(58, 47);
             this.button24.TabIndex = 7;
             this.button24.UseVisualStyleBackColor = false;
             this.button24.Click += new System.EventHandler(this.btnModificar_Click);
@@ -1097,10 +1074,9 @@
             this.button25.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button25.ImageKey = "icons8-search-100.png";
             this.button25.ImageList = this.imageList1;
-            this.button25.Location = new System.Drawing.Point(409, 11);
-            this.button25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button25.Location = new System.Drawing.Point(307, 9);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(77, 58);
+            this.button25.Size = new System.Drawing.Size(58, 47);
             this.button25.TabIndex = 6;
             this.button25.UseVisualStyleBackColor = false;
             this.button25.Click += new System.EventHandler(this.button25_Click);
@@ -1115,8 +1091,7 @@
             this.materialTextBox25.HideSelection = true;
             this.materialTextBox25.Hint = "Buscar:";
             this.materialTextBox25.LeadingIcon = null;
-            this.materialTextBox25.Location = new System.Drawing.Point(29, 11);
-            this.materialTextBox25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTextBox25.Location = new System.Drawing.Point(22, 9);
             this.materialTextBox25.MaxLength = 32767;
             this.materialTextBox25.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox25.Name = "materialTextBox25";
@@ -1128,7 +1103,7 @@
             this.materialTextBox25.SelectionLength = 0;
             this.materialTextBox25.SelectionStart = 0;
             this.materialTextBox25.ShortcutsEnabled = true;
-            this.materialTextBox25.Size = new System.Drawing.Size(365, 48);
+            this.materialTextBox25.Size = new System.Drawing.Size(274, 48);
             this.materialTextBox25.TabIndex = 5;
             this.materialTextBox25.TabStop = false;
             this.materialTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1142,12 +1117,12 @@
             this.materialCard15.Controls.Add(this.materialListView5);
             this.materialCard15.Depth = 0;
             this.materialCard15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard15.Location = new System.Drawing.Point(49, 130);
-            this.materialCard15.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard15.Location = new System.Drawing.Point(37, 106);
+            this.materialCard15.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard15.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard15.Name = "materialCard15";
-            this.materialCard15.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard15.Size = new System.Drawing.Size(1941, 169);
+            this.materialCard15.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard15.Size = new System.Drawing.Size(1456, 137);
             this.materialCard15.TabIndex = 8;
             // 
             // materialListView5
@@ -1161,14 +1136,14 @@
             this.materialListView5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialListView5.FullRowSelect = true;
             this.materialListView5.HideSelection = false;
-            this.materialListView5.Location = new System.Drawing.Point(13, 14);
-            this.materialListView5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialListView5.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView5.Location = new System.Drawing.Point(10, 11);
+            this.materialListView5.Margin = new System.Windows.Forms.Padding(2);
+            this.materialListView5.MinimumSize = new System.Drawing.Size(150, 81);
             this.materialListView5.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView5.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView5.Name = "materialListView5";
             this.materialListView5.OwnerDraw = true;
-            this.materialListView5.Size = new System.Drawing.Size(1915, 141);
+            this.materialListView5.Size = new System.Drawing.Size(1436, 115);
             this.materialListView5.TabIndex = 0;
             this.materialListView5.UseCompatibleStateImageBehavior = false;
             this.materialListView5.View = System.Windows.Forms.View.Details;
@@ -1180,9 +1155,8 @@
             this.tabPage6.Controls.Add(this.materialCard18);
             this.tabPage6.ImageKey = "icons8-price-100.png";
             this.tabPage6.Location = new System.Drawing.Point(4, 39);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1926, 461);
+            this.tabPage6.Size = new System.Drawing.Size(1553, 367);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Tarifas";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1195,7 +1169,7 @@
             this.button26.ImageList = this.imageList1;
             this.button26.Location = new System.Drawing.Point(1435, 21);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(77, 58);
+            this.button26.Size = new System.Drawing.Size(58, 47);
             this.button26.TabIndex = 10;
             this.button26.UseVisualStyleBackColor = false;
             this.button26.Click += new System.EventHandler(this.btnSalir_Click);
@@ -1210,12 +1184,12 @@
             this.materialCard17.Controls.Add(this.materialTextBox26);
             this.materialCard17.Depth = 0;
             this.materialCard17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard17.Location = new System.Drawing.Point(49, 14);
-            this.materialCard17.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard17.Location = new System.Drawing.Point(37, 11);
+            this.materialCard17.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard17.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard17.Name = "materialCard17";
-            this.materialCard17.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard17.Size = new System.Drawing.Size(1319, 90);
+            this.materialCard17.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard17.Size = new System.Drawing.Size(989, 73);
             this.materialCard17.TabIndex = 9;
             // 
             // button27
@@ -1223,10 +1197,9 @@
             this.button27.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button27.ImageKey = "icons8-add-100.png";
             this.button27.ImageList = this.imageList1;
-            this.button27.Location = new System.Drawing.Point(1003, 11);
-            this.button27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button27.Location = new System.Drawing.Point(752, 9);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(77, 58);
+            this.button27.Size = new System.Drawing.Size(58, 47);
             this.button27.TabIndex = 9;
             this.button27.UseVisualStyleBackColor = false;
             this.button27.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -1236,10 +1209,9 @@
             this.button28.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button28.ImageKey = "icons8-delete-90.png";
             this.button28.ImageList = this.imageList1;
-            this.button28.Location = new System.Drawing.Point(1209, 11);
-            this.button28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button28.Location = new System.Drawing.Point(907, 9);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(77, 58);
+            this.button28.Size = new System.Drawing.Size(58, 47);
             this.button28.TabIndex = 8;
             this.button28.UseVisualStyleBackColor = false;
             this.button28.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -1249,10 +1221,9 @@
             this.button29.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button29.ImageKey = "icons8-edit-100.png";
             this.button29.ImageList = this.imageList1;
-            this.button29.Location = new System.Drawing.Point(1108, 11);
-            this.button29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button29.Location = new System.Drawing.Point(831, 9);
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(77, 58);
+            this.button29.Size = new System.Drawing.Size(58, 47);
             this.button29.TabIndex = 7;
             this.button29.UseVisualStyleBackColor = false;
             this.button29.Click += new System.EventHandler(this.btnModificar_Click);
@@ -1262,10 +1233,9 @@
             this.button30.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button30.ImageKey = "icons8-search-100.png";
             this.button30.ImageList = this.imageList1;
-            this.button30.Location = new System.Drawing.Point(409, 11);
-            this.button30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button30.Location = new System.Drawing.Point(307, 9);
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(77, 58);
+            this.button30.Size = new System.Drawing.Size(58, 47);
             this.button30.TabIndex = 6;
             this.button30.UseVisualStyleBackColor = false;
             this.button30.Click += new System.EventHandler(this.button30_Click);
@@ -1280,8 +1250,7 @@
             this.materialTextBox26.HideSelection = true;
             this.materialTextBox26.Hint = "Buscar:";
             this.materialTextBox26.LeadingIcon = null;
-            this.materialTextBox26.Location = new System.Drawing.Point(29, 11);
-            this.materialTextBox26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTextBox26.Location = new System.Drawing.Point(22, 9);
             this.materialTextBox26.MaxLength = 32767;
             this.materialTextBox26.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox26.Name = "materialTextBox26";
@@ -1293,7 +1262,7 @@
             this.materialTextBox26.SelectionLength = 0;
             this.materialTextBox26.SelectionStart = 0;
             this.materialTextBox26.ShortcutsEnabled = true;
-            this.materialTextBox26.Size = new System.Drawing.Size(365, 48);
+            this.materialTextBox26.Size = new System.Drawing.Size(274, 48);
             this.materialTextBox26.TabIndex = 5;
             this.materialTextBox26.TabStop = false;
             this.materialTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1307,12 +1276,12 @@
             this.materialCard18.Controls.Add(this.materialListView6);
             this.materialCard18.Depth = 0;
             this.materialCard18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard18.Location = new System.Drawing.Point(49, 130);
-            this.materialCard18.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard18.Location = new System.Drawing.Point(37, 106);
+            this.materialCard18.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard18.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard18.Name = "materialCard18";
-            this.materialCard18.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard18.Size = new System.Drawing.Size(1941, 169);
+            this.materialCard18.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard18.Size = new System.Drawing.Size(1456, 137);
             this.materialCard18.TabIndex = 8;
             // 
             // materialListView6
@@ -1326,14 +1295,14 @@
             this.materialListView6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialListView6.FullRowSelect = true;
             this.materialListView6.HideSelection = false;
-            this.materialListView6.Location = new System.Drawing.Point(13, 14);
-            this.materialListView6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialListView6.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView6.Location = new System.Drawing.Point(10, 11);
+            this.materialListView6.Margin = new System.Windows.Forms.Padding(2);
+            this.materialListView6.MinimumSize = new System.Drawing.Size(150, 81);
             this.materialListView6.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView6.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView6.Name = "materialListView6";
             this.materialListView6.OwnerDraw = true;
-            this.materialListView6.Size = new System.Drawing.Size(1915, 141);
+            this.materialListView6.Size = new System.Drawing.Size(1436, 115);
             this.materialListView6.TabIndex = 0;
             this.materialListView6.UseCompatibleStateImageBehavior = false;
             this.materialListView6.View = System.Windows.Forms.View.Details;
@@ -1345,9 +1314,8 @@
             this.tabPage7.Controls.Add(this.materialCard21);
             this.tabPage7.ImageKey = "icons8-client-96.png";
             this.tabPage7.Location = new System.Drawing.Point(4, 39);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1926, 461);
+            this.tabPage7.Size = new System.Drawing.Size(1553, 367);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Clientes";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -1359,12 +1327,12 @@
             this.materialCard19.Controls.Add(this.button31);
             this.materialCard19.Depth = 0;
             this.materialCard19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard19.Location = new System.Drawing.Point(1548, 14);
-            this.materialCard19.Margin = new System.Windows.Forms.Padding(19, 17, 19, 17);
+            this.materialCard19.Location = new System.Drawing.Point(1271, 11);
+            this.materialCard19.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard19.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard19.Name = "materialCard19";
-            this.materialCard19.Padding = new System.Windows.Forms.Padding(19, 17, 19, 17);
-            this.materialCard19.Size = new System.Drawing.Size(296, 90);
+            this.materialCard19.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard19.Size = new System.Drawing.Size(222, 73);
             this.materialCard19.TabIndex = 10;
             // 
             // button31
@@ -1372,10 +1340,9 @@
             this.button31.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button31.ImageKey = "icons8-exit-100.png";
             this.button31.ImageList = this.imageList1;
-            this.button31.Location = new System.Drawing.Point(183, 11);
-            this.button31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button31.Location = new System.Drawing.Point(137, 9);
             this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(77, 58);
+            this.button31.Size = new System.Drawing.Size(58, 47);
             this.button31.TabIndex = 10;
             this.button31.UseVisualStyleBackColor = false;
             // 
@@ -1389,12 +1356,12 @@
             this.materialCard20.Controls.Add(this.materialTextBox27);
             this.materialCard20.Depth = 0;
             this.materialCard20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard20.Location = new System.Drawing.Point(49, 14);
-            this.materialCard20.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard20.Location = new System.Drawing.Point(37, 11);
+            this.materialCard20.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard20.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard20.Name = "materialCard20";
-            this.materialCard20.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard20.Size = new System.Drawing.Size(1319, 90);
+            this.materialCard20.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard20.Size = new System.Drawing.Size(989, 73);
             this.materialCard20.TabIndex = 9;
             // 
             // button32
@@ -1402,10 +1369,9 @@
             this.button32.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button32.ImageKey = "icons8-add-100.png";
             this.button32.ImageList = this.imageList1;
-            this.button32.Location = new System.Drawing.Point(1003, 11);
-            this.button32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button32.Location = new System.Drawing.Point(752, 9);
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(77, 58);
+            this.button32.Size = new System.Drawing.Size(58, 47);
             this.button32.TabIndex = 9;
             this.button32.UseVisualStyleBackColor = false;
             this.button32.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -1415,10 +1381,9 @@
             this.button33.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button33.ImageKey = "icons8-delete-90.png";
             this.button33.ImageList = this.imageList1;
-            this.button33.Location = new System.Drawing.Point(1209, 11);
-            this.button33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button33.Location = new System.Drawing.Point(907, 9);
             this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(77, 58);
+            this.button33.Size = new System.Drawing.Size(58, 47);
             this.button33.TabIndex = 8;
             this.button33.UseVisualStyleBackColor = false;
             this.button33.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -1428,10 +1393,9 @@
             this.button34.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button34.ImageKey = "icons8-edit-100.png";
             this.button34.ImageList = this.imageList1;
-            this.button34.Location = new System.Drawing.Point(1108, 11);
-            this.button34.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button34.Location = new System.Drawing.Point(831, 9);
             this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(77, 58);
+            this.button34.Size = new System.Drawing.Size(58, 47);
             this.button34.TabIndex = 7;
             this.button34.UseVisualStyleBackColor = false;
             this.button34.Click += new System.EventHandler(this.btnModificar_Click);
@@ -1441,10 +1405,9 @@
             this.button35.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button35.ImageKey = "icons8-search-100.png";
             this.button35.ImageList = this.imageList1;
-            this.button35.Location = new System.Drawing.Point(409, 11);
-            this.button35.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button35.Location = new System.Drawing.Point(307, 9);
             this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(77, 58);
+            this.button35.Size = new System.Drawing.Size(58, 47);
             this.button35.TabIndex = 6;
             this.button35.UseVisualStyleBackColor = false;
             // 
@@ -1458,8 +1421,7 @@
             this.materialTextBox27.HideSelection = true;
             this.materialTextBox27.Hint = "Buscar:";
             this.materialTextBox27.LeadingIcon = null;
-            this.materialTextBox27.Location = new System.Drawing.Point(29, 11);
-            this.materialTextBox27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTextBox27.Location = new System.Drawing.Point(22, 9);
             this.materialTextBox27.MaxLength = 32767;
             this.materialTextBox27.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox27.Name = "materialTextBox27";
@@ -1471,7 +1433,7 @@
             this.materialTextBox27.SelectionLength = 0;
             this.materialTextBox27.SelectionStart = 0;
             this.materialTextBox27.ShortcutsEnabled = true;
-            this.materialTextBox27.Size = new System.Drawing.Size(365, 48);
+            this.materialTextBox27.Size = new System.Drawing.Size(274, 48);
             this.materialTextBox27.TabIndex = 5;
             this.materialTextBox27.TabStop = false;
             this.materialTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1485,12 +1447,12 @@
             this.materialCard21.Controls.Add(this.materialListView7);
             this.materialCard21.Depth = 0;
             this.materialCard21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard21.Location = new System.Drawing.Point(49, 130);
-            this.materialCard21.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard21.Location = new System.Drawing.Point(37, 106);
+            this.materialCard21.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard21.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard21.Name = "materialCard21";
-            this.materialCard21.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard21.Size = new System.Drawing.Size(944, 169);
+            this.materialCard21.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard21.Size = new System.Drawing.Size(708, 137);
             this.materialCard21.TabIndex = 8;
             // 
             // materialListView7
@@ -1504,14 +1466,14 @@
             this.materialListView7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialListView7.FullRowSelect = true;
             this.materialListView7.HideSelection = false;
-            this.materialListView7.Location = new System.Drawing.Point(13, 14);
-            this.materialListView7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialListView7.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView7.Location = new System.Drawing.Point(10, 11);
+            this.materialListView7.Margin = new System.Windows.Forms.Padding(2);
+            this.materialListView7.MinimumSize = new System.Drawing.Size(150, 81);
             this.materialListView7.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView7.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView7.Name = "materialListView7";
             this.materialListView7.OwnerDraw = true;
-            this.materialListView7.Size = new System.Drawing.Size(918, 141);
+            this.materialListView7.Size = new System.Drawing.Size(688, 115);
             this.materialListView7.TabIndex = 0;
             this.materialListView7.UseCompatibleStateImageBehavior = false;
             this.materialListView7.View = System.Windows.Forms.View.Details;
@@ -1523,9 +1485,8 @@
             this.tabPage8.Controls.Add(this.materialCard24);
             this.tabPage8.ImageKey = "icons8-users-96.png";
             this.tabPage8.Location = new System.Drawing.Point(4, 39);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1926, 461);
+            this.tabPage8.Size = new System.Drawing.Size(1553, 367);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Usuarios";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1538,7 +1499,7 @@
             this.button36.ImageList = this.imageList1;
             this.button36.Location = new System.Drawing.Point(1435, 21);
             this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(77, 58);
+            this.button36.Size = new System.Drawing.Size(58, 47);
             this.button36.TabIndex = 10;
             this.button36.UseVisualStyleBackColor = false;
             this.button36.Click += new System.EventHandler(this.btnSalir_Click);
@@ -1553,12 +1514,12 @@
             this.materialCard23.Controls.Add(this.materialTextBox28);
             this.materialCard23.Depth = 0;
             this.materialCard23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard23.Location = new System.Drawing.Point(49, 14);
-            this.materialCard23.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard23.Location = new System.Drawing.Point(37, 11);
+            this.materialCard23.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard23.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard23.Name = "materialCard23";
-            this.materialCard23.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard23.Size = new System.Drawing.Size(1319, 90);
+            this.materialCard23.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard23.Size = new System.Drawing.Size(989, 73);
             this.materialCard23.TabIndex = 9;
             // 
             // button37
@@ -1566,10 +1527,9 @@
             this.button37.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button37.ImageKey = "icons8-add-100.png";
             this.button37.ImageList = this.imageList1;
-            this.button37.Location = new System.Drawing.Point(1003, 11);
-            this.button37.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button37.Location = new System.Drawing.Point(752, 9);
             this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(77, 58);
+            this.button37.Size = new System.Drawing.Size(58, 47);
             this.button37.TabIndex = 9;
             this.button37.UseVisualStyleBackColor = false;
             this.button37.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -1579,10 +1539,9 @@
             this.button38.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button38.ImageKey = "icons8-delete-90.png";
             this.button38.ImageList = this.imageList1;
-            this.button38.Location = new System.Drawing.Point(1209, 11);
-            this.button38.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button38.Location = new System.Drawing.Point(907, 9);
             this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(77, 58);
+            this.button38.Size = new System.Drawing.Size(58, 47);
             this.button38.TabIndex = 8;
             this.button38.UseVisualStyleBackColor = false;
             this.button38.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -1592,10 +1551,9 @@
             this.button39.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button39.ImageKey = "icons8-edit-100.png";
             this.button39.ImageList = this.imageList1;
-            this.button39.Location = new System.Drawing.Point(1108, 11);
-            this.button39.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button39.Location = new System.Drawing.Point(831, 9);
             this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(77, 58);
+            this.button39.Size = new System.Drawing.Size(58, 47);
             this.button39.TabIndex = 7;
             this.button39.UseVisualStyleBackColor = false;
             this.button39.Click += new System.EventHandler(this.btnModificar_Click);
@@ -1605,10 +1563,9 @@
             this.button40.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button40.ImageKey = "icons8-search-100.png";
             this.button40.ImageList = this.imageList1;
-            this.button40.Location = new System.Drawing.Point(409, 11);
-            this.button40.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button40.Location = new System.Drawing.Point(307, 9);
             this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(77, 58);
+            this.button40.Size = new System.Drawing.Size(58, 47);
             this.button40.TabIndex = 6;
             this.button40.UseVisualStyleBackColor = false;
             this.button40.Click += new System.EventHandler(this.button40_Click);
@@ -1623,8 +1580,7 @@
             this.materialTextBox28.HideSelection = true;
             this.materialTextBox28.Hint = "Buscar:";
             this.materialTextBox28.LeadingIcon = null;
-            this.materialTextBox28.Location = new System.Drawing.Point(29, 11);
-            this.materialTextBox28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTextBox28.Location = new System.Drawing.Point(22, 9);
             this.materialTextBox28.MaxLength = 32767;
             this.materialTextBox28.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox28.Name = "materialTextBox28";
@@ -1636,7 +1592,7 @@
             this.materialTextBox28.SelectionLength = 0;
             this.materialTextBox28.SelectionStart = 0;
             this.materialTextBox28.ShortcutsEnabled = true;
-            this.materialTextBox28.Size = new System.Drawing.Size(365, 48);
+            this.materialTextBox28.Size = new System.Drawing.Size(274, 48);
             this.materialTextBox28.TabIndex = 5;
             this.materialTextBox28.TabStop = false;
             this.materialTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1650,12 +1606,12 @@
             this.materialCard24.Controls.Add(this.materialListView8);
             this.materialCard24.Depth = 0;
             this.materialCard24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard24.Location = new System.Drawing.Point(49, 130);
-            this.materialCard24.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard24.Location = new System.Drawing.Point(37, 106);
+            this.materialCard24.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard24.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard24.Name = "materialCard24";
-            this.materialCard24.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard24.Size = new System.Drawing.Size(1941, 169);
+            this.materialCard24.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard24.Size = new System.Drawing.Size(1456, 137);
             this.materialCard24.TabIndex = 8;
             // 
             // materialListView8
@@ -1669,14 +1625,14 @@
             this.materialListView8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialListView8.FullRowSelect = true;
             this.materialListView8.HideSelection = false;
-            this.materialListView8.Location = new System.Drawing.Point(13, 14);
-            this.materialListView8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialListView8.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView8.Location = new System.Drawing.Point(10, 11);
+            this.materialListView8.Margin = new System.Windows.Forms.Padding(2);
+            this.materialListView8.MinimumSize = new System.Drawing.Size(150, 81);
             this.materialListView8.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView8.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView8.Name = "materialListView8";
             this.materialListView8.OwnerDraw = true;
-            this.materialListView8.Size = new System.Drawing.Size(1915, 141);
+            this.materialListView8.Size = new System.Drawing.Size(1436, 115);
             this.materialListView8.TabIndex = 0;
             this.materialListView8.UseCompatibleStateImageBehavior = false;
             this.materialListView8.View = System.Windows.Forms.View.Details;
@@ -1688,9 +1644,8 @@
             this.tabPage9.Controls.Add(this.materialCard27);
             this.tabPage9.ImageKey = "icons8-group-objects-96.png";
             this.tabPage9.Location = new System.Drawing.Point(4, 39);
-            this.tabPage9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(1926, 461);
+            this.tabPage9.Size = new System.Drawing.Size(1553, 367);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Clasificación";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -1702,12 +1657,12 @@
             this.materialCard25.Controls.Add(this.button41);
             this.materialCard25.Depth = 0;
             this.materialCard25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard25.Location = new System.Drawing.Point(1548, 14);
-            this.materialCard25.Margin = new System.Windows.Forms.Padding(19, 17, 19, 17);
+            this.materialCard25.Location = new System.Drawing.Point(1271, 11);
+            this.materialCard25.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard25.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard25.Name = "materialCard25";
-            this.materialCard25.Padding = new System.Windows.Forms.Padding(19, 17, 19, 17);
-            this.materialCard25.Size = new System.Drawing.Size(296, 90);
+            this.materialCard25.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard25.Size = new System.Drawing.Size(222, 73);
             this.materialCard25.TabIndex = 10;
             // 
             // button41
@@ -1715,10 +1670,9 @@
             this.button41.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button41.ImageKey = "icons8-exit-100.png";
             this.button41.ImageList = this.imageList1;
-            this.button41.Location = new System.Drawing.Point(183, 11);
-            this.button41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button41.Location = new System.Drawing.Point(137, 9);
             this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(77, 58);
+            this.button41.Size = new System.Drawing.Size(58, 47);
             this.button41.TabIndex = 10;
             this.button41.UseVisualStyleBackColor = false;
             // 
@@ -1732,12 +1686,12 @@
             this.materialCard26.Controls.Add(this.materialTextBox29);
             this.materialCard26.Depth = 0;
             this.materialCard26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard26.Location = new System.Drawing.Point(49, 14);
-            this.materialCard26.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard26.Location = new System.Drawing.Point(37, 11);
+            this.materialCard26.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard26.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard26.Name = "materialCard26";
-            this.materialCard26.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard26.Size = new System.Drawing.Size(1319, 90);
+            this.materialCard26.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard26.Size = new System.Drawing.Size(989, 73);
             this.materialCard26.TabIndex = 9;
             // 
             // button42
@@ -1745,10 +1699,9 @@
             this.button42.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button42.ImageKey = "icons8-add-100.png";
             this.button42.ImageList = this.imageList1;
-            this.button42.Location = new System.Drawing.Point(1003, 11);
-            this.button42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button42.Location = new System.Drawing.Point(752, 9);
             this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(77, 58);
+            this.button42.Size = new System.Drawing.Size(58, 47);
             this.button42.TabIndex = 9;
             this.button42.UseVisualStyleBackColor = false;
             // 
@@ -1757,10 +1710,9 @@
             this.button43.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button43.ImageKey = "icons8-delete-90.png";
             this.button43.ImageList = this.imageList1;
-            this.button43.Location = new System.Drawing.Point(1209, 11);
-            this.button43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button43.Location = new System.Drawing.Point(907, 9);
             this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(77, 58);
+            this.button43.Size = new System.Drawing.Size(58, 47);
             this.button43.TabIndex = 8;
             this.button43.UseVisualStyleBackColor = false;
             // 
@@ -1769,10 +1721,9 @@
             this.button44.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button44.ImageKey = "icons8-edit-100.png";
             this.button44.ImageList = this.imageList1;
-            this.button44.Location = new System.Drawing.Point(1108, 11);
-            this.button44.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button44.Location = new System.Drawing.Point(831, 9);
             this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(77, 58);
+            this.button44.Size = new System.Drawing.Size(58, 47);
             this.button44.TabIndex = 7;
             this.button44.UseVisualStyleBackColor = false;
             // 
@@ -1781,10 +1732,9 @@
             this.button45.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button45.ImageKey = "icons8-search-100.png";
             this.button45.ImageList = this.imageList1;
-            this.button45.Location = new System.Drawing.Point(409, 11);
-            this.button45.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button45.Location = new System.Drawing.Point(307, 9);
             this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(77, 58);
+            this.button45.Size = new System.Drawing.Size(58, 47);
             this.button45.TabIndex = 6;
             this.button45.UseVisualStyleBackColor = false;
             // 
@@ -1798,8 +1748,7 @@
             this.materialTextBox29.HideSelection = true;
             this.materialTextBox29.Hint = "Buscar:";
             this.materialTextBox29.LeadingIcon = null;
-            this.materialTextBox29.Location = new System.Drawing.Point(29, 11);
-            this.materialTextBox29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTextBox29.Location = new System.Drawing.Point(22, 9);
             this.materialTextBox29.MaxLength = 32767;
             this.materialTextBox29.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox29.Name = "materialTextBox29";
@@ -1811,7 +1760,7 @@
             this.materialTextBox29.SelectionLength = 0;
             this.materialTextBox29.SelectionStart = 0;
             this.materialTextBox29.ShortcutsEnabled = true;
-            this.materialTextBox29.Size = new System.Drawing.Size(365, 48);
+            this.materialTextBox29.Size = new System.Drawing.Size(274, 48);
             this.materialTextBox29.TabIndex = 5;
             this.materialTextBox29.TabStop = false;
             this.materialTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1825,12 +1774,12 @@
             this.materialCard27.Controls.Add(this.materialListView9);
             this.materialCard27.Depth = 0;
             this.materialCard27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard27.Location = new System.Drawing.Point(49, 130);
-            this.materialCard27.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard27.Location = new System.Drawing.Point(37, 106);
+            this.materialCard27.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard27.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard27.Name = "materialCard27";
-            this.materialCard27.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard27.Size = new System.Drawing.Size(1941, 313);
+            this.materialCard27.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard27.Size = new System.Drawing.Size(1456, 254);
             this.materialCard27.TabIndex = 8;
             // 
             // materialListView9
@@ -1844,14 +1793,14 @@
             this.materialListView9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialListView9.FullRowSelect = true;
             this.materialListView9.HideSelection = false;
-            this.materialListView9.Location = new System.Drawing.Point(13, 14);
-            this.materialListView9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialListView9.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView9.Location = new System.Drawing.Point(10, 11);
+            this.materialListView9.Margin = new System.Windows.Forms.Padding(2);
+            this.materialListView9.MinimumSize = new System.Drawing.Size(150, 81);
             this.materialListView9.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView9.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView9.Name = "materialListView9";
             this.materialListView9.OwnerDraw = true;
-            this.materialListView9.Size = new System.Drawing.Size(1915, 285);
+            this.materialListView9.Size = new System.Drawing.Size(1436, 232);
             this.materialListView9.TabIndex = 0;
             this.materialListView9.UseCompatibleStateImageBehavior = false;
             this.materialListView9.View = System.Windows.Forms.View.Details;
@@ -1863,9 +1812,8 @@
             this.tabPage10.Controls.Add(this.materialCard30);
             this.tabPage10.ImageKey = "icons8-driver-96.png";
             this.tabPage10.Location = new System.Drawing.Point(4, 39);
-            this.tabPage10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1926, 461);
+            this.tabPage10.Size = new System.Drawing.Size(1553, 367);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "Choferes";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -1878,7 +1826,7 @@
             this.button46.ImageList = this.imageList1;
             this.button46.Location = new System.Drawing.Point(1457, 21);
             this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(77, 58);
+            this.button46.Size = new System.Drawing.Size(58, 47);
             this.button46.TabIndex = 10;
             this.button46.UseVisualStyleBackColor = false;
             this.button46.Click += new System.EventHandler(this.btnSalir_Click);
@@ -1893,12 +1841,12 @@
             this.materialCard29.Controls.Add(this.materialTextBox210);
             this.materialCard29.Depth = 0;
             this.materialCard29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard29.Location = new System.Drawing.Point(49, 14);
-            this.materialCard29.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard29.Location = new System.Drawing.Point(37, 11);
+            this.materialCard29.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard29.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard29.Name = "materialCard29";
-            this.materialCard29.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard29.Size = new System.Drawing.Size(1319, 90);
+            this.materialCard29.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard29.Size = new System.Drawing.Size(989, 73);
             this.materialCard29.TabIndex = 9;
             // 
             // button47
@@ -1906,10 +1854,9 @@
             this.button47.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button47.ImageKey = "icons8-add-100.png";
             this.button47.ImageList = this.imageList1;
-            this.button47.Location = new System.Drawing.Point(1003, 11);
-            this.button47.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button47.Location = new System.Drawing.Point(752, 9);
             this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(77, 58);
+            this.button47.Size = new System.Drawing.Size(58, 47);
             this.button47.TabIndex = 9;
             this.button47.UseVisualStyleBackColor = false;
             this.button47.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -1919,10 +1866,9 @@
             this.button48.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button48.ImageKey = "icons8-delete-90.png";
             this.button48.ImageList = this.imageList1;
-            this.button48.Location = new System.Drawing.Point(1209, 11);
-            this.button48.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button48.Location = new System.Drawing.Point(907, 9);
             this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(77, 58);
+            this.button48.Size = new System.Drawing.Size(58, 47);
             this.button48.TabIndex = 8;
             this.button48.UseVisualStyleBackColor = false;
             this.button48.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -1932,10 +1878,9 @@
             this.button49.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button49.ImageKey = "icons8-edit-100.png";
             this.button49.ImageList = this.imageList1;
-            this.button49.Location = new System.Drawing.Point(1108, 11);
-            this.button49.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button49.Location = new System.Drawing.Point(831, 9);
             this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(77, 58);
+            this.button49.Size = new System.Drawing.Size(58, 47);
             this.button49.TabIndex = 7;
             this.button49.UseVisualStyleBackColor = false;
             this.button49.Click += new System.EventHandler(this.btnModificar_Click);
@@ -1945,10 +1890,9 @@
             this.button50.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button50.ImageKey = "icons8-search-100.png";
             this.button50.ImageList = this.imageList1;
-            this.button50.Location = new System.Drawing.Point(409, 11);
-            this.button50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button50.Location = new System.Drawing.Point(307, 9);
             this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(77, 58);
+            this.button50.Size = new System.Drawing.Size(58, 47);
             this.button50.TabIndex = 6;
             this.button50.UseVisualStyleBackColor = false;
             this.button50.Click += new System.EventHandler(this.button50_Click);
@@ -1963,8 +1907,7 @@
             this.materialTextBox210.HideSelection = true;
             this.materialTextBox210.Hint = "Buscar:";
             this.materialTextBox210.LeadingIcon = null;
-            this.materialTextBox210.Location = new System.Drawing.Point(29, 11);
-            this.materialTextBox210.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTextBox210.Location = new System.Drawing.Point(22, 9);
             this.materialTextBox210.MaxLength = 32767;
             this.materialTextBox210.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox210.Name = "materialTextBox210";
@@ -1976,7 +1919,7 @@
             this.materialTextBox210.SelectionLength = 0;
             this.materialTextBox210.SelectionStart = 0;
             this.materialTextBox210.ShortcutsEnabled = true;
-            this.materialTextBox210.Size = new System.Drawing.Size(365, 48);
+            this.materialTextBox210.Size = new System.Drawing.Size(274, 48);
             this.materialTextBox210.TabIndex = 5;
             this.materialTextBox210.TabStop = false;
             this.materialTextBox210.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1990,12 +1933,12 @@
             this.materialCard30.Controls.Add(this.materialListView10);
             this.materialCard30.Depth = 0;
             this.materialCard30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard30.Location = new System.Drawing.Point(49, 130);
-            this.materialCard30.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard30.Location = new System.Drawing.Point(37, 106);
+            this.materialCard30.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard30.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard30.Name = "materialCard30";
-            this.materialCard30.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard30.Size = new System.Drawing.Size(1971, 308);
+            this.materialCard30.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard30.Size = new System.Drawing.Size(1478, 250);
             this.materialCard30.TabIndex = 8;
             // 
             // materialListView10
@@ -2009,14 +1952,14 @@
             this.materialListView10.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialListView10.FullRowSelect = true;
             this.materialListView10.HideSelection = false;
-            this.materialListView10.Location = new System.Drawing.Point(13, 14);
-            this.materialListView10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialListView10.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView10.Location = new System.Drawing.Point(10, 11);
+            this.materialListView10.Margin = new System.Windows.Forms.Padding(2);
+            this.materialListView10.MinimumSize = new System.Drawing.Size(150, 81);
             this.materialListView10.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView10.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView10.Name = "materialListView10";
             this.materialListView10.OwnerDraw = true;
-            this.materialListView10.Size = new System.Drawing.Size(1945, 280);
+            this.materialListView10.Size = new System.Drawing.Size(1458, 228);
             this.materialListView10.TabIndex = 0;
             this.materialListView10.UseCompatibleStateImageBehavior = false;
             this.materialListView10.View = System.Windows.Forms.View.Details;
@@ -2028,9 +1971,8 @@
             this.tabPage11.Controls.Add(this.materialCard33);
             this.tabPage11.ImageKey = "icons8-smart-card-100.png";
             this.tabPage11.Location = new System.Drawing.Point(4, 39);
-            this.tabPage11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1926, 461);
+            this.tabPage11.Size = new System.Drawing.Size(1553, 367);
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "Tarjetas";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -2043,7 +1985,7 @@
             this.button51.ImageList = this.imageList1;
             this.button51.Location = new System.Drawing.Point(1475, 36);
             this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(77, 58);
+            this.button51.Size = new System.Drawing.Size(58, 47);
             this.button51.TabIndex = 10;
             this.button51.UseVisualStyleBackColor = false;
             // 
@@ -2056,8 +1998,8 @@
             this.materialCard32.Controls.Add(this.materialTextBox211);
             this.materialCard32.Depth = 0;
             this.materialCard32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard32.Location = new System.Drawing.Point(48, 32);
-            this.materialCard32.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard32.Location = new System.Drawing.Point(36, 26);
+            this.materialCard32.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard32.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard32.Name = "materialCard32";
             this.materialCard32.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
@@ -2069,10 +2011,9 @@
             this.button55.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button55.ImageKey = "icons8-search-100.png";
             this.button55.ImageList = this.imageList1;
-            this.button55.Location = new System.Drawing.Point(409, 11);
-            this.button55.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button55.Location = new System.Drawing.Point(307, 9);
             this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(77, 58);
+            this.button55.Size = new System.Drawing.Size(58, 47);
             this.button55.TabIndex = 6;
             this.button55.UseVisualStyleBackColor = false;
             // 
@@ -2086,8 +2027,7 @@
             this.materialTextBox211.HideSelection = true;
             this.materialTextBox211.Hint = "Buscar:";
             this.materialTextBox211.LeadingIcon = null;
-            this.materialTextBox211.Location = new System.Drawing.Point(29, 11);
-            this.materialTextBox211.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTextBox211.Location = new System.Drawing.Point(22, 9);
             this.materialTextBox211.MaxLength = 32767;
             this.materialTextBox211.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox211.Name = "materialTextBox211";
@@ -2099,7 +2039,7 @@
             this.materialTextBox211.SelectionLength = 0;
             this.materialTextBox211.SelectionStart = 0;
             this.materialTextBox211.ShortcutsEnabled = true;
-            this.materialTextBox211.Size = new System.Drawing.Size(365, 48);
+            this.materialTextBox211.Size = new System.Drawing.Size(274, 48);
             this.materialTextBox211.TabIndex = 5;
             this.materialTextBox211.TabStop = false;
             this.materialTextBox211.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -2113,8 +2053,8 @@
             this.materialCard33.Controls.Add(this.materialListView11);
             this.materialCard33.Depth = 0;
             this.materialCard33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard33.Location = new System.Drawing.Point(48, 180);
-            this.materialCard33.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard33.Location = new System.Drawing.Point(36, 146);
+            this.materialCard33.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard33.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard33.Name = "materialCard33";
             this.materialCard33.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
@@ -2132,9 +2072,9 @@
             this.materialListView11.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialListView11.FullRowSelect = true;
             this.materialListView11.HideSelection = false;
-            this.materialListView11.Location = new System.Drawing.Point(13, 14);
-            this.materialListView11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialListView11.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView11.Location = new System.Drawing.Point(10, 11);
+            this.materialListView11.Margin = new System.Windows.Forms.Padding(2);
+            this.materialListView11.MinimumSize = new System.Drawing.Size(150, 81);
             this.materialListView11.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView11.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView11.Name = "materialListView11";
@@ -2151,9 +2091,8 @@
             this.tabPage12.Controls.Add(this.materialCard36);
             this.tabPage12.ImageKey = "icons8-settings-96.png";
             this.tabPage12.Location = new System.Drawing.Point(4, 39);
-            this.tabPage12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(1926, 461);
+            this.tabPage12.Size = new System.Drawing.Size(1553, 367);
             this.tabPage12.TabIndex = 11;
             this.tabPage12.Text = "Configuración";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -2165,12 +2104,12 @@
             this.materialCard34.Controls.Add(this.button56);
             this.materialCard34.Depth = 0;
             this.materialCard34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard34.Location = new System.Drawing.Point(1569, 37);
-            this.materialCard34.Margin = new System.Windows.Forms.Padding(19, 17, 19, 17);
+            this.materialCard34.Location = new System.Drawing.Point(1287, 30);
+            this.materialCard34.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard34.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard34.Name = "materialCard34";
-            this.materialCard34.Padding = new System.Windows.Forms.Padding(19, 17, 19, 17);
-            this.materialCard34.Size = new System.Drawing.Size(296, 90);
+            this.materialCard34.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard34.Size = new System.Drawing.Size(222, 73);
             this.materialCard34.TabIndex = 10;
             // 
             // button56
@@ -2178,10 +2117,9 @@
             this.button56.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button56.ImageKey = "icons8-exit-100.png";
             this.button56.ImageList = this.imageList1;
-            this.button56.Location = new System.Drawing.Point(183, 11);
-            this.button56.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button56.Location = new System.Drawing.Point(137, 9);
             this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(77, 58);
+            this.button56.Size = new System.Drawing.Size(58, 47);
             this.button56.TabIndex = 10;
             this.button56.UseVisualStyleBackColor = false;
             // 
@@ -2195,12 +2133,12 @@
             this.materialCard35.Controls.Add(this.materialTextBox212);
             this.materialCard35.Depth = 0;
             this.materialCard35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard35.Location = new System.Drawing.Point(35, 37);
-            this.materialCard35.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard35.Location = new System.Drawing.Point(26, 30);
+            this.materialCard35.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard35.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard35.Name = "materialCard35";
-            this.materialCard35.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard35.Size = new System.Drawing.Size(1319, 90);
+            this.materialCard35.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard35.Size = new System.Drawing.Size(989, 73);
             this.materialCard35.TabIndex = 9;
             // 
             // button57
@@ -2208,10 +2146,9 @@
             this.button57.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button57.ImageKey = "icons8-add-100.png";
             this.button57.ImageList = this.imageList1;
-            this.button57.Location = new System.Drawing.Point(1003, 11);
-            this.button57.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button57.Location = new System.Drawing.Point(752, 9);
             this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(77, 58);
+            this.button57.Size = new System.Drawing.Size(58, 47);
             this.button57.TabIndex = 9;
             this.button57.UseVisualStyleBackColor = false;
             // 
@@ -2220,10 +2157,9 @@
             this.button58.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button58.ImageKey = "icons8-delete-90.png";
             this.button58.ImageList = this.imageList1;
-            this.button58.Location = new System.Drawing.Point(1209, 11);
-            this.button58.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button58.Location = new System.Drawing.Point(907, 9);
             this.button58.Name = "button58";
-            this.button58.Size = new System.Drawing.Size(77, 58);
+            this.button58.Size = new System.Drawing.Size(58, 47);
             this.button58.TabIndex = 8;
             this.button58.UseVisualStyleBackColor = false;
             // 
@@ -2232,10 +2168,9 @@
             this.button59.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button59.ImageKey = "icons8-edit-100.png";
             this.button59.ImageList = this.imageList1;
-            this.button59.Location = new System.Drawing.Point(1108, 11);
-            this.button59.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button59.Location = new System.Drawing.Point(831, 9);
             this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(77, 58);
+            this.button59.Size = new System.Drawing.Size(58, 47);
             this.button59.TabIndex = 7;
             this.button59.UseVisualStyleBackColor = false;
             // 
@@ -2244,10 +2179,9 @@
             this.button60.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button60.ImageKey = "icons8-search-100.png";
             this.button60.ImageList = this.imageList1;
-            this.button60.Location = new System.Drawing.Point(409, 11);
-            this.button60.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button60.Location = new System.Drawing.Point(307, 9);
             this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(77, 58);
+            this.button60.Size = new System.Drawing.Size(58, 47);
             this.button60.TabIndex = 6;
             this.button60.UseVisualStyleBackColor = false;
             // 
@@ -2261,8 +2195,7 @@
             this.materialTextBox212.HideSelection = true;
             this.materialTextBox212.Hint = "Buscar:";
             this.materialTextBox212.LeadingIcon = null;
-            this.materialTextBox212.Location = new System.Drawing.Point(29, 11);
-            this.materialTextBox212.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTextBox212.Location = new System.Drawing.Point(22, 9);
             this.materialTextBox212.MaxLength = 32767;
             this.materialTextBox212.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox212.Name = "materialTextBox212";
@@ -2274,7 +2207,7 @@
             this.materialTextBox212.SelectionLength = 0;
             this.materialTextBox212.SelectionStart = 0;
             this.materialTextBox212.ShortcutsEnabled = true;
-            this.materialTextBox212.Size = new System.Drawing.Size(365, 48);
+            this.materialTextBox212.Size = new System.Drawing.Size(274, 48);
             this.materialTextBox212.TabIndex = 5;
             this.materialTextBox212.TabStop = false;
             this.materialTextBox212.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -2288,12 +2221,12 @@
             this.materialCard36.Controls.Add(this.materialListView12);
             this.materialCard36.Depth = 0;
             this.materialCard36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard36.Location = new System.Drawing.Point(35, 185);
-            this.materialCard36.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard36.Location = new System.Drawing.Point(26, 150);
+            this.materialCard36.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard36.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard36.Name = "materialCard36";
-            this.materialCard36.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard36.Size = new System.Drawing.Size(944, 169);
+            this.materialCard36.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard36.Size = new System.Drawing.Size(708, 137);
             this.materialCard36.TabIndex = 8;
             // 
             // materialListView12
@@ -2307,14 +2240,14 @@
             this.materialListView12.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialListView12.FullRowSelect = true;
             this.materialListView12.HideSelection = false;
-            this.materialListView12.Location = new System.Drawing.Point(13, 14);
-            this.materialListView12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialListView12.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView12.Location = new System.Drawing.Point(10, 11);
+            this.materialListView12.Margin = new System.Windows.Forms.Padding(2);
+            this.materialListView12.MinimumSize = new System.Drawing.Size(150, 81);
             this.materialListView12.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView12.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView12.Name = "materialListView12";
             this.materialListView12.OwnerDraw = true;
-            this.materialListView12.Size = new System.Drawing.Size(918, 141);
+            this.materialListView12.Size = new System.Drawing.Size(688, 115);
             this.materialListView12.TabIndex = 0;
             this.materialListView12.UseCompatibleStateImageBehavior = false;
             this.materialListView12.View = System.Windows.Forms.View.Details;
@@ -2361,17 +2294,15 @@
             // 
             // FormAdministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1942, 587);
+            this.ClientSize = new System.Drawing.Size(1567, 477);
             this.Controls.Add(this.materialTabControl1);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormAdministrador";
-            this.Padding = new System.Windows.Forms.Padding(4, 79, 4, 4);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Administrador";

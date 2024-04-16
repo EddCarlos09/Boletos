@@ -404,7 +404,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 7)
                 {
-                    frm_v2_ClienteAdd frmc = new frm_v2_ClienteAdd();
+                    frm_v2_ClienteAddV2_ frmc = new frm_v2_ClienteAddV2_();
                     frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();

@@ -29,22 +29,48 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatTarifasV2cs));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.dgvTarifas = new MaterialSkin.Controls.MaterialListView();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbViajes = new MaterialSkin.Controls.MaterialComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.dgvTarifas = new System.Windows.Forms.DataGridView();
+            this.id_tarifa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_identificador = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_terminalXruta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.terminalOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.terminalDestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioNormal1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioEspecial1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioInfantil1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioTerceraEdad1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioNormal2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioEspecial2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioInfantil2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioTerceraEdad2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTarifas)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.dgvTarifas);
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.btnGuardar);
-            this.panel1.Controls.Add(this.dgvTarifas);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.cmbViajes);
             this.panel1.Controls.Add(this.label4);
@@ -84,26 +110,6 @@
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // dgvTarifas
-            // 
-            this.dgvTarifas.AutoSizeTable = false;
-            this.dgvTarifas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgvTarifas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvTarifas.Depth = 0;
-            this.dgvTarifas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvTarifas.FullRowSelect = true;
-            this.dgvTarifas.HideSelection = false;
-            this.dgvTarifas.Location = new System.Drawing.Point(54, 208);
-            this.dgvTarifas.MinimumSize = new System.Drawing.Size(200, 100);
-            this.dgvTarifas.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.dgvTarifas.MouseState = MaterialSkin.MouseState.OUT;
-            this.dgvTarifas.Name = "dgvTarifas";
-            this.dgvTarifas.OwnerDraw = true;
-            this.dgvTarifas.Size = new System.Drawing.Size(722, 181);
-            this.dgvTarifas.TabIndex = 5;
-            this.dgvTarifas.UseCompatibleStateImageBehavior = false;
-            this.dgvTarifas.View = System.Windows.Forms.View.Details;
             // 
             // label1
             // 
@@ -161,6 +167,238 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "Tarifas";
             // 
+            // dgvTarifas
+            // 
+            this.dgvTarifas.AllowUserToAddRows = false;
+            this.dgvTarifas.AllowUserToDeleteRows = false;
+            this.dgvTarifas.AllowUserToResizeColumns = false;
+            this.dgvTarifas.AllowUserToResizeRows = false;
+            this.dgvTarifas.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvTarifas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvTarifas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTarifas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvTarifas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTarifas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_tarifa,
+            this.id_identificador,
+            this.id_terminalXruta,
+            this.nombre,
+            this.terminalOrigen,
+            this.terminalDestino,
+            this.precioNormal1,
+            this.precioEspecial1,
+            this.precioInfantil1,
+            this.precioTerceraEdad1,
+            this.precioNormal2,
+            this.precioEspecial2,
+            this.precioInfantil2,
+            this.precioTerceraEdad2});
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTarifas.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvTarifas.GridColor = System.Drawing.SystemColors.ControlLight;
+            this.dgvTarifas.Location = new System.Drawing.Point(54, 219);
+            this.dgvTarifas.MultiSelect = false;
+            this.dgvTarifas.Name = "dgvTarifas";
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTarifas.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.dgvTarifas.RowHeadersWidth = 51;
+            this.dgvTarifas.RowTemplate.Height = 28;
+            this.dgvTarifas.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTarifas.Size = new System.Drawing.Size(736, 188);
+            this.dgvTarifas.TabIndex = 60;
+            this.dgvTarifas.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvTarifas_DataError);
+            // 
+            // id_tarifa
+            // 
+            this.id_tarifa.DataPropertyName = "id_tarifa";
+            this.id_tarifa.HeaderText = "id_tarifa";
+            this.id_tarifa.MinimumWidth = 6;
+            this.id_tarifa.Name = "id_tarifa";
+            this.id_tarifa.ReadOnly = true;
+            this.id_tarifa.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.id_tarifa.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id_tarifa.Visible = false;
+            this.id_tarifa.Width = 125;
+            // 
+            // id_identificador
+            // 
+            this.id_identificador.DataPropertyName = "id_identificador";
+            this.id_identificador.HeaderText = "id_identificador";
+            this.id_identificador.MinimumWidth = 6;
+            this.id_identificador.Name = "id_identificador";
+            this.id_identificador.ReadOnly = true;
+            this.id_identificador.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.id_identificador.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id_identificador.Visible = false;
+            this.id_identificador.Width = 125;
+            // 
+            // id_terminalXruta
+            // 
+            this.id_terminalXruta.DataPropertyName = "id_terminalXruta";
+            this.id_terminalXruta.HeaderText = "id_terminalXruta";
+            this.id_terminalXruta.MinimumWidth = 6;
+            this.id_terminalXruta.Name = "id_terminalXruta";
+            this.id_terminalXruta.ReadOnly = true;
+            this.id_terminalXruta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.id_terminalXruta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id_terminalXruta.Visible = false;
+            this.id_terminalXruta.Width = 125;
+            // 
+            // nombre
+            // 
+            this.nombre.DataPropertyName = "nombre";
+            this.nombre.HeaderText = "Nombre Viaje";
+            this.nombre.MinimumWidth = 6;
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            this.nombre.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.nombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.nombre.Visible = false;
+            this.nombre.Width = 125;
+            // 
+            // terminalOrigen
+            // 
+            this.terminalOrigen.DataPropertyName = "terminalOrigen";
+            this.terminalOrigen.HeaderText = "Terminal Origen";
+            this.terminalOrigen.MinimumWidth = 6;
+            this.terminalOrigen.Name = "terminalOrigen";
+            this.terminalOrigen.ReadOnly = true;
+            this.terminalOrigen.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.terminalOrigen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.terminalOrigen.Width = 190;
+            // 
+            // terminalDestino
+            // 
+            this.terminalDestino.DataPropertyName = "terminalDestino";
+            this.terminalDestino.HeaderText = "Terminal Destino";
+            this.terminalDestino.MinimumWidth = 6;
+            this.terminalDestino.Name = "terminalDestino";
+            this.terminalDestino.ReadOnly = true;
+            this.terminalDestino.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.terminalDestino.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.terminalDestino.Width = 190;
+            // 
+            // precioNormal1
+            // 
+            this.precioNormal1.DataPropertyName = "precioNormal1";
+            dataGridViewCellStyle2.Format = "N2";
+            dataGridViewCellStyle2.NullValue = "0.00";
+            this.precioNormal1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.precioNormal1.HeaderText = "Precio 1 Piso";
+            this.precioNormal1.MinimumWidth = 6;
+            this.precioNormal1.Name = "precioNormal1";
+            this.precioNormal1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.precioNormal1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.precioNormal1.Width = 150;
+            // 
+            // precioEspecial1
+            // 
+            this.precioEspecial1.DataPropertyName = "precioEspecial1";
+            dataGridViewCellStyle3.Format = "N2";
+            dataGridViewCellStyle3.NullValue = "0.00";
+            this.precioEspecial1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.precioEspecial1.HeaderText = "Precio Especial 1 Piso";
+            this.precioEspecial1.MinimumWidth = 6;
+            this.precioEspecial1.Name = "precioEspecial1";
+            this.precioEspecial1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.precioEspecial1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.precioEspecial1.Visible = false;
+            this.precioEspecial1.Width = 125;
+            // 
+            // precioInfantil1
+            // 
+            this.precioInfantil1.DataPropertyName = "precioInfantil1";
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = "0.00";
+            this.precioInfantil1.DefaultCellStyle = dataGridViewCellStyle4;
+            this.precioInfantil1.HeaderText = "Precio Infantil 1 Piso";
+            this.precioInfantil1.MinimumWidth = 6;
+            this.precioInfantil1.Name = "precioInfantil1";
+            this.precioInfantil1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.precioInfantil1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.precioInfantil1.Visible = false;
+            this.precioInfantil1.Width = 125;
+            // 
+            // precioTerceraEdad1
+            // 
+            this.precioTerceraEdad1.DataPropertyName = "precioTerceraEdad1";
+            dataGridViewCellStyle5.Format = "N2";
+            dataGridViewCellStyle5.NullValue = "0.00";
+            this.precioTerceraEdad1.DefaultCellStyle = dataGridViewCellStyle5;
+            this.precioTerceraEdad1.HeaderText = "Precio Tercera Edad 1 Piso";
+            this.precioTerceraEdad1.MinimumWidth = 6;
+            this.precioTerceraEdad1.Name = "precioTerceraEdad1";
+            this.precioTerceraEdad1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.precioTerceraEdad1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.precioTerceraEdad1.Visible = false;
+            this.precioTerceraEdad1.Width = 125;
+            // 
+            // precioNormal2
+            // 
+            this.precioNormal2.DataPropertyName = "precioNormal2";
+            dataGridViewCellStyle6.Format = "N2";
+            dataGridViewCellStyle6.NullValue = "0.00";
+            this.precioNormal2.DefaultCellStyle = dataGridViewCellStyle6;
+            this.precioNormal2.HeaderText = "Precio 2 Piso";
+            this.precioNormal2.MinimumWidth = 6;
+            this.precioNormal2.Name = "precioNormal2";
+            this.precioNormal2.Width = 150;
+            // 
+            // precioEspecial2
+            // 
+            this.precioEspecial2.DataPropertyName = "precioEspecial2";
+            dataGridViewCellStyle7.Format = "N2";
+            dataGridViewCellStyle7.NullValue = "0.00";
+            this.precioEspecial2.DefaultCellStyle = dataGridViewCellStyle7;
+            this.precioEspecial2.HeaderText = "Precio Especial 2 Piso";
+            this.precioEspecial2.MinimumWidth = 6;
+            this.precioEspecial2.Name = "precioEspecial2";
+            this.precioEspecial2.Visible = false;
+            this.precioEspecial2.Width = 125;
+            // 
+            // precioInfantil2
+            // 
+            this.precioInfantil2.DataPropertyName = "precioInfantil2";
+            dataGridViewCellStyle8.Format = "N2";
+            dataGridViewCellStyle8.NullValue = "0.00";
+            this.precioInfantil2.DefaultCellStyle = dataGridViewCellStyle8;
+            this.precioInfantil2.HeaderText = "Precio Infantil 2 Piso";
+            this.precioInfantil2.MinimumWidth = 6;
+            this.precioInfantil2.Name = "precioInfantil2";
+            this.precioInfantil2.Visible = false;
+            this.precioInfantil2.Width = 125;
+            // 
+            // precioTerceraEdad2
+            // 
+            this.precioTerceraEdad2.DataPropertyName = "precioTerceraEdad2";
+            dataGridViewCellStyle9.Format = "N2";
+            dataGridViewCellStyle9.NullValue = "0.00";
+            this.precioTerceraEdad2.DefaultCellStyle = dataGridViewCellStyle9;
+            this.precioTerceraEdad2.HeaderText = "Precio Tercera Edad 2 Piso";
+            this.precioTerceraEdad2.MinimumWidth = 6;
+            this.precioTerceraEdad2.Name = "precioTerceraEdad2";
+            this.precioTerceraEdad2.Visible = false;
+            this.precioTerceraEdad2.Width = 125;
+            // 
             // frmCatTarifasV2cs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -171,6 +409,7 @@
             this.Text = "frmCatTarifasV2cs";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTarifas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -182,8 +421,22 @@
         private System.Windows.Forms.Label label4;
         private MaterialSkin.Controls.MaterialComboBox cmbViajes;
         private System.Windows.Forms.Label label1;
-        private MaterialSkin.Controls.MaterialListView dgvTarifas;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.DataGridView dgvTarifas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_tarifa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_identificador;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_terminalXruta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn terminalOrigen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn terminalDestino;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioNormal1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioEspecial1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioInfantil1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioTerceraEdad1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioNormal2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioEspecial2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioInfantil2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioTerceraEdad2;
     }
 }
