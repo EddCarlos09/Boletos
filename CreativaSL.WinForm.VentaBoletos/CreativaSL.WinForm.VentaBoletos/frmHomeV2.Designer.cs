@@ -62,6 +62,7 @@
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.GridViewVentaBoletos = new MaterialSkin.Controls.MaterialListView();
+            this.GridViewViajes = new MaterialSkin.Controls.MaterialListView();
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.panel_Camion = new CreativaSL.LibControls.WinForms.Panel_Creativa(this.components);
             this.puerta13 = new System.Windows.Forms.PictureBox();
@@ -223,7 +224,6 @@
             this.btnConfiguracion = new System.Windows.Forms.TabPage();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.GridViewViajes = new MaterialSkin.Controls.MaterialListView();
             this.materialTabControl1.SuspendLayout();
             this.tabPage12.SuspendLayout();
             this.materialCard3.SuspendLayout();
@@ -416,32 +416,38 @@
             this.materialCard3.Controls.Add(this.checkBoxVentaGrupal);
             this.materialCard3.Depth = 0;
             this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard3.Location = new System.Drawing.Point(652, 857);
+            this.materialCard3.Location = new System.Drawing.Point(537, 866);
             this.materialCard3.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard3.Name = "materialCard3";
             this.materialCard3.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard3.Size = new System.Drawing.Size(791, 100);
+            this.materialCard3.Size = new System.Drawing.Size(1009, 100);
             this.materialCard3.TabIndex = 230;
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(312, 27);
+            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
+            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Cancelar.Location = new System.Drawing.Point(504, 16);
             this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(107, 41);
+            this.btn_Cancelar.Size = new System.Drawing.Size(179, 52);
             this.btn_Cancelar.TabIndex = 53;
             this.btn_Cancelar.Text = "CANCENLAR";
+            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             // 
             // btn_Vender
             // 
-            this.btn_Vender.Location = new System.Drawing.Point(205, 27);
+            this.btn_Vender.Image = ((System.Drawing.Image)(resources.GetObject("btn_Vender.Image")));
+            this.btn_Vender.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Vender.Location = new System.Drawing.Point(257, 16);
             this.btn_Vender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Vender.Name = "btn_Vender";
-            this.btn_Vender.Size = new System.Drawing.Size(75, 41);
+            this.btn_Vender.Size = new System.Drawing.Size(179, 52);
             this.btn_Vender.TabIndex = 52;
             this.btn_Vender.Text = "VENDER";
+            this.btn_Vender.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Vender.UseVisualStyleBackColor = true;
             // 
             // materialLabel8
@@ -449,7 +455,7 @@
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel8.Location = new System.Drawing.Point(452, 39);
+            this.materialLabel8.Location = new System.Drawing.Point(698, 39);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(100, 19);
@@ -465,7 +471,7 @@
             this.Txt_TiempoVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_TiempoVenta.HideSelection = true;
             this.Txt_TiempoVenta.LeadingIcon = null;
-            this.Txt_TiempoVenta.Location = new System.Drawing.Point(571, 26);
+            this.Txt_TiempoVenta.Location = new System.Drawing.Point(830, 20);
             this.Txt_TiempoVenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_TiempoVenta.MaxLength = 32767;
             this.Txt_TiempoVenta.MouseState = MaterialSkin.MouseState.OUT;
@@ -713,7 +719,7 @@
             this.btn_CancelarBuscarViajes.ImageKey = "icons8-cancel-144.png";
             this.btn_CancelarBuscarViajes.ImageList = this.imageList1;
             this.btn_CancelarBuscarViajes.Location = new System.Drawing.Point(445, 363);
-            this.btn_CancelarBuscarViajes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_CancelarBuscarViajes.Margin = new System.Windows.Forms.Padding(5);
             this.btn_CancelarBuscarViajes.Name = "btn_CancelarBuscarViajes";
             this.btn_CancelarBuscarViajes.Size = new System.Drawing.Size(67, 50);
             this.btn_CancelarBuscarViajes.TabIndex = 44;
@@ -743,7 +749,7 @@
             this.btn_BuscarViajes.ImageKey = "icons8-search-300.png";
             this.btn_BuscarViajes.ImageList = this.imageList1;
             this.btn_BuscarViajes.Location = new System.Drawing.Point(320, 363);
-            this.btn_BuscarViajes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_BuscarViajes.Margin = new System.Windows.Forms.Padding(5);
             this.btn_BuscarViajes.Name = "btn_BuscarViajes";
             this.btn_BuscarViajes.Size = new System.Drawing.Size(67, 50);
             this.btn_BuscarViajes.TabIndex = 43;
@@ -859,6 +865,26 @@
             this.GridViewVentaBoletos.TabIndex = 227;
             this.GridViewVentaBoletos.UseCompatibleStateImageBehavior = false;
             this.GridViewVentaBoletos.View = System.Windows.Forms.View.Details;
+            // 
+            // GridViewViajes
+            // 
+            this.GridViewViajes.AutoSizeTable = false;
+            this.GridViewViajes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GridViewViajes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GridViewViajes.Depth = 0;
+            this.GridViewViajes.FullRowSelect = true;
+            this.GridViewViajes.HideSelection = false;
+            this.GridViewViajes.Location = new System.Drawing.Point(651, 54);
+            this.GridViewViajes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GridViewViajes.MinimumSize = new System.Drawing.Size(200, 100);
+            this.GridViewViajes.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.GridViewViajes.MouseState = MaterialSkin.MouseState.OUT;
+            this.GridViewViajes.Name = "GridViewViajes";
+            this.GridViewViajes.OwnerDraw = true;
+            this.GridViewViajes.Size = new System.Drawing.Size(791, 375);
+            this.GridViewViajes.TabIndex = 226;
+            this.GridViewViajes.UseCompatibleStateImageBehavior = false;
+            this.GridViewViajes.View = System.Windows.Forms.View.Details;
             // 
             // materialLabel10
             // 
@@ -3184,7 +3210,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage1.Size = new System.Drawing.Size(1853, 1188);
             this.tabPage1.TabIndex = 10;
             this.tabPage1.Text = "Ventas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -3196,7 +3222,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage2.Size = new System.Drawing.Size(1853, 1188);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ventas G";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -3207,7 +3233,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage3.Size = new System.Drawing.Size(1853, 1188);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Apartados";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -3218,7 +3244,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage4.Size = new System.Drawing.Size(1853, 1188);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Clientes";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -3229,7 +3255,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage5.Size = new System.Drawing.Size(1853, 1188);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Caja";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -3240,7 +3266,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage6.Size = new System.Drawing.Size(1853, 1188);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Maleta";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -3251,7 +3277,7 @@
             this.btnAdministrador.Location = new System.Drawing.Point(4, 25);
             this.btnAdministrador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdministrador.Name = "btnAdministrador";
-            this.btnAdministrador.Size = new System.Drawing.Size(1853, 970);
+            this.btnAdministrador.Size = new System.Drawing.Size(1853, 1188);
             this.btnAdministrador.TabIndex = 6;
             this.btnAdministrador.Text = "Admin";
             this.btnAdministrador.UseVisualStyleBackColor = true;
@@ -3262,7 +3288,7 @@
             this.btnReportes.Location = new System.Drawing.Point(4, 25);
             this.btnReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(1853, 970);
+            this.btnReportes.Size = new System.Drawing.Size(1853, 1188);
             this.btnReportes.TabIndex = 7;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = true;
@@ -3273,7 +3299,7 @@
             this.btnConfiguracion.Location = new System.Drawing.Point(4, 25);
             this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(1853, 970);
+            this.btnConfiguracion.Size = new System.Drawing.Size(1853, 1188);
             this.btnConfiguracion.TabIndex = 8;
             this.btnConfiguracion.Text = "Config";
             this.btnConfiguracion.UseVisualStyleBackColor = true;
@@ -3284,7 +3310,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 25);
             this.tabPage10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage10.Size = new System.Drawing.Size(1853, 1188);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "Asistencia";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -3294,30 +3320,10 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 25);
             this.tabPage11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage11.Size = new System.Drawing.Size(1853, 1188);
             this.tabPage11.TabIndex = 11;
             this.tabPage11.Text = "Salir";
             this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // GridViewViajes
-            // 
-            this.GridViewViajes.AutoSizeTable = false;
-            this.GridViewViajes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GridViewViajes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GridViewViajes.Depth = 0;
-            this.GridViewViajes.FullRowSelect = true;
-            this.GridViewViajes.HideSelection = false;
-            this.GridViewViajes.Location = new System.Drawing.Point(651, 54);
-            this.GridViewViajes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GridViewViajes.MinimumSize = new System.Drawing.Size(200, 100);
-            this.GridViewViajes.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.GridViewViajes.MouseState = MaterialSkin.MouseState.OUT;
-            this.GridViewViajes.Name = "GridViewViajes";
-            this.GridViewViajes.OwnerDraw = true;
-            this.GridViewViajes.Size = new System.Drawing.Size(791, 375);
-            this.GridViewViajes.TabIndex = 226;
-            this.GridViewViajes.UseCompatibleStateImageBehavior = false;
-            this.GridViewViajes.View = System.Windows.Forms.View.Details;
             // 
             // frmHomeV2
             // 
