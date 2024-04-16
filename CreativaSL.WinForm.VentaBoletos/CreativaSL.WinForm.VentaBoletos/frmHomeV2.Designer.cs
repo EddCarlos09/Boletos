@@ -428,7 +428,7 @@
             // 
             this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
             this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Cancelar.Location = new System.Drawing.Point(504, 16);
+            this.btn_Cancelar.Location = new System.Drawing.Point(480, 21);
             this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(179, 52);
@@ -441,7 +441,7 @@
             // 
             this.btn_Vender.Image = ((System.Drawing.Image)(resources.GetObject("btn_Vender.Image")));
             this.btn_Vender.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Vender.Location = new System.Drawing.Point(257, 16);
+            this.btn_Vender.Location = new System.Drawing.Point(255, 21);
             this.btn_Vender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Vender.Name = "btn_Vender";
             this.btn_Vender.Size = new System.Drawing.Size(179, 52);
