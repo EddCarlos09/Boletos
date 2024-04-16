@@ -524,6 +524,18 @@
     <Compile Include="FormAdministrador.Designer.cs">
       <DependentUpon>FormAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCancelacionesTransferenciasGrupalV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelacionesTransferenciasGrupalV2.Designer.cs">
+      <DependentUpon>frmCancelacionesTransferenciasGrupalV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatCobroMultiformasPagoV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatCobroMultiformasPagoV2.Designer.cs">
+      <DependentUpon>frmCatCobroMultiformasPagoV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCatTerminalIntermediaV2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1134,6 +1146,9 @@
     <EmbeddedResource Include="frmCancelacionesTransferenciasGrupal.resx">
       <DependentUpon>frmCancelacionesTransferenciasGrupal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelacionesTransferenciasGrupalV2.resx">
+      <DependentUpon>frmCancelacionesTransferenciasGrupalV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCatCamionesV2.resx">
       <DependentUpon>frmCatCamionesV2.cs</DependentUpon>
     </EmbeddedResource>
@@ -1142,6 +1157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatCobroMultiFormasPago.resx">
       <DependentUpon>frmCatCobroMultiFormasPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatCobroMultiformasPagoV2.resx">
+      <DependentUpon>frmCatCobroMultiformasPagoV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatDisenioV2.resx">
       <DependentUpon>frmCatDisenioV2.cs</DependentUpon>

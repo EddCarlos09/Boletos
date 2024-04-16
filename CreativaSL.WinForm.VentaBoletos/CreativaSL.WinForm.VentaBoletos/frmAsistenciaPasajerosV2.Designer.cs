@@ -52,7 +52,7 @@
             // 
             // materialLabel4
             // 
-            this.materialLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -65,8 +65,7 @@
             // 
             // materialCard1
             // 
-            this.materialCard1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.materialCard1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard1.Controls.Add(this.CmbViaje);
             this.materialCard1.Controls.Add(this.txt_folio);
@@ -85,6 +84,7 @@
             // 
             // CmbViaje
             // 
+            this.CmbViaje.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.CmbViaje.AutoResize = false;
             this.CmbViaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CmbViaje.Depth = 0;
@@ -182,7 +182,11 @@
             this.dgvdatosboleto.AllowUserToDeleteRows = false;
             this.dgvdatosboleto.AllowUserToResizeColumns = false;
             this.dgvdatosboleto.AllowUserToResizeRows = false;
+            this.dgvdatosboleto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvdatosboleto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvdatosboleto.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvdatosboleto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdatosboleto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_boleto,
