@@ -127,7 +127,7 @@
             this.txtPagoTransferencia.MaxLength = 10;
             this.txtPagoTransferencia.Name = "txtPagoTransferencia";
             this.txtPagoTransferencia.ReadOnly = true;
-            this.txtPagoTransferencia.Size = new System.Drawing.Size(360, 74);
+            this.txtPagoTransferencia.Size = new System.Drawing.Size(360, 91);
             this.txtPagoTransferencia.TabIndex = 11;
             this.txtPagoTransferencia.Tag = "1";
             this.txtPagoTransferencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -152,7 +152,7 @@
             this.txtPagoTarjeta.MaxLength = 10;
             this.txtPagoTarjeta.Name = "txtPagoTarjeta";
             this.txtPagoTarjeta.ReadOnly = true;
-            this.txtPagoTarjeta.Size = new System.Drawing.Size(360, 74);
+            this.txtPagoTarjeta.Size = new System.Drawing.Size(360, 91);
             this.txtPagoTarjeta.TabIndex = 10;
             this.txtPagoTarjeta.Tag = "1";
             this.txtPagoTarjeta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -164,7 +164,7 @@
             this.label7.ForeColor = System.Drawing.Color.Navy;
             this.label7.Location = new System.Drawing.Point(465, 3);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 21);
+            this.label7.Size = new System.Drawing.Size(128, 26);
             this.label7.TabIndex = 0;
             this.label7.Text = "MontoPago";
             // 
@@ -174,7 +174,7 @@
             this.Txt_PagoMonedero.Location = new System.Drawing.Point(540, 189);
             this.Txt_PagoMonedero.MaxLength = 10;
             this.Txt_PagoMonedero.Name = "Txt_PagoMonedero";
-            this.Txt_PagoMonedero.Size = new System.Drawing.Size(360, 74);
+            this.Txt_PagoMonedero.Size = new System.Drawing.Size(360, 91);
             this.Txt_PagoMonedero.TabIndex = 9;
             this.Txt_PagoMonedero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Txt_PagoMonedero.Click += new System.EventHandler(this.Txt_PagoEfectivo_Enter);
@@ -203,7 +203,7 @@
             this.label4.ForeColor = System.Drawing.Color.Navy;
             this.label4.Location = new System.Drawing.Point(740, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(178, 37);
+            this.label4.Size = new System.Drawing.Size(220, 46);
             this.label4.TabIndex = 0;
             this.label4.Text = "Pendiente:";
             // 
@@ -214,7 +214,7 @@
             this.Txt_Pendiente.Location = new System.Drawing.Point(675, 72);
             this.Txt_Pendiente.Name = "Txt_Pendiente";
             this.Txt_Pendiente.ReadOnly = true;
-            this.Txt_Pendiente.Size = new System.Drawing.Size(312, 74);
+            this.Txt_Pendiente.Size = new System.Drawing.Size(312, 91);
             this.Txt_Pendiente.TabIndex = 7;
             this.Txt_Pendiente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -226,7 +226,7 @@
             this.label3.ForeColor = System.Drawing.Color.Navy;
             this.label3.Location = new System.Drawing.Point(442, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 37);
+            this.label3.Size = new System.Drawing.Size(143, 46);
             this.label3.TabIndex = 0;
             this.label3.Text = "Pagar:";
             // 
@@ -237,7 +237,7 @@
             this.Txt_Pagar.Location = new System.Drawing.Point(345, 72);
             this.Txt_Pagar.Name = "Txt_Pagar";
             this.Txt_Pagar.ReadOnly = true;
-            this.Txt_Pagar.Size = new System.Drawing.Size(312, 74);
+            this.Txt_Pagar.Size = new System.Drawing.Size(312, 91);
             this.Txt_Pagar.TabIndex = 6;
             this.Txt_Pagar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -340,7 +340,7 @@
             this.Txt_Cambio.Location = new System.Drawing.Point(352, 455);
             this.Txt_Cambio.Name = "Txt_Cambio";
             this.Txt_Cambio.ReadOnly = true;
-            this.Txt_Cambio.Size = new System.Drawing.Size(320, 74);
+            this.Txt_Cambio.Size = new System.Drawing.Size(320, 91);
             this.Txt_Cambio.TabIndex = 12;
             this.Txt_Cambio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -362,7 +362,7 @@
             this.Txt_PagoEfectivo.Location = new System.Drawing.Point(140, 189);
             this.Txt_PagoEfectivo.MaxLength = 10;
             this.Txt_PagoEfectivo.Name = "Txt_PagoEfectivo";
-            this.Txt_PagoEfectivo.Size = new System.Drawing.Size(360, 74);
+            this.Txt_PagoEfectivo.Size = new System.Drawing.Size(360, 91);
             this.Txt_PagoEfectivo.TabIndex = 8;
             this.Txt_PagoEfectivo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Txt_PagoEfectivo.Click += new System.EventHandler(this.Txt_PagoEfectivo_Enter);
@@ -379,7 +379,7 @@
             this.label11.ForeColor = System.Drawing.Color.Navy;
             this.label11.Location = new System.Drawing.Point(123, 32);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(104, 37);
+            this.label11.Size = new System.Drawing.Size(126, 46);
             this.label11.TabIndex = 0;
             this.label11.Text = "Total:";
             // 
@@ -390,7 +390,7 @@
             this.Txt_Total.Location = new System.Drawing.Point(13, 72);
             this.Txt_Total.Name = "Txt_Total";
             this.Txt_Total.ReadOnly = true;
-            this.Txt_Total.Size = new System.Drawing.Size(312, 74);
+            this.Txt_Total.Size = new System.Drawing.Size(312, 91);
             this.Txt_Total.TabIndex = 5;
             this.Txt_Total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -402,7 +402,7 @@
             this.label10.ForeColor = System.Drawing.Color.Maroon;
             this.label10.Location = new System.Drawing.Point(795, 17);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(113, 17);
+            this.label10.Size = new System.Drawing.Size(130, 20);
             this.label10.TabIndex = 0;
             this.label10.Text = "Tiempo Venta:";
             // 
@@ -463,9 +463,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Navy;
-            this.label8.Location = new System.Drawing.Point(445, 4);
+            this.label8.Location = new System.Drawing.Point(605, 26);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(159, 21);
+            this.label8.Size = new System.Drawing.Size(184, 26);
             this.label8.TabIndex = 0;
             this.label8.Text = "Datos del Cliente";
             // 
@@ -475,7 +475,7 @@
             this.Txt_NewMonedero.Location = new System.Drawing.Point(535, 64);
             this.Txt_NewMonedero.Name = "Txt_NewMonedero";
             this.Txt_NewMonedero.ReadOnly = true;
-            this.Txt_NewMonedero.Size = new System.Drawing.Size(104, 26);
+            this.Txt_NewMonedero.Size = new System.Drawing.Size(104, 30);
             this.Txt_NewMonedero.TabIndex = 3;
             this.Txt_NewMonedero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -487,7 +487,7 @@
             this.label15.ForeColor = System.Drawing.Color.Maroon;
             this.label15.Location = new System.Drawing.Point(384, 68);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(150, 17);
+            this.label15.Size = new System.Drawing.Size(171, 20);
             this.label15.TabIndex = 43;
             this.label15.Text = "$ Nuevo Monedero:";
             // 
@@ -496,7 +496,7 @@
             this.Txt_Monedero.BackColor = System.Drawing.Color.PaleGreen;
             this.Txt_Monedero.Location = new System.Drawing.Point(535, 32);
             this.Txt_Monedero.Name = "Txt_Monedero";
-            this.Txt_Monedero.Size = new System.Drawing.Size(104, 26);
+            this.Txt_Monedero.Size = new System.Drawing.Size(104, 30);
             this.Txt_Monedero.TabIndex = 2;
             this.Txt_Monedero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -508,7 +508,7 @@
             this.label16.ForeColor = System.Drawing.Color.Maroon;
             this.label16.Location = new System.Drawing.Point(388, 37);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(99, 17);
+            this.label16.Size = new System.Drawing.Size(113, 20);
             this.label16.TabIndex = 0;
             this.label16.Text = "$ Monedero:";
             // 
@@ -518,7 +518,7 @@
             this.TxtNombreCliente.Location = new System.Drawing.Point(97, 28);
             this.TxtNombreCliente.Name = "TxtNombreCliente";
             this.TxtNombreCliente.ReadOnly = true;
-            this.TxtNombreCliente.Size = new System.Drawing.Size(232, 26);
+            this.TxtNombreCliente.Size = new System.Drawing.Size(232, 30);
             this.TxtNombreCliente.TabIndex = 1;
             this.TxtNombreCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -530,7 +530,7 @@
             this.label14.ForeColor = System.Drawing.Color.Maroon;
             this.label14.Location = new System.Drawing.Point(28, 32);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(63, 17);
+            this.label14.Size = new System.Drawing.Size(74, 20);
             this.label14.TabIndex = 0;
             this.label14.Text = "Cliente:";
             // 
@@ -541,7 +541,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(806, 34);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 17);
+            this.label6.Size = new System.Drawing.Size(0, 20);
             this.label6.TabIndex = 37;
             // 
             // panel1
@@ -564,7 +564,7 @@
             // 
             // frmCatCobroMultiFormasPago
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1008, 729);

@@ -70,21 +70,21 @@
             // 
             // brn_Cancelar
             // 
-            this.brn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("brn_Cancelar.Image")));
-            this.brn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.brn_Cancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.brn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.brn_Cancelar.ImageKey = "CANCELGRUPAL";
             this.brn_Cancelar.Location = new System.Drawing.Point(570, 190);
             this.brn_Cancelar.Name = "brn_Cancelar";
             this.brn_Cancelar.Size = new System.Drawing.Size(160, 62);
             this.brn_Cancelar.TabIndex = 8;
             this.brn_Cancelar.Text = "Cancelar";
-            this.brn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.brn_Cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.brn_Cancelar.UseVisualStyleBackColor = true;
             this.brn_Cancelar.Click += new System.EventHandler(this.brn_Cancelar_Click_1);
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.Image")));
+            this.btn_Aceptar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_Aceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Aceptar.ImageKey = "(ninguno)";
             this.btn_Aceptar.Location = new System.Drawing.Point(343, 190);
@@ -98,6 +98,7 @@
             // 
             // materialLabel4
             // 
+            this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -110,6 +111,7 @@
             // 
             // materialLabel3
             // 
+            this.materialLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -122,6 +124,7 @@
             // 
             // materialLabel2
             // 
+            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -134,6 +137,7 @@
             // 
             // dtpFechaNacimiento
             // 
+            this.dtpFechaNacimiento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpFechaNacimiento.Location = new System.Drawing.Point(427, 104);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 22);
@@ -141,6 +145,7 @@
             // 
             // txt_nombre
             // 
+            this.txt_nombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_nombre.AnimateReadOnly = false;
             this.txt_nombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txt_nombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -170,6 +175,7 @@
             // 
             // txt_numeroTelefono
             // 
+            this.txt_numeroTelefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_numeroTelefono.AnimateReadOnly = false;
             this.txt_numeroTelefono.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txt_numeroTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -199,10 +205,11 @@
             // 
             // materialLabel1
             // 
+            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(327, 14);
+            this.materialLabel1.Location = new System.Drawing.Point(17, 14);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(93, 19);

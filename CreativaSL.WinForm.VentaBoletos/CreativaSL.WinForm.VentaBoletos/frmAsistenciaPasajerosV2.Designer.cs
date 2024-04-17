@@ -28,21 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.materialTextBox22 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.CmbViaje = new MaterialSkin.Controls.MaterialComboBox();
+            this.txt_folio = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvdatosboleto = new System.Windows.Forms.DataGridView();
+            this.id_boleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.asiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodigoBarra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombrePersona = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.asistencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewImageColumn();
             this.materialCard1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboleto)).BeginInit();
             this.SuspendLayout();
             // 
             // materialLabel4
             // 
-            this.materialLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -55,11 +65,10 @@
             // 
             // materialCard1
             // 
-            this.materialCard1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.materialCard1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard1.Controls.Add(this.materialTextBox22);
-            this.materialCard1.Controls.Add(this.materialTextBox21);
+            this.materialCard1.Controls.Add(this.CmbViaje);
+            this.materialCard1.Controls.Add(this.txt_folio);
             this.materialCard1.Controls.Add(this.materialLabel3);
             this.materialCard1.Controls.Add(this.materialLabel2);
             this.materialCard1.Controls.Add(this.materialLabel1);
@@ -73,63 +82,60 @@
             this.materialCard1.Size = new System.Drawing.Size(998, 124);
             this.materialCard1.TabIndex = 7;
             // 
-            // materialTextBox22
+            // CmbViaje
             // 
-            this.materialTextBox22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialTextBox22.AnimateReadOnly = false;
-            this.materialTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox22.Depth = 0;
-            this.materialTextBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox22.HideSelection = true;
-            this.materialTextBox22.LeadingIcon = null;
-            this.materialTextBox22.Location = new System.Drawing.Point(674, 59);
-            this.materialTextBox22.MaxLength = 32767;
-            this.materialTextBox22.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox22.Name = "materialTextBox22";
-            this.materialTextBox22.PasswordChar = '\0';
-            this.materialTextBox22.PrefixSuffixText = null;
-            this.materialTextBox22.ReadOnly = false;
-            this.materialTextBox22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox22.SelectedText = "";
-            this.materialTextBox22.SelectionLength = 0;
-            this.materialTextBox22.SelectionStart = 0;
-            this.materialTextBox22.ShortcutsEnabled = true;
-            this.materialTextBox22.Size = new System.Drawing.Size(250, 48);
-            this.materialTextBox22.TabIndex = 9;
-            this.materialTextBox22.TabStop = false;
-            this.materialTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox22.TrailingIcon = null;
-            this.materialTextBox22.UseSystemPasswordChar = false;
+            this.CmbViaje.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.CmbViaje.AutoResize = false;
+            this.CmbViaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.CmbViaje.Depth = 0;
+            this.CmbViaje.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.CmbViaje.DropDownHeight = 174;
+            this.CmbViaje.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbViaje.DropDownWidth = 121;
+            this.CmbViaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.CmbViaje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CmbViaje.FormattingEnabled = true;
+            this.CmbViaje.IntegralHeight = false;
+            this.CmbViaje.ItemHeight = 43;
+            this.CmbViaje.Location = new System.Drawing.Point(100, 58);
+            this.CmbViaje.MaxDropDownItems = 4;
+            this.CmbViaje.MouseState = MaterialSkin.MouseState.OUT;
+            this.CmbViaje.Name = "CmbViaje";
+            this.CmbViaje.Size = new System.Drawing.Size(250, 49);
+            this.CmbViaje.StartIndex = 0;
+            this.CmbViaje.TabIndex = 10;
+            this.CmbViaje.SelectedValueChanged += new System.EventHandler(this.CmbViaje_SelectedValueChanged);
             // 
-            // materialTextBox21
+            // txt_folio
             // 
-            this.materialTextBox21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialTextBox21.AnimateReadOnly = false;
-            this.materialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox21.Depth = 0;
-            this.materialTextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox21.HideSelection = true;
-            this.materialTextBox21.LeadingIcon = null;
-            this.materialTextBox21.Location = new System.Drawing.Point(106, 59);
-            this.materialTextBox21.MaxLength = 32767;
-            this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox21.Name = "materialTextBox21";
-            this.materialTextBox21.PasswordChar = '\0';
-            this.materialTextBox21.PrefixSuffixText = null;
-            this.materialTextBox21.ReadOnly = false;
-            this.materialTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox21.SelectedText = "";
-            this.materialTextBox21.SelectionLength = 0;
-            this.materialTextBox21.SelectionStart = 0;
-            this.materialTextBox21.ShortcutsEnabled = true;
-            this.materialTextBox21.Size = new System.Drawing.Size(250, 48);
-            this.materialTextBox21.TabIndex = 8;
-            this.materialTextBox21.TabStop = false;
-            this.materialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox21.TrailingIcon = null;
-            this.materialTextBox21.UseSystemPasswordChar = false;
+            this.txt_folio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_folio.AnimateReadOnly = false;
+            this.txt_folio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txt_folio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_folio.Depth = 0;
+            this.txt_folio.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_folio.HideSelection = true;
+            this.txt_folio.LeadingIcon = null;
+            this.txt_folio.Location = new System.Drawing.Point(674, 59);
+            this.txt_folio.MaxLength = 32767;
+            this.txt_folio.MouseState = MaterialSkin.MouseState.OUT;
+            this.txt_folio.Name = "txt_folio";
+            this.txt_folio.PasswordChar = '\0';
+            this.txt_folio.PrefixSuffixText = null;
+            this.txt_folio.ReadOnly = false;
+            this.txt_folio.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_folio.SelectedText = "";
+            this.txt_folio.SelectionLength = 0;
+            this.txt_folio.SelectionStart = 0;
+            this.txt_folio.ShortcutsEnabled = true;
+            this.txt_folio.Size = new System.Drawing.Size(250, 48);
+            this.txt_folio.TabIndex = 9;
+            this.txt_folio.TabStop = false;
+            this.txt_folio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_folio.TrailingIcon = null;
+            this.txt_folio.UseSystemPasswordChar = false;
+            this.txt_folio.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_folio_KeyDown);
+            this.txt_folio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_folio_KeyPress);
             // 
             // materialLabel3
             // 
@@ -170,33 +176,140 @@
             this.materialLabel1.TabIndex = 5;
             this.materialLabel1.Text = "Viaje";
             // 
-            // dataGridView1
+            // dgvdatosboleto
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvdatosboleto.AllowUserToAddRows = false;
+            this.dgvdatosboleto.AllowUserToDeleteRows = false;
+            this.dgvdatosboleto.AllowUserToResizeColumns = false;
+            this.dgvdatosboleto.AllowUserToResizeRows = false;
+            this.dgvdatosboleto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 248);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1020, 273);
-            this.dataGridView1.TabIndex = 6;
+            this.dgvdatosboleto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvdatosboleto.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvdatosboleto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvdatosboleto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_boleto,
+            this.asiento,
+            this.CodigoBarra,
+            this.NombrePersona,
+            this.numeroTelefono,
+            this.asistencia,
+            this.Status});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdatosboleto.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvdatosboleto.Location = new System.Drawing.Point(17, 249);
+            this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvdatosboleto.MultiSelect = false;
+            this.dgvdatosboleto.Name = "dgvdatosboleto";
+            this.dgvdatosboleto.ReadOnly = true;
+            this.dgvdatosboleto.RowHeadersWidth = 51;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dgvdatosboleto.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvdatosboleto.Size = new System.Drawing.Size(998, 341);
+            this.dgvdatosboleto.TabIndex = 15;
+            // 
+            // id_boleto
+            // 
+            this.id_boleto.DataPropertyName = "id_boleto";
+            this.id_boleto.HeaderText = "id_boleto";
+            this.id_boleto.MinimumWidth = 6;
+            this.id_boleto.Name = "id_boleto";
+            this.id_boleto.ReadOnly = true;
+            this.id_boleto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.id_boleto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id_boleto.Visible = false;
+            this.id_boleto.Width = 80;
+            // 
+            // asiento
+            // 
+            this.asiento.DataPropertyName = "asiento";
+            dataGridViewCellStyle1.Format = "N0";
+            dataGridViewCellStyle1.NullValue = null;
+            this.asiento.DefaultCellStyle = dataGridViewCellStyle1;
+            this.asiento.HeaderText = "Asiento";
+            this.asiento.MinimumWidth = 6;
+            this.asiento.Name = "asiento";
+            this.asiento.ReadOnly = true;
+            this.asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.asiento.Width = 58;
+            // 
+            // CodigoBarra
+            // 
+            this.CodigoBarra.DataPropertyName = "folio";
+            this.CodigoBarra.HeaderText = "Folio";
+            this.CodigoBarra.MinimumWidth = 6;
+            this.CodigoBarra.Name = "CodigoBarra";
+            this.CodigoBarra.ReadOnly = true;
+            this.CodigoBarra.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CodigoBarra.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.CodigoBarra.Width = 43;
+            // 
+            // NombrePersona
+            // 
+            this.NombrePersona.DataPropertyName = "cliente_nombre";
+            this.NombrePersona.HeaderText = "Nombre";
+            this.NombrePersona.MinimumWidth = 6;
+            this.NombrePersona.Name = "NombrePersona";
+            this.NombrePersona.ReadOnly = true;
+            this.NombrePersona.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.NombrePersona.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.NombrePersona.Width = 62;
+            // 
+            // numeroTelefono
+            // 
+            this.numeroTelefono.DataPropertyName = "numeroTelefono";
+            this.numeroTelefono.HeaderText = "Teléfono";
+            this.numeroTelefono.MinimumWidth = 6;
+            this.numeroTelefono.Name = "numeroTelefono";
+            this.numeroTelefono.ReadOnly = true;
+            this.numeroTelefono.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.numeroTelefono.Width = 67;
+            // 
+            // asistencia
+            // 
+            this.asistencia.DataPropertyName = "asistencia";
+            this.asistencia.HeaderText = "asistencia";
+            this.asistencia.MinimumWidth = 6;
+            this.asistencia.Name = "asistencia";
+            this.asistencia.ReadOnly = true;
+            this.asistencia.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.asistencia.Visible = false;
+            this.asistencia.Width = 86;
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "Status";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            this.Status.Width = 50;
             // 
             // frmAsistenciaPasajerosV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 540);
+            this.ClientSize = new System.Drawing.Size(1032, 624);
+            this.Controls.Add(this.dgvdatosboleto);
             this.Controls.Add(this.materialCard1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.materialLabel4);
             this.Name = "frmAsistenciaPasajerosV2";
             this.Text = "frmAsistenciaPasajerosV2";
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboleto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,11 +318,18 @@
         #endregion
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialCard materialCard1;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox22;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox21;
+        private MaterialSkin.Controls.MaterialTextBox2 txt_folio;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private MaterialSkin.Controls.MaterialComboBox CmbViaje;
+        private System.Windows.Forms.DataGridView dgvdatosboleto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_boleto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn asiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodigoBarra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombrePersona;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroTelefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn asistencia;
+        private System.Windows.Forms.DataGridViewImageColumn Status;
     }
 }

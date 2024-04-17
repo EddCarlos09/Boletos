@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDescuentoGenericoV2));
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
+            this.btn_Aceptar = new System.Windows.Forms.Button();
+            this.brn_Cancelar = new System.Windows.Forms.Button();
+            this.Txt_DescuentoGenerico = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1.SuspendLayout();
@@ -43,9 +44,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard1.Controls.Add(this.materialButton2);
-            this.materialCard1.Controls.Add(this.materialButton1);
-            this.materialCard1.Controls.Add(this.materialTextBox1);
+            this.materialCard1.Controls.Add(this.btn_Aceptar);
+            this.materialCard1.Controls.Add(this.brn_Cancelar);
+            this.materialCard1.Controls.Add(this.Txt_DescuentoGenerico);
             this.materialCard1.Controls.Add(this.materialLabel2);
             this.materialCard1.Controls.Add(this.materialLabel1);
             this.materialCard1.Depth = 0;
@@ -58,63 +59,56 @@
             this.materialCard1.Size = new System.Drawing.Size(556, 381);
             this.materialCard1.TabIndex = 0;
             // 
-            // materialButton2
+            // btn_Aceptar
             // 
-            this.materialButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(346, 267);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(86, 36);
-            this.materialButton2.TabIndex = 9;
-            this.materialButton2.Text = "Aceptar";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = false;
-            this.materialButton2.UseVisualStyleBackColor = true;
+            this.btn_Aceptar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Aceptar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.Image")));
+            this.btn_Aceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Aceptar.Location = new System.Drawing.Point(292, 258);
+            this.btn_Aceptar.Name = "btn_Aceptar";
+            this.btn_Aceptar.Size = new System.Drawing.Size(110, 94);
+            this.btn_Aceptar.TabIndex = 65;
+            this.btn_Aceptar.Text = "Aceptar";
+            this.btn_Aceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Aceptar.UseVisualStyleBackColor = true;
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
-            // materialButton1
+            // brn_Cancelar
             // 
-            this.materialButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(101, 267);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(96, 36);
-            this.materialButton1.TabIndex = 8;
-            this.materialButton1.Text = "Cancelar";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.brn_Cancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.brn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.brn_Cancelar.ForeColor = System.Drawing.Color.DimGray;
+            this.brn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("brn_Cancelar.Image")));
+            this.brn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.brn_Cancelar.Location = new System.Drawing.Point(118, 258);
+            this.brn_Cancelar.Name = "brn_Cancelar";
+            this.brn_Cancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
+            this.brn_Cancelar.Size = new System.Drawing.Size(110, 94);
+            this.brn_Cancelar.TabIndex = 64;
+            this.brn_Cancelar.Text = "Cancelar";
+            this.brn_Cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.brn_Cancelar.UseVisualStyleBackColor = true;
+            this.brn_Cancelar.Click += new System.EventHandler(this.brn_Cancelar_Click);
             // 
-            // materialTextBox1
+            // Txt_DescuentoGenerico
             // 
-            this.materialTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.materialTextBox1.AnimateReadOnly = false;
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.Location = new System.Drawing.Point(89, 174);
-            this.materialTextBox1.MaxLength = 50;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(393, 50);
-            this.materialTextBox1.TabIndex = 7;
-            this.materialTextBox1.Text = "";
-            this.materialTextBox1.TrailingIcon = null;
+            this.Txt_DescuentoGenerico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.Txt_DescuentoGenerico.AnimateReadOnly = false;
+            this.Txt_DescuentoGenerico.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Txt_DescuentoGenerico.Depth = 0;
+            this.Txt_DescuentoGenerico.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Txt_DescuentoGenerico.LeadingIcon = null;
+            this.Txt_DescuentoGenerico.Location = new System.Drawing.Point(89, 174);
+            this.Txt_DescuentoGenerico.MaxLength = 50;
+            this.Txt_DescuentoGenerico.MouseState = MaterialSkin.MouseState.OUT;
+            this.Txt_DescuentoGenerico.Multiline = false;
+            this.Txt_DescuentoGenerico.Name = "Txt_DescuentoGenerico";
+            this.Txt_DescuentoGenerico.Size = new System.Drawing.Size(393, 50);
+            this.Txt_DescuentoGenerico.TabIndex = 7;
+            this.Txt_DescuentoGenerico.Text = "";
+            this.Txt_DescuentoGenerico.TrailingIcon = null;
+            this.Txt_DescuentoGenerico.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Txt_DescuentoGenerico_KeyDown);
+            this.Txt_DescuentoGenerico.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_DescuentoGenerico_KeyPress);
             // 
             // materialLabel2
             // 
@@ -159,10 +153,10 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialCard materialCard1;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
+        private MaterialSkin.Controls.MaterialTextBox Txt_DescuentoGenerico;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private System.Windows.Forms.Button brn_Cancelar;
+        private System.Windows.Forms.Button btn_Aceptar;
     }
 }
