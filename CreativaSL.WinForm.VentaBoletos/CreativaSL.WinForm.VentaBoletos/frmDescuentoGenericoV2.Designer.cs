@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDescuentoGenericoV2));
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.btn_Aceptar = new System.Windows.Forms.Button();
+            this.brn_Cancelar = new System.Windows.Forms.Button();
             this.Txt_DescuentoGenerico = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.brn_Cancelar = new System.Windows.Forms.Button();
-            this.btn_Aceptar = new System.Windows.Forms.Button();
             this.materialCard1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +58,37 @@
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard1.Size = new System.Drawing.Size(556, 381);
             this.materialCard1.TabIndex = 0;
+            // 
+            // btn_Aceptar
+            // 
+            this.btn_Aceptar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Aceptar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.Image")));
+            this.btn_Aceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Aceptar.Location = new System.Drawing.Point(292, 258);
+            this.btn_Aceptar.Name = "btn_Aceptar";
+            this.btn_Aceptar.Size = new System.Drawing.Size(110, 94);
+            this.btn_Aceptar.TabIndex = 65;
+            this.btn_Aceptar.Text = "Aceptar";
+            this.btn_Aceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Aceptar.UseVisualStyleBackColor = true;
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
+            // 
+            // brn_Cancelar
+            // 
+            this.brn_Cancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.brn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.brn_Cancelar.ForeColor = System.Drawing.Color.DimGray;
+            this.brn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("brn_Cancelar.Image")));
+            this.brn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.brn_Cancelar.Location = new System.Drawing.Point(118, 258);
+            this.brn_Cancelar.Name = "brn_Cancelar";
+            this.brn_Cancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
+            this.brn_Cancelar.Size = new System.Drawing.Size(110, 94);
+            this.brn_Cancelar.TabIndex = 64;
+            this.brn_Cancelar.Text = "Cancelar";
+            this.brn_Cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.brn_Cancelar.UseVisualStyleBackColor = true;
+            this.brn_Cancelar.Click += new System.EventHandler(this.brn_Cancelar_Click);
             // 
             // Txt_DescuentoGenerico
             // 
@@ -104,37 +135,6 @@
             this.materialLabel1.Size = new System.Drawing.Size(80, 19);
             this.materialLabel1.TabIndex = 5;
             this.materialLabel1.Text = "Descuento:";
-            // 
-            // brn_Cancelar
-            // 
-            this.brn_Cancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.brn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            this.brn_Cancelar.ForeColor = System.Drawing.Color.DimGray;
-            this.brn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("brn_Cancelar.Image")));
-            this.brn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.brn_Cancelar.Location = new System.Drawing.Point(118, 258);
-            this.brn_Cancelar.Name = "brn_Cancelar";
-            this.brn_Cancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
-            this.brn_Cancelar.Size = new System.Drawing.Size(110, 94);
-            this.brn_Cancelar.TabIndex = 64;
-            this.brn_Cancelar.Text = "Cancelar";
-            this.brn_Cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.brn_Cancelar.UseVisualStyleBackColor = true;
-            this.brn_Cancelar.Click += new System.EventHandler(this.brn_Cancelar_Click);
-            // 
-            // btn_Aceptar
-            // 
-            this.btn_Aceptar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_Aceptar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.Image")));
-            this.btn_Aceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Aceptar.Location = new System.Drawing.Point(309, 258);
-            this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(121, 87);
-            this.btn_Aceptar.TabIndex = 65;
-            this.btn_Aceptar.Text = "Aceptar";
-            this.btn_Aceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Aceptar.UseVisualStyleBackColor = true;
-            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
             // frmDescuentoGenericoV2
             // 

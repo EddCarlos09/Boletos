@@ -983,6 +983,12 @@
     <Compile Include="frmPrecio.designer.cs">
       <DependentUpon>frmPrecio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrecioV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrecioV2.Designer.cs">
+      <DependentUpon>frmPrecioV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReportes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1262,6 +1268,9 @@
     </EmbeddedResource> -->
     <EmbeddedResource Include="frmPrecio.resx">
       <DependentUpon>frmPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrecioV2.resx">
+      <DependentUpon>frmPrecioV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportesMenuV2.resx">
       <DependentUpon>frmReportesMenuV2.cs</DependentUpon>

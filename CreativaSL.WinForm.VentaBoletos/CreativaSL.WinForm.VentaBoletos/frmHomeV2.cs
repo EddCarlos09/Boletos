@@ -545,7 +545,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                         //lst_precios.Add(new Item(this.homes.precioEspecial2.ToString(), 4));
                     }
 
-                    frmPrecio frmp = new frmPrecio(lst_precios, ClienteActual);
+                    frmPrecioV2 frmp = new frmPrecioV2(lst_precios, ClienteActual);
                     frmp.ShowDialog();
                     if (frmp.getBanVenta())
                     {
