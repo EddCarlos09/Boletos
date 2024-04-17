@@ -156,6 +156,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 frmDatosViajeV2 DatosViajes = new frmDatosViajeV2(new ReportesBoletosViajeHecotours(), dtpFecha.Value);
+                DatosViajes.TopMost = true;
                 DatosViajes.ShowDialog();
                 DatosViajes.Dispose();
                 ReportesBoletosViajeHecotours rptDatos = new ReportesBoletosViajeHecotours();
@@ -181,6 +182,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     Reportes_Negocio rpt_negocio = new Reportes_Negocio();
                     rpt_negocio.obtenerDatosReportesViaje(Comun.Conexion, ref ViajeAux, _Estadisticos);
                     frmDatosViajeV2 frmDatosViaje = new frmDatosViajeV2(ViajeAux);
+                    frmDatosViaje.TopMost = true;
                     frmDatosViaje.ShowDialog();
                     ReportesBoletosViajeHecotours rptDatos = new ReportesBoletosViajeHecotours();
                     rptDatos = rpt_negocio.RptViajesGenerados(Comun.Conexion, dtpFecha.Value, _Estadisticos);
