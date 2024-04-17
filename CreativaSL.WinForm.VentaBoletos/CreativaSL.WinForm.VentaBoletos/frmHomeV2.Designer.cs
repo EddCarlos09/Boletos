@@ -32,6 +32,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHomeV2));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.btnAdministrador = new System.Windows.Forms.TabPage();
+            this.btnReportes = new System.Windows.Forms.TabPage();
+            this.btnConfiguracion = new System.Windows.Forms.TabPage();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.btnPlantaAlta = new System.Windows.Forms.Button();
             this.btnPlantaBaja = new System.Windows.Forms.Button();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
@@ -51,9 +64,8 @@
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
             this.btn_CancelarBuscarViajes = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btn_BuscarViajes = new System.Windows.Forms.Button();
             this.dtmFechaSalida = new System.Windows.Forms.DateTimePicker();
             this.cmbComboDestino = new MaterialSkin.Controls.MaterialComboBox();
@@ -213,22 +225,12 @@
             this.pasillo1 = new System.Windows.Forms.TextBox();
             this.textBox133 = new System.Windows.Forms.TextBox();
             this.textBox134 = new System.Windows.Forms.TextBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.btnAdministrador = new System.Windows.Forms.TabPage();
-            this.btnReportes = new System.Windows.Forms.TabPage();
-            this.btnConfiguracion = new System.Windows.Forms.TabPage();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
             this.materialTabControl1.SuspendLayout();
             this.tabPage12.SuspendLayout();
+            this.materialCard1.SuspendLayout();
             this.materialCard3.SuspendLayout();
             this.materialCard2.SuspendLayout();
-            this.materialCard1.SuspendLayout();
+            this.materialCard4.SuspendLayout();
             this.panel_Camion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.puerta13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.puerta12)).BeginInit();
@@ -341,17 +343,7 @@
             // 
             // tabPage12
             // 
-            this.tabPage12.Controls.Add(this.btnPlantaAlta);
-            this.tabPage12.Controls.Add(this.btnPlantaBaja);
-            this.tabPage12.Controls.Add(this.materialLabel9);
-            this.tabPage12.Controls.Add(this.materialLabel11);
-            this.tabPage12.Controls.Add(this.materialCard3);
-            this.tabPage12.Controls.Add(this.materialCard2);
             this.tabPage12.Controls.Add(this.materialCard1);
-            this.tabPage12.Controls.Add(this.GridViewVentaBoletos);
-            this.tabPage12.Controls.Add(this.GridViewViajes);
-            this.tabPage12.Controls.Add(this.materialLabel10);
-            this.tabPage12.Controls.Add(this.panel_Camion);
             this.tabPage12.ImageKey = "icons8-home-144.png";
             this.tabPage12.Location = new System.Drawing.Point(4, 25);
             this.tabPage12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -361,23 +353,189 @@
             this.tabPage12.Text = "Home";
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "ImagenVenta");
+            this.imageList1.Images.SetKeyName(1, "ImagenVenta2");
+            this.imageList1.Images.SetKeyName(2, "ApartadosImagen");
+            this.imageList1.Images.SetKeyName(3, "ClientesImagen");
+            this.imageList1.Images.SetKeyName(4, "CajaImagen");
+            this.imageList1.Images.SetKeyName(5, "MaletaImagen");
+            this.imageList1.Images.SetKeyName(6, "AdminImagen");
+            this.imageList1.Images.SetKeyName(7, "ReportesImagen");
+            this.imageList1.Images.SetKeyName(8, "ConfigImagen");
+            this.imageList1.Images.SetKeyName(9, "AsistenciaImagen");
+            this.imageList1.Images.SetKeyName(10, "icons8-home-144.png");
+            this.imageList1.Images.SetKeyName(11, "icons8-search-300.png");
+            this.imageList1.Images.SetKeyName(12, "icons8-cancel-144.png");
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.ImageKey = "ImagenVenta";
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage1.TabIndex = 10;
+            this.tabPage1.Text = "Ventas";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.ImageKey = "ImagenVenta2";
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Ventas G";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.ImageKey = "ApartadosImagen";
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Apartados";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.ImageKey = "ClientesImagen";
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Clientes";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.ImageKey = "CajaImagen";
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Caja";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.ImageKey = "MaletaImagen";
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Maleta";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // btnAdministrador
+            // 
+            this.btnAdministrador.ImageKey = "AdminImagen";
+            this.btnAdministrador.Location = new System.Drawing.Point(4, 25);
+            this.btnAdministrador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdministrador.Name = "btnAdministrador";
+            this.btnAdministrador.Size = new System.Drawing.Size(2239, 1188);
+            this.btnAdministrador.TabIndex = 6;
+            this.btnAdministrador.Text = "Admin";
+            this.btnAdministrador.UseVisualStyleBackColor = true;
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.ImageKey = "ReportesImagen";
+            this.btnReportes.Location = new System.Drawing.Point(4, 25);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(2239, 1188);
+            this.btnReportes.TabIndex = 7;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.UseVisualStyleBackColor = true;
+            // 
+            // btnConfiguracion
+            // 
+            this.btnConfiguracion.ImageKey = "ConfigImagen";
+            this.btnConfiguracion.Location = new System.Drawing.Point(4, 25);
+            this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.Size = new System.Drawing.Size(2239, 1188);
+            this.btnConfiguracion.TabIndex = 8;
+            this.btnConfiguracion.Text = "Config";
+            this.btnConfiguracion.UseVisualStyleBackColor = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.ImageKey = "AsistenciaImagen";
+            this.tabPage10.Location = new System.Drawing.Point(4, 25);
+            this.tabPage10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "Asistencia";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.Location = new System.Drawing.Point(4, 25);
+            this.tabPage11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage11.TabIndex = 11;
+            this.tabPage11.Text = "Salir";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // materialCard1
+            // 
+            this.materialCard1.AutoScroll = true;
+            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard1.Controls.Add(this.btnPlantaAlta);
+            this.materialCard1.Controls.Add(this.btnPlantaBaja);
+            this.materialCard1.Controls.Add(this.materialLabel9);
+            this.materialCard1.Controls.Add(this.materialLabel11);
+            this.materialCard1.Controls.Add(this.materialCard3);
+            this.materialCard1.Controls.Add(this.materialCard2);
+            this.materialCard1.Controls.Add(this.materialCard4);
+            this.materialCard1.Controls.Add(this.GridViewVentaBoletos);
+            this.materialCard1.Controls.Add(this.GridViewViajes);
+            this.materialCard1.Controls.Add(this.materialLabel10);
+            this.materialCard1.Controls.Add(this.panel_Camion);
+            this.materialCard1.Depth = 0;
+            this.materialCard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard1.Location = new System.Drawing.Point(0, 0);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard1.Name = "materialCard1";
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Size = new System.Drawing.Size(2239, 1188);
+            this.materialCard1.TabIndex = 0;
+            // 
             // btnPlantaAlta
             // 
-            this.btnPlantaAlta.Location = new System.Drawing.Point(1759, 22);
+            this.btnPlantaAlta.Location = new System.Drawing.Point(1773, 30);
             this.btnPlantaAlta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPlantaAlta.Name = "btnPlantaAlta";
             this.btnPlantaAlta.Size = new System.Drawing.Size(75, 23);
-            this.btnPlantaAlta.TabIndex = 233;
+            this.btnPlantaAlta.TabIndex = 244;
             this.btnPlantaAlta.Text = "P. Alta";
             this.btnPlantaAlta.UseVisualStyleBackColor = true;
             // 
             // btnPlantaBaja
             // 
-            this.btnPlantaBaja.Location = new System.Drawing.Point(1483, 22);
+            this.btnPlantaBaja.Location = new System.Drawing.Point(1497, 30);
             this.btnPlantaBaja.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPlantaBaja.Name = "btnPlantaBaja";
             this.btnPlantaBaja.Size = new System.Drawing.Size(75, 23);
-            this.btnPlantaBaja.TabIndex = 232;
+            this.btnPlantaBaja.TabIndex = 243;
             this.btnPlantaBaja.Text = "P. Baja";
             this.btnPlantaBaja.UseVisualStyleBackColor = true;
             // 
@@ -387,11 +545,11 @@
             this.materialLabel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(964, 18);
+            this.materialLabel9.Location = new System.Drawing.Point(978, 26);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(54, 19);
-            this.materialLabel9.TabIndex = 54;
+            this.materialLabel9.TabIndex = 235;
             this.materialLabel9.Text = "Boletos";
             // 
             // materialLabel11
@@ -399,11 +557,11 @@
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(964, 432);
+            this.materialLabel11.Location = new System.Drawing.Point(978, 440);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(55, 19);
-            this.materialLabel11.TabIndex = 231;
+            this.materialLabel11.TabIndex = 242;
             this.materialLabel11.Text = "SALIDA";
             // 
             // materialCard3
@@ -416,13 +574,13 @@
             this.materialCard3.Controls.Add(this.checkBoxVentaGrupal);
             this.materialCard3.Depth = 0;
             this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard3.Location = new System.Drawing.Point(537, 866);
+            this.materialCard3.Location = new System.Drawing.Point(551, 874);
             this.materialCard3.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard3.Name = "materialCard3";
             this.materialCard3.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.materialCard3.Size = new System.Drawing.Size(1009, 100);
-            this.materialCard3.TabIndex = 230;
+            this.materialCard3.TabIndex = 241;
             // 
             // btn_Cancelar
             // 
@@ -520,20 +678,20 @@
             this.materialCard2.Controls.Add(this.materialLabel1);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(13, 503);
+            this.materialCard2.Location = new System.Drawing.Point(27, 511);
             this.materialCard2.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
             this.materialCard2.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard2.Size = new System.Drawing.Size(609, 292);
-            this.materialCard2.TabIndex = 229;
+            this.materialCard2.Size = new System.Drawing.Size(609, 346);
+            this.materialCard2.TabIndex = 240;
             // 
             // materialLabel7
             // 
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.Location = new System.Drawing.Point(219, 159);
+            this.materialLabel7.Location = new System.Drawing.Point(42, 179);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(152, 19);
@@ -550,7 +708,7 @@
             this.Txt_FechaHoraSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_FechaHoraSistema.HideSelection = true;
             this.Txt_FechaHoraSistema.LeadingIcon = null;
-            this.Txt_FechaHoraSistema.Location = new System.Drawing.Point(221, 190);
+            this.Txt_FechaHoraSistema.Location = new System.Drawing.Point(35, 227);
             this.Txt_FechaHoraSistema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_FechaHoraSistema.MaxLength = 32767;
             this.Txt_FechaHoraSistema.MouseState = MaterialSkin.MouseState.OUT;
@@ -580,7 +738,7 @@
             this.Txt_Recorrido.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_Recorrido.HideSelection = true;
             this.Txt_Recorrido.LeadingIcon = null;
-            this.Txt_Recorrido.Location = new System.Drawing.Point(421, 73);
+            this.Txt_Recorrido.Location = new System.Drawing.Point(259, 227);
             this.Txt_Recorrido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_Recorrido.MaxLength = 32767;
             this.Txt_Recorrido.MouseState = MaterialSkin.MouseState.OUT;
@@ -593,7 +751,7 @@
             this.Txt_Recorrido.SelectionLength = 0;
             this.Txt_Recorrido.SelectionStart = 0;
             this.Txt_Recorrido.ShortcutsEnabled = true;
-            this.Txt_Recorrido.Size = new System.Drawing.Size(141, 48);
+            this.Txt_Recorrido.Size = new System.Drawing.Size(270, 48);
             this.Txt_Recorrido.TabIndex = 46;
             this.Txt_Recorrido.TabStop = false;
             this.Txt_Recorrido.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -610,7 +768,7 @@
             this.Txt_NumAsientosApartados.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_NumAsientosApartados.HideSelection = true;
             this.Txt_NumAsientosApartados.LeadingIcon = null;
-            this.Txt_NumAsientosApartados.Location = new System.Drawing.Point(221, 73);
+            this.Txt_NumAsientosApartados.Location = new System.Drawing.Point(352, 68);
             this.Txt_NumAsientosApartados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_NumAsientosApartados.MaxLength = 32767;
             this.Txt_NumAsientosApartados.MouseState = MaterialSkin.MouseState.OUT;
@@ -640,7 +798,7 @@
             this.Txt_NumAsientosDisponibles.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_NumAsientosDisponibles.HideSelection = true;
             this.Txt_NumAsientosDisponibles.LeadingIcon = null;
-            this.Txt_NumAsientosDisponibles.Location = new System.Drawing.Point(45, 73);
+            this.Txt_NumAsientosDisponibles.Location = new System.Drawing.Point(94, 72);
             this.Txt_NumAsientosDisponibles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_NumAsientosDisponibles.MaxLength = 32767;
             this.Txt_NumAsientosDisponibles.MouseState = MaterialSkin.MouseState.OUT;
@@ -665,7 +823,7 @@
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.Location = new System.Drawing.Point(452, 21);
+            this.materialLabel6.Location = new System.Drawing.Point(349, 174);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(82, 19);
@@ -677,7 +835,7 @@
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel5.Location = new System.Drawing.Point(259, 21);
+            this.materialLabel5.Location = new System.Drawing.Point(380, 18);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(84, 19);
@@ -689,33 +847,33 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(75, 18);
+            this.materialLabel1.Location = new System.Drawing.Point(127, 20);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(49, 19);
             this.materialLabel1.TabIndex = 41;
             this.materialLabel1.Text = "# disp:";
             // 
-            // materialCard1
+            // materialCard4
             // 
-            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard1.Controls.Add(this.btn_CancelarBuscarViajes);
-            this.materialCard1.Controls.Add(this.btn_BuscarViajes);
-            this.materialCard1.Controls.Add(this.dtmFechaSalida);
-            this.materialCard1.Controls.Add(this.cmbComboDestino);
-            this.materialCard1.Controls.Add(this.cmbComboOrigen);
-            this.materialCard1.Controls.Add(this.materialLabel4);
-            this.materialCard1.Controls.Add(this.materialLabel3);
-            this.materialCard1.Controls.Add(this.materialLabel2);
-            this.materialCard1.Depth = 0;
-            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(13, 57);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard1.Size = new System.Drawing.Size(609, 428);
-            this.materialCard1.TabIndex = 228;
+            this.materialCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard4.Controls.Add(this.btn_CancelarBuscarViajes);
+            this.materialCard4.Controls.Add(this.btn_BuscarViajes);
+            this.materialCard4.Controls.Add(this.dtmFechaSalida);
+            this.materialCard4.Controls.Add(this.cmbComboDestino);
+            this.materialCard4.Controls.Add(this.cmbComboOrigen);
+            this.materialCard4.Controls.Add(this.materialLabel4);
+            this.materialCard4.Controls.Add(this.materialLabel3);
+            this.materialCard4.Controls.Add(this.materialLabel2);
+            this.materialCard4.Depth = 0;
+            this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard4.Location = new System.Drawing.Point(27, 65);
+            this.materialCard4.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard4.Name = "materialCard4";
+            this.materialCard4.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard4.Size = new System.Drawing.Size(609, 428);
+            this.materialCard4.TabIndex = 239;
             // 
             // btn_CancelarBuscarViajes
             // 
@@ -728,24 +886,6 @@
             this.btn_CancelarBuscarViajes.Size = new System.Drawing.Size(67, 50);
             this.btn_CancelarBuscarViajes.TabIndex = 44;
             this.btn_CancelarBuscarViajes.UseVisualStyleBackColor = false;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "ImagenVenta");
-            this.imageList1.Images.SetKeyName(1, "ImagenVenta2");
-            this.imageList1.Images.SetKeyName(2, "ApartadosImagen");
-            this.imageList1.Images.SetKeyName(3, "ClientesImagen");
-            this.imageList1.Images.SetKeyName(4, "CajaImagen");
-            this.imageList1.Images.SetKeyName(5, "MaletaImagen");
-            this.imageList1.Images.SetKeyName(6, "AdminImagen");
-            this.imageList1.Images.SetKeyName(7, "ReportesImagen");
-            this.imageList1.Images.SetKeyName(8, "ConfigImagen");
-            this.imageList1.Images.SetKeyName(9, "AsistenciaImagen");
-            this.imageList1.Images.SetKeyName(10, "icons8-home-144.png");
-            this.imageList1.Images.SetKeyName(11, "icons8-search-300.png");
-            this.imageList1.Images.SetKeyName(12, "icons8-cancel-144.png");
             // 
             // btn_BuscarViajes
             // 
@@ -858,7 +998,7 @@
             this.GridViewVentaBoletos.Depth = 0;
             this.GridViewVentaBoletos.FullRowSelect = true;
             this.GridViewVentaBoletos.HideSelection = false;
-            this.GridViewVentaBoletos.Location = new System.Drawing.Point(651, 462);
+            this.GridViewVentaBoletos.Location = new System.Drawing.Point(665, 470);
             this.GridViewVentaBoletos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GridViewVentaBoletos.MinimumSize = new System.Drawing.Size(200, 100);
             this.GridViewVentaBoletos.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -866,7 +1006,7 @@
             this.GridViewVentaBoletos.Name = "GridViewVentaBoletos";
             this.GridViewVentaBoletos.OwnerDraw = true;
             this.GridViewVentaBoletos.Size = new System.Drawing.Size(791, 375);
-            this.GridViewVentaBoletos.TabIndex = 227;
+            this.GridViewVentaBoletos.TabIndex = 238;
             this.GridViewVentaBoletos.UseCompatibleStateImageBehavior = false;
             this.GridViewVentaBoletos.View = System.Windows.Forms.View.Details;
             // 
@@ -878,7 +1018,7 @@
             this.GridViewViajes.Depth = 0;
             this.GridViewViajes.FullRowSelect = true;
             this.GridViewViajes.HideSelection = false;
-            this.GridViewViajes.Location = new System.Drawing.Point(651, 54);
+            this.GridViewViajes.Location = new System.Drawing.Point(665, 62);
             this.GridViewViajes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GridViewViajes.MinimumSize = new System.Drawing.Size(200, 100);
             this.GridViewViajes.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -886,7 +1026,7 @@
             this.GridViewViajes.Name = "GridViewViajes";
             this.GridViewViajes.OwnerDraw = true;
             this.GridViewViajes.Size = new System.Drawing.Size(791, 375);
-            this.GridViewViajes.TabIndex = 226;
+            this.GridViewViajes.TabIndex = 237;
             this.GridViewViajes.UseCompatibleStateImageBehavior = false;
             this.GridViewViajes.View = System.Windows.Forms.View.Details;
             // 
@@ -895,11 +1035,11 @@
             this.materialLabel10.AutoSize = true;
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel10.Location = new System.Drawing.Point(1591, 18);
+            this.materialLabel10.Location = new System.Drawing.Point(1605, 26);
             this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel10.Name = "materialLabel10";
             this.materialLabel10.Size = new System.Drawing.Size(121, 19);
-            this.materialLabel10.TabIndex = 225;
+            this.materialLabel10.TabIndex = 236;
             this.materialLabel10.Text = "DISPONIBILIDAD";
             // 
             // panel_Camion
@@ -1058,11 +1198,11 @@
             this.panel_Camion.GradientTop = true;
             this.panel_Camion.LinearGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.panel_Camion.LineColor = System.Drawing.Color.Transparent;
-            this.panel_Camion.Location = new System.Drawing.Point(1521, 75);
+            this.panel_Camion.Location = new System.Drawing.Point(1535, 83);
             this.panel_Camion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_Camion.Name = "panel_Camion";
             this.panel_Camion.Size = new System.Drawing.Size(325, 720);
-            this.panel_Camion.TabIndex = 47;
+            this.panel_Camion.TabIndex = 234;
             // 
             // puerta13
             // 
@@ -1258,8 +1398,6 @@
             this.asiento63.TabIndex = 208;
             this.asiento63.TabStop = false;
             this.asiento63.Tag = "0";
-            this.asiento63.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento63.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento28
             // 
@@ -1273,8 +1411,6 @@
             this.asiento28.TabIndex = 207;
             this.asiento28.TabStop = false;
             this.asiento28.Tag = "0";
-            this.asiento28.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento28.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento33
             // 
@@ -1288,8 +1424,6 @@
             this.asiento33.TabIndex = 206;
             this.asiento33.TabStop = false;
             this.asiento33.Tag = "0";
-            this.asiento33.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento33.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento38
             // 
@@ -1303,8 +1437,6 @@
             this.asiento38.TabIndex = 205;
             this.asiento38.TabStop = false;
             this.asiento38.Tag = "0";
-            this.asiento38.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento38.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento43
             // 
@@ -1318,8 +1450,6 @@
             this.asiento43.TabIndex = 204;
             this.asiento43.TabStop = false;
             this.asiento43.Tag = "0";
-            this.asiento43.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento43.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento48
             // 
@@ -1333,8 +1463,6 @@
             this.asiento48.TabIndex = 203;
             this.asiento48.TabStop = false;
             this.asiento48.Tag = "0";
-            this.asiento48.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento48.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento53
             // 
@@ -1348,8 +1476,6 @@
             this.asiento53.TabIndex = 202;
             this.asiento53.TabStop = false;
             this.asiento53.Tag = "0";
-            this.asiento53.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento53.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento58
             // 
@@ -1363,8 +1489,6 @@
             this.asiento58.TabIndex = 201;
             this.asiento58.TabStop = false;
             this.asiento58.Tag = "0";
-            this.asiento58.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento58.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento23
             // 
@@ -1378,8 +1502,6 @@
             this.asiento23.TabIndex = 200;
             this.asiento23.TabStop = false;
             this.asiento23.Tag = "0";
-            this.asiento23.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento23.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento18
             // 
@@ -1393,8 +1515,6 @@
             this.asiento18.TabIndex = 199;
             this.asiento18.TabStop = false;
             this.asiento18.Tag = "0";
-            this.asiento18.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento18.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento13
             // 
@@ -1408,8 +1528,6 @@
             this.asiento13.TabIndex = 198;
             this.asiento13.TabStop = false;
             this.asiento13.Tag = "0";
-            this.asiento13.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento13.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento8
             // 
@@ -1423,8 +1541,6 @@
             this.asiento8.TabIndex = 197;
             this.asiento8.TabStop = false;
             this.asiento8.Tag = "0";
-            this.asiento8.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento8.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento3
             // 
@@ -1438,8 +1554,6 @@
             this.asiento3.TabIndex = 196;
             this.asiento3.TabStop = false;
             this.asiento3.Tag = "0";
-            this.asiento3.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento3.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento65
             // 
@@ -1453,8 +1567,6 @@
             this.asiento65.TabIndex = 194;
             this.asiento65.TabStop = false;
             this.asiento65.Tag = "0";
-            this.asiento65.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento65.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento64
             // 
@@ -1468,8 +1580,6 @@
             this.asiento64.TabIndex = 193;
             this.asiento64.TabStop = false;
             this.asiento64.Tag = "0";
-            this.asiento64.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento64.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento62
             // 
@@ -1483,8 +1593,6 @@
             this.asiento62.TabIndex = 192;
             this.asiento62.TabStop = false;
             this.asiento62.Tag = "0";
-            this.asiento62.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento62.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento61
             // 
@@ -1498,8 +1606,6 @@
             this.asiento61.TabIndex = 191;
             this.asiento61.TabStop = false;
             this.asiento61.Tag = "0";
-            this.asiento61.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento61.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento60
             // 
@@ -1513,8 +1619,6 @@
             this.asiento60.TabIndex = 190;
             this.asiento60.TabStop = false;
             this.asiento60.Tag = "0";
-            this.asiento60.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento60.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento59
             // 
@@ -1528,8 +1632,6 @@
             this.asiento59.TabIndex = 189;
             this.asiento59.TabStop = false;
             this.asiento59.Tag = "0";
-            this.asiento59.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento59.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento57
             // 
@@ -1543,8 +1645,6 @@
             this.asiento57.TabIndex = 188;
             this.asiento57.TabStop = false;
             this.asiento57.Tag = "0";
-            this.asiento57.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento57.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento56
             // 
@@ -1558,8 +1658,6 @@
             this.asiento56.TabIndex = 187;
             this.asiento56.TabStop = false;
             this.asiento56.Tag = "0";
-            this.asiento56.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento56.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento55
             // 
@@ -1573,8 +1671,6 @@
             this.asiento55.TabIndex = 186;
             this.asiento55.TabStop = false;
             this.asiento55.Tag = "0";
-            this.asiento55.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento55.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento54
             // 
@@ -1588,8 +1684,6 @@
             this.asiento54.TabIndex = 185;
             this.asiento54.TabStop = false;
             this.asiento54.Tag = "0";
-            this.asiento54.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento54.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento52
             // 
@@ -1603,8 +1697,6 @@
             this.asiento52.TabIndex = 184;
             this.asiento52.TabStop = false;
             this.asiento52.Tag = "0";
-            this.asiento52.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento52.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento51
             // 
@@ -1618,8 +1710,6 @@
             this.asiento51.TabIndex = 183;
             this.asiento51.TabStop = false;
             this.asiento51.Tag = "0";
-            this.asiento51.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento51.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento50
             // 
@@ -1633,8 +1723,6 @@
             this.asiento50.TabIndex = 182;
             this.asiento50.TabStop = false;
             this.asiento50.Tag = "0";
-            this.asiento50.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento50.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento49
             // 
@@ -1648,8 +1736,6 @@
             this.asiento49.TabIndex = 181;
             this.asiento49.TabStop = false;
             this.asiento49.Tag = "0";
-            this.asiento49.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento49.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento47
             // 
@@ -1663,8 +1749,6 @@
             this.asiento47.TabIndex = 180;
             this.asiento47.TabStop = false;
             this.asiento47.Tag = "0";
-            this.asiento47.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento47.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento46
             // 
@@ -1678,8 +1762,6 @@
             this.asiento46.TabIndex = 179;
             this.asiento46.TabStop = false;
             this.asiento46.Tag = "0";
-            this.asiento46.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento46.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento45
             // 
@@ -1693,8 +1775,6 @@
             this.asiento45.TabIndex = 178;
             this.asiento45.TabStop = false;
             this.asiento45.Tag = "0";
-            this.asiento45.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento45.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento44
             // 
@@ -1708,8 +1788,6 @@
             this.asiento44.TabIndex = 177;
             this.asiento44.TabStop = false;
             this.asiento44.Tag = "0";
-            this.asiento44.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento44.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento42
             // 
@@ -1723,8 +1801,6 @@
             this.asiento42.TabIndex = 176;
             this.asiento42.TabStop = false;
             this.asiento42.Tag = "0";
-            this.asiento42.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento42.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento41
             // 
@@ -1738,8 +1814,6 @@
             this.asiento41.TabIndex = 175;
             this.asiento41.TabStop = false;
             this.asiento41.Tag = "0";
-            this.asiento41.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento41.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento40
             // 
@@ -1753,8 +1827,6 @@
             this.asiento40.TabIndex = 174;
             this.asiento40.TabStop = false;
             this.asiento40.Tag = "0";
-            this.asiento40.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento40.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento39
             // 
@@ -1768,8 +1840,6 @@
             this.asiento39.TabIndex = 173;
             this.asiento39.TabStop = false;
             this.asiento39.Tag = "0";
-            this.asiento39.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento39.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento37
             // 
@@ -1783,8 +1853,6 @@
             this.asiento37.TabIndex = 172;
             this.asiento37.TabStop = false;
             this.asiento37.Tag = "0";
-            this.asiento37.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento37.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento36
             // 
@@ -1798,8 +1866,6 @@
             this.asiento36.TabIndex = 171;
             this.asiento36.TabStop = false;
             this.asiento36.Tag = "0";
-            this.asiento36.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento36.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento35
             // 
@@ -1813,8 +1879,6 @@
             this.asiento35.TabIndex = 170;
             this.asiento35.TabStop = false;
             this.asiento35.Tag = "0";
-            this.asiento35.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento35.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento34
             // 
@@ -1828,8 +1892,6 @@
             this.asiento34.TabIndex = 169;
             this.asiento34.TabStop = false;
             this.asiento34.Tag = "0";
-            this.asiento34.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento34.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento32
             // 
@@ -1843,8 +1905,6 @@
             this.asiento32.TabIndex = 168;
             this.asiento32.TabStop = false;
             this.asiento32.Tag = "0";
-            this.asiento32.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento32.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento31
             // 
@@ -1858,8 +1918,6 @@
             this.asiento31.TabIndex = 167;
             this.asiento31.TabStop = false;
             this.asiento31.Tag = "0";
-            this.asiento31.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento31.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento30
             // 
@@ -1873,8 +1931,6 @@
             this.asiento30.TabIndex = 166;
             this.asiento30.TabStop = false;
             this.asiento30.Tag = "0";
-            this.asiento30.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento30.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento29
             // 
@@ -1888,8 +1944,6 @@
             this.asiento29.TabIndex = 165;
             this.asiento29.TabStop = false;
             this.asiento29.Tag = "0";
-            this.asiento29.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento29.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento27
             // 
@@ -1903,8 +1957,6 @@
             this.asiento27.TabIndex = 164;
             this.asiento27.TabStop = false;
             this.asiento27.Tag = "0";
-            this.asiento27.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento27.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento26
             // 
@@ -1918,8 +1970,6 @@
             this.asiento26.TabIndex = 163;
             this.asiento26.TabStop = false;
             this.asiento26.Tag = "0";
-            this.asiento26.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento26.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento25
             // 
@@ -1933,8 +1983,6 @@
             this.asiento25.TabIndex = 162;
             this.asiento25.TabStop = false;
             this.asiento25.Tag = "0";
-            this.asiento25.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento25.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento24
             // 
@@ -1948,8 +1996,6 @@
             this.asiento24.TabIndex = 161;
             this.asiento24.TabStop = false;
             this.asiento24.Tag = "0";
-            this.asiento24.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento24.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento22
             // 
@@ -1963,8 +2009,6 @@
             this.asiento22.TabIndex = 160;
             this.asiento22.TabStop = false;
             this.asiento22.Tag = "0";
-            this.asiento22.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento22.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento21
             // 
@@ -1978,8 +2022,6 @@
             this.asiento21.TabIndex = 159;
             this.asiento21.TabStop = false;
             this.asiento21.Tag = "0";
-            this.asiento21.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento21.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento20
             // 
@@ -1993,8 +2035,6 @@
             this.asiento20.TabIndex = 158;
             this.asiento20.TabStop = false;
             this.asiento20.Tag = "0";
-            this.asiento20.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento20.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento19
             // 
@@ -2008,8 +2048,6 @@
             this.asiento19.TabIndex = 157;
             this.asiento19.TabStop = false;
             this.asiento19.Tag = "0";
-            this.asiento19.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento19.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento17
             // 
@@ -2023,8 +2061,6 @@
             this.asiento17.TabIndex = 156;
             this.asiento17.TabStop = false;
             this.asiento17.Tag = "0";
-            this.asiento17.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento17.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento16
             // 
@@ -2038,8 +2074,6 @@
             this.asiento16.TabIndex = 155;
             this.asiento16.TabStop = false;
             this.asiento16.Tag = "0";
-            this.asiento16.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento16.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento15
             // 
@@ -2053,8 +2087,6 @@
             this.asiento15.TabIndex = 154;
             this.asiento15.TabStop = false;
             this.asiento15.Tag = "0";
-            this.asiento15.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento15.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento14
             // 
@@ -2068,8 +2100,6 @@
             this.asiento14.TabIndex = 153;
             this.asiento14.TabStop = false;
             this.asiento14.Tag = "0";
-            this.asiento14.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento14.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento12
             // 
@@ -2083,8 +2113,6 @@
             this.asiento12.TabIndex = 152;
             this.asiento12.TabStop = false;
             this.asiento12.Tag = "0";
-            this.asiento12.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento12.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento11
             // 
@@ -2098,8 +2126,6 @@
             this.asiento11.TabIndex = 151;
             this.asiento11.TabStop = false;
             this.asiento11.Tag = "0";
-            this.asiento11.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento11.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento10
             // 
@@ -2113,8 +2139,6 @@
             this.asiento10.TabIndex = 150;
             this.asiento10.TabStop = false;
             this.asiento10.Tag = "0";
-            this.asiento10.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento10.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento9
             // 
@@ -2128,8 +2152,6 @@
             this.asiento9.TabIndex = 149;
             this.asiento9.TabStop = false;
             this.asiento9.Tag = "0";
-            this.asiento9.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento9.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento7
             // 
@@ -2143,8 +2165,6 @@
             this.asiento7.TabIndex = 148;
             this.asiento7.TabStop = false;
             this.asiento7.Tag = "0";
-            this.asiento7.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento7.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento6
             // 
@@ -2158,8 +2178,6 @@
             this.asiento6.TabIndex = 147;
             this.asiento6.TabStop = false;
             this.asiento6.Tag = "0";
-            this.asiento6.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento6.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento5
             // 
@@ -2173,8 +2191,6 @@
             this.asiento5.TabIndex = 146;
             this.asiento5.TabStop = false;
             this.asiento5.Tag = "0";
-            this.asiento5.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento5.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento4
             // 
@@ -2188,8 +2204,6 @@
             this.asiento4.TabIndex = 145;
             this.asiento4.TabStop = false;
             this.asiento4.Tag = "0";
-            this.asiento4.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento4.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento2
             // 
@@ -2203,8 +2217,6 @@
             this.asiento2.TabIndex = 144;
             this.asiento2.TabStop = false;
             this.asiento2.Tag = "0";
-            this.asiento2.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento2.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento1
             // 
@@ -2218,8 +2230,6 @@
             this.asiento1.TabIndex = 6;
             this.asiento1.TabStop = false;
             this.asiento1.Tag = "0";
-            this.asiento1.Click += new System.EventHandler(this.Boleto_Click);
-            this.asiento1.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // pasilloasiento64
             // 
@@ -3337,128 +3347,6 @@
             this.textBox134.TabIndex = 0;
             this.textBox134.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tabPage1
-            // 
-            this.tabPage1.ImageKey = "ImagenVenta";
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1853, 1188);
-            this.tabPage1.TabIndex = 10;
-            this.tabPage1.Text = "Ventas";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.ImageKey = "ImagenVenta2";
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1853, 1188);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Ventas G";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.ImageKey = "ApartadosImagen";
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1853, 1188);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Apartados";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.ImageKey = "ClientesImagen";
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1853, 1188);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Clientes";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.ImageKey = "CajaImagen";
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1853, 1188);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Caja";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.ImageKey = "MaletaImagen";
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1853, 1188);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Maleta";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // btnAdministrador
-            // 
-            this.btnAdministrador.ImageKey = "AdminImagen";
-            this.btnAdministrador.Location = new System.Drawing.Point(4, 25);
-            this.btnAdministrador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAdministrador.Name = "btnAdministrador";
-            this.btnAdministrador.Size = new System.Drawing.Size(1853, 1188);
-            this.btnAdministrador.TabIndex = 6;
-            this.btnAdministrador.Text = "Admin";
-            this.btnAdministrador.UseVisualStyleBackColor = true;
-            // 
-            // btnReportes
-            // 
-            this.btnReportes.ImageKey = "ReportesImagen";
-            this.btnReportes.Location = new System.Drawing.Point(4, 25);
-            this.btnReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(1853, 1188);
-            this.btnReportes.TabIndex = 7;
-            this.btnReportes.Text = "Reportes";
-            this.btnReportes.UseVisualStyleBackColor = true;
-            // 
-            // btnConfiguracion
-            // 
-            this.btnConfiguracion.ImageKey = "ConfigImagen";
-            this.btnConfiguracion.Location = new System.Drawing.Point(4, 25);
-            this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(1853, 1188);
-            this.btnConfiguracion.TabIndex = 8;
-            this.btnConfiguracion.Text = "Config";
-            this.btnConfiguracion.UseVisualStyleBackColor = true;
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.ImageKey = "AsistenciaImagen";
-            this.tabPage10.Location = new System.Drawing.Point(4, 25);
-            this.tabPage10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1853, 1188);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "Asistencia";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
-            // tabPage11
-            // 
-            this.tabPage11.Location = new System.Drawing.Point(4, 25);
-            this.tabPage11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1853, 1188);
-            this.tabPage11.TabIndex = 11;
-            this.tabPage11.Text = "Salir";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
             // frmHomeV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -3475,13 +3363,14 @@
             this.Load += new System.EventHandler(this.frmHomeV2_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage12.ResumeLayout(false);
-            this.tabPage12.PerformLayout();
+            this.materialCard1.ResumeLayout(false);
+            this.materialCard1.PerformLayout();
             this.materialCard3.ResumeLayout(false);
             this.materialCard3.PerformLayout();
             this.materialCard2.ResumeLayout(false);
             this.materialCard2.PerformLayout();
-            this.materialCard1.ResumeLayout(false);
-            this.materialCard1.PerformLayout();
+            this.materialCard4.ResumeLayout(false);
+            this.materialCard4.PerformLayout();
             this.panel_Camion.ResumeLayout(false);
             this.panel_Camion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.puerta13)).EndInit();
@@ -3582,6 +3471,11 @@
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.TabPage tabPage11;
         private System.Windows.Forms.TabPage tabPage12;
+        private MaterialSkin.Controls.MaterialCard materialCard1;
+        private System.Windows.Forms.Button btnPlantaAlta;
+        private System.Windows.Forms.Button btnPlantaBaja;
+        private MaterialSkin.Controls.MaterialLabel materialLabel9;
+        private MaterialSkin.Controls.MaterialLabel materialLabel11;
         private MaterialSkin.Controls.MaterialCard materialCard3;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_Vender;
@@ -3597,13 +3491,17 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialCard materialCard1;
+        private MaterialSkin.Controls.MaterialCard materialCard4;
+        private System.Windows.Forms.Button btn_CancelarBuscarViajes;
+        private System.Windows.Forms.Button btn_BuscarViajes;
         private System.Windows.Forms.DateTimePicker dtmFechaSalida;
         private MaterialSkin.Controls.MaterialComboBox cmbComboDestino;
         private MaterialSkin.Controls.MaterialComboBox cmbComboOrigen;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialListView GridViewVentaBoletos;
+        private MaterialSkin.Controls.MaterialListView GridViewViajes;
         private MaterialSkin.Controls.MaterialLabel materialLabel10;
         private LibControls.WinForms.Panel_Creativa panel_Camion;
         private System.Windows.Forms.PictureBox puerta13;
@@ -3754,13 +3652,5 @@
         private System.Windows.Forms.TextBox pasillo1;
         private System.Windows.Forms.TextBox textBox133;
         private System.Windows.Forms.TextBox textBox134;
-        private MaterialSkin.Controls.MaterialLabel materialLabel9;
-        private MaterialSkin.Controls.MaterialLabel materialLabel11;
-        private MaterialSkin.Controls.MaterialListView GridViewVentaBoletos;
-        private System.Windows.Forms.Button btnPlantaAlta;
-        private System.Windows.Forms.Button btnPlantaBaja;
-        private System.Windows.Forms.Button btn_BuscarViajes;
-        private System.Windows.Forms.Button btn_CancelarBuscarViajes;
-        private MaterialSkin.Controls.MaterialListView GridViewViajes;
     }
 }
