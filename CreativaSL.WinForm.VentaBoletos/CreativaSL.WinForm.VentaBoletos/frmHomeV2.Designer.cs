@@ -335,7 +335,7 @@
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1861, 999);
+            this.materialTabControl1.Size = new System.Drawing.Size(2236, 1033);
             this.materialTabControl1.TabIndex = 19;
             this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
             // 
@@ -356,7 +356,7 @@
             this.tabPage12.Location = new System.Drawing.Point(4, 25);
             this.tabPage12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage12.Size = new System.Drawing.Size(2228, 1004);
             this.tabPage12.TabIndex = 12;
             this.tabPage12.Text = "Home";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -704,7 +704,7 @@
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard1.Size = new System.Drawing.Size(609, 375);
+            this.materialCard1.Size = new System.Drawing.Size(609, 418);
             this.materialCard1.TabIndex = 228;
             // 
             // btn_CancelarBuscarViajes
@@ -713,11 +713,12 @@
             this.btn_CancelarBuscarViajes.ImageKey = "icons8-cancel-144.png";
             this.btn_CancelarBuscarViajes.ImageList = this.imageList1;
             this.btn_CancelarBuscarViajes.Location = new System.Drawing.Point(445, 363);
-            this.btn_CancelarBuscarViajes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_CancelarBuscarViajes.Margin = new System.Windows.Forms.Padding(5);
             this.btn_CancelarBuscarViajes.Name = "btn_CancelarBuscarViajes";
             this.btn_CancelarBuscarViajes.Size = new System.Drawing.Size(67, 50);
             this.btn_CancelarBuscarViajes.TabIndex = 44;
             this.btn_CancelarBuscarViajes.UseVisualStyleBackColor = false;
+            this.btn_CancelarBuscarViajes.Click += new System.EventHandler(this.btn_CancelarBuscarViajes_Click);
             // 
             // imageList1
             // 
@@ -743,11 +744,12 @@
             this.btn_BuscarViajes.ImageKey = "icons8-search-300.png";
             this.btn_BuscarViajes.ImageList = this.imageList1;
             this.btn_BuscarViajes.Location = new System.Drawing.Point(320, 363);
-            this.btn_BuscarViajes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_BuscarViajes.Margin = new System.Windows.Forms.Padding(5);
             this.btn_BuscarViajes.Name = "btn_BuscarViajes";
             this.btn_BuscarViajes.Size = new System.Drawing.Size(67, 50);
             this.btn_BuscarViajes.TabIndex = 43;
             this.btn_BuscarViajes.UseVisualStyleBackColor = false;
+            this.btn_BuscarViajes.Click += new System.EventHandler(this.btn_BuscarViajes_Click);
             // 
             // dtmFechaSalida
             // 
@@ -1248,6 +1250,7 @@
             this.asiento63.TabIndex = 208;
             this.asiento63.TabStop = false;
             this.asiento63.Tag = "0";
+            this.asiento63.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento28
             // 
@@ -1261,6 +1264,7 @@
             this.asiento28.TabIndex = 207;
             this.asiento28.TabStop = false;
             this.asiento28.Tag = "0";
+            this.asiento28.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento33
             // 
@@ -1274,6 +1278,7 @@
             this.asiento33.TabIndex = 206;
             this.asiento33.TabStop = false;
             this.asiento33.Tag = "0";
+            this.asiento33.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento38
             // 
@@ -1287,6 +1292,7 @@
             this.asiento38.TabIndex = 205;
             this.asiento38.TabStop = false;
             this.asiento38.Tag = "0";
+            this.asiento38.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento43
             // 
@@ -1300,6 +1306,7 @@
             this.asiento43.TabIndex = 204;
             this.asiento43.TabStop = false;
             this.asiento43.Tag = "0";
+            this.asiento43.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento48
             // 
@@ -1313,6 +1320,7 @@
             this.asiento48.TabIndex = 203;
             this.asiento48.TabStop = false;
             this.asiento48.Tag = "0";
+            this.asiento48.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento53
             // 
@@ -1326,6 +1334,7 @@
             this.asiento53.TabIndex = 202;
             this.asiento53.TabStop = false;
             this.asiento53.Tag = "0";
+            this.asiento53.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento58
             // 
@@ -1339,6 +1348,7 @@
             this.asiento58.TabIndex = 201;
             this.asiento58.TabStop = false;
             this.asiento58.Tag = "0";
+            this.asiento58.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento23
             // 
@@ -1352,6 +1362,7 @@
             this.asiento23.TabIndex = 200;
             this.asiento23.TabStop = false;
             this.asiento23.Tag = "0";
+            this.asiento23.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento18
             // 
@@ -1365,6 +1376,7 @@
             this.asiento18.TabIndex = 199;
             this.asiento18.TabStop = false;
             this.asiento18.Tag = "0";
+            this.asiento18.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento13
             // 
@@ -1378,6 +1390,7 @@
             this.asiento13.TabIndex = 198;
             this.asiento13.TabStop = false;
             this.asiento13.Tag = "0";
+            this.asiento13.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento8
             // 
@@ -1391,6 +1404,7 @@
             this.asiento8.TabIndex = 197;
             this.asiento8.TabStop = false;
             this.asiento8.Tag = "0";
+            this.asiento8.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento3
             // 
@@ -1404,6 +1418,7 @@
             this.asiento3.TabIndex = 196;
             this.asiento3.TabStop = false;
             this.asiento3.Tag = "0";
+            this.asiento3.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento65
             // 
@@ -1417,6 +1432,7 @@
             this.asiento65.TabIndex = 194;
             this.asiento65.TabStop = false;
             this.asiento65.Tag = "0";
+            this.asiento65.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento64
             // 
@@ -1430,6 +1446,7 @@
             this.asiento64.TabIndex = 193;
             this.asiento64.TabStop = false;
             this.asiento64.Tag = "0";
+            this.asiento64.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento62
             // 
@@ -1443,6 +1460,7 @@
             this.asiento62.TabIndex = 192;
             this.asiento62.TabStop = false;
             this.asiento62.Tag = "0";
+            this.asiento62.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento61
             // 
@@ -1456,6 +1474,7 @@
             this.asiento61.TabIndex = 191;
             this.asiento61.TabStop = false;
             this.asiento61.Tag = "0";
+            this.asiento61.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento60
             // 
@@ -1469,6 +1488,7 @@
             this.asiento60.TabIndex = 190;
             this.asiento60.TabStop = false;
             this.asiento60.Tag = "0";
+            this.asiento60.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento59
             // 
@@ -1482,6 +1502,7 @@
             this.asiento59.TabIndex = 189;
             this.asiento59.TabStop = false;
             this.asiento59.Tag = "0";
+            this.asiento59.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento57
             // 
@@ -1495,6 +1516,7 @@
             this.asiento57.TabIndex = 188;
             this.asiento57.TabStop = false;
             this.asiento57.Tag = "0";
+            this.asiento57.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento56
             // 
@@ -1508,6 +1530,7 @@
             this.asiento56.TabIndex = 187;
             this.asiento56.TabStop = false;
             this.asiento56.Tag = "0";
+            this.asiento56.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento55
             // 
@@ -1521,6 +1544,7 @@
             this.asiento55.TabIndex = 186;
             this.asiento55.TabStop = false;
             this.asiento55.Tag = "0";
+            this.asiento55.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento54
             // 
@@ -1534,6 +1558,7 @@
             this.asiento54.TabIndex = 185;
             this.asiento54.TabStop = false;
             this.asiento54.Tag = "0";
+            this.asiento54.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento52
             // 
@@ -1547,6 +1572,7 @@
             this.asiento52.TabIndex = 184;
             this.asiento52.TabStop = false;
             this.asiento52.Tag = "0";
+            this.asiento52.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento51
             // 
@@ -1560,6 +1586,7 @@
             this.asiento51.TabIndex = 183;
             this.asiento51.TabStop = false;
             this.asiento51.Tag = "0";
+            this.asiento51.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento50
             // 
@@ -1573,6 +1600,7 @@
             this.asiento50.TabIndex = 182;
             this.asiento50.TabStop = false;
             this.asiento50.Tag = "0";
+            this.asiento50.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento49
             // 
@@ -1586,6 +1614,7 @@
             this.asiento49.TabIndex = 181;
             this.asiento49.TabStop = false;
             this.asiento49.Tag = "0";
+            this.asiento49.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento47
             // 
@@ -1599,6 +1628,7 @@
             this.asiento47.TabIndex = 180;
             this.asiento47.TabStop = false;
             this.asiento47.Tag = "0";
+            this.asiento47.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento46
             // 
@@ -1612,6 +1642,7 @@
             this.asiento46.TabIndex = 179;
             this.asiento46.TabStop = false;
             this.asiento46.Tag = "0";
+            this.asiento46.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento45
             // 
@@ -1625,6 +1656,7 @@
             this.asiento45.TabIndex = 178;
             this.asiento45.TabStop = false;
             this.asiento45.Tag = "0";
+            this.asiento45.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento44
             // 
@@ -1638,6 +1670,7 @@
             this.asiento44.TabIndex = 177;
             this.asiento44.TabStop = false;
             this.asiento44.Tag = "0";
+            this.asiento44.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento42
             // 
@@ -1651,6 +1684,7 @@
             this.asiento42.TabIndex = 176;
             this.asiento42.TabStop = false;
             this.asiento42.Tag = "0";
+            this.asiento42.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento41
             // 
@@ -1664,6 +1698,7 @@
             this.asiento41.TabIndex = 175;
             this.asiento41.TabStop = false;
             this.asiento41.Tag = "0";
+            this.asiento41.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento40
             // 
@@ -1677,6 +1712,7 @@
             this.asiento40.TabIndex = 174;
             this.asiento40.TabStop = false;
             this.asiento40.Tag = "0";
+            this.asiento40.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento39
             // 
@@ -1690,6 +1726,7 @@
             this.asiento39.TabIndex = 173;
             this.asiento39.TabStop = false;
             this.asiento39.Tag = "0";
+            this.asiento39.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento37
             // 
@@ -1703,6 +1740,7 @@
             this.asiento37.TabIndex = 172;
             this.asiento37.TabStop = false;
             this.asiento37.Tag = "0";
+            this.asiento37.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento36
             // 
@@ -1716,6 +1754,7 @@
             this.asiento36.TabIndex = 171;
             this.asiento36.TabStop = false;
             this.asiento36.Tag = "0";
+            this.asiento36.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento35
             // 
@@ -1729,6 +1768,7 @@
             this.asiento35.TabIndex = 170;
             this.asiento35.TabStop = false;
             this.asiento35.Tag = "0";
+            this.asiento35.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento34
             // 
@@ -1742,6 +1782,7 @@
             this.asiento34.TabIndex = 169;
             this.asiento34.TabStop = false;
             this.asiento34.Tag = "0";
+            this.asiento34.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento32
             // 
@@ -1755,6 +1796,7 @@
             this.asiento32.TabIndex = 168;
             this.asiento32.TabStop = false;
             this.asiento32.Tag = "0";
+            this.asiento32.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento31
             // 
@@ -1768,6 +1810,7 @@
             this.asiento31.TabIndex = 167;
             this.asiento31.TabStop = false;
             this.asiento31.Tag = "0";
+            this.asiento31.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento30
             // 
@@ -1781,6 +1824,7 @@
             this.asiento30.TabIndex = 166;
             this.asiento30.TabStop = false;
             this.asiento30.Tag = "0";
+            this.asiento30.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento29
             // 
@@ -1794,6 +1838,7 @@
             this.asiento29.TabIndex = 165;
             this.asiento29.TabStop = false;
             this.asiento29.Tag = "0";
+            this.asiento29.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento27
             // 
@@ -1807,6 +1852,7 @@
             this.asiento27.TabIndex = 164;
             this.asiento27.TabStop = false;
             this.asiento27.Tag = "0";
+            this.asiento27.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento26
             // 
@@ -1820,6 +1866,7 @@
             this.asiento26.TabIndex = 163;
             this.asiento26.TabStop = false;
             this.asiento26.Tag = "0";
+            this.asiento26.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento25
             // 
@@ -1833,6 +1880,7 @@
             this.asiento25.TabIndex = 162;
             this.asiento25.TabStop = false;
             this.asiento25.Tag = "0";
+            this.asiento25.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento24
             // 
@@ -1846,6 +1894,7 @@
             this.asiento24.TabIndex = 161;
             this.asiento24.TabStop = false;
             this.asiento24.Tag = "0";
+            this.asiento24.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento22
             // 
@@ -1859,6 +1908,7 @@
             this.asiento22.TabIndex = 160;
             this.asiento22.TabStop = false;
             this.asiento22.Tag = "0";
+            this.asiento22.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento21
             // 
@@ -1872,6 +1922,7 @@
             this.asiento21.TabIndex = 159;
             this.asiento21.TabStop = false;
             this.asiento21.Tag = "0";
+            this.asiento21.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento20
             // 
@@ -1885,6 +1936,7 @@
             this.asiento20.TabIndex = 158;
             this.asiento20.TabStop = false;
             this.asiento20.Tag = "0";
+            this.asiento20.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento19
             // 
@@ -1898,6 +1950,7 @@
             this.asiento19.TabIndex = 157;
             this.asiento19.TabStop = false;
             this.asiento19.Tag = "0";
+            this.asiento19.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento17
             // 
@@ -1911,6 +1964,7 @@
             this.asiento17.TabIndex = 156;
             this.asiento17.TabStop = false;
             this.asiento17.Tag = "0";
+            this.asiento17.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento16
             // 
@@ -1924,6 +1978,7 @@
             this.asiento16.TabIndex = 155;
             this.asiento16.TabStop = false;
             this.asiento16.Tag = "0";
+            this.asiento16.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento15
             // 
@@ -1937,6 +1992,7 @@
             this.asiento15.TabIndex = 154;
             this.asiento15.TabStop = false;
             this.asiento15.Tag = "0";
+            this.asiento15.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento14
             // 
@@ -1950,6 +2006,7 @@
             this.asiento14.TabIndex = 153;
             this.asiento14.TabStop = false;
             this.asiento14.Tag = "0";
+            this.asiento14.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento12
             // 
@@ -1963,6 +2020,7 @@
             this.asiento12.TabIndex = 152;
             this.asiento12.TabStop = false;
             this.asiento12.Tag = "0";
+            this.asiento12.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento11
             // 
@@ -1976,6 +2034,7 @@
             this.asiento11.TabIndex = 151;
             this.asiento11.TabStop = false;
             this.asiento11.Tag = "0";
+            this.asiento11.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento10
             // 
@@ -1989,6 +2048,7 @@
             this.asiento10.TabIndex = 150;
             this.asiento10.TabStop = false;
             this.asiento10.Tag = "0";
+            this.asiento10.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento9
             // 
@@ -2002,6 +2062,7 @@
             this.asiento9.TabIndex = 149;
             this.asiento9.TabStop = false;
             this.asiento9.Tag = "0";
+            this.asiento9.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento7
             // 
@@ -2015,6 +2076,7 @@
             this.asiento7.TabIndex = 148;
             this.asiento7.TabStop = false;
             this.asiento7.Tag = "0";
+            this.asiento7.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento6
             // 
@@ -2028,6 +2090,7 @@
             this.asiento6.TabIndex = 147;
             this.asiento6.TabStop = false;
             this.asiento6.Tag = "0";
+            this.asiento6.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento5
             // 
@@ -2041,6 +2104,7 @@
             this.asiento5.TabIndex = 146;
             this.asiento5.TabStop = false;
             this.asiento5.Tag = "0";
+            this.asiento5.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento4
             // 
@@ -2054,6 +2118,7 @@
             this.asiento4.TabIndex = 145;
             this.asiento4.TabStop = false;
             this.asiento4.Tag = "0";
+            this.asiento4.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento2
             // 
@@ -2067,6 +2132,7 @@
             this.asiento2.TabIndex = 144;
             this.asiento2.TabStop = false;
             this.asiento2.Tag = "0";
+            this.asiento2.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // asiento1
             // 
@@ -2080,6 +2146,7 @@
             this.asiento1.TabIndex = 6;
             this.asiento1.TabStop = false;
             this.asiento1.Tag = "0";
+            this.asiento1.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // pasilloasiento64
             // 
@@ -3204,7 +3271,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage1.Size = new System.Drawing.Size(2228, 970);
             this.tabPage1.TabIndex = 10;
             this.tabPage1.Text = "Ventas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -3216,7 +3283,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage2.Size = new System.Drawing.Size(2228, 970);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ventas G";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -3227,7 +3294,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage3.Size = new System.Drawing.Size(2228, 970);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Apartados";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -3238,7 +3305,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage4.Size = new System.Drawing.Size(2228, 970);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Clientes";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -3249,7 +3316,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage5.Size = new System.Drawing.Size(2228, 970);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Caja";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -3260,7 +3327,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage6.Size = new System.Drawing.Size(2228, 970);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Maleta";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -3271,7 +3338,7 @@
             this.btnAdministrador.Location = new System.Drawing.Point(4, 25);
             this.btnAdministrador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdministrador.Name = "btnAdministrador";
-            this.btnAdministrador.Size = new System.Drawing.Size(1853, 970);
+            this.btnAdministrador.Size = new System.Drawing.Size(2228, 970);
             this.btnAdministrador.TabIndex = 6;
             this.btnAdministrador.Text = "Admin";
             this.btnAdministrador.UseVisualStyleBackColor = true;
@@ -3282,7 +3349,7 @@
             this.btnReportes.Location = new System.Drawing.Point(4, 25);
             this.btnReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(1853, 970);
+            this.btnReportes.Size = new System.Drawing.Size(2228, 970);
             this.btnReportes.TabIndex = 7;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = true;
@@ -3293,7 +3360,7 @@
             this.btnConfiguracion.Location = new System.Drawing.Point(4, 25);
             this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(1853, 970);
+            this.btnConfiguracion.Size = new System.Drawing.Size(2228, 970);
             this.btnConfiguracion.TabIndex = 8;
             this.btnConfiguracion.Text = "Config";
             this.btnConfiguracion.UseVisualStyleBackColor = true;
@@ -3304,7 +3371,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 25);
             this.tabPage10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage10.Size = new System.Drawing.Size(2228, 970);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "Asistencia";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -3314,7 +3381,7 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 25);
             this.tabPage11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1853, 970);
+            this.tabPage11.Size = new System.Drawing.Size(2228, 970);
             this.tabPage11.TabIndex = 11;
             this.tabPage11.Text = "Salir";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -3324,7 +3391,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1556, 884);
+            this.ClientSize = new System.Drawing.Size(1931, 918);
             this.Controls.Add(this.materialTabControl1);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;
