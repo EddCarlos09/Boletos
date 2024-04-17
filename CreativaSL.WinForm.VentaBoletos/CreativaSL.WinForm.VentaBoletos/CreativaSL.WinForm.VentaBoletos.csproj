@@ -534,6 +534,24 @@
     <Compile Include="FormAdministrador.Designer.cs">
       <DependentUpon>FormAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCancelacionesTransferenciasGrupalV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelacionesTransferenciasGrupalV2.Designer.cs">
+      <DependentUpon>frmCancelacionesTransferenciasGrupalV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCancelacionesTransferenciasV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelacionesTransferenciasV2.Designer.cs">
+      <DependentUpon>frmCancelacionesTransferenciasV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatCobroMultiFormasPagoV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatCobroMultiFormasPagoV2.Designer.cs">
+      <DependentUpon>frmCatCobroMultiFormasPagoV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCatTerminalIntermediaV2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -965,6 +983,12 @@
     <Compile Include="frmPrecio.designer.cs">
       <DependentUpon>frmPrecio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrecioV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrecioV2.Designer.cs">
+      <DependentUpon>frmPrecioV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReportes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1153,6 +1177,12 @@
     <EmbeddedResource Include="frmCancelacionesTransferenciasGrupal.resx">
       <DependentUpon>frmCancelacionesTransferenciasGrupal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelacionesTransferenciasGrupalV2.resx">
+      <DependentUpon>frmCancelacionesTransferenciasGrupalV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelacionesTransferenciasV2.resx">
+      <DependentUpon>frmCancelacionesTransferenciasV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCatCamionesV2.resx">
       <DependentUpon>frmCatCamionesV2.cs</DependentUpon>
     </EmbeddedResource>
@@ -1161,6 +1191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatCobroMultiFormasPago.resx">
       <DependentUpon>frmCatCobroMultiFormasPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatCobroMultiFormasPagoV2.resx">
+      <DependentUpon>frmCatCobroMultiFormasPagoV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatDisenioV2.resx">
       <DependentUpon>frmCatDisenioV2.cs</DependentUpon>
@@ -1235,6 +1268,9 @@
     </EmbeddedResource> -->
     <EmbeddedResource Include="frmPrecio.resx">
       <DependentUpon>frmPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrecioV2.resx">
+      <DependentUpon>frmPrecioV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportesMenuV2.resx">
       <DependentUpon>frmReportesMenuV2.cs</DependentUpon>

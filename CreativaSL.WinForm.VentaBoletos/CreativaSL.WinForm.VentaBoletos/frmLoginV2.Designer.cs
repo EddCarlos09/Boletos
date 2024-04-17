@@ -54,10 +54,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 83);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(747, 633);
+            this.panel1.Size = new System.Drawing.Size(747, 614);
             this.panel1.TabIndex = 0;
             // 
             // txt_mensaje
@@ -131,7 +130,7 @@
             this.btnAceptar.ForeColor = System.Drawing.Color.DimGray;
             this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAceptar.Location = new System.Drawing.Point(383, 490);
+            this.btnAceptar.Location = new System.Drawing.Point(383, 471);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
             this.btnAceptar.Size = new System.Drawing.Size(163, 98);
@@ -150,7 +149,7 @@
             this.btnCancelar.ForeColor = System.Drawing.Color.DimGray;
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(164, 490);
+            this.btnCancelar.Location = new System.Drawing.Point(164, 471);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
             this.btnCancelar.Size = new System.Drawing.Size(163, 98);

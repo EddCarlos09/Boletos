@@ -170,7 +170,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                         V2Cliente cliente = new V2Cliente();
                         Cliente_Negocio cliente_Negocio = new Cliente_Negocio();
                         cliente_Negocio.ObtenerClienteXIdVenta(Comun.Conexion, apartados.IDVenta, cliente);
-                        frmCatCobroMultiFormasPago frmC = new frmCatCobroMultiFormasPago(apartados.Total, apartados.TotalPagar, apartados.Pendiente, (float)cliente.SaldoDisponible, cliente.Nombre, ((float)cliente.PorentajePuntos * totalVenta), cliente);
+                        frmCatCobroMultiFormasPagoV2 frmC = new frmCatCobroMultiFormasPagoV2(apartados.Total, apartados.TotalPagar, apartados.Pendiente, (float)cliente.SaldoDisponible, cliente.Nombre, ((float)cliente.PorentajePuntos * totalVenta), cliente);
 
                         //frmCatCobroMultiFormasPago frmC = new frmCatCobroMultiFormasPago(apartados.Total, apartados.TotalPagar, apartados.Pendiente, 0.0F, "", 0.0F);
                         frmC.ShowDialog();
@@ -294,7 +294,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                                 frmlv.ShowDialog();
                                 if (frmlv.getbanAutorizacion() == true)
                                 {
-                                    frmCancelacionesTransferenciasGrupal cancelaciones = new frmCancelacionesTransferenciasGrupal(1, venta.tipo_cancelacion, Convert.ToInt32(dgvdatosboleto.SelectedRows[0].Cells["numeroBoletos"].Value.ToString()));
+                                    frmCancelacionesTransferenciasGrupalV2 cancelaciones = new frmCancelacionesTransferenciasGrupalV2(1, venta.tipo_cancelacion, Convert.ToInt32(dgvdatosboleto.SelectedRows[0].Cells["numeroBoletos"].Value.ToString()));
                                     cancelaciones.ShowDialog();
                                     if (cancelaciones.CancelacionTrasfencia == true)
                                     {
