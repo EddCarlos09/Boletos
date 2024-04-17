@@ -45,6 +45,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button6 = new System.Windows.Forms.Button();
             this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton10 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
@@ -78,6 +79,11 @@
             this.materialCard12 = new MaterialSkin.Controls.MaterialCard();
             this.materialListView4 = new MaterialSkin.Controls.MaterialListView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton8 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton9 = new MaterialSkin.Controls.MaterialButton();
             this.button21 = new System.Windows.Forms.Button();
             this.materialCard14 = new MaterialSkin.Controls.MaterialCard();
             this.button22 = new System.Windows.Forms.Button();
@@ -167,6 +173,7 @@
             this.materialCard11.SuspendLayout();
             this.materialCard12.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            this.materialCard2.SuspendLayout();
             this.materialCard14.SuspendLayout();
             this.materialCard15.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -439,19 +446,41 @@
             // 
             this.materialCard5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard5.Controls.Add(this.materialButton10);
             this.materialCard5.Controls.Add(this.materialButton4);
             this.materialCard5.Controls.Add(this.materialButton3);
             this.materialCard5.Controls.Add(this.materialButton2);
             this.materialCard5.Controls.Add(this.materialButton1);
             this.materialCard5.Depth = 0;
             this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard5.Location = new System.Drawing.Point(882, 11);
+            this.materialCard5.Location = new System.Drawing.Point(730, 11);
             this.materialCard5.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard5.Name = "materialCard5";
             this.materialCard5.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard5.Size = new System.Drawing.Size(535, 73);
+            this.materialCard5.Size = new System.Drawing.Size(602, 73);
             this.materialCard5.TabIndex = 7;
+            // 
+            // materialButton10
+            // 
+            this.materialButton10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton10.BackColor = System.Drawing.Color.White;
+            this.materialButton10.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton10.Depth = 0;
+            this.materialButton10.HighEmphasis = true;
+            this.materialButton10.Icon = null;
+            this.materialButton10.Location = new System.Drawing.Point(18, 21);
+            this.materialButton10.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton10.Name = "materialButton10";
+            this.materialButton10.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton10.Size = new System.Drawing.Size(96, 36);
+            this.materialButton10.TabIndex = 4;
+            this.materialButton10.Text = "CAMIONES";
+            this.materialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton10.UseAccentColor = false;
+            this.materialButton10.UseVisualStyleBackColor = false;
+            this.materialButton10.Click += new System.EventHandler(this.materialButton10_Click);
             // 
             // materialButton4
             // 
@@ -460,7 +489,7 @@
             this.materialButton4.Depth = 0;
             this.materialButton4.HighEmphasis = true;
             this.materialButton4.Icon = null;
-            this.materialButton4.Location = new System.Drawing.Point(395, 20);
+            this.materialButton4.Location = new System.Drawing.Point(314, 20);
             this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton4.Name = "materialButton4";
@@ -471,6 +500,7 @@
             this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             this.materialButton4.UseAccentColor = false;
             this.materialButton4.UseVisualStyleBackColor = true;
+            this.materialButton4.Click += new System.EventHandler(this.materialButton4_Click);
             // 
             // materialButton3
             // 
@@ -479,7 +509,7 @@
             this.materialButton3.Depth = 0;
             this.materialButton3.HighEmphasis = true;
             this.materialButton3.Icon = null;
-            this.materialButton3.Location = new System.Drawing.Point(231, 20);
+            this.materialButton3.Location = new System.Drawing.Point(437, 20);
             this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton3.Name = "materialButton3";
@@ -490,6 +520,7 @@
             this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             this.materialButton3.UseAccentColor = false;
             this.materialButton3.UseVisualStyleBackColor = true;
+            this.materialButton3.Click += new System.EventHandler(this.btn_CambioCamionVendido_Click);
             // 
             // materialButton2
             // 
@@ -498,7 +529,7 @@
             this.materialButton2.Depth = 0;
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(108, 20);
+            this.materialButton2.Location = new System.Drawing.Point(202, 20);
             this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton2.Name = "materialButton2";
@@ -509,6 +540,7 @@
             this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             this.materialButton2.UseAccentColor = false;
             this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.materialButton2_Click);
             // 
             // materialButton1
             // 
@@ -517,7 +549,7 @@
             this.materialButton1.Depth = 0;
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(18, 20);
+            this.materialButton1.Location = new System.Drawing.Point(122, 21);
             this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
@@ -528,6 +560,7 @@
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             this.materialButton1.UseAccentColor = false;
             this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
             // materialCard6
             // 
@@ -544,7 +577,7 @@
             this.materialCard6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard6.Name = "materialCard6";
             this.materialCard6.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
-            this.materialCard6.Size = new System.Drawing.Size(734, 73);
+            this.materialCard6.Size = new System.Drawing.Size(649, 73);
             this.materialCard6.TabIndex = 6;
             // 
             // button7
@@ -552,7 +585,7 @@
             this.button7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button7.ImageKey = "icons8-add-100.png";
             this.button7.ImageList = this.imageList1;
-            this.button7.Location = new System.Drawing.Point(506, 9);
+            this.button7.Location = new System.Drawing.Point(441, 9);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(58, 47);
             this.button7.TabIndex = 9;
@@ -564,7 +597,7 @@
             this.button8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button8.ImageKey = "icons8-delete-90.png";
             this.button8.ImageList = this.imageList1;
-            this.button8.Location = new System.Drawing.Point(646, 9);
+            this.button8.Location = new System.Drawing.Point(581, 9);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(58, 47);
             this.button8.TabIndex = 8;
@@ -576,7 +609,7 @@
             this.button9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button9.ImageKey = "icons8-edit-100.png";
             this.button9.ImageList = this.imageList1;
-            this.button9.Location = new System.Drawing.Point(578, 9);
+            this.button9.Location = new System.Drawing.Point(513, 9);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(58, 47);
             this.button9.TabIndex = 7;
@@ -982,6 +1015,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.materialCard2);
             this.tabPage5.Controls.Add(this.button21);
             this.tabPage5.Controls.Add(this.materialCard14);
             this.tabPage5.Controls.Add(this.materialCard15);
@@ -993,13 +1027,103 @@
             this.tabPage5.Text = "Viajes";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // materialCard2
+            // 
+            this.materialCard2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard2.Controls.Add(this.materialLabel1);
+            this.materialCard2.Controls.Add(this.materialButton5);
+            this.materialCard2.Controls.Add(this.materialButton8);
+            this.materialCard2.Controls.Add(this.materialButton9);
+            this.materialCard2.Depth = 0;
+            this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard2.Location = new System.Drawing.Point(809, 11);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard2.Name = "materialCard2";
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard2.Size = new System.Drawing.Size(527, 73);
+            this.materialCard2.TabIndex = 11;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(21, 32);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(114, 19);
+            this.materialLabel1.TabIndex = 4;
+            this.materialLabel1.Text = "Fechas de viaje:";
+            // 
+            // materialButton5
+            // 
+            this.materialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton5.Depth = 0;
+            this.materialButton5.HighEmphasis = true;
+            this.materialButton5.Icon = null;
+            this.materialButton5.Location = new System.Drawing.Point(249, 21);
+            this.materialButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton5.Name = "materialButton5";
+            this.materialButton5.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton5.Size = new System.Drawing.Size(88, 36);
+            this.materialButton5.TabIndex = 3;
+            this.materialButton5.Text = "eliminar";
+            this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton5.UseAccentColor = false;
+            this.materialButton5.UseVisualStyleBackColor = true;
+            this.materialButton5.Click += new System.EventHandler(this.btn_ElimnarFecha_Click);
+            // 
+            // materialButton8
+            // 
+            this.materialButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton8.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton8.Depth = 0;
+            this.materialButton8.HighEmphasis = true;
+            this.materialButton8.Icon = null;
+            this.materialButton8.Location = new System.Drawing.Point(356, 21);
+            this.materialButton8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton8.Name = "materialButton8";
+            this.materialButton8.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton8.Size = new System.Drawing.Size(99, 36);
+            this.materialButton8.TabIndex = 2;
+            this.materialButton8.Text = "Calendario";
+            this.materialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton8.UseAccentColor = false;
+            this.materialButton8.UseVisualStyleBackColor = true;
+            this.materialButton8.Click += new System.EventHandler(this.btn_Calendario_Click);
+            // 
+            // materialButton9
+            // 
+            this.materialButton9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton9.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton9.Depth = 0;
+            this.materialButton9.HighEmphasis = true;
+            this.materialButton9.Icon = null;
+            this.materialButton9.Location = new System.Drawing.Point(162, 22);
+            this.materialButton9.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton9.Name = "materialButton9";
+            this.materialButton9.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton9.Size = new System.Drawing.Size(70, 36);
+            this.materialButton9.TabIndex = 1;
+            this.materialButton9.Text = "Nuevo";
+            this.materialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton9.UseAccentColor = false;
+            this.materialButton9.UseVisualStyleBackColor = true;
+            this.materialButton9.Click += new System.EventHandler(this.btnNuevaFecha_Click);
+            // 
             // button21
             // 
             this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button21.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button21.ImageKey = "icons8-exit-100.png";
             this.button21.ImageList = this.imageList1;
-            this.button21.Location = new System.Drawing.Point(1435, 21);
+            this.button21.Location = new System.Drawing.Point(1478, 20);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(58, 47);
             this.button21.TabIndex = 10;
@@ -1021,7 +1145,7 @@
             this.materialCard14.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard14.Name = "materialCard14";
             this.materialCard14.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
-            this.materialCard14.Size = new System.Drawing.Size(989, 73);
+            this.materialCard14.Size = new System.Drawing.Size(736, 73);
             this.materialCard14.TabIndex = 9;
             // 
             // button22
@@ -1029,7 +1153,7 @@
             this.button22.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button22.ImageKey = "icons8-add-100.png";
             this.button22.ImageList = this.imageList1;
-            this.button22.Location = new System.Drawing.Point(752, 9);
+            this.button22.Location = new System.Drawing.Point(479, 10);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(58, 47);
             this.button22.TabIndex = 9;
@@ -1041,7 +1165,7 @@
             this.button23.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button23.ImageKey = "icons8-delete-90.png";
             this.button23.ImageList = this.imageList1;
-            this.button23.Location = new System.Drawing.Point(907, 9);
+            this.button23.Location = new System.Drawing.Point(634, 10);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(58, 47);
             this.button23.TabIndex = 8;
@@ -1053,7 +1177,7 @@
             this.button24.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button24.ImageKey = "icons8-edit-100.png";
             this.button24.ImageList = this.imageList1;
-            this.button24.Location = new System.Drawing.Point(831, 9);
+            this.button24.Location = new System.Drawing.Point(558, 10);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(58, 47);
             this.button24.TabIndex = 7;
@@ -1322,6 +1446,7 @@
             this.button31.Size = new System.Drawing.Size(58, 47);
             this.button31.TabIndex = 10;
             this.button31.UseVisualStyleBackColor = false;
+            this.button31.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // materialCard20
             // 
@@ -2194,7 +2319,6 @@
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "FormAdministrador";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -2221,6 +2345,8 @@
             this.materialCard12.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            this.materialCard2.ResumeLayout(false);
+            this.materialCard2.PerformLayout();
             this.materialCard14.ResumeLayout(false);
             this.materialCard15.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
@@ -2380,5 +2506,11 @@
         private MaterialSkin.Controls.MaterialButton materialButton4;
         private MaterialSkin.Controls.MaterialButton materialButton7;
         private MaterialSkin.Controls.MaterialButton materialButton6;
+        private MaterialSkin.Controls.MaterialCard materialCard2;
+        private MaterialSkin.Controls.MaterialButton materialButton5;
+        private MaterialSkin.Controls.MaterialButton materialButton8;
+        private MaterialSkin.Controls.MaterialButton materialButton9;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialButton materialButton10;
     }
 }

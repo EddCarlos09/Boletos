@@ -124,6 +124,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     frma6.Dispose();
                     break;
                 case 7:
+                    //frmAdministrador  frma7 = new frmAdministrador();
                     FormAdministrador frma7 = new FormAdministrador();
                     frma7.ShowDialog();
                     frma7.Dispose();
