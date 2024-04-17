@@ -24,7 +24,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 InitializeComponent();
-                //this.Inicializar();
+                this.Inicializar();
                 loadMaterial(this);
             }
             catch (Exception ex)
@@ -71,6 +71,12 @@ namespace CreativaSL.WinForm.VentaBoletos
         private int SegundosTiempoLiberacionBoletos = 0;
         private DateTime TiempoVenta = DateTime.Parse(DateTime.Now.ToShortDateString(), CultureInfo.CurrentCulture);
         private bool _stopTiempoVenta = false;
+
+        DataTable lstAuxDatosViajes = new DataTable();
+        List<string> dbFieldList = new List<string>();
+
+        DataTable lstAuxDatosVentaBoletos = new DataTable();
+        List<string> dbFieldList2 = new List<string>();
 
 
         V2Cliente ClienteActual;
@@ -451,9 +457,11 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.GridViewViajes.Items.Count > 0)
                 //if (this.GridViewViajes.Rows.Count > 0)
                 {
+                    this.GridViewViajes.Items[0].Selected = true; // Selecciona el primer elemento
+                    this.GridViewViajes.Select();
                     //this.GridViewViajes.CurrentCell = this.GridViewViajes.Items[0].SubItems[0];
                     //this.GridViewViajes.CurrentCell = this.GridViewViajes.Rows[0].Cells[0];
-                    this.GridViewViajes.Items[0].Selected = true;
+                    //this.GridViewViajes.Items[0].Selected = true;
                     //this.GridViewViajes.Rows[0].Selected = true;
                 }
                 GridViewViajes_SelectionChanged(this.GridViewViajes, new DataGridViewCellEventArgs(0, 0));
@@ -1225,14 +1233,16 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 //SERGIO
-                //this.GridViewViajes.SelectionChanged -= new System.EventHandler(this.GridViewViajes_SelectionChanged);
-                //this.GridViewViajes.DataSource = null;
-                //this.GridViewViajes.SelectionChanged += new System.EventHandler(this.GridViewViajes_SelectionChanged);
-                //if (this.GridViewViajes.Rows.Count > 0)
-                //{
-                //    this.GridViewViajes.CurrentCell = this.GridViewViajes.Rows[0].Cells[0];
-                //    this.GridViewViajes.Rows[0].Selected = true;
-                //}
+                this.GridViewViajes.SelectedIndexChanged -= new System.EventHandler(this.GridViewViajes_SelectionChanged);
+                this.GridViewViajes.Items.Clear();
+                this.GridViewViajes.SelectedIndexChanged += new System.EventHandler(this.GridViewViajes_SelectionChanged);
+                if (this.GridViewViajes.Items.Count > 0)
+                {
+                    this.GridViewViajes.Items[0].Selected = true; // Selecciona el primer elemento
+                    this.GridViewViajes.Select();
+                    //this.GridViewViajes.CurrentCell = this.GridViewViajes.Items[0].SubItems[0];
+                    //this.GridViewViajes.Items[0].Selected = true;
+                }
                 GridViewViajes_SelectionChanged(this.GridViewViajes, new DataGridViewCellEventArgs(0, 0));
 
                 this.cmbComboOrigen.SelectedIndex = 0;
@@ -1308,62 +1318,66 @@ namespace CreativaSL.WinForm.VentaBoletos
                 // SelectedRows por SelectedItems, Cells por SubItems y Value por Text **************
                 if (GridViewViajes.SelectedItems.Count > 0)
                 {
+                    var Names = new List<string> { "camion 0", "precioNormal1 1", "terminalOrigen 2", "fechaOrigenV 3", "horaOrigenV 4", "terminalDestino 5", "fechaDestinoV 6", "horaDestinoV 7", "tipoTerminal 8", "numAsiento 9", "precioInfantil1 10",
+                        "precioTerceraEdad1 11", "precioEspecial1 12", "precioNormal2 13", "precioInfantil2 14", "precioTerceraEdad2 15", "precioEspecial2 16", "nombreViaje 17", "numCamion 18", "tiempoMinutos 19", "numPiso 20",
+                        "id_tipoViaje 21", "id_tipoTerminal 22", "id_viaje 23", "id_ruta 24", "id_camion 25", "id_disenioCamion 26", "id_terminalOrigen 27", "id_terminalDestino 28", "id_terminalXruta 29", "id_tarifa 30",
+                        "ordenOrigen 31", "ordenDestino 32", "fechaOrigen 33", "horaOrigen 34", "numAsientos 35", "recorridoViaje 36", "id_tipoCamion 37" };
 
                     homes.IDBoleto = "";
-                    homes.NombreViaje = this.GridViewViajes.SelectedItems[0].SubItems["camion"].Text.ToString();
-                    homes.IDViaje = this.GridViewViajes.SelectedItems[0].SubItems["id_viaje"].Text.ToString();
-                    homes.FechaSalida = Convert.ToDateTime(this.GridViewViajes.SelectedItems[0].SubItems["fechaOrigen"].Text.ToString());
-                    homes.HoraSalida = this.GridViewViajes.SelectedItems[0].SubItems["horaOrigen"].Text.ToString();
-                    homes.IDTarifa = this.GridViewViajes.SelectedItems[0].SubItems["id_tarifa"].Text.ToString();
+                    homes.NombreViaje = this.GridViewViajes.SelectedItems[0].SubItems[17].Text.ToString();
+                    homes.IDViaje = this.GridViewViajes.SelectedItems[0].SubItems[23].Text.ToString();
+                    homes.FechaSalida = Convert.ToDateTime(this.GridViewViajes.SelectedItems[0].SubItems[33].Text.ToString());
+                    homes.HoraSalida = this.GridViewViajes.SelectedItems[0].SubItems[34].Text.ToString();
+                    homes.IDTarifa = this.GridViewViajes.SelectedItems[0].SubItems[30].Text.ToString();
                     homes.IDTipoTarifa = 0; //Se Vuelve A Pedir
-                    homes.NumCamion = this.GridViewViajes.SelectedItems[0].SubItems["numCamion"].Text.ToString();
-                    homes.TipoLinea = this.GridViewViajes.SelectedItems[0].SubItems["camion"].Text.ToString();
+                    homes.NumCamion = this.GridViewViajes.SelectedItems[0].SubItems[18].Text.ToString();
+                    homes.TipoLinea = this.GridViewViajes.SelectedItems[0].SubItems[0].Text.ToString();
                     homes.Asiento = 0; //Se Vuelve A Pedir
                     homes.DescripcionIndice = ""; //Se Vuelve A Pedir
-                    homes.IDCamionDiseño = this.GridViewViajes.SelectedItems[0].SubItems["id_disenioCamion"].Text.ToString();
-                    homes.FechaSalidaV = Convert.ToDateTime(this.GridViewViajes.SelectedItems[0].SubItems["fechaOrigenV"].Text.ToString());
-                    homes.HoraSalidaV = this.GridViewViajes.SelectedItems[0].SubItems["horaOrigenV"].Text.ToString();
-                    homes.FechaLLegadaV = Convert.ToDateTime(this.GridViewViajes.SelectedItems[0].SubItems["fechaDestinoV"].Text.ToString());
-                    homes.HoraLlegadaV = this.GridViewViajes.SelectedItems[0].SubItems["horaDestinoV"].Text.ToString();
-                    homes.Origen = this.GridViewViajes.SelectedItems[0].SubItems["terminalOrigen"].Text.ToString(); ;
-                    homes.Destino = this.GridViewViajes.SelectedItems[0].SubItems["terminalDestino"].Text.ToString();
+                    homes.IDCamionDiseño = this.GridViewViajes.SelectedItems[0].SubItems[26].Text.ToString();
+                    homes.FechaSalidaV = Convert.ToDateTime(this.GridViewViajes.SelectedItems[0].SubItems[3].Text.ToString());
+                    homes.HoraSalidaV = this.GridViewViajes.SelectedItems[0].SubItems[4].Text.ToString();
+                    homes.FechaLLegadaV = Convert.ToDateTime(this.GridViewViajes.SelectedItems[0].SubItems[6].Text.ToString());
+                    homes.HoraLlegadaV = this.GridViewViajes.SelectedItems[0].SubItems[7].Text.ToString();
+                    homes.Origen = this.GridViewViajes.SelectedItems[0].SubItems[2].Text.ToString(); ;
+                    homes.Destino = this.GridViewViajes.SelectedItems[0].SubItems[5].Text.ToString();
                     homes.Precio = 0F; //Se Vuelve A Pedir
                     homes.Descuentos = 0F; //Se Vuelve A Pedir
                     homes.TipoDescuento = 0; //Se Vuelve A Pedir
                     homes.Nombre = ""; //Se Vuelve A Pedir
-                    homes.precioNormal1 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems["precioNormal1"].Text.ToString(), NumberStyles.Currency);
-                    homes.precioInfantil1 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems["precioInfantil1"].Text.ToString(), NumberStyles.Currency);
-                    homes.precioTerceraEdad1 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems["precioTerceraEdad1"].Text.ToString(), NumberStyles.Currency);
-                    homes.precioEspecial1 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems["precioEspecial1"].Text.ToString(), NumberStyles.Currency);
-                    homes.precioNormal2 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems["precioNormal2"].Text.ToString(), NumberStyles.Currency);
-                    homes.precioInfantil2 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems["precioInfantil2"].Text.ToString(), NumberStyles.Currency);
-                    homes.precioTerceraEdad2 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems["precioTerceraEdad2"].Text.ToString(), NumberStyles.Currency);
-                    homes.precioEspecial2 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems["precioEspecial2"].Text.ToString(), NumberStyles.Currency);
+                    homes.precioNormal1 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems[1].Text.ToString(), NumberStyles.Currency);
+                    homes.precioInfantil1 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems[10].Text.ToString(), NumberStyles.Currency);
+                    homes.precioTerceraEdad1 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems[11].Text.ToString(), NumberStyles.Currency);
+                    homes.precioEspecial1 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems[12].Text.ToString(), NumberStyles.Currency);
+                    homes.precioNormal2 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems[13].Text.ToString(), NumberStyles.Currency);
+                    homes.precioInfantil2 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems[14].Text.ToString(), NumberStyles.Currency);
+                    homes.precioTerceraEdad2 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems[15].Text.ToString(), NumberStyles.Currency);
+                    homes.precioEspecial2 = float.Parse(this.GridViewViajes.SelectedItems[0].SubItems[16].Text.ToString(), NumberStyles.Currency);
                     homes.IDStatus = 0;
                     homes.Anticipo = 0F;
 
-                    homes.TipoTerminal = Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems["id_tipoTerminal"].Text.ToString());
-                    homes.NumAsientos = Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems["numAsientos"].Text.ToString());
+                    homes.TipoTerminal = Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems[22].Text.ToString());
+                    homes.NumAsientos = Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems[35].Text.ToString());
                     homes.NumAsientosDiponibles = 0;
                     homes.NumAsientosApartado = 0;
-                    homes.Recorrido = this.GridViewViajes.SelectedItems[0].SubItems["recorridoViaje"].Text.ToString().Replace(",", Environment.NewLine);
+                    homes.Recorrido = this.GridViewViajes.SelectedItems[0].SubItems[36].Text.ToString().Replace(",", Environment.NewLine);
                     homes.IDBoletoTransferencia = "";
-                    homes.OrdenOrigen = Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems["ordenOrigen"].Text.ToString());
-                    homes.OrdenDestino = Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems["ordenDestino"].Text.ToString());
+                    homes.OrdenOrigen = Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems[31].Text.ToString());
+                    homes.OrdenDestino = Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems[32].Text.ToString());
                     homes.PagoExtra = 0F;
 
                     this.numPisoActual = 1;
                     this.numPisoAux = 0;
 
-                    homes.id_tipoCamion = this.GridViewViajes.SelectedItems[0].SubItems["id_tipoCamion"].Text.ToString();
+                    homes.id_tipoCamion = this.GridViewViajes.SelectedItems[0].SubItems[37].Text.ToString();
 
-                    homes.numPiso = Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems["numPiso"].Text.ToString());
-                    if (Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems["numPiso"].Text.ToString()) == 1)
+                    homes.numPiso = Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems[20].Text.ToString());
+                    if (Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems[20].Text.ToString()) == 1)
                     {
                         this.btnPlantaBaja.Visible = true;
                         this.btnPlantaAlta.Visible = false;
                     }
-                    else if (Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems["numPiso"].Text.ToString()) == 2)
+                    else if (Convert.ToInt32(this.GridViewViajes.SelectedItems[0].SubItems[20].Text.ToString()) == 2)
                     {
                         this.btnPlantaBaja.Visible = true;
                         this.btnPlantaAlta.Visible = true;
@@ -1695,7 +1709,50 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 Home_Negocio catalogoNegocio = new Home_Negocio();
                 Home home = new Home();
+
+
+                this.GridViewViajes.Items.Clear();
+
+                DataTable lista = new DataTable();
+                //if (mostrarDatosBusqueda == true)
+                //{
+                //    lista = this.lstAuxBuscadorChoferes;
+                //}
+                //else
+                //{
                 catalogoNegocio.LlenarGridSalidas(Comun.Conexion, ref home, IDTerminalOrigen, IDTerminalDestino, FechaBusqueda);
+
+                //Chofer_Negocio.LlenarGridChofer(Comun.Conexion, ref Choferes);
+                lstAuxDatosViajes = home.Salidas;
+
+                lista = lstAuxDatosViajes;
+                //}
+
+                // Agregar filas al ListView
+                foreach (DataRow fila in lista.Rows)
+                {
+
+                    List<string> dataList = new List<string>();
+                    for (var i = 0; i < this.dbFieldList.Count; i++)
+                    {
+                        var field = this.dbFieldList[i];
+
+                        string nombre = fila[field].ToString();
+                        dataList.Add(nombre);
+                        if (i == 3)
+                        {
+                            // dataList.Add(" ");
+                        }
+                    }
+
+                    string[] valores = dataList.ToArray();
+
+                    ListViewItem item = new ListViewItem(valores);
+                    this.GridViewViajes.Items.Add(item);
+
+                }
+
+
                 //this.GridViewViajes.AutoGenerateColumns = false;
                 ////SERGIO
                 //this.GridViewViajes.SelectionChanged -= new System.EventHandler(this.GridViewViajes_SelectionChanged);
@@ -1706,7 +1763,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 //    this.GridViewViajes.CurrentCell = this.GridViewViajes.Items[0].Cells[0];
                 //    this.GridViewViajes.Items[0].Selected = true;
                 //}
-                GridViewViajes_SelectionChanged(this.GridViewViajes, new DataGridViewCellEventArgs(0, 0));
+                //GridViewViajes_SelectionChanged(this.GridViewViajes, new DataGridViewCellEventArgs(0, 0));
             }
             catch (Exception ex)
             {
@@ -1719,19 +1776,21 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 var Headertexts = new List<string> { "Tipo Línea", "Precio", "Origen", "Fecha", "Hr Salida", "Destino", "Fecha", "Hora", "Tipo Viaje" };
                 var Names = new List<string> { "camion", "precioNormal1", "terminalOrigen", "fechaOrigenV", "horaOrigenV", "terminalDestino", "fechaDestinoV", "horaDestinoV", "tipoTerminal", "numAsiento", "precioInfantil1", "precioTerceraEdad1", "precioEspecial1", "precioNormal2", "precioInfantil2", "precioTerceraEdad2", "precioEspecial2", "nombreViaje", "numCamion", "tiempoMinutos", "numPiso", "id_tipoViaje", "id_tipoTerminal", "id_viaje", "id_ruta", "id_camion", "id_disenioCamion", "id_terminalOrigen", "id_terminalDestino", "id_terminalXruta", "id_tarifa", "ordenOrigen", "ordenDestino", "fechaOrigen", "horaOrigen", "numAsientos", "recorridoViaje", "id_tipoCamion" };
+                this.dbFieldList = Names;
+
                 this.RecorrerForGridViewViajes(Headertexts, 1);
                 this.RecorrerForGridViewViajes(Names, 2);
                 this.RecorrerForGridViewViajes(Names, 3);
 
-                this.GridViewViajes.Columns[0].Width = 200;
-                this.GridViewViajes.Columns[1].Width = 100;
+                this.GridViewViajes.Columns[0].Width = 100;
+                this.GridViewViajes.Columns[1].Width = 80;
                 //this.GridViewViajes.Columns[1].DefaultCellStyle.Format = "c";
-                this.GridViewViajes.Columns[2].Width = 105;
-                this.GridViewViajes.Columns[3].Width = 90;
-                this.GridViewViajes.Columns[4].Width = 95;
-                this.GridViewViajes.Columns[5].Width = 105;
-                this.GridViewViajes.Columns[6].Width = 90;
-                this.GridViewViajes.Columns[7].Width = 95;
+                this.GridViewViajes.Columns[2].Width = 70;
+                this.GridViewViajes.Columns[3].Width = 70;
+                this.GridViewViajes.Columns[4].Width = 70;
+                this.GridViewViajes.Columns[5].Width = 100;
+                this.GridViewViajes.Columns[6].Width = 100;
+                this.GridViewViajes.Columns[7].Width = 100;
                 this.GridViewViajes.Columns[8].Width = 100;
                 //this.GridViewViajes.Columns[9].Visible = false;
                 //this.GridViewViajes.Columns[10].Visible = false;
@@ -1761,10 +1820,10 @@ namespace CreativaSL.WinForm.VentaBoletos
                 //this.GridViewViajes.Columns[34].Visible = false;
                 //this.GridViewViajes.Columns[35].Visible = false;
 
-                for (int i = 35; i >= 9; i--)
-                {
-                    this.GridViewViajes.Columns.RemoveAt(i);
-                }
+                //for (int i = 35; i >= 9; i--)
+                //{
+                //    this.GridViewViajes.Columns.RemoveAt(i);
+                //}
 
             }
             catch (Exception ex)
@@ -1777,11 +1836,12 @@ namespace CreativaSL.WinForm.VentaBoletos
             for (var index = 0; index < campos.Count; index++)
             {
                 if (opcion == 1)
-                    this.HeaderTextGridViewViajes(index, campos[index]);
-                else if (opcion == 2)
-                    this.NameGridViewViajes(index, campos[index]);
-                else if (opcion == 3)
-                    this.DataPropertyNameGridViewViajes(index, campos[index]);
+                    this.GridViewViajes.Columns.Add(campos[index]);
+                    //this.HeaderTextGridViewViajes(index, campos[index]);
+                //else if (opcion == 2)
+                //    this.NameGridViewViajes(index, campos[index]);
+                //else if (opcion == 3)
+                //    this.DataPropertyNameGridViewViajes(index, campos[index]);
             }
         }
         private void HeaderTextGridViewViajes(int numColum, string nombre)
@@ -1875,9 +1935,10 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 var Headertexts = new List<string> { "Nombre_Cliente", "Fecha Nac", "Teléfono", "#", "Tipo Línea", "Origen", "Fec Salida", "Hr Salida", "Destino", "Precio", "Desc" };
                 var Names = new List<string> { "Nombre", "FechaNacimiento", "NumeroTelefono", "Asiento", "TipoLinea", "Origen", "FechaSalidaV2", "HoraSalidaV", "Destino", "Precio", "Descuentos", "DescripcionIndice", "IDViaje", "IDCamionDiseño", "NumCamion", "TipoLinea", "FechaLLegadaV", "FechaLLegada2V", "HoraLLegadaV", "TipoDescuento", "IDBoleto", "FechaSalidaV", "IDTarifa", "IDTipoTarifa", "IDStatus", "Anticipo", "IDBoletoTransferencia", "FechaSalida", "HoraSalida", "PagoExtra", "IDTipoCamion" };
+                this.dbFieldList2 = Names;
                 this.RecorrerForGridViewVentaBoletos(Headertexts, 1);
-                this.RecorrerForGridViewVentaBoletos(Names, 2);
-                this.RecorrerForGridViewVentaBoletos(Names, 3);
+                //this.RecorrerForGridViewVentaBoletos(Names, 2);
+                //this.RecorrerForGridViewVentaBoletos(Names, 3);
                 this.GridViewVentaBoletos.Columns[0].Width = 400;
                 this.GridViewVentaBoletos.Columns[1].Width = 240;
                 this.GridViewVentaBoletos.Columns[2].Width = 120;
@@ -1913,10 +1974,10 @@ namespace CreativaSL.WinForm.VentaBoletos
                 //this.GridViewVentaBoletos.Columns[29].Visible = false;
                 //this.GridViewVentaBoletos.Columns[30].Visible = false;
 
-                for (int i = 30; i >= 10; i--)
-                {
-                    this.GridViewVentaBoletos.Columns.RemoveAt(i);
-                }
+                //for (int i = 30; i >= 10; i--)
+                //{
+                //    this.GridViewVentaBoletos.Columns.RemoveAt(i);
+                //}
 
             }
             catch (Exception ex)
@@ -1929,11 +1990,12 @@ namespace CreativaSL.WinForm.VentaBoletos
             for (var index = 0; index < campos.Count; index++)
             {
                 if (opcion == 1)
-                    this.HeaderTextGridViewVentaBoletos(index, campos[index]);
-                else if (opcion == 2)
-                    this.NameGridViewVentaBoletos(index, campos[index]);
-                else if (opcion == 3)
-                    this.DataPropertyNameGridViewVentaBoletos(index, campos[index]);
+                    this.GridViewVentaBoletos.Columns.Add(campos[index]);
+                    //this.HeaderTextGridViewVentaBoletos(index, campos[index]);
+                //else if (opcion == 2)
+                //    this.NameGridViewVentaBoletos(index, campos[index]);
+                //else if (opcion == 3)
+                //    this.DataPropertyNameGridViewVentaBoletos(index, campos[index]);
             }
         }
         private void HeaderTextGridViewVentaBoletos(int numColum, string nombre)

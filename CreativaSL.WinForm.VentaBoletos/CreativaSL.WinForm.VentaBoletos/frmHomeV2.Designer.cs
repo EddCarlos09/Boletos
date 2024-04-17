@@ -886,6 +886,7 @@
             this.btn_CancelarBuscarViajes.Size = new System.Drawing.Size(67, 50);
             this.btn_CancelarBuscarViajes.TabIndex = 44;
             this.btn_CancelarBuscarViajes.UseVisualStyleBackColor = false;
+            this.btn_CancelarBuscarViajes.Click += new System.EventHandler(this.btn_CancelarBuscarViajes_Click);
             // 
             // btn_BuscarViajes
             // 
@@ -898,6 +899,7 @@
             this.btn_BuscarViajes.Size = new System.Drawing.Size(67, 50);
             this.btn_BuscarViajes.TabIndex = 43;
             this.btn_BuscarViajes.UseVisualStyleBackColor = false;
+            this.btn_BuscarViajes.Click += new System.EventHandler(this.btn_BuscarViajes_Click);
             // 
             // dtmFechaSalida
             // 
