@@ -29,49 +29,88 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmApartadosV2));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle109 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle110 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle100 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle101 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle102 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle103 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle104 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle105 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle106 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle107 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle108 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnPagoOnline = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnPagoEfectivo = new System.Windows.Forms.Button();
+            this.btnCancelarB = new System.Windows.Forms.Button();
+            this.btnCancelarA = new System.Windows.Forms.Button();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.materialTextBox24 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialTextBox23 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialTextBox22 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialCheckbox4 = new MaterialSkin.Controls.MaterialCheckbox();
-            this.materialCheckbox3 = new MaterialSkin.Controls.MaterialCheckbox();
-            this.materialCheckbox2 = new MaterialSkin.Controls.MaterialCheckbox();
-            this.materialCheckbox1 = new MaterialSkin.Controls.MaterialCheckbox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtNombreCliente = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtFolioBoleto = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txt_folioVenta = new MaterialSkin.Controls.MaterialTextBox2();
+            this.chkNombre = new MaterialSkin.Controls.MaterialCheckbox();
+            this.chkFolio = new MaterialSkin.Controls.MaterialCheckbox();
+            this.chkFecha = new MaterialSkin.Controls.MaterialCheckbox();
+            this.chkFolioVenta = new MaterialSkin.Controls.MaterialCheckbox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.dgvdatosboleto = new System.Windows.Forms.DataGridView();
+            this.id_boleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_ventadetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.folioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodigoBarra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Viaje = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Origen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Destino = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_salidaV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hora_salidaV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombrePersona = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.asiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidad_venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.boletocosto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vdcosto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iva = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pendiente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Transf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Usu_Ins = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Usu_Mod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cajero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bloqueoCancelacionMonedero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bloqueoCancelacionPorFormaDePago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialCard1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboleto)).BeginInit();
             this.SuspendLayout();
             // 
             // materialCard1
             // 
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard1.Controls.Add(this.dataGridView1);
+            this.materialCard1.Controls.Add(this.dgvdatosboleto);
+            this.materialCard1.Controls.Add(this.dtpFecha);
             this.materialCard1.Controls.Add(this.materialLabel3);
-            this.materialCard1.Controls.Add(this.button6);
-            this.materialCard1.Controls.Add(this.button5);
-            this.materialCard1.Controls.Add(this.button4);
-            this.materialCard1.Controls.Add(this.button3);
-            this.materialCard1.Controls.Add(this.button2);
+            this.materialCard1.Controls.Add(this.btnPagoOnline);
+            this.materialCard1.Controls.Add(this.btnSalir);
+            this.materialCard1.Controls.Add(this.btnPagoEfectivo);
+            this.materialCard1.Controls.Add(this.btnCancelarB);
+            this.materialCard1.Controls.Add(this.btnCancelarA);
             this.materialCard1.Controls.Add(this.materialLabel2);
-            this.materialCard1.Controls.Add(this.button1);
-            this.materialCard1.Controls.Add(this.materialTextBox24);
-            this.materialCard1.Controls.Add(this.materialTextBox23);
-            this.materialCard1.Controls.Add(this.materialTextBox22);
-            this.materialCard1.Controls.Add(this.materialTextBox21);
-            this.materialCard1.Controls.Add(this.materialCheckbox4);
-            this.materialCard1.Controls.Add(this.materialCheckbox3);
-            this.materialCard1.Controls.Add(this.materialCheckbox2);
-            this.materialCard1.Controls.Add(this.materialCheckbox1);
+            this.materialCard1.Controls.Add(this.btnBuscar);
+            this.materialCard1.Controls.Add(this.txtNombreCliente);
+            this.materialCard1.Controls.Add(this.txtFolioBoleto);
+            this.materialCard1.Controls.Add(this.txt_folioVenta);
+            this.materialCard1.Controls.Add(this.chkNombre);
+            this.materialCard1.Controls.Add(this.chkFolio);
+            this.materialCard1.Controls.Add(this.chkFecha);
+            this.materialCard1.Controls.Add(this.chkFolioVenta);
             this.materialCard1.Controls.Add(this.materialLabel1);
             this.materialCard1.Depth = 0;
             this.materialCard1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -84,19 +123,13 @@
             this.materialCard1.Size = new System.Drawing.Size(1235, 751);
             this.materialCard1.TabIndex = 1;
             // 
-            // dataGridView1
+            // dtpFecha
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(60, 394);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1119, 320);
-            this.dataGridView1.TabIndex = 18;
+            this.dtpFecha.Location = new System.Drawing.Point(225, 140);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(250, 22);
+            this.dtpFecha.TabIndex = 19;
+            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
             // materialLabel3
             // 
@@ -110,70 +143,75 @@
             this.materialLabel3.TabIndex = 17;
             this.materialLabel3.Text = "Resultado Busqueda";
             // 
-            // button6
+            // btnPagoOnline
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(752, 180);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(110, 103);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "Pago Online";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnPagoOnline.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnPagoOnline.Image = ((System.Drawing.Image)(resources.GetObject("btnPagoOnline.Image")));
+            this.btnPagoOnline.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPagoOnline.Location = new System.Drawing.Point(752, 180);
+            this.btnPagoOnline.Name = "btnPagoOnline";
+            this.btnPagoOnline.Size = new System.Drawing.Size(110, 103);
+            this.btnPagoOnline.TabIndex = 16;
+            this.btnPagoOnline.Text = "Pago Online";
+            this.btnPagoOnline.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPagoOnline.UseVisualStyleBackColor = true;
+            this.btnPagoOnline.Click += new System.EventHandler(this.btnPagoOnline_Click);
             // 
-            // button5
+            // btnSalir
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(892, 180);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(110, 103);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "Salir";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSalir.Location = new System.Drawing.Point(892, 180);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(110, 103);
+            this.btnSalir.TabIndex = 15;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // button4
+            // btnPagoEfectivo
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(1026, 60);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(110, 102);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Pago Efectivo";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnPagoEfectivo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnPagoEfectivo.Image = ((System.Drawing.Image)(resources.GetObject("btnPagoEfectivo.Image")));
+            this.btnPagoEfectivo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPagoEfectivo.Location = new System.Drawing.Point(1033, 63);
+            this.btnPagoEfectivo.Name = "btnPagoEfectivo";
+            this.btnPagoEfectivo.Size = new System.Drawing.Size(110, 102);
+            this.btnPagoEfectivo.TabIndex = 14;
+            this.btnPagoEfectivo.Text = "Pago Efectivo";
+            this.btnPagoEfectivo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPagoEfectivo.UseVisualStyleBackColor = true;
+            this.btnPagoEfectivo.Click += new System.EventHandler(this.btnPagoEfectivo_Click);
             // 
-            // button3
+            // btnCancelarB
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(892, 60);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 102);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Canc. B";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCancelarB.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnCancelarB.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarB.Image")));
+            this.btnCancelarB.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelarB.Location = new System.Drawing.Point(892, 60);
+            this.btnCancelarB.Name = "btnCancelarB";
+            this.btnCancelarB.Size = new System.Drawing.Size(110, 102);
+            this.btnCancelarB.TabIndex = 13;
+            this.btnCancelarB.Text = "Canc. B";
+            this.btnCancelarB.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCancelarB.UseVisualStyleBackColor = true;
+            this.btnCancelarB.Click += new System.EventHandler(this.btnCancelarB_Click);
             // 
-            // button2
+            // btnCancelarA
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(752, 60);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 102);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Canc. A";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancelarA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnCancelarA.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarA.Image")));
+            this.btnCancelarA.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelarA.Location = new System.Drawing.Point(752, 60);
+            this.btnCancelarA.Name = "btnCancelarA";
+            this.btnCancelarA.Size = new System.Drawing.Size(110, 102);
+            this.btnCancelarA.TabIndex = 12;
+            this.btnCancelarA.Text = "Canc. A";
+            this.btnCancelarA.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCancelarA.UseVisualStyleBackColor = true;
+            this.btnCancelarA.Click += new System.EventHandler(this.btnCancelarA_Click);
             // 
             // materialLabel2
             // 
@@ -188,203 +226,179 @@
             this.materialLabel2.TabIndex = 11;
             this.materialLabel2.Text = "Acciones";
             // 
-            // button1
+            // btnBuscar
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(543, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 94);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Buscar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBuscar.Location = new System.Drawing.Point(543, 115);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(105, 94);
+            this.btnBuscar.TabIndex = 10;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // materialTextBox24
+            // txtNombreCliente
             // 
-            this.materialTextBox24.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialTextBox24.AnimateReadOnly = false;
-            this.materialTextBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox24.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox24.Depth = 0;
-            this.materialTextBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox24.HideSelection = true;
-            this.materialTextBox24.LeadingIcon = null;
-            this.materialTextBox24.Location = new System.Drawing.Point(225, 261);
-            this.materialTextBox24.MaxLength = 32767;
-            this.materialTextBox24.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox24.Name = "materialTextBox24";
-            this.materialTextBox24.PasswordChar = '\0';
-            this.materialTextBox24.PrefixSuffixText = null;
-            this.materialTextBox24.ReadOnly = false;
-            this.materialTextBox24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox24.SelectedText = "";
-            this.materialTextBox24.SelectionLength = 0;
-            this.materialTextBox24.SelectionStart = 0;
-            this.materialTextBox24.ShortcutsEnabled = true;
-            this.materialTextBox24.Size = new System.Drawing.Size(250, 48);
-            this.materialTextBox24.TabIndex = 9;
-            this.materialTextBox24.TabStop = false;
-            this.materialTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox24.TrailingIcon = null;
-            this.materialTextBox24.UseSystemPasswordChar = false;
+            this.txtNombreCliente.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtNombreCliente.AnimateReadOnly = false;
+            this.txtNombreCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtNombreCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNombreCliente.Depth = 0;
+            this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreCliente.HideSelection = true;
+            this.txtNombreCliente.LeadingIcon = null;
+            this.txtNombreCliente.Location = new System.Drawing.Point(225, 261);
+            this.txtNombreCliente.MaxLength = 32767;
+            this.txtNombreCliente.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.PasswordChar = '\0';
+            this.txtNombreCliente.PrefixSuffixText = null;
+            this.txtNombreCliente.ReadOnly = false;
+            this.txtNombreCliente.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNombreCliente.SelectedText = "";
+            this.txtNombreCliente.SelectionLength = 0;
+            this.txtNombreCliente.SelectionStart = 0;
+            this.txtNombreCliente.ShortcutsEnabled = true;
+            this.txtNombreCliente.Size = new System.Drawing.Size(250, 48);
+            this.txtNombreCliente.TabIndex = 9;
+            this.txtNombreCliente.TabStop = false;
+            this.txtNombreCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNombreCliente.TrailingIcon = null;
+            this.txtNombreCliente.UseSystemPasswordChar = false;
             // 
-            // materialTextBox23
+            // txtFolioBoleto
             // 
-            this.materialTextBox23.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialTextBox23.AnimateReadOnly = false;
-            this.materialTextBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox23.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox23.Depth = 0;
-            this.materialTextBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox23.HideSelection = true;
-            this.materialTextBox23.LeadingIcon = null;
-            this.materialTextBox23.Location = new System.Drawing.Point(225, 193);
-            this.materialTextBox23.MaxLength = 32767;
-            this.materialTextBox23.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox23.Name = "materialTextBox23";
-            this.materialTextBox23.PasswordChar = '\0';
-            this.materialTextBox23.PrefixSuffixText = null;
-            this.materialTextBox23.ReadOnly = false;
-            this.materialTextBox23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox23.SelectedText = "";
-            this.materialTextBox23.SelectionLength = 0;
-            this.materialTextBox23.SelectionStart = 0;
-            this.materialTextBox23.ShortcutsEnabled = true;
-            this.materialTextBox23.Size = new System.Drawing.Size(250, 48);
-            this.materialTextBox23.TabIndex = 8;
-            this.materialTextBox23.TabStop = false;
-            this.materialTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox23.TrailingIcon = null;
-            this.materialTextBox23.UseSystemPasswordChar = false;
+            this.txtFolioBoleto.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtFolioBoleto.AnimateReadOnly = false;
+            this.txtFolioBoleto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtFolioBoleto.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtFolioBoleto.Depth = 0;
+            this.txtFolioBoleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtFolioBoleto.HideSelection = true;
+            this.txtFolioBoleto.LeadingIcon = null;
+            this.txtFolioBoleto.Location = new System.Drawing.Point(225, 193);
+            this.txtFolioBoleto.MaxLength = 32767;
+            this.txtFolioBoleto.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtFolioBoleto.Name = "txtFolioBoleto";
+            this.txtFolioBoleto.PasswordChar = '\0';
+            this.txtFolioBoleto.PrefixSuffixText = null;
+            this.txtFolioBoleto.ReadOnly = false;
+            this.txtFolioBoleto.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtFolioBoleto.SelectedText = "";
+            this.txtFolioBoleto.SelectionLength = 0;
+            this.txtFolioBoleto.SelectionStart = 0;
+            this.txtFolioBoleto.ShortcutsEnabled = true;
+            this.txtFolioBoleto.Size = new System.Drawing.Size(250, 48);
+            this.txtFolioBoleto.TabIndex = 8;
+            this.txtFolioBoleto.TabStop = false;
+            this.txtFolioBoleto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtFolioBoleto.TrailingIcon = null;
+            this.txtFolioBoleto.UseSystemPasswordChar = false;
             // 
-            // materialTextBox22
+            // txt_folioVenta
             // 
-            this.materialTextBox22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialTextBox22.AnimateReadOnly = false;
-            this.materialTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox22.Depth = 0;
-            this.materialTextBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox22.HideSelection = true;
-            this.materialTextBox22.LeadingIcon = null;
-            this.materialTextBox22.Location = new System.Drawing.Point(225, 125);
-            this.materialTextBox22.MaxLength = 32767;
-            this.materialTextBox22.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox22.Name = "materialTextBox22";
-            this.materialTextBox22.PasswordChar = '\0';
-            this.materialTextBox22.PrefixSuffixText = null;
-            this.materialTextBox22.ReadOnly = false;
-            this.materialTextBox22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox22.SelectedText = "";
-            this.materialTextBox22.SelectionLength = 0;
-            this.materialTextBox22.SelectionStart = 0;
-            this.materialTextBox22.ShortcutsEnabled = true;
-            this.materialTextBox22.Size = new System.Drawing.Size(250, 48);
-            this.materialTextBox22.TabIndex = 7;
-            this.materialTextBox22.TabStop = false;
-            this.materialTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox22.TrailingIcon = null;
-            this.materialTextBox22.UseSystemPasswordChar = false;
+            this.txt_folioVenta.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_folioVenta.AnimateReadOnly = false;
+            this.txt_folioVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txt_folioVenta.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_folioVenta.Depth = 0;
+            this.txt_folioVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_folioVenta.HideSelection = true;
+            this.txt_folioVenta.LeadingIcon = null;
+            this.txt_folioVenta.Location = new System.Drawing.Point(225, 60);
+            this.txt_folioVenta.MaxLength = 32767;
+            this.txt_folioVenta.MouseState = MaterialSkin.MouseState.OUT;
+            this.txt_folioVenta.Name = "txt_folioVenta";
+            this.txt_folioVenta.PasswordChar = '\0';
+            this.txt_folioVenta.PrefixSuffixText = null;
+            this.txt_folioVenta.ReadOnly = false;
+            this.txt_folioVenta.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_folioVenta.SelectedText = "";
+            this.txt_folioVenta.SelectionLength = 0;
+            this.txt_folioVenta.SelectionStart = 0;
+            this.txt_folioVenta.ShortcutsEnabled = true;
+            this.txt_folioVenta.Size = new System.Drawing.Size(250, 48);
+            this.txt_folioVenta.TabIndex = 6;
+            this.txt_folioVenta.TabStop = false;
+            this.txt_folioVenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_folioVenta.TrailingIcon = null;
+            this.txt_folioVenta.UseSystemPasswordChar = false;
             // 
-            // materialTextBox21
+            // chkNombre
             // 
-            this.materialTextBox21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialTextBox21.AnimateReadOnly = false;
-            this.materialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox21.Depth = 0;
-            this.materialTextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox21.HideSelection = true;
-            this.materialTextBox21.LeadingIcon = null;
-            this.materialTextBox21.Location = new System.Drawing.Point(225, 60);
-            this.materialTextBox21.MaxLength = 32767;
-            this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox21.Name = "materialTextBox21";
-            this.materialTextBox21.PasswordChar = '\0';
-            this.materialTextBox21.PrefixSuffixText = null;
-            this.materialTextBox21.ReadOnly = false;
-            this.materialTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox21.SelectedText = "";
-            this.materialTextBox21.SelectionLength = 0;
-            this.materialTextBox21.SelectionStart = 0;
-            this.materialTextBox21.ShortcutsEnabled = true;
-            this.materialTextBox21.Size = new System.Drawing.Size(250, 48);
-            this.materialTextBox21.TabIndex = 6;
-            this.materialTextBox21.TabStop = false;
-            this.materialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox21.TrailingIcon = null;
-            this.materialTextBox21.UseSystemPasswordChar = false;
+            this.chkNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chkNombre.AutoSize = true;
+            this.chkNombre.Depth = 0;
+            this.chkNombre.Location = new System.Drawing.Point(42, 261);
+            this.chkNombre.Margin = new System.Windows.Forms.Padding(0);
+            this.chkNombre.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.chkNombre.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chkNombre.Name = "chkNombre";
+            this.chkNombre.ReadOnly = false;
+            this.chkNombre.Ripple = true;
+            this.chkNombre.Size = new System.Drawing.Size(95, 37);
+            this.chkNombre.TabIndex = 5;
+            this.chkNombre.Text = "Nombre:";
+            this.chkNombre.UseVisualStyleBackColor = true;
+            this.chkNombre.CheckedChanged += new System.EventHandler(this.chkNombre_CheckedChanged);
             // 
-            // materialCheckbox4
+            // chkFolio
             // 
-            this.materialCheckbox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialCheckbox4.AutoSize = true;
-            this.materialCheckbox4.Depth = 0;
-            this.materialCheckbox4.Location = new System.Drawing.Point(42, 261);
-            this.materialCheckbox4.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckbox4.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckbox4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckbox4.Name = "materialCheckbox4";
-            this.materialCheckbox4.ReadOnly = false;
-            this.materialCheckbox4.Ripple = true;
-            this.materialCheckbox4.Size = new System.Drawing.Size(95, 37);
-            this.materialCheckbox4.TabIndex = 5;
-            this.materialCheckbox4.Text = "Nombre:";
-            this.materialCheckbox4.UseVisualStyleBackColor = true;
+            this.chkFolio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chkFolio.AutoSize = true;
+            this.chkFolio.Depth = 0;
+            this.chkFolio.Location = new System.Drawing.Point(42, 193);
+            this.chkFolio.Margin = new System.Windows.Forms.Padding(0);
+            this.chkFolio.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.chkFolio.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chkFolio.Name = "chkFolio";
+            this.chkFolio.ReadOnly = false;
+            this.chkFolio.Ripple = true;
+            this.chkFolio.Size = new System.Drawing.Size(123, 37);
+            this.chkFolio.TabIndex = 4;
+            this.chkFolio.Text = "Folio Boleto:";
+            this.chkFolio.UseVisualStyleBackColor = true;
+            this.chkFolio.CheckedChanged += new System.EventHandler(this.chkFolio_CheckedChanged);
             // 
-            // materialCheckbox3
+            // chkFecha
             // 
-            this.materialCheckbox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialCheckbox3.AutoSize = true;
-            this.materialCheckbox3.Depth = 0;
-            this.materialCheckbox3.Location = new System.Drawing.Point(42, 193);
-            this.materialCheckbox3.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckbox3.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckbox3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckbox3.Name = "materialCheckbox3";
-            this.materialCheckbox3.ReadOnly = false;
-            this.materialCheckbox3.Ripple = true;
-            this.materialCheckbox3.Size = new System.Drawing.Size(123, 37);
-            this.materialCheckbox3.TabIndex = 4;
-            this.materialCheckbox3.Text = "Folio Boleto:";
-            this.materialCheckbox3.UseVisualStyleBackColor = true;
+            this.chkFecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chkFecha.AutoSize = true;
+            this.chkFecha.Depth = 0;
+            this.chkFecha.Location = new System.Drawing.Point(42, 125);
+            this.chkFecha.Margin = new System.Windows.Forms.Padding(0);
+            this.chkFecha.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.chkFecha.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chkFecha.Name = "chkFecha";
+            this.chkFecha.ReadOnly = false;
+            this.chkFecha.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.chkFecha.Ripple = true;
+            this.chkFecha.Size = new System.Drawing.Size(82, 37);
+            this.chkFecha.TabIndex = 3;
+            this.chkFecha.Text = "Fecha:";
+            this.chkFecha.UseVisualStyleBackColor = true;
+            this.chkFecha.CheckedChanged += new System.EventHandler(this.chkFecha_CheckedChanged);
             // 
-            // materialCheckbox2
+            // chkFolioVenta
             // 
-            this.materialCheckbox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialCheckbox2.AutoSize = true;
-            this.materialCheckbox2.Depth = 0;
-            this.materialCheckbox2.Location = new System.Drawing.Point(42, 125);
-            this.materialCheckbox2.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckbox2.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckbox2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckbox2.Name = "materialCheckbox2";
-            this.materialCheckbox2.ReadOnly = false;
-            this.materialCheckbox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialCheckbox2.Ripple = true;
-            this.materialCheckbox2.Size = new System.Drawing.Size(82, 37);
-            this.materialCheckbox2.TabIndex = 3;
-            this.materialCheckbox2.Text = "Fecha:";
-            this.materialCheckbox2.UseVisualStyleBackColor = true;
-            // 
-            // materialCheckbox1
-            // 
-            this.materialCheckbox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialCheckbox1.AutoSize = true;
-            this.materialCheckbox1.Depth = 0;
-            this.materialCheckbox1.Location = new System.Drawing.Point(42, 60);
-            this.materialCheckbox1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckbox1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckbox1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckbox1.Name = "materialCheckbox1";
-            this.materialCheckbox1.ReadOnly = false;
-            this.materialCheckbox1.Ripple = true;
-            this.materialCheckbox1.Size = new System.Drawing.Size(119, 37);
-            this.materialCheckbox1.TabIndex = 2;
-            this.materialCheckbox1.Text = "Folio Venta:";
-            this.materialCheckbox1.UseVisualStyleBackColor = true;
+            this.chkFolioVenta.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chkFolioVenta.AutoSize = true;
+            this.chkFolioVenta.Depth = 0;
+            this.chkFolioVenta.Location = new System.Drawing.Point(42, 60);
+            this.chkFolioVenta.Margin = new System.Windows.Forms.Padding(0);
+            this.chkFolioVenta.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.chkFolioVenta.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chkFolioVenta.Name = "chkFolioVenta";
+            this.chkFolioVenta.ReadOnly = false;
+            this.chkFolioVenta.Ripple = true;
+            this.chkFolioVenta.Size = new System.Drawing.Size(119, 37);
+            this.chkFolioVenta.TabIndex = 2;
+            this.chkFolioVenta.Text = "Folio Venta:";
+            this.chkFolioVenta.UseVisualStyleBackColor = true;
+            //this.chkFolioVenta.CheckedChanged += new System.EventHandler(this.chkFolioVenta_CheckedChanged);
             // 
             // materialLabel1
             // 
@@ -399,6 +413,395 @@
             this.materialLabel1.TabIndex = 1;
             this.materialLabel1.Text = "Busqueda";
             // 
+            // dgvdatosboleto
+            // 
+            this.dgvdatosboleto.AllowUserToAddRows = false;
+            this.dgvdatosboleto.AllowUserToDeleteRows = false;
+            this.dgvdatosboleto.AllowUserToResizeColumns = false;
+            this.dgvdatosboleto.AllowUserToResizeRows = false;
+            this.dgvdatosboleto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvdatosboleto.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvdatosboleto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvdatosboleto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_boleto,
+            this.id_ventadetalle,
+            this.folioVenta,
+            this.CodigoBarra,
+            this.Viaje,
+            this.Origen,
+            this.Destino,
+            this.fecha_salidaV,
+            this.hora_salidaV,
+            this.NombrePersona,
+            this.asiento,
+            this.fechaNacimiento,
+            this.numeroTelefono,
+            this.cantidad_venta,
+            this.boletocosto,
+            this.vdcosto,
+            this.iva,
+            this.pago,
+            this.pendiente,
+            this.Transf,
+            this.Usu_Ins,
+            this.Usu_Mod,
+            this.precio,
+            this.id_venta,
+            this.id_cliente,
+            this.cajero,
+            this.bloqueoCancelacionMonedero,
+            this.bloqueoCancelacionPorFormaDePago});
+            dataGridViewCellStyle109.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle109.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle109.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle109.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle109.Format = "C2";
+            dataGridViewCellStyle109.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle109.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle109.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdatosboleto.DefaultCellStyle = dataGridViewCellStyle109;
+            this.dgvdatosboleto.Location = new System.Drawing.Point(42, 397);
+            this.dgvdatosboleto.MultiSelect = false;
+            this.dgvdatosboleto.Name = "dgvdatosboleto";
+            this.dgvdatosboleto.ReadOnly = true;
+            this.dgvdatosboleto.RowHeadersWidth = 51;
+            dataGridViewCellStyle110.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dgvdatosboleto.RowsDefaultCellStyle = dataGridViewCellStyle110;
+            this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvdatosboleto.Size = new System.Drawing.Size(1113, 337);
+            this.dgvdatosboleto.TabIndex = 20;
+            // 
+            // id_boleto
+            // 
+            this.id_boleto.DataPropertyName = "id_boleto";
+            this.id_boleto.HeaderText = "id_boleto";
+            this.id_boleto.MinimumWidth = 6;
+            this.id_boleto.Name = "id_boleto";
+            this.id_boleto.ReadOnly = true;
+            this.id_boleto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.id_boleto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id_boleto.Visible = false;
+            this.id_boleto.Width = 80;
+            // 
+            // id_ventadetalle
+            // 
+            this.id_ventadetalle.DataPropertyName = "id_ventadetalle";
+            this.id_ventadetalle.HeaderText = "id_ventadetalle";
+            this.id_ventadetalle.MinimumWidth = 6;
+            this.id_ventadetalle.Name = "id_ventadetalle";
+            this.id_ventadetalle.ReadOnly = true;
+            this.id_ventadetalle.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.id_ventadetalle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id_ventadetalle.Visible = false;
+            this.id_ventadetalle.Width = 122;
+            // 
+            // folioVenta
+            // 
+            this.folioVenta.DataPropertyName = "folioVenta";
+            this.folioVenta.HeaderText = "Folio Venta";
+            this.folioVenta.MinimumWidth = 6;
+            this.folioVenta.Name = "folioVenta";
+            this.folioVenta.ReadOnly = true;
+            this.folioVenta.Width = 104;
+            // 
+            // CodigoBarra
+            // 
+            this.CodigoBarra.DataPropertyName = "CodigoBarra";
+            this.CodigoBarra.HeaderText = "Folio Boleto";
+            this.CodigoBarra.MinimumWidth = 6;
+            this.CodigoBarra.Name = "CodigoBarra";
+            this.CodigoBarra.ReadOnly = true;
+            this.CodigoBarra.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CodigoBarra.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.CodigoBarra.Width = 85;
+            // 
+            // Viaje
+            // 
+            this.Viaje.DataPropertyName = "nombreViaje";
+            this.Viaje.HeaderText = "Línea";
+            this.Viaje.MinimumWidth = 6;
+            this.Viaje.Name = "Viaje";
+            this.Viaje.ReadOnly = true;
+            this.Viaje.Width = 69;
+            // 
+            // Origen
+            // 
+            this.Origen.DataPropertyName = "Origen";
+            this.Origen.HeaderText = "Origen";
+            this.Origen.MinimumWidth = 6;
+            this.Origen.Name = "Origen";
+            this.Origen.ReadOnly = true;
+            this.Origen.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Origen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Origen.Width = 53;
+            // 
+            // Destino
+            // 
+            this.Destino.DataPropertyName = "Destino";
+            this.Destino.FillWeight = 85F;
+            this.Destino.HeaderText = "Destino";
+            this.Destino.MinimumWidth = 6;
+            this.Destino.Name = "Destino";
+            this.Destino.ReadOnly = true;
+            this.Destino.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Destino.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Destino.Width = 59;
+            // 
+            // fecha_salidaV
+            // 
+            this.fecha_salidaV.DataPropertyName = "fecha_salidaV";
+            dataGridViewCellStyle100.Format = "d";
+            dataGridViewCellStyle100.NullValue = null;
+            this.fecha_salidaV.DefaultCellStyle = dataGridViewCellStyle100;
+            this.fecha_salidaV.HeaderText = "Fecha";
+            this.fecha_salidaV.MinimumWidth = 6;
+            this.fecha_salidaV.Name = "fecha_salidaV";
+            this.fecha_salidaV.ReadOnly = true;
+            this.fecha_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.fecha_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.fecha_salidaV.Width = 51;
+            // 
+            // hora_salidaV
+            // 
+            this.hora_salidaV.DataPropertyName = "hora_salidaV";
+            this.hora_salidaV.HeaderText = "Hora";
+            this.hora_salidaV.MinimumWidth = 6;
+            this.hora_salidaV.Name = "hora_salidaV";
+            this.hora_salidaV.ReadOnly = true;
+            this.hora_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.hora_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.hora_salidaV.Width = 43;
+            // 
+            // NombrePersona
+            // 
+            this.NombrePersona.DataPropertyName = "NombrePersona";
+            this.NombrePersona.HeaderText = "Nombre";
+            this.NombrePersona.MinimumWidth = 6;
+            this.NombrePersona.Name = "NombrePersona";
+            this.NombrePersona.ReadOnly = true;
+            this.NombrePersona.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.NombrePersona.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.NombrePersona.Width = 62;
+            // 
+            // asiento
+            // 
+            this.asiento.DataPropertyName = "asiento";
+            dataGridViewCellStyle101.Format = "N0";
+            dataGridViewCellStyle101.NullValue = null;
+            this.asiento.DefaultCellStyle = dataGridViewCellStyle101;
+            this.asiento.HeaderText = "Asiento";
+            this.asiento.MinimumWidth = 6;
+            this.asiento.Name = "asiento";
+            this.asiento.ReadOnly = true;
+            this.asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.asiento.Width = 58;
+            // 
+            // fechaNacimiento
+            // 
+            this.fechaNacimiento.DataPropertyName = "fechaNacimiento";
+            dataGridViewCellStyle102.Format = "d";
+            this.fechaNacimiento.DefaultCellStyle = dataGridViewCellStyle102;
+            this.fechaNacimiento.HeaderText = "Fecha_Nacimiento";
+            this.fechaNacimiento.MinimumWidth = 6;
+            this.fechaNacimiento.Name = "fechaNacimiento";
+            this.fechaNacimiento.ReadOnly = true;
+            this.fechaNacimiento.Width = 149;
+            // 
+            // numeroTelefono
+            // 
+            this.numeroTelefono.DataPropertyName = "numeroTelefono";
+            this.numeroTelefono.HeaderText = "Teléfono";
+            this.numeroTelefono.MinimumWidth = 6;
+            this.numeroTelefono.Name = "numeroTelefono";
+            this.numeroTelefono.ReadOnly = true;
+            this.numeroTelefono.Width = 90;
+            // 
+            // cantidad_venta
+            // 
+            this.cantidad_venta.DataPropertyName = "cantidad_venta";
+            this.cantidad_venta.HeaderText = "cantidad_venta";
+            this.cantidad_venta.MinimumWidth = 6;
+            this.cantidad_venta.Name = "cantidad_venta";
+            this.cantidad_venta.ReadOnly = true;
+            this.cantidad_venta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.cantidad_venta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.cantidad_venta.Visible = false;
+            this.cantidad_venta.Width = 124;
+            // 
+            // boletocosto
+            // 
+            this.boletocosto.DataPropertyName = "boletocosto";
+            dataGridViewCellStyle103.Format = "C2";
+            dataGridViewCellStyle103.NullValue = null;
+            this.boletocosto.DefaultCellStyle = dataGridViewCellStyle103;
+            this.boletocosto.HeaderText = "Precio";
+            this.boletocosto.MinimumWidth = 6;
+            this.boletocosto.Name = "boletocosto";
+            this.boletocosto.ReadOnly = true;
+            this.boletocosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.boletocosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.boletocosto.Width = 52;
+            // 
+            // vdcosto
+            // 
+            this.vdcosto.DataPropertyName = "vdcosto";
+            dataGridViewCellStyle104.Format = "C2";
+            this.vdcosto.DefaultCellStyle = dataGridViewCellStyle104;
+            this.vdcosto.HeaderText = "Costo";
+            this.vdcosto.MinimumWidth = 6;
+            this.vdcosto.Name = "vdcosto";
+            this.vdcosto.ReadOnly = true;
+            this.vdcosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.vdcosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.vdcosto.Visible = false;
+            this.vdcosto.Width = 57;
+            // 
+            // iva
+            // 
+            this.iva.DataPropertyName = "iva";
+            dataGridViewCellStyle105.Format = "C2";
+            this.iva.DefaultCellStyle = dataGridViewCellStyle105;
+            this.iva.HeaderText = "IVA";
+            this.iva.MinimumWidth = 6;
+            this.iva.Name = "iva";
+            this.iva.ReadOnly = true;
+            this.iva.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.iva.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.iva.Visible = false;
+            this.iva.Width = 42;
+            // 
+            // pago
+            // 
+            this.pago.DataPropertyName = "pago";
+            dataGridViewCellStyle106.Format = "C2";
+            this.pago.DefaultCellStyle = dataGridViewCellStyle106;
+            this.pago.HeaderText = "Pago";
+            this.pago.MinimumWidth = 6;
+            this.pago.Name = "pago";
+            this.pago.ReadOnly = true;
+            this.pago.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.pago.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.pago.Width = 46;
+            // 
+            // pendiente
+            // 
+            this.pendiente.DataPropertyName = "pendiente";
+            dataGridViewCellStyle107.Format = "C2";
+            this.pendiente.DefaultCellStyle = dataGridViewCellStyle107;
+            this.pendiente.HeaderText = "Pendiente";
+            this.pendiente.MinimumWidth = 6;
+            this.pendiente.Name = "pendiente";
+            this.pendiente.ReadOnly = true;
+            this.pendiente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.pendiente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.pendiente.Width = 74;
+            // 
+            // Transf
+            // 
+            this.Transf.DataPropertyName = "Transf";
+            dataGridViewCellStyle108.Format = "N0";
+            dataGridViewCellStyle108.NullValue = null;
+            this.Transf.DefaultCellStyle = dataGridViewCellStyle108;
+            this.Transf.HeaderText = "Transf";
+            this.Transf.MinimumWidth = 6;
+            this.Transf.Name = "Transf";
+            this.Transf.ReadOnly = true;
+            this.Transf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Transf.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Transf.Width = 51;
+            // 
+            // Usu_Ins
+            // 
+            this.Usu_Ins.DataPropertyName = "usuins";
+            this.Usu_Ins.HeaderText = "Usu_Ins";
+            this.Usu_Ins.MinimumWidth = 6;
+            this.Usu_Ins.Name = "Usu_Ins";
+            this.Usu_Ins.ReadOnly = true;
+            this.Usu_Ins.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Usu_Ins.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Usu_Ins.Width = 61;
+            // 
+            // Usu_Mod
+            // 
+            this.Usu_Mod.DataPropertyName = "usuupd";
+            this.Usu_Mod.HeaderText = "Usu_Mod";
+            this.Usu_Mod.MinimumWidth = 6;
+            this.Usu_Mod.Name = "Usu_Mod";
+            this.Usu_Mod.ReadOnly = true;
+            this.Usu_Mod.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Usu_Mod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Usu_Mod.Width = 71;
+            // 
+            // precio
+            // 
+            this.precio.DataPropertyName = "precio";
+            this.precio.HeaderText = "Precio";
+            this.precio.MinimumWidth = 6;
+            this.precio.Name = "precio";
+            this.precio.ReadOnly = true;
+            this.precio.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.precio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.precio.Visible = false;
+            this.precio.Width = 59;
+            // 
+            // id_venta
+            // 
+            this.id_venta.DataPropertyName = "id_venta";
+            this.id_venta.HeaderText = "id_venta";
+            this.id_venta.MinimumWidth = 6;
+            this.id_venta.Name = "id_venta";
+            this.id_venta.ReadOnly = true;
+            this.id_venta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.id_venta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id_venta.Visible = false;
+            this.id_venta.Width = 75;
+            // 
+            // id_cliente
+            // 
+            this.id_cliente.DataPropertyName = "id_cliente";
+            this.id_cliente.HeaderText = "id_cliente";
+            this.id_cliente.MinimumWidth = 6;
+            this.id_cliente.Name = "id_cliente";
+            this.id_cliente.ReadOnly = true;
+            this.id_cliente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.id_cliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id_cliente.Visible = false;
+            this.id_cliente.Width = 82;
+            // 
+            // cajero
+            // 
+            this.cajero.DataPropertyName = "cajero";
+            this.cajero.HeaderText = "cajero";
+            this.cajero.MinimumWidth = 6;
+            this.cajero.Name = "cajero";
+            this.cajero.ReadOnly = true;
+            this.cajero.Visible = false;
+            this.cajero.Width = 77;
+            // 
+            // bloqueoCancelacionMonedero
+            // 
+            this.bloqueoCancelacionMonedero.DataPropertyName = "bloqueoCancelacionMonedero";
+            this.bloqueoCancelacionMonedero.HeaderText = "bloqueoCancelacionMonedero";
+            this.bloqueoCancelacionMonedero.MinimumWidth = 6;
+            this.bloqueoCancelacionMonedero.Name = "bloqueoCancelacionMonedero";
+            this.bloqueoCancelacionMonedero.ReadOnly = true;
+            this.bloqueoCancelacionMonedero.Visible = false;
+            this.bloqueoCancelacionMonedero.Width = 250;
+            // 
+            // bloqueoCancelacionPorFormaDePago
+            // 
+            this.bloqueoCancelacionPorFormaDePago.DataPropertyName = "bloqueoCancelacionPorFormaDePago";
+            this.bloqueoCancelacionPorFormaDePago.HeaderText = "bloqueoCancelacionPorFormaDePago";
+            this.bloqueoCancelacionPorFormaDePago.MinimumWidth = 6;
+            this.bloqueoCancelacionPorFormaDePago.Name = "bloqueoCancelacionPorFormaDePago";
+            this.bloqueoCancelacionPorFormaDePago.ReadOnly = true;
+            this.bloqueoCancelacionPorFormaDePago.Visible = false;
+            this.bloqueoCancelacionPorFormaDePago.Width = 306;
+            // 
             // frmApartadosV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -407,9 +810,10 @@
             this.Controls.Add(this.materialCard1);
             this.Name = "frmApartadosV2";
             this.Text = "frmApartadosV2";
+            this.Load += new System.EventHandler(this.frmApartadosV2_Load);
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboleto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -417,23 +821,51 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialCard materialCard1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPagoOnline;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnPagoEfectivo;
+        private System.Windows.Forms.Button btnCancelarB;
+        private System.Windows.Forms.Button btnCancelarA;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private System.Windows.Forms.Button button1;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox24;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox23;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox22;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox21;
-        private MaterialSkin.Controls.MaterialCheckbox materialCheckbox4;
-        private MaterialSkin.Controls.MaterialCheckbox materialCheckbox3;
-        private MaterialSkin.Controls.MaterialCheckbox materialCheckbox2;
-        private MaterialSkin.Controls.MaterialCheckbox materialCheckbox1;
+        private System.Windows.Forms.Button btnBuscar;
+        private MaterialSkin.Controls.MaterialTextBox2 txtNombreCliente;
+        private MaterialSkin.Controls.MaterialTextBox2 txtFolioBoleto;
+        private MaterialSkin.Controls.MaterialTextBox2 txt_folioVenta;
+        private MaterialSkin.Controls.MaterialCheckbox chkNombre;
+        private MaterialSkin.Controls.MaterialCheckbox chkFolio;
+        private MaterialSkin.Controls.MaterialCheckbox chkFecha;
+        private MaterialSkin.Controls.MaterialCheckbox chkFolioVenta;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.DataGridView dgvdatosboleto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_boleto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_ventadetalle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn folioVenta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodigoBarra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Viaje;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Origen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Destino;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_salidaV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hora_salidaV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombrePersona;
+        private System.Windows.Forms.DataGridViewTextBoxColumn asiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaNacimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroTelefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cantidad_venta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn boletocosto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vdcosto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iva;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pendiente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Transf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Usu_Ins;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Usu_Mod;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_venta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_cliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cajero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bloqueoCancelacionMonedero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bloqueoCancelacionPorFormaDePago;
     }
 }

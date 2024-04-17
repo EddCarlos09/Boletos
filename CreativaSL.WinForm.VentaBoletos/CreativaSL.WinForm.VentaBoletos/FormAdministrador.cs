@@ -5,7 +5,9 @@ using CreativaSL.WinForm.VentaBoletos.Clientes;
 using CreativaSL.WinForm.VentaBoletos.Models;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using Newtonsoft.Json;
 using Syncfusion.PMML;
+using Syncfusion.Presentation;
 using Syncfusion.Windows.Forms.PivotAnalysis;
 using System;
 using System.Collections.Generic;
@@ -17,6 +19,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media.Media3D;
+using System.Xml;
 using static CreativaSL.WinForm.VentaBoletos.MaterialUI;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -59,7 +62,7 @@ namespace CreativaSL.WinForm.VentaBoletos
 
         
         List<string> dbFieldList = new List<string>();
-        Panel panel = new Panel();
+        bool listaFiltrada = false;
         
         public FormAdministrador()
         {
@@ -166,6 +169,10 @@ namespace CreativaSL.WinForm.VentaBoletos
                 {
                     this.EliminarUsuario(obj);
                 }
+                else if (this.tipoCatalogo == 9)
+                {
+                    this.EliminarClasificacion(obj);
+                }
                 else if (this.tipoCatalogo == 10)
                 {
                     this.EliminarChofer(obj);
@@ -186,10 +193,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 {
                     this.EliminarPorcentajeMonedero(obj);
                 }
-                else if (this.tipoCatalogo == 15)
-                {
-                    this.EliminarClasificacion(obj);
-                }
+                
             }
             catch (Exception ex)
             {
@@ -237,32 +241,34 @@ namespace CreativaSL.WinForm.VentaBoletos
                 {
                     this.EstablecerPropiedadesGridUsuario();
                 }
-                else if (this.tipoCatalogo == 10)
-                {
-                    this.EstablecerPropiedadesGridChofer();
-                }
-                else if (this.tipoCatalogo == 12)
-                {
-                    this.EstablecerPropiedadesGridMarcas();
-                }
-                else if (this.tipoCatalogo == 11)
-                {
-                    this.EstablecerPropiedadesGridTarjetas();
-                    
-                }
-                else if (this.tipoCatalogo == 14)
-                {
-                    this.EstablecerPropiedadesGridTipoCamion();
-                }
-                else if (this.tipoCatalogo == 15)
-                {
-                    this.EstablecerPropiedadesGridPorcentajeMonedero();
-                }
                 else if (this.tipoCatalogo == 9)
                 {
                     this.EstablecerPropiedadesGridClasificacion();
 
                 }
+                else if (this.tipoCatalogo == 10)
+                {
+                    this.EstablecerPropiedadesGridChofer();
+                }
+                else if (this.tipoCatalogo == 11)
+                {
+                    this.EstablecerPropiedadesGridTarjetas();
+
+                }
+                else if (this.tipoCatalogo == 12)
+                {
+                    this.EstablecerPropiedadesGridPorcentajeMonedero();
+                }
+                else if (this.tipoCatalogo == 18)
+                {
+                    this.EstablecerPropiedadesGridMarcas();
+                }
+                else if (this.tipoCatalogo == 14)
+                {
+                    this.EstablecerPropiedadesGridTipoCamion();
+                }
+                
+                
                 else if (this.tipoCatalogo == 13)
                 {
 
@@ -313,6 +319,10 @@ namespace CreativaSL.WinForm.VentaBoletos
                 {
                     this.CargarGridUsuario();
                 }
+                else if (this.tipoCatalogo == 9)
+                {
+                    this.CargarGridClasificacion();
+                }
                 else if (this.tipoCatalogo == 10)
                 {
                     this.CargarGridChofer();
@@ -324,7 +334,8 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 12)
                 {
-                    this.CargarGridMarcas();
+                    this.CargarGridPorcentajeMonedero();
+                    
                 }
                 else if (this.tipoCatalogo == 14)
                 {
@@ -332,16 +343,13 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 15)
                 {
-                    this.CargarGridPorcentajeMonedero();
+                    this.CargarGridMarcas();
                 }
                 else if (this.tipoCatalogo == 13)
                 {
                     this.CargarGridSubMarcas();
                 }
-                else if (this.tipoCatalogo == 9)
-                {
-                    this.CargarGridClasificacion();
-                }
+                
 
             }
             catch (Exception ex)
@@ -426,6 +434,14 @@ namespace CreativaSL.WinForm.VentaBoletos
                     this.CargarGridCatalogos();
                     frmu.Dispose();
                 }
+                else if (this.tipoCatalogo == 9)
+                {
+                    frm_v2_ClasificacionClienteAdd frmCC = new frm_v2_ClasificacionClienteAdd(new ClasificacionCliente());
+                    frmCC.ShowDialog();
+                    this.CargarGridPropiedades();
+                    this.CargarGridCatalogos();
+                    frmCC.Dispose();
+                }
                 else if (this.tipoCatalogo == 10)
                 {
                     frmCatChoferesV2 frmc = new frmCatChoferesV2(new Chofer());
@@ -436,11 +452,12 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 12)
                 {
-                    frmCatMarcas frmc = new frmCatMarcas(new Marca());
-                    frmc.ShowDialog();
+                    frmPorcentajeMonedero frmPM = new frmPorcentajeMonedero(new PorcentajeMonedero());
+                    frmPM.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
-                    frmc.Dispose();
+                    frmPM.Dispose();
+                    
                 }
                 else if (this.tipoCatalogo == 13)
                 {
@@ -460,20 +477,14 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 15)
                 {
-                    frmPorcentajeMonedero frmPM = new frmPorcentajeMonedero(new PorcentajeMonedero());
-                    frmPM.ShowDialog();
+                    frmCatMarcas frmc = new frmCatMarcas(new Marca());
+                    frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
-                    frmPM.Dispose();
+                    frmc.Dispose();
+
                 }
-                else if (this.tipoCatalogo == 9)
-                {
-                    frm_v2_ClasificacionClienteAdd frmCC = new frm_v2_ClasificacionClienteAdd(new ClasificacionCliente());
-                    frmCC.ShowDialog();
-                    this.CargarGridPropiedades();
-                    this.CargarGridCatalogos();
-                    frmCC.Dispose();
-                }
+                
             }
             catch (Exception ex)
             {
@@ -567,11 +578,12 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 12)
                 {
-                    frmCatMarcas frmc = new frmCatMarcas((Marca)obj);
-                    frmc.ShowDialog();
+                    frmPorcentajeMonedero frmPM = new frmPorcentajeMonedero((PorcentajeMonedero)obj);
+                    frmPM.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
-                    frmc.Dispose();
+                    frmPM.Dispose();
+                    
                 }
                 else if (this.tipoCatalogo == 13)
                 {
@@ -591,11 +603,12 @@ namespace CreativaSL.WinForm.VentaBoletos
                 }
                 else if (this.tipoCatalogo == 15)
                 {
-                    frmPorcentajeMonedero frmPM = new frmPorcentajeMonedero((PorcentajeMonedero)obj);
-                    frmPM.ShowDialog();
+                    frmCatMarcas frmc = new frmCatMarcas((Marca)obj);
+                    frmc.ShowDialog();
                     this.CargarGridPropiedades();
                     this.CargarGridCatalogos();
-                    frmPM.Dispose();
+                    frmc.Dispose();
+
                 }
                 else if (this.tipoCatalogo == 9)
                 {
@@ -647,30 +660,30 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 this.ObtenerDatosGridUsuario(ref Datos);
             }
+            else if (this.tipoCatalogo == 9)
+            {
+                this.ObtenerDatosGridClasificacion(ref Datos);
+            }
             else if (this.tipoCatalogo == 10)
             {
                 this.ObtenerDatosGridChofer(ref Datos);
             }
             else if (this.tipoCatalogo == 12)
             {
+                this.ObtenerDatosGridPorcentajeMonedero(ref Datos);
+            }
+            else if (this.tipoCatalogo == 14)
+            {
                 this.ObtenerDatosGridMarca(ref Datos);
             }
-            else if (this.tipoCatalogo == 13)
+            else if (this.tipoCatalogo == 15)
             {
                 this.ObtenerDatosGridSubMarca(ref Datos);
             }
             //este punto estara agrupago en camiones
-            else if (this.tipoCatalogo == 14)
+            else if (this.tipoCatalogo == 16)
             {
                 this.ObtenerDatosGridTipoCamion(ref Datos);
-            }
-            else if (this.tipoCatalogo == 15)
-            {
-                this.ObtenerDatosGridPorcentajeMonedero(ref Datos);
-            }
-            else if (this.tipoCatalogo == 9)
-            {
-                this.ObtenerDatosGridClasificacion(ref Datos);
             }
             return Datos;
         }
@@ -1135,8 +1148,17 @@ namespace CreativaSL.WinForm.VentaBoletos
                     }
 
                     string[] valores = dataList.ToArray();
-
+                    
                     ListViewItem item = new ListViewItem(valores);
+                    // Convertir el DataRow en un diccionario
+                    var rowData = fila.Table.Columns
+                                    .Cast<DataColumn>()
+                                    .ToDictionary(col => col.ColumnName, col => fila[col]);
+
+                    // Serializar el diccionario a JSON (usando Newtonsoft.Json)
+                    string serializedRow = JsonConvert.SerializeObject(rowData);
+                    item.Tag = serializedRow;
+
                     this.materialListView2.Items.Add(item);
                 }
 
@@ -1150,8 +1172,8 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                var Headertexts = new List<string> { "id_camion", "Descripción", "Marca", "SubMarca", "Tipo de Camión", "Número de Camión", "Características", "Diseño" };
-                var Names = new List<string> { "id_camion", "descripcion", "marca", "submarca", "tipoCamion", "numcamion", "caracteristicas", "nombre", "id_marca", "id_submarca", "id_tipocamion", "id_disenioCamion" };
+                var Headertexts = new List<string> { "Descripción", "Marca", "SubMarca", "Tipo de Camión", "Número de Camión", "Características", "Diseño" };
+                var Names = new List<string> { "descripcion", "marca", "submarca", "tipoCamion", "numcamion", "caracteristicas", "nombre" };
                 this.dbFieldList = Names;
 
               
@@ -1182,16 +1204,23 @@ namespace CreativaSL.WinForm.VentaBoletos
                 Camion camion = new Camion(Comun.Conexion);
                 ListViewItem selectedItem = materialListView2.SelectedItems[0];
                 var subitem = selectedItem.SubItems;
+
+                // Obtener la cadena serializada del tag
+                string serializedRow = selectedItem.Tag.ToString();
+
+                // Deserializar la cadena para obtener el DataRow original
+                var row = JsonConvert.DeserializeObject<Dictionary<string, object>>(serializedRow);
                 
-                camion.id_camion = subitem[0].Text;
-                camion.descripcion = subitem[1].Text;
-                camion.caracteristicas = subitem[6].Text;
-                camion.num_camion = subitem[5].Text;
-                camion.id_marca = Convert.ToInt32(subitem[8].Text);
-                camion.id_submarca = Convert.ToInt32(subitem[9].Text);
-                camion.id_Tipocamion = Convert.ToInt32(subitem[10].Text);
-                camion.id_diseniocamion = subitem[11].Text;
-                
+
+                camion.id_camion = row["id_camion"].ToString();
+                camion.descripcion = row["descripcion"].ToString();
+                camion.caracteristicas = row["caracteristicas"].ToString();
+                camion.num_camion = row["numcamion"].ToString();
+                camion.id_marca = Convert.ToInt32(row["id_marca"]);
+                camion.id_submarca = Convert.ToInt32(row["id_submarca"]);
+                camion.id_Tipocamion = Convert.ToInt32(row["id_tipocamion"]);
+                camion.id_diseniocamion = row["id_disenioCamion"].ToString();
+
                 Datos = camion;
             }
             catch (Exception ex)
@@ -1255,6 +1284,14 @@ namespace CreativaSL.WinForm.VentaBoletos
                     string[] valores = dataList.ToArray();
 
                     ListViewItem item = new ListViewItem(valores);
+                    // Convertir el DataRow en un diccionario
+                    var rowData = fila.Table.Columns
+                                    .Cast<DataColumn>()
+                                    .ToDictionary(col => col.ColumnName, col => fila[col]);
+
+                    // Serializar el diccionario a JSON (usando Newtonsoft.Json)
+                    string serializedRow = JsonConvert.SerializeObject(rowData);
+                    item.Tag = serializedRow;
                     this.materialListView3.Items.Add(item);
                 }
 
@@ -1268,11 +1305,10 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                var Headertexts = new List<string> { "id_terminal", "Nombre Sucursal", "País", "Estado", "Municipio", "Dirección", "Teléfono" };
-                var Names = new List<string> { "id_terminal", "nombre", "pais", "estado", "municipio", "direccion", "telefonos", "id_pais", "id_estado", "id_municipio" };
+                var Headertexts = new List<string> {  "Nombre Sucursal", "País", "Estado", "Municipio", "Dirección", "Teléfono" };
+                var Names = new List<string> { "nombre", "pais", "estado", "municipio", "direccion", "telefonos"};
                 this.dbFieldList = Names;
 
-               
                 List<HeaderLabel> headerLabels = new List<HeaderLabel>
                 {
                     new HeaderLabel{ Id = 0, Size = 300},
@@ -1280,8 +1316,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     new HeaderLabel{ Id = 2, Size = 150},
                     new HeaderLabel{ Id = 3, Size = 150},
                     new HeaderLabel{ Id = 4, Size = 160},
-                    new HeaderLabel{ Id = 5, Size = 300},
-                    new HeaderLabel{ Id = 6, Size = 200},
+                    new HeaderLabel{ Id = 5, Size = 300}
                 };
                 this.RecorrerFor(Headertexts, this.materialListView3, headerLabels);
 
@@ -1301,14 +1336,20 @@ namespace CreativaSL.WinForm.VentaBoletos
                 Terminal terminal = new Terminal(Comun.Conexion);
                 ListViewItem selectedItem = materialListView3.SelectedItems[0];
                 var subitem = selectedItem.SubItems;
-                terminal.id_terminal = subitem[0].Text;
-                terminal.nombre = subitem[1].Text;
-                terminal.direccion = subitem[5].Text;
-                terminal.telefonos = subitem[6].Text;
-                terminal.id_pais = Convert.ToInt32(subitem[7].Text);
-                terminal.id_estado = Convert.ToInt32(subitem[8].Text);
-                terminal.id_municipio = Convert.ToInt32(subitem[9].Text);
-                
+                // Obtener la cadena serializada del tag
+                string serializedRow = selectedItem.Tag.ToString();
+
+                // Deserializar la cadena para obtener el DataRow original
+                var row = JsonConvert.DeserializeObject<Dictionary<string, object>>(serializedRow);
+
+                terminal.id_terminal = row["id_terminal"].ToString();
+                terminal.nombre = row["nombre"].ToString();
+                terminal.direccion = row["direccion"].ToString();
+                terminal.telefonos = row["telefonos"].ToString();
+                terminal.id_pais = Convert.ToInt32(row["id_pais"]);
+                terminal.id_estado = Convert.ToInt32(row["id_estado"]);
+                terminal.id_municipio = Convert.ToInt32(row["id_municipio"]);
+
                 Datos = terminal;
             }
             catch (Exception ex)
@@ -1466,8 +1507,8 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 Viaje_Negocio vn = new Viaje_Negocio();
                 Viaje viajes = new Viaje(Comun.Conexion);
-                
                 this.materialListView5.Items.Clear();
+                listaFiltrada = mostrarDatosBusqueda;
 
                 DataTable lista = new DataTable();
                 if (mostrarDatosBusqueda == true)
@@ -1515,6 +1556,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     string[] valores = dataList.ToArray();
                     
                     ListViewItem item = new ListViewItem(valores);
+                    item.Tag = fila["id_identificador"].ToString();
                     item.UseItemStyleForSubItems = true;
                     this.materialListView5.Items.Add(item);
                 }
@@ -1531,7 +1573,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 var Headertexts = new List<string> { "Nombre Viaje", "Camión", "T. Origen", "T. Destino", "Periodo", "Hora", "Estatus"};
-                var Names = new List<string> { "nombre", "descripcion", "terminalOrigen","terminalDestino", "Periodo", "horario", "status_viaje", "id_identificador", "id_ruta", "id_tipoViaje", "fec_PeriodoIni", "fec_PeriodoFin","Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo", "id_camion" };
+                var Names = new List<string> { "nombre", "descripcion", "terminalOrigen","terminalDestino", "Periodo", "horario"};
                 this.dbFieldList = Names;
               
                 List<HeaderLabel> headerLabels = new List<HeaderLabel>
@@ -1562,23 +1604,31 @@ namespace CreativaSL.WinForm.VentaBoletos
 
                 ListViewItem selectedItem = materialListView5.SelectedItems[0];
                 var subitem = selectedItem.SubItems;
-         
+                var tagId = selectedItem.Tag;
+                DataRow row ;
+                DataTable lista = lstAuxDatosViajes;
 
-                viaje.id_viaje = subitem[5].Text;
-                viaje.id_ruta = subitem[6].Text;
-                viaje.id_camion = subitem[7].Text;
-                viaje.id_tipoViaje = Convert.ToInt32(subitem[8].Text);
-                viaje.fec_PeriodoIni = Convert.ToDateTime(subitem[9].Text);
-                viaje.fec_PeriodoFin = Convert.ToDateTime(subitem[10].Text);
-                viaje.lunes = Convert.ToBoolean(subitem[11].Text);
-                viaje.martes = Convert.ToBoolean(subitem[12].Text);
-                viaje.miercoles = Convert.ToBoolean(subitem[13].Text);
-                viaje.jueves = Convert.ToBoolean(subitem[14].Text);
-                viaje.viernes = Convert.ToBoolean(subitem[15].Text);
-                viaje.sabado = Convert.ToBoolean(subitem[16].Text);
-                viaje.domingo = Convert.ToBoolean(subitem[17].Text);
-                viaje.nombre = subitem[18].Text;
-                viaje.horario = subitem[3].Text;
+                if (listaFiltrada == true)
+                {
+                    lista = lstAuxBuscadorViajes;
+                }
+                row = lista.AsEnumerable().Where(item => item.Field<string>("id_identificador") == tagId).First();
+
+                viaje.id_viaje = row["id_identificador"].ToString();
+                viaje.id_ruta = row["id_ruta"].ToString();
+                viaje.id_camion = row["id_camion"].ToString();
+                viaje.id_tipoViaje = Convert.ToInt32(row["id_tipoViaje"].ToString());
+                viaje.fec_PeriodoIni = Convert.ToDateTime(row["fec_PeriodoIni"]);
+                viaje.fec_PeriodoFin = Convert.ToDateTime(row["fec_PeriodoFin"]);
+                viaje.lunes = Convert.ToBoolean(row["Lunes"]);
+                viaje.martes = Convert.ToBoolean(row["Martes"]);
+                viaje.miercoles = Convert.ToBoolean(row["Miercoles"]);
+                viaje.jueves = Convert.ToBoolean(row["Jueves"]);
+                viaje.viernes = Convert.ToBoolean(row["Viernes"]);
+                viaje.sabado = Convert.ToBoolean(row["Sabado"]);
+                viaje.domingo = Convert.ToBoolean(row["Domingo"]);
+                viaje.nombre = row["nombre"].ToString();
+                viaje.horario = row["horario"].ToString();
 
                 Datos = viaje;
             }
@@ -1703,17 +1753,28 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
         #endregion
         #region GridCatClientes
-        private void CargarGridClientes()
+        private void CargarGridClientes(bool mostrarDatosBusqueda = false)
         {
             try
             {
                 Cliente_Negocio Cliente_Negocio = new Cliente_Negocio();
                 Cliente Clientes = new Cliente();
-                Cliente_Negocio.LlenarGridCliente(Comun.Conexion, ref Clientes);
-                lstAuxDatosClientes = Clientes.Clientes;
+                
                 this.materialListView7.Items.Clear();
+                DataTable lista = new DataTable();
+                if (mostrarDatosBusqueda == true)
+                {
+                    lista = this.lstAuxBuscadorClientes;
+                }
+                else
+                {
+                    Cliente_Negocio.LlenarGridCliente(Comun.Conexion, ref Clientes);
+                    lstAuxDatosClientes = Clientes.Clientes;
+                    lista = lstAuxDatosClientes;
+                }
+
                 // Agregar filas al ListView
-                foreach (DataRow fila in lstAuxDatosClientes.Rows)
+                foreach (DataRow fila in lista.Rows)
                 {
 
                     List<string> dataList = new List<string>();
@@ -1726,6 +1787,14 @@ namespace CreativaSL.WinForm.VentaBoletos
                     string[] valores = dataList.ToArray();
 
                     ListViewItem item = new ListViewItem(valores);
+                    // Convertir el DataRow en un diccionario
+                    var rowData = fila.Table.Columns
+                                    .Cast<DataColumn>()
+                                    .ToDictionary(col => col.ColumnName, col => fila[col]);
+
+                    // Serializar el diccionario a JSON (usando Newtonsoft.Json)
+                    string serializedRow = JsonConvert.SerializeObject(rowData);
+                    item.Tag = serializedRow;
                     this.materialListView7.Items.Add(item);
 
                 }
@@ -1740,13 +1809,21 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 var Headertexts = new List<string> { "Codigo Cliente", "Nombre", "Fecha Nacimiento", "Correo Electronico", "Pais", "Estado", "Municipio", "Monedero", "Saldo Retenido", "Saldo Disponible" };
-                var Names = new List<string> { "Codigo", "Nombre", "FechaNacimiento", "CorreoElectronico", "Pais", "Estado", "Municipio", "Monedero", "saldoRetenido", "saldoDisponible", "IDCliente", "IDPais", "IDEstado", "IDMunicipio" };
+                var Names = new List<string> { "Codigo", "Nombre", "FechaNacimiento", "CorreoElectronico", "Pais", "Estado", "Municipio", "Monedero", "saldoRetenido", "saldoDisponible" };
 
                 this.dbFieldList = Names;
                 List<HeaderLabel> headerLabels = new List<HeaderLabel>
                 {
                     new HeaderLabel{ Id = 0, Size = 200},
-                    new HeaderLabel{ Id = 1, Size = 200}
+                    new HeaderLabel{ Id = 1, Size = 200},
+                    new HeaderLabel{ Id = 2, Size = 200},
+                    new HeaderLabel{ Id = 3, Size = 200},
+                    new HeaderLabel{ Id = 4, Size = 200},
+                    new HeaderLabel{ Id = 5, Size = 200},
+                    new HeaderLabel{ Id = 6, Size = 200},
+                    new HeaderLabel{ Id = 7, Size = 200},
+                    new HeaderLabel{ Id = 8, Size = 200},
+                    new HeaderLabel{ Id = 9, Size = 200},
                 };
                 this.RecorrerFor(Headertexts, this.materialListView7, headerLabels);
 
@@ -1761,12 +1838,17 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 V2Cliente Cliente = new V2Cliente();
-                foreach (DataGridViewRow row in this.ObtenerFilaSeleccionada())
-                {
-                    Cliente.IDCliente = Convert.ToInt32(row.Cells["IDCliente"].Value.ToString());
-                    Cliente.CodigoTarjeta = row.Cells["Codigo"].Value.ToString();
-                    Cliente.Nombre = row.Cells["Nombre"].Value.ToString();
-                }
+                ListViewItem selectedItem = materialListView7.SelectedItems[0];
+                var subitem = selectedItem.SubItems;
+                // Obtener la cadena serializada del tag
+                string serializedRow = selectedItem.Tag.ToString();
+                // Deserializar la cadena para obtener el DataRow original
+                var row = JsonConvert.DeserializeObject<Dictionary<string, object>>(serializedRow);
+
+                Cliente.IDCliente = Convert.ToInt32(row["IDCliente"].ToString());
+                Cliente.CodigoTarjeta = row["Codigo"].ToString();
+                Cliente.Nombre = row["Nombre"].ToString();
+
                 Datos = Cliente;
                 
             }
@@ -1851,6 +1933,15 @@ namespace CreativaSL.WinForm.VentaBoletos
                     string[] valores = dataList.ToArray();
 
                     ListViewItem item = new ListViewItem(valores);
+                    // Convertir el DataRow en un diccionario
+                    var rowData = fila.Table.Columns
+                                    .Cast<DataColumn>()
+                                    .ToDictionary(col => col.ColumnName, col => fila[col]);
+
+                    // Serializar el diccionario a JSON (usando Newtonsoft.Json)
+                    string serializedRow = JsonConvert.SerializeObject(rowData);
+                    item.Tag = serializedRow;
+
                     this.materialListView8.Items.Add(item);
 
                 }
@@ -1865,7 +1956,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 var Headertexts = new List<string> { "Nombre", "Calle", "Colonia", "Número", "Fecha de nacimiento", "Usuario", "Tipo usuario", "Turno", "Sucursal" };
-                var Names = new List<string> { "NombreCompleto", "U_DirCalle", "U_DirColonia", "U_DirNumero", "U_FechaNac_Short", "Cu_User", "Tu_Descripcion", "Turno", "Nombre_Sucursal", "Id_Turno", "U_Nombre", "U_Apellidop", "U_Apellidom", "Cu_Pass", "Id_Tu", "Id_U", "id_sucursal", "U_FechaNac" };
+                var Names = new List<string> { "NombreCompleto", "U_DirCalle", "U_DirColonia", "U_DirNumero", "U_FechaNac_Short", "Cu_User", "Tu_Descripcion", "Turno", "Nombre_Sucursal" };
                 this.dbFieldList = Names;
                 
                 List<HeaderLabel> headerLabels = new List<HeaderLabel>
@@ -1896,20 +1987,25 @@ namespace CreativaSL.WinForm.VentaBoletos
                 
                 ListViewItem selectedItem = materialListView8.SelectedItems[0];
                 var subitem = selectedItem.SubItems;
-                usuario.Id_U = subitem[15].Text;
-                usuario.U_Nombre = subitem[10].Text;
-                usuario.U_Apellidop = subitem[11].Text;
-                usuario.U_Apellidom = subitem[12].Text;
-                usuario.U_FechaNac =  Convert.ToDateTime(subitem[17].Text);
-                usuario.U_DirCalle = subitem[1].Text;
-                usuario.U_DirColonia = subitem[2].Text;
-                usuario.U_DirNumero = subitem[3].Text;
-                usuario.Id_Tu = Convert.ToInt32(subitem[14].Text);
-                usuario.Id_Turno = Convert.ToInt32(subitem[9].Text);
-                usuario.id_sucursal = subitem[16].Text;
-                usuario.Cu_User = subitem[5].Text;
-                usuario.Cu_Pass = subitem[13].Text;
-               
+                // Obtener la cadena serializada del tag
+                string serializedRow = selectedItem.Tag.ToString();
+                // Deserializar la cadena para obtener el DataRow original
+                var row = JsonConvert.DeserializeObject<Dictionary<string, object>>(serializedRow);
+
+                usuario.Id_U = row["Id_U"].ToString();
+                usuario.U_Nombre = row["U_Nombre"].ToString();
+                usuario.U_Apellidop = row["U_Apellidop"].ToString();
+                usuario.U_Apellidom = row["U_Apellidom"].ToString();
+                usuario.U_FechaNac = Convert.ToDateTime(row["U_FechaNac"]);
+                usuario.U_DirCalle = row["U_DirCalle"].ToString();
+                usuario.U_DirColonia = row["U_DirColonia"].ToString();
+                usuario.U_DirNumero = row["U_DirNumero"].ToString();
+                usuario.Id_Tu = Convert.ToInt32(row["Id_Tu"]);
+                usuario.Id_Turno = Convert.ToInt32(row["Id_Turno"]);
+                usuario.id_sucursal = row["id_sucursal"].ToString();
+                usuario.Cu_User = row["Cu_User"].ToString();
+                usuario.Cu_Pass = row["Cu_Pass"].ToString();
+
                 Datos = usuario;
             }
             catch (Exception ex)
@@ -2242,12 +2338,12 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                var Headertexts = new List<string> { "Folio", "Estatus", "Imagen" };
-                var Names = new List<string> { "folio", "estatus", "EstatusIMG", "id_tarjeta" };
+                var Headertexts = new List<string> { "Folio", "Estatus" };
+                var Names = new List<string> { "folio", "estatus" };
                 this.dbFieldList = Names;
                 List<HeaderLabel> headerLabels = new List<HeaderLabel>
                 {
-                    new HeaderLabel{ Id = 0, Size = 200},
+                    new HeaderLabel{ Id = 0, Size = 300},
                     new HeaderLabel{ Id = 1, Size = 200}
                 };
                 this.RecorrerFor(Headertexts, this.materialListView11, headerLabels);
@@ -2384,7 +2480,40 @@ namespace CreativaSL.WinForm.VentaBoletos
                 PorcentajeMonedero_Negocio PorcentajeMonedero_Negocio = new PorcentajeMonedero_Negocio();
                 PorcentajeMonedero PorcentajeMonedero = new PorcentajeMonedero();
                 PorcentajeMonedero_Negocio.LlenarGridPorcentajeMonedero(Comun.Conexion, ref PorcentajeMonedero);
-                
+                var lista = PorcentajeMonedero.PorcentajesMonedero;
+
+                this.materialListView12.Items.Clear();
+
+
+                // Agregar filas al ListView
+                foreach (DataRow fila in lista.Rows)
+                {
+
+                    List<string> dataList = new List<string>();
+                    for (var i = 0; i < this.dbFieldList.Count; i++)
+                    {
+                        var field = this.dbFieldList[i];
+                        
+                        string nombre = fila[field].ToString();
+                        dataList.Add(nombre);
+                        
+                    }
+
+
+                    string[] valores = dataList.ToArray();
+
+                    ListViewItem item = new ListViewItem(valores);
+                    // Convertir el DataRow en un diccionario
+                    var rowData = fila.Table.Columns
+                                    .Cast<DataColumn>()
+                                    .ToDictionary(col => col.ColumnName, col => fila[col]);
+
+                    // Serializar el diccionario a JSON (usando Newtonsoft.Json)
+                    string serializedRow = JsonConvert.SerializeObject(rowData);
+                    item.Tag = serializedRow;
+                    this.materialListView12.Items.Add(item);
+
+                }
             }
             catch (Exception ex)
             {
@@ -2396,14 +2525,14 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 var Headertexts = new List<string> { "% Monedero", "$ Cancelación / Anticipo" };
-                var Names = new List<string> { "Porcentaje_Monedero", "Cancelacion", "IDSucursal" };
+                var Names = new List<string> { "Porcentaje_Monedero", "Cancelacion" };
                 this.dbFieldList = Names;
                 List<HeaderLabel> headerLabels = new List<HeaderLabel>
                 {
                     new HeaderLabel{ Id = 0, Size = 200},
                     new HeaderLabel{ Id = 1, Size = 200}
                 };
-                this.RecorrerFor(Headertexts, this.materialListView1, headerLabels);
+                this.RecorrerFor(Headertexts, this.materialListView12, headerLabels);
 
 
 
@@ -2418,12 +2547,17 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 PorcentajeMonedero PorcentajeMonedero = new PorcentajeMonedero();
-                foreach (DataGridViewRow row in this.ObtenerFilaSeleccionada())
-                {
-                    PorcentajeMonedero.IDSucursal = row.Cells["IDSucursal"].Value.ToString();
-                    PorcentajeMonedero.Porcentaje_Monedero = Convert.ToSingle(row.Cells["Porcentaje_Monedero"].Value);
-                    PorcentajeMonedero.MontoCancelacion = Convert.ToSingle(row.Cells["Cancelacion"].Value);
-                }
+                ListViewItem selectedItem = materialListView12.SelectedItems[0];
+                var subitem = selectedItem.SubItems;
+                // Obtener la cadena serializada del tag
+                string serializedRow = selectedItem.Tag.ToString();
+                // Deserializar la cadena para obtener el DataRow original
+                var row = JsonConvert.DeserializeObject<Dictionary<string, object>>(serializedRow);
+
+                PorcentajeMonedero.IDSucursal = row["IDSucursal"].ToString();
+                PorcentajeMonedero.Porcentaje_Monedero = Convert.ToSingle(row["Porcentaje_Monedero"]);
+                PorcentajeMonedero.MontoCancelacion = Convert.ToSingle(row["Cancelacion"]);
+
                 Datos = PorcentajeMonedero;
             }
             catch (Exception ex)
@@ -2453,22 +2587,58 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
         #endregion
         #region GridCatClasificacionClientes
-        private void CargarGridClasificacion()
+        private void CargarGridClasificacion(bool mostrarDatosBusqueda = false)
         {
             try
             {
                 Clasificacion_Negocio cn = new Clasificacion_Negocio();
                 ClasificacionCliente Clasificacion = new ClasificacionCliente();
-                cn.LlenarGridClasificacion(Comun.Conexion, ref Clasificacion);
-                lstAuxDatosClasificacionClientes = Clasificacion.dataTable_Clasificaciones;
                 
+                this.materialListView9.Items.Clear();
 
-                //Marca_Negocio Marca_Negocio = new Marca_Negocio();
-                //Marca Marcas = new Marca();
-                //Marca_Negocio.LlenarGridMarca(Comun.Conexion, ref Marcas);
-                //lstAuxDatosMarca = Marcas.Marcas;
-                //this.GridViewGeneral.AutoGenerateColumns = false;
-                //this.GridViewGeneral.DataSource = lstAuxDatosMarca;
+                DataTable lista = new DataTable();
+                if (mostrarDatosBusqueda == true)
+                {
+                    lista = this.lstAuxBuscadorClasificacionClientes;
+                }
+                else
+                {
+                    cn.LlenarGridClasificacion(Comun.Conexion, ref Clasificacion);
+                    lstAuxDatosClasificacionClientes = Clasificacion.dataTable_Clasificaciones;
+                    lista = lstAuxDatosClasificacionClientes;
+                }
+
+                // Agregar filas al ListView
+                foreach (DataRow fila in lista.Rows)
+                {
+
+                    List<string> dataList = new List<string>();
+                    for (var i = 0; i < this.dbFieldList.Count; i++)
+                    {
+                        var field = this.dbFieldList[i];
+
+                        string nombre = fila[field].ToString();
+                        dataList.Add(nombre);
+                    }
+
+
+                    string[] valores = dataList.ToArray();
+
+                    ListViewItem item = new ListViewItem(valores);
+                    // Convertir el DataRow en un diccionario
+                    var rowData = fila.Table.Columns
+                                    .Cast<DataColumn>()
+                                    .ToDictionary(col => col.ColumnName, col => fila[col]);
+
+                    // Serializar el diccionario a JSON (usando Newtonsoft.Json)
+                    string serializedRow = JsonConvert.SerializeObject(rowData);
+                    item.Tag = serializedRow;
+
+                    this.materialListView9.Items.Add(item);
+
+                }
+
+
             }
             catch (Exception ex)
             {
@@ -2486,9 +2656,10 @@ namespace CreativaSL.WinForm.VentaBoletos
                 List<HeaderLabel> headerLabels = new List<HeaderLabel>
                 {
                     new HeaderLabel{ Id = 0, Size = 200},
-                    new HeaderLabel{ Id = 1, Size = 200}
+                    new HeaderLabel{ Id = 1, Size = 200},
+                     new HeaderLabel{ Id = 2, Size = 300}
                 };
-                this.RecorrerFor(Headertexts, this.materialListView1, headerLabels);
+                this.RecorrerFor(Headertexts, this.materialListView9, headerLabels);
 
 
 
@@ -2506,13 +2677,20 @@ namespace CreativaSL.WinForm.VentaBoletos
             try
             {
                 ClasificacionCliente Clasificacion = new ClasificacionCliente();
-                foreach (DataGridViewRow row in this.ObtenerFilaSeleccionada())
-                {
-                    Clasificacion.IDClasificacion = Convert.ToInt32(row.Cells["IDClasificacion"].Value);
-                    Clasificacion.Descripcion = row.Cells["Descripcion"].Value.ToString();
-                    decimal.TryParse(row.Cells["Porcentaje"].Value.ToString(), out decimal procentaje);
-                    Clasificacion.Porcentaje = procentaje;
-                }
+                ListViewItem selectedItem = materialListView9.SelectedItems[0];
+                var subitem = selectedItem.SubItems;
+
+                // Obtener la cadena serializada del tag
+                string serializedRow = selectedItem.Tag.ToString();
+
+                // Deserializar la cadena para obtener el DataRow original
+                var row = JsonConvert.DeserializeObject<Dictionary<string, object>>(serializedRow);
+
+                Clasificacion.IDClasificacion = Convert.ToInt32(row["IDClasificacion"]);
+                Clasificacion.Descripcion = row["Descripcion"].ToString();
+                decimal.TryParse(row["Porcentaje"].ToString(), out decimal porcentaje);
+                Clasificacion.Porcentaje = porcentaje;
+
                 Datos = Clasificacion;
             }
             catch (Exception ex)
@@ -2661,7 +2839,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buscarDisenio_Click(object sender, EventArgs e)
         {
             try
             {
@@ -2795,6 +2973,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     rows = this.lstAuxDatosViajes.Select("nombre like '%" + this.materialTextBox25.Text + "%' OR descripcion like '%" + this.materialTextBox25.Text + "%' OR terminalOrigen like '%" + this.materialTextBox25.Text + "%' OR terminalDestino like '%" + this.materialTextBox25.Text + "%'");
                     if (rows.Count() > 0)
                     {
+                        
                         lstAuxBuscadorViajes = rows.CopyToDataTable();
                         this.CargarGridSalidas(true);
                     }
@@ -2890,5 +3069,32 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
 
         }
+
+        private void buscarCliente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataRow[] rows;
+                lstAuxBuscadorClientes = null;
+                if (!string.IsNullOrEmpty(materialTextBox27.Text))
+                {
+                    rows = this.lstAuxDatosClientes.Select("Codigo like '%" + this.materialTextBox27.Text + "%' OR Nombre like '%" + this.materialTextBox27.Text + "%'");
+                    if (rows.Count() > 0)
+                    {
+                        lstAuxBuscadorClientes = rows.CopyToDataTable();
+                        this.CargarGridClientes(true);
+                    }
+                }
+                else
+                {
+                    this.CargarGridClientes();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }

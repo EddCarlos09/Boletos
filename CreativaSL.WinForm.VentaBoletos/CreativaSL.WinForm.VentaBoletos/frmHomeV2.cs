@@ -95,69 +95,243 @@ namespace CreativaSL.WinForm.VentaBoletos
             switch (indexSeleccionado)
             {
                 case 1:
-                    frmVentasV2 frmv1 = new frmVentasV2();
-                    frmv1.ShowDialog();
-                    frmv1.Dispose();
-                    materialTabControl1.SelectedIndex = 0;
-                    materialTabControl1.Refresh();
+                    try
+                    {
+                        if (this.Venta() == false)
+                        {
+                            //this.Inicializar();
+                            frmVentasV2 frmv = new frmVentasV2();
+                            frmv.ShowDialog();
+                            frmv.Dispose();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
 
 
 
                     break;
                 case 2:
-                    frmVentasGrupalV2 frmvg2 = new frmVentasGrupalV2();
-                    frmvg2.ShowDialog();
-                    frmvg2.Dispose();
+                    try
+                    {
+                        if (this.Venta() == false)
+                        {
+                            // Crear una instancia del formulario que deseas mostrar
+                            frmApartadosV2 formulario = new frmApartadosV2();
+
+                            // Agregar el formulario como un control secundario del tab deseado
+                            materialTabControl1.TabPages[2].Controls.Add(formulario);
+
+                            // Asegurarse de que el formulario se ajuste al tamaño del tab
+                            formulario.Dock = DockStyle.Fill;
+
+                            // Mostrar el tab que contiene el formulario
+                            materialTabControl1.SelectedTab = materialTabControl1.TabPages[2];
+                            //this.Inicializar();
+                            //frmVentasGrupalV2 frmvg = new frmVentasGrupalV2();
+                            //frmvg.ShowDialog();
+                            //frmvg.Dispose();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                     break;
                 case 3:
-                    frmApartadosV2 frma3 = new frmApartadosV2();
-                    frma3.ShowDialog();
-                    frma3.Dispose();
-                    break;
-                case 4:
-                    frm_v3_Cliente frmcl4 = new frm_v3_Cliente();
-                    frmcl4.ShowDialog();
-                    frmcl4.Dispose();
-                    break;
-                case 5:
-                    //Button_Creativa btn5 = (Button_Creativa)sender;
-                    //MenuStripCaja.Show(btn5, btn5.Height, btn5.Location.Y + (btn5.Width / 4));
-                    //MenuStripCaja.Focus();
-                    break;
-                case 6:
-                    frmMaletasV2 frma6 = new frmMaletasV2();
-                    frma6.ShowDialog();
-                    frma6.Dispose();
-                    break;
-                case 7:
-                    FormAdministrador frma7 = new FormAdministrador();
-                    frma7.ShowDialog();
-                    frma7.Dispose();
-                    break;
-                case 8:
-                    if (Comun.Id_Tu == 4)
-                    {
-                        frmReportesV2 frmReportesVista8 = new frmReportesV2();
-                        frmReportesVista8.ShowDialog();
+                    if (this.Venta() == false)
+                    { 
+
+                        //this.Inicializar();
+                        frmApartadosV2 frma = new frmApartadosV2();
+                        frma.ShowDialog();
+                        frma.Dispose();
                     }
                     else
                     {
-                        frmReportesMenuV2 frmr8 = new frmReportesMenuV2();
-                        frmr8.ShowDialog();
+                        MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    break;
+                case 4:
+                    try
+                    {
+                        if (this.Venta() == false)
+                        {
+                            //this.Inicializar();
+                            frm_v3_Cliente frmcl = new frm_v3_Cliente();
+                            frmcl.ShowDialog();
+                            frmcl.Dispose();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    break;
+                case 5:
+                    try
+                    {
+                        if (this.Venta() == false)
+                        {
+                            //this.Inicializar();
+                            //Button_Creativa btn = (Button_Creativa)sender;
+                            //MenuStripCaja.Show(btn, btn.Height, btn.Location.Y + (btn.Width / 4));
+                            //MenuStripCaja.Focus();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    break;
+                case 6:
+                    try
+                    {
+                        if (this.Venta() == false)
+                        {
+                            //this.Inicializar();
+                            frmMaletasV2 frma = new frmMaletasV2();
+                            frma.ShowDialog();
+                            frma.Dispose();
+                            //this.Inicializar();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    break;
+                case 7:
+                     try
+                     {
+                        if (this.Venta() == false)
+                        {
+                            //this.Inicializar();
+                            //frmAdministrador frma = new frmAdministrador();
+                            FormAdministrador frma = new FormAdministrador();
+                            frma.ShowDialog();
+                            frma.Dispose();
+                            this.Inicializar();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                     }
+                     catch (Exception ex)
+                     {
+                        MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                     }
+                    break;
+                case 8:
+                    try
+                    {
+                        if (this.Venta() == false)
+                        {
+                            //this.Inicializar();
+                            if (Comun.Id_Tu == 4)
+                            {
+                                frmReportesV2 frmReportesVista = new frmReportesV2(15);
+                                frmReportesVista.ShowDialog();
+                            }
+                            else
+                            {
+                                frmReportesMenuV2 frmr = new frmReportesMenuV2();
+                                frmr.ShowDialog();
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     break;
                 case 9:
-                    frmConfiguracionV2 frmC9 = new frmConfiguracionV2();
-                    frmC9.ShowDialog();
-                    frmC9.Dispose();
+                    try
+                    {
+                        if (this.Venta() == false)
+                        {
+                            frmConfiguracionV2 frmC = new frmConfiguracionV2();
+                            frmC.ShowDialog();
+                            frmC.Dispose();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                     break;
                 case 10:
-                    frmAsistenciaPasajerosV2 frmC10 = new frmAsistenciaPasajerosV2();
-                    frmC10.ShowDialog();
-                    frmC10.Dispose();
+                    try
+                    {
+                        if (this.Venta() == false)
+                        {
+                            //this.Inicializar();
+                            frmAsistenciaPasajerosV2 frmC = new frmAsistenciaPasajerosV2();
+                            frmC.ShowDialog();
+                            frmC.Dispose();
+                            this.Inicializar();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                     break;
                 case 11:
-                    this.Close();
+                    try
+                    {
+                        if (this.Venta() == false)
+                        {
+                            this.Exception = false;
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        this.Close();
+                    }
                     break;
                 default:
                     // Código a ejecutar si el índice no coincide con ninguno de los casos anteriores
@@ -2290,6 +2464,11 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
 
         private void frmHome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void asiento7_ChangeUICues(object sender, UICuesEventArgs e)
         {
 
         }

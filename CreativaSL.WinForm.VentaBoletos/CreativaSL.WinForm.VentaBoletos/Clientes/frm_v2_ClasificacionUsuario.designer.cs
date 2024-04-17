@@ -71,9 +71,10 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.MinimumSize = new System.Drawing.Size(954, 447);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.MinimumSize = new System.Drawing.Size(1272, 550);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(954, 447);
+            this.panel1.Size = new System.Drawing.Size(1272, 550);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -81,9 +82,10 @@
             this.panel3.Controls.Add(this.dgvClientes1);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 72);
+            this.panel3.Location = new System.Drawing.Point(0, 88);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(954, 375);
+            this.panel3.Size = new System.Drawing.Size(1272, 462);
             this.panel3.TabIndex = 1;
             // 
             // dgvClientes1
@@ -110,20 +112,21 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvClientes1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvClientes1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvClientes1.Location = new System.Drawing.Point(0, 29);
-            this.dgvClientes1.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvClientes1.Location = new System.Drawing.Point(0, 36);
+            this.dgvClientes1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvClientes1.MultiSelect = false;
             this.dgvClientes1.Name = "dgvClientes1";
+            this.dgvClientes1.RowHeadersWidth = 51;
             this.dgvClientes1.RowTemplate.Height = 28;
             this.dgvClientes1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClientes1.Size = new System.Drawing.Size(954, 346);
+            this.dgvClientes1.Size = new System.Drawing.Size(1272, 426);
             this.dgvClientes1.TabIndex = 1;
-            //this.dgvClientes1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes1_CellContentClick);
             // 
             // dataGridViewIDClasificacionTextBoxColumn1
             // 
             this.dataGridViewIDClasificacionTextBoxColumn1.DataPropertyName = "IDClasificacion";
             this.dataGridViewIDClasificacionTextBoxColumn1.HeaderText = "IDClasificacion";
+            this.dataGridViewIDClasificacionTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewIDClasificacionTextBoxColumn1.Name = "dataGridViewIDClasificacionTextBoxColumn1";
             this.dataGridViewIDClasificacionTextBoxColumn1.ReadOnly = true;
             this.dataGridViewIDClasificacionTextBoxColumn1.Visible = false;
@@ -133,15 +136,17 @@
             // 
             this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
             this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
-            this.descripcionDataGridViewTextBoxColumn.Width = 88;
+            this.descripcionDataGridViewTextBoxColumn.Width = 108;
             // 
             // porcentajeDataGridViewTextBoxColumn
             // 
             this.porcentajeDataGridViewTextBoxColumn.DataPropertyName = "Porcentaje";
             this.porcentajeDataGridViewTextBoxColumn.HeaderText = "Porcentaje";
+            this.porcentajeDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.porcentajeDataGridViewTextBoxColumn.Name = "porcentajeDataGridViewTextBoxColumn";
-            this.porcentajeDataGridViewTextBoxColumn.Width = 83;
+            this.porcentajeDataGridViewTextBoxColumn.Width = 101;
             // 
             // clasificacionClienteBindingSource1
             // 
@@ -152,8 +157,9 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(954, 29);
+            this.panel4.Size = new System.Drawing.Size(1272, 36);
             this.panel4.TabIndex = 0;
             // 
             // label2
@@ -162,8 +168,9 @@
             this.label2.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
             this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(954, 29);
+            this.label2.Size = new System.Drawing.Size(1272, 36);
             this.label2.TabIndex = 124;
             this.label2.Text = "Resultados de búsqueda";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -178,8 +185,9 @@
             this.panel2.Controls.Add(this.tlpBusqueda);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(954, 72);
+            this.panel2.Size = new System.Drawing.Size(1272, 88);
             this.panel2.TabIndex = 2;
             // 
             // btnSalir
@@ -204,12 +212,13 @@
             this.btnSalir.ImageSize = new System.Drawing.Size(70, 70);
             this.btnSalir.KeyButton = System.Windows.Forms.Keys.F1;
             this.btnSalir.KeyButtonView = false;
-            this.btnSalir.Location = new System.Drawing.Point(862, 2);
+            this.btnSalir.Location = new System.Drawing.Point(1150, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalir.ModeGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnSalir.MouseOverColor = System.Drawing.Color.YellowGreen;
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.OffsetPressedContent = true;
-            this.btnSalir.Size = new System.Drawing.Size(79, 65);
+            this.btnSalir.Size = new System.Drawing.Size(105, 80);
             this.btnSalir.TabIndex = 128;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -236,18 +245,18 @@
             this.btnEliminar.ImageSize = new System.Drawing.Size(70, 70);
             this.btnEliminar.KeyButton = System.Windows.Forms.Keys.F1;
             this.btnEliminar.KeyButtonView = false;
-            this.btnEliminar.Location = new System.Drawing.Point(606, 3);
+            this.btnEliminar.Location = new System.Drawing.Point(808, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar.ModeGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnEliminar.MouseOverColor = System.Drawing.Color.YellowGreen;
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OffsetPressedContent = true;
-            this.btnEliminar.Size = new System.Drawing.Size(81, 65);
+            this.btnEliminar.Size = new System.Drawing.Size(108, 80);
             this.btnEliminar.TabIndex = 127;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEliminar.TextDropShadow = true;
             this.btnEliminar.UseVisualStyleBackColor = false;
-            //this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click_1);
             // 
             // btnModificar
             // 
@@ -270,12 +279,13 @@
             this.btnModificar.ImageSize = new System.Drawing.Size(70, 70);
             this.btnModificar.KeyButton = System.Windows.Forms.Keys.F1;
             this.btnModificar.KeyButtonView = false;
-            this.btnModificar.Location = new System.Drawing.Point(692, 3);
+            this.btnModificar.Location = new System.Drawing.Point(924, 4);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModificar.ModeGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnModificar.MouseOverColor = System.Drawing.Color.YellowGreen;
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.OffsetPressedContent = true;
-            this.btnModificar.Size = new System.Drawing.Size(79, 65);
+            this.btnModificar.Size = new System.Drawing.Size(105, 80);
             this.btnModificar.TabIndex = 126;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -303,18 +313,18 @@
             this.btnNuevo.ImageSize = new System.Drawing.Size(40, 40);
             this.btnNuevo.KeyButton = System.Windows.Forms.Keys.F1;
             this.btnNuevo.KeyButtonView = false;
-            this.btnNuevo.Location = new System.Drawing.Point(558, 2);
+            this.btnNuevo.Location = new System.Drawing.Point(1118, 4);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNuevo.ModeGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnNuevo.MouseOverColor = System.Drawing.Color.YellowGreen;
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.OffsetPressedContent = true;
-            this.btnNuevo.Size = new System.Drawing.Size(53, 42);
+            this.btnNuevo.Size = new System.Drawing.Size(107, 80);
             this.btnNuevo.TabIndex = 125;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnNuevo.TextDropShadow = true;
             this.btnNuevo.UseVisualStyleBackColor = false;
-            //this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // tlpBusqueda
             // 
@@ -323,20 +333,21 @@
             this.tlpBusqueda.ColumnCount = 5;
             this.tlpBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.12963F));
             this.tlpBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tlpBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11F));
             this.tlpBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.70422F));
-            this.tlpBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 149F));
+            this.tlpBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tlpBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.042253F));
             this.tlpBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlpBusqueda.Controls.Add(this.btnBuscar, 4, 0);
             this.tlpBusqueda.Controls.Add(this.LblTipoBusqueda, 0, 0);
             this.tlpBusqueda.Controls.Add(this.TxtBusqueda, 3, 0);
             this.tlpBusqueda.Controls.Add(this.CmbTipoBusqueda, 1, 0);
-            this.tlpBusqueda.Location = new System.Drawing.Point(12, 12);
+            this.tlpBusqueda.Location = new System.Drawing.Point(16, 15);
+            this.tlpBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tlpBusqueda.Name = "tlpBusqueda";
             this.tlpBusqueda.RowCount = 1;
             this.tlpBusqueda.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBusqueda.Size = new System.Drawing.Size(526, 35);
+            this.tlpBusqueda.Size = new System.Drawing.Size(702, 43);
             this.tlpBusqueda.TabIndex = 1;
             // 
             // btnBuscar
@@ -358,12 +369,13 @@
             this.btnBuscar.ImageSize = new System.Drawing.Size(30, 30);
             this.btnBuscar.KeyButton = System.Windows.Forms.Keys.F1;
             this.btnBuscar.KeyButtonView = false;
-            this.btnBuscar.Location = new System.Drawing.Point(379, 3);
+            this.btnBuscar.Location = new System.Drawing.Point(505, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscar.ModeGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnBuscar.MouseOverColor = System.Drawing.Color.YellowGreen;
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.OffsetPressedContent = true;
-            this.btnBuscar.Size = new System.Drawing.Size(30, 29);
+            this.btnBuscar.Size = new System.Drawing.Size(40, 35);
             this.btnBuscar.TabIndex = 122;
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnBuscar.TextDropShadow = true;
@@ -375,9 +387,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblTipoBusqueda.AutoSize = true;
-            this.LblTipoBusqueda.Location = new System.Drawing.Point(3, 0);
+            this.LblTipoBusqueda.Location = new System.Drawing.Point(4, 0);
+            this.LblTipoBusqueda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblTipoBusqueda.Name = "LblTipoBusqueda";
-            this.LblTipoBusqueda.Size = new System.Drawing.Size(62, 35);
+            this.LblTipoBusqueda.Size = new System.Drawing.Size(82, 43);
             this.LblTipoBusqueda.TabIndex = 1;
             this.LblTipoBusqueda.Text = "Tipo de búsqueda:";
             this.LblTipoBusqueda.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -385,24 +398,27 @@
             // TxtBusqueda
             // 
             this.TxtBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtBusqueda.Location = new System.Drawing.Point(178, 7);
+            this.TxtBusqueda.Location = new System.Drawing.Point(237, 10);
+            this.TxtBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtBusqueda.Name = "TxtBusqueda";
-            this.TxtBusqueda.Size = new System.Drawing.Size(195, 20);
+            this.TxtBusqueda.Size = new System.Drawing.Size(260, 22);
             this.TxtBusqueda.TabIndex = 2;
             // 
             // CmbTipoBusqueda
             // 
             this.CmbTipoBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.CmbTipoBusqueda.FormattingEnabled = true;
-            this.CmbTipoBusqueda.Location = new System.Drawing.Point(71, 7);
+            this.CmbTipoBusqueda.Location = new System.Drawing.Point(94, 9);
+            this.CmbTipoBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CmbTipoBusqueda.Name = "CmbTipoBusqueda";
-            this.CmbTipoBusqueda.Size = new System.Drawing.Size(93, 21);
+            this.CmbTipoBusqueda.Size = new System.Drawing.Size(124, 24);
             this.CmbTipoBusqueda.TabIndex = 0;
             // 
             // IDClasificacion
             // 
             this.IDClasificacion.DataPropertyName = "IDClasificacion";
             this.IDClasificacion.HeaderText = "IDTipoClasificacion";
+            this.IDClasificacion.MinimumWidth = 6;
             this.IDClasificacion.Name = "IDClasificacion";
             this.IDClasificacion.ReadOnly = true;
             this.IDClasificacion.Visible = false;
@@ -412,6 +428,7 @@
             // 
             this.Descripcion.DataPropertyName = "Descripcion";
             this.Descripcion.HeaderText = "Clasificación";
+            this.Descripcion.MinimumWidth = 6;
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.ReadOnly = true;
             this.Descripcion.Width = 91;
@@ -422,6 +439,7 @@
             dataGridViewCellStyle2.Format = "P";
             this.Porcentaje.DefaultCellStyle = dataGridViewCellStyle2;
             this.Porcentaje.HeaderText = "Porcentaje";
+            this.Porcentaje.MinimumWidth = 6;
             this.Porcentaje.Name = "Porcentaje";
             this.Porcentaje.ReadOnly = true;
             this.Porcentaje.Width = 83;
@@ -429,54 +447,20 @@
             // clasificacionClienteBindingSource
             // 
             this.clasificacionClienteBindingSource.DataSource = typeof(CreativaSL.Dll.VentaBoletosGlobal.ClasificacionCliente);
-
-            // btnNuevo
-            // 
-            this.btnNuevo.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnNuevo.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnNuevo.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnNuevo.BorderMouseOverColor = System.Drawing.Color.Gold;
-            this.btnNuevo.BorderNoFocusColor = System.Drawing.Color.SkyBlue;
-            this.btnNuevo.FocusRectangle = true;
-            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.btnNuevo.Image = null;
-            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnNuevo.ImageBorderColor = System.Drawing.Color.Chocolate;
-            this.btnNuevo.ImageFocused = null;
-            this.btnNuevo.ImageInactive = null;
-            this.btnNuevo.ImageMouseOver = null;
-            this.btnNuevo.ImageNormal = null;
-            this.btnNuevo.ImagePressed = null;
-            this.btnNuevo.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnNuevo.KeyButton = System.Windows.Forms.Keys.F1;
-            this.btnNuevo.KeyButtonView = false;
-            this.btnNuevo.Location = new System.Drawing.Point(838, 3);
-            this.btnNuevo.ModeGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btnNuevo.MouseOverColor = System.Drawing.Color.YellowGreen;
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.OffsetPressedContent = true;
-            this.btnNuevo.Size = new System.Drawing.Size(80, 65);
-            this.btnNuevo.TabIndex = 125;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnNuevo.TextDropShadow = true;
-            this.btnNuevo.UseVisualStyleBackColor = false;
-            //this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-
             // 
             // frm_v2_ClasificacionUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(913, 421);
+            this.ClientSize = new System.Drawing.Size(1217, 518);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MinimumSize = new System.Drawing.Size(915, 460);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1214, 555);
             this.Name = "frm_v2_ClasificacionUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categorías de cliente";
             this.TopMost = true;
-            //this.Load += new System.EventHandler(this.frm_v2_ClasificacionUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes1)).EndInit();

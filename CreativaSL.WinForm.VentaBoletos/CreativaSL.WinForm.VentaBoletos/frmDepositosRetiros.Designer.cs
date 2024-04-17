@@ -153,7 +153,7 @@
             this.label9.ForeColor = System.Drawing.Color.Navy;
             this.label9.Location = new System.Drawing.Point(177, 2);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(175, 21);
+            this.label9.Size = new System.Drawing.Size(205, 26);
             this.label9.TabIndex = 0;
             this.label9.Text = "Datos del Deposito";
             // 
@@ -172,7 +172,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(14, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 20);
+            this.label2.Size = new System.Drawing.Size(112, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Concepto:";
             // 
@@ -183,7 +183,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(41, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 20);
+            this.label1.Size = new System.Drawing.Size(79, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Monto:";
             // 
@@ -192,14 +192,14 @@
             this.txtMonto.Location = new System.Drawing.Point(106, 46);
             this.txtMonto.MaxLength = 9;
             this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(172, 26);
+            this.txtMonto.Size = new System.Drawing.Size(172, 30);
             this.txtMonto.TabIndex = 1;
             this.txtMonto.Text = "0";
             this.txtMonto.Validating += new System.ComponentModel.CancelEventHandler(this.txtMonto_Validating);
             // 
             // frmDepositosRetiros
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(534, 240);
