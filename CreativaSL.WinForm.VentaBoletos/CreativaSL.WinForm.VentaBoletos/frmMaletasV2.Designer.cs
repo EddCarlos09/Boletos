@@ -101,8 +101,14 @@
             this.dgvdatosboleto.AllowUserToDeleteRows = false;
             this.dgvdatosboleto.AllowUserToResizeColumns = false;
             this.dgvdatosboleto.AllowUserToResizeRows = false;
+            this.dgvdatosboleto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvdatosboleto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvdatosboleto.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvdatosboleto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvdatosboleto.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvdatosboleto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvdatosboleto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdatosboleto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_boleto,
@@ -351,7 +357,6 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAceptar.Location = new System.Drawing.Point(277, 333);
@@ -365,7 +370,6 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnBuscar.Location = new System.Drawing.Point(100, 333);
@@ -379,7 +383,6 @@
             // 
             // materialLabel2
             // 
-            this.materialLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -392,7 +395,6 @@
             // 
             // txtNombreCliente
             // 
-            this.txtNombreCliente.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtNombreCliente.AnimateReadOnly = false;
             this.txtNombreCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtNombreCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -421,7 +423,6 @@
             // 
             // txtFolioVenta
             // 
-            this.txtFolioVenta.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtFolioVenta.AnimateReadOnly = false;
             this.txtFolioVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtFolioVenta.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -450,7 +451,6 @@
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dtpFecha.Location = new System.Drawing.Point(191, 86);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(221, 22);
@@ -459,7 +459,6 @@
             // 
             // materialLabel1
             // 
-            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -472,8 +471,9 @@
             // 
             // chkNombre
             // 
-            this.chkNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.chkNombre.AutoSize = true;
+            this.chkNombre.Checked = true;
+            this.chkNombre.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkNombre.Depth = 0;
             this.chkNombre.Location = new System.Drawing.Point(63, 262);
             this.chkNombre.Margin = new System.Windows.Forms.Padding(0);
@@ -490,8 +490,9 @@
             // 
             // chkFolio
             // 
-            this.chkFolio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.chkFolio.AutoSize = true;
+            this.chkFolio.Checked = true;
+            this.chkFolio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolio.Depth = 0;
             this.chkFolio.Location = new System.Drawing.Point(63, 169);
             this.chkFolio.Margin = new System.Windows.Forms.Padding(0);
@@ -508,8 +509,9 @@
             // 
             // chkFecha
             // 
-            this.chkFecha.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.chkFecha.AutoSize = true;
+            this.chkFecha.Checked = true;
+            this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFecha.Depth = 0;
             this.chkFecha.Location = new System.Drawing.Point(63, 82);
             this.chkFecha.Margin = new System.Windows.Forms.Padding(0);

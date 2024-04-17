@@ -335,7 +335,7 @@
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1804, 1036);
+            this.materialTabControl1.Size = new System.Drawing.Size(1936, 1036);
             this.materialTabControl1.TabIndex = 19;
             this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
             // 
@@ -347,7 +347,7 @@
             this.tabPage12.Location = new System.Drawing.Point(4, 25);
             this.tabPage12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(1796, 1007);
+            this.tabPage12.Size = new System.Drawing.Size(1928, 1007);
             this.tabPage12.TabIndex = 12;
             this.tabPage12.Text = "Home";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -375,7 +375,7 @@
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(1796, 1007);
+            this.materialCard1.Size = new System.Drawing.Size(1928, 1007);
             this.materialCard1.TabIndex = 0;
             // 
             // btnPlantaAlta
@@ -387,6 +387,7 @@
             this.btnPlantaAlta.TabIndex = 244;
             this.btnPlantaAlta.Text = "P. Alta";
             this.btnPlantaAlta.UseVisualStyleBackColor = true;
+            this.btnPlantaAlta.Click += new System.EventHandler(this.btnPlantaAlta_Click);
             // 
             // btnPlantaBaja
             // 
@@ -397,6 +398,7 @@
             this.btnPlantaBaja.TabIndex = 243;
             this.btnPlantaBaja.Text = "P. Baja";
             this.btnPlantaBaja.UseVisualStyleBackColor = true;
+            this.btnPlantaBaja.Click += new System.EventHandler(this.btnPlantaBaja_Click);
             // 
             // materialLabel9
             // 
@@ -445,27 +447,29 @@
             // 
             this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
             this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Cancelar.Location = new System.Drawing.Point(480, 21);
+            this.btn_Cancelar.Location = new System.Drawing.Point(469, 16);
             this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(179, 52);
+            this.btn_Cancelar.Size = new System.Drawing.Size(198, 68);
             this.btn_Cancelar.TabIndex = 53;
-            this.btn_Cancelar.Text = "CANCENLAR";
+            this.btn_Cancelar.Text = "CANCELAR";
             this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // btn_Vender
             // 
             this.btn_Vender.Image = ((System.Drawing.Image)(resources.GetObject("btn_Vender.Image")));
             this.btn_Vender.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Vender.Location = new System.Drawing.Point(255, 21);
+            this.btn_Vender.Location = new System.Drawing.Point(236, 16);
             this.btn_Vender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Vender.Name = "btn_Vender";
-            this.btn_Vender.Size = new System.Drawing.Size(179, 52);
+            this.btn_Vender.Size = new System.Drawing.Size(198, 68);
             this.btn_Vender.TabIndex = 52;
             this.btn_Vender.Text = "VENDER";
             this.btn_Vender.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Vender.UseVisualStyleBackColor = true;
+            this.btn_Vender.Click += new System.EventHandler(this.btn_Vender_Click);
             // 
             // materialLabel8
             // 
@@ -523,6 +527,7 @@
             this.checkBoxVentaGrupal.TabIndex = 49;
             this.checkBoxVentaGrupal.Text = "Venta Grupal";
             this.checkBoxVentaGrupal.UseVisualStyleBackColor = true;
+            this.checkBoxVentaGrupal.CheckedChanged += new System.EventHandler(this.checkBoxVentaGrupal_CheckedChanged);
             // 
             // materialCard2
             // 
@@ -3298,7 +3303,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage1.Size = new System.Drawing.Size(1928, 1007);
             this.tabPage1.TabIndex = 10;
             this.tabPage1.Text = "Ventas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -3310,7 +3315,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage2.Size = new System.Drawing.Size(1928, 1007);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ventas G";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -3321,7 +3326,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage3.Size = new System.Drawing.Size(1928, 1007);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Apartados";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -3332,7 +3337,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage4.Size = new System.Drawing.Size(1928, 1007);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Clientes";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -3343,7 +3348,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage5.Size = new System.Drawing.Size(1928, 1007);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Caja";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -3354,7 +3359,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage6.Size = new System.Drawing.Size(1928, 1007);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Maleta";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -3365,7 +3370,7 @@
             this.btnAdministrador.Location = new System.Drawing.Point(4, 25);
             this.btnAdministrador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdministrador.Name = "btnAdministrador";
-            this.btnAdministrador.Size = new System.Drawing.Size(2239, 1188);
+            this.btnAdministrador.Size = new System.Drawing.Size(1928, 1007);
             this.btnAdministrador.TabIndex = 6;
             this.btnAdministrador.Text = "Admin";
             this.btnAdministrador.UseVisualStyleBackColor = true;
@@ -3376,7 +3381,7 @@
             this.btnReportes.Location = new System.Drawing.Point(4, 25);
             this.btnReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(2239, 1188);
+            this.btnReportes.Size = new System.Drawing.Size(1928, 1007);
             this.btnReportes.TabIndex = 7;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = true;
@@ -3387,7 +3392,7 @@
             this.btnConfiguracion.Location = new System.Drawing.Point(4, 25);
             this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(2239, 1188);
+            this.btnConfiguracion.Size = new System.Drawing.Size(1928, 1007);
             this.btnConfiguracion.TabIndex = 8;
             this.btnConfiguracion.Text = "Config";
             this.btnConfiguracion.UseVisualStyleBackColor = true;
@@ -3398,7 +3403,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 25);
             this.tabPage10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage10.Size = new System.Drawing.Size(1928, 1007);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "Asistencia";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -3408,7 +3413,7 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 25);
             this.tabPage11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage11.Size = new System.Drawing.Size(1928, 1007);
             this.tabPage11.TabIndex = 11;
             this.tabPage11.Text = "Salir";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -3418,7 +3423,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1810, 1102);
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.materialTabControl1);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;

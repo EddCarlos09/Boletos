@@ -28,36 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmApartadosV2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle109 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle110 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle100 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle101 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle102 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle103 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle104 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle105 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle106 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle107 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle108 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.btnPagoOnline = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnPagoEfectivo = new System.Windows.Forms.Button();
-            this.btnCancelarB = new System.Windows.Forms.Button();
-            this.btnCancelarA = new System.Windows.Forms.Button();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtNombreCliente = new MaterialSkin.Controls.MaterialTextBox2();
-            this.txtFolioBoleto = new MaterialSkin.Controls.MaterialTextBox2();
-            this.txt_folioVenta = new MaterialSkin.Controls.MaterialTextBox2();
-            this.chkNombre = new MaterialSkin.Controls.MaterialCheckbox();
-            this.chkFolio = new MaterialSkin.Controls.MaterialCheckbox();
-            this.chkFecha = new MaterialSkin.Controls.MaterialCheckbox();
-            this.chkFolioVenta = new MaterialSkin.Controls.MaterialCheckbox();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.dgvdatosboleto = new System.Windows.Forms.DataGridView();
             this.id_boleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_ventadetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,6 +70,23 @@
             this.cajero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bloqueoCancelacionMonedero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bloqueoCancelacionPorFormaDePago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnPagoOnline = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnPagoEfectivo = new System.Windows.Forms.Button();
+            this.btnCancelarB = new System.Windows.Forms.Button();
+            this.btnCancelarA = new System.Windows.Forms.Button();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtNombreCliente = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtFolioBoleto = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txt_folioVenta = new MaterialSkin.Controls.MaterialTextBox2();
+            this.chkNombre = new MaterialSkin.Controls.MaterialCheckbox();
+            this.chkFolio = new MaterialSkin.Controls.MaterialCheckbox();
+            this.chkFecha = new MaterialSkin.Controls.MaterialCheckbox();
+            this.chkFolioVenta = new MaterialSkin.Controls.MaterialCheckbox();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboleto)).BeginInit();
             this.SuspendLayout();
@@ -122,6 +122,368 @@
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard1.Size = new System.Drawing.Size(1235, 751);
             this.materialCard1.TabIndex = 1;
+            // 
+            // dgvdatosboleto
+            // 
+            this.dgvdatosboleto.AllowUserToAddRows = false;
+            this.dgvdatosboleto.AllowUserToDeleteRows = false;
+            this.dgvdatosboleto.AllowUserToResizeColumns = false;
+            this.dgvdatosboleto.AllowUserToResizeRows = false;
+            this.dgvdatosboleto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvdatosboleto.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvdatosboleto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvdatosboleto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvdatosboleto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_boleto,
+            this.id_ventadetalle,
+            this.folioVenta,
+            this.CodigoBarra,
+            this.Viaje,
+            this.Origen,
+            this.Destino,
+            this.fecha_salidaV,
+            this.hora_salidaV,
+            this.NombrePersona,
+            this.asiento,
+            this.fechaNacimiento,
+            this.numeroTelefono,
+            this.cantidad_venta,
+            this.boletocosto,
+            this.vdcosto,
+            this.iva,
+            this.pago,
+            this.pendiente,
+            this.Transf,
+            this.Usu_Ins,
+            this.Usu_Mod,
+            this.precio,
+            this.id_venta,
+            this.id_cliente,
+            this.cajero,
+            this.bloqueoCancelacionMonedero,
+            this.bloqueoCancelacionPorFormaDePago});
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle10.Format = "C2";
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdatosboleto.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvdatosboleto.Location = new System.Drawing.Point(42, 397);
+            this.dgvdatosboleto.MultiSelect = false;
+            this.dgvdatosboleto.Name = "dgvdatosboleto";
+            this.dgvdatosboleto.ReadOnly = true;
+            this.dgvdatosboleto.RowHeadersWidth = 51;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dgvdatosboleto.RowsDefaultCellStyle = dataGridViewCellStyle11;
+            this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvdatosboleto.Size = new System.Drawing.Size(1105, 337);
+            this.dgvdatosboleto.TabIndex = 20;
+            // 
+            // id_boleto
+            // 
+            this.id_boleto.DataPropertyName = "id_boleto";
+            this.id_boleto.HeaderText = "id_boleto";
+            this.id_boleto.MinimumWidth = 6;
+            this.id_boleto.Name = "id_boleto";
+            this.id_boleto.ReadOnly = true;
+            this.id_boleto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.id_boleto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id_boleto.Visible = false;
+            // 
+            // id_ventadetalle
+            // 
+            this.id_ventadetalle.DataPropertyName = "id_ventadetalle";
+            this.id_ventadetalle.HeaderText = "id_ventadetalle";
+            this.id_ventadetalle.MinimumWidth = 6;
+            this.id_ventadetalle.Name = "id_ventadetalle";
+            this.id_ventadetalle.ReadOnly = true;
+            this.id_ventadetalle.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.id_ventadetalle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id_ventadetalle.Visible = false;
+            // 
+            // folioVenta
+            // 
+            this.folioVenta.DataPropertyName = "folioVenta";
+            this.folioVenta.HeaderText = "Folio Venta";
+            this.folioVenta.MinimumWidth = 6;
+            this.folioVenta.Name = "folioVenta";
+            this.folioVenta.ReadOnly = true;
+            // 
+            // CodigoBarra
+            // 
+            this.CodigoBarra.DataPropertyName = "CodigoBarra";
+            this.CodigoBarra.HeaderText = "Folio Boleto";
+            this.CodigoBarra.MinimumWidth = 6;
+            this.CodigoBarra.Name = "CodigoBarra";
+            this.CodigoBarra.ReadOnly = true;
+            this.CodigoBarra.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CodigoBarra.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Viaje
+            // 
+            this.Viaje.DataPropertyName = "nombreViaje";
+            this.Viaje.HeaderText = "Línea";
+            this.Viaje.MinimumWidth = 6;
+            this.Viaje.Name = "Viaje";
+            this.Viaje.ReadOnly = true;
+            // 
+            // Origen
+            // 
+            this.Origen.DataPropertyName = "Origen";
+            this.Origen.HeaderText = "Origen";
+            this.Origen.MinimumWidth = 6;
+            this.Origen.Name = "Origen";
+            this.Origen.ReadOnly = true;
+            this.Origen.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Origen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Destino
+            // 
+            this.Destino.DataPropertyName = "Destino";
+            this.Destino.FillWeight = 85F;
+            this.Destino.HeaderText = "Destino";
+            this.Destino.MinimumWidth = 6;
+            this.Destino.Name = "Destino";
+            this.Destino.ReadOnly = true;
+            this.Destino.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Destino.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // fecha_salidaV
+            // 
+            this.fecha_salidaV.DataPropertyName = "fecha_salidaV";
+            dataGridViewCellStyle1.Format = "d";
+            dataGridViewCellStyle1.NullValue = null;
+            this.fecha_salidaV.DefaultCellStyle = dataGridViewCellStyle1;
+            this.fecha_salidaV.HeaderText = "Fecha";
+            this.fecha_salidaV.MinimumWidth = 6;
+            this.fecha_salidaV.Name = "fecha_salidaV";
+            this.fecha_salidaV.ReadOnly = true;
+            this.fecha_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.fecha_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // hora_salidaV
+            // 
+            this.hora_salidaV.DataPropertyName = "hora_salidaV";
+            this.hora_salidaV.HeaderText = "Hora";
+            this.hora_salidaV.MinimumWidth = 6;
+            this.hora_salidaV.Name = "hora_salidaV";
+            this.hora_salidaV.ReadOnly = true;
+            this.hora_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.hora_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // NombrePersona
+            // 
+            this.NombrePersona.DataPropertyName = "NombrePersona";
+            this.NombrePersona.HeaderText = "Nombre";
+            this.NombrePersona.MinimumWidth = 6;
+            this.NombrePersona.Name = "NombrePersona";
+            this.NombrePersona.ReadOnly = true;
+            this.NombrePersona.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.NombrePersona.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // asiento
+            // 
+            this.asiento.DataPropertyName = "asiento";
+            dataGridViewCellStyle2.Format = "N0";
+            dataGridViewCellStyle2.NullValue = null;
+            this.asiento.DefaultCellStyle = dataGridViewCellStyle2;
+            this.asiento.HeaderText = "Asiento";
+            this.asiento.MinimumWidth = 6;
+            this.asiento.Name = "asiento";
+            this.asiento.ReadOnly = true;
+            this.asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // fechaNacimiento
+            // 
+            this.fechaNacimiento.DataPropertyName = "fechaNacimiento";
+            dataGridViewCellStyle3.Format = "d";
+            this.fechaNacimiento.DefaultCellStyle = dataGridViewCellStyle3;
+            this.fechaNacimiento.HeaderText = "Fecha_Nacimiento";
+            this.fechaNacimiento.MinimumWidth = 6;
+            this.fechaNacimiento.Name = "fechaNacimiento";
+            this.fechaNacimiento.ReadOnly = true;
+            // 
+            // numeroTelefono
+            // 
+            this.numeroTelefono.DataPropertyName = "numeroTelefono";
+            this.numeroTelefono.HeaderText = "Teléfono";
+            this.numeroTelefono.MinimumWidth = 6;
+            this.numeroTelefono.Name = "numeroTelefono";
+            this.numeroTelefono.ReadOnly = true;
+            // 
+            // cantidad_venta
+            // 
+            this.cantidad_venta.DataPropertyName = "cantidad_venta";
+            this.cantidad_venta.HeaderText = "cantidad_venta";
+            this.cantidad_venta.MinimumWidth = 6;
+            this.cantidad_venta.Name = "cantidad_venta";
+            this.cantidad_venta.ReadOnly = true;
+            this.cantidad_venta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.cantidad_venta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.cantidad_venta.Visible = false;
+            // 
+            // boletocosto
+            // 
+            this.boletocosto.DataPropertyName = "boletocosto";
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.boletocosto.DefaultCellStyle = dataGridViewCellStyle4;
+            this.boletocosto.HeaderText = "Precio";
+            this.boletocosto.MinimumWidth = 6;
+            this.boletocosto.Name = "boletocosto";
+            this.boletocosto.ReadOnly = true;
+            this.boletocosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.boletocosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // vdcosto
+            // 
+            this.vdcosto.DataPropertyName = "vdcosto";
+            dataGridViewCellStyle5.Format = "C2";
+            this.vdcosto.DefaultCellStyle = dataGridViewCellStyle5;
+            this.vdcosto.HeaderText = "Costo";
+            this.vdcosto.MinimumWidth = 6;
+            this.vdcosto.Name = "vdcosto";
+            this.vdcosto.ReadOnly = true;
+            this.vdcosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.vdcosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.vdcosto.Visible = false;
+            // 
+            // iva
+            // 
+            this.iva.DataPropertyName = "iva";
+            dataGridViewCellStyle6.Format = "C2";
+            this.iva.DefaultCellStyle = dataGridViewCellStyle6;
+            this.iva.HeaderText = "IVA";
+            this.iva.MinimumWidth = 6;
+            this.iva.Name = "iva";
+            this.iva.ReadOnly = true;
+            this.iva.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.iva.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.iva.Visible = false;
+            // 
+            // pago
+            // 
+            this.pago.DataPropertyName = "pago";
+            dataGridViewCellStyle7.Format = "C2";
+            this.pago.DefaultCellStyle = dataGridViewCellStyle7;
+            this.pago.HeaderText = "Pago";
+            this.pago.MinimumWidth = 6;
+            this.pago.Name = "pago";
+            this.pago.ReadOnly = true;
+            this.pago.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.pago.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // pendiente
+            // 
+            this.pendiente.DataPropertyName = "pendiente";
+            dataGridViewCellStyle8.Format = "C2";
+            this.pendiente.DefaultCellStyle = dataGridViewCellStyle8;
+            this.pendiente.HeaderText = "Pendiente";
+            this.pendiente.MinimumWidth = 6;
+            this.pendiente.Name = "pendiente";
+            this.pendiente.ReadOnly = true;
+            this.pendiente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.pendiente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Transf
+            // 
+            this.Transf.DataPropertyName = "Transf";
+            dataGridViewCellStyle9.Format = "N0";
+            dataGridViewCellStyle9.NullValue = null;
+            this.Transf.DefaultCellStyle = dataGridViewCellStyle9;
+            this.Transf.HeaderText = "Transf";
+            this.Transf.MinimumWidth = 6;
+            this.Transf.Name = "Transf";
+            this.Transf.ReadOnly = true;
+            this.Transf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Transf.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Usu_Ins
+            // 
+            this.Usu_Ins.DataPropertyName = "usuins";
+            this.Usu_Ins.HeaderText = "Usu_Ins";
+            this.Usu_Ins.MinimumWidth = 6;
+            this.Usu_Ins.Name = "Usu_Ins";
+            this.Usu_Ins.ReadOnly = true;
+            this.Usu_Ins.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Usu_Ins.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Usu_Mod
+            // 
+            this.Usu_Mod.DataPropertyName = "usuupd";
+            this.Usu_Mod.HeaderText = "Usu_Mod";
+            this.Usu_Mod.MinimumWidth = 6;
+            this.Usu_Mod.Name = "Usu_Mod";
+            this.Usu_Mod.ReadOnly = true;
+            this.Usu_Mod.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Usu_Mod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // precio
+            // 
+            this.precio.DataPropertyName = "precio";
+            this.precio.HeaderText = "Precio";
+            this.precio.MinimumWidth = 6;
+            this.precio.Name = "precio";
+            this.precio.ReadOnly = true;
+            this.precio.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.precio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.precio.Visible = false;
+            // 
+            // id_venta
+            // 
+            this.id_venta.DataPropertyName = "id_venta";
+            this.id_venta.HeaderText = "id_venta";
+            this.id_venta.MinimumWidth = 6;
+            this.id_venta.Name = "id_venta";
+            this.id_venta.ReadOnly = true;
+            this.id_venta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.id_venta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id_venta.Visible = false;
+            // 
+            // id_cliente
+            // 
+            this.id_cliente.DataPropertyName = "id_cliente";
+            this.id_cliente.HeaderText = "id_cliente";
+            this.id_cliente.MinimumWidth = 6;
+            this.id_cliente.Name = "id_cliente";
+            this.id_cliente.ReadOnly = true;
+            this.id_cliente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.id_cliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id_cliente.Visible = false;
+            // 
+            // cajero
+            // 
+            this.cajero.DataPropertyName = "cajero";
+            this.cajero.HeaderText = "cajero";
+            this.cajero.MinimumWidth = 6;
+            this.cajero.Name = "cajero";
+            this.cajero.ReadOnly = true;
+            this.cajero.Visible = false;
+            // 
+            // bloqueoCancelacionMonedero
+            // 
+            this.bloqueoCancelacionMonedero.DataPropertyName = "bloqueoCancelacionMonedero";
+            this.bloqueoCancelacionMonedero.HeaderText = "bloqueoCancelacionMonedero";
+            this.bloqueoCancelacionMonedero.MinimumWidth = 6;
+            this.bloqueoCancelacionMonedero.Name = "bloqueoCancelacionMonedero";
+            this.bloqueoCancelacionMonedero.ReadOnly = true;
+            this.bloqueoCancelacionMonedero.Visible = false;
+            // 
+            // bloqueoCancelacionPorFormaDePago
+            // 
+            this.bloqueoCancelacionPorFormaDePago.DataPropertyName = "bloqueoCancelacionPorFormaDePago";
+            this.bloqueoCancelacionPorFormaDePago.HeaderText = "bloqueoCancelacionPorFormaDePago";
+            this.bloqueoCancelacionPorFormaDePago.MinimumWidth = 6;
+            this.bloqueoCancelacionPorFormaDePago.Name = "bloqueoCancelacionPorFormaDePago";
+            this.bloqueoCancelacionPorFormaDePago.ReadOnly = true;
+            this.bloqueoCancelacionPorFormaDePago.Visible = false;
             // 
             // dtpFecha
             // 
@@ -331,6 +693,8 @@
             // 
             this.chkNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkNombre.AutoSize = true;
+            this.chkNombre.Checked = true;
+            this.chkNombre.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkNombre.Depth = 0;
             this.chkNombre.Location = new System.Drawing.Point(42, 261);
             this.chkNombre.Margin = new System.Windows.Forms.Padding(0);
@@ -349,6 +713,8 @@
             // 
             this.chkFolio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkFolio.AutoSize = true;
+            this.chkFolio.Checked = true;
+            this.chkFolio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolio.Depth = 0;
             this.chkFolio.Location = new System.Drawing.Point(42, 193);
             this.chkFolio.Margin = new System.Windows.Forms.Padding(0);
@@ -367,6 +733,8 @@
             // 
             this.chkFecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkFecha.AutoSize = true;
+            this.chkFecha.Checked = true;
+            this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFecha.Depth = 0;
             this.chkFecha.Location = new System.Drawing.Point(42, 125);
             this.chkFecha.Margin = new System.Windows.Forms.Padding(0);
@@ -386,6 +754,8 @@
             // 
             this.chkFolioVenta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkFolioVenta.AutoSize = true;
+            this.chkFolioVenta.Checked = true;
+            this.chkFolioVenta.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolioVenta.Depth = 0;
             this.chkFolioVenta.Location = new System.Drawing.Point(42, 60);
             this.chkFolioVenta.Margin = new System.Windows.Forms.Padding(0);
@@ -398,7 +768,6 @@
             this.chkFolioVenta.TabIndex = 2;
             this.chkFolioVenta.Text = "Folio Venta:";
             this.chkFolioVenta.UseVisualStyleBackColor = true;
-            //this.chkFolioVenta.CheckedChanged += new System.EventHandler(this.chkFolioVenta_CheckedChanged);
             // 
             // materialLabel1
             // 
@@ -412,395 +781,6 @@
             this.materialLabel1.Size = new System.Drawing.Size(72, 19);
             this.materialLabel1.TabIndex = 1;
             this.materialLabel1.Text = "Busqueda";
-            // 
-            // dgvdatosboleto
-            // 
-            this.dgvdatosboleto.AllowUserToAddRows = false;
-            this.dgvdatosboleto.AllowUserToDeleteRows = false;
-            this.dgvdatosboleto.AllowUserToResizeColumns = false;
-            this.dgvdatosboleto.AllowUserToResizeRows = false;
-            this.dgvdatosboleto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvdatosboleto.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvdatosboleto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvdatosboleto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id_boleto,
-            this.id_ventadetalle,
-            this.folioVenta,
-            this.CodigoBarra,
-            this.Viaje,
-            this.Origen,
-            this.Destino,
-            this.fecha_salidaV,
-            this.hora_salidaV,
-            this.NombrePersona,
-            this.asiento,
-            this.fechaNacimiento,
-            this.numeroTelefono,
-            this.cantidad_venta,
-            this.boletocosto,
-            this.vdcosto,
-            this.iva,
-            this.pago,
-            this.pendiente,
-            this.Transf,
-            this.Usu_Ins,
-            this.Usu_Mod,
-            this.precio,
-            this.id_venta,
-            this.id_cliente,
-            this.cajero,
-            this.bloqueoCancelacionMonedero,
-            this.bloqueoCancelacionPorFormaDePago});
-            dataGridViewCellStyle109.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle109.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle109.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle109.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle109.Format = "C2";
-            dataGridViewCellStyle109.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle109.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle109.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdatosboleto.DefaultCellStyle = dataGridViewCellStyle109;
-            this.dgvdatosboleto.Location = new System.Drawing.Point(42, 397);
-            this.dgvdatosboleto.MultiSelect = false;
-            this.dgvdatosboleto.Name = "dgvdatosboleto";
-            this.dgvdatosboleto.ReadOnly = true;
-            this.dgvdatosboleto.RowHeadersWidth = 51;
-            dataGridViewCellStyle110.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dgvdatosboleto.RowsDefaultCellStyle = dataGridViewCellStyle110;
-            this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdatosboleto.Size = new System.Drawing.Size(1113, 337);
-            this.dgvdatosboleto.TabIndex = 20;
-            // 
-            // id_boleto
-            // 
-            this.id_boleto.DataPropertyName = "id_boleto";
-            this.id_boleto.HeaderText = "id_boleto";
-            this.id_boleto.MinimumWidth = 6;
-            this.id_boleto.Name = "id_boleto";
-            this.id_boleto.ReadOnly = true;
-            this.id_boleto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.id_boleto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.id_boleto.Visible = false;
-            this.id_boleto.Width = 80;
-            // 
-            // id_ventadetalle
-            // 
-            this.id_ventadetalle.DataPropertyName = "id_ventadetalle";
-            this.id_ventadetalle.HeaderText = "id_ventadetalle";
-            this.id_ventadetalle.MinimumWidth = 6;
-            this.id_ventadetalle.Name = "id_ventadetalle";
-            this.id_ventadetalle.ReadOnly = true;
-            this.id_ventadetalle.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.id_ventadetalle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.id_ventadetalle.Visible = false;
-            this.id_ventadetalle.Width = 122;
-            // 
-            // folioVenta
-            // 
-            this.folioVenta.DataPropertyName = "folioVenta";
-            this.folioVenta.HeaderText = "Folio Venta";
-            this.folioVenta.MinimumWidth = 6;
-            this.folioVenta.Name = "folioVenta";
-            this.folioVenta.ReadOnly = true;
-            this.folioVenta.Width = 104;
-            // 
-            // CodigoBarra
-            // 
-            this.CodigoBarra.DataPropertyName = "CodigoBarra";
-            this.CodigoBarra.HeaderText = "Folio Boleto";
-            this.CodigoBarra.MinimumWidth = 6;
-            this.CodigoBarra.Name = "CodigoBarra";
-            this.CodigoBarra.ReadOnly = true;
-            this.CodigoBarra.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.CodigoBarra.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.CodigoBarra.Width = 85;
-            // 
-            // Viaje
-            // 
-            this.Viaje.DataPropertyName = "nombreViaje";
-            this.Viaje.HeaderText = "Línea";
-            this.Viaje.MinimumWidth = 6;
-            this.Viaje.Name = "Viaje";
-            this.Viaje.ReadOnly = true;
-            this.Viaje.Width = 69;
-            // 
-            // Origen
-            // 
-            this.Origen.DataPropertyName = "Origen";
-            this.Origen.HeaderText = "Origen";
-            this.Origen.MinimumWidth = 6;
-            this.Origen.Name = "Origen";
-            this.Origen.ReadOnly = true;
-            this.Origen.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Origen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Origen.Width = 53;
-            // 
-            // Destino
-            // 
-            this.Destino.DataPropertyName = "Destino";
-            this.Destino.FillWeight = 85F;
-            this.Destino.HeaderText = "Destino";
-            this.Destino.MinimumWidth = 6;
-            this.Destino.Name = "Destino";
-            this.Destino.ReadOnly = true;
-            this.Destino.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Destino.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Destino.Width = 59;
-            // 
-            // fecha_salidaV
-            // 
-            this.fecha_salidaV.DataPropertyName = "fecha_salidaV";
-            dataGridViewCellStyle100.Format = "d";
-            dataGridViewCellStyle100.NullValue = null;
-            this.fecha_salidaV.DefaultCellStyle = dataGridViewCellStyle100;
-            this.fecha_salidaV.HeaderText = "Fecha";
-            this.fecha_salidaV.MinimumWidth = 6;
-            this.fecha_salidaV.Name = "fecha_salidaV";
-            this.fecha_salidaV.ReadOnly = true;
-            this.fecha_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.fecha_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.fecha_salidaV.Width = 51;
-            // 
-            // hora_salidaV
-            // 
-            this.hora_salidaV.DataPropertyName = "hora_salidaV";
-            this.hora_salidaV.HeaderText = "Hora";
-            this.hora_salidaV.MinimumWidth = 6;
-            this.hora_salidaV.Name = "hora_salidaV";
-            this.hora_salidaV.ReadOnly = true;
-            this.hora_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.hora_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.hora_salidaV.Width = 43;
-            // 
-            // NombrePersona
-            // 
-            this.NombrePersona.DataPropertyName = "NombrePersona";
-            this.NombrePersona.HeaderText = "Nombre";
-            this.NombrePersona.MinimumWidth = 6;
-            this.NombrePersona.Name = "NombrePersona";
-            this.NombrePersona.ReadOnly = true;
-            this.NombrePersona.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.NombrePersona.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NombrePersona.Width = 62;
-            // 
-            // asiento
-            // 
-            this.asiento.DataPropertyName = "asiento";
-            dataGridViewCellStyle101.Format = "N0";
-            dataGridViewCellStyle101.NullValue = null;
-            this.asiento.DefaultCellStyle = dataGridViewCellStyle101;
-            this.asiento.HeaderText = "Asiento";
-            this.asiento.MinimumWidth = 6;
-            this.asiento.Name = "asiento";
-            this.asiento.ReadOnly = true;
-            this.asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.asiento.Width = 58;
-            // 
-            // fechaNacimiento
-            // 
-            this.fechaNacimiento.DataPropertyName = "fechaNacimiento";
-            dataGridViewCellStyle102.Format = "d";
-            this.fechaNacimiento.DefaultCellStyle = dataGridViewCellStyle102;
-            this.fechaNacimiento.HeaderText = "Fecha_Nacimiento";
-            this.fechaNacimiento.MinimumWidth = 6;
-            this.fechaNacimiento.Name = "fechaNacimiento";
-            this.fechaNacimiento.ReadOnly = true;
-            this.fechaNacimiento.Width = 149;
-            // 
-            // numeroTelefono
-            // 
-            this.numeroTelefono.DataPropertyName = "numeroTelefono";
-            this.numeroTelefono.HeaderText = "Teléfono";
-            this.numeroTelefono.MinimumWidth = 6;
-            this.numeroTelefono.Name = "numeroTelefono";
-            this.numeroTelefono.ReadOnly = true;
-            this.numeroTelefono.Width = 90;
-            // 
-            // cantidad_venta
-            // 
-            this.cantidad_venta.DataPropertyName = "cantidad_venta";
-            this.cantidad_venta.HeaderText = "cantidad_venta";
-            this.cantidad_venta.MinimumWidth = 6;
-            this.cantidad_venta.Name = "cantidad_venta";
-            this.cantidad_venta.ReadOnly = true;
-            this.cantidad_venta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.cantidad_venta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.cantidad_venta.Visible = false;
-            this.cantidad_venta.Width = 124;
-            // 
-            // boletocosto
-            // 
-            this.boletocosto.DataPropertyName = "boletocosto";
-            dataGridViewCellStyle103.Format = "C2";
-            dataGridViewCellStyle103.NullValue = null;
-            this.boletocosto.DefaultCellStyle = dataGridViewCellStyle103;
-            this.boletocosto.HeaderText = "Precio";
-            this.boletocosto.MinimumWidth = 6;
-            this.boletocosto.Name = "boletocosto";
-            this.boletocosto.ReadOnly = true;
-            this.boletocosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.boletocosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.boletocosto.Width = 52;
-            // 
-            // vdcosto
-            // 
-            this.vdcosto.DataPropertyName = "vdcosto";
-            dataGridViewCellStyle104.Format = "C2";
-            this.vdcosto.DefaultCellStyle = dataGridViewCellStyle104;
-            this.vdcosto.HeaderText = "Costo";
-            this.vdcosto.MinimumWidth = 6;
-            this.vdcosto.Name = "vdcosto";
-            this.vdcosto.ReadOnly = true;
-            this.vdcosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.vdcosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.vdcosto.Visible = false;
-            this.vdcosto.Width = 57;
-            // 
-            // iva
-            // 
-            this.iva.DataPropertyName = "iva";
-            dataGridViewCellStyle105.Format = "C2";
-            this.iva.DefaultCellStyle = dataGridViewCellStyle105;
-            this.iva.HeaderText = "IVA";
-            this.iva.MinimumWidth = 6;
-            this.iva.Name = "iva";
-            this.iva.ReadOnly = true;
-            this.iva.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.iva.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.iva.Visible = false;
-            this.iva.Width = 42;
-            // 
-            // pago
-            // 
-            this.pago.DataPropertyName = "pago";
-            dataGridViewCellStyle106.Format = "C2";
-            this.pago.DefaultCellStyle = dataGridViewCellStyle106;
-            this.pago.HeaderText = "Pago";
-            this.pago.MinimumWidth = 6;
-            this.pago.Name = "pago";
-            this.pago.ReadOnly = true;
-            this.pago.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.pago.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pago.Width = 46;
-            // 
-            // pendiente
-            // 
-            this.pendiente.DataPropertyName = "pendiente";
-            dataGridViewCellStyle107.Format = "C2";
-            this.pendiente.DefaultCellStyle = dataGridViewCellStyle107;
-            this.pendiente.HeaderText = "Pendiente";
-            this.pendiente.MinimumWidth = 6;
-            this.pendiente.Name = "pendiente";
-            this.pendiente.ReadOnly = true;
-            this.pendiente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.pendiente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pendiente.Width = 74;
-            // 
-            // Transf
-            // 
-            this.Transf.DataPropertyName = "Transf";
-            dataGridViewCellStyle108.Format = "N0";
-            dataGridViewCellStyle108.NullValue = null;
-            this.Transf.DefaultCellStyle = dataGridViewCellStyle108;
-            this.Transf.HeaderText = "Transf";
-            this.Transf.MinimumWidth = 6;
-            this.Transf.Name = "Transf";
-            this.Transf.ReadOnly = true;
-            this.Transf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Transf.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Transf.Width = 51;
-            // 
-            // Usu_Ins
-            // 
-            this.Usu_Ins.DataPropertyName = "usuins";
-            this.Usu_Ins.HeaderText = "Usu_Ins";
-            this.Usu_Ins.MinimumWidth = 6;
-            this.Usu_Ins.Name = "Usu_Ins";
-            this.Usu_Ins.ReadOnly = true;
-            this.Usu_Ins.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Usu_Ins.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Usu_Ins.Width = 61;
-            // 
-            // Usu_Mod
-            // 
-            this.Usu_Mod.DataPropertyName = "usuupd";
-            this.Usu_Mod.HeaderText = "Usu_Mod";
-            this.Usu_Mod.MinimumWidth = 6;
-            this.Usu_Mod.Name = "Usu_Mod";
-            this.Usu_Mod.ReadOnly = true;
-            this.Usu_Mod.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Usu_Mod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Usu_Mod.Width = 71;
-            // 
-            // precio
-            // 
-            this.precio.DataPropertyName = "precio";
-            this.precio.HeaderText = "Precio";
-            this.precio.MinimumWidth = 6;
-            this.precio.Name = "precio";
-            this.precio.ReadOnly = true;
-            this.precio.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.precio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.precio.Visible = false;
-            this.precio.Width = 59;
-            // 
-            // id_venta
-            // 
-            this.id_venta.DataPropertyName = "id_venta";
-            this.id_venta.HeaderText = "id_venta";
-            this.id_venta.MinimumWidth = 6;
-            this.id_venta.Name = "id_venta";
-            this.id_venta.ReadOnly = true;
-            this.id_venta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.id_venta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.id_venta.Visible = false;
-            this.id_venta.Width = 75;
-            // 
-            // id_cliente
-            // 
-            this.id_cliente.DataPropertyName = "id_cliente";
-            this.id_cliente.HeaderText = "id_cliente";
-            this.id_cliente.MinimumWidth = 6;
-            this.id_cliente.Name = "id_cliente";
-            this.id_cliente.ReadOnly = true;
-            this.id_cliente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.id_cliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.id_cliente.Visible = false;
-            this.id_cliente.Width = 82;
-            // 
-            // cajero
-            // 
-            this.cajero.DataPropertyName = "cajero";
-            this.cajero.HeaderText = "cajero";
-            this.cajero.MinimumWidth = 6;
-            this.cajero.Name = "cajero";
-            this.cajero.ReadOnly = true;
-            this.cajero.Visible = false;
-            this.cajero.Width = 77;
-            // 
-            // bloqueoCancelacionMonedero
-            // 
-            this.bloqueoCancelacionMonedero.DataPropertyName = "bloqueoCancelacionMonedero";
-            this.bloqueoCancelacionMonedero.HeaderText = "bloqueoCancelacionMonedero";
-            this.bloqueoCancelacionMonedero.MinimumWidth = 6;
-            this.bloqueoCancelacionMonedero.Name = "bloqueoCancelacionMonedero";
-            this.bloqueoCancelacionMonedero.ReadOnly = true;
-            this.bloqueoCancelacionMonedero.Visible = false;
-            this.bloqueoCancelacionMonedero.Width = 250;
-            // 
-            // bloqueoCancelacionPorFormaDePago
-            // 
-            this.bloqueoCancelacionPorFormaDePago.DataPropertyName = "bloqueoCancelacionPorFormaDePago";
-            this.bloqueoCancelacionPorFormaDePago.HeaderText = "bloqueoCancelacionPorFormaDePago";
-            this.bloqueoCancelacionPorFormaDePago.MinimumWidth = 6;
-            this.bloqueoCancelacionPorFormaDePago.Name = "bloqueoCancelacionPorFormaDePago";
-            this.bloqueoCancelacionPorFormaDePago.ReadOnly = true;
-            this.bloqueoCancelacionPorFormaDePago.Visible = false;
-            this.bloqueoCancelacionPorFormaDePago.Width = 306;
             // 
             // frmApartadosV2
             // 
