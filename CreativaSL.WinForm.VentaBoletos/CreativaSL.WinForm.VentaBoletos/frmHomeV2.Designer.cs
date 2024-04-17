@@ -335,7 +335,7 @@
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1861, 1217);
+            this.materialTabControl1.Size = new System.Drawing.Size(2247, 1217);
             this.materialTabControl1.TabIndex = 19;
             this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
             // 
@@ -356,7 +356,7 @@
             this.tabPage12.Location = new System.Drawing.Point(4, 25);
             this.tabPage12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(1853, 1188);
+            this.tabPage12.Size = new System.Drawing.Size(2239, 1188);
             this.tabPage12.TabIndex = 12;
             this.tabPage12.Text = "Home";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -546,6 +546,7 @@
             this.Txt_FechaHoraSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Txt_FechaHoraSistema.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.Txt_FechaHoraSistema.Depth = 0;
+            this.Txt_FechaHoraSistema.Enabled = false;
             this.Txt_FechaHoraSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_FechaHoraSistema.HideSelection = true;
             this.Txt_FechaHoraSistema.LeadingIcon = null;
@@ -575,6 +576,7 @@
             this.Txt_Recorrido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Txt_Recorrido.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.Txt_Recorrido.Depth = 0;
+            this.Txt_Recorrido.Enabled = false;
             this.Txt_Recorrido.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_Recorrido.HideSelection = true;
             this.Txt_Recorrido.LeadingIcon = null;
@@ -604,6 +606,7 @@
             this.Txt_NumAsientosApartados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Txt_NumAsientosApartados.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.Txt_NumAsientosApartados.Depth = 0;
+            this.Txt_NumAsientosApartados.Enabled = false;
             this.Txt_NumAsientosApartados.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_NumAsientosApartados.HideSelection = true;
             this.Txt_NumAsientosApartados.LeadingIcon = null;
@@ -633,6 +636,7 @@
             this.Txt_NumAsientosDisponibles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Txt_NumAsientosDisponibles.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.Txt_NumAsientosDisponibles.Depth = 0;
+            this.Txt_NumAsientosDisponibles.Enabled = false;
             this.Txt_NumAsientosDisponibles.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_NumAsientosDisponibles.HideSelection = true;
             this.Txt_NumAsientosDisponibles.LeadingIcon = null;
@@ -1254,6 +1258,8 @@
             this.asiento63.TabIndex = 208;
             this.asiento63.TabStop = false;
             this.asiento63.Tag = "0";
+            this.asiento63.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento63.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento28
             // 
@@ -1267,6 +1273,8 @@
             this.asiento28.TabIndex = 207;
             this.asiento28.TabStop = false;
             this.asiento28.Tag = "0";
+            this.asiento28.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento28.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento33
             // 
@@ -1280,6 +1288,8 @@
             this.asiento33.TabIndex = 206;
             this.asiento33.TabStop = false;
             this.asiento33.Tag = "0";
+            this.asiento33.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento33.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento38
             // 
@@ -1293,6 +1303,8 @@
             this.asiento38.TabIndex = 205;
             this.asiento38.TabStop = false;
             this.asiento38.Tag = "0";
+            this.asiento38.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento38.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento43
             // 
@@ -1306,6 +1318,8 @@
             this.asiento43.TabIndex = 204;
             this.asiento43.TabStop = false;
             this.asiento43.Tag = "0";
+            this.asiento43.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento43.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento48
             // 
@@ -1319,6 +1333,8 @@
             this.asiento48.TabIndex = 203;
             this.asiento48.TabStop = false;
             this.asiento48.Tag = "0";
+            this.asiento48.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento48.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento53
             // 
@@ -1332,6 +1348,8 @@
             this.asiento53.TabIndex = 202;
             this.asiento53.TabStop = false;
             this.asiento53.Tag = "0";
+            this.asiento53.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento53.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento58
             // 
@@ -1345,6 +1363,8 @@
             this.asiento58.TabIndex = 201;
             this.asiento58.TabStop = false;
             this.asiento58.Tag = "0";
+            this.asiento58.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento58.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento23
             // 
@@ -1358,6 +1378,8 @@
             this.asiento23.TabIndex = 200;
             this.asiento23.TabStop = false;
             this.asiento23.Tag = "0";
+            this.asiento23.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento23.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento18
             // 
@@ -1371,6 +1393,8 @@
             this.asiento18.TabIndex = 199;
             this.asiento18.TabStop = false;
             this.asiento18.Tag = "0";
+            this.asiento18.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento18.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento13
             // 
@@ -1384,6 +1408,8 @@
             this.asiento13.TabIndex = 198;
             this.asiento13.TabStop = false;
             this.asiento13.Tag = "0";
+            this.asiento13.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento13.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento8
             // 
@@ -1397,6 +1423,8 @@
             this.asiento8.TabIndex = 197;
             this.asiento8.TabStop = false;
             this.asiento8.Tag = "0";
+            this.asiento8.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento8.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento3
             // 
@@ -1410,6 +1438,8 @@
             this.asiento3.TabIndex = 196;
             this.asiento3.TabStop = false;
             this.asiento3.Tag = "0";
+            this.asiento3.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento3.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento65
             // 
@@ -1423,6 +1453,8 @@
             this.asiento65.TabIndex = 194;
             this.asiento65.TabStop = false;
             this.asiento65.Tag = "0";
+            this.asiento65.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento65.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento64
             // 
@@ -1436,6 +1468,8 @@
             this.asiento64.TabIndex = 193;
             this.asiento64.TabStop = false;
             this.asiento64.Tag = "0";
+            this.asiento64.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento64.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento62
             // 
@@ -1449,6 +1483,8 @@
             this.asiento62.TabIndex = 192;
             this.asiento62.TabStop = false;
             this.asiento62.Tag = "0";
+            this.asiento62.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento62.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento61
             // 
@@ -1462,6 +1498,8 @@
             this.asiento61.TabIndex = 191;
             this.asiento61.TabStop = false;
             this.asiento61.Tag = "0";
+            this.asiento61.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento61.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento60
             // 
@@ -1475,12 +1513,14 @@
             this.asiento60.TabIndex = 190;
             this.asiento60.TabStop = false;
             this.asiento60.Tag = "0";
+            this.asiento60.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento60.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento59
             // 
             this.asiento59.BackColor = System.Drawing.Color.White;
             this.asiento59.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento59.Location = new System.Drawing.Point(171, 622);
+            this.asiento59.Location = new System.Drawing.Point(187, 626);
             this.asiento59.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.asiento59.Name = "asiento59";
             this.asiento59.Size = new System.Drawing.Size(55, 34);
@@ -1488,6 +1528,8 @@
             this.asiento59.TabIndex = 189;
             this.asiento59.TabStop = false;
             this.asiento59.Tag = "0";
+            this.asiento59.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento59.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento57
             // 
@@ -1501,6 +1543,8 @@
             this.asiento57.TabIndex = 188;
             this.asiento57.TabStop = false;
             this.asiento57.Tag = "0";
+            this.asiento57.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento57.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento56
             // 
@@ -1514,6 +1558,8 @@
             this.asiento56.TabIndex = 187;
             this.asiento56.TabStop = false;
             this.asiento56.Tag = "0";
+            this.asiento56.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento56.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento55
             // 
@@ -1527,6 +1573,8 @@
             this.asiento55.TabIndex = 186;
             this.asiento55.TabStop = false;
             this.asiento55.Tag = "0";
+            this.asiento55.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento55.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento54
             // 
@@ -1540,6 +1588,8 @@
             this.asiento54.TabIndex = 185;
             this.asiento54.TabStop = false;
             this.asiento54.Tag = "0";
+            this.asiento54.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento54.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento52
             // 
@@ -1553,6 +1603,8 @@
             this.asiento52.TabIndex = 184;
             this.asiento52.TabStop = false;
             this.asiento52.Tag = "0";
+            this.asiento52.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento52.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento51
             // 
@@ -1566,6 +1618,8 @@
             this.asiento51.TabIndex = 183;
             this.asiento51.TabStop = false;
             this.asiento51.Tag = "0";
+            this.asiento51.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento51.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento50
             // 
@@ -1579,6 +1633,8 @@
             this.asiento50.TabIndex = 182;
             this.asiento50.TabStop = false;
             this.asiento50.Tag = "0";
+            this.asiento50.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento50.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento49
             // 
@@ -1592,6 +1648,8 @@
             this.asiento49.TabIndex = 181;
             this.asiento49.TabStop = false;
             this.asiento49.Tag = "0";
+            this.asiento49.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento49.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento47
             // 
@@ -1605,6 +1663,8 @@
             this.asiento47.TabIndex = 180;
             this.asiento47.TabStop = false;
             this.asiento47.Tag = "0";
+            this.asiento47.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento47.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento46
             // 
@@ -1618,6 +1678,8 @@
             this.asiento46.TabIndex = 179;
             this.asiento46.TabStop = false;
             this.asiento46.Tag = "0";
+            this.asiento46.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento46.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento45
             // 
@@ -1631,6 +1693,8 @@
             this.asiento45.TabIndex = 178;
             this.asiento45.TabStop = false;
             this.asiento45.Tag = "0";
+            this.asiento45.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento45.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento44
             // 
@@ -1644,6 +1708,8 @@
             this.asiento44.TabIndex = 177;
             this.asiento44.TabStop = false;
             this.asiento44.Tag = "0";
+            this.asiento44.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento44.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento42
             // 
@@ -1657,6 +1723,8 @@
             this.asiento42.TabIndex = 176;
             this.asiento42.TabStop = false;
             this.asiento42.Tag = "0";
+            this.asiento42.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento42.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento41
             // 
@@ -1670,6 +1738,8 @@
             this.asiento41.TabIndex = 175;
             this.asiento41.TabStop = false;
             this.asiento41.Tag = "0";
+            this.asiento41.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento41.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento40
             // 
@@ -1683,6 +1753,8 @@
             this.asiento40.TabIndex = 174;
             this.asiento40.TabStop = false;
             this.asiento40.Tag = "0";
+            this.asiento40.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento40.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento39
             // 
@@ -1696,6 +1768,8 @@
             this.asiento39.TabIndex = 173;
             this.asiento39.TabStop = false;
             this.asiento39.Tag = "0";
+            this.asiento39.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento39.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento37
             // 
@@ -1709,6 +1783,8 @@
             this.asiento37.TabIndex = 172;
             this.asiento37.TabStop = false;
             this.asiento37.Tag = "0";
+            this.asiento37.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento37.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento36
             // 
@@ -1722,6 +1798,8 @@
             this.asiento36.TabIndex = 171;
             this.asiento36.TabStop = false;
             this.asiento36.Tag = "0";
+            this.asiento36.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento36.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento35
             // 
@@ -1735,6 +1813,8 @@
             this.asiento35.TabIndex = 170;
             this.asiento35.TabStop = false;
             this.asiento35.Tag = "0";
+            this.asiento35.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento35.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento34
             // 
@@ -1748,6 +1828,8 @@
             this.asiento34.TabIndex = 169;
             this.asiento34.TabStop = false;
             this.asiento34.Tag = "0";
+            this.asiento34.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento34.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento32
             // 
@@ -1761,6 +1843,8 @@
             this.asiento32.TabIndex = 168;
             this.asiento32.TabStop = false;
             this.asiento32.Tag = "0";
+            this.asiento32.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento32.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento31
             // 
@@ -1774,6 +1858,8 @@
             this.asiento31.TabIndex = 167;
             this.asiento31.TabStop = false;
             this.asiento31.Tag = "0";
+            this.asiento31.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento31.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento30
             // 
@@ -1787,6 +1873,8 @@
             this.asiento30.TabIndex = 166;
             this.asiento30.TabStop = false;
             this.asiento30.Tag = "0";
+            this.asiento30.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento30.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento29
             // 
@@ -1800,6 +1888,8 @@
             this.asiento29.TabIndex = 165;
             this.asiento29.TabStop = false;
             this.asiento29.Tag = "0";
+            this.asiento29.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento29.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento27
             // 
@@ -1813,6 +1903,8 @@
             this.asiento27.TabIndex = 164;
             this.asiento27.TabStop = false;
             this.asiento27.Tag = "0";
+            this.asiento27.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento27.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento26
             // 
@@ -1826,6 +1918,8 @@
             this.asiento26.TabIndex = 163;
             this.asiento26.TabStop = false;
             this.asiento26.Tag = "0";
+            this.asiento26.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento26.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento25
             // 
@@ -1839,6 +1933,8 @@
             this.asiento25.TabIndex = 162;
             this.asiento25.TabStop = false;
             this.asiento25.Tag = "0";
+            this.asiento25.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento25.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento24
             // 
@@ -1852,6 +1948,8 @@
             this.asiento24.TabIndex = 161;
             this.asiento24.TabStop = false;
             this.asiento24.Tag = "0";
+            this.asiento24.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento24.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento22
             // 
@@ -1865,6 +1963,8 @@
             this.asiento22.TabIndex = 160;
             this.asiento22.TabStop = false;
             this.asiento22.Tag = "0";
+            this.asiento22.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento22.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento21
             // 
@@ -1878,6 +1978,8 @@
             this.asiento21.TabIndex = 159;
             this.asiento21.TabStop = false;
             this.asiento21.Tag = "0";
+            this.asiento21.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento21.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento20
             // 
@@ -1891,6 +1993,8 @@
             this.asiento20.TabIndex = 158;
             this.asiento20.TabStop = false;
             this.asiento20.Tag = "0";
+            this.asiento20.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento20.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento19
             // 
@@ -1904,6 +2008,8 @@
             this.asiento19.TabIndex = 157;
             this.asiento19.TabStop = false;
             this.asiento19.Tag = "0";
+            this.asiento19.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento19.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento17
             // 
@@ -1917,6 +2023,8 @@
             this.asiento17.TabIndex = 156;
             this.asiento17.TabStop = false;
             this.asiento17.Tag = "0";
+            this.asiento17.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento17.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento16
             // 
@@ -1930,6 +2038,8 @@
             this.asiento16.TabIndex = 155;
             this.asiento16.TabStop = false;
             this.asiento16.Tag = "0";
+            this.asiento16.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento16.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento15
             // 
@@ -1943,6 +2053,8 @@
             this.asiento15.TabIndex = 154;
             this.asiento15.TabStop = false;
             this.asiento15.Tag = "0";
+            this.asiento15.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento15.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento14
             // 
@@ -1956,6 +2068,8 @@
             this.asiento14.TabIndex = 153;
             this.asiento14.TabStop = false;
             this.asiento14.Tag = "0";
+            this.asiento14.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento14.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento12
             // 
@@ -1969,6 +2083,8 @@
             this.asiento12.TabIndex = 152;
             this.asiento12.TabStop = false;
             this.asiento12.Tag = "0";
+            this.asiento12.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento12.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento11
             // 
@@ -1982,6 +2098,8 @@
             this.asiento11.TabIndex = 151;
             this.asiento11.TabStop = false;
             this.asiento11.Tag = "0";
+            this.asiento11.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento11.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento10
             // 
@@ -1995,6 +2113,8 @@
             this.asiento10.TabIndex = 150;
             this.asiento10.TabStop = false;
             this.asiento10.Tag = "0";
+            this.asiento10.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento10.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento9
             // 
@@ -2008,6 +2128,8 @@
             this.asiento9.TabIndex = 149;
             this.asiento9.TabStop = false;
             this.asiento9.Tag = "0";
+            this.asiento9.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento9.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento7
             // 
@@ -2021,6 +2143,8 @@
             this.asiento7.TabIndex = 148;
             this.asiento7.TabStop = false;
             this.asiento7.Tag = "0";
+            this.asiento7.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento7.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento6
             // 
@@ -2034,6 +2158,8 @@
             this.asiento6.TabIndex = 147;
             this.asiento6.TabStop = false;
             this.asiento6.Tag = "0";
+            this.asiento6.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento6.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento5
             // 
@@ -2047,6 +2173,8 @@
             this.asiento5.TabIndex = 146;
             this.asiento5.TabStop = false;
             this.asiento5.Tag = "0";
+            this.asiento5.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento5.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento4
             // 
@@ -2060,6 +2188,8 @@
             this.asiento4.TabIndex = 145;
             this.asiento4.TabStop = false;
             this.asiento4.Tag = "0";
+            this.asiento4.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento4.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento2
             // 
@@ -2073,6 +2203,8 @@
             this.asiento2.TabIndex = 144;
             this.asiento2.TabStop = false;
             this.asiento2.Tag = "0";
+            this.asiento2.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento2.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // asiento1
             // 
@@ -2086,6 +2218,8 @@
             this.asiento1.TabIndex = 6;
             this.asiento1.TabStop = false;
             this.asiento1.Tag = "0";
+            this.asiento1.Click += new System.EventHandler(this.Boleto_Click);
+            this.asiento1.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.asiento7_ChangeUICues);
             // 
             // pasilloasiento64
             // 
@@ -3330,7 +3464,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1556, 1102);
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.materialTabControl1);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;

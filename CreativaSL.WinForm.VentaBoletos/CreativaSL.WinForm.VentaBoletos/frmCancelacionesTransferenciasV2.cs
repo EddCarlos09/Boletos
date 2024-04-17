@@ -43,6 +43,13 @@ namespace CreativaSL.WinForm.VentaBoletos
             inicializar();
 
         }
+        public frmCancelacionesTransferenciasV2()
+        {
+            InitializeComponent();
+            loadMaterial(this);
+
+
+        }
 
 
 

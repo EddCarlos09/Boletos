@@ -83,6 +83,12 @@ namespace CreativaSL.WinForm.VentaBoletos
             Inicializar();
             loadMaterial(this);
         }
+        public frmCatCobroMultiFormasPagoV2()
+        {
+            InitializeComponent();
+
+            loadMaterial(this);
+        }
         #endregion
 
         #region Métodos

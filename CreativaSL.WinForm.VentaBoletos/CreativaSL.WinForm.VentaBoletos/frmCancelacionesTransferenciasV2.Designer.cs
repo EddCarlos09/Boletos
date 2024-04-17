@@ -77,6 +77,7 @@
             this.txt_folio.Depth = 0;
             this.txt_folio.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_folio.HideSelection = true;
+            this.txt_folio.Hint = "Folio";
             this.txt_folio.LeadingIcon = null;
             this.txt_folio.Location = new System.Drawing.Point(30, 152);
             this.txt_folio.MaxLength = 32767;
@@ -93,7 +94,6 @@
             this.txt_folio.Size = new System.Drawing.Size(305, 48);
             this.txt_folio.TabIndex = 1;
             this.txt_folio.TabStop = false;
-            this.txt_folio.Text = "Folio";
             this.txt_folio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_folio.TrailingIcon = null;
             this.txt_folio.UseSystemPasswordChar = false;
@@ -106,6 +106,7 @@
             this.txt_destino.Depth = 0;
             this.txt_destino.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_destino.HideSelection = true;
+            this.txt_destino.Hint = "Destino";
             this.txt_destino.LeadingIcon = null;
             this.txt_destino.Location = new System.Drawing.Point(30, 230);
             this.txt_destino.MaxLength = 32767;
@@ -122,7 +123,6 @@
             this.txt_destino.Size = new System.Drawing.Size(305, 48);
             this.txt_destino.TabIndex = 2;
             this.txt_destino.TabStop = false;
-            this.txt_destino.Text = "Destino";
             this.txt_destino.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_destino.TrailingIcon = null;
             this.txt_destino.UseSystemPasswordChar = false;
@@ -135,6 +135,7 @@
             this.txt_linea.Depth = 0;
             this.txt_linea.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_linea.HideSelection = true;
+            this.txt_linea.Hint = "Linea";
             this.txt_linea.LeadingIcon = null;
             this.txt_linea.Location = new System.Drawing.Point(391, 152);
             this.txt_linea.MaxLength = 32767;
@@ -151,7 +152,6 @@
             this.txt_linea.Size = new System.Drawing.Size(305, 48);
             this.txt_linea.TabIndex = 2;
             this.txt_linea.TabStop = false;
-            this.txt_linea.Text = "Linea";
             this.txt_linea.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_linea.TrailingIcon = null;
             this.txt_linea.UseSystemPasswordChar = false;
@@ -164,6 +164,7 @@
             this.txt_origen.Depth = 0;
             this.txt_origen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_origen.HideSelection = true;
+            this.txt_origen.Hint = "Origen";
             this.txt_origen.LeadingIcon = null;
             this.txt_origen.Location = new System.Drawing.Point(755, 152);
             this.txt_origen.MaxLength = 32767;
@@ -180,7 +181,6 @@
             this.txt_origen.Size = new System.Drawing.Size(305, 48);
             this.txt_origen.TabIndex = 3;
             this.txt_origen.TabStop = false;
-            this.txt_origen.Text = "Origen";
             this.txt_origen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_origen.TrailingIcon = null;
             this.txt_origen.UseSystemPasswordChar = false;
@@ -193,6 +193,7 @@
             this.txt_fecha.Depth = 0;
             this.txt_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_fecha.HideSelection = true;
+            this.txt_fecha.Hint = "Fecha";
             this.txt_fecha.LeadingIcon = null;
             this.txt_fecha.Location = new System.Drawing.Point(391, 230);
             this.txt_fecha.MaxLength = 32767;
@@ -209,7 +210,6 @@
             this.txt_fecha.Size = new System.Drawing.Size(305, 48);
             this.txt_fecha.TabIndex = 4;
             this.txt_fecha.TabStop = false;
-            this.txt_fecha.Text = "Fecha";
             this.txt_fecha.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_fecha.TrailingIcon = null;
             this.txt_fecha.UseSystemPasswordChar = false;
@@ -222,6 +222,7 @@
             this.txt_hora.Depth = 0;
             this.txt_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_hora.HideSelection = true;
+            this.txt_hora.Hint = "Hora";
             this.txt_hora.LeadingIcon = null;
             this.txt_hora.Location = new System.Drawing.Point(755, 230);
             this.txt_hora.MaxLength = 32767;
@@ -238,7 +239,6 @@
             this.txt_hora.Size = new System.Drawing.Size(305, 48);
             this.txt_hora.TabIndex = 5;
             this.txt_hora.TabStop = false;
-            this.txt_hora.Text = "Hora";
             this.txt_hora.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_hora.TrailingIcon = null;
             this.txt_hora.UseSystemPasswordChar = false;
@@ -251,6 +251,7 @@
             this.txt_asiento.Depth = 0;
             this.txt_asiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_asiento.HideSelection = true;
+            this.txt_asiento.Hint = "Asiento ";
             this.txt_asiento.LeadingIcon = null;
             this.txt_asiento.Location = new System.Drawing.Point(755, 307);
             this.txt_asiento.MaxLength = 32767;
@@ -267,7 +268,6 @@
             this.txt_asiento.Size = new System.Drawing.Size(305, 48);
             this.txt_asiento.TabIndex = 6;
             this.txt_asiento.TabStop = false;
-            this.txt_asiento.Text = "Asiento ";
             this.txt_asiento.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_asiento.TrailingIcon = null;
             this.txt_asiento.UseSystemPasswordChar = false;
@@ -280,6 +280,7 @@
             this.txt_precio.Depth = 0;
             this.txt_precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_precio.HideSelection = true;
+            this.txt_precio.Hint = "Precio";
             this.txt_precio.LeadingIcon = null;
             this.txt_precio.Location = new System.Drawing.Point(391, 307);
             this.txt_precio.MaxLength = 32767;
@@ -296,7 +297,6 @@
             this.txt_precio.Size = new System.Drawing.Size(305, 48);
             this.txt_precio.TabIndex = 7;
             this.txt_precio.TabStop = false;
-            this.txt_precio.Text = "Precio";
             this.txt_precio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_precio.TrailingIcon = null;
             this.txt_precio.UseSystemPasswordChar = false;
@@ -309,6 +309,7 @@
             this.txt_nombre.Depth = 0;
             this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_nombre.HideSelection = true;
+            this.txt_nombre.Hint = "Nombre";
             this.txt_nombre.LeadingIcon = null;
             this.txt_nombre.Location = new System.Drawing.Point(30, 307);
             this.txt_nombre.MaxLength = 32767;
@@ -325,7 +326,6 @@
             this.txt_nombre.Size = new System.Drawing.Size(305, 48);
             this.txt_nombre.TabIndex = 8;
             this.txt_nombre.TabStop = false;
-            this.txt_nombre.Text = "Nombre";
             this.txt_nombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_nombre.TrailingIcon = null;
             this.txt_nombre.UseSystemPasswordChar = false;
@@ -531,6 +531,7 @@
             this.txt_penalizacion.Depth = 0;
             this.txt_penalizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_penalizacion.HideSelection = true;
+            this.txt_penalizacion.Hint = "Monto";
             this.txt_penalizacion.LeadingIcon = null;
             this.txt_penalizacion.Location = new System.Drawing.Point(1135, 421);
             this.txt_penalizacion.MaxLength = 32767;
@@ -547,7 +548,6 @@
             this.txt_penalizacion.Size = new System.Drawing.Size(250, 48);
             this.txt_penalizacion.TabIndex = 21;
             this.txt_penalizacion.TabStop = false;
-            this.txt_penalizacion.Text = "Monto";
             this.txt_penalizacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_penalizacion.TrailingIcon = null;
             this.txt_penalizacion.UseSystemPasswordChar = false;
@@ -609,7 +609,7 @@
             this.cmb_motivoCancelacionTransferencia.DropDownHeight = 174;
             this.cmb_motivoCancelacionTransferencia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_motivoCancelacionTransferencia.DropDownWidth = 121;
-            this.cmb_motivoCancelacionTransferencia.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cmb_motivoCancelacionTransferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.cmb_motivoCancelacionTransferencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cmb_motivoCancelacionTransferencia.FormattingEnabled = true;
             this.cmb_motivoCancelacionTransferencia.IntegralHeight = false;

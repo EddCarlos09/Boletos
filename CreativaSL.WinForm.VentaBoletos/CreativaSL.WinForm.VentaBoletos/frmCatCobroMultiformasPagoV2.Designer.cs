@@ -221,7 +221,9 @@
             this.Txt_TiempoVenta.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.Txt_TiempoVenta.Depth = 0;
             this.Txt_TiempoVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Txt_TiempoVenta.HelperText = "00:0";
             this.Txt_TiempoVenta.HideSelection = true;
+            this.Txt_TiempoVenta.Hint = "00:0";
             this.Txt_TiempoVenta.LeadingIcon = null;
             this.Txt_TiempoVenta.Location = new System.Drawing.Point(1119, 185);
             this.Txt_TiempoVenta.MaxLength = 32767;
@@ -238,7 +240,6 @@
             this.Txt_TiempoVenta.Size = new System.Drawing.Size(158, 48);
             this.Txt_TiempoVenta.TabIndex = 8;
             this.Txt_TiempoVenta.TabStop = false;
-            this.Txt_TiempoVenta.Text = "00:0";
             this.Txt_TiempoVenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Txt_TiempoVenta.TrailingIcon = null;
             this.Txt_TiempoVenta.UseSystemPasswordChar = false;
@@ -672,7 +673,7 @@
             this.btn_Cobrar.UseVisualStyleBackColor = true;
             this.btn_Cobrar.Click += new System.EventHandler(this.btn_Cobrar_Click);
             // 
-            // frmCatCobroMultiformasPagoV2
+            // frmCatCobroMultiFormasPagoV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -690,7 +691,7 @@
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialLabel1);
-            this.Name = "frmCatCobroMultiformasPagoV2";
+            this.Name = "frmCatCobroMultiFormasPagoV2";
             this.Text = "frmCatCobroMultiformasPagoV2";
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();

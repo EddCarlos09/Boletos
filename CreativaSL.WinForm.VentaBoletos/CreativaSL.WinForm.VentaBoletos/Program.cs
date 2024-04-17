@@ -19,7 +19,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             Application.SetCompatibleTextRenderingDefault(false);
             System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("es-MX");
             //Application.Run(new FormAdministrador());
-            Application.Run(new frmCancelacionesTransferenciasV2());
+            Application.Run(new frmDepositosRetirosV2());
         }
     }
 }

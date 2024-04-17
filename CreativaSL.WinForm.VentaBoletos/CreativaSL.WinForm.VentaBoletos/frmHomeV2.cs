@@ -2406,6 +2406,11 @@ namespace CreativaSL.WinForm.VentaBoletos
 
         }
 
+        private void asiento7_ChangeUICues(object sender, UICuesEventArgs e)
+        {
+
+        }
+
 
 
 
