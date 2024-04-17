@@ -669,6 +669,18 @@
     <Compile Include="frmCambioBoletosViaje.Designer.cs">
       <DependentUpon>frmCambioBoletosViaje.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDatosViajesV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosViajesV2.Designer.cs">
+      <DependentUpon>frmDatosViajesV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosViajeV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosViajeV2.Designer.cs">
+      <DependentUpon>frmDatosViajeV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDepositosRetirosV2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1194,6 +1206,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatosTransferencia.resx">
       <DependentUpon>frmDatosTransferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosViajesV2.resx">
+      <DependentUpon>frmDatosViajesV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosViajeV2.resx">
+      <DependentUpon>frmDatosViajeV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFechaViajeDetalleV2.resx">
       <DependentUpon>frmFechaViajeDetalleV2.cs</DependentUpon>
