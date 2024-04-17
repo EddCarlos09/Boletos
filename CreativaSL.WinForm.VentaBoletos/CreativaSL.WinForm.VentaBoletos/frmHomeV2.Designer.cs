@@ -314,9 +314,6 @@
             // 
             // materialTabControl1
             // 
-            this.materialTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialTabControl1.Controls.Add(this.tabPage12);
             this.materialTabControl1.Controls.Add(this.tabPage1);
             this.materialTabControl1.Controls.Add(this.tabPage2);
@@ -330,25 +327,27 @@
             this.materialTabControl1.Controls.Add(this.tabPage10);
             this.materialTabControl1.Controls.Add(this.tabPage11);
             this.materialTabControl1.Depth = 0;
+            this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.ImageList = this.imageList1;
-            this.materialTabControl1.Location = new System.Drawing.Point(5, 79);
+            this.materialTabControl1.Location = new System.Drawing.Point(3, 64);
             this.materialTabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(2247, 1217);
+            this.materialTabControl1.Size = new System.Drawing.Size(1804, 1036);
             this.materialTabControl1.TabIndex = 19;
             this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
             // 
             // tabPage12
             // 
+            this.tabPage12.AutoScroll = true;
             this.tabPage12.Controls.Add(this.materialCard1);
             this.tabPage12.ImageKey = "icons8-home-144.png";
             this.tabPage12.Location = new System.Drawing.Point(4, 25);
             this.tabPage12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(2239, 1188);
+            this.tabPage12.Size = new System.Drawing.Size(1796, 1007);
             this.tabPage12.TabIndex = 12;
             this.tabPage12.Text = "Home";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -376,7 +375,7 @@
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(2239, 1188);
+            this.materialCard1.Size = new System.Drawing.Size(1796, 1007);
             this.materialCard1.TabIndex = 0;
             // 
             // btnPlantaAlta
@@ -3419,7 +3418,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1942, 1102);
+            this.ClientSize = new System.Drawing.Size(1810, 1102);
             this.Controls.Add(this.materialTabControl1);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;
