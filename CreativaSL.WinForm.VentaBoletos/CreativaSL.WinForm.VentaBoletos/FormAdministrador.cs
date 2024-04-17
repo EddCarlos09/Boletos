@@ -118,6 +118,10 @@ namespace CreativaSL.WinForm.VentaBoletos
             this.CargarGridPropiedades();
             this.CargarGridCatalogos();
             //Console.WriteLine("Se seleccionó la primera pestaña.{0}",this.tipoCatalogo);
+            if(this.tipoCatalogo == 2)
+            {
+                habilitarBotonMenuCamiones(0);
+            }
         }
 
         private void frmAdministrador_Load(object sender, EventArgs e)
@@ -2064,40 +2068,27 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
         #endregion
         #region GridCatMarcas
-        private void CargarGridMarcas()
+        private void CargarGridMarcas(bool mostrarDatosBusqueda = false)
         {
             try
             {
                 Marca_Negocio Marca_Negocio = new Marca_Negocio();
                 Marca Marcas = new Marca();
-                Marca_Negocio.LlenarGridMarca(Comun.Conexion, ref Marcas);
-                lstAuxDatosMarca = Marcas.Marcas;
                 this.materialListView2.Items.Clear();
-                // Agregar filas al ListView
-                foreach (DataRow fila in lstAuxDatosMarca.Rows)
+
+                DataTable lista = new DataTable();
+                if (mostrarDatosBusqueda == true)
                 {
-
-                    List<string> dataList = new List<string>();
-                    foreach (var field in this.dbFieldList)
-                    {
-                        string nombre = fila[field].ToString();
-                        dataList.Add(nombre);
-                    }
-
-                    string[] valores = dataList.ToArray();
-
-                    ListViewItem item = new ListViewItem(valores);
-                    // Convertir el DataRow en un diccionario
-                    var rowData = fila.Table.Columns
-                                    .Cast<DataColumn>()
-                                    .ToDictionary(col => col.ColumnName, col => fila[col]);
-
-                    // Serializar el diccionario a JSON (usando Newtonsoft.Json)
-                    string serializedRow = JsonConvert.SerializeObject(rowData);
-                    item.Tag = serializedRow;
-                    this.materialListView2.Items.Add(item);
-
+                    lista = this.lstAuxBuscadorMarca;
                 }
+                else
+                {
+                    Marca_Negocio.LlenarGridMarca(Comun.Conexion, ref Marcas);
+                    lstAuxDatosMarca = Marcas.Marcas;
+                    lista = lstAuxDatosMarca;
+                }
+
+                agregarItemsListView(lista, this.materialListView2);
 
             }
             catch (Exception ex)
@@ -2340,7 +2331,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 DataTable lista = new DataTable();
                 if (mostrarDatosBusqueda == true)
                 {
-                    lista = this.lstAuxBuscadorSubMarca;
+                    lista = this.lstAuxBuscadorTipoCamion;
                 }
                 else
                 {
@@ -2818,7 +2809,33 @@ namespace CreativaSL.WinForm.VentaBoletos
     
         }
 
-        private void button10_Click(object sender, EventArgs e)
+
+        private void btnBuscarenTabCamiones_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                switch (tipoCatalogo)
+                {
+                    case 2:
+                        buscarCamiones_Click();
+                        break;
+                    case 13:
+                        buscarMarca_Click();
+                        break;
+                    case 14: 
+                        buscarSubMarca_Click();
+                        break;
+                    case 15:
+                        buscarTipoCamion_Click();
+                        break;
+                }
+
+                }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        private void buscarCamiones_Click()
         {
             try
             {
@@ -2836,6 +2853,87 @@ namespace CreativaSL.WinForm.VentaBoletos
                 else
                 {
                     this.CargarGridCamiones();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        private void buscarMarca_Click()
+        {
+            try
+            {
+                DataRow[] rows;
+                lstAuxBuscadorMarca = null;
+                if (!string.IsNullOrEmpty(materialTextBox22.Text))
+                {
+                    rows = this.lstAuxDatosMarca.Select("marca like '%" + this.materialTextBox22.Text + "%'");
+                    if (rows.Count() > 0)
+                    {
+                        lstAuxBuscadorMarca = rows.CopyToDataTable();
+                        this.CargarGridMarcas(true);
+                    }
+                }
+                else
+                {
+                    this.CargarGridMarcas();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        private void buscarSubMarca_Click()
+        {
+            try
+            {
+                DataRow[] rows;
+                lstAuxBuscadorSubMarca = null;
+                if (!string.IsNullOrEmpty(materialTextBox22.Text))
+                {
+                    rows = this.lstAuxDatosSubMarca.Select("submarca like '%" + this.materialTextBox22.Text + "%' OR marca like '%" + this.materialTextBox22.Text + "%'");
+                    if (rows.Count() > 0)
+                    {
+                        lstAuxBuscadorSubMarca = rows.CopyToDataTable();
+                        this.CargarGridSubMarcas(true);
+                    }
+                }
+                else
+                {
+                    this.CargarGridSubMarcas();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        private void buscarTipoCamion_Click()
+        {
+            try
+            {
+                DataRow[] rows;
+                lstAuxBuscadorTipoCamion = null;
+                if (!string.IsNullOrEmpty(materialTextBox22.Text))
+                {
+                    rows = this.lstAuxDatosTipoCamion.Select("tipoCamion like '%" + this.materialTextBox22.Text + "%'");
+                    if (rows.Count() > 0)
+                    {
+                        lstAuxBuscadorTipoCamion = rows.CopyToDataTable();
+                        this.CargarGridTipoCamion(true);
+                    }
+                }
+                else
+                {
+                    this.CargarGridTipoCamion();
                 }
             }
             catch (Exception ex)
@@ -3048,53 +3146,63 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
 
+        
+        private void habilitarBotonMenuCamiones(int tipo)
+        {
+            materialButton10.Type = MaterialButton.MaterialButtonType.Outlined;
+            materialButton1.Type = MaterialButton.MaterialButtonType.Outlined;
+            materialButton2.Type = MaterialButton.MaterialButtonType.Outlined;
+            materialButton4.Type = MaterialButton.MaterialButtonType.Outlined;
+            if (tipo == 0) {
+                materialButton10.Type = MaterialButton.MaterialButtonType.Contained;
+            }else if(tipo == 2)
+            {
+                materialButton10.Type = MaterialButton.MaterialButtonType.Contained;
+            }
+            else if (tipo == 13)
+            {
+                materialButton1.Type = MaterialButton.MaterialButtonType.Contained;
+            }
+            else if (tipo == 14)
+            {
+                materialButton2.Type = MaterialButton.MaterialButtonType.Contained;
+            }
+            else if (tipo == 15)
+            {
+                materialButton4.Type = MaterialButton.MaterialButtonType.Contained;
+            }
+
+            if (tipo != 0)
+            {
+                this.CargarGridPropiedades();
+                this.CargarGridCatalogos();
+            }
+
+        }
+
         private void materialButton10_Click(object sender, EventArgs e)
         {
             this.tipoCatalogo = 2;
-            materialButton10.Type = MaterialButton.MaterialButtonType.Contained;
-            materialButton1.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton2.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton3.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton4.Type = MaterialButton.MaterialButtonType.Outlined;
-            this.CargarGridPropiedades();
-            this.CargarGridCatalogos();
+            habilitarBotonMenuCamiones(tipoCatalogo);
         }
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
             this.tipoCatalogo = 13;
-            materialButton10.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton1.Type = MaterialButton.MaterialButtonType.Contained;
-            materialButton2.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton3.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton4.Type = MaterialButton.MaterialButtonType.Outlined;
-            this.CargarGridPropiedades();
-            this.CargarGridCatalogos();
+            habilitarBotonMenuCamiones(tipoCatalogo);
         }
 
         private void materialButton2_Click(object sender, EventArgs e)
         {
             this.tipoCatalogo = 14;
-            materialButton10.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton1.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton2.Type = MaterialButton.MaterialButtonType.Contained;
-            materialButton3.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton4.Type = MaterialButton.MaterialButtonType.Outlined;
-            this.CargarGridPropiedades();
-            this.CargarGridCatalogos();
+            habilitarBotonMenuCamiones(tipoCatalogo);
 
         }
 
         private void materialButton4_Click(object sender, EventArgs e)
         {
             this.tipoCatalogo = 15;
-            materialButton10.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton1.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton2.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton3.Type = MaterialButton.MaterialButtonType.Outlined;
-            materialButton4.Type = MaterialButton.MaterialButtonType.Contained;
-            this.CargarGridPropiedades();
-            this.CargarGridCatalogos();
+            habilitarBotonMenuCamiones(tipoCatalogo);
 
         }
 
@@ -3136,5 +3244,32 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
 
+        private void buscarClasificacion_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataRow[] rows;
+                lstAuxBuscadorClasificacionClientes = null;
+                if (!string.IsNullOrEmpty(materialTextBox29.Text))
+                {
+                    lstAuxBuscadorClasificacionClientes = null;
+                    rows = this.lstAuxDatosClasificacionClientes.Select("Descripcion like '%" + this.materialTextBox29.Text + "%'");
+                    if (rows.Count() > 0)
+                    {
+                        lstAuxBuscadorClasificacionClientes = rows.CopyToDataTable();
+                        this.CargarGridClasificacion(true);
+                    }
+                }
+                else
+                {
+                    this.CargarGridClasificacion();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
     }
 }

@@ -224,7 +224,6 @@
             this.materialTabControl1.Size = new System.Drawing.Size(1561, 410);
             this.materialTabControl1.TabIndex = 0;
             this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.MaterialTabControl1_SelectedIndexChanged);
-            this.materialTabControl1.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // tabPage1
             // 
@@ -464,7 +463,6 @@
             // materialButton10
             // 
             this.materialButton10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton10.BackColor = System.Drawing.Color.White;
             this.materialButton10.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.materialButton10.Depth = 0;
             this.materialButton10.HighEmphasis = true;
@@ -477,9 +475,9 @@
             this.materialButton10.Size = new System.Drawing.Size(96, 36);
             this.materialButton10.TabIndex = 4;
             this.materialButton10.Text = "CAMIONES";
-            this.materialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             this.materialButton10.UseAccentColor = false;
-            this.materialButton10.UseVisualStyleBackColor = false;
+            this.materialButton10.UseVisualStyleBackColor = true;
             this.materialButton10.Click += new System.EventHandler(this.materialButton10_Click);
             // 
             // materialButton4
@@ -489,7 +487,7 @@
             this.materialButton4.Depth = 0;
             this.materialButton4.HighEmphasis = true;
             this.materialButton4.Icon = null;
-            this.materialButton4.Location = new System.Drawing.Point(314, 20);
+            this.materialButton4.Location = new System.Drawing.Point(314, 21);
             this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton4.Name = "materialButton4";
@@ -509,7 +507,7 @@
             this.materialButton3.Depth = 0;
             this.materialButton3.HighEmphasis = true;
             this.materialButton3.Icon = null;
-            this.materialButton3.Location = new System.Drawing.Point(437, 20);
+            this.materialButton3.Location = new System.Drawing.Point(437, 21);
             this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton3.Name = "materialButton3";
@@ -529,7 +527,7 @@
             this.materialButton2.Depth = 0;
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(202, 20);
+            this.materialButton2.Location = new System.Drawing.Point(202, 21);
             this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton2.Name = "materialButton2";
@@ -626,7 +624,7 @@
             this.button10.Size = new System.Drawing.Size(58, 47);
             this.button10.TabIndex = 6;
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.btnBuscarenTabCamiones_Click);
             // 
             // materialTextBox22
             // 
@@ -656,6 +654,7 @@
             this.materialTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.materialTextBox22.TrailingIcon = null;
             this.materialTextBox22.UseSystemPasswordChar = false;
+            this.materialTextBox22.TextChanged += new System.EventHandler(this.btnBuscarenTabCamiones_Click);
             // 
             // materialCard3
             // 
@@ -815,6 +814,7 @@
             this.materialTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.materialTextBox23.TrailingIcon = null;
             this.materialTextBox23.UseSystemPasswordChar = false;
+            this.materialTextBox23.TextChanged += new System.EventHandler(this.button15_Click);
             // 
             // materialCard9
             // 
@@ -974,6 +974,7 @@
             this.materialTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.materialTextBox24.TrailingIcon = null;
             this.materialTextBox24.UseSystemPasswordChar = false;
+            this.materialTextBox24.TextChanged += new System.EventHandler(this.button20_Click);
             // 
             // materialCard12
             // 
@@ -1089,7 +1090,7 @@
             this.materialButton8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton8.Name = "materialButton8";
             this.materialButton8.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton8.Size = new System.Drawing.Size(99, 36);
+            this.materialButton8.Size = new System.Drawing.Size(111, 36);
             this.materialButton8.TabIndex = 2;
             this.materialButton8.Text = "Calendario";
             this.materialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
@@ -1224,6 +1225,7 @@
             this.materialTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.materialTextBox25.TrailingIcon = null;
             this.materialTextBox25.UseSystemPasswordChar = false;
+            this.materialTextBox25.TextChanged += new System.EventHandler(this.button25_Click);
             // 
             // materialCard15
             // 
@@ -1383,6 +1385,7 @@
             this.materialTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.materialTextBox26.TrailingIcon = null;
             this.materialTextBox26.UseSystemPasswordChar = false;
+            this.materialTextBox26.TextChanged += new System.EventHandler(this.button30_Click);
             // 
             // materialCard18
             // 
@@ -1702,6 +1705,7 @@
             this.materialTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.materialTextBox28.TrailingIcon = null;
             this.materialTextBox28.UseSystemPasswordChar = false;
+            this.materialTextBox28.TextChanged += new System.EventHandler(this.button40_Click);
             // 
             // materialCard24
             // 
@@ -1830,6 +1834,7 @@
             this.button45.Size = new System.Drawing.Size(58, 47);
             this.button45.TabIndex = 6;
             this.button45.UseVisualStyleBackColor = false;
+            this.button45.Click += new System.EventHandler(this.buscarClasificacion_Click);
             // 
             // materialTextBox29
             // 
@@ -1859,6 +1864,7 @@
             this.materialTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.materialTextBox29.TrailingIcon = null;
             this.materialTextBox29.UseSystemPasswordChar = false;
+            this.materialTextBox29.TextChanged += new System.EventHandler(this.buscarClasificacion_Click);
             // 
             // materialCard27
             // 
@@ -2018,6 +2024,7 @@
             this.materialTextBox210.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.materialTextBox210.TrailingIcon = null;
             this.materialTextBox210.UseSystemPasswordChar = false;
+            this.materialTextBox210.TextChanged += new System.EventHandler(this.button50_Click);
             // 
             // materialCard30
             // 
