@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatTarifasV2cs));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -40,13 +39,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatTarifasV2cs));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbViajes = new MaterialSkin.Controls.MaterialComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.dgvTarifas = new System.Windows.Forms.DataGridView();
             this.id_tarifa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_identificador = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +56,12 @@
             this.precioEspecial2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioInfantil2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioTerceraEdad2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbViajes = new MaterialSkin.Controls.MaterialComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTarifas)).BeginInit();
             this.SuspendLayout();
@@ -75,97 +75,10 @@
             this.panel1.Controls.Add(this.cmbViajes);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 83);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(829, 532);
+            this.panel1.Size = new System.Drawing.Size(829, 513);
             this.panel1.TabIndex = 0;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(398, 431);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnCancelar.Size = new System.Drawing.Size(154, 52);
-            this.btnCancelar.TabIndex = 59;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(197, 431);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnGuardar.Size = new System.Drawing.Size(154, 52);
-            this.btnGuardar.TabIndex = 58;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(49, 180);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 25);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Terminales Destino";
-            // 
-            // cmbViajes
-            // 
-            this.cmbViajes.AutoResize = false;
-            this.cmbViajes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cmbViajes.Depth = 0;
-            this.cmbViajes.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cmbViajes.DropDownHeight = 174;
-            this.cmbViajes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbViajes.DropDownWidth = 121;
-            this.cmbViajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cmbViajes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cmbViajes.FormattingEnabled = true;
-            this.cmbViajes.IntegralHeight = false;
-            this.cmbViajes.ItemHeight = 43;
-            this.cmbViajes.Location = new System.Drawing.Point(210, 90);
-            this.cmbViajes.MaxDropDownItems = 4;
-            this.cmbViajes.MouseState = MaterialSkin.MouseState.OUT;
-            this.cmbViajes.Name = "cmbViajes";
-            this.cmbViajes.Size = new System.Drawing.Size(317, 49);
-            this.cmbViajes.StartIndex = 0;
-            this.cmbViajes.TabIndex = 3;
-            this.cmbViajes.SelectedIndexChanged += new System.EventHandler(this.cmbViajes_SelectedIndexChanged);
-            this.cmbViajes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbViajes_KeyPress);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(49, 99);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 25);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Nombre Viaje";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Navy;
-            this.label10.Location = new System.Drawing.Point(49, 35);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 26);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Tarifas";
             // 
             // dgvTarifas
             // 
@@ -399,6 +312,92 @@
             this.precioTerceraEdad2.Visible = false;
             this.precioTerceraEdad2.Width = 125;
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(398, 431);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnCancelar.Size = new System.Drawing.Size(154, 52);
+            this.btnCancelar.TabIndex = 59;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(197, 431);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnGuardar.Size = new System.Drawing.Size(154, 52);
+            this.btnGuardar.TabIndex = 58;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.Location = new System.Drawing.Point(49, 180);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Terminales Destino";
+            // 
+            // cmbViajes
+            // 
+            this.cmbViajes.AutoResize = false;
+            this.cmbViajes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbViajes.Depth = 0;
+            this.cmbViajes.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbViajes.DropDownHeight = 174;
+            this.cmbViajes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbViajes.DropDownWidth = 121;
+            this.cmbViajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cmbViajes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cmbViajes.FormattingEnabled = true;
+            this.cmbViajes.IntegralHeight = false;
+            this.cmbViajes.ItemHeight = 43;
+            this.cmbViajes.Location = new System.Drawing.Point(210, 90);
+            this.cmbViajes.MaxDropDownItems = 4;
+            this.cmbViajes.MouseState = MaterialSkin.MouseState.OUT;
+            this.cmbViajes.Name = "cmbViajes";
+            this.cmbViajes.Size = new System.Drawing.Size(317, 49);
+            this.cmbViajes.StartIndex = 0;
+            this.cmbViajes.TabIndex = 3;
+            this.cmbViajes.SelectedIndexChanged += new System.EventHandler(this.cmbViajes_SelectedIndexChanged);
+            this.cmbViajes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbViajes_KeyPress);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(49, 99);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(142, 25);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Nombre Viaje";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Navy;
+            this.label10.Location = new System.Drawing.Point(49, 35);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(81, 26);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Tarifas";
+            // 
             // frmCatTarifasV2cs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -406,7 +405,7 @@
             this.ClientSize = new System.Drawing.Size(835, 599);
             this.Controls.Add(this.panel1);
             this.Name = "frmCatTarifasV2cs";
-            this.Text = "frmCatTarifasV2cs";
+            this.Text = "Tarifas";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTarifas)).EndInit();
