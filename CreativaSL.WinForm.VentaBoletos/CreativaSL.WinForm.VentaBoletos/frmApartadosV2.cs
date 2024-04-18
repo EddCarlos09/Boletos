@@ -171,7 +171,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     Cliente_Negocio cliente_Negocio = new Cliente_Negocio();
                     cliente_Negocio.ObtenerClienteXIdBoleto(Comun.Conexion, apartados.IDBoleto, cliente);
 
-                    frmCatCobroMultiFormasPago frmC = new frmCatCobroMultiFormasPago(apartados.Total, apartados.TotalPagar, apartados.Pendiente, (float)cliente.SaldoDisponible, cliente.Nombre, ((float)cliente.PorentajePuntos * (float)apartados.Total), cliente);
+                    frmCatCobroMultiFormasPagoV2 frmC = new frmCatCobroMultiFormasPagoV2(apartados.Total, apartados.TotalPagar, apartados.Pendiente, (float)cliente.SaldoDisponible, cliente.Nombre, ((float)cliente.PorentajePuntos * (float)apartados.Total), cliente);
                     frmC.ShowDialog();
                     if (frmC.DialogResult == DialogResult.OK)
                     {
@@ -288,7 +288,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     apartados.IDCaja = Comun.id_caja;
                     apartados.IDSucursal = Comun.id_sucursal;
                 }
-                frmCatCobro frmC = new frmCatCobro(apartados.Total, apartados.TotalPagar, apartados.Pendiente, 0.0F, "", 0.0F);
+                frmCatCobroV2 frmC = new frmCatCobroV2(apartados.Total, apartados.TotalPagar, apartados.Pendiente, 0.0F, "", 0.0F);
                 frmC.ShowDialog();
                 if (frmC.getbanSalir() == false)
                 {
@@ -344,7 +344,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                             frmlv.ShowDialog();
                             if (frmlv.getbanAutorizacion() == true)
                             {
-                                frmCancelacionesTransferencias cancelaciones = new frmCancelacionesTransferencias(1, boleto.tipo_cancelacion, boleto);
+                                frmCancelacionesTransferenciasV2 cancelaciones = new frmCancelacionesTransferenciasV2(1, boleto.tipo_cancelacion, boleto);
                                 cancelaciones.ShowDialog();
                                 if (cancelaciones.CancelacionTrasfencia == true)
                                 {
@@ -388,7 +388,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                             frmlv.ShowDialog();
                             if (frmlv.getbanAutorizacion() == true)
                             {
-                                frmCancelacionesTransferencias cancelaciones = new frmCancelacionesTransferencias(1, boleto.tipo_cancelacion, boleto);
+                                frmCancelacionesTransferenciasV2 cancelaciones = new frmCancelacionesTransferenciasV2(1, boleto.tipo_cancelacion, boleto);
                                 cancelaciones.ShowDialog();
                                 if (cancelaciones.CancelacionTrasfencia == true)
                                 {

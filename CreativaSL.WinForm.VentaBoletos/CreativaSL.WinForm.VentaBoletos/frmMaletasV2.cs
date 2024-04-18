@@ -119,7 +119,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                         this._Maletas.precioIva = Convert.ToSingle(dgvdatosboleto.SelectedRows[0].Cells["boletocosto"].Value.ToString());
                         this._Maletas.asiento = Convert.ToInt32(dgvdatosboleto.SelectedRows[0].Cells["asiento"].Value.ToString());
                     }
-                    frmCatMaletas frmcm = new frmCatMaletas(_Maletas);
+                    frmCatMaletasV2 frmcm = new frmCatMaletasV2(_Maletas);
                     frmcm.ShowDialog();
                     frmcm.Dispose();
                 }

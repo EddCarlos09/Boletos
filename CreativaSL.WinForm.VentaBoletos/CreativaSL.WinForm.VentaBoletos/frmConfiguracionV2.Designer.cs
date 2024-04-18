@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConfiguracionV2));
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.txt_mensajeError = new System.Windows.Forms.TextBox();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.button_Creativa1 = new System.Windows.Forms.Button();
@@ -62,7 +63,6 @@
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.txt_mensajeError = new System.Windows.Forms.TextBox();
             this.materialCard1.SuspendLayout();
             this.materialCard2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
@@ -117,6 +117,23 @@
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard1.Size = new System.Drawing.Size(1050, 1035);
             this.materialCard1.TabIndex = 0;
+            // 
+            // txt_mensajeError
+            // 
+            this.txt_mensajeError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_mensajeError.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_mensajeError.CausesValidation = false;
+            this.txt_mensajeError.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mensajeError.Location = new System.Drawing.Point(446, 933);
+            this.txt_mensajeError.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_mensajeError.Multiline = true;
+            this.txt_mensajeError.Name = "txt_mensajeError";
+            this.txt_mensajeError.ReadOnly = true;
+            this.txt_mensajeError.Size = new System.Drawing.Size(441, 57);
+            this.txt_mensajeError.TabIndex = 34;
+            this.txt_mensajeError.Text = "Mensaje Error";
+            this.txt_mensajeError.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_mensajeError.Visible = false;
             // 
             // btn_Salir
             // 
@@ -693,23 +710,6 @@
             this.materialLabel2.TabIndex = 0;
             this.materialLabel2.Text = "Razon Social";
             // 
-            // txt_mensajeError
-            // 
-            this.txt_mensajeError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txt_mensajeError.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_mensajeError.CausesValidation = false;
-            this.txt_mensajeError.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mensajeError.Location = new System.Drawing.Point(446, 933);
-            this.txt_mensajeError.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_mensajeError.Multiline = true;
-            this.txt_mensajeError.Name = "txt_mensajeError";
-            this.txt_mensajeError.ReadOnly = true;
-            this.txt_mensajeError.Size = new System.Drawing.Size(441, 57);
-            this.txt_mensajeError.TabIndex = 34;
-            this.txt_mensajeError.Text = "Mensaje Error";
-            this.txt_mensajeError.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_mensajeError.Visible = false;
-            // 
             // frmConfiguracionV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -718,7 +718,7 @@
             this.ClientSize = new System.Drawing.Size(1056, 1102);
             this.Controls.Add(this.materialCard1);
             this.Name = "frmConfiguracionV2";
-            this.Text = "frmConfiguracionV2";
+            this.Text = "Configuracion";
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
             this.materialCard2.ResumeLayout(false);

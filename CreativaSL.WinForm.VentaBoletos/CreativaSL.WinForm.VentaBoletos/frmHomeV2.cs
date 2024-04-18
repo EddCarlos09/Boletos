@@ -99,10 +99,14 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (this.Venta() == false)
                         {
-                            //this.Inicializar();
+                            this.Inicializar();
                             frmVentasV2 frmv = new frmVentasV2();
-                            frmv.ShowDialog();
-                            frmv.Dispose();
+                            TabPage tabPage = materialTabControl1.TabPages[1]; // Supongamos que el tab deseado está en la posición 0
+                            frmv.TopLevel = false;
+                            tabPage.Controls.Add(frmv);
+                            frmv.FormBorderStyle = FormBorderStyle.None;
+                            frmv.Dock = DockStyle.Fill;
+                            frmv.Show();
                         }
                         else
                         {
@@ -123,21 +127,11 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (this.Venta() == false)
                         {
-                            // Crear una instancia del formulario que deseas mostrar
-                            frmApartadosV2 formulario = new frmApartadosV2();
 
-                            // Agregar el formulario como un control secundario del tab deseado
-                            materialTabControl1.TabPages[2].Controls.Add(formulario);
-
-                            // Asegurarse de que el formulario se ajuste al tamaño del tab
-                            formulario.Dock = DockStyle.Fill;
-
-                            // Mostrar el tab que contiene el formulario
-                            materialTabControl1.SelectedTab = materialTabControl1.TabPages[2];
-                            //this.Inicializar();
-                            //frmVentasGrupalV2 frmvg = new frmVentasGrupalV2();
-                            //frmvg.ShowDialog();
-                            //frmvg.Dispose();
+                            this.Inicializar();
+                            frmVentasGrupalV2 frmvg = new frmVentasGrupalV2();
+                            frmvg.ShowDialog();
+                            frmvg.Dispose();
                         }
                         else
                         {
@@ -154,10 +148,13 @@ namespace CreativaSL.WinForm.VentaBoletos
                     if (this.Venta() == false)
                     { 
 
-                        //this.Inicializar();
+                        this.Inicializar();
                         frmApartadosV2 frma = new frmApartadosV2();
-                        frma.ShowDialog();
-                        frma.Dispose();
+                        TabPage tabPage = materialTabControl1.TabPages[3]; // Supongamos que el tab deseado está en la posición 0
+                        frma.TopLevel = false;
+                        tabPage.Controls.Add(frma);
+
+                        frma.Show();
                     }
                     else
                     {
@@ -169,7 +166,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (this.Venta() == false)
                         {
-                            //this.Inicializar();
+                            this.Inicializar();
                             frm_v3_Cliente frmcl = new frm_v3_Cliente();
                             frmcl.ShowDialog();
                             frmcl.Dispose();
@@ -209,11 +206,11 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (this.Venta() == false)
                         {
-                            //this.Inicializar();
+                            this.Inicializar();
                             frmMaletasV2 frma = new frmMaletasV2();
                             frma.ShowDialog();
                             frma.Dispose();
-                            //this.Inicializar();
+                            this.Inicializar();
                         }
                         else
                         {
@@ -230,7 +227,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                      {
                         if (this.Venta() == false)
                         {
-                            //this.Inicializar();
+                            this.Inicializar();
                             //frmAdministrador frma = new frmAdministrador();
                             FormAdministrador frma = new FormAdministrador();
                             frma.ShowDialog();
@@ -252,7 +249,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (this.Venta() == false)
                         {
-                            //this.Inicializar();
+                            this.Inicializar();
                             if (Comun.Id_Tu == 4)
                             {
                                 frmReportesV2 frmReportesVista = new frmReportesV2(15);
@@ -298,7 +295,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (this.Venta() == false)
                         {
-                            //this.Inicializar();
+                            this.Inicializar();
                             frmAsistenciaPasajerosV2 frmC = new frmAsistenciaPasajerosV2();
                             frmC.ShowDialog();
                             frmC.Dispose();
@@ -2472,6 +2469,7 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
 
         }
+
 
 
 
