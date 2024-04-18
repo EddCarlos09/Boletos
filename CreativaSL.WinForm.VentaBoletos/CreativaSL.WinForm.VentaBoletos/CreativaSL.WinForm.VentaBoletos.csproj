@@ -1061,6 +1061,12 @@
     <Compile Include="frmVentaBoletoSF.Designer.cs">
       <DependentUpon>frmVentaBoletoSF.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVentaBoletoV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentaBoletoV2.Designer.cs">
+      <DependentUpon>frmVentaBoletoV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVentaGrupal.cs">
       <SubType>Form</SubType>
     </Compile>
