@@ -111,7 +111,7 @@
             this.txtFolio.HideSelection = true;
             this.txtFolio.LeadingIcon = null;
             this.txtFolio.Location = new System.Drawing.Point(248, 191);
-            this.txtFolio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFolio.Margin = new System.Windows.Forms.Padding(2);
             this.txtFolio.MaxLength = 32767;
             this.txtFolio.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFolio.Name = "txtFolio";
@@ -137,7 +137,7 @@
             this.btn_Buscar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.Image")));
             this.btn_Buscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_Buscar.Location = new System.Drawing.Point(652, 133);
-            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(79, 76);
             this.btn_Buscar.TabIndex = 11;
@@ -183,7 +183,7 @@
             this.cmbTurno.IntegralHeight = false;
             this.cmbTurno.ItemHeight = 43;
             this.cmbTurno.Location = new System.Drawing.Point(248, 112);
-            this.cmbTurno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTurno.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTurno.MaxDropDownItems = 4;
             this.cmbTurno.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbTurno.Name = "cmbTurno";
@@ -195,7 +195,7 @@
             // 
             this.TxtFechaInicio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TxtFechaInicio.Location = new System.Drawing.Point(58, 121);
-            this.TxtFechaInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtFechaInicio.Margin = new System.Windows.Forms.Padding(2);
             this.TxtFechaInicio.Name = "TxtFechaInicio";
             this.TxtFechaInicio.Size = new System.Drawing.Size(151, 20);
             this.TxtFechaInicio.TabIndex = 14;
@@ -205,7 +205,7 @@
             // 
             this.TxtFechaFin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TxtFechaFin.Location = new System.Drawing.Point(58, 202);
-            this.TxtFechaFin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtFechaFin.Margin = new System.Windows.Forms.Padding(2);
             this.TxtFechaFin.Name = "TxtFechaFin";
             this.TxtFechaFin.Size = new System.Drawing.Size(151, 20);
             this.TxtFechaFin.TabIndex = 15;
@@ -231,7 +231,7 @@
             this.btn_VerTodos.Image = ((System.Drawing.Image)(resources.GetObject("btn_VerTodos.Image")));
             this.btn_VerTodos.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_VerTodos.Location = new System.Drawing.Point(779, 133);
-            this.btn_VerTodos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_VerTodos.Margin = new System.Windows.Forms.Padding(2);
             this.btn_VerTodos.Name = "btn_VerTodos";
             this.btn_VerTodos.Size = new System.Drawing.Size(79, 76);
             this.btn_VerTodos.TabIndex = 17;
@@ -259,7 +259,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 546);
-            this.ControlBox = false;
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_VerTodos);
             this.Controls.Add(this.d);
@@ -273,7 +272,7 @@
             this.Controls.Add(this.LabelTurno);
             this.Controls.Add(this.LabelFechaFin);
             this.Controls.Add(this.LabelFechaInicio);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmReportesV2";
             this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
             this.Text = "frmReportesV2";
