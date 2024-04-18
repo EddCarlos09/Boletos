@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNuevaFechaViajeV2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_Guardar = new System.Windows.Forms.Button();
             this.TxtViaje = new MaterialSkin.Controls.MaterialTextBox();
             this.panelFechas = new CreativaSL.LibControls.WinForms.PanelTitle_Creativa(this.components);
             this.label2 = new System.Windows.Forms.Label();
@@ -47,8 +49,6 @@
             this.chkLunes = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btn_Guardar = new System.Windows.Forms.Button();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelFechas.SuspendLayout();
             this.panelDias.SuspendLayout();
@@ -63,11 +63,42 @@
             this.panel1.Controls.Add(this.panelDias);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(864, 532);
+            this.panel1.Size = new System.Drawing.Size(864, 516);
             this.panel1.TabIndex = 0;
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
+            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Cancelar.Location = new System.Drawing.Point(439, 333);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btn_Cancelar.Size = new System.Drawing.Size(129, 113);
+            this.btn_Cancelar.TabIndex = 62;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // btn_Guardar
+            // 
+            this.btn_Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Guardar.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_Guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.Image")));
+            this.btn_Guardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Guardar.Location = new System.Drawing.Point(269, 333);
+            this.btn_Guardar.Name = "btn_Guardar";
+            this.btn_Guardar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btn_Guardar.Size = new System.Drawing.Size(129, 113);
+            this.btn_Guardar.TabIndex = 61;
+            this.btn_Guardar.Text = "Guardar";
+            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Guardar.UseVisualStyleBackColor = true;
+            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
             // TxtViaje
             // 
@@ -270,38 +301,6 @@
             this.label8.TabIndex = 1;
             this.label8.Text = "Nueva Fechas Viaje";
             // 
-            // btn_Guardar
-            // 
-            this.btn_Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Guardar.ForeColor = System.Drawing.Color.DimGray;
-            this.btn_Guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.Image")));
-            this.btn_Guardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Guardar.Location = new System.Drawing.Point(269, 333);
-            this.btn_Guardar.Name = "btn_Guardar";
-            this.btn_Guardar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btn_Guardar.Size = new System.Drawing.Size(129, 113);
-            this.btn_Guardar.TabIndex = 61;
-            this.btn_Guardar.Text = "Guardar";
-            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Guardar.UseVisualStyleBackColor = true;
-            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
-            // 
-            // btn_Cancelar
-            // 
-            this.btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cancelar.ForeColor = System.Drawing.Color.DimGray;
-            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
-            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Cancelar.Location = new System.Drawing.Point(439, 333);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btn_Cancelar.Size = new System.Drawing.Size(129, 113);
-            this.btn_Cancelar.TabIndex = 62;
-            this.btn_Cancelar.Text = "Cancelar";
-            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
-            // 
             // frmNuevaFechaViajeV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -309,7 +308,7 @@
             this.ClientSize = new System.Drawing.Size(870, 599);
             this.Controls.Add(this.panel1);
             this.Name = "frmNuevaFechaViajeV2";
-            this.Text = "frmNuevaFechaViajeV2";
+            this.Text = "Nueva Fechas Viaje";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelFechas.ResumeLayout(false);

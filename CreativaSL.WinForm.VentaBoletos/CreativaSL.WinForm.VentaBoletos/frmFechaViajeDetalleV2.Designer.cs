@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFechaViajeDetalleV2));
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvdatosViajesXFechas = new System.Windows.Forms.DataGridView();
@@ -52,10 +52,9 @@
             this.panel1.Controls.Add(this.btn_Cancelar);
             this.panel1.Controls.Add(this.dtPickerAnioMes);
             this.panel1.Controls.Add(this.LabelFechaInicio);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 79);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(838, 466);
+            this.panel1.Size = new System.Drawing.Size(838, 451);
             this.panel1.TabIndex = 0;
             // 
             // dgvdatosViajesXFechas
@@ -70,14 +69,14 @@
             this.dgvdatosViajesXFechas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvdatosViajesXFechas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvdatosViajesXFechas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdatosViajesXFechas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdatosViajesXFechas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvdatosViajesXFechas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdatosViajesXFechas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.viaje,
@@ -91,23 +90,23 @@
             this.dgvdatosViajesXFechas.MultiSelect = false;
             this.dgvdatosViajesXFechas.Name = "dgvdatosViajesXFechas";
             this.dgvdatosViajesXFechas.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdatosViajesXFechas.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdatosViajesXFechas.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvdatosViajesXFechas.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dgvdatosViajesXFechas.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dgvdatosViajesXFechas.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvdatosViajesXFechas.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvdatosViajesXFechas.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosViajesXFechas.RowTemplate.Height = 28;
             this.dgvdatosViajesXFechas.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosViajesXFechas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdatosViajesXFechas.Size = new System.Drawing.Size(687, 259);
+            this.dgvdatosViajesXFechas.Size = new System.Drawing.Size(687, 239);
             this.dgvdatosViajesXFechas.TabIndex = 64;
             // 
             // viaje
@@ -161,7 +160,7 @@
             this.btn_Cancelar.ForeColor = System.Drawing.Color.DimGray;
             this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
             this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Cancelar.Location = new System.Drawing.Point(618, 333);
+            this.btn_Cancelar.Location = new System.Drawing.Point(618, 323);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.btn_Cancelar.Size = new System.Drawing.Size(129, 113);
@@ -202,7 +201,7 @@
             this.ClientSize = new System.Drawing.Size(844, 533);
             this.Controls.Add(this.panel1);
             this.Name = "frmFechaViajeDetalleV2";
-            this.Text = "frmFechaViajeDetalleV2";
+            this.Text = "Fechas Viaje";
             this.Load += new System.EventHandler(this.frmFechasViajesDetalle_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

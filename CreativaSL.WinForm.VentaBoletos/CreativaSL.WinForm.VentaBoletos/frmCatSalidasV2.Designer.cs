@@ -97,10 +97,9 @@
             this.panel1.Controls.Add(this.txtNombreViaje);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 82);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1061, 690);
+            this.panel1.Size = new System.Drawing.Size(1061, 729);
             this.panel1.TabIndex = 0;
             // 
             // cmbRutas
@@ -575,10 +574,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 757);
+            this.ClientSize = new System.Drawing.Size(1067, 808);
             this.Controls.Add(this.panel1);
             this.Name = "frmCatSalidasV2";
-            this.Text = "frmCatSalidasV2";
+            this.Text = "Viajes";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelFechas.ResumeLayout(false);

@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatRutasV2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDelTerminal = new System.Windows.Forms.Button();
+            this.btnUpdTerminal = new System.Windows.Forms.Button();
+            this.btnAddTerminal = new System.Windows.Forms.Button();
+            this.txtTiempo2 = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,10 +45,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtTiempo2 = new MaterialSkin.Controls.MaterialMaskedTextBox();
-            this.btnAddTerminal = new System.Windows.Forms.Button();
-            this.btnUpdTerminal = new System.Windows.Forms.Button();
-            this.btnDelTerminal = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,12 +65,83 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 78);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(832, 625);
+            this.panel1.Size = new System.Drawing.Size(832, 611);
             this.panel1.TabIndex = 0;
+            // 
+            // btnDelTerminal
+            // 
+            this.btnDelTerminal.Image = ((System.Drawing.Image)(resources.GetObject("btnDelTerminal.Image")));
+            this.btnDelTerminal.Location = new System.Drawing.Point(724, 224);
+            this.btnDelTerminal.Name = "btnDelTerminal";
+            this.btnDelTerminal.Size = new System.Drawing.Size(69, 49);
+            this.btnDelTerminal.TabIndex = 66;
+            this.btnDelTerminal.UseVisualStyleBackColor = true;
+            this.btnDelTerminal.Click += new System.EventHandler(this.btnDelTerminal_Click);
+            // 
+            // btnUpdTerminal
+            // 
+            this.btnUpdTerminal.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdTerminal.Image")));
+            this.btnUpdTerminal.Location = new System.Drawing.Point(636, 225);
+            this.btnUpdTerminal.Name = "btnUpdTerminal";
+            this.btnUpdTerminal.Size = new System.Drawing.Size(69, 49);
+            this.btnUpdTerminal.TabIndex = 65;
+            this.btnUpdTerminal.UseVisualStyleBackColor = true;
+            this.btnUpdTerminal.Click += new System.EventHandler(this.btnUpdTerminal_Click);
+            // 
+            // btnAddTerminal
+            // 
+            this.btnAddTerminal.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTerminal.Image")));
+            this.btnAddTerminal.Location = new System.Drawing.Point(552, 225);
+            this.btnAddTerminal.Name = "btnAddTerminal";
+            this.btnAddTerminal.Size = new System.Drawing.Size(69, 49);
+            this.btnAddTerminal.TabIndex = 64;
+            this.btnAddTerminal.UseVisualStyleBackColor = true;
+            this.btnAddTerminal.Click += new System.EventHandler(this.btnAddTerminal_Click);
+            // 
+            // txtTiempo2
+            // 
+            this.txtTiempo2.AllowPromptAsInput = true;
+            this.txtTiempo2.AnimateReadOnly = false;
+            this.txtTiempo2.AsciiOnly = false;
+            this.txtTiempo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtTiempo2.BeepOnError = false;
+            this.txtTiempo2.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtTiempo2.Depth = 0;
+            this.txtTiempo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTiempo2.HidePromptOnLeave = false;
+            this.txtTiempo2.HideSelection = true;
+            this.txtTiempo2.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.txtTiempo2.LeadingIcon = null;
+            this.txtTiempo2.Location = new System.Drawing.Point(659, 122);
+            this.txtTiempo2.Mask = "00:00";
+            this.txtTiempo2.MaxLength = 32767;
+            this.txtTiempo2.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtTiempo2.Name = "txtTiempo2";
+            this.txtTiempo2.PasswordChar = '\0';
+            this.txtTiempo2.PrefixSuffixText = null;
+            this.txtTiempo2.PromptChar = '_';
+            this.txtTiempo2.ReadOnly = false;
+            this.txtTiempo2.RejectInputOnFirstFailure = false;
+            this.txtTiempo2.ResetOnPrompt = true;
+            this.txtTiempo2.ResetOnSpace = true;
+            this.txtTiempo2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtTiempo2.SelectedText = "";
+            this.txtTiempo2.SelectionLength = 0;
+            this.txtTiempo2.SelectionStart = 0;
+            this.txtTiempo2.ShortcutsEnabled = true;
+            this.txtTiempo2.Size = new System.Drawing.Size(134, 48);
+            this.txtTiempo2.SkipLiterals = true;
+            this.txtTiempo2.TabIndex = 63;
+            this.txtTiempo2.TabStop = false;
+            this.txtTiempo2.Text = "__:__";
+            this.txtTiempo2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTiempo2.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals;
+            this.txtTiempo2.TrailingIcon = null;
+            this.txtTiempo2.UseSystemPasswordChar = false;
+            this.txtTiempo2.ValidatingType = null;
             // 
             // btnCancelar
             // 
@@ -236,78 +307,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Terminal Origen";
             // 
-            // txtTiempo2
-            // 
-            this.txtTiempo2.AllowPromptAsInput = true;
-            this.txtTiempo2.AnimateReadOnly = false;
-            this.txtTiempo2.AsciiOnly = false;
-            this.txtTiempo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtTiempo2.BeepOnError = false;
-            this.txtTiempo2.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtTiempo2.Depth = 0;
-            this.txtTiempo2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtTiempo2.HidePromptOnLeave = false;
-            this.txtTiempo2.HideSelection = true;
-            this.txtTiempo2.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.txtTiempo2.LeadingIcon = null;
-            this.txtTiempo2.Location = new System.Drawing.Point(659, 122);
-            this.txtTiempo2.Mask = "00:00";
-            this.txtTiempo2.MaxLength = 32767;
-            this.txtTiempo2.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtTiempo2.Name = "txtTiempo2";
-            this.txtTiempo2.PasswordChar = '\0';
-            this.txtTiempo2.PrefixSuffixText = null;
-            this.txtTiempo2.PromptChar = '_';
-            this.txtTiempo2.ReadOnly = false;
-            this.txtTiempo2.RejectInputOnFirstFailure = false;
-            this.txtTiempo2.ResetOnPrompt = true;
-            this.txtTiempo2.ResetOnSpace = true;
-            this.txtTiempo2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtTiempo2.SelectedText = "";
-            this.txtTiempo2.SelectionLength = 0;
-            this.txtTiempo2.SelectionStart = 0;
-            this.txtTiempo2.ShortcutsEnabled = true;
-            this.txtTiempo2.Size = new System.Drawing.Size(134, 48);
-            this.txtTiempo2.SkipLiterals = true;
-            this.txtTiempo2.TabIndex = 63;
-            this.txtTiempo2.TabStop = false;
-            this.txtTiempo2.Text = "__:__";
-            this.txtTiempo2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtTiempo2.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals;
-            this.txtTiempo2.TrailingIcon = null;
-            this.txtTiempo2.UseSystemPasswordChar = false;
-            this.txtTiempo2.ValidatingType = null;
-            // 
-            // btnAddTerminal
-            // 
-            this.btnAddTerminal.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTerminal.Image")));
-            this.btnAddTerminal.Location = new System.Drawing.Point(552, 225);
-            this.btnAddTerminal.Name = "btnAddTerminal";
-            this.btnAddTerminal.Size = new System.Drawing.Size(69, 49);
-            this.btnAddTerminal.TabIndex = 64;
-            this.btnAddTerminal.UseVisualStyleBackColor = true;
-            this.btnAddTerminal.Click += new System.EventHandler(this.btnAddTerminal_Click);
-            // 
-            // btnUpdTerminal
-            // 
-            this.btnUpdTerminal.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdTerminal.Image")));
-            this.btnUpdTerminal.Location = new System.Drawing.Point(636, 225);
-            this.btnUpdTerminal.Name = "btnUpdTerminal";
-            this.btnUpdTerminal.Size = new System.Drawing.Size(69, 49);
-            this.btnUpdTerminal.TabIndex = 65;
-            this.btnUpdTerminal.UseVisualStyleBackColor = true;
-            this.btnUpdTerminal.Click += new System.EventHandler(this.btnUpdTerminal_Click);
-            // 
-            // btnDelTerminal
-            // 
-            this.btnDelTerminal.Image = ((System.Drawing.Image)(resources.GetObject("btnDelTerminal.Image")));
-            this.btnDelTerminal.Location = new System.Drawing.Point(724, 224);
-            this.btnDelTerminal.Name = "btnDelTerminal";
-            this.btnDelTerminal.Size = new System.Drawing.Size(69, 49);
-            this.btnDelTerminal.TabIndex = 66;
-            this.btnDelTerminal.UseVisualStyleBackColor = true;
-            this.btnDelTerminal.Click += new System.EventHandler(this.btnDelTerminal_Click);
-            // 
             // frmCatRutasV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -315,7 +314,7 @@
             this.ClientSize = new System.Drawing.Size(838, 692);
             this.Controls.Add(this.panel1);
             this.Name = "frmCatRutasV2";
-            this.Text = "fmrCatRutasV2";
+            this.Text = "Rutas";
             this.Load += new System.EventHandler(this.frmRutas_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

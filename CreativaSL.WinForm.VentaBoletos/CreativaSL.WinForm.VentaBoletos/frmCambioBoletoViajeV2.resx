@@ -193,7 +193,7 @@
   <data name="btnSalir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAOlJREFUSEvVlr0OgjAUhfsMLrTQwdmFwc0YdfHJxOdkMxpfQCc9J1yjN0I09NbE
+        DgAACw4BQL7hQQAAAOlJREFUSEvVlr0OgjAUhfsMLrTQwdmFwc0YdfHJxOdkMxpfQCc9J1yjN0I09NbE
         L7mhP+R8FELBlWW5DyFccbylFDNQjeuDkzHGiXRHwwxkXaSr4VVIM5nBrH+UtNLUWEqKophKU2Ml8d7P
         qqqqpauxkiBngTryKENPrCQEq1kh74QVbWSow1JCekXWEvImyiEhSvRJgvmW54wtbDWHbCtB+BbZ569W
         MgYlINaShwDPZC1DtpJeAbGSQLBEVt43Hve/hmguXY2VhGTfhQmy8n9PBrN+IsHDyv+3gomGIl5FSjED
@@ -203,7 +203,7 @@
   <data name="btnGuardar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAWlJREFUSEvVlc1Kw0AUhWPxZytIyB8hiF1lafAJ9FFs6UpwI6VRt4IgRfsKKvYV
+        DgAACw4BQL7hQQAAAWlJREFUSEvVlc1Kw0AUhWPxZytIyB8hiF1lafAJ9FFs6UpwI6VRt4IgRfsKKvYV
         dKlLcV/0PdSC1W+aK3QxSUYZoR44TObMuedOM0nq/BsEQdCGPZnaRxiGOfyEfZHsg/CTmSYLhWoA3/e3
         KMq5BTfwroZjaXIs5eXAtEPBkxR8cD1ivJ8J07G+QZZlSxgGykjBCO4mSbIqy6XA35fwynNoEDjENGE8
         TdN0WfRK4Dc7ZAyHyhhF0b5IRmAz9Y9pHMcbmN5pcCWSXRA8oMGr67q+SHZBeIsmHZnOH9jg3p9tkPML
@@ -215,7 +215,7 @@
   <data name="btnComprobar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAV5JREFUSEvdlb1KA0EUhddopYII7v+yyjYiIgpWQVJEfAVLifgCKe3VVvR1xMbK
+        DgAACw4BQL7hQQAAAV5JREFUSEvdlb1KA0EUhddopYII7v+yyjYiIgpWQVJEfAVLifgCKe3VVvR1xMbK
         Vt9ACysFK9EmqN9NrjGa7JqZDSh+cNi5M/fMyf7G+TV835+KoqiKtgxUFZ9uUUwYhjUMD+iJ8eOwkn7x
         Md7QrfKh6RodaGkEvkN0pWU+/JpWHMerWhohPvFrmQ9Nr0mSrGhphPjEr2U+vSGc+hEaeA8+RP99EARL
         0m8bMofWi0T/Gq0V6bcKMcX2TI6p335Qi/djWfptQyY9z8uKxP2YbxvBKgQm0jSd7RVzY52lfqxCGJ+i

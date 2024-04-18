@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_v2_AsignarTarjetaV2));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_v2_AsignarTarjetaV2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvTarjetas = new CreativaSL.WinForm.VentaBoletos.Controls.CSLDataGridView();
+            this.IDTarjetas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Folios = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblCantidad2 = new System.Windows.Forms.Label();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.button_Creativa1 = new System.Windows.Forms.Button();
             this.txtCantidad = new MaterialSkin.Controls.MaterialTextBox();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvTarjetas = new CreativaSL.WinForm.VentaBoletos.Controls.CSLDataGridView();
-            this.IDTarjetas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Folios = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTarjetas)).BeginInit();
             this.SuspendLayout();
@@ -54,11 +54,68 @@
             this.panel1.Controls.Add(this.txtCantidad);
             this.panel1.Controls.Add(this.lblCantidad);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 81);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(794, 507);
+            this.panel1.Size = new System.Drawing.Size(794, 490);
             this.panel1.TabIndex = 0;
+            // 
+            // dgvTarjetas
+            // 
+            this.dgvTarjetas.AllowUserToAddRows = false;
+            this.dgvTarjetas.AllowUserToDeleteRows = false;
+            this.dgvTarjetas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvTarjetas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTarjetas.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvTarjetas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTarjetas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvTarjetas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTarjetas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDTarjetas,
+            this.Folios});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTarjetas.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvTarjetas.Location = new System.Drawing.Point(53, 146);
+            this.dgvTarjetas.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvTarjetas.MultiSelect = false;
+            this.dgvTarjetas.Name = "dgvTarjetas";
+            this.dgvTarjetas.RowHeadersWidth = 51;
+            this.dgvTarjetas.RowTemplate.Height = 30;
+            this.dgvTarjetas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvTarjetas.Size = new System.Drawing.Size(648, 200);
+            this.dgvTarjetas.TabIndex = 146;
+            this.dgvTarjetas.ScrollMax += new System.EventHandler(this.dgvTarjetas_ScrollMax);
+            // 
+            // IDTarjetas
+            // 
+            this.IDTarjetas.DataPropertyName = "IDTarjeta";
+            this.IDTarjetas.HeaderText = "IDTarjeta";
+            this.IDTarjetas.MinimumWidth = 6;
+            this.IDTarjetas.Name = "IDTarjetas";
+            this.IDTarjetas.ReadOnly = true;
+            this.IDTarjetas.Visible = false;
+            // 
+            // Folios
+            // 
+            this.Folios.DataPropertyName = "Folio";
+            this.Folios.HeaderText = "Código";
+            this.Folios.MinimumWidth = 6;
+            this.Folios.Name = "Folios";
+            this.Folios.ReadOnly = true;
             // 
             // lblCantidad2
             // 
@@ -81,7 +138,7 @@
             this.btn_Cancelar.ForeColor = System.Drawing.Color.DimGray;
             this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
             this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Cancelar.Location = new System.Drawing.Point(416, 385);
+            this.btn_Cancelar.Location = new System.Drawing.Point(416, 368);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
             this.btn_Cancelar.Size = new System.Drawing.Size(163, 98);
@@ -98,7 +155,7 @@
             this.button_Creativa1.ForeColor = System.Drawing.Color.DimGray;
             this.button_Creativa1.Image = ((System.Drawing.Image)(resources.GetObject("button_Creativa1.Image")));
             this.button_Creativa1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button_Creativa1.Location = new System.Drawing.Point(202, 385);
+            this.button_Creativa1.Location = new System.Drawing.Point(202, 368);
             this.button_Creativa1.Name = "button_Creativa1";
             this.button_Creativa1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
             this.button_Creativa1.Size = new System.Drawing.Size(163, 98);
@@ -147,64 +204,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Numero de Tajetas Disponible";
             // 
-            // dgvTarjetas
-            // 
-            this.dgvTarjetas.AllowUserToAddRows = false;
-            this.dgvTarjetas.AllowUserToDeleteRows = false;
-            this.dgvTarjetas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvTarjetas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvTarjetas.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgvTarjetas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTarjetas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvTarjetas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTarjetas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDTarjetas,
-            this.Folios});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTarjetas.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvTarjetas.Location = new System.Drawing.Point(53, 146);
-            this.dgvTarjetas.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvTarjetas.MultiSelect = false;
-            this.dgvTarjetas.Name = "dgvTarjetas";
-            this.dgvTarjetas.RowHeadersWidth = 51;
-            this.dgvTarjetas.RowTemplate.Height = 30;
-            this.dgvTarjetas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTarjetas.Size = new System.Drawing.Size(648, 217);
-            this.dgvTarjetas.TabIndex = 146;
-            this.dgvTarjetas.ScrollMax += new System.EventHandler(this.dgvTarjetas_ScrollMax);
-            // 
-            // IDTarjetas
-            // 
-            this.IDTarjetas.DataPropertyName = "IDTarjeta";
-            this.IDTarjetas.HeaderText = "IDTarjeta";
-            this.IDTarjetas.MinimumWidth = 6;
-            this.IDTarjetas.Name = "IDTarjetas";
-            this.IDTarjetas.ReadOnly = true;
-            this.IDTarjetas.Visible = false;
-            // 
-            // Folios
-            // 
-            this.Folios.DataPropertyName = "Folio";
-            this.Folios.HeaderText = "Código";
-            this.Folios.MinimumWidth = 6;
-            this.Folios.Name = "Folios";
-            this.Folios.ReadOnly = true;
-            // 
             // frm_v2_AsignarTarjetaV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -212,7 +211,7 @@
             this.ClientSize = new System.Drawing.Size(800, 574);
             this.Controls.Add(this.panel1);
             this.Name = "frm_v2_AsignarTarjetaV2";
-            this.Text = "frm_v2_AsignarTarjetaV2";
+            this.Text = "Tarjetas Disponibles";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTarjetas)).EndInit();

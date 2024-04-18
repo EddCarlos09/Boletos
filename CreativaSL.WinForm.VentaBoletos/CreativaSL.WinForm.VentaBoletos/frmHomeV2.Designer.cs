@@ -219,14 +219,28 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.btnAdministrador = new System.Windows.Forms.TabPage();
             this.btnReportes = new System.Windows.Forms.TabPage();
             this.btnConfiguracion = new System.Windows.Forms.TabPage();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.imageListmMenu = new System.Windows.Forms.ImageList(this.components);
             this.backgroundWorkerFechaHora = new System.ComponentModel.BackgroundWorker();
             this.timerFechaHora = new System.Windows.Forms.Timer(this.components);
+            this.MenuStripCaja = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItemDepositos = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemRetirosCajaLLena = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemRetirosPagos = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemInformacionDeCaja = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemCerrarCaja = new System.Windows.Forms.ToolStripMenuItem();
             this.materialTabControl1.SuspendLayout();
             this.tabPage12.SuspendLayout();
             this.materialCard1.SuspendLayout();
@@ -312,6 +326,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.asiento4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento1)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.materialCard5.SuspendLayout();
+            this.MenuStripCaja.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -330,14 +347,14 @@
             this.materialTabControl1.Controls.Add(this.tabPage11);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTabControl1.ImageList = this.imageList1;
+            this.materialTabControl1.ImageList = this.imageListmMenu;
             this.materialTabControl1.Location = new System.Drawing.Point(3, 64);
             this.materialTabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1804, 1036);
+            this.materialTabControl1.Size = new System.Drawing.Size(1936, 1036);
             this.materialTabControl1.TabIndex = 19;
             this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
             // 
@@ -345,13 +362,13 @@
             // 
             this.tabPage12.AutoScroll = true;
             this.tabPage12.Controls.Add(this.materialCard1);
-            this.tabPage12.ImageKey = "icons8-home-144.png";
-            this.tabPage12.Location = new System.Drawing.Point(4, 25);
+            this.tabPage12.ImageKey = "icons8-home-96.png";
+            this.tabPage12.Location = new System.Drawing.Point(4, 39);
             this.tabPage12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(1796, 1007);
+            this.tabPage12.Size = new System.Drawing.Size(1928, 993);
             this.tabPage12.TabIndex = 12;
-            this.tabPage12.Text = "Home";
+            this.tabPage12.Text = "Inicio";
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
             // materialCard1
@@ -373,11 +390,11 @@
             this.materialCard1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard1.Location = new System.Drawing.Point(0, 0);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(1796, 1007);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(19, 17, 19, 17);
+            this.materialCard1.Size = new System.Drawing.Size(1928, 993);
             this.materialCard1.TabIndex = 0;
             // 
             // btnPlantaAlta
@@ -389,6 +406,7 @@
             this.btnPlantaAlta.TabIndex = 244;
             this.btnPlantaAlta.Text = "P. Alta";
             this.btnPlantaAlta.UseVisualStyleBackColor = true;
+            this.btnPlantaAlta.Click += new System.EventHandler(this.btnPlantaAlta_Click);
             // 
             // btnPlantaBaja
             // 
@@ -399,26 +417,28 @@
             this.btnPlantaBaja.TabIndex = 243;
             this.btnPlantaBaja.Text = "P. Baja";
             this.btnPlantaBaja.UseVisualStyleBackColor = true;
+            this.btnPlantaBaja.Click += new System.EventHandler(this.btnPlantaBaja_Click);
             // 
             // materialLabel9
             // 
+            this.materialLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel9.AutoSize = true;
-            this.materialLabel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(978, 26);
+            this.materialLabel9.Location = new System.Drawing.Point(1013, 65);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
-            this.materialLabel9.Size = new System.Drawing.Size(54, 19);
+            this.materialLabel9.Size = new System.Drawing.Size(71, 19);
             this.materialLabel9.TabIndex = 235;
-            this.materialLabel9.Text = "Boletos";
+            this.materialLabel9.Text = "BOLETOS";
             // 
             // materialLabel11
             // 
+            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(978, 440);
+            this.materialLabel11.Location = new System.Drawing.Point(1040, 511);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(55, 19);
@@ -427,6 +447,7 @@
             // 
             // materialCard3
             // 
+            this.materialCard3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard3.Controls.Add(this.btn_Cancelar);
             this.materialCard3.Controls.Add(this.btn_Vender);
@@ -435,7 +456,7 @@
             this.materialCard3.Controls.Add(this.checkBoxVentaGrupal);
             this.materialCard3.Depth = 0;
             this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard3.Location = new System.Drawing.Point(551, 874);
+            this.materialCard3.Location = new System.Drawing.Point(230, 874);
             this.materialCard3.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard3.Name = "materialCard3";
@@ -447,12 +468,12 @@
             // 
             this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
             this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Cancelar.Location = new System.Drawing.Point(480, 21);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Cancelar.Location = new System.Drawing.Point(425, 16);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(179, 52);
+            this.btn_Cancelar.Size = new System.Drawing.Size(167, 66);
             this.btn_Cancelar.TabIndex = 53;
-            this.btn_Cancelar.Text = "CANCENLAR";
+            this.btn_Cancelar.Text = "CANCELAR";
             this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
@@ -461,10 +482,10 @@
             // 
             this.btn_Vender.Image = ((System.Drawing.Image)(resources.GetObject("btn_Vender.Image")));
             this.btn_Vender.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Vender.Location = new System.Drawing.Point(255, 21);
-            this.btn_Vender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Vender.Location = new System.Drawing.Point(209, 16);
+            this.btn_Vender.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btn_Vender.Name = "btn_Vender";
-            this.btn_Vender.Size = new System.Drawing.Size(179, 52);
+            this.btn_Vender.Size = new System.Drawing.Size(167, 66);
             this.btn_Vender.TabIndex = 52;
             this.btn_Vender.Text = "VENDER";
             this.btn_Vender.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -476,7 +497,7 @@
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel8.Location = new System.Drawing.Point(698, 39);
+            this.materialLabel8.Location = new System.Drawing.Point(699, 39);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(100, 19);
@@ -492,7 +513,7 @@
             this.Txt_TiempoVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_TiempoVenta.HideSelection = true;
             this.Txt_TiempoVenta.LeadingIcon = null;
-            this.Txt_TiempoVenta.Location = new System.Drawing.Point(830, 20);
+            this.Txt_TiempoVenta.Location = new System.Drawing.Point(829, 20);
             this.Txt_TiempoVenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_TiempoVenta.MaxLength = 32767;
             this.Txt_TiempoVenta.MouseState = MaterialSkin.MouseState.OUT;
@@ -527,6 +548,7 @@
             this.checkBoxVentaGrupal.TabIndex = 49;
             this.checkBoxVentaGrupal.Text = "Venta Grupal";
             this.checkBoxVentaGrupal.UseVisualStyleBackColor = true;
+            this.checkBoxVentaGrupal.CheckedChanged += new System.EventHandler(this.checkBoxVentaGrupal_CheckedChanged);
             // 
             // materialCard2
             // 
@@ -555,7 +577,7 @@
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.Location = new System.Drawing.Point(42, 179);
+            this.materialLabel7.Location = new System.Drawing.Point(43, 178);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(152, 19);
@@ -572,7 +594,7 @@
             this.Txt_FechaHoraSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_FechaHoraSistema.HideSelection = true;
             this.Txt_FechaHoraSistema.LeadingIcon = null;
-            this.Txt_FechaHoraSistema.Location = new System.Drawing.Point(35, 227);
+            this.Txt_FechaHoraSistema.Location = new System.Drawing.Point(35, 226);
             this.Txt_FechaHoraSistema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_FechaHoraSistema.MaxLength = 32767;
             this.Txt_FechaHoraSistema.MouseState = MaterialSkin.MouseState.OUT;
@@ -585,7 +607,7 @@
             this.Txt_FechaHoraSistema.SelectionLength = 0;
             this.Txt_FechaHoraSistema.SelectionStart = 0;
             this.Txt_FechaHoraSistema.ShortcutsEnabled = true;
-            this.Txt_FechaHoraSistema.Size = new System.Drawing.Size(190, 48);
+            this.Txt_FechaHoraSistema.Size = new System.Drawing.Size(141, 48);
             this.Txt_FechaHoraSistema.TabIndex = 47;
             this.Txt_FechaHoraSistema.TabStop = false;
             this.Txt_FechaHoraSistema.Text = "00/00/0000 00:00:00";
@@ -603,7 +625,7 @@
             this.Txt_Recorrido.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_Recorrido.HideSelection = true;
             this.Txt_Recorrido.LeadingIcon = null;
-            this.Txt_Recorrido.Location = new System.Drawing.Point(259, 227);
+            this.Txt_Recorrido.Location = new System.Drawing.Point(259, 226);
             this.Txt_Recorrido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_Recorrido.MaxLength = 32767;
             this.Txt_Recorrido.MouseState = MaterialSkin.MouseState.OUT;
@@ -616,7 +638,7 @@
             this.Txt_Recorrido.SelectionLength = 0;
             this.Txt_Recorrido.SelectionStart = 0;
             this.Txt_Recorrido.ShortcutsEnabled = true;
-            this.Txt_Recorrido.Size = new System.Drawing.Size(270, 48);
+            this.Txt_Recorrido.Size = new System.Drawing.Size(269, 48);
             this.Txt_Recorrido.TabIndex = 46;
             this.Txt_Recorrido.TabStop = false;
             this.Txt_Recorrido.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -663,7 +685,7 @@
             this.Txt_NumAsientosDisponibles.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_NumAsientosDisponibles.HideSelection = true;
             this.Txt_NumAsientosDisponibles.LeadingIcon = null;
-            this.Txt_NumAsientosDisponibles.Location = new System.Drawing.Point(94, 72);
+            this.Txt_NumAsientosDisponibles.Location = new System.Drawing.Point(93, 71);
             this.Txt_NumAsientosDisponibles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_NumAsientosDisponibles.MaxLength = 32767;
             this.Txt_NumAsientosDisponibles.MouseState = MaterialSkin.MouseState.OUT;
@@ -877,20 +899,23 @@
             // 
             // GridViewVentaBoletos
             // 
+            this.GridViewVentaBoletos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GridViewVentaBoletos.AutoSizeTable = false;
             this.GridViewVentaBoletos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GridViewVentaBoletos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GridViewVentaBoletos.Depth = 0;
             this.GridViewVentaBoletos.FullRowSelect = true;
             this.GridViewVentaBoletos.HideSelection = false;
-            this.GridViewVentaBoletos.Location = new System.Drawing.Point(665, 470);
+            this.GridViewVentaBoletos.Location = new System.Drawing.Point(665, 562);
             this.GridViewVentaBoletos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GridViewVentaBoletos.MinimumSize = new System.Drawing.Size(200, 100);
             this.GridViewVentaBoletos.MouseLocation = new System.Drawing.Point(-1, -1);
             this.GridViewVentaBoletos.MouseState = MaterialSkin.MouseState.OUT;
             this.GridViewVentaBoletos.Name = "GridViewVentaBoletos";
             this.GridViewVentaBoletos.OwnerDraw = true;
-            this.GridViewVentaBoletos.Size = new System.Drawing.Size(791, 375);
+            this.GridViewVentaBoletos.Size = new System.Drawing.Size(814, 295);
             this.GridViewVentaBoletos.TabIndex = 238;
             this.GridViewVentaBoletos.UseCompatibleStateImageBehavior = false;
             this.GridViewVentaBoletos.View = System.Windows.Forms.View.Details;
@@ -900,20 +925,23 @@
             // 
             // GridViewViajes
             // 
+            this.GridViewViajes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GridViewViajes.AutoSizeTable = false;
             this.GridViewViajes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GridViewViajes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GridViewViajes.Depth = 0;
             this.GridViewViajes.FullRowSelect = true;
             this.GridViewViajes.HideSelection = false;
-            this.GridViewViajes.Location = new System.Drawing.Point(665, 62);
+            this.GridViewViajes.Location = new System.Drawing.Point(665, 120);
             this.GridViewViajes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GridViewViajes.MinimumSize = new System.Drawing.Size(200, 100);
             this.GridViewViajes.MouseLocation = new System.Drawing.Point(-1, -1);
             this.GridViewViajes.MouseState = MaterialSkin.MouseState.OUT;
             this.GridViewViajes.Name = "GridViewViajes";
             this.GridViewViajes.OwnerDraw = true;
-            this.GridViewViajes.Size = new System.Drawing.Size(791, 375);
+            this.GridViewViajes.Size = new System.Drawing.Size(814, 373);
             this.GridViewViajes.TabIndex = 237;
             this.GridViewViajes.UseCompatibleStateImageBehavior = false;
             this.GridViewViajes.View = System.Windows.Forms.View.Details;
@@ -1086,7 +1114,7 @@
             this.panel_Camion.GradientTop = true;
             this.panel_Camion.LinearGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.panel_Camion.LineColor = System.Drawing.Color.Transparent;
-            this.panel_Camion.Location = new System.Drawing.Point(1535, 83);
+            this.panel_Camion.Location = new System.Drawing.Point(1535, 82);
             this.panel_Camion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_Camion.Name = "panel_Camion";
             this.panel_Camion.Size = new System.Drawing.Size(325, 720);
@@ -3302,125 +3330,278 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.ImageKey = "ImagenVenta";
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.ImageKey = "icons8-sales-64.png";
+            this.tabPage1.Location = new System.Drawing.Point(4, 39);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1796, 1007);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabPage1.Size = new System.Drawing.Size(1928, 993);
             this.tabPage1.TabIndex = 10;
             this.tabPage1.Text = "Ventas";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
-            this.tabPage2.ImageKey = "ImagenVenta2";
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.ImageKey = "icons8-sales-100 (1).png";
+            this.tabPage2.Location = new System.Drawing.Point(4, 39);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1796, 1007);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabPage2.Size = new System.Drawing.Size(1928, 993);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Ventas G";
+            this.tabPage2.Text = "Ventas grupal";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
-            this.tabPage3.ImageKey = "ApartadosImagen";
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.ImageKey = "icons8-external-link-50.png";
+            this.tabPage3.Location = new System.Drawing.Point(4, 39);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1796, 1007);
+            this.tabPage3.Size = new System.Drawing.Size(1928, 993);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Apartados";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
-            this.tabPage4.ImageKey = "ClientesImagen";
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.ImageKey = "icons8-client-96.png";
+            this.tabPage4.Location = new System.Drawing.Point(4, 39);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1796, 1007);
+            this.tabPage4.Size = new System.Drawing.Size(1928, 993);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Clientes";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
-            this.tabPage5.ImageKey = "CajaImagen";
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Controls.Add(this.materialCard5);
+            this.tabPage5.ImageKey = "icons8-box-100.png";
+            this.tabPage5.Location = new System.Drawing.Point(4, 39);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1796, 1007);
+            this.tabPage5.Size = new System.Drawing.Size(1928, 993);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Caja";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // materialCard5
+            // 
+            this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard5.Controls.Add(this.materialLabel12);
+            this.materialCard5.Controls.Add(this.materialButton5);
+            this.materialCard5.Controls.Add(this.materialButton4);
+            this.materialCard5.Controls.Add(this.materialButton3);
+            this.materialCard5.Controls.Add(this.materialButton2);
+            this.materialCard5.Controls.Add(this.materialButton1);
+            this.materialCard5.Depth = 0;
+            this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard5.Location = new System.Drawing.Point(189, 64);
+            this.materialCard5.Margin = new System.Windows.Forms.Padding(19, 17, 19, 17);
+            this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard5.Name = "materialCard5";
+            this.materialCard5.Padding = new System.Windows.Forms.Padding(19, 17, 19, 17);
+            this.materialCard5.Size = new System.Drawing.Size(1207, 383);
+            this.materialCard5.TabIndex = 1;
+            // 
+            // materialLabel12
+            // 
+            this.materialLabel12.AutoSize = true;
+            this.materialLabel12.Depth = 0;
+            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel12.ForeColor = System.Drawing.Color.Black;
+            this.materialLabel12.Location = new System.Drawing.Point(487, 34);
+            this.materialLabel12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel12.Name = "materialLabel12";
+            this.materialLabel12.Size = new System.Drawing.Size(122, 19);
+            this.materialLabel12.TabIndex = 5;
+            this.materialLabel12.Text = "Opciones de caja";
+            // 
+            // materialButton5
+            // 
+            this.materialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton5.Depth = 0;
+            this.materialButton5.HighEmphasis = true;
+            this.materialButton5.Icon = null;
+            this.materialButton5.Location = new System.Drawing.Point(883, 91);
+            this.materialButton5.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton5.Name = "materialButton5";
+            this.materialButton5.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton5.Size = new System.Drawing.Size(117, 36);
+            this.materialButton5.TabIndex = 4;
+            this.materialButton5.Text = "Cerrar caja";
+            this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton5.UseAccentColor = false;
+            this.materialButton5.UseVisualStyleBackColor = true;
+            this.materialButton5.Click += new System.EventHandler(this.toolStripMenuItemCerrarCaja_Click);
+            // 
+            // materialButton4
+            // 
+            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton4.Depth = 0;
+            this.materialButton4.HighEmphasis = true;
+            this.materialButton4.Icon = null;
+            this.materialButton4.Location = new System.Drawing.Point(429, 91);
+            this.materialButton4.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton4.Name = "materialButton4";
+            this.materialButton4.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton4.Size = new System.Drawing.Size(132, 36);
+            this.materialButton4.TabIndex = 3;
+            this.materialButton4.Text = "Retiros pagos";
+            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton4.UseAccentColor = false;
+            this.materialButton4.UseVisualStyleBackColor = true;
+            this.materialButton4.Click += new System.EventHandler(this.toolStripMenuItemRetirosPagos_Click);
+            // 
+            // materialButton3
+            // 
+            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton3.Depth = 0;
+            this.materialButton3.HighEmphasis = true;
+            this.materialButton3.Icon = null;
+            this.materialButton3.Location = new System.Drawing.Point(616, 91);
+            this.materialButton3.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton3.Name = "materialButton3";
+            this.materialButton3.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton3.Size = new System.Drawing.Size(183, 36);
+            this.materialButton3.TabIndex = 2;
+            this.materialButton3.Text = "Información de caja";
+            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton3.UseAccentColor = false;
+            this.materialButton3.UseVisualStyleBackColor = true;
+            this.materialButton3.Click += new System.EventHandler(this.toolStripMenuItemInformacionDeCaja_Click);
+            // 
+            // materialButton2
+            // 
+            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton2.Depth = 0;
+            this.materialButton2.HighEmphasis = true;
+            this.materialButton2.Icon = null;
+            this.materialButton2.Location = new System.Drawing.Point(181, 91);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton2.Name = "materialButton2";
+            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton2.Size = new System.Drawing.Size(169, 36);
+            this.materialButton2.TabIndex = 1;
+            this.materialButton2.Text = "Retiros caja llena";
+            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton2.UseAccentColor = false;
+            this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.toolStripMenuItemRetirosCajaLLena_Click);
+            // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(37, 91);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(100, 36);
+            this.materialButton1.TabIndex = 0;
+            this.materialButton1.Text = "Depósitos";
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.toolStripMenuItemDepositos_Click);
+            // 
             // tabPage6
             // 
-            this.tabPage6.ImageKey = "MaletaImagen";
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.ImageKey = "icons8-suitcase-100.png";
+            this.tabPage6.Location = new System.Drawing.Point(4, 39);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1796, 1007);
+            this.tabPage6.Size = new System.Drawing.Size(1928, 993);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Maleta";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // btnAdministrador
             // 
-            this.btnAdministrador.ImageKey = "AdminImagen";
-            this.btnAdministrador.Location = new System.Drawing.Point(4, 25);
+            this.btnAdministrador.ImageKey = "icons8-admin-96.png";
+            this.btnAdministrador.Location = new System.Drawing.Point(4, 39);
             this.btnAdministrador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdministrador.Name = "btnAdministrador";
-            this.btnAdministrador.Size = new System.Drawing.Size(1796, 1007);
+            this.btnAdministrador.Size = new System.Drawing.Size(1928, 993);
             this.btnAdministrador.TabIndex = 6;
             this.btnAdministrador.Text = "Admin";
             this.btnAdministrador.UseVisualStyleBackColor = true;
             // 
             // btnReportes
             // 
-            this.btnReportes.ImageKey = "ReportesImagen";
-            this.btnReportes.Location = new System.Drawing.Point(4, 25);
+            this.btnReportes.ImageKey = "icons8-reports-100.png";
+            this.btnReportes.Location = new System.Drawing.Point(4, 39);
             this.btnReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(1796, 1007);
+            this.btnReportes.Size = new System.Drawing.Size(1928, 993);
             this.btnReportes.TabIndex = 7;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = true;
             // 
             // btnConfiguracion
             // 
-            this.btnConfiguracion.ImageKey = "ConfigImagen";
-            this.btnConfiguracion.Location = new System.Drawing.Point(4, 25);
+            this.btnConfiguracion.ImageKey = "icons8-settings-96.png";
+            this.btnConfiguracion.Location = new System.Drawing.Point(4, 39);
             this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(1796, 1007);
+            this.btnConfiguracion.Size = new System.Drawing.Size(1928, 993);
             this.btnConfiguracion.TabIndex = 8;
             this.btnConfiguracion.Text = "Config";
             this.btnConfiguracion.UseVisualStyleBackColor = true;
             // 
             // tabPage10
             // 
-            this.tabPage10.ImageKey = "AsistenciaImagen";
-            this.tabPage10.Location = new System.Drawing.Point(4, 25);
+            this.tabPage10.ImageKey = "icons8-checked-user-male-100.png";
+            this.tabPage10.Location = new System.Drawing.Point(4, 39);
             this.tabPage10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1796, 1007);
+            this.tabPage10.Size = new System.Drawing.Size(1928, 993);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "Asistencia";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // tabPage11
             // 
-            this.tabPage11.Location = new System.Drawing.Point(4, 25);
+            this.tabPage11.ImageKey = "icons8-exit-100.png";
+            this.tabPage11.Location = new System.Drawing.Point(4, 39);
             this.tabPage11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1796, 1007);
+            this.tabPage11.Size = new System.Drawing.Size(1928, 993);
             this.tabPage11.TabIndex = 11;
             this.tabPage11.Text = "Salir";
             this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // imageListmMenu
+            // 
+            this.imageListmMenu.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListmMenu.ImageStream")));
+            this.imageListmMenu.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListmMenu.Images.SetKeyName(0, "icons8-assistance-68.png");
+            this.imageListmMenu.Images.SetKeyName(1, "icons8-reports-100.png");
+            this.imageListmMenu.Images.SetKeyName(2, "icons8-suitcase-100.png");
+            this.imageListmMenu.Images.SetKeyName(3, "icons8-box-100.png");
+            this.imageListmMenu.Images.SetKeyName(4, "icons8-external-link-50.png");
+            this.imageListmMenu.Images.SetKeyName(5, "icons8-sales-64.png");
+            this.imageListmMenu.Images.SetKeyName(6, "icons8-sales-100 (1).png");
+            this.imageListmMenu.Images.SetKeyName(7, "icons8-admin-96.png");
+            this.imageListmMenu.Images.SetKeyName(8, "icons8-client-96.png");
+            this.imageListmMenu.Images.SetKeyName(9, "icons8-settings-96.png");
+            this.imageListmMenu.Images.SetKeyName(10, "icons8-home-96.png");
+            this.imageListmMenu.Images.SetKeyName(11, "icons8-exit-100.png");
+            this.imageListmMenu.Images.SetKeyName(12, "icons8-checked-user-male-100.png");
             // 
             // backgroundWorkerFechaHora
             // 
@@ -3433,19 +3614,77 @@
             this.timerFechaHora.Interval = 1000;
             this.timerFechaHora.Tick += new System.EventHandler(this.timerFechaHora_Tick);
             // 
+            // MenuStripCaja
+            // 
+            this.MenuStripCaja.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.MenuStripCaja.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.MenuStripCaja.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.MenuStripCaja.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemDepositos,
+            this.toolStripMenuItemRetirosCajaLLena,
+            this.toolStripMenuItemRetirosPagos,
+            this.toolStripMenuItemInformacionDeCaja,
+            this.toolStripMenuItemCerrarCaja});
+            this.MenuStripCaja.Name = "MenuStripEscaneos";
+            this.MenuStripCaja.Size = new System.Drawing.Size(279, 164);
+            this.MenuStripCaja.Text = "Caja";
+            // 
+            // toolStripMenuItemDepositos
+            // 
+            this.toolStripMenuItemDepositos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItemDepositos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolStripMenuItemDepositos.Name = "toolStripMenuItemDepositos";
+            this.toolStripMenuItemDepositos.Size = new System.Drawing.Size(278, 32);
+            this.toolStripMenuItemDepositos.Text = "Depósitos";
+            // 
+            // toolStripMenuItemRetirosCajaLLena
+            // 
+            this.toolStripMenuItemRetirosCajaLLena.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItemRetirosCajaLLena.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolStripMenuItemRetirosCajaLLena.Name = "toolStripMenuItemRetirosCajaLLena";
+            this.toolStripMenuItemRetirosCajaLLena.Size = new System.Drawing.Size(278, 32);
+            this.toolStripMenuItemRetirosCajaLLena.Text = "Retiros Caja LLena";
+            // 
+            // toolStripMenuItemRetirosPagos
+            // 
+            this.toolStripMenuItemRetirosPagos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItemRetirosPagos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolStripMenuItemRetirosPagos.Name = "toolStripMenuItemRetirosPagos";
+            this.toolStripMenuItemRetirosPagos.Size = new System.Drawing.Size(278, 32);
+            this.toolStripMenuItemRetirosPagos.Text = "Retiros Pagos";
+            // 
+            // toolStripMenuItemInformacionDeCaja
+            // 
+            this.toolStripMenuItemInformacionDeCaja.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItemInformacionDeCaja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolStripMenuItemInformacionDeCaja.Name = "toolStripMenuItemInformacionDeCaja";
+            this.toolStripMenuItemInformacionDeCaja.Size = new System.Drawing.Size(278, 32);
+            this.toolStripMenuItemInformacionDeCaja.Text = "Información de caja ";
+            // 
+            // toolStripMenuItemCerrarCaja
+            // 
+            this.toolStripMenuItemCerrarCaja.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItemCerrarCaja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolStripMenuItemCerrarCaja.Name = "toolStripMenuItemCerrarCaja";
+            this.toolStripMenuItemCerrarCaja.Size = new System.Drawing.Size(278, 32);
+            this.toolStripMenuItemCerrarCaja.Text = "Cerrar Caja";
+            // 
             // frmHomeV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1810, 1102);
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.materialTabControl1);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmHomeV2";
             this.Padding = new System.Windows.Forms.Padding(3, 64, 3, 2);
-            this.Text = "frmHomeV2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Opciones de Inicio";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmHomeV2_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage12.ResumeLayout(false);
@@ -3537,6 +3776,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.asiento4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento1)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.materialCard5.ResumeLayout(false);
+            this.materialCard5.PerformLayout();
+            this.MenuStripCaja.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3740,5 +3983,19 @@
         private System.Windows.Forms.TextBox textBox134;
         private System.ComponentModel.BackgroundWorker backgroundWorkerFechaHora;
         private System.Windows.Forms.Timer timerFechaHora;
+        private System.Windows.Forms.ImageList imageListmMenu;
+        private System.Windows.Forms.ContextMenuStrip MenuStripCaja;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemDepositos;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemRetirosCajaLLena;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemRetirosPagos;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemInformacionDeCaja;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemCerrarCaja;
+        private MaterialSkin.Controls.MaterialCard materialCard5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel12;
+        private MaterialSkin.Controls.MaterialButton materialButton5;
+        private MaterialSkin.Controls.MaterialButton materialButton4;
+        private MaterialSkin.Controls.MaterialButton materialButton3;
+        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
     }
 }

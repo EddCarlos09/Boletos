@@ -89,10 +89,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(915, 590);
+            this.panel1.Size = new System.Drawing.Size(915, 597);
             this.panel1.TabIndex = 0;
             // 
             // btnCancelar
@@ -507,10 +506,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 657);
+            this.ClientSize = new System.Drawing.Size(921, 680);
             this.Controls.Add(this.panel1);
             this.Name = "frmCatUsuariosV2";
-            this.Text = "frmCatUsuariosV2";
+            this.Text = "Usuarios";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

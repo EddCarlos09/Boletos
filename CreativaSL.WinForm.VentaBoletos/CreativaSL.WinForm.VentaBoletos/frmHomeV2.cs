@@ -99,10 +99,14 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (this.Venta() == false)
                         {
-                            //this.Inicializar();
+                            this.Inicializar();
                             frmVentasV2 frmv = new frmVentasV2();
-                            frmv.ShowDialog();
-                            frmv.Dispose();
+                            TabPage tabPage = materialTabControl1.TabPages[1]; // Supongamos que el tab deseado está en la posición 0
+                            frmv.TopLevel = false;
+                            tabPage.Controls.Add(frmv);
+                            frmv.FormBorderStyle = FormBorderStyle.None;
+                            frmv.Dock = DockStyle.Fill;
+                            frmv.Show();
                         }
                         else
                         {
@@ -123,21 +127,15 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (this.Venta() == false)
                         {
-                            // Crear una instancia del formulario que deseas mostrar
-                            frmApartadosV2 formulario = new frmApartadosV2();
 
-                            // Agregar el formulario como un control secundario del tab deseado
-                            materialTabControl1.TabPages[2].Controls.Add(formulario);
-
-                            // Asegurarse de que el formulario se ajuste al tamaño del tab
-                            formulario.Dock = DockStyle.Fill;
-
-                            // Mostrar el tab que contiene el formulario
-                            materialTabControl1.SelectedTab = materialTabControl1.TabPages[2];
-                            //this.Inicializar();
-                            //frmVentasGrupalV2 frmvg = new frmVentasGrupalV2();
-                            //frmvg.ShowDialog();
-                            //frmvg.Dispose();
+                            this.Inicializar();
+                            frmVentasGrupalV2 frmvg = new frmVentasGrupalV2();
+                            TabPage tabPage = materialTabControl1.TabPages[2]; // Supongamos que el tab deseado está en la posición 0
+                            frmvg.TopLevel = false;
+                            tabPage.Controls.Add(frmvg);
+                            frmvg.FormBorderStyle = FormBorderStyle.None;
+                            frmvg.Dock = DockStyle.Fill;
+                            frmvg.Show();
                         }
                         else
                         {
@@ -154,10 +152,14 @@ namespace CreativaSL.WinForm.VentaBoletos
                     if (this.Venta() == false)
                     { 
 
-                        //this.Inicializar();
+                        this.Inicializar();
                         frmApartadosV2 frma = new frmApartadosV2();
-                        frma.ShowDialog();
-                        frma.Dispose();
+                        TabPage tabPage = materialTabControl1.TabPages[3]; // Supongamos que el tab deseado está en la posición 0
+                        frma.TopLevel = false;
+                        tabPage.Controls.Add(frma);
+                        frma.FormBorderStyle = FormBorderStyle.None;
+                        frma.Dock = DockStyle.Fill;
+                        frma.Show();
                     }
                     else
                     {
@@ -169,10 +171,14 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (this.Venta() == false)
                         {
-                            //this.Inicializar();
+                            this.Inicializar();
                             frm_v3_Cliente frmcl = new frm_v3_Cliente();
-                            frmcl.ShowDialog();
-                            frmcl.Dispose();
+                            TabPage tabPage = materialTabControl1.TabPages[4]; // Supongamos que el tab deseado está en la posición 0
+                            frmcl.TopLevel = false;
+                            tabPage.Controls.Add(frmcl);
+                            frmcl.FormBorderStyle = FormBorderStyle.None;
+                            frmcl.Dock = DockStyle.Fill;
+                            frmcl.Show();
                         }
                         else
                         {
@@ -209,11 +215,14 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (this.Venta() == false)
                         {
-                            //this.Inicializar();
+                            this.Inicializar();
                             frmMaletasV2 frma = new frmMaletasV2();
-                            frma.ShowDialog();
-                            frma.Dispose();
-                            //this.Inicializar();
+                            TabPage tabPage = materialTabControl1.TabPages[6]; // Supongamos que el tab deseado está en la posición 0
+                            frma.TopLevel = false;
+                            tabPage.Controls.Add(frma);
+                            frma.FormBorderStyle = FormBorderStyle.None;
+                            frma.Dock = DockStyle.Fill;
+                            frma.Show();
                         }
                         else
                         {
@@ -230,7 +239,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                      {
                         if (this.Venta() == false)
                         {
-                            //this.Inicializar();
+                            this.Inicializar();
                             //frmAdministrador frma = new frmAdministrador();
                             FormAdministrador frma = new FormAdministrador();
                             frma.ShowDialog();
@@ -252,16 +261,26 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (this.Venta() == false)
                         {
-                            //this.Inicializar();
+                            this.Inicializar();
                             if (Comun.Id_Tu == 4)
                             {
                                 frmReportesV2 frmReportesVista = new frmReportesV2(15);
-                                frmReportesVista.ShowDialog();
+                                TabPage tabPage = materialTabControl1.TabPages[8]; // Supongamos que el tab deseado está en la posición 0
+                                frmReportesVista.TopLevel = false;
+                                tabPage.Controls.Add(frmReportesVista);
+                                frmReportesVista.FormBorderStyle = FormBorderStyle.None;
+                                frmReportesVista.Dock = DockStyle.Fill;
+                                frmReportesVista.Show();
                             }
                             else
                             {
-                                frmReportesMenuV2 frmr = new frmReportesMenuV2();
-                                frmr.ShowDialog();
+                                frmReportesMenuV2 frmReportesMenuV2 = new frmReportesMenuV2();
+                                TabPage tabPage = materialTabControl1.TabPages[8]; // Supongamos que el tab deseado está en la posición 0
+                                frmReportesMenuV2.TopLevel = false;
+                                tabPage.Controls.Add(frmReportesMenuV2);
+                                frmReportesMenuV2.FormBorderStyle = FormBorderStyle.None;
+                                frmReportesMenuV2.Dock = DockStyle.Fill;
+                                frmReportesMenuV2.Show();
                             }
                         }
                         else
@@ -280,8 +299,12 @@ namespace CreativaSL.WinForm.VentaBoletos
                         if (this.Venta() == false)
                         {
                             frmConfiguracionV2 frmC = new frmConfiguracionV2();
-                            frmC.ShowDialog();
-                            frmC.Dispose();
+                            TabPage tabPage = materialTabControl1.TabPages[9]; // Supongamos que el tab deseado está en la posición 0
+                            frmC.TopLevel = false;
+                            tabPage.Controls.Add(frmC);
+                            frmC.FormBorderStyle = FormBorderStyle.None;
+                            frmC.Dock = DockStyle.Fill;
+                            frmC.Show();
                         }
                         else
                         {
@@ -298,10 +321,14 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (this.Venta() == false)
                         {
-                            //this.Inicializar();
+                            this.Inicializar();
                             frmAsistenciaPasajerosV2 frmC = new frmAsistenciaPasajerosV2();
-                            frmC.ShowDialog();
-                            frmC.Dispose();
+                            TabPage tabPage = materialTabControl1.TabPages[10]; // Supongamos que el tab deseado está en la posición 0
+                            frmC.TopLevel = false;
+                            tabPage.Controls.Add(frmC);
+                            frmC.FormBorderStyle = FormBorderStyle.None;
+                            frmC.Dock = DockStyle.Fill;
+                            frmC.Show();
                             this.Inicializar();
                         }
                         else
@@ -406,8 +433,6 @@ namespace CreativaSL.WinForm.VentaBoletos
 
                 homes.NumeroTelefono = "";
 
-                this.GridViewViajes.Items.Clear();
-                this.GridViewVentaBoletos.Items.Clear();
                 this.EstablecerPropiedadesGridViewViajes();
                 this.EstablecerPropiedadesGridViewVentaBoletos();
                 this.CargarCombos();
@@ -992,27 +1017,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        //private void btnCaja_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        if (this.Venta() == false)
-        //        {
-        //            this.Inicializar();
-        //            Button_Creativa btn = (Button_Creativa)sender;
-        //            MenuStripCaja.Show(btn, btn.Height, btn.Location.Y + (btn.Width / 4));
-        //            MenuStripCaja.Focus();
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
+ 
         private void btnReportes_Click(object sender, EventArgs e)
         {
             try
@@ -1767,24 +1772,28 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
+
+                this.GridViewViajes.Items.Clear();
+                this.GridViewViajes.Columns.Clear();
+                
                 var Headertexts = new List<string> { "Tipo Línea", "Precio", "Origen", "Fecha", "Hr Salida", "Destino", "Fecha", "Hora", "Tipo Viaje" };
                 var Names = new List<string> { "camion", "precioNormal1", "terminalOrigen", "fechaOrigenV", "horaOrigenV", "terminalDestino", "fechaDestinoV", "horaDestinoV", "tipoTerminal", "numAsiento", "precioInfantil1", "precioTerceraEdad1", "precioEspecial1", "precioNormal2", "precioInfantil2", "precioTerceraEdad2", "precioEspecial2", "nombreViaje", "numCamion", "tiempoMinutos", "numPiso", "id_tipoViaje", "id_tipoTerminal", "id_viaje", "id_ruta", "id_camion", "id_disenioCamion", "id_terminalOrigen", "id_terminalDestino", "id_terminalXruta", "id_tarifa", "ordenOrigen", "ordenDestino", "fechaOrigen", "horaOrigen", "numAsientos", "recorridoViaje", "id_tipoCamion" };
                 this.dbFieldList = Names;
 
                 this.RecorrerForGridViewViajes(Headertexts, 1);
-                this.RecorrerForGridViewViajes(Names, 2);
-                this.RecorrerForGridViewViajes(Names, 3);
+                //this.RecorrerForGridViewViajes(Names, 2);
+                //this.RecorrerForGridViewViajes(Names, 3);
 
-                this.GridViewViajes.Columns[0].Width = 70;
-                this.GridViewViajes.Columns[1].Width = 70;
+                this.GridViewViajes.Columns[0].Width = 100;
+                this.GridViewViajes.Columns[1].Width = 80;
                 //this.GridViewViajes.Columns[1].DefaultCellStyle.Format = "c";
-                this.GridViewViajes.Columns[2].Width = 70;
-                this.GridViewViajes.Columns[3].Width = 70;
-                this.GridViewViajes.Columns[4].Width = 70;
-                this.GridViewViajes.Columns[5].Width = 70;
-                this.GridViewViajes.Columns[6].Width = 70;
-                this.GridViewViajes.Columns[7].Width = 70;
-                this.GridViewViajes.Columns[8].Width = 70;
+                this.GridViewViajes.Columns[2].Width = 80;
+                this.GridViewViajes.Columns[3].Width = 110;
+                this.GridViewViajes.Columns[4].Width = 100;
+                this.GridViewViajes.Columns[5].Width = 140;
+                this.GridViewViajes.Columns[6].Width = 110;
+                this.GridViewViajes.Columns[7].Width = 90;
+                this.GridViewViajes.Columns[8].Width = 100;
                 //this.GridViewViajes.Columns[9].Visible = false;
                 //this.GridViewViajes.Columns[10].Visible = false;
                 //this.GridViewViajes.Columns[11].Visible = false;
@@ -1944,24 +1953,27 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
+                this.GridViewVentaBoletos.Items.Clear();
+                this.GridViewVentaBoletos.Columns.Clear();
+
                 var Headertexts = new List<string> { "Nombre_Cliente", "Fecha Nac", "Teléfono", "#", "Tipo Línea", "Origen", "Fec Salida", "Hr Salida", "Destino", "Precio", "Desc" };
                 var Names = new List<string> { "Nombre", "FechaNacimiento", "NumeroTelefono", "Asiento", "TipoLinea", "Origen", "FechaSalidaV2", "HoraSalidaV", "Destino", "Precio", "Descuentos", "DescripcionIndice", "IDViaje", "IDCamionDiseño", "NumCamion", "TipoLinea", "FechaLLegadaV", "FechaLLegadaV2", "HoraLLegadaV", "TipoDescuento", "IDBoleto", "FechaSalidaV", "IDTarifa", "IDTipoTarifa", "IDStatus", "Anticipo", "IDBoletoTransferencia", "FechaSalida", "HoraSalida", "PagoExtra", "IDTipoCamion" };
                 this.dbFieldList2 = Names;
                 this.RecorrerForGridViewVentaBoletos(Headertexts, 1);
                 //this.RecorrerForGridViewVentaBoletos(Names, 2);
                 //this.RecorrerForGridViewVentaBoletos(Names, 3);
-                this.GridViewVentaBoletos.Columns[0].Width = 135;
-                this.GridViewVentaBoletos.Columns[1].Width = 100;
+                this.GridViewVentaBoletos.Columns[0].Width = 150;
+                this.GridViewVentaBoletos.Columns[1].Width = 110;
                 this.GridViewVentaBoletos.Columns[2].Width = 100;
                 this.GridViewVentaBoletos.Columns[3].Width = 40;
                 this.GridViewVentaBoletos.Columns[4].Width = 100;
                 this.GridViewVentaBoletos.Columns[5].Width = 80;
-                this.GridViewVentaBoletos.Columns[6].Width = 100;
+                this.GridViewVentaBoletos.Columns[6].Width = 110;
                 this.GridViewVentaBoletos.Columns[7].Width = 100;
                 this.GridViewVentaBoletos.Columns[8].Width = 100;
-                this.GridViewVentaBoletos.Columns[9].Width = 100;
+                this.GridViewVentaBoletos.Columns[9].Width = 80;
                 //this.GridViewVentaBoletos.Columns[9].DefaultCellStyle.Format = "c";
-                this.GridViewVentaBoletos.Columns[10].Width = 100;
+                this.GridViewVentaBoletos.Columns[10].Width = 80;
                 //this.GridViewVentaBoletos.Columns[10].DefaultCellStyle.Format = "c";
                 //this.GridViewVentaBoletos.Columns[10].Visible = false; //Se desabilita porque esta columna en esta pantalla no sirve en las demas si               
                 //this.GridViewVentaBoletos.Columns[11].Visible = false;
@@ -2512,6 +2524,23 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
 
         
+
+        private void materialTabControl1_Click(object sender, EventArgs e)
+        {
+            // Crear una instancia del control MenuStrip
+            MenuStrip menuStrip1 = new MenuStrip();
+
+            // Agregar elementos de menú al control MenuStrip si es necesario
+            // menuStrip1.Items.Add("Archivo");
+            // menuStrip1.Items.Add("Editar");
+            // ...
+
+            // Mover el control MenuStrip al tab deseado del MaterialTabControl
+            TabPage tabPage = materialTabControl1.TabPages[0]; // Supongamos que el tab deseado está en la posición 0
+            menuStrip1.Parent = tabPage;
+            menuStrip1.Dock = DockStyle.Top;
+        }
+
 
 
 

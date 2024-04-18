@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentaGrupalV2));
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.brn_Cancelar = new System.Windows.Forms.Button();
-            this.btn_Aceptar = new System.Windows.Forms.Button();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -41,6 +39,8 @@
             this.txt_numeroTelefono = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btn_Aceptar = new System.Windows.Forms.Button();
+            this.brn_Cancelar = new System.Windows.Forms.Button();
             this.materialCard1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,8 +48,8 @@
             // 
             this.materialCard1.AllowDrop = true;
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard1.Controls.Add(this.brn_Cancelar);
             this.materialCard1.Controls.Add(this.btn_Aceptar);
+            this.materialCard1.Controls.Add(this.brn_Cancelar);
             this.materialCard1.Controls.Add(this.materialLabel4);
             this.materialCard1.Controls.Add(this.materialLabel3);
             this.materialCard1.Controls.Add(this.materialLabel2);
@@ -65,36 +65,8 @@
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(1144, 288);
+            this.materialCard1.Size = new System.Drawing.Size(1144, 321);
             this.materialCard1.TabIndex = 0;
-            // 
-            // brn_Cancelar
-            // 
-            this.brn_Cancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.brn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.brn_Cancelar.ImageKey = "CANCELGRUPAL";
-            this.brn_Cancelar.Location = new System.Drawing.Point(570, 190);
-            this.brn_Cancelar.Name = "brn_Cancelar";
-            this.brn_Cancelar.Size = new System.Drawing.Size(160, 62);
-            this.brn_Cancelar.TabIndex = 8;
-            this.brn_Cancelar.Text = "Cancelar";
-            this.brn_Cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.brn_Cancelar.UseVisualStyleBackColor = true;
-            this.brn_Cancelar.Click += new System.EventHandler(this.brn_Cancelar_Click_1);
-            // 
-            // btn_Aceptar
-            // 
-            this.btn_Aceptar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_Aceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Aceptar.ImageKey = "(ninguno)";
-            this.btn_Aceptar.Location = new System.Drawing.Point(343, 190);
-            this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(160, 62);
-            this.btn_Aceptar.TabIndex = 7;
-            this.btn_Aceptar.Text = "Aceptar";
-            this.btn_Aceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Aceptar.UseVisualStyleBackColor = true;
-            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
             // 
             // materialLabel4
             // 
@@ -223,11 +195,42 @@
             this.imageList1.Images.SetKeyName(0, "CANCELGRUPAL");
             this.imageList1.Images.SetKeyName(1, "CheckGrupal");
             // 
+            // btn_Aceptar
+            // 
+            this.btn_Aceptar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Aceptar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.Image")));
+            this.btn_Aceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Aceptar.Location = new System.Drawing.Point(617, 211);
+            this.btn_Aceptar.Name = "btn_Aceptar";
+            this.btn_Aceptar.Size = new System.Drawing.Size(217, 79);
+            this.btn_Aceptar.TabIndex = 69;
+            this.btn_Aceptar.Text = "Aceptar";
+            this.btn_Aceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Aceptar.UseVisualStyleBackColor = true;
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click_1);
+            // 
+            // brn_Cancelar
+            // 
+            this.brn_Cancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.brn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.brn_Cancelar.ForeColor = System.Drawing.Color.DimGray;
+            this.brn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("brn_Cancelar.Image")));
+            this.brn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.brn_Cancelar.Location = new System.Drawing.Point(278, 211);
+            this.brn_Cancelar.Name = "brn_Cancelar";
+            this.brn_Cancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
+            this.brn_Cancelar.Size = new System.Drawing.Size(217, 79);
+            this.brn_Cancelar.TabIndex = 68;
+            this.brn_Cancelar.Text = "Cancelar";
+            this.brn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.brn_Cancelar.UseVisualStyleBackColor = true;
+            this.brn_Cancelar.Click += new System.EventHandler(this.brn_Cancelar_Click_1);
+            // 
             // frmVentaGrupalV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1150, 355);
+            this.ClientSize = new System.Drawing.Size(1150, 388);
             this.Controls.Add(this.materialCard1);
             this.Name = "frmVentaGrupalV2";
             this.Text = "frmVentaGrupalV2";
@@ -247,8 +250,8 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
-        private System.Windows.Forms.Button brn_Cancelar;
-        private System.Windows.Forms.Button btn_Aceptar;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button btn_Aceptar;
+        private System.Windows.Forms.Button brn_Cancelar;
     }
 }

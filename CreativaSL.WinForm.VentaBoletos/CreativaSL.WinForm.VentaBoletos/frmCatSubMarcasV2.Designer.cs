@@ -49,10 +49,9 @@
             this.panel1.Controls.Add(this.TxtNombreSubMarca);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(794, 383);
+            this.panel1.Size = new System.Drawing.Size(794, 367);
             this.panel1.TabIndex = 0;
             // 
             // btnCancelar
@@ -167,7 +166,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "frmCatSubMarcasV2";
-            this.Text = "frmCatSubMarcasV2";
+            this.Text = "Sub marcas";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

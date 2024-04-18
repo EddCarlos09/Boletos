@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentasV2));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -40,29 +39,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentasV2));
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.btn_CambiarNombre = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.btnImprimir = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btnCancelarB = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnCancelarA = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtNombreCliente = new MaterialSkin.Controls.MaterialTextBox2();
-            this.txtFolioBoleto = new MaterialSkin.Controls.MaterialTextBox2();
-            this.txt_folioVenta = new MaterialSkin.Controls.MaterialTextBox2();
-            this.chkNombre = new MaterialSkin.Controls.MaterialCheckbox();
-            this.chkFolio = new MaterialSkin.Controls.MaterialCheckbox();
-            this.chkFecha = new MaterialSkin.Controls.MaterialCheckbox();
-            this.chkFolioVenta = new MaterialSkin.Controls.MaterialCheckbox();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.dgvdatosboleto = new System.Windows.Forms.DataGridView();
             this.id_boleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_ventadetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,6 +70,28 @@
             this.cajero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bloqueoCancelacionMonedero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bloqueoCancelacionPorFormaDePago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.btn_CambiarNombre = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btnCancelarB = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnCancelarA = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtNombreCliente = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtFolioBoleto = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txt_folioVenta = new MaterialSkin.Controls.MaterialTextBox2();
+            this.chkNombre = new MaterialSkin.Controls.MaterialCheckbox();
+            this.chkFolio = new MaterialSkin.Controls.MaterialCheckbox();
+            this.chkFecha = new MaterialSkin.Controls.MaterialCheckbox();
+            this.chkFolioVenta = new MaterialSkin.Controls.MaterialCheckbox();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboleto)).BeginInit();
             this.SuspendLayout();
@@ -123,379 +123,14 @@
             this.materialCard1.Controls.Add(this.chkFolioVenta);
             this.materialCard1.Controls.Add(this.materialLabel1);
             this.materialCard1.Depth = 0;
-            this.materialCard1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(3, 64);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Location = new System.Drawing.Point(12, 15);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(1235, 751);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard1.Size = new System.Drawing.Size(916, 647);
             this.materialCard1.TabIndex = 0;
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dtpFecha.Location = new System.Drawing.Point(225, 140);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(250, 22);
-            this.dtpFecha.TabIndex = 19;
-            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged_1);
-            // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(57, 349);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(147, 19);
-            this.materialLabel3.TabIndex = 17;
-            this.materialLabel3.Text = "Resultado Busqueda";
-            // 
-            // btn_CambiarNombre
-            // 
-            this.btn_CambiarNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_CambiarNombre.Image = ((System.Drawing.Image)(resources.GetObject("btn_CambiarNombre.Image")));
-            this.btn_CambiarNombre.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_CambiarNombre.Location = new System.Drawing.Point(752, 180);
-            this.btn_CambiarNombre.Name = "btn_CambiarNombre";
-            this.btn_CambiarNombre.Size = new System.Drawing.Size(110, 94);
-            this.btn_CambiarNombre.TabIndex = 16;
-            this.btn_CambiarNombre.Text = "Modificar";
-            this.btn_CambiarNombre.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_CambiarNombre.UseVisualStyleBackColor = true;
-            this.btn_CambiarNombre.Click += new System.EventHandler(this.btn_CambiarNombre_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(892, 180);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(110, 94);
-            this.btnSalir.TabIndex = 15;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // button6
-            // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(752, 180);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(110, 94);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "Modificar";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
-            this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnImprimir.Location = new System.Drawing.Point(1026, 68);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(110, 94);
-            this.btnImprimir.TabIndex = 14;
-            this.btnImprimir.Text = "Reimp";
-            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
-            // 
-            // button5
-            // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(892, 180);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(110, 94);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "Salir";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelarB
-            // 
-            this.btnCancelarB.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnCancelarB.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarB.Image")));
-            this.btnCancelarB.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarB.Location = new System.Drawing.Point(892, 68);
-            this.btnCancelarB.Name = "btnCancelarB";
-            this.btnCancelarB.Size = new System.Drawing.Size(110, 94);
-            this.btnCancelarB.TabIndex = 13;
-            this.btnCancelarB.Text = "Canc. B";
-            this.btnCancelarB.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCancelarB.UseVisualStyleBackColor = true;
-            this.btnCancelarB.Click += new System.EventHandler(this.btnCancelarB_Click);
-            // 
-            // button4
-            // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(1026, 68);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(110, 94);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Reimp";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelarA
-            // 
-            this.btnCancelarA.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnCancelarA.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarA.Image")));
-            this.btnCancelarA.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarA.Location = new System.Drawing.Point(752, 68);
-            this.btnCancelarA.Name = "btnCancelarA";
-            this.btnCancelarA.Size = new System.Drawing.Size(110, 94);
-            this.btnCancelarA.TabIndex = 12;
-            this.btnCancelarA.Text = "Canc. A";
-            this.btnCancelarA.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCancelarA.UseVisualStyleBackColor = true;
-            this.btnCancelarA.Click += new System.EventHandler(this.btnCancelarA_Click);
-            // 
-            // button3
-            // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(892, 68);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 94);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Canc. B";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(752, 68);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 94);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Canc. A";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(924, 14);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(65, 19);
-            this.materialLabel2.TabIndex = 11;
-            this.materialLabel2.Text = "Acciones";
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(543, 115);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(105, 94);
-            this.btnBuscar.TabIndex = 10;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // txtNombreCliente
-            // 
-            this.txtNombreCliente.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtNombreCliente.AnimateReadOnly = false;
-            this.txtNombreCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtNombreCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtNombreCliente.Depth = 0;
-            this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNombreCliente.HideSelection = true;
-            this.txtNombreCliente.LeadingIcon = null;
-            this.txtNombreCliente.Location = new System.Drawing.Point(225, 261);
-            this.txtNombreCliente.MaxLength = 32767;
-            this.txtNombreCliente.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNombreCliente.Name = "txtNombreCliente";
-            this.txtNombreCliente.PasswordChar = '\0';
-            this.txtNombreCliente.PrefixSuffixText = null;
-            this.txtNombreCliente.ReadOnly = false;
-            this.txtNombreCliente.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtNombreCliente.SelectedText = "";
-            this.txtNombreCliente.SelectionLength = 0;
-            this.txtNombreCliente.SelectionStart = 0;
-            this.txtNombreCliente.ShortcutsEnabled = true;
-            this.txtNombreCliente.Size = new System.Drawing.Size(250, 48);
-            this.txtNombreCliente.TabIndex = 9;
-            this.txtNombreCliente.TabStop = false;
-            this.txtNombreCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtNombreCliente.TrailingIcon = null;
-            this.txtNombreCliente.UseSystemPasswordChar = false;
-            // 
-            // txtFolioBoleto
-            // 
-            this.txtFolioBoleto.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtFolioBoleto.AnimateReadOnly = false;
-            this.txtFolioBoleto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtFolioBoleto.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtFolioBoleto.Depth = 0;
-            this.txtFolioBoleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtFolioBoleto.HideSelection = true;
-            this.txtFolioBoleto.LeadingIcon = null;
-            this.txtFolioBoleto.Location = new System.Drawing.Point(225, 193);
-            this.txtFolioBoleto.MaxLength = 32767;
-            this.txtFolioBoleto.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtFolioBoleto.Name = "txtFolioBoleto";
-            this.txtFolioBoleto.PasswordChar = '\0';
-            this.txtFolioBoleto.PrefixSuffixText = null;
-            this.txtFolioBoleto.ReadOnly = false;
-            this.txtFolioBoleto.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtFolioBoleto.SelectedText = "";
-            this.txtFolioBoleto.SelectionLength = 0;
-            this.txtFolioBoleto.SelectionStart = 0;
-            this.txtFolioBoleto.ShortcutsEnabled = true;
-            this.txtFolioBoleto.Size = new System.Drawing.Size(250, 48);
-            this.txtFolioBoleto.TabIndex = 8;
-            this.txtFolioBoleto.TabStop = false;
-            this.txtFolioBoleto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtFolioBoleto.TrailingIcon = null;
-            this.txtFolioBoleto.UseSystemPasswordChar = false;
-            // 
-            // txt_folioVenta
-            // 
-            this.txt_folioVenta.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_folioVenta.AnimateReadOnly = false;
-            this.txt_folioVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txt_folioVenta.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_folioVenta.Depth = 0;
-            this.txt_folioVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_folioVenta.HideSelection = true;
-            this.txt_folioVenta.LeadingIcon = null;
-            this.txt_folioVenta.Location = new System.Drawing.Point(225, 60);
-            this.txt_folioVenta.MaxLength = 32767;
-            this.txt_folioVenta.MouseState = MaterialSkin.MouseState.OUT;
-            this.txt_folioVenta.Name = "txt_folioVenta";
-            this.txt_folioVenta.PasswordChar = '\0';
-            this.txt_folioVenta.PrefixSuffixText = null;
-            this.txt_folioVenta.ReadOnly = false;
-            this.txt_folioVenta.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txt_folioVenta.SelectedText = "";
-            this.txt_folioVenta.SelectionLength = 0;
-            this.txt_folioVenta.SelectionStart = 0;
-            this.txt_folioVenta.ShortcutsEnabled = true;
-            this.txt_folioVenta.Size = new System.Drawing.Size(250, 48);
-            this.txt_folioVenta.TabIndex = 6;
-            this.txt_folioVenta.TabStop = false;
-            this.txt_folioVenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_folioVenta.TrailingIcon = null;
-            this.txt_folioVenta.UseSystemPasswordChar = false;
-            // 
-            // chkNombre
-            // 
-            this.chkNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chkNombre.AutoSize = true;
-            this.chkNombre.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.chkNombre.Checked = true;
-            this.chkNombre.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkNombre.Depth = 0;
-            this.chkNombre.Location = new System.Drawing.Point(42, 261);
-            this.chkNombre.Margin = new System.Windows.Forms.Padding(0);
-            this.chkNombre.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.chkNombre.MouseState = MaterialSkin.MouseState.HOVER;
-            this.chkNombre.Name = "chkNombre";
-            this.chkNombre.ReadOnly = false;
-            this.chkNombre.Ripple = true;
-            this.chkNombre.Size = new System.Drawing.Size(95, 37);
-            this.chkNombre.TabIndex = 5;
-            this.chkNombre.Text = "Nombre:";
-            this.chkNombre.UseVisualStyleBackColor = true;
-            this.chkNombre.CheckedChanged += new System.EventHandler(this.chkNombre_CheckedChanged);
-            // 
-            // chkFolio
-            // 
-            this.chkFolio.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chkFolio.AutoSize = true;
-            this.chkFolio.Checked = true;
-            this.chkFolio.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkFolio.Depth = 0;
-            this.chkFolio.Location = new System.Drawing.Point(42, 193);
-            this.chkFolio.Margin = new System.Windows.Forms.Padding(0);
-            this.chkFolio.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.chkFolio.MouseState = MaterialSkin.MouseState.HOVER;
-            this.chkFolio.Name = "chkFolio";
-            this.chkFolio.ReadOnly = false;
-            this.chkFolio.Ripple = true;
-            this.chkFolio.Size = new System.Drawing.Size(123, 37);
-            this.chkFolio.TabIndex = 4;
-            this.chkFolio.Text = "Folio Boleto:";
-            this.chkFolio.UseVisualStyleBackColor = true;
-            this.chkFolio.CheckedChanged += new System.EventHandler(this.chkFolio_CheckedChanged);
-            // 
-            // chkFecha
-            // 
-            this.chkFecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chkFecha.AutoSize = true;
-            this.chkFecha.Checked = true;
-            this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkFecha.Depth = 0;
-            this.chkFecha.Location = new System.Drawing.Point(42, 125);
-            this.chkFecha.Margin = new System.Windows.Forms.Padding(0);
-            this.chkFecha.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.chkFecha.MouseState = MaterialSkin.MouseState.HOVER;
-            this.chkFecha.Name = "chkFecha";
-            this.chkFecha.ReadOnly = false;
-            this.chkFecha.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.chkFecha.Ripple = true;
-            this.chkFecha.Size = new System.Drawing.Size(82, 37);
-            this.chkFecha.TabIndex = 3;
-            this.chkFecha.Text = "Fecha:";
-            this.chkFecha.UseVisualStyleBackColor = true;
-            this.chkFecha.CheckedChanged += new System.EventHandler(this.chkFecha_CheckedChanged);
-            // 
-            // chkFolioVenta
-            // 
-            this.chkFolioVenta.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chkFolioVenta.AutoSize = true;
-            this.chkFolioVenta.Checked = true;
-            this.chkFolioVenta.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkFolioVenta.Depth = 0;
-            this.chkFolioVenta.Location = new System.Drawing.Point(42, 60);
-            this.chkFolioVenta.Margin = new System.Windows.Forms.Padding(0);
-            this.chkFolioVenta.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.chkFolioVenta.MouseState = MaterialSkin.MouseState.HOVER;
-            this.chkFolioVenta.Name = "chkFolioVenta";
-            this.chkFolioVenta.ReadOnly = false;
-            this.chkFolioVenta.Ripple = true;
-            this.chkFolioVenta.Size = new System.Drawing.Size(119, 37);
-            this.chkFolioVenta.TabIndex = 2;
-            this.chkFolioVenta.Text = "Folio Venta:";
-            this.chkFolioVenta.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(57, 14);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(72, 19);
-            this.materialLabel1.TabIndex = 1;
-            this.materialLabel1.Text = "Busqueda";
             // 
             // dgvdatosboleto
             // 
@@ -544,7 +179,8 @@
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dgvdatosboleto.Location = new System.Drawing.Point(17, 387);
+            this.dgvdatosboleto.Location = new System.Drawing.Point(13, 314);
+            this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(2);
             this.dgvdatosboleto.MultiSelect = false;
             this.dgvdatosboleto.Name = "dgvdatosboleto";
             this.dgvdatosboleto.ReadOnly = true;
@@ -555,7 +191,7 @@
             this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdatosboleto.Size = new System.Drawing.Size(1176, 338);
+            this.dgvdatosboleto.Size = new System.Drawing.Size(882, 275);
             this.dgvdatosboleto.TabIndex = 20;
             // 
             // id_boleto
@@ -589,7 +225,7 @@
             this.folioVenta.MinimumWidth = 6;
             this.folioVenta.Name = "folioVenta";
             this.folioVenta.ReadOnly = true;
-            this.folioVenta.Width = 104;
+            this.folioVenta.Width = 85;
             // 
             // CodigoBarra
             // 
@@ -600,7 +236,7 @@
             this.CodigoBarra.ReadOnly = true;
             this.CodigoBarra.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.CodigoBarra.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.CodigoBarra.Width = 85;
+            this.CodigoBarra.Width = 68;
             // 
             // Viaje
             // 
@@ -609,7 +245,7 @@
             this.Viaje.MinimumWidth = 6;
             this.Viaje.Name = "Viaje";
             this.Viaje.ReadOnly = true;
-            this.Viaje.Width = 69;
+            this.Viaje.Width = 60;
             // 
             // Origen
             // 
@@ -620,7 +256,7 @@
             this.Origen.ReadOnly = true;
             this.Origen.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Origen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Origen.Width = 53;
+            this.Origen.Width = 44;
             // 
             // Destino
             // 
@@ -632,7 +268,7 @@
             this.Destino.ReadOnly = true;
             this.Destino.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Destino.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Destino.Width = 59;
+            this.Destino.Width = 49;
             // 
             // fecha_salidaV
             // 
@@ -646,7 +282,7 @@
             this.fecha_salidaV.ReadOnly = true;
             this.fecha_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.fecha_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.fecha_salidaV.Width = 51;
+            this.fecha_salidaV.Width = 43;
             // 
             // hora_salidaV
             // 
@@ -657,7 +293,7 @@
             this.hora_salidaV.ReadOnly = true;
             this.hora_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.hora_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.hora_salidaV.Width = 43;
+            this.hora_salidaV.Width = 36;
             // 
             // NombrePersona
             // 
@@ -668,7 +304,7 @@
             this.NombrePersona.ReadOnly = true;
             this.NombrePersona.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.NombrePersona.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NombrePersona.Width = 62;
+            this.NombrePersona.Width = 50;
             // 
             // asiento
             // 
@@ -682,7 +318,7 @@
             this.asiento.ReadOnly = true;
             this.asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.asiento.Width = 58;
+            this.asiento.Width = 48;
             // 
             // fechaNacimiento
             // 
@@ -694,7 +330,7 @@
             this.fechaNacimiento.Name = "fechaNacimiento";
             this.fechaNacimiento.ReadOnly = true;
             this.fechaNacimiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.fechaNacimiento.Width = 149;
+            this.fechaNacimiento.Width = 121;
             // 
             // numeroTelefono
             // 
@@ -703,7 +339,7 @@
             this.numeroTelefono.MinimumWidth = 6;
             this.numeroTelefono.Name = "numeroTelefono";
             this.numeroTelefono.ReadOnly = true;
-            this.numeroTelefono.Width = 90;
+            this.numeroTelefono.Width = 74;
             // 
             // cantidad_venta
             // 
@@ -729,7 +365,7 @@
             this.boletocosto.ReadOnly = true;
             this.boletocosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.boletocosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.boletocosto.Width = 52;
+            this.boletocosto.Width = 43;
             // 
             // vdcosto
             // 
@@ -770,7 +406,7 @@
             this.pago.ReadOnly = true;
             this.pago.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.pago.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pago.Width = 46;
+            this.pago.Width = 38;
             // 
             // pendiente
             // 
@@ -783,7 +419,7 @@
             this.pendiente.ReadOnly = true;
             this.pendiente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.pendiente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pendiente.Width = 74;
+            this.pendiente.Width = 61;
             // 
             // Transf
             // 
@@ -797,7 +433,7 @@
             this.Transf.ReadOnly = true;
             this.Transf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Transf.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Transf.Width = 51;
+            this.Transf.Width = 43;
             // 
             // Usu_Ins
             // 
@@ -808,7 +444,7 @@
             this.Usu_Ins.ReadOnly = true;
             this.Usu_Ins.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Usu_Ins.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Usu_Ins.Width = 61;
+            this.Usu_Ins.Width = 52;
             // 
             // Usu_Mod
             // 
@@ -819,7 +455,7 @@
             this.Usu_Mod.ReadOnly = true;
             this.Usu_Mod.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Usu_Mod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Usu_Mod.Width = 71;
+            this.Usu_Mod.Width = 59;
             // 
             // precio
             // 
@@ -887,14 +523,400 @@
             this.bloqueoCancelacionPorFormaDePago.Visible = false;
             this.bloqueoCancelacionPorFormaDePago.Width = 306;
             // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dtpFecha.Location = new System.Drawing.Point(164, 114);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(188, 20);
+            this.dtpFecha.TabIndex = 19;
+            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged_1);
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.Location = new System.Drawing.Point(43, 284);
+            this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(147, 19);
+            this.materialLabel3.TabIndex = 17;
+            this.materialLabel3.Text = "Resultado Busqueda";
+            // 
+            // btn_CambiarNombre
+            // 
+            this.btn_CambiarNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_CambiarNombre.Image = ((System.Drawing.Image)(resources.GetObject("btn_CambiarNombre.Image")));
+            this.btn_CambiarNombre.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_CambiarNombre.Location = new System.Drawing.Point(559, 146);
+            this.btn_CambiarNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_CambiarNombre.Name = "btn_CambiarNombre";
+            this.btn_CambiarNombre.Size = new System.Drawing.Size(82, 76);
+            this.btn_CambiarNombre.TabIndex = 16;
+            this.btn_CambiarNombre.Text = "Modificar";
+            this.btn_CambiarNombre.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_CambiarNombre.UseVisualStyleBackColor = true;
+            this.btn_CambiarNombre.Click += new System.EventHandler(this.btn_CambiarNombre_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSalir.Location = new System.Drawing.Point(664, 146);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(82, 76);
+            this.btnSalir.TabIndex = 15;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // button6
+            // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button6.Location = new System.Drawing.Point(559, 146);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(82, 76);
+            this.button6.TabIndex = 16;
+            this.button6.Text = "Modificar";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
+            this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnImprimir.Location = new System.Drawing.Point(765, 55);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(82, 76);
+            this.btnImprimir.TabIndex = 14;
+            this.btnImprimir.Text = "Reimp";
+            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button5.Location = new System.Drawing.Point(664, 146);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(82, 76);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "Salir";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelarB
+            // 
+            this.btnCancelarB.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnCancelarB.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarB.Image")));
+            this.btnCancelarB.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelarB.Location = new System.Drawing.Point(664, 55);
+            this.btnCancelarB.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelarB.Name = "btnCancelarB";
+            this.btnCancelarB.Size = new System.Drawing.Size(82, 76);
+            this.btnCancelarB.TabIndex = 13;
+            this.btnCancelarB.Text = "Canc. B";
+            this.btnCancelarB.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCancelarB.UseVisualStyleBackColor = true;
+            this.btnCancelarB.Click += new System.EventHandler(this.btnCancelarB_Click);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.Location = new System.Drawing.Point(765, 55);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(82, 76);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "Reimp";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelarA
+            // 
+            this.btnCancelarA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnCancelarA.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarA.Image")));
+            this.btnCancelarA.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelarA.Location = new System.Drawing.Point(559, 55);
+            this.btnCancelarA.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelarA.Name = "btnCancelarA";
+            this.btnCancelarA.Size = new System.Drawing.Size(82, 76);
+            this.btnCancelarA.TabIndex = 12;
+            this.btnCancelarA.Text = "Canc. A";
+            this.btnCancelarA.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCancelarA.UseVisualStyleBackColor = true;
+            this.btnCancelarA.Click += new System.EventHandler(this.btnCancelarA_Click);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button3.Location = new System.Drawing.Point(664, 55);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(82, 76);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Canc. B";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.Location = new System.Drawing.Point(559, 55);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(82, 76);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Canc. A";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.Location = new System.Drawing.Point(688, 11);
+            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(65, 19);
+            this.materialLabel2.TabIndex = 11;
+            this.materialLabel2.Text = "Acciones";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBuscar.Location = new System.Drawing.Point(402, 93);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(79, 76);
+            this.btnBuscar.TabIndex = 10;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtNombreCliente
+            // 
+            this.txtNombreCliente.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtNombreCliente.AnimateReadOnly = false;
+            this.txtNombreCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtNombreCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNombreCliente.Depth = 0;
+            this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreCliente.HideSelection = true;
+            this.txtNombreCliente.LeadingIcon = null;
+            this.txtNombreCliente.Location = new System.Drawing.Point(164, 212);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombreCliente.MaxLength = 32767;
+            this.txtNombreCliente.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.PasswordChar = '\0';
+            this.txtNombreCliente.PrefixSuffixText = null;
+            this.txtNombreCliente.ReadOnly = false;
+            this.txtNombreCliente.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNombreCliente.SelectedText = "";
+            this.txtNombreCliente.SelectionLength = 0;
+            this.txtNombreCliente.SelectionStart = 0;
+            this.txtNombreCliente.ShortcutsEnabled = true;
+            this.txtNombreCliente.Size = new System.Drawing.Size(188, 48);
+            this.txtNombreCliente.TabIndex = 9;
+            this.txtNombreCliente.TabStop = false;
+            this.txtNombreCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNombreCliente.TrailingIcon = null;
+            this.txtNombreCliente.UseSystemPasswordChar = false;
+            // 
+            // txtFolioBoleto
+            // 
+            this.txtFolioBoleto.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtFolioBoleto.AnimateReadOnly = false;
+            this.txtFolioBoleto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtFolioBoleto.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtFolioBoleto.Depth = 0;
+            this.txtFolioBoleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtFolioBoleto.HideSelection = true;
+            this.txtFolioBoleto.LeadingIcon = null;
+            this.txtFolioBoleto.Location = new System.Drawing.Point(164, 157);
+            this.txtFolioBoleto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFolioBoleto.MaxLength = 32767;
+            this.txtFolioBoleto.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtFolioBoleto.Name = "txtFolioBoleto";
+            this.txtFolioBoleto.PasswordChar = '\0';
+            this.txtFolioBoleto.PrefixSuffixText = null;
+            this.txtFolioBoleto.ReadOnly = false;
+            this.txtFolioBoleto.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtFolioBoleto.SelectedText = "";
+            this.txtFolioBoleto.SelectionLength = 0;
+            this.txtFolioBoleto.SelectionStart = 0;
+            this.txtFolioBoleto.ShortcutsEnabled = true;
+            this.txtFolioBoleto.Size = new System.Drawing.Size(188, 48);
+            this.txtFolioBoleto.TabIndex = 8;
+            this.txtFolioBoleto.TabStop = false;
+            this.txtFolioBoleto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtFolioBoleto.TrailingIcon = null;
+            this.txtFolioBoleto.UseSystemPasswordChar = false;
+            // 
+            // txt_folioVenta
+            // 
+            this.txt_folioVenta.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_folioVenta.AnimateReadOnly = false;
+            this.txt_folioVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txt_folioVenta.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_folioVenta.Depth = 0;
+            this.txt_folioVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_folioVenta.HideSelection = true;
+            this.txt_folioVenta.LeadingIcon = null;
+            this.txt_folioVenta.Location = new System.Drawing.Point(164, 49);
+            this.txt_folioVenta.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_folioVenta.MaxLength = 32767;
+            this.txt_folioVenta.MouseState = MaterialSkin.MouseState.OUT;
+            this.txt_folioVenta.Name = "txt_folioVenta";
+            this.txt_folioVenta.PasswordChar = '\0';
+            this.txt_folioVenta.PrefixSuffixText = null;
+            this.txt_folioVenta.ReadOnly = false;
+            this.txt_folioVenta.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_folioVenta.SelectedText = "";
+            this.txt_folioVenta.SelectionLength = 0;
+            this.txt_folioVenta.SelectionStart = 0;
+            this.txt_folioVenta.ShortcutsEnabled = true;
+            this.txt_folioVenta.Size = new System.Drawing.Size(188, 48);
+            this.txt_folioVenta.TabIndex = 6;
+            this.txt_folioVenta.TabStop = false;
+            this.txt_folioVenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_folioVenta.TrailingIcon = null;
+            this.txt_folioVenta.UseSystemPasswordChar = false;
+            // 
+            // chkNombre
+            // 
+            this.chkNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chkNombre.AutoSize = true;
+            this.chkNombre.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.chkNombre.Checked = true;
+            this.chkNombre.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkNombre.Depth = 0;
+            this.chkNombre.Location = new System.Drawing.Point(27, 212);
+            this.chkNombre.Margin = new System.Windows.Forms.Padding(0);
+            this.chkNombre.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.chkNombre.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chkNombre.Name = "chkNombre";
+            this.chkNombre.ReadOnly = false;
+            this.chkNombre.Ripple = true;
+            this.chkNombre.Size = new System.Drawing.Size(95, 37);
+            this.chkNombre.TabIndex = 5;
+            this.chkNombre.Text = "Nombre:";
+            this.chkNombre.UseVisualStyleBackColor = true;
+            this.chkNombre.CheckedChanged += new System.EventHandler(this.chkNombre_CheckedChanged);
+            // 
+            // chkFolio
+            // 
+            this.chkFolio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chkFolio.AutoSize = true;
+            this.chkFolio.Checked = true;
+            this.chkFolio.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkFolio.Depth = 0;
+            this.chkFolio.Location = new System.Drawing.Point(27, 157);
+            this.chkFolio.Margin = new System.Windows.Forms.Padding(0);
+            this.chkFolio.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.chkFolio.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chkFolio.Name = "chkFolio";
+            this.chkFolio.ReadOnly = false;
+            this.chkFolio.Ripple = true;
+            this.chkFolio.Size = new System.Drawing.Size(123, 37);
+            this.chkFolio.TabIndex = 4;
+            this.chkFolio.Text = "Folio Boleto:";
+            this.chkFolio.UseVisualStyleBackColor = true;
+            this.chkFolio.CheckedChanged += new System.EventHandler(this.chkFolio_CheckedChanged);
+            // 
+            // chkFecha
+            // 
+            this.chkFecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chkFecha.AutoSize = true;
+            this.chkFecha.Checked = true;
+            this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkFecha.Depth = 0;
+            this.chkFecha.Location = new System.Drawing.Point(27, 102);
+            this.chkFecha.Margin = new System.Windows.Forms.Padding(0);
+            this.chkFecha.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.chkFecha.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chkFecha.Name = "chkFecha";
+            this.chkFecha.ReadOnly = false;
+            this.chkFecha.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.chkFecha.Ripple = true;
+            this.chkFecha.Size = new System.Drawing.Size(82, 37);
+            this.chkFecha.TabIndex = 3;
+            this.chkFecha.Text = "Fecha:";
+            this.chkFecha.UseVisualStyleBackColor = true;
+            this.chkFecha.CheckedChanged += new System.EventHandler(this.chkFecha_CheckedChanged);
+            // 
+            // chkFolioVenta
+            // 
+            this.chkFolioVenta.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chkFolioVenta.AutoSize = true;
+            this.chkFolioVenta.Checked = true;
+            this.chkFolioVenta.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkFolioVenta.Depth = 0;
+            this.chkFolioVenta.Location = new System.Drawing.Point(27, 49);
+            this.chkFolioVenta.Margin = new System.Windows.Forms.Padding(0);
+            this.chkFolioVenta.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.chkFolioVenta.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chkFolioVenta.Name = "chkFolioVenta";
+            this.chkFolioVenta.ReadOnly = false;
+            this.chkFolioVenta.Ripple = true;
+            this.chkFolioVenta.Size = new System.Drawing.Size(119, 37);
+            this.chkFolioVenta.TabIndex = 2;
+            this.chkFolioVenta.Text = "Folio Venta:";
+            this.chkFolioVenta.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(38, 11);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(72, 19);
+            this.materialLabel1.TabIndex = 1;
+            this.materialLabel1.Text = "Busqueda";
+            // 
             // frmVentasV2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1241, 818);
+            this.ClientSize = new System.Drawing.Size(931, 665);
+            this.ControlBox = false;
             this.Controls.Add(this.materialCard1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmVentasV2";
+            this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
             this.Text = "frmVentasV2";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmVentasV2_Load);
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();

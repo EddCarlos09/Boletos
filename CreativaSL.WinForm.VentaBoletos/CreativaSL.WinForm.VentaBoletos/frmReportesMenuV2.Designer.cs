@@ -44,7 +44,6 @@
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
             this.btnClienteFrecuente = new System.Windows.Forms.Button();
             this.btnClienteComprador = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.materialCard1.SuspendLayout();
             this.materialCard2.SuspendLayout();
             this.materialCard3.SuspendLayout();
@@ -55,7 +54,8 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(37, 106);
+            this.materialLabel1.Location = new System.Drawing.Point(28, 67);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(158, 19);
@@ -66,7 +66,7 @@
             // 
             this.checkBox_Mensual.AutoSize = true;
             this.checkBox_Mensual.Depth = 0;
-            this.checkBox_Mensual.Location = new System.Drawing.Point(40, 139);
+            this.checkBox_Mensual.Location = new System.Drawing.Point(23, 91);
             this.checkBox_Mensual.Margin = new System.Windows.Forms.Padding(0);
             this.checkBox_Mensual.MouseLocation = new System.Drawing.Point(-1, -1);
             this.checkBox_Mensual.MouseState = MaterialSkin.MouseState.HOVER;
@@ -83,7 +83,7 @@
             // 
             this.checkBox_Estadisticos.AutoSize = true;
             this.checkBox_Estadisticos.Depth = 0;
-            this.checkBox_Estadisticos.Location = new System.Drawing.Point(178, 139);
+            this.checkBox_Estadisticos.Location = new System.Drawing.Point(127, 91);
             this.checkBox_Estadisticos.Margin = new System.Windows.Forms.Padding(0);
             this.checkBox_Estadisticos.MouseLocation = new System.Drawing.Point(-1, -1);
             this.checkBox_Estadisticos.MouseState = MaterialSkin.MouseState.HOVER;
@@ -101,7 +101,8 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(28, 188);
+            this.materialLabel2.Location = new System.Drawing.Point(28, 131);
+            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(41, 19);
@@ -118,21 +119,22 @@
             this.materialCard1.Controls.Add(this.btnCaja);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(31, 221);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Location = new System.Drawing.Point(23, 158);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(817, 124);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard1.Size = new System.Drawing.Size(613, 124);
             this.materialCard1.TabIndex = 4;
             // 
             // btnBoleto
             // 
             this.btnBoleto.Image = ((System.Drawing.Image)(resources.GetObject("btnBoleto.Image")));
             this.btnBoleto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBoleto.Location = new System.Drawing.Point(651, 17);
+            this.btnBoleto.Location = new System.Drawing.Point(472, 14);
+            this.btnBoleto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBoleto.Name = "btnBoleto";
-            this.btnBoleto.Size = new System.Drawing.Size(134, 90);
+            this.btnBoleto.Size = new System.Drawing.Size(116, 97);
             this.btnBoleto.TabIndex = 4;
             this.btnBoleto.Text = "Boletos";
             this.btnBoleto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -143,9 +145,10 @@
             // 
             this.btn_Vendedores.Image = ((System.Drawing.Image)(resources.GetObject("btn_Vendedores.Image")));
             this.btn_Vendedores.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Vendedores.Location = new System.Drawing.Point(490, 17);
+            this.btn_Vendedores.Location = new System.Drawing.Point(355, 14);
+            this.btn_Vendedores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Vendedores.Name = "btn_Vendedores";
-            this.btn_Vendedores.Size = new System.Drawing.Size(134, 90);
+            this.btn_Vendedores.Size = new System.Drawing.Size(113, 97);
             this.btn_Vendedores.TabIndex = 3;
             this.btn_Vendedores.Text = "Vendedores";
             this.btn_Vendedores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -156,9 +159,10 @@
             // 
             this.btnCajaXFechas.Image = ((System.Drawing.Image)(resources.GetObject("btnCajaXFechas.Image")));
             this.btnCajaXFechas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCajaXFechas.Location = new System.Drawing.Point(333, 17);
+            this.btnCajaXFechas.Location = new System.Drawing.Point(238, 14);
+            this.btnCajaXFechas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCajaXFechas.Name = "btnCajaXFechas";
-            this.btnCajaXFechas.Size = new System.Drawing.Size(134, 90);
+            this.btnCajaXFechas.Size = new System.Drawing.Size(112, 97);
             this.btnCajaXFechas.TabIndex = 2;
             this.btnCajaXFechas.Text = "Caja x Fechas";
             this.btnCajaXFechas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -169,9 +173,10 @@
             // 
             this.btn_TotalesCajaDia.Image = ((System.Drawing.Image)(resources.GetObject("btn_TotalesCajaDia.Image")));
             this.btn_TotalesCajaDia.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_TotalesCajaDia.Location = new System.Drawing.Point(177, 17);
+            this.btn_TotalesCajaDia.Location = new System.Drawing.Point(121, 14);
+            this.btn_TotalesCajaDia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_TotalesCajaDia.Name = "btn_TotalesCajaDia";
-            this.btn_TotalesCajaDia.Size = new System.Drawing.Size(134, 90);
+            this.btn_TotalesCajaDia.Size = new System.Drawing.Size(112, 97);
             this.btn_TotalesCajaDia.TabIndex = 1;
             this.btn_TotalesCajaDia.Text = "Totales Caja Dia";
             this.btn_TotalesCajaDia.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -182,9 +187,10 @@
             // 
             this.btnCaja.Image = ((System.Drawing.Image)(resources.GetObject("btnCaja.Image")));
             this.btnCaja.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCaja.Location = new System.Drawing.Point(21, 17);
+            this.btnCaja.Location = new System.Drawing.Point(16, 14);
+            this.btnCaja.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCaja.Name = "btnCaja";
-            this.btnCaja.Size = new System.Drawing.Size(134, 90);
+            this.btnCaja.Size = new System.Drawing.Size(100, 97);
             this.btnCaja.TabIndex = 0;
             this.btnCaja.Text = "Caja";
             this.btnCaja.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -197,21 +203,22 @@
             this.materialCard2.Controls.Add(this.btnViajes);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(31, 364);
-            this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard2.Location = new System.Drawing.Point(23, 296);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
-            this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard2.Size = new System.Drawing.Size(180, 146);
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard2.Size = new System.Drawing.Size(135, 119);
             this.materialCard2.TabIndex = 5;
             // 
             // btnViajes
             // 
             this.btnViajes.Image = ((System.Drawing.Image)(resources.GetObject("btnViajes.Image")));
             this.btnViajes.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnViajes.Location = new System.Drawing.Point(17, 17);
+            this.btnViajes.Location = new System.Drawing.Point(13, 14);
+            this.btnViajes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnViajes.Name = "btnViajes";
-            this.btnViajes.Size = new System.Drawing.Size(134, 112);
+            this.btnViajes.Size = new System.Drawing.Size(100, 91);
             this.btnViajes.TabIndex = 5;
             this.btnViajes.Text = "VIajes";
             this.btnViajes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -225,21 +232,22 @@
             this.materialCard3.Controls.Add(this.btnClienteComprador);
             this.materialCard3.Depth = 0;
             this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard3.Location = new System.Drawing.Point(313, 364);
-            this.materialCard3.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard3.Location = new System.Drawing.Point(235, 296);
+            this.materialCard3.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard3.Name = "materialCard3";
-            this.materialCard3.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard3.Size = new System.Drawing.Size(381, 146);
+            this.materialCard3.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard3.Size = new System.Drawing.Size(286, 119);
             this.materialCard3.TabIndex = 6;
             // 
             // btnClienteFrecuente
             // 
             this.btnClienteFrecuente.Image = ((System.Drawing.Image)(resources.GetObject("btnClienteFrecuente.Image")));
             this.btnClienteFrecuente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnClienteFrecuente.Location = new System.Drawing.Point(208, 17);
+            this.btnClienteFrecuente.Location = new System.Drawing.Point(156, 14);
+            this.btnClienteFrecuente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClienteFrecuente.Name = "btnClienteFrecuente";
-            this.btnClienteFrecuente.Size = new System.Drawing.Size(134, 112);
+            this.btnClienteFrecuente.Size = new System.Drawing.Size(100, 91);
             this.btnClienteFrecuente.TabIndex = 6;
             this.btnClienteFrecuente.Text = "Cliente Frec";
             this.btnClienteFrecuente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -250,35 +258,22 @@
             // 
             this.btnClienteComprador.Image = ((System.Drawing.Image)(resources.GetObject("btnClienteComprador.Image")));
             this.btnClienteComprador.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnClienteComprador.Location = new System.Drawing.Point(41, 17);
+            this.btnClienteComprador.Location = new System.Drawing.Point(31, 14);
+            this.btnClienteComprador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClienteComprador.Name = "btnClienteComprador";
-            this.btnClienteComprador.Size = new System.Drawing.Size(134, 112);
+            this.btnClienteComprador.Size = new System.Drawing.Size(100, 91);
             this.btnClienteComprador.TabIndex = 7;
             this.btnClienteComprador.Text = "Cliente Comp";
             this.btnClienteComprador.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnClienteComprador.UseVisualStyleBackColor = true;
             this.btnClienteComprador.Click += new System.EventHandler(this.btnClienteComprador_Click);
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(738, 390);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(110, 94);
-            this.btnSalir.TabIndex = 16;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // frmReportesMenuV2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(927, 558);
-            this.Controls.Add(this.btnSalir);
+            this.ClientSize = new System.Drawing.Size(695, 453);
+            this.ControlBox = false;
             this.Controls.Add(this.materialCard3);
             this.Controls.Add(this.materialCard2);
             this.Controls.Add(this.materialCard1);
@@ -286,8 +281,10 @@
             this.Controls.Add(this.checkBox_Estadisticos);
             this.Controls.Add(this.checkBox_Mensual);
             this.Controls.Add(this.materialLabel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmReportesMenuV2";
-            this.Text = "frmReportesMenuV2";
+            this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
+            this.Text = "Reportes";
             this.materialCard1.ResumeLayout(false);
             this.materialCard2.ResumeLayout(false);
             this.materialCard3.ResumeLayout(false);
@@ -313,6 +310,5 @@
         private MaterialSkin.Controls.MaterialCard materialCard3;
         private System.Windows.Forms.Button btnClienteFrecuente;
         private System.Windows.Forms.Button btnClienteComprador;
-        private System.Windows.Forms.Button btnSalir;
     }
 }

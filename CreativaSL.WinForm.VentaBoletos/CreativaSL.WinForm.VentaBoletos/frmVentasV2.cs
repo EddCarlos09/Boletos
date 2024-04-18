@@ -202,7 +202,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                             frmlv.ShowDialog();
                             if (frmlv.getbanAutorizacion() == true)
                             {
-                                frmCancelacionesTransferencias cancelaciones = new frmCancelacionesTransferencias(1, boleto.tipo_cancelacion, boleto);
+                                frmCancelacionesTransferenciasV2 cancelaciones = new frmCancelacionesTransferenciasV2(1, boleto.tipo_cancelacion, boleto);
                                 cancelaciones.ShowDialog();
                                 if (cancelaciones.CancelacionTrasfencia == true)
                                 {
@@ -246,7 +246,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                             frmlv.ShowDialog();
                             if (frmlv.getbanAutorizacion() == true)
                             {
-                                frmCancelacionesTransferencias cancelaciones = new frmCancelacionesTransferencias(1, boleto.tipo_cancelacion, boleto);
+                                frmCancelacionesTransferenciasV2 cancelaciones = new frmCancelacionesTransferenciasV2(1, boleto.tipo_cancelacion, boleto);
                                 cancelaciones.ShowDialog();
                                 if (cancelaciones.CancelacionTrasfencia == true)
                                 {
@@ -339,7 +339,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.dgvdatosboleto.SelectedRows.Count > 0)
                 {
                     Boleto boleto = this.obtenerDatosBoleto();
-                    frmNombreBoleto frmNombreBoleto = new frmNombreBoleto(boleto);
+                    frmNombreBoletoV2 frmNombreBoleto = new frmNombreBoletoV2(boleto);
                     frmNombreBoleto.ShowDialog();
                     frmNombreBoleto.Dispose();
                     Busqueda_Negocio bn = new Busqueda_Negocio();

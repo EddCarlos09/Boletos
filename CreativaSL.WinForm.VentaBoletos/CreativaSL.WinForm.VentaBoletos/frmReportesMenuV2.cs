@@ -19,7 +19,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             InitializeComponent();
             loadMaterial(this);
             this.TopMost = true;
-            this.IsMdiContainer = true;
+            this.IsMdiContainer = false;
             this.checkBox_Mensual.Checked = true;
         }
         #region Eventos
@@ -77,7 +77,8 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                frmDatosViajes DatosViajes = new frmDatosViajes(this.checkBox_Estadisticos.Checked);
+                frmDatosViajesV2 DatosViajes = new frmDatosViajesV2(this.checkBox_Estadisticos.Checked);
+                DatosViajes.TopMost = true;
                 DatosViajes.ShowDialog();
             }
             catch (Exception ex)

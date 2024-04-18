@@ -165,7 +165,7 @@
             this.btnCancelar.ForeColor = System.Drawing.Color.DimGray;
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(342, 324);
+            this.btnCancelar.Location = new System.Drawing.Point(419, 324);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
             this.btnCancelar.Size = new System.Drawing.Size(110, 94);
@@ -180,7 +180,7 @@
             this.btnAceptar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAceptar.Location = new System.Drawing.Point(214, 324);
+            this.btnAceptar.Location = new System.Drawing.Point(183, 324);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(110, 94);
             this.btnAceptar.TabIndex = 22;

@@ -72,7 +72,8 @@
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(73, 381);
+            this.materialLabel3.Location = new System.Drawing.Point(55, 310);
+            this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(147, 19);
@@ -84,9 +85,10 @@
             this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(1002, 100);
+            this.btnSalir.Location = new System.Drawing.Point(755, 81);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(110, 94);
+            this.btnSalir.Size = new System.Drawing.Size(82, 76);
             this.btnSalir.TabIndex = 28;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -98,9 +100,10 @@
             this.btnPagoEfectivo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnPagoEfectivo.Image = ((System.Drawing.Image)(resources.GetObject("btnPagoEfectivo.Image")));
             this.btnPagoEfectivo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPagoEfectivo.Location = new System.Drawing.Point(861, 100);
+            this.btnPagoEfectivo.Location = new System.Drawing.Point(649, 81);
+            this.btnPagoEfectivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPagoEfectivo.Name = "btnPagoEfectivo";
-            this.btnPagoEfectivo.Size = new System.Drawing.Size(110, 94);
+            this.btnPagoEfectivo.Size = new System.Drawing.Size(82, 76);
             this.btnPagoEfectivo.TabIndex = 27;
             this.btnPagoEfectivo.Text = "Pago Efec";
             this.btnPagoEfectivo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -112,9 +115,10 @@
             this.btnCancelarA.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelarA.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarA.Image")));
             this.btnCancelarA.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarA.Location = new System.Drawing.Point(721, 100);
+            this.btnCancelarA.Location = new System.Drawing.Point(544, 81);
+            this.btnCancelarA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelarA.Name = "btnCancelarA";
-            this.btnCancelarA.Size = new System.Drawing.Size(110, 94);
+            this.btnCancelarA.Size = new System.Drawing.Size(82, 76);
             this.btnCancelarA.TabIndex = 26;
             this.btnCancelarA.Text = "Canc. A";
             this.btnCancelarA.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -126,9 +130,10 @@
             this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(512, 147);
+            this.btnBuscar.Location = new System.Drawing.Point(387, 119);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(105, 94);
+            this.btnBuscar.Size = new System.Drawing.Size(79, 76);
             this.btnBuscar.TabIndex = 25;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -145,7 +150,8 @@
             this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreCliente.HideSelection = true;
             this.txtNombreCliente.LeadingIcon = null;
-            this.txtNombreCliente.Location = new System.Drawing.Point(194, 227);
+            this.txtNombreCliente.Location = new System.Drawing.Point(149, 184);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombreCliente.MaxLength = 32767;
             this.txtNombreCliente.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreCliente.Name = "txtNombreCliente";
@@ -157,7 +163,7 @@
             this.txtNombreCliente.SelectionLength = 0;
             this.txtNombreCliente.SelectionStart = 0;
             this.txtNombreCliente.ShortcutsEnabled = true;
-            this.txtNombreCliente.Size = new System.Drawing.Size(250, 48);
+            this.txtNombreCliente.Size = new System.Drawing.Size(188, 48);
             this.txtNombreCliente.TabIndex = 24;
             this.txtNombreCliente.TabStop = false;
             this.txtNombreCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -174,7 +180,8 @@
             this.txtFolioBoleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFolioBoleto.HideSelection = true;
             this.txtFolioBoleto.LeadingIcon = null;
-            this.txtFolioBoleto.Location = new System.Drawing.Point(194, 157);
+            this.txtFolioBoleto.Location = new System.Drawing.Point(149, 128);
+            this.txtFolioBoleto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFolioBoleto.MaxLength = 32767;
             this.txtFolioBoleto.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFolioBoleto.Name = "txtFolioBoleto";
@@ -186,7 +193,7 @@
             this.txtFolioBoleto.SelectionLength = 0;
             this.txtFolioBoleto.SelectionStart = 0;
             this.txtFolioBoleto.ShortcutsEnabled = true;
-            this.txtFolioBoleto.Size = new System.Drawing.Size(250, 48);
+            this.txtFolioBoleto.Size = new System.Drawing.Size(188, 48);
             this.txtFolioBoleto.TabIndex = 23;
             this.txtFolioBoleto.TabStop = false;
             this.txtFolioBoleto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -198,7 +205,7 @@
             this.chkNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkNombre.AutoSize = true;
             this.chkNombre.Depth = 0;
-            this.chkNombre.Location = new System.Drawing.Point(11, 227);
+            this.chkNombre.Location = new System.Drawing.Point(11, 184);
             this.chkNombre.Margin = new System.Windows.Forms.Padding(0);
             this.chkNombre.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkNombre.MouseState = MaterialSkin.MouseState.HOVER;
@@ -216,7 +223,7 @@
             this.chkFolio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkFolio.AutoSize = true;
             this.chkFolio.Depth = 0;
-            this.chkFolio.Location = new System.Drawing.Point(11, 157);
+            this.chkFolio.Location = new System.Drawing.Point(11, 128);
             this.chkFolio.Margin = new System.Windows.Forms.Padding(0);
             this.chkFolio.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFolio.MouseState = MaterialSkin.MouseState.HOVER;
@@ -235,7 +242,7 @@
             this.chkFecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkFecha.AutoSize = true;
             this.chkFecha.Depth = 0;
-            this.chkFecha.Location = new System.Drawing.Point(11, 92);
+            this.chkFecha.Location = new System.Drawing.Point(11, 75);
             this.chkFecha.Margin = new System.Windows.Forms.Padding(0);
             this.chkFecha.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFecha.MouseState = MaterialSkin.MouseState.HOVER;
@@ -250,9 +257,10 @@
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(194, 96);
+            this.dtpFecha.Location = new System.Drawing.Point(146, 78);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(200, 22);
+            this.dtpFecha.Size = new System.Drawing.Size(151, 20);
             this.dtpFecha.TabIndex = 31;
             this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
@@ -284,8 +292,7 @@
             this.IDStatusCobro,
             this.IDStatusPago,
             this.numeroBoletos});
-            this.dgvdatosboleto.Location = new System.Drawing.Point(29, 410);
-            this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvdatosboleto.Location = new System.Drawing.Point(22, 333);
             this.dgvdatosboleto.MultiSelect = false;
             this.dgvdatosboleto.Name = "dgvdatosboleto";
             this.dgvdatosboleto.ReadOnly = true;
@@ -297,7 +304,7 @@
             this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdatosboleto.Size = new System.Drawing.Size(1167, 334);
+            this.dgvdatosboleto.Size = new System.Drawing.Size(875, 271);
             this.dgvdatosboleto.TabIndex = 32;
             // 
             // folio
@@ -307,7 +314,7 @@
             this.folio.MinimumWidth = 6;
             this.folio.Name = "folio";
             this.folio.ReadOnly = true;
-            this.folio.Width = 66;
+            this.folio.Width = 54;
             // 
             // fechaVenta
             // 
@@ -316,7 +323,7 @@
             this.fechaVenta.MinimumWidth = 6;
             this.fechaVenta.Name = "fechaVenta";
             this.fechaVenta.ReadOnly = true;
-            this.fechaVenta.Width = 116;
+            this.fechaVenta.Width = 96;
             // 
             // nombre
             // 
@@ -325,7 +332,7 @@
             this.nombre.MinimumWidth = 6;
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
-            this.nombre.Width = 85;
+            this.nombre.Width = 69;
             // 
             // numeroTelefono
             // 
@@ -334,7 +341,7 @@
             this.numeroTelefono.MinimumWidth = 6;
             this.numeroTelefono.Name = "numeroTelefono";
             this.numeroTelefono.ReadOnly = true;
-            this.numeroTelefono.Width = 145;
+            this.numeroTelefono.Width = 117;
             // 
             // fechaNacimiento
             // 
@@ -343,7 +350,7 @@
             this.fechaNacimiento.MinimumWidth = 6;
             this.fechaNacimiento.Name = "fechaNacimiento";
             this.fechaNacimiento.ReadOnly = true;
-            this.fechaNacimiento.Width = 149;
+            this.fechaNacimiento.Width = 121;
             // 
             // total
             // 
@@ -355,7 +362,7 @@
             this.total.MinimumWidth = 6;
             this.total.Name = "total";
             this.total.ReadOnly = true;
-            this.total.Width = 67;
+            this.total.Width = 56;
             // 
             // cobroCancelacion
             // 
@@ -367,7 +374,7 @@
             this.cobroCancelacion.MinimumWidth = 6;
             this.cobroCancelacion.Name = "cobroCancelacion";
             this.cobroCancelacion.ReadOnly = true;
-            this.cobroCancelacion.Width = 114;
+            this.cobroCancelacion.Width = 94;
             // 
             // retornoCancelacion
             // 
@@ -392,7 +399,7 @@
             this.pendiente.MinimumWidth = 6;
             this.pendiente.Name = "pendiente";
             this.pendiente.ReadOnly = true;
-            this.pendiente.Width = 97;
+            this.pendiente.Width = 80;
             // 
             // status
             // 
@@ -401,7 +408,7 @@
             this.status.MinimumWidth = 6;
             this.status.Name = "status";
             this.status.ReadOnly = true;
-            this.status.Width = 80;
+            this.status.Width = 67;
             // 
             // Usu_Ins
             // 
@@ -410,7 +417,7 @@
             this.Usu_Ins.MinimumWidth = 6;
             this.Usu_Ins.Name = "Usu_Ins";
             this.Usu_Ins.ReadOnly = true;
-            this.Usu_Ins.Width = 84;
+            this.Usu_Ins.Width = 71;
             // 
             // Usu_Mod
             // 
@@ -419,7 +426,7 @@
             this.Usu_Mod.MinimumWidth = 6;
             this.Usu_Mod.Name = "Usu_Mod";
             this.Usu_Mod.ReadOnly = true;
-            this.Usu_Mod.Width = 94;
+            this.Usu_Mod.Width = 78;
             // 
             // bloqueoCancelacionMonedero
             // 
@@ -478,13 +485,14 @@
             this.numeroBoletos.MinimumWidth = 6;
             this.numeroBoletos.Name = "numeroBoletos";
             this.numeroBoletos.ReadOnly = true;
-            this.numeroBoletos.Width = 116;
+            this.numeroBoletos.Width = 95;
             // 
             // frmVentasGrupalV2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1235, 762);
+            this.ClientSize = new System.Drawing.Size(933, 619);
+            this.ControlBox = false;
             this.Controls.Add(this.dgvdatosboleto);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.materialLabel3);
@@ -497,7 +505,9 @@
             this.Controls.Add(this.chkNombre);
             this.Controls.Add(this.chkFolio);
             this.Controls.Add(this.chkFecha);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmVentasGrupalV2";
+            this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
             this.Text = "frmVentasGrupalV2";
             this.Load += new System.EventHandler(this.frmVentasGrupalV2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboleto)).EndInit();
