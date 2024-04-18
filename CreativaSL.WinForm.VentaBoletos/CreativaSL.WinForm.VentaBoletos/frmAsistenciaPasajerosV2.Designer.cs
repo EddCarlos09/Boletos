@@ -56,7 +56,8 @@
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(386, 216);
+            this.materialLabel4.Location = new System.Drawing.Point(287, 155);
+            this.materialLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(205, 19);
@@ -74,12 +75,12 @@
             this.materialCard1.Controls.Add(this.materialLabel1);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(17, 78);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Location = new System.Drawing.Point(12, 25);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(998, 124);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard1.Size = new System.Drawing.Size(748, 101);
             this.materialCard1.TabIndex = 7;
             // 
             // CmbViaje
@@ -97,11 +98,12 @@
             this.CmbViaje.FormattingEnabled = true;
             this.CmbViaje.IntegralHeight = false;
             this.CmbViaje.ItemHeight = 43;
-            this.CmbViaje.Location = new System.Drawing.Point(100, 58);
+            this.CmbViaje.Location = new System.Drawing.Point(75, 47);
+            this.CmbViaje.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmbViaje.MaxDropDownItems = 4;
             this.CmbViaje.MouseState = MaterialSkin.MouseState.OUT;
             this.CmbViaje.Name = "CmbViaje";
-            this.CmbViaje.Size = new System.Drawing.Size(250, 49);
+            this.CmbViaje.Size = new System.Drawing.Size(188, 49);
             this.CmbViaje.StartIndex = 0;
             this.CmbViaje.TabIndex = 10;
             this.CmbViaje.SelectedValueChanged += new System.EventHandler(this.CmbViaje_SelectedValueChanged);
@@ -116,7 +118,8 @@
             this.txt_folio.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_folio.HideSelection = true;
             this.txt_folio.LeadingIcon = null;
-            this.txt_folio.Location = new System.Drawing.Point(674, 59);
+            this.txt_folio.Location = new System.Drawing.Point(506, 48);
+            this.txt_folio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_folio.MaxLength = 32767;
             this.txt_folio.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_folio.Name = "txt_folio";
@@ -128,7 +131,7 @@
             this.txt_folio.SelectionLength = 0;
             this.txt_folio.SelectionStart = 0;
             this.txt_folio.ShortcutsEnabled = true;
-            this.txt_folio.Size = new System.Drawing.Size(250, 48);
+            this.txt_folio.Size = new System.Drawing.Size(188, 48);
             this.txt_folio.TabIndex = 9;
             this.txt_folio.TabStop = false;
             this.txt_folio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -143,7 +146,8 @@
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(714, 14);
+            this.materialLabel3.Location = new System.Drawing.Point(536, 11);
+            this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(165, 19);
@@ -156,7 +160,8 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(613, 69);
+            this.materialLabel2.Location = new System.Drawing.Point(460, 56);
+            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(36, 19);
@@ -169,7 +174,8 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(199, 14);
+            this.materialLabel1.Location = new System.Drawing.Point(149, 11);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(36, 19);
@@ -205,8 +211,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvdatosboleto.Location = new System.Drawing.Point(17, 249);
-            this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvdatosboleto.Location = new System.Drawing.Point(12, 189);
             this.dgvdatosboleto.MultiSelect = false;
             this.dgvdatosboleto.Name = "dgvdatosboleto";
             this.dgvdatosboleto.ReadOnly = true;
@@ -217,7 +222,7 @@
             this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdatosboleto.Size = new System.Drawing.Size(998, 341);
+            this.dgvdatosboleto.Size = new System.Drawing.Size(748, 277);
             this.dgvdatosboleto.TabIndex = 15;
             // 
             // id_boleto
@@ -244,7 +249,7 @@
             this.asiento.ReadOnly = true;
             this.asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.asiento.Width = 58;
+            this.asiento.Width = 48;
             // 
             // CodigoBarra
             // 
@@ -255,7 +260,7 @@
             this.CodigoBarra.ReadOnly = true;
             this.CodigoBarra.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.CodigoBarra.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.CodigoBarra.Width = 43;
+            this.CodigoBarra.Width = 35;
             // 
             // NombrePersona
             // 
@@ -266,7 +271,7 @@
             this.NombrePersona.ReadOnly = true;
             this.NombrePersona.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.NombrePersona.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NombrePersona.Width = 62;
+            this.NombrePersona.Width = 50;
             // 
             // numeroTelefono
             // 
@@ -276,7 +281,7 @@
             this.numeroTelefono.Name = "numeroTelefono";
             this.numeroTelefono.ReadOnly = true;
             this.numeroTelefono.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.numeroTelefono.Width = 67;
+            this.numeroTelefono.Width = 55;
             // 
             // asistencia
             // 
@@ -295,17 +300,20 @@
             this.Status.MinimumWidth = 6;
             this.Status.Name = "Status";
             this.Status.ReadOnly = true;
-            this.Status.Width = 50;
+            this.Status.Width = 43;
             // 
             // frmAsistenciaPasajerosV2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 624);
+            this.ClientSize = new System.Drawing.Size(774, 507);
+            this.ControlBox = false;
             this.Controls.Add(this.dgvdatosboleto);
             this.Controls.Add(this.materialCard1);
             this.Controls.Add(this.materialLabel4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmAsistenciaPasajerosV2";
+            this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
             this.Text = "frmAsistenciaPasajerosV2";
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();

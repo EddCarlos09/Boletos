@@ -226,6 +226,19 @@
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.imageListmMenu = new System.Windows.Forms.ImageList(this.components);
+            this.MenuStripCaja = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItemDepositos = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemRetirosCajaLLena = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemRetirosPagos = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemInformacionDeCaja = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemCerrarCaja = new System.Windows.Forms.ToolStripMenuItem();
+            this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPage12.SuspendLayout();
             this.materialCard1.SuspendLayout();
@@ -311,6 +324,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.asiento4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento1)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.MenuStripCaja.SuspendLayout();
+            this.materialCard5.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -331,12 +347,12 @@
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.ImageList = this.imageListmMenu;
             this.materialTabControl1.Location = new System.Drawing.Point(2, 52);
-            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1936, 1036);
+            this.materialTabControl1.Size = new System.Drawing.Size(1936, 1046);
             this.materialTabControl1.TabIndex = 19;
             this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
             // 
@@ -346,11 +362,11 @@
             this.tabPage12.Controls.Add(this.materialCard1);
             this.tabPage12.ImageKey = "icons8-home-96.png";
             this.tabPage12.Location = new System.Drawing.Point(4, 39);
-            this.tabPage12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage12.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(1928, 1007);
+            this.tabPage12.Size = new System.Drawing.Size(1928, 1003);
             this.tabPage12.TabIndex = 12;
-            this.tabPage12.Text = "Home";
+            this.tabPage12.Text = "Inicio";
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
             // materialCard1
@@ -376,13 +392,13 @@
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(1928, 1007);
+            this.materialCard1.Size = new System.Drawing.Size(1928, 1003);
             this.materialCard1.TabIndex = 0;
             // 
             // btnPlantaAlta
             // 
             this.btnPlantaAlta.Location = new System.Drawing.Point(1330, 24);
-            this.btnPlantaAlta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPlantaAlta.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlantaAlta.Name = "btnPlantaAlta";
             this.btnPlantaAlta.Size = new System.Drawing.Size(56, 19);
             this.btnPlantaAlta.TabIndex = 244;
@@ -393,7 +409,7 @@
             // btnPlantaBaja
             // 
             this.btnPlantaBaja.Location = new System.Drawing.Point(1123, 24);
-            this.btnPlantaBaja.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPlantaBaja.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlantaBaja.Name = "btnPlantaBaja";
             this.btnPlantaBaja.Size = new System.Drawing.Size(56, 19);
             this.btnPlantaBaja.TabIndex = 243;
@@ -500,7 +516,7 @@
             this.Txt_TiempoVenta.HideSelection = true;
             this.Txt_TiempoVenta.LeadingIcon = null;
             this.Txt_TiempoVenta.Location = new System.Drawing.Point(622, 16);
-            this.Txt_TiempoVenta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_TiempoVenta.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_TiempoVenta.MaxLength = 32767;
             this.Txt_TiempoVenta.MouseState = MaterialSkin.MouseState.OUT;
             this.Txt_TiempoVenta.Name = "Txt_TiempoVenta";
@@ -581,7 +597,7 @@
             this.Txt_FechaHoraSistema.HideSelection = true;
             this.Txt_FechaHoraSistema.LeadingIcon = null;
             this.Txt_FechaHoraSistema.Location = new System.Drawing.Point(26, 184);
-            this.Txt_FechaHoraSistema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_FechaHoraSistema.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_FechaHoraSistema.MaxLength = 32767;
             this.Txt_FechaHoraSistema.MouseState = MaterialSkin.MouseState.OUT;
             this.Txt_FechaHoraSistema.Name = "Txt_FechaHoraSistema";
@@ -611,7 +627,7 @@
             this.Txt_Recorrido.HideSelection = true;
             this.Txt_Recorrido.LeadingIcon = null;
             this.Txt_Recorrido.Location = new System.Drawing.Point(194, 184);
-            this.Txt_Recorrido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_Recorrido.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_Recorrido.MaxLength = 32767;
             this.Txt_Recorrido.MouseState = MaterialSkin.MouseState.OUT;
             this.Txt_Recorrido.Name = "Txt_Recorrido";
@@ -641,7 +657,7 @@
             this.Txt_NumAsientosApartados.HideSelection = true;
             this.Txt_NumAsientosApartados.LeadingIcon = null;
             this.Txt_NumAsientosApartados.Location = new System.Drawing.Point(264, 55);
-            this.Txt_NumAsientosApartados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_NumAsientosApartados.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_NumAsientosApartados.MaxLength = 32767;
             this.Txt_NumAsientosApartados.MouseState = MaterialSkin.MouseState.OUT;
             this.Txt_NumAsientosApartados.Name = "Txt_NumAsientosApartados";
@@ -671,7 +687,7 @@
             this.Txt_NumAsientosDisponibles.HideSelection = true;
             this.Txt_NumAsientosDisponibles.LeadingIcon = null;
             this.Txt_NumAsientosDisponibles.Location = new System.Drawing.Point(70, 58);
-            this.Txt_NumAsientosDisponibles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_NumAsientosDisponibles.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_NumAsientosDisponibles.MaxLength = 32767;
             this.Txt_NumAsientosDisponibles.MouseState = MaterialSkin.MouseState.OUT;
             this.Txt_NumAsientosDisponibles.Name = "Txt_NumAsientosDisponibles";
@@ -756,7 +772,7 @@
             this.btn_CancelarBuscarViajes.ImageKey = "icons8-cancel-144.png";
             this.btn_CancelarBuscarViajes.ImageList = this.imageList1;
             this.btn_CancelarBuscarViajes.Location = new System.Drawing.Point(334, 295);
-            this.btn_CancelarBuscarViajes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_CancelarBuscarViajes.Margin = new System.Windows.Forms.Padding(4);
             this.btn_CancelarBuscarViajes.Name = "btn_CancelarBuscarViajes";
             this.btn_CancelarBuscarViajes.Size = new System.Drawing.Size(50, 41);
             this.btn_CancelarBuscarViajes.TabIndex = 44;
@@ -787,7 +803,7 @@
             this.btn_BuscarViajes.ImageKey = "icons8-search-300.png";
             this.btn_BuscarViajes.ImageList = this.imageList1;
             this.btn_BuscarViajes.Location = new System.Drawing.Point(240, 295);
-            this.btn_BuscarViajes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_BuscarViajes.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BuscarViajes.Name = "btn_BuscarViajes";
             this.btn_BuscarViajes.Size = new System.Drawing.Size(50, 41);
             this.btn_BuscarViajes.TabIndex = 43;
@@ -798,7 +814,7 @@
             // 
             this.dtmFechaSalida.Checked = false;
             this.dtmFechaSalida.Location = new System.Drawing.Point(123, 73);
-            this.dtmFechaSalida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtmFechaSalida.Margin = new System.Windows.Forms.Padding(2);
             this.dtmFechaSalida.Name = "dtmFechaSalida";
             this.dtmFechaSalida.Size = new System.Drawing.Size(201, 20);
             this.dtmFechaSalida.TabIndex = 40;
@@ -818,7 +834,7 @@
             this.cmbComboDestino.IntegralHeight = false;
             this.cmbComboDestino.ItemHeight = 43;
             this.cmbComboDestino.Location = new System.Drawing.Point(250, 179);
-            this.cmbComboDestino.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbComboDestino.Margin = new System.Windows.Forms.Padding(2);
             this.cmbComboDestino.MaxDropDownItems = 4;
             this.cmbComboDestino.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbComboDestino.Name = "cmbComboDestino";
@@ -841,7 +857,7 @@
             this.cmbComboOrigen.IntegralHeight = false;
             this.cmbComboOrigen.ItemHeight = 43;
             this.cmbComboOrigen.Location = new System.Drawing.Point(46, 179);
-            this.cmbComboOrigen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbComboOrigen.Margin = new System.Windows.Forms.Padding(2);
             this.cmbComboOrigen.MaxDropDownItems = 4;
             this.cmbComboOrigen.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbComboOrigen.Name = "cmbComboOrigen";
@@ -900,13 +916,13 @@
             this.GridViewVentaBoletos.FullRowSelect = true;
             this.GridViewVentaBoletos.HideSelection = false;
             this.GridViewVentaBoletos.Location = new System.Drawing.Point(499, 382);
-            this.GridViewVentaBoletos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GridViewVentaBoletos.Margin = new System.Windows.Forms.Padding(2);
             this.GridViewVentaBoletos.MinimumSize = new System.Drawing.Size(150, 81);
             this.GridViewVentaBoletos.MouseLocation = new System.Drawing.Point(-1, -1);
             this.GridViewVentaBoletos.MouseState = MaterialSkin.MouseState.OUT;
             this.GridViewVentaBoletos.Name = "GridViewVentaBoletos";
             this.GridViewVentaBoletos.OwnerDraw = true;
-            this.GridViewVentaBoletos.Size = new System.Drawing.Size(593, 305);
+            this.GridViewVentaBoletos.Size = new System.Drawing.Size(593, 301);
             this.GridViewVentaBoletos.TabIndex = 238;
             this.GridViewVentaBoletos.UseCompatibleStateImageBehavior = false;
             this.GridViewVentaBoletos.View = System.Windows.Forms.View.Details;
@@ -923,13 +939,13 @@
             this.GridViewViajes.FullRowSelect = true;
             this.GridViewViajes.HideSelection = false;
             this.GridViewViajes.Location = new System.Drawing.Point(499, 50);
-            this.GridViewViajes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GridViewViajes.Margin = new System.Windows.Forms.Padding(2);
             this.GridViewViajes.MinimumSize = new System.Drawing.Size(150, 81);
             this.GridViewViajes.MouseLocation = new System.Drawing.Point(-1, -1);
             this.GridViewViajes.MouseState = MaterialSkin.MouseState.OUT;
             this.GridViewViajes.Name = "GridViewViajes";
             this.GridViewViajes.OwnerDraw = true;
-            this.GridViewViajes.Size = new System.Drawing.Size(593, 305);
+            this.GridViewViajes.Size = new System.Drawing.Size(593, 301);
             this.GridViewViajes.TabIndex = 237;
             this.GridViewViajes.UseCompatibleStateImageBehavior = false;
             this.GridViewViajes.View = System.Windows.Forms.View.Details;
@@ -1104,7 +1120,7 @@
             this.panel_Camion.LinearGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.panel_Camion.LineColor = System.Drawing.Color.Transparent;
             this.panel_Camion.Location = new System.Drawing.Point(1151, 67);
-            this.panel_Camion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_Camion.Margin = new System.Windows.Forms.Padding(2);
             this.panel_Camion.Name = "panel_Camion";
             this.panel_Camion.Size = new System.Drawing.Size(244, 585);
             this.panel_Camion.TabIndex = 234;
@@ -1114,7 +1130,7 @@
             this.puerta13.BackColor = System.Drawing.Color.White;
             this.puerta13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta13.Location = new System.Drawing.Point(210, 548);
-            this.puerta13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta13.Margin = new System.Windows.Forms.Padding(2);
             this.puerta13.Name = "puerta13";
             this.puerta13.Size = new System.Drawing.Size(26, 28);
             this.puerta13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1128,7 +1144,7 @@
             this.puerta12.BackColor = System.Drawing.Color.White;
             this.puerta12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta12.Location = new System.Drawing.Point(210, 505);
-            this.puerta12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta12.Margin = new System.Windows.Forms.Padding(2);
             this.puerta12.Name = "puerta12";
             this.puerta12.Size = new System.Drawing.Size(26, 28);
             this.puerta12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1142,7 +1158,7 @@
             this.puerta11.BackColor = System.Drawing.Color.White;
             this.puerta11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta11.Location = new System.Drawing.Point(210, 462);
-            this.puerta11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta11.Margin = new System.Windows.Forms.Padding(2);
             this.puerta11.Name = "puerta11";
             this.puerta11.Size = new System.Drawing.Size(26, 28);
             this.puerta11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1156,7 +1172,7 @@
             this.puerta10.BackColor = System.Drawing.Color.White;
             this.puerta10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta10.Location = new System.Drawing.Point(210, 418);
-            this.puerta10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta10.Margin = new System.Windows.Forms.Padding(2);
             this.puerta10.Name = "puerta10";
             this.puerta10.Size = new System.Drawing.Size(26, 28);
             this.puerta10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1170,7 +1186,7 @@
             this.puerta9.BackColor = System.Drawing.Color.White;
             this.puerta9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta9.Location = new System.Drawing.Point(210, 375);
-            this.puerta9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta9.Margin = new System.Windows.Forms.Padding(2);
             this.puerta9.Name = "puerta9";
             this.puerta9.Size = new System.Drawing.Size(26, 28);
             this.puerta9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1184,7 +1200,7 @@
             this.puerta8.BackColor = System.Drawing.Color.White;
             this.puerta8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta8.Location = new System.Drawing.Point(209, 332);
-            this.puerta8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta8.Margin = new System.Windows.Forms.Padding(2);
             this.puerta8.Name = "puerta8";
             this.puerta8.Size = new System.Drawing.Size(26, 28);
             this.puerta8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1198,7 +1214,7 @@
             this.puerta7.BackColor = System.Drawing.Color.White;
             this.puerta7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta7.Location = new System.Drawing.Point(209, 289);
-            this.puerta7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta7.Margin = new System.Windows.Forms.Padding(2);
             this.puerta7.Name = "puerta7";
             this.puerta7.Size = new System.Drawing.Size(26, 28);
             this.puerta7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1212,7 +1228,7 @@
             this.puerta6.BackColor = System.Drawing.Color.White;
             this.puerta6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta6.Location = new System.Drawing.Point(209, 246);
-            this.puerta6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta6.Margin = new System.Windows.Forms.Padding(2);
             this.puerta6.Name = "puerta6";
             this.puerta6.Size = new System.Drawing.Size(26, 28);
             this.puerta6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1226,7 +1242,7 @@
             this.puerta5.BackColor = System.Drawing.Color.White;
             this.puerta5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta5.Location = new System.Drawing.Point(209, 203);
-            this.puerta5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta5.Margin = new System.Windows.Forms.Padding(2);
             this.puerta5.Name = "puerta5";
             this.puerta5.Size = new System.Drawing.Size(26, 28);
             this.puerta5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1240,7 +1256,7 @@
             this.puerta4.BackColor = System.Drawing.Color.White;
             this.puerta4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta4.Location = new System.Drawing.Point(209, 160);
-            this.puerta4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta4.Margin = new System.Windows.Forms.Padding(2);
             this.puerta4.Name = "puerta4";
             this.puerta4.Size = new System.Drawing.Size(26, 28);
             this.puerta4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1254,7 +1270,7 @@
             this.puerta3.BackColor = System.Drawing.Color.White;
             this.puerta3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta3.Location = new System.Drawing.Point(208, 117);
-            this.puerta3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta3.Margin = new System.Windows.Forms.Padding(2);
             this.puerta3.Name = "puerta3";
             this.puerta3.Size = new System.Drawing.Size(26, 28);
             this.puerta3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1268,7 +1284,7 @@
             this.puerta2.BackColor = System.Drawing.Color.White;
             this.puerta2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta2.Location = new System.Drawing.Point(208, 74);
-            this.puerta2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta2.Margin = new System.Windows.Forms.Padding(2);
             this.puerta2.Name = "puerta2";
             this.puerta2.Size = new System.Drawing.Size(26, 28);
             this.puerta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1282,7 +1298,7 @@
             this.puerta1.BackColor = System.Drawing.Color.White;
             this.puerta1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.puerta1.Location = new System.Drawing.Point(208, 31);
-            this.puerta1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.puerta1.Margin = new System.Windows.Forms.Padding(2);
             this.puerta1.Name = "puerta1";
             this.puerta1.Size = new System.Drawing.Size(26, 28);
             this.puerta1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1296,7 +1312,7 @@
             this.asiento63.BackColor = System.Drawing.Color.White;
             this.asiento63.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento63.Location = new System.Drawing.Point(88, 548);
-            this.asiento63.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento63.Margin = new System.Windows.Forms.Padding(2);
             this.asiento63.Name = "asiento63";
             this.asiento63.Size = new System.Drawing.Size(41, 28);
             this.asiento63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1310,7 +1326,7 @@
             this.asiento28.BackColor = System.Drawing.Color.White;
             this.asiento28.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento28.Location = new System.Drawing.Point(87, 246);
-            this.asiento28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento28.Margin = new System.Windows.Forms.Padding(2);
             this.asiento28.Name = "asiento28";
             this.asiento28.Size = new System.Drawing.Size(41, 28);
             this.asiento28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1324,7 +1340,7 @@
             this.asiento33.BackColor = System.Drawing.Color.White;
             this.asiento33.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento33.Location = new System.Drawing.Point(87, 289);
-            this.asiento33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento33.Margin = new System.Windows.Forms.Padding(2);
             this.asiento33.Name = "asiento33";
             this.asiento33.Size = new System.Drawing.Size(41, 28);
             this.asiento33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1338,7 +1354,7 @@
             this.asiento38.BackColor = System.Drawing.Color.White;
             this.asiento38.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento38.Location = new System.Drawing.Point(87, 332);
-            this.asiento38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento38.Margin = new System.Windows.Forms.Padding(2);
             this.asiento38.Name = "asiento38";
             this.asiento38.Size = new System.Drawing.Size(41, 28);
             this.asiento38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1352,7 +1368,7 @@
             this.asiento43.BackColor = System.Drawing.Color.White;
             this.asiento43.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento43.Location = new System.Drawing.Point(88, 375);
-            this.asiento43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento43.Margin = new System.Windows.Forms.Padding(2);
             this.asiento43.Name = "asiento43";
             this.asiento43.Size = new System.Drawing.Size(41, 28);
             this.asiento43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1366,7 +1382,7 @@
             this.asiento48.BackColor = System.Drawing.Color.White;
             this.asiento48.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento48.Location = new System.Drawing.Point(88, 418);
-            this.asiento48.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento48.Margin = new System.Windows.Forms.Padding(2);
             this.asiento48.Name = "asiento48";
             this.asiento48.Size = new System.Drawing.Size(41, 28);
             this.asiento48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1380,7 +1396,7 @@
             this.asiento53.BackColor = System.Drawing.Color.White;
             this.asiento53.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento53.Location = new System.Drawing.Point(88, 462);
-            this.asiento53.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento53.Margin = new System.Windows.Forms.Padding(2);
             this.asiento53.Name = "asiento53";
             this.asiento53.Size = new System.Drawing.Size(41, 28);
             this.asiento53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1394,7 +1410,7 @@
             this.asiento58.BackColor = System.Drawing.Color.White;
             this.asiento58.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento58.Location = new System.Drawing.Point(88, 505);
-            this.asiento58.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento58.Margin = new System.Windows.Forms.Padding(2);
             this.asiento58.Name = "asiento58";
             this.asiento58.Size = new System.Drawing.Size(41, 28);
             this.asiento58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1408,7 +1424,7 @@
             this.asiento23.BackColor = System.Drawing.Color.White;
             this.asiento23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento23.Location = new System.Drawing.Point(87, 203);
-            this.asiento23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento23.Margin = new System.Windows.Forms.Padding(2);
             this.asiento23.Name = "asiento23";
             this.asiento23.Size = new System.Drawing.Size(41, 28);
             this.asiento23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1422,7 +1438,7 @@
             this.asiento18.BackColor = System.Drawing.Color.White;
             this.asiento18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento18.Location = new System.Drawing.Point(87, 160);
-            this.asiento18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento18.Margin = new System.Windows.Forms.Padding(2);
             this.asiento18.Name = "asiento18";
             this.asiento18.Size = new System.Drawing.Size(41, 28);
             this.asiento18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1436,7 +1452,7 @@
             this.asiento13.BackColor = System.Drawing.Color.White;
             this.asiento13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento13.Location = new System.Drawing.Point(86, 117);
-            this.asiento13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento13.Margin = new System.Windows.Forms.Padding(2);
             this.asiento13.Name = "asiento13";
             this.asiento13.Size = new System.Drawing.Size(41, 28);
             this.asiento13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1450,7 +1466,7 @@
             this.asiento8.BackColor = System.Drawing.Color.White;
             this.asiento8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento8.Location = new System.Drawing.Point(86, 74);
-            this.asiento8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento8.Margin = new System.Windows.Forms.Padding(2);
             this.asiento8.Name = "asiento8";
             this.asiento8.Size = new System.Drawing.Size(41, 28);
             this.asiento8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1464,7 +1480,7 @@
             this.asiento3.BackColor = System.Drawing.Color.White;
             this.asiento3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento3.Location = new System.Drawing.Point(86, 31);
-            this.asiento3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento3.Margin = new System.Windows.Forms.Padding(2);
             this.asiento3.Name = "asiento3";
             this.asiento3.Size = new System.Drawing.Size(41, 28);
             this.asiento3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1478,7 +1494,7 @@
             this.asiento65.BackColor = System.Drawing.Color.White;
             this.asiento65.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento65.Location = new System.Drawing.Point(169, 548);
-            this.asiento65.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento65.Margin = new System.Windows.Forms.Padding(2);
             this.asiento65.Name = "asiento65";
             this.asiento65.Size = new System.Drawing.Size(41, 28);
             this.asiento65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1492,7 +1508,7 @@
             this.asiento64.BackColor = System.Drawing.Color.White;
             this.asiento64.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento64.Location = new System.Drawing.Point(128, 548);
-            this.asiento64.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento64.Margin = new System.Windows.Forms.Padding(2);
             this.asiento64.Name = "asiento64";
             this.asiento64.Size = new System.Drawing.Size(41, 28);
             this.asiento64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1506,7 +1522,7 @@
             this.asiento62.BackColor = System.Drawing.Color.White;
             this.asiento62.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento62.Location = new System.Drawing.Point(47, 548);
-            this.asiento62.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento62.Margin = new System.Windows.Forms.Padding(2);
             this.asiento62.Name = "asiento62";
             this.asiento62.Size = new System.Drawing.Size(41, 28);
             this.asiento62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1520,7 +1536,7 @@
             this.asiento61.BackColor = System.Drawing.Color.White;
             this.asiento61.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento61.Location = new System.Drawing.Point(7, 548);
-            this.asiento61.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento61.Margin = new System.Windows.Forms.Padding(2);
             this.asiento61.Name = "asiento61";
             this.asiento61.Size = new System.Drawing.Size(41, 28);
             this.asiento61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1534,7 +1550,7 @@
             this.asiento60.BackColor = System.Drawing.Color.White;
             this.asiento60.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento60.Location = new System.Drawing.Point(169, 505);
-            this.asiento60.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento60.Margin = new System.Windows.Forms.Padding(2);
             this.asiento60.Name = "asiento60";
             this.asiento60.Size = new System.Drawing.Size(41, 28);
             this.asiento60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1548,7 +1564,7 @@
             this.asiento59.BackColor = System.Drawing.Color.White;
             this.asiento59.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento59.Location = new System.Drawing.Point(128, 505);
-            this.asiento59.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento59.Margin = new System.Windows.Forms.Padding(2);
             this.asiento59.Name = "asiento59";
             this.asiento59.Size = new System.Drawing.Size(41, 28);
             this.asiento59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1562,7 +1578,7 @@
             this.asiento57.BackColor = System.Drawing.Color.White;
             this.asiento57.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento57.Location = new System.Drawing.Point(47, 505);
-            this.asiento57.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento57.Margin = new System.Windows.Forms.Padding(2);
             this.asiento57.Name = "asiento57";
             this.asiento57.Size = new System.Drawing.Size(41, 28);
             this.asiento57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1576,7 +1592,7 @@
             this.asiento56.BackColor = System.Drawing.Color.White;
             this.asiento56.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento56.Location = new System.Drawing.Point(7, 505);
-            this.asiento56.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento56.Margin = new System.Windows.Forms.Padding(2);
             this.asiento56.Name = "asiento56";
             this.asiento56.Size = new System.Drawing.Size(41, 28);
             this.asiento56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1590,7 +1606,7 @@
             this.asiento55.BackColor = System.Drawing.Color.White;
             this.asiento55.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento55.Location = new System.Drawing.Point(169, 462);
-            this.asiento55.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento55.Margin = new System.Windows.Forms.Padding(2);
             this.asiento55.Name = "asiento55";
             this.asiento55.Size = new System.Drawing.Size(41, 28);
             this.asiento55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1604,7 +1620,7 @@
             this.asiento54.BackColor = System.Drawing.Color.White;
             this.asiento54.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento54.Location = new System.Drawing.Point(128, 462);
-            this.asiento54.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento54.Margin = new System.Windows.Forms.Padding(2);
             this.asiento54.Name = "asiento54";
             this.asiento54.Size = new System.Drawing.Size(41, 28);
             this.asiento54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1618,7 +1634,7 @@
             this.asiento52.BackColor = System.Drawing.Color.White;
             this.asiento52.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento52.Location = new System.Drawing.Point(47, 462);
-            this.asiento52.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento52.Margin = new System.Windows.Forms.Padding(2);
             this.asiento52.Name = "asiento52";
             this.asiento52.Size = new System.Drawing.Size(41, 28);
             this.asiento52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1632,7 +1648,7 @@
             this.asiento51.BackColor = System.Drawing.Color.White;
             this.asiento51.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento51.Location = new System.Drawing.Point(7, 462);
-            this.asiento51.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento51.Margin = new System.Windows.Forms.Padding(2);
             this.asiento51.Name = "asiento51";
             this.asiento51.Size = new System.Drawing.Size(41, 28);
             this.asiento51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1646,7 +1662,7 @@
             this.asiento50.BackColor = System.Drawing.Color.White;
             this.asiento50.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento50.Location = new System.Drawing.Point(169, 418);
-            this.asiento50.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento50.Margin = new System.Windows.Forms.Padding(2);
             this.asiento50.Name = "asiento50";
             this.asiento50.Size = new System.Drawing.Size(41, 28);
             this.asiento50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1660,7 +1676,7 @@
             this.asiento49.BackColor = System.Drawing.Color.White;
             this.asiento49.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento49.Location = new System.Drawing.Point(128, 418);
-            this.asiento49.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento49.Margin = new System.Windows.Forms.Padding(2);
             this.asiento49.Name = "asiento49";
             this.asiento49.Size = new System.Drawing.Size(41, 28);
             this.asiento49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1674,7 +1690,7 @@
             this.asiento47.BackColor = System.Drawing.Color.White;
             this.asiento47.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento47.Location = new System.Drawing.Point(47, 418);
-            this.asiento47.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento47.Margin = new System.Windows.Forms.Padding(2);
             this.asiento47.Name = "asiento47";
             this.asiento47.Size = new System.Drawing.Size(41, 28);
             this.asiento47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1688,7 +1704,7 @@
             this.asiento46.BackColor = System.Drawing.Color.White;
             this.asiento46.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento46.Location = new System.Drawing.Point(7, 418);
-            this.asiento46.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento46.Margin = new System.Windows.Forms.Padding(2);
             this.asiento46.Name = "asiento46";
             this.asiento46.Size = new System.Drawing.Size(41, 28);
             this.asiento46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1702,7 +1718,7 @@
             this.asiento45.BackColor = System.Drawing.Color.White;
             this.asiento45.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento45.Location = new System.Drawing.Point(169, 375);
-            this.asiento45.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento45.Margin = new System.Windows.Forms.Padding(2);
             this.asiento45.Name = "asiento45";
             this.asiento45.Size = new System.Drawing.Size(41, 28);
             this.asiento45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1716,7 +1732,7 @@
             this.asiento44.BackColor = System.Drawing.Color.White;
             this.asiento44.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento44.Location = new System.Drawing.Point(128, 375);
-            this.asiento44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento44.Margin = new System.Windows.Forms.Padding(2);
             this.asiento44.Name = "asiento44";
             this.asiento44.Size = new System.Drawing.Size(41, 28);
             this.asiento44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1730,7 +1746,7 @@
             this.asiento42.BackColor = System.Drawing.Color.White;
             this.asiento42.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento42.Location = new System.Drawing.Point(47, 375);
-            this.asiento42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento42.Margin = new System.Windows.Forms.Padding(2);
             this.asiento42.Name = "asiento42";
             this.asiento42.Size = new System.Drawing.Size(41, 28);
             this.asiento42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1744,7 +1760,7 @@
             this.asiento41.BackColor = System.Drawing.Color.White;
             this.asiento41.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento41.Location = new System.Drawing.Point(7, 375);
-            this.asiento41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento41.Margin = new System.Windows.Forms.Padding(2);
             this.asiento41.Name = "asiento41";
             this.asiento41.Size = new System.Drawing.Size(41, 28);
             this.asiento41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1758,7 +1774,7 @@
             this.asiento40.BackColor = System.Drawing.Color.White;
             this.asiento40.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento40.Location = new System.Drawing.Point(168, 332);
-            this.asiento40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento40.Margin = new System.Windows.Forms.Padding(2);
             this.asiento40.Name = "asiento40";
             this.asiento40.Size = new System.Drawing.Size(41, 28);
             this.asiento40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1772,7 +1788,7 @@
             this.asiento39.BackColor = System.Drawing.Color.White;
             this.asiento39.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento39.Location = new System.Drawing.Point(128, 332);
-            this.asiento39.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento39.Margin = new System.Windows.Forms.Padding(2);
             this.asiento39.Name = "asiento39";
             this.asiento39.Size = new System.Drawing.Size(41, 28);
             this.asiento39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1786,7 +1802,7 @@
             this.asiento37.BackColor = System.Drawing.Color.White;
             this.asiento37.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento37.Location = new System.Drawing.Point(46, 332);
-            this.asiento37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento37.Margin = new System.Windows.Forms.Padding(2);
             this.asiento37.Name = "asiento37";
             this.asiento37.Size = new System.Drawing.Size(41, 28);
             this.asiento37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1800,7 +1816,7 @@
             this.asiento36.BackColor = System.Drawing.Color.White;
             this.asiento36.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento36.Location = new System.Drawing.Point(6, 332);
-            this.asiento36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento36.Margin = new System.Windows.Forms.Padding(2);
             this.asiento36.Name = "asiento36";
             this.asiento36.Size = new System.Drawing.Size(41, 28);
             this.asiento36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1814,7 +1830,7 @@
             this.asiento35.BackColor = System.Drawing.Color.White;
             this.asiento35.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento35.Location = new System.Drawing.Point(168, 289);
-            this.asiento35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento35.Margin = new System.Windows.Forms.Padding(2);
             this.asiento35.Name = "asiento35";
             this.asiento35.Size = new System.Drawing.Size(41, 28);
             this.asiento35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1828,7 +1844,7 @@
             this.asiento34.BackColor = System.Drawing.Color.White;
             this.asiento34.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento34.Location = new System.Drawing.Point(128, 289);
-            this.asiento34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento34.Margin = new System.Windows.Forms.Padding(2);
             this.asiento34.Name = "asiento34";
             this.asiento34.Size = new System.Drawing.Size(41, 28);
             this.asiento34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1842,7 +1858,7 @@
             this.asiento32.BackColor = System.Drawing.Color.White;
             this.asiento32.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento32.Location = new System.Drawing.Point(46, 289);
-            this.asiento32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento32.Margin = new System.Windows.Forms.Padding(2);
             this.asiento32.Name = "asiento32";
             this.asiento32.Size = new System.Drawing.Size(41, 28);
             this.asiento32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1856,7 +1872,7 @@
             this.asiento31.BackColor = System.Drawing.Color.White;
             this.asiento31.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento31.Location = new System.Drawing.Point(6, 289);
-            this.asiento31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento31.Margin = new System.Windows.Forms.Padding(2);
             this.asiento31.Name = "asiento31";
             this.asiento31.Size = new System.Drawing.Size(41, 28);
             this.asiento31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1870,7 +1886,7 @@
             this.asiento30.BackColor = System.Drawing.Color.White;
             this.asiento30.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento30.Location = new System.Drawing.Point(168, 246);
-            this.asiento30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento30.Margin = new System.Windows.Forms.Padding(2);
             this.asiento30.Name = "asiento30";
             this.asiento30.Size = new System.Drawing.Size(41, 28);
             this.asiento30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1884,7 +1900,7 @@
             this.asiento29.BackColor = System.Drawing.Color.White;
             this.asiento29.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento29.Location = new System.Drawing.Point(128, 246);
-            this.asiento29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento29.Margin = new System.Windows.Forms.Padding(2);
             this.asiento29.Name = "asiento29";
             this.asiento29.Size = new System.Drawing.Size(41, 28);
             this.asiento29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1898,7 +1914,7 @@
             this.asiento27.BackColor = System.Drawing.Color.White;
             this.asiento27.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento27.Location = new System.Drawing.Point(46, 246);
-            this.asiento27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento27.Margin = new System.Windows.Forms.Padding(2);
             this.asiento27.Name = "asiento27";
             this.asiento27.Size = new System.Drawing.Size(41, 28);
             this.asiento27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1912,7 +1928,7 @@
             this.asiento26.BackColor = System.Drawing.Color.White;
             this.asiento26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento26.Location = new System.Drawing.Point(6, 246);
-            this.asiento26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento26.Margin = new System.Windows.Forms.Padding(2);
             this.asiento26.Name = "asiento26";
             this.asiento26.Size = new System.Drawing.Size(41, 28);
             this.asiento26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1926,7 +1942,7 @@
             this.asiento25.BackColor = System.Drawing.Color.White;
             this.asiento25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento25.Location = new System.Drawing.Point(168, 203);
-            this.asiento25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento25.Margin = new System.Windows.Forms.Padding(2);
             this.asiento25.Name = "asiento25";
             this.asiento25.Size = new System.Drawing.Size(41, 28);
             this.asiento25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1940,7 +1956,7 @@
             this.asiento24.BackColor = System.Drawing.Color.White;
             this.asiento24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento24.Location = new System.Drawing.Point(128, 203);
-            this.asiento24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento24.Margin = new System.Windows.Forms.Padding(2);
             this.asiento24.Name = "asiento24";
             this.asiento24.Size = new System.Drawing.Size(41, 28);
             this.asiento24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1954,7 +1970,7 @@
             this.asiento22.BackColor = System.Drawing.Color.White;
             this.asiento22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento22.Location = new System.Drawing.Point(46, 203);
-            this.asiento22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento22.Margin = new System.Windows.Forms.Padding(2);
             this.asiento22.Name = "asiento22";
             this.asiento22.Size = new System.Drawing.Size(41, 28);
             this.asiento22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1968,7 +1984,7 @@
             this.asiento21.BackColor = System.Drawing.Color.White;
             this.asiento21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento21.Location = new System.Drawing.Point(6, 203);
-            this.asiento21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento21.Margin = new System.Windows.Forms.Padding(2);
             this.asiento21.Name = "asiento21";
             this.asiento21.Size = new System.Drawing.Size(41, 28);
             this.asiento21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1982,7 +1998,7 @@
             this.asiento20.BackColor = System.Drawing.Color.White;
             this.asiento20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento20.Location = new System.Drawing.Point(168, 160);
-            this.asiento20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento20.Margin = new System.Windows.Forms.Padding(2);
             this.asiento20.Name = "asiento20";
             this.asiento20.Size = new System.Drawing.Size(41, 28);
             this.asiento20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1996,7 +2012,7 @@
             this.asiento19.BackColor = System.Drawing.Color.White;
             this.asiento19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento19.Location = new System.Drawing.Point(128, 160);
-            this.asiento19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento19.Margin = new System.Windows.Forms.Padding(2);
             this.asiento19.Name = "asiento19";
             this.asiento19.Size = new System.Drawing.Size(41, 28);
             this.asiento19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2010,7 +2026,7 @@
             this.asiento17.BackColor = System.Drawing.Color.White;
             this.asiento17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento17.Location = new System.Drawing.Point(46, 160);
-            this.asiento17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento17.Margin = new System.Windows.Forms.Padding(2);
             this.asiento17.Name = "asiento17";
             this.asiento17.Size = new System.Drawing.Size(41, 28);
             this.asiento17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2024,7 +2040,7 @@
             this.asiento16.BackColor = System.Drawing.Color.White;
             this.asiento16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento16.Location = new System.Drawing.Point(6, 160);
-            this.asiento16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento16.Margin = new System.Windows.Forms.Padding(2);
             this.asiento16.Name = "asiento16";
             this.asiento16.Size = new System.Drawing.Size(41, 28);
             this.asiento16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2038,7 +2054,7 @@
             this.asiento15.BackColor = System.Drawing.Color.White;
             this.asiento15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento15.Location = new System.Drawing.Point(167, 117);
-            this.asiento15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento15.Margin = new System.Windows.Forms.Padding(2);
             this.asiento15.Name = "asiento15";
             this.asiento15.Size = new System.Drawing.Size(41, 28);
             this.asiento15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2052,7 +2068,7 @@
             this.asiento14.BackColor = System.Drawing.Color.White;
             this.asiento14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento14.Location = new System.Drawing.Point(127, 117);
-            this.asiento14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento14.Margin = new System.Windows.Forms.Padding(2);
             this.asiento14.Name = "asiento14";
             this.asiento14.Size = new System.Drawing.Size(41, 28);
             this.asiento14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2066,7 +2082,7 @@
             this.asiento12.BackColor = System.Drawing.Color.White;
             this.asiento12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento12.Location = new System.Drawing.Point(46, 117);
-            this.asiento12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento12.Margin = new System.Windows.Forms.Padding(2);
             this.asiento12.Name = "asiento12";
             this.asiento12.Size = new System.Drawing.Size(41, 28);
             this.asiento12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2080,7 +2096,7 @@
             this.asiento11.BackColor = System.Drawing.Color.White;
             this.asiento11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento11.Location = new System.Drawing.Point(5, 117);
-            this.asiento11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento11.Margin = new System.Windows.Forms.Padding(2);
             this.asiento11.Name = "asiento11";
             this.asiento11.Size = new System.Drawing.Size(41, 28);
             this.asiento11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2094,7 +2110,7 @@
             this.asiento10.BackColor = System.Drawing.Color.White;
             this.asiento10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento10.Location = new System.Drawing.Point(167, 74);
-            this.asiento10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento10.Margin = new System.Windows.Forms.Padding(2);
             this.asiento10.Name = "asiento10";
             this.asiento10.Size = new System.Drawing.Size(41, 28);
             this.asiento10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2108,7 +2124,7 @@
             this.asiento9.BackColor = System.Drawing.Color.White;
             this.asiento9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento9.Location = new System.Drawing.Point(127, 74);
-            this.asiento9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento9.Margin = new System.Windows.Forms.Padding(2);
             this.asiento9.Name = "asiento9";
             this.asiento9.Size = new System.Drawing.Size(41, 28);
             this.asiento9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2122,7 +2138,7 @@
             this.asiento7.BackColor = System.Drawing.Color.White;
             this.asiento7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento7.Location = new System.Drawing.Point(46, 74);
-            this.asiento7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento7.Margin = new System.Windows.Forms.Padding(2);
             this.asiento7.Name = "asiento7";
             this.asiento7.Size = new System.Drawing.Size(41, 28);
             this.asiento7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2136,7 +2152,7 @@
             this.asiento6.BackColor = System.Drawing.Color.White;
             this.asiento6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento6.Location = new System.Drawing.Point(5, 74);
-            this.asiento6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento6.Margin = new System.Windows.Forms.Padding(2);
             this.asiento6.Name = "asiento6";
             this.asiento6.Size = new System.Drawing.Size(41, 28);
             this.asiento6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2150,7 +2166,7 @@
             this.asiento5.BackColor = System.Drawing.Color.White;
             this.asiento5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento5.Location = new System.Drawing.Point(167, 31);
-            this.asiento5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento5.Margin = new System.Windows.Forms.Padding(2);
             this.asiento5.Name = "asiento5";
             this.asiento5.Size = new System.Drawing.Size(41, 28);
             this.asiento5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2164,7 +2180,7 @@
             this.asiento4.BackColor = System.Drawing.Color.White;
             this.asiento4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento4.Location = new System.Drawing.Point(127, 31);
-            this.asiento4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento4.Margin = new System.Windows.Forms.Padding(2);
             this.asiento4.Name = "asiento4";
             this.asiento4.Size = new System.Drawing.Size(41, 28);
             this.asiento4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2178,7 +2194,7 @@
             this.asiento2.BackColor = System.Drawing.Color.White;
             this.asiento2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento2.Location = new System.Drawing.Point(46, 31);
-            this.asiento2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento2.Margin = new System.Windows.Forms.Padding(2);
             this.asiento2.Name = "asiento2";
             this.asiento2.Size = new System.Drawing.Size(41, 28);
             this.asiento2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2192,7 +2208,7 @@
             this.asiento1.BackColor = System.Drawing.Color.White;
             this.asiento1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.asiento1.Location = new System.Drawing.Point(5, 31);
-            this.asiento1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.asiento1.Margin = new System.Windows.Forms.Padding(2);
             this.asiento1.Name = "asiento1";
             this.asiento1.Size = new System.Drawing.Size(41, 28);
             this.asiento1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2208,7 +2224,7 @@
             this.pasilloasiento64.Enabled = false;
             this.pasilloasiento64.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento64.Location = new System.Drawing.Point(128, 532);
-            this.pasilloasiento64.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento64.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento64.Multiline = true;
             this.pasilloasiento64.Name = "pasilloasiento64";
             this.pasilloasiento64.ReadOnly = true;
@@ -2224,7 +2240,7 @@
             this.pasilloasiento63.Enabled = false;
             this.pasilloasiento63.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento63.Location = new System.Drawing.Point(88, 532);
-            this.pasilloasiento63.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento63.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento63.Multiline = true;
             this.pasilloasiento63.Name = "pasilloasiento63";
             this.pasilloasiento63.ReadOnly = true;
@@ -2240,7 +2256,7 @@
             this.pasilloasiento62.Enabled = false;
             this.pasilloasiento62.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento62.Location = new System.Drawing.Point(47, 532);
-            this.pasilloasiento62.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento62.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento62.Multiline = true;
             this.pasilloasiento62.Name = "pasilloasiento62";
             this.pasilloasiento62.ReadOnly = true;
@@ -2256,7 +2272,7 @@
             this.pasilloasiento61.Enabled = false;
             this.pasilloasiento61.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento61.Location = new System.Drawing.Point(7, 532);
-            this.pasilloasiento61.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento61.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento61.Multiline = true;
             this.pasilloasiento61.Name = "pasilloasiento61";
             this.pasilloasiento61.ReadOnly = true;
@@ -2272,7 +2288,7 @@
             this.pasilloasiento65.Enabled = false;
             this.pasilloasiento65.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento65.Location = new System.Drawing.Point(169, 532);
-            this.pasilloasiento65.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento65.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento65.Multiline = true;
             this.pasilloasiento65.Name = "pasilloasiento65";
             this.pasilloasiento65.ReadOnly = true;
@@ -2288,7 +2304,7 @@
             this.pasilloasiento59.Enabled = false;
             this.pasilloasiento59.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento59.Location = new System.Drawing.Point(128, 489);
-            this.pasilloasiento59.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento59.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento59.Multiline = true;
             this.pasilloasiento59.Name = "pasilloasiento59";
             this.pasilloasiento59.ReadOnly = true;
@@ -2304,7 +2320,7 @@
             this.pasilloasiento58.Enabled = false;
             this.pasilloasiento58.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento58.Location = new System.Drawing.Point(88, 489);
-            this.pasilloasiento58.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento58.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento58.Multiline = true;
             this.pasilloasiento58.Name = "pasilloasiento58";
             this.pasilloasiento58.ReadOnly = true;
@@ -2320,7 +2336,7 @@
             this.pasilloasiento57.Enabled = false;
             this.pasilloasiento57.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento57.Location = new System.Drawing.Point(47, 489);
-            this.pasilloasiento57.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento57.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento57.Multiline = true;
             this.pasilloasiento57.Name = "pasilloasiento57";
             this.pasilloasiento57.ReadOnly = true;
@@ -2336,7 +2352,7 @@
             this.pasilloasiento56.Enabled = false;
             this.pasilloasiento56.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento56.Location = new System.Drawing.Point(7, 489);
-            this.pasilloasiento56.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento56.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento56.Multiline = true;
             this.pasilloasiento56.Name = "pasilloasiento56";
             this.pasilloasiento56.ReadOnly = true;
@@ -2352,7 +2368,7 @@
             this.pasilloasiento60.Enabled = false;
             this.pasilloasiento60.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento60.Location = new System.Drawing.Point(169, 489);
-            this.pasilloasiento60.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento60.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento60.Multiline = true;
             this.pasilloasiento60.Name = "pasilloasiento60";
             this.pasilloasiento60.ReadOnly = true;
@@ -2368,7 +2384,7 @@
             this.pasilloasiento55.Enabled = false;
             this.pasilloasiento55.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento55.Location = new System.Drawing.Point(168, 446);
-            this.pasilloasiento55.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento55.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento55.Multiline = true;
             this.pasilloasiento55.Name = "pasilloasiento55";
             this.pasilloasiento55.ReadOnly = true;
@@ -2384,7 +2400,7 @@
             this.pasilloasiento54.Enabled = false;
             this.pasilloasiento54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento54.Location = new System.Drawing.Point(128, 446);
-            this.pasilloasiento54.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento54.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento54.Multiline = true;
             this.pasilloasiento54.Name = "pasilloasiento54";
             this.pasilloasiento54.ReadOnly = true;
@@ -2400,7 +2416,7 @@
             this.pasilloasiento53.Enabled = false;
             this.pasilloasiento53.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento53.Location = new System.Drawing.Point(88, 446);
-            this.pasilloasiento53.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento53.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento53.Multiline = true;
             this.pasilloasiento53.Name = "pasilloasiento53";
             this.pasilloasiento53.ReadOnly = true;
@@ -2416,7 +2432,7 @@
             this.pasilloasiento52.Enabled = false;
             this.pasilloasiento52.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento52.Location = new System.Drawing.Point(47, 446);
-            this.pasilloasiento52.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento52.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento52.Multiline = true;
             this.pasilloasiento52.Name = "pasilloasiento52";
             this.pasilloasiento52.ReadOnly = true;
@@ -2432,7 +2448,7 @@
             this.pasilloasiento51.Enabled = false;
             this.pasilloasiento51.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento51.Location = new System.Drawing.Point(7, 446);
-            this.pasilloasiento51.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento51.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento51.Multiline = true;
             this.pasilloasiento51.Name = "pasilloasiento51";
             this.pasilloasiento51.ReadOnly = true;
@@ -2448,7 +2464,7 @@
             this.pasilloasiento50.Enabled = false;
             this.pasilloasiento50.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento50.Location = new System.Drawing.Point(168, 403);
-            this.pasilloasiento50.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento50.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento50.Multiline = true;
             this.pasilloasiento50.Name = "pasilloasiento50";
             this.pasilloasiento50.ReadOnly = true;
@@ -2464,7 +2480,7 @@
             this.pasilloasiento49.Enabled = false;
             this.pasilloasiento49.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento49.Location = new System.Drawing.Point(128, 403);
-            this.pasilloasiento49.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento49.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento49.Multiline = true;
             this.pasilloasiento49.Name = "pasilloasiento49";
             this.pasilloasiento49.ReadOnly = true;
@@ -2480,7 +2496,7 @@
             this.pasilloasiento48.Enabled = false;
             this.pasilloasiento48.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento48.Location = new System.Drawing.Point(88, 403);
-            this.pasilloasiento48.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento48.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento48.Multiline = true;
             this.pasilloasiento48.Name = "pasilloasiento48";
             this.pasilloasiento48.ReadOnly = true;
@@ -2496,7 +2512,7 @@
             this.pasilloasiento47.Enabled = false;
             this.pasilloasiento47.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento47.Location = new System.Drawing.Point(47, 403);
-            this.pasilloasiento47.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento47.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento47.Multiline = true;
             this.pasilloasiento47.Name = "pasilloasiento47";
             this.pasilloasiento47.ReadOnly = true;
@@ -2512,7 +2528,7 @@
             this.pasilloasiento46.Enabled = false;
             this.pasilloasiento46.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento46.Location = new System.Drawing.Point(7, 403);
-            this.pasilloasiento46.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento46.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento46.Multiline = true;
             this.pasilloasiento46.Name = "pasilloasiento46";
             this.pasilloasiento46.ReadOnly = true;
@@ -2528,7 +2544,7 @@
             this.pasilloasiento45.Enabled = false;
             this.pasilloasiento45.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento45.Location = new System.Drawing.Point(168, 360);
-            this.pasilloasiento45.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento45.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento45.Multiline = true;
             this.pasilloasiento45.Name = "pasilloasiento45";
             this.pasilloasiento45.ReadOnly = true;
@@ -2544,7 +2560,7 @@
             this.pasilloasiento44.Enabled = false;
             this.pasilloasiento44.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento44.Location = new System.Drawing.Point(128, 360);
-            this.pasilloasiento44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento44.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento44.Multiline = true;
             this.pasilloasiento44.Name = "pasilloasiento44";
             this.pasilloasiento44.ReadOnly = true;
@@ -2560,7 +2576,7 @@
             this.pasilloasiento43.Enabled = false;
             this.pasilloasiento43.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento43.Location = new System.Drawing.Point(88, 360);
-            this.pasilloasiento43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento43.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento43.Multiline = true;
             this.pasilloasiento43.Name = "pasilloasiento43";
             this.pasilloasiento43.ReadOnly = true;
@@ -2576,7 +2592,7 @@
             this.pasilloasiento42.Enabled = false;
             this.pasilloasiento42.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento42.Location = new System.Drawing.Point(47, 360);
-            this.pasilloasiento42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento42.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento42.Multiline = true;
             this.pasilloasiento42.Name = "pasilloasiento42";
             this.pasilloasiento42.ReadOnly = true;
@@ -2592,7 +2608,7 @@
             this.pasilloasiento41.Enabled = false;
             this.pasilloasiento41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento41.Location = new System.Drawing.Point(7, 360);
-            this.pasilloasiento41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento41.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento41.Multiline = true;
             this.pasilloasiento41.Name = "pasilloasiento41";
             this.pasilloasiento41.ReadOnly = true;
@@ -2608,7 +2624,7 @@
             this.pasilloasiento40.Enabled = false;
             this.pasilloasiento40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento40.Location = new System.Drawing.Point(168, 317);
-            this.pasilloasiento40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento40.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento40.Multiline = true;
             this.pasilloasiento40.Name = "pasilloasiento40";
             this.pasilloasiento40.ReadOnly = true;
@@ -2624,7 +2640,7 @@
             this.pasilloasiento39.Enabled = false;
             this.pasilloasiento39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento39.Location = new System.Drawing.Point(128, 317);
-            this.pasilloasiento39.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento39.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento39.Multiline = true;
             this.pasilloasiento39.Name = "pasilloasiento39";
             this.pasilloasiento39.ReadOnly = true;
@@ -2640,7 +2656,7 @@
             this.pasilloasiento38.Enabled = false;
             this.pasilloasiento38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento38.Location = new System.Drawing.Point(87, 317);
-            this.pasilloasiento38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento38.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento38.Multiline = true;
             this.pasilloasiento38.Name = "pasilloasiento38";
             this.pasilloasiento38.ReadOnly = true;
@@ -2656,7 +2672,7 @@
             this.pasilloasiento37.Enabled = false;
             this.pasilloasiento37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento37.Location = new System.Drawing.Point(46, 317);
-            this.pasilloasiento37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento37.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento37.Multiline = true;
             this.pasilloasiento37.Name = "pasilloasiento37";
             this.pasilloasiento37.ReadOnly = true;
@@ -2672,7 +2688,7 @@
             this.pasilloasiento36.Enabled = false;
             this.pasilloasiento36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento36.Location = new System.Drawing.Point(6, 317);
-            this.pasilloasiento36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento36.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento36.Multiline = true;
             this.pasilloasiento36.Name = "pasilloasiento36";
             this.pasilloasiento36.ReadOnly = true;
@@ -2688,7 +2704,7 @@
             this.pasilloasiento35.Enabled = false;
             this.pasilloasiento35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento35.Location = new System.Drawing.Point(168, 274);
-            this.pasilloasiento35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento35.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento35.Multiline = true;
             this.pasilloasiento35.Name = "pasilloasiento35";
             this.pasilloasiento35.ReadOnly = true;
@@ -2704,7 +2720,7 @@
             this.pasilloasiento34.Enabled = false;
             this.pasilloasiento34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento34.Location = new System.Drawing.Point(128, 274);
-            this.pasilloasiento34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento34.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento34.Multiline = true;
             this.pasilloasiento34.Name = "pasilloasiento34";
             this.pasilloasiento34.ReadOnly = true;
@@ -2720,7 +2736,7 @@
             this.pasilloasiento33.Enabled = false;
             this.pasilloasiento33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento33.Location = new System.Drawing.Point(87, 274);
-            this.pasilloasiento33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento33.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento33.Multiline = true;
             this.pasilloasiento33.Name = "pasilloasiento33";
             this.pasilloasiento33.ReadOnly = true;
@@ -2736,7 +2752,7 @@
             this.pasilloasiento32.Enabled = false;
             this.pasilloasiento32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento32.Location = new System.Drawing.Point(46, 274);
-            this.pasilloasiento32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento32.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento32.Multiline = true;
             this.pasilloasiento32.Name = "pasilloasiento32";
             this.pasilloasiento32.ReadOnly = true;
@@ -2752,7 +2768,7 @@
             this.pasilloasiento31.Enabled = false;
             this.pasilloasiento31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento31.Location = new System.Drawing.Point(6, 274);
-            this.pasilloasiento31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento31.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento31.Multiline = true;
             this.pasilloasiento31.Name = "pasilloasiento31";
             this.pasilloasiento31.ReadOnly = true;
@@ -2768,7 +2784,7 @@
             this.pasilloasiento30.Enabled = false;
             this.pasilloasiento30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento30.Location = new System.Drawing.Point(168, 231);
-            this.pasilloasiento30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento30.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento30.Multiline = true;
             this.pasilloasiento30.Name = "pasilloasiento30";
             this.pasilloasiento30.ReadOnly = true;
@@ -2784,7 +2800,7 @@
             this.pasilloasiento29.Enabled = false;
             this.pasilloasiento29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento29.Location = new System.Drawing.Point(128, 231);
-            this.pasilloasiento29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento29.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento29.Multiline = true;
             this.pasilloasiento29.Name = "pasilloasiento29";
             this.pasilloasiento29.ReadOnly = true;
@@ -2800,7 +2816,7 @@
             this.pasilloasiento28.Enabled = false;
             this.pasilloasiento28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento28.Location = new System.Drawing.Point(87, 231);
-            this.pasilloasiento28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento28.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento28.Multiline = true;
             this.pasilloasiento28.Name = "pasilloasiento28";
             this.pasilloasiento28.ReadOnly = true;
@@ -2816,7 +2832,7 @@
             this.pasilloasiento27.Enabled = false;
             this.pasilloasiento27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento27.Location = new System.Drawing.Point(46, 231);
-            this.pasilloasiento27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento27.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento27.Multiline = true;
             this.pasilloasiento27.Name = "pasilloasiento27";
             this.pasilloasiento27.ReadOnly = true;
@@ -2832,7 +2848,7 @@
             this.pasilloasiento26.Enabled = false;
             this.pasilloasiento26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento26.Location = new System.Drawing.Point(6, 231);
-            this.pasilloasiento26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento26.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento26.Multiline = true;
             this.pasilloasiento26.Name = "pasilloasiento26";
             this.pasilloasiento26.ReadOnly = true;
@@ -2848,7 +2864,7 @@
             this.pasilloasiento25.Enabled = false;
             this.pasilloasiento25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento25.Location = new System.Drawing.Point(168, 188);
-            this.pasilloasiento25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento25.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento25.Multiline = true;
             this.pasilloasiento25.Name = "pasilloasiento25";
             this.pasilloasiento25.ReadOnly = true;
@@ -2864,7 +2880,7 @@
             this.pasilloasiento24.Enabled = false;
             this.pasilloasiento24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento24.Location = new System.Drawing.Point(128, 188);
-            this.pasilloasiento24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento24.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento24.Multiline = true;
             this.pasilloasiento24.Name = "pasilloasiento24";
             this.pasilloasiento24.ReadOnly = true;
@@ -2880,7 +2896,7 @@
             this.pasilloasiento23.Enabled = false;
             this.pasilloasiento23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento23.Location = new System.Drawing.Point(87, 188);
-            this.pasilloasiento23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento23.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento23.Multiline = true;
             this.pasilloasiento23.Name = "pasilloasiento23";
             this.pasilloasiento23.ReadOnly = true;
@@ -2896,7 +2912,7 @@
             this.pasilloasiento22.Enabled = false;
             this.pasilloasiento22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento22.Location = new System.Drawing.Point(46, 188);
-            this.pasilloasiento22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento22.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento22.Multiline = true;
             this.pasilloasiento22.Name = "pasilloasiento22";
             this.pasilloasiento22.ReadOnly = true;
@@ -2912,7 +2928,7 @@
             this.pasilloasiento21.Enabled = false;
             this.pasilloasiento21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento21.Location = new System.Drawing.Point(6, 188);
-            this.pasilloasiento21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento21.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento21.Multiline = true;
             this.pasilloasiento21.Name = "pasilloasiento21";
             this.pasilloasiento21.ReadOnly = true;
@@ -2928,7 +2944,7 @@
             this.pasilloasiento20.Enabled = false;
             this.pasilloasiento20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento20.Location = new System.Drawing.Point(168, 145);
-            this.pasilloasiento20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento20.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento20.Multiline = true;
             this.pasilloasiento20.Name = "pasilloasiento20";
             this.pasilloasiento20.ReadOnly = true;
@@ -2944,7 +2960,7 @@
             this.pasilloasiento19.Enabled = false;
             this.pasilloasiento19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento19.Location = new System.Drawing.Point(128, 145);
-            this.pasilloasiento19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento19.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento19.Multiline = true;
             this.pasilloasiento19.Name = "pasilloasiento19";
             this.pasilloasiento19.ReadOnly = true;
@@ -2960,7 +2976,7 @@
             this.pasilloasiento18.Enabled = false;
             this.pasilloasiento18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento18.Location = new System.Drawing.Point(87, 145);
-            this.pasilloasiento18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento18.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento18.Multiline = true;
             this.pasilloasiento18.Name = "pasilloasiento18";
             this.pasilloasiento18.ReadOnly = true;
@@ -2976,7 +2992,7 @@
             this.pasilloasiento17.Enabled = false;
             this.pasilloasiento17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento17.Location = new System.Drawing.Point(46, 145);
-            this.pasilloasiento17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento17.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento17.Multiline = true;
             this.pasilloasiento17.Name = "pasilloasiento17";
             this.pasilloasiento17.ReadOnly = true;
@@ -2992,7 +3008,7 @@
             this.pasilloasiento16.Enabled = false;
             this.pasilloasiento16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento16.Location = new System.Drawing.Point(6, 145);
-            this.pasilloasiento16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento16.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento16.Multiline = true;
             this.pasilloasiento16.Name = "pasilloasiento16";
             this.pasilloasiento16.ReadOnly = true;
@@ -3008,7 +3024,7 @@
             this.pasilloasiento15.Enabled = false;
             this.pasilloasiento15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento15.Location = new System.Drawing.Point(167, 102);
-            this.pasilloasiento15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento15.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento15.Multiline = true;
             this.pasilloasiento15.Name = "pasilloasiento15";
             this.pasilloasiento15.ReadOnly = true;
@@ -3024,7 +3040,7 @@
             this.pasilloasiento14.Enabled = false;
             this.pasilloasiento14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento14.Location = new System.Drawing.Point(127, 102);
-            this.pasilloasiento14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento14.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento14.Multiline = true;
             this.pasilloasiento14.Name = "pasilloasiento14";
             this.pasilloasiento14.ReadOnly = true;
@@ -3040,7 +3056,7 @@
             this.pasilloasiento13.Enabled = false;
             this.pasilloasiento13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento13.Location = new System.Drawing.Point(86, 102);
-            this.pasilloasiento13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento13.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento13.Multiline = true;
             this.pasilloasiento13.Name = "pasilloasiento13";
             this.pasilloasiento13.ReadOnly = true;
@@ -3056,7 +3072,7 @@
             this.pasilloasiento12.Enabled = false;
             this.pasilloasiento12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento12.Location = new System.Drawing.Point(46, 102);
-            this.pasilloasiento12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento12.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento12.Multiline = true;
             this.pasilloasiento12.Name = "pasilloasiento12";
             this.pasilloasiento12.ReadOnly = true;
@@ -3072,7 +3088,7 @@
             this.pasilloasiento11.Enabled = false;
             this.pasilloasiento11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento11.Location = new System.Drawing.Point(5, 102);
-            this.pasilloasiento11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento11.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento11.Multiline = true;
             this.pasilloasiento11.Name = "pasilloasiento11";
             this.pasilloasiento11.ReadOnly = true;
@@ -3088,7 +3104,7 @@
             this.pasilloasiento10.Enabled = false;
             this.pasilloasiento10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento10.Location = new System.Drawing.Point(167, 58);
-            this.pasilloasiento10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento10.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento10.Multiline = true;
             this.pasilloasiento10.Name = "pasilloasiento10";
             this.pasilloasiento10.ReadOnly = true;
@@ -3104,7 +3120,7 @@
             this.pasilloasiento9.Enabled = false;
             this.pasilloasiento9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento9.Location = new System.Drawing.Point(127, 58);
-            this.pasilloasiento9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento9.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento9.Multiline = true;
             this.pasilloasiento9.Name = "pasilloasiento9";
             this.pasilloasiento9.ReadOnly = true;
@@ -3120,7 +3136,7 @@
             this.pasilloasiento8.Enabled = false;
             this.pasilloasiento8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento8.Location = new System.Drawing.Point(86, 58);
-            this.pasilloasiento8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento8.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento8.Multiline = true;
             this.pasilloasiento8.Name = "pasilloasiento8";
             this.pasilloasiento8.ReadOnly = true;
@@ -3136,7 +3152,7 @@
             this.pasilloasiento7.Enabled = false;
             this.pasilloasiento7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento7.Location = new System.Drawing.Point(46, 58);
-            this.pasilloasiento7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento7.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento7.Multiline = true;
             this.pasilloasiento7.Name = "pasilloasiento7";
             this.pasilloasiento7.ReadOnly = true;
@@ -3152,7 +3168,7 @@
             this.pasilloasiento6.Enabled = false;
             this.pasilloasiento6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento6.Location = new System.Drawing.Point(5, 58);
-            this.pasilloasiento6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento6.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento6.Multiline = true;
             this.pasilloasiento6.Name = "pasilloasiento6";
             this.pasilloasiento6.ReadOnly = true;
@@ -3168,7 +3184,7 @@
             this.pasilloasiento5.Enabled = false;
             this.pasilloasiento5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento5.Location = new System.Drawing.Point(167, 15);
-            this.pasilloasiento5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento5.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento5.Multiline = true;
             this.pasilloasiento5.Name = "pasilloasiento5";
             this.pasilloasiento5.ReadOnly = true;
@@ -3184,7 +3200,7 @@
             this.pasilloasiento4.Enabled = false;
             this.pasilloasiento4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento4.Location = new System.Drawing.Point(127, 15);
-            this.pasilloasiento4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento4.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento4.Multiline = true;
             this.pasilloasiento4.Name = "pasilloasiento4";
             this.pasilloasiento4.ReadOnly = true;
@@ -3200,7 +3216,7 @@
             this.pasilloasiento3.Enabled = false;
             this.pasilloasiento3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento3.Location = new System.Drawing.Point(86, 15);
-            this.pasilloasiento3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento3.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento3.Multiline = true;
             this.pasilloasiento3.Name = "pasilloasiento3";
             this.pasilloasiento3.ReadOnly = true;
@@ -3216,7 +3232,7 @@
             this.pasilloasiento2.Enabled = false;
             this.pasilloasiento2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasilloasiento2.Location = new System.Drawing.Point(46, 15);
-            this.pasilloasiento2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento2.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento2.Multiline = true;
             this.pasilloasiento2.Name = "pasilloasiento2";
             this.pasilloasiento2.ReadOnly = true;
@@ -3233,7 +3249,7 @@
             this.pasilloasiento1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.pasilloasiento1.ForeColor = System.Drawing.Color.White;
             this.pasilloasiento1.Location = new System.Drawing.Point(5, 15);
-            this.pasilloasiento1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasilloasiento1.Margin = new System.Windows.Forms.Padding(2);
             this.pasilloasiento1.Multiline = true;
             this.pasilloasiento1.Name = "pasilloasiento1";
             this.pasilloasiento1.ReadOnly = true;
@@ -3249,7 +3265,7 @@
             this.textBox5.Enabled = false;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(168, 2);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
@@ -3264,7 +3280,7 @@
             this.textBox131.Enabled = false;
             this.textBox131.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox131.Location = new System.Drawing.Point(127, 2);
-            this.textBox131.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox131.Margin = new System.Windows.Forms.Padding(2);
             this.textBox131.Multiline = true;
             this.textBox131.Name = "textBox131";
             this.textBox131.ReadOnly = true;
@@ -3279,7 +3295,7 @@
             this.pasillo1.Enabled = false;
             this.pasillo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pasillo1.Location = new System.Drawing.Point(86, 2);
-            this.pasillo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pasillo1.Margin = new System.Windows.Forms.Padding(2);
             this.pasillo1.Multiline = true;
             this.pasillo1.Name = "pasillo1";
             this.pasillo1.ReadOnly = true;
@@ -3294,7 +3310,7 @@
             this.textBox133.Enabled = false;
             this.textBox133.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox133.Location = new System.Drawing.Point(45, 2);
-            this.textBox133.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox133.Margin = new System.Windows.Forms.Padding(2);
             this.textBox133.Multiline = true;
             this.textBox133.Name = "textBox133";
             this.textBox133.ReadOnly = true;
@@ -3309,7 +3325,7 @@
             this.textBox134.Enabled = false;
             this.textBox134.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox134.Location = new System.Drawing.Point(4, 2);
-            this.textBox134.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox134.Margin = new System.Windows.Forms.Padding(2);
             this.textBox134.Multiline = true;
             this.textBox134.Name = "textBox134";
             this.textBox134.ReadOnly = true;
@@ -3321,10 +3337,10 @@
             // 
             this.tabPage1.ImageKey = "icons8-sales-64.png";
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1928, 1007);
+            this.tabPage1.Size = new System.Drawing.Size(1928, 1003);
             this.tabPage1.TabIndex = 10;
             this.tabPage1.Text = "Ventas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -3333,21 +3349,21 @@
             // 
             this.tabPage2.ImageKey = "icons8-sales-100 (1).png";
             this.tabPage2.Location = new System.Drawing.Point(4, 39);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1928, 1007);
+            this.tabPage2.Size = new System.Drawing.Size(1928, 1003);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Ventas G";
+            this.tabPage2.Text = "Ventas grupal";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
             this.tabPage3.ImageKey = "icons8-external-link-50.png";
             this.tabPage3.Location = new System.Drawing.Point(4, 39);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1928, 1007);
+            this.tabPage3.Size = new System.Drawing.Size(1928, 1003);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Apartados";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -3356,20 +3372,21 @@
             // 
             this.tabPage4.ImageKey = "icons8-client-96.png";
             this.tabPage4.Location = new System.Drawing.Point(4, 39);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1928, 1007);
+            this.tabPage4.Size = new System.Drawing.Size(1928, 1003);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Clientes";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.materialCard5);
             this.tabPage5.ImageKey = "icons8-box-100.png";
             this.tabPage5.Location = new System.Drawing.Point(4, 39);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1928, 1007);
+            this.tabPage5.Size = new System.Drawing.Size(1928, 1003);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Caja";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -3378,9 +3395,9 @@
             // 
             this.tabPage6.ImageKey = "icons8-suitcase-100.png";
             this.tabPage6.Location = new System.Drawing.Point(4, 39);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1928, 1007);
+            this.tabPage6.Size = new System.Drawing.Size(1928, 1003);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Maleta";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -3389,9 +3406,9 @@
             // 
             this.btnAdministrador.ImageKey = "icons8-admin-96.png";
             this.btnAdministrador.Location = new System.Drawing.Point(4, 39);
-            this.btnAdministrador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdministrador.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdministrador.Name = "btnAdministrador";
-            this.btnAdministrador.Size = new System.Drawing.Size(1928, 1007);
+            this.btnAdministrador.Size = new System.Drawing.Size(1928, 1003);
             this.btnAdministrador.TabIndex = 6;
             this.btnAdministrador.Text = "Admin";
             this.btnAdministrador.UseVisualStyleBackColor = true;
@@ -3400,9 +3417,9 @@
             // 
             this.btnReportes.ImageKey = "icons8-reports-100.png";
             this.btnReportes.Location = new System.Drawing.Point(4, 39);
-            this.btnReportes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(2);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(1928, 1007);
+            this.btnReportes.Size = new System.Drawing.Size(1928, 1003);
             this.btnReportes.TabIndex = 7;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = true;
@@ -3411,20 +3428,20 @@
             // 
             this.btnConfiguracion.ImageKey = "icons8-settings-96.png";
             this.btnConfiguracion.Location = new System.Drawing.Point(4, 39);
-            this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(1928, 1007);
+            this.btnConfiguracion.Size = new System.Drawing.Size(1928, 1003);
             this.btnConfiguracion.TabIndex = 8;
             this.btnConfiguracion.Text = "Config";
             this.btnConfiguracion.UseVisualStyleBackColor = true;
             // 
             // tabPage10
             // 
-            this.tabPage10.ImageKey = "icons8-assistance-68.png";
+            this.tabPage10.ImageKey = "icons8-checked-user-male-100.png";
             this.tabPage10.Location = new System.Drawing.Point(4, 39);
-            this.tabPage10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage10.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1928, 1007);
+            this.tabPage10.Size = new System.Drawing.Size(1928, 1003);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "Asistencia";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -3433,9 +3450,9 @@
             // 
             this.tabPage11.ImageKey = "icons8-exit-100.png";
             this.tabPage11.Location = new System.Drawing.Point(4, 39);
-            this.tabPage11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage11.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1928, 1007);
+            this.tabPage11.Size = new System.Drawing.Size(1928, 1003);
             this.tabPage11.TabIndex = 11;
             this.tabPage11.Text = "Salir";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -3456,22 +3473,210 @@
             this.imageListmMenu.Images.SetKeyName(9, "icons8-settings-96.png");
             this.imageListmMenu.Images.SetKeyName(10, "icons8-home-96.png");
             this.imageListmMenu.Images.SetKeyName(11, "icons8-exit-100.png");
+            this.imageListmMenu.Images.SetKeyName(12, "icons8-checked-user-male-100.png");
+            // 
+            // MenuStripCaja
+            // 
+            this.MenuStripCaja.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.MenuStripCaja.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.MenuStripCaja.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.MenuStripCaja.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemDepositos,
+            this.toolStripMenuItemRetirosCajaLLena,
+            this.toolStripMenuItemRetirosPagos,
+            this.toolStripMenuItemInformacionDeCaja,
+            this.toolStripMenuItemCerrarCaja});
+            this.MenuStripCaja.Name = "MenuStripEscaneos";
+            this.MenuStripCaja.Size = new System.Drawing.Size(236, 134);
+            this.MenuStripCaja.Text = "Caja";
+            // 
+            // toolStripMenuItemDepositos
+            // 
+            this.toolStripMenuItemDepositos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItemDepositos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolStripMenuItemDepositos.Name = "toolStripMenuItemDepositos";
+            this.toolStripMenuItemDepositos.Size = new System.Drawing.Size(235, 26);
+            this.toolStripMenuItemDepositos.Text = "Depósitos";
+            // 
+            // toolStripMenuItemRetirosCajaLLena
+            // 
+            this.toolStripMenuItemRetirosCajaLLena.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItemRetirosCajaLLena.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolStripMenuItemRetirosCajaLLena.Name = "toolStripMenuItemRetirosCajaLLena";
+            this.toolStripMenuItemRetirosCajaLLena.Size = new System.Drawing.Size(235, 26);
+            this.toolStripMenuItemRetirosCajaLLena.Text = "Retiros Caja LLena";
+            // 
+            // toolStripMenuItemRetirosPagos
+            // 
+            this.toolStripMenuItemRetirosPagos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItemRetirosPagos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolStripMenuItemRetirosPagos.Name = "toolStripMenuItemRetirosPagos";
+            this.toolStripMenuItemRetirosPagos.Size = new System.Drawing.Size(235, 26);
+            this.toolStripMenuItemRetirosPagos.Text = "Retiros Pagos";
+            // 
+            // toolStripMenuItemInformacionDeCaja
+            // 
+            this.toolStripMenuItemInformacionDeCaja.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItemInformacionDeCaja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolStripMenuItemInformacionDeCaja.Name = "toolStripMenuItemInformacionDeCaja";
+            this.toolStripMenuItemInformacionDeCaja.Size = new System.Drawing.Size(235, 26);
+            this.toolStripMenuItemInformacionDeCaja.Text = "Información de caja ";
+            // 
+            // toolStripMenuItemCerrarCaja
+            // 
+            this.toolStripMenuItemCerrarCaja.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItemCerrarCaja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolStripMenuItemCerrarCaja.Name = "toolStripMenuItemCerrarCaja";
+            this.toolStripMenuItemCerrarCaja.Size = new System.Drawing.Size(235, 26);
+            this.toolStripMenuItemCerrarCaja.Text = "Cerrar Caja";
+            // 
+            // materialCard5
+            // 
+            this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard5.Controls.Add(this.materialLabel12);
+            this.materialCard5.Controls.Add(this.materialButton5);
+            this.materialCard5.Controls.Add(this.materialButton4);
+            this.materialCard5.Controls.Add(this.materialButton3);
+            this.materialCard5.Controls.Add(this.materialButton2);
+            this.materialCard5.Controls.Add(this.materialButton1);
+            this.materialCard5.Depth = 0;
+            this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard5.Location = new System.Drawing.Point(142, 52);
+            this.materialCard5.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard5.Name = "materialCard5";
+            this.materialCard5.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard5.Size = new System.Drawing.Size(905, 311);
+            this.materialCard5.TabIndex = 1;
+            // 
+            // materialLabel12
+            // 
+            this.materialLabel12.AutoSize = true;
+            this.materialLabel12.Depth = 0;
+            this.materialLabel12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel12.ForeColor = System.Drawing.Color.Black;
+            this.materialLabel12.Location = new System.Drawing.Point(365, 28);
+            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel12.Name = "materialLabel12";
+            this.materialLabel12.Size = new System.Drawing.Size(122, 19);
+            this.materialLabel12.TabIndex = 5;
+            this.materialLabel12.Text = "Opciones de caja";
+            // 
+            // materialButton5
+            // 
+            this.materialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton5.Depth = 0;
+            this.materialButton5.HighEmphasis = true;
+            this.materialButton5.Icon = null;
+            this.materialButton5.Location = new System.Drawing.Point(662, 74);
+            this.materialButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton5.Name = "materialButton5";
+            this.materialButton5.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton5.Size = new System.Drawing.Size(117, 36);
+            this.materialButton5.TabIndex = 4;
+            this.materialButton5.Text = "Cerrar caja";
+            this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton5.UseAccentColor = false;
+            this.materialButton5.UseVisualStyleBackColor = true;
+            this.materialButton5.Click += new System.EventHandler(this.toolStripMenuItemCerrarCaja_Click);
+            // 
+            // materialButton4
+            // 
+            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton4.Depth = 0;
+            this.materialButton4.HighEmphasis = true;
+            this.materialButton4.Icon = null;
+            this.materialButton4.Location = new System.Drawing.Point(322, 74);
+            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton4.Name = "materialButton4";
+            this.materialButton4.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton4.Size = new System.Drawing.Size(132, 36);
+            this.materialButton4.TabIndex = 3;
+            this.materialButton4.Text = "Retiros pagos";
+            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton4.UseAccentColor = false;
+            this.materialButton4.UseVisualStyleBackColor = true;
+            this.materialButton4.Click += new System.EventHandler(this.toolStripMenuItemRetirosPagos_Click);
+            // 
+            // materialButton3
+            // 
+            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton3.Depth = 0;
+            this.materialButton3.HighEmphasis = true;
+            this.materialButton3.Icon = null;
+            this.materialButton3.Location = new System.Drawing.Point(462, 74);
+            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton3.Name = "materialButton3";
+            this.materialButton3.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton3.Size = new System.Drawing.Size(183, 36);
+            this.materialButton3.TabIndex = 2;
+            this.materialButton3.Text = "Información de caja";
+            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton3.UseAccentColor = false;
+            this.materialButton3.UseVisualStyleBackColor = true;
+            this.materialButton3.Click += new System.EventHandler(this.toolStripMenuItemInformacionDeCaja_Click);
+            // 
+            // materialButton2
+            // 
+            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton2.Depth = 0;
+            this.materialButton2.HighEmphasis = true;
+            this.materialButton2.Icon = null;
+            this.materialButton2.Location = new System.Drawing.Point(136, 74);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton2.Name = "materialButton2";
+            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton2.Size = new System.Drawing.Size(169, 36);
+            this.materialButton2.TabIndex = 1;
+            this.materialButton2.Text = "Retiros caja llena";
+            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton2.UseAccentColor = false;
+            this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.toolStripMenuItemRetirosCajaLLena_Click);
+            // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(28, 74);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(100, 36);
+            this.materialButton1.TabIndex = 0;
+            this.materialButton1.Text = "Depósitos";
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.toolStripMenuItemDepositos_Click);
             // 
             // frmHomeV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1942, 1102);
+            this.ClientSize = new System.Drawing.Size(1940, 1100);
             this.Controls.Add(this.materialTabControl1);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHomeV2";
             this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmHomeV2";
+            this.Text = "Opciones de Inicio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmHomeV2_Load);
             this.materialTabControl1.ResumeLayout(false);
@@ -3564,6 +3769,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.asiento4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento1)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.MenuStripCaja.ResumeLayout(false);
+            this.materialCard5.ResumeLayout(false);
+            this.materialCard5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3766,5 +3975,18 @@
         private System.Windows.Forms.TextBox textBox133;
         private System.Windows.Forms.TextBox textBox134;
         private System.Windows.Forms.ImageList imageListmMenu;
+        private System.Windows.Forms.ContextMenuStrip MenuStripCaja;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemDepositos;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemRetirosCajaLLena;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemRetirosPagos;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemInformacionDeCaja;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemCerrarCaja;
+        private MaterialSkin.Controls.MaterialCard materialCard5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel12;
+        private MaterialSkin.Controls.MaterialButton materialButton5;
+        private MaterialSkin.Controls.MaterialButton materialButton4;
+        private MaterialSkin.Controls.MaterialButton materialButton3;
+        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
     }
 }

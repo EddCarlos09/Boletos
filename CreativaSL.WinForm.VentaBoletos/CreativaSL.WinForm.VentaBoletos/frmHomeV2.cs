@@ -130,8 +130,12 @@ namespace CreativaSL.WinForm.VentaBoletos
 
                             this.Inicializar();
                             frmVentasGrupalV2 frmvg = new frmVentasGrupalV2();
-                            frmvg.ShowDialog();
-                            frmvg.Dispose();
+                            TabPage tabPage = materialTabControl1.TabPages[2]; // Supongamos que el tab deseado está en la posición 0
+                            frmvg.TopLevel = false;
+                            tabPage.Controls.Add(frmvg);
+                            frmvg.FormBorderStyle = FormBorderStyle.None;
+                            frmvg.Dock = DockStyle.Fill;
+                            frmvg.Show();
                         }
                         else
                         {
@@ -153,7 +157,8 @@ namespace CreativaSL.WinForm.VentaBoletos
                         TabPage tabPage = materialTabControl1.TabPages[3]; // Supongamos que el tab deseado está en la posición 0
                         frma.TopLevel = false;
                         tabPage.Controls.Add(frma);
-
+                        frma.FormBorderStyle = FormBorderStyle.None;
+                        frma.Dock = DockStyle.Fill;
                         frma.Show();
                     }
                     else
@@ -168,8 +173,12 @@ namespace CreativaSL.WinForm.VentaBoletos
                         {
                             this.Inicializar();
                             frm_v3_Cliente frmcl = new frm_v3_Cliente();
-                            frmcl.ShowDialog();
-                            frmcl.Dispose();
+                            TabPage tabPage = materialTabControl1.TabPages[4]; // Supongamos que el tab deseado está en la posición 0
+                            frmcl.TopLevel = false;
+                            tabPage.Controls.Add(frmcl);
+                            frmcl.FormBorderStyle = FormBorderStyle.None;
+                            frmcl.Dock = DockStyle.Fill;
+                            frmcl.Show();
                         }
                         else
                         {
@@ -208,9 +217,12 @@ namespace CreativaSL.WinForm.VentaBoletos
                         {
                             this.Inicializar();
                             frmMaletasV2 frma = new frmMaletasV2();
-                            frma.ShowDialog();
-                            frma.Dispose();
-                            this.Inicializar();
+                            TabPage tabPage = materialTabControl1.TabPages[6]; // Supongamos que el tab deseado está en la posición 0
+                            frma.TopLevel = false;
+                            tabPage.Controls.Add(frma);
+                            frma.FormBorderStyle = FormBorderStyle.None;
+                            frma.Dock = DockStyle.Fill;
+                            frma.Show();
                         }
                         else
                         {
@@ -253,12 +265,22 @@ namespace CreativaSL.WinForm.VentaBoletos
                             if (Comun.Id_Tu == 4)
                             {
                                 frmReportesV2 frmReportesVista = new frmReportesV2(15);
-                                frmReportesVista.ShowDialog();
+                                TabPage tabPage = materialTabControl1.TabPages[8]; // Supongamos que el tab deseado está en la posición 0
+                                frmReportesVista.TopLevel = false;
+                                tabPage.Controls.Add(frmReportesVista);
+                                frmReportesVista.FormBorderStyle = FormBorderStyle.None;
+                                frmReportesVista.Dock = DockStyle.Fill;
+                                frmReportesVista.Show();
                             }
                             else
                             {
-                                frmReportesMenuV2 frmr = new frmReportesMenuV2();
-                                frmr.ShowDialog();
+                                frmReportesMenuV2 frmReportesMenuV2 = new frmReportesMenuV2();
+                                TabPage tabPage = materialTabControl1.TabPages[8]; // Supongamos que el tab deseado está en la posición 0
+                                frmReportesMenuV2.TopLevel = false;
+                                tabPage.Controls.Add(frmReportesMenuV2);
+                                frmReportesMenuV2.FormBorderStyle = FormBorderStyle.None;
+                                frmReportesMenuV2.Dock = DockStyle.Fill;
+                                frmReportesMenuV2.Show();
                             }
                         }
                         else
@@ -277,8 +299,12 @@ namespace CreativaSL.WinForm.VentaBoletos
                         if (this.Venta() == false)
                         {
                             frmConfiguracionV2 frmC = new frmConfiguracionV2();
-                            frmC.ShowDialog();
-                            frmC.Dispose();
+                            TabPage tabPage = materialTabControl1.TabPages[9]; // Supongamos que el tab deseado está en la posición 0
+                            frmC.TopLevel = false;
+                            tabPage.Controls.Add(frmC);
+                            frmC.FormBorderStyle = FormBorderStyle.None;
+                            frmC.Dock = DockStyle.Fill;
+                            frmC.Show();
                         }
                         else
                         {
@@ -297,8 +323,12 @@ namespace CreativaSL.WinForm.VentaBoletos
                         {
                             this.Inicializar();
                             frmAsistenciaPasajerosV2 frmC = new frmAsistenciaPasajerosV2();
-                            frmC.ShowDialog();
-                            frmC.Dispose();
+                            TabPage tabPage = materialTabControl1.TabPages[10]; // Supongamos que el tab deseado está en la posición 0
+                            frmC.TopLevel = false;
+                            tabPage.Controls.Add(frmC);
+                            frmC.FormBorderStyle = FormBorderStyle.None;
+                            frmC.Dock = DockStyle.Fill;
+                            frmC.Show();
                             this.Inicializar();
                         }
                         else
@@ -987,27 +1017,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        //private void btnCaja_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        if (this.Venta() == false)
-        //        {
-        //            this.Inicializar();
-        //            Button_Creativa btn = (Button_Creativa)sender;
-        //            MenuStripCaja.Show(btn, btn.Height, btn.Location.Y + (btn.Width / 4));
-        //            MenuStripCaja.Focus();
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Tienes que liberar los boletos para continuar con otro proceso", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
+ 
         private void btnReportes_Click(object sender, EventArgs e)
         {
             try
@@ -2468,6 +2478,22 @@ namespace CreativaSL.WinForm.VentaBoletos
         private void asiento7_ChangeUICues(object sender, UICuesEventArgs e)
         {
 
+        }
+
+        private void materialTabControl1_Click(object sender, EventArgs e)
+        {
+            // Crear una instancia del control MenuStrip
+            MenuStrip menuStrip1 = new MenuStrip();
+
+            // Agregar elementos de menú al control MenuStrip si es necesario
+            // menuStrip1.Items.Add("Archivo");
+            // menuStrip1.Items.Add("Editar");
+            // ...
+
+            // Mover el control MenuStrip al tab deseado del MaterialTabControl
+            TabPage tabPage = materialTabControl1.TabPages[0]; // Supongamos que el tab deseado está en la posición 0
+            menuStrip1.Parent = tabPage;
+            menuStrip1.Dock = DockStyle.Top;
         }
 
 

@@ -52,7 +52,6 @@
             this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -69,12 +68,8 @@
             // 
             // materialCard1
             // 
-            this.materialCard1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard1.Controls.Add(this.dgvdatosboleto);
-            this.materialCard1.Controls.Add(this.btnSalir);
             this.materialCard1.Controls.Add(this.btnAceptar);
             this.materialCard1.Controls.Add(this.btnBuscar);
             this.materialCard1.Controls.Add(this.materialLabel2);
@@ -87,12 +82,12 @@
             this.materialCard1.Controls.Add(this.chkFecha);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(1, 78);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Location = new System.Drawing.Point(1, 9);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(1413, 502);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard1.Size = new System.Drawing.Size(1060, 462);
             this.materialCard1.TabIndex = 0;
             // 
             // dgvdatosboleto
@@ -130,8 +125,7 @@
             this.precio,
             this.id_venta,
             this.id_cliente});
-            this.dgvdatosboleto.Location = new System.Drawing.Point(524, 144);
-            this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvdatosboleto.Location = new System.Drawing.Point(393, 117);
             this.dgvdatosboleto.Name = "dgvdatosboleto";
             this.dgvdatosboleto.RowHeadersWidth = 51;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -140,7 +134,7 @@
             this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdatosboleto.Size = new System.Drawing.Size(871, 334);
+            this.dgvdatosboleto.Size = new System.Drawing.Size(653, 325);
             this.dgvdatosboleto.TabIndex = 23;
             // 
             // id_boleto
@@ -341,27 +335,14 @@
             this.id_cliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.id_cliente.Visible = false;
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(1229, 14);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(110, 94);
-            this.btnSalir.TabIndex = 22;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // btnAceptar
             // 
             this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAceptar.Location = new System.Drawing.Point(277, 333);
+            this.btnAceptar.Location = new System.Drawing.Point(208, 271);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(110, 94);
+            this.btnAceptar.Size = new System.Drawing.Size(82, 76);
             this.btnAceptar.TabIndex = 21;
             this.btnAceptar.Text = "Agregar";
             this.btnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -372,9 +353,10 @@
             // 
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(100, 333);
+            this.btnBuscar.Location = new System.Drawing.Point(75, 271);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(105, 94);
+            this.btnBuscar.Size = new System.Drawing.Size(79, 76);
             this.btnBuscar.TabIndex = 16;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -386,7 +368,8 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(867, 37);
+            this.materialLabel2.Location = new System.Drawing.Point(650, 30);
+            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(147, 19);
@@ -402,7 +385,8 @@
             this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreCliente.HideSelection = true;
             this.txtNombreCliente.LeadingIcon = null;
-            this.txtNombreCliente.Location = new System.Drawing.Point(191, 251);
+            this.txtNombreCliente.Location = new System.Drawing.Point(143, 204);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombreCliente.MaxLength = 32767;
             this.txtNombreCliente.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreCliente.Name = "txtNombreCliente";
@@ -414,7 +398,7 @@
             this.txtNombreCliente.SelectionLength = 0;
             this.txtNombreCliente.SelectionStart = 0;
             this.txtNombreCliente.ShortcutsEnabled = true;
-            this.txtNombreCliente.Size = new System.Drawing.Size(224, 48);
+            this.txtNombreCliente.Size = new System.Drawing.Size(168, 48);
             this.txtNombreCliente.TabIndex = 6;
             this.txtNombreCliente.TabStop = false;
             this.txtNombreCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -430,7 +414,8 @@
             this.txtFolioVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFolioVenta.HideSelection = true;
             this.txtFolioVenta.LeadingIcon = null;
-            this.txtFolioVenta.Location = new System.Drawing.Point(191, 158);
+            this.txtFolioVenta.Location = new System.Drawing.Point(143, 128);
+            this.txtFolioVenta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFolioVenta.MaxLength = 32767;
             this.txtFolioVenta.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFolioVenta.Name = "txtFolioVenta";
@@ -442,7 +427,7 @@
             this.txtFolioVenta.SelectionLength = 0;
             this.txtFolioVenta.SelectionStart = 0;
             this.txtFolioVenta.ShortcutsEnabled = true;
-            this.txtFolioVenta.Size = new System.Drawing.Size(224, 48);
+            this.txtFolioVenta.Size = new System.Drawing.Size(168, 48);
             this.txtFolioVenta.TabIndex = 5;
             this.txtFolioVenta.TabStop = false;
             this.txtFolioVenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -451,9 +436,10 @@
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(191, 86);
+            this.dtpFecha.Location = new System.Drawing.Point(143, 70);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(221, 22);
+            this.dtpFecha.Size = new System.Drawing.Size(167, 20);
             this.dtpFecha.TabIndex = 4;
             this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
@@ -462,7 +448,8 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(258, 28);
+            this.materialLabel1.Location = new System.Drawing.Point(194, 23);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(72, 19);
@@ -475,7 +462,7 @@
             this.chkNombre.Checked = true;
             this.chkNombre.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkNombre.Depth = 0;
-            this.chkNombre.Location = new System.Drawing.Point(63, 262);
+            this.chkNombre.Location = new System.Drawing.Point(47, 213);
             this.chkNombre.Margin = new System.Windows.Forms.Padding(0);
             this.chkNombre.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkNombre.MouseState = MaterialSkin.MouseState.HOVER;
@@ -494,7 +481,7 @@
             this.chkFolio.Checked = true;
             this.chkFolio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolio.Depth = 0;
-            this.chkFolio.Location = new System.Drawing.Point(63, 169);
+            this.chkFolio.Location = new System.Drawing.Point(47, 137);
             this.chkFolio.Margin = new System.Windows.Forms.Padding(0);
             this.chkFolio.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFolio.MouseState = MaterialSkin.MouseState.HOVER;
@@ -513,7 +500,7 @@
             this.chkFecha.Checked = true;
             this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFecha.Depth = 0;
-            this.chkFecha.Location = new System.Drawing.Point(63, 82);
+            this.chkFecha.Location = new System.Drawing.Point(47, 67);
             this.chkFecha.Margin = new System.Windows.Forms.Padding(0);
             this.chkFecha.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFecha.MouseState = MaterialSkin.MouseState.HOVER;
@@ -528,11 +515,14 @@
             // 
             // frmMaletasV2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1416, 563);
+            this.ClientSize = new System.Drawing.Size(1062, 457);
+            this.ControlBox = false;
             this.Controls.Add(this.materialCard1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmMaletasV2";
+            this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
             this.Text = "frmMaletasV2";
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
@@ -554,7 +544,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.DataGridView dgvdatosboleto;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_boleto;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_ventadetalle;
