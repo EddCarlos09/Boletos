@@ -306,7 +306,7 @@ namespace CreativaSL.WinForm.VentaBoletos.Clientes
                 V2Cliente datos = (V2Cliente)this.ObtenerDatos();
                 if (datos.IDCliente != 0)
                 {
-                    frm_v2_CambiarTarjeta Add = new frm_v2_CambiarTarjeta(datos);
+                    frm_v2_CambiarTarjetaV2 Add = new frm_v2_CambiarTarjetaV2(datos);
                     Add.ShowDialog();
                     Add.Dispose();
                     if (Add.completo)

@@ -75,6 +75,7 @@
             this.CmbPrecio.DropDownHeight = 174;
             this.CmbPrecio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbPrecio.DropDownWidth = 121;
+            this.CmbPrecio.Enabled = false;
             this.CmbPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.CmbPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.CmbPrecio.FormattingEnabled = true;

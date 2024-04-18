@@ -166,7 +166,7 @@
   <data name="btnPagoOnline.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAABjRJREFUaEPtmNlT1WUYx8GNpWlxxrKyshinZvCiqaab8k5FQLRcMDYV2UQRBNlM
+        DAAACwwBP0AiyAAABjRJREFUaEPtmNlT1WUYx8GNpWlxxrKyshinZvCiqaab8k5FQLRcMDYV2UQRBNlM
         oS6a7uyuprotEg8ay2HnCLKpuME5BxAUBQRzTdz+gG/P+9v33++oF12cZ+aZYbj6fD88z/u+P0KCFaxg
         BStYL7YO+uNDSr2zoaVehJYOIrTkEkKLL2LegQvU5zCvaADzC89i/v4z1Kcxv6APC/J7sWBfD3U3FuSd
         wsK9nVi45yS1B4tyO7BodzsW5bRStyAsuxlhWU0Iy2ykbkB4Rj3Cd9UhPL0WEeknELHzOCJ21CBiuwuR
@@ -217,7 +217,7 @@
   <data name="btnPagoEfectivo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAA2dJREFUaEPtmMtu00AUhrPisuB+FUSN4jgzVtSuYAcbtsCCiyg7aHkIhGCBKBJC
+        DAAACwwBP0AiyAAAA2dJREFUaEPtmMtu00AUhrPisuB+FUSN4jgzVtSuYAcbtsCCiyg7aHkIhGCBKBJC
         6rNweQqkQJvGTkQLCCEVJFQ2DS0LENf/OCfuxJ4kths7QfIn/Wo6c3z8z+TMeOJcRkZGRkZGRsYQKTas
         iyVbvjRs8aPkyL/jINcLeXLKF9imHte8JsF4SVxiu0FKtnilv2isVGW7QdSyyTcrB7l55JCXji/Dlt+5
         OUgniMRNY0Mob6GCRkQob2oQvqolLJiHhWblOHenjlgQh1HWj+DDUb1xd5AeW+e66chrHJIa2DIv495r

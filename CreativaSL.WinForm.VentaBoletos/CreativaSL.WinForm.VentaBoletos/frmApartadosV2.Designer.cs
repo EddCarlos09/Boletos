@@ -114,12 +114,12 @@
             this.materialCard1.Controls.Add(this.materialLabel1);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(2, 14);
+            this.materialCard1.Location = new System.Drawing.Point(2, 13);
             this.materialCard1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
-            this.materialCard1.Size = new System.Drawing.Size(926, 648);
+            this.materialCard1.Size = new System.Drawing.Size(926, 649);
             this.materialCard1.TabIndex = 1;
             // 
             // dgvdatosboleto
@@ -128,8 +128,9 @@
             this.dgvdatosboleto.AllowUserToDeleteRows = false;
             this.dgvdatosboleto.AllowUserToResizeColumns = false;
             this.dgvdatosboleto.AllowUserToResizeRows = false;
-            this.dgvdatosboleto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvdatosboleto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvdatosboleto.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvdatosboleto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvdatosboleto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdatosboleto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_boleto,
@@ -181,7 +182,7 @@
             this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdatosboleto.Size = new System.Drawing.Size(835, 274);
+            this.dgvdatosboleto.Size = new System.Drawing.Size(829, 274);
             this.dgvdatosboleto.TabIndex = 20;
             // 
             // id_boleto
@@ -194,7 +195,6 @@
             this.id_boleto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.id_boleto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.id_boleto.Visible = false;
-            this.id_boleto.Width = 80;
             // 
             // id_ventadetalle
             // 
@@ -206,7 +206,6 @@
             this.id_ventadetalle.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.id_ventadetalle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.id_ventadetalle.Visible = false;
-            this.id_ventadetalle.Width = 122;
             // 
             // folioVenta
             // 
@@ -215,7 +214,6 @@
             this.folioVenta.MinimumWidth = 6;
             this.folioVenta.Name = "folioVenta";
             this.folioVenta.ReadOnly = true;
-            this.folioVenta.Width = 85;
             // 
             // CodigoBarra
             // 
@@ -226,7 +224,6 @@
             this.CodigoBarra.ReadOnly = true;
             this.CodigoBarra.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.CodigoBarra.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.CodigoBarra.Width = 68;
             // 
             // Viaje
             // 
@@ -235,7 +232,6 @@
             this.Viaje.MinimumWidth = 6;
             this.Viaje.Name = "Viaje";
             this.Viaje.ReadOnly = true;
-            this.Viaje.Width = 60;
             // 
             // Origen
             // 
@@ -246,7 +242,6 @@
             this.Origen.ReadOnly = true;
             this.Origen.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Origen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Origen.Width = 44;
             // 
             // Destino
             // 
@@ -258,7 +253,6 @@
             this.Destino.ReadOnly = true;
             this.Destino.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Destino.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Destino.Width = 49;
             // 
             // fecha_salidaV
             // 
@@ -272,7 +266,6 @@
             this.fecha_salidaV.ReadOnly = true;
             this.fecha_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.fecha_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.fecha_salidaV.Width = 43;
             // 
             // hora_salidaV
             // 
@@ -283,7 +276,6 @@
             this.hora_salidaV.ReadOnly = true;
             this.hora_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.hora_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.hora_salidaV.Width = 36;
             // 
             // NombrePersona
             // 
@@ -294,7 +286,6 @@
             this.NombrePersona.ReadOnly = true;
             this.NombrePersona.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.NombrePersona.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NombrePersona.Width = 50;
             // 
             // asiento
             // 
@@ -308,7 +299,6 @@
             this.asiento.ReadOnly = true;
             this.asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.asiento.Width = 48;
             // 
             // fechaNacimiento
             // 
@@ -319,7 +309,6 @@
             this.fechaNacimiento.MinimumWidth = 6;
             this.fechaNacimiento.Name = "fechaNacimiento";
             this.fechaNacimiento.ReadOnly = true;
-            this.fechaNacimiento.Width = 121;
             // 
             // numeroTelefono
             // 
@@ -328,7 +317,6 @@
             this.numeroTelefono.MinimumWidth = 6;
             this.numeroTelefono.Name = "numeroTelefono";
             this.numeroTelefono.ReadOnly = true;
-            this.numeroTelefono.Width = 74;
             // 
             // cantidad_venta
             // 
@@ -340,7 +328,6 @@
             this.cantidad_venta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.cantidad_venta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.cantidad_venta.Visible = false;
-            this.cantidad_venta.Width = 124;
             // 
             // boletocosto
             // 
@@ -354,7 +341,6 @@
             this.boletocosto.ReadOnly = true;
             this.boletocosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.boletocosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.boletocosto.Width = 43;
             // 
             // vdcosto
             // 
@@ -368,7 +354,6 @@
             this.vdcosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.vdcosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.vdcosto.Visible = false;
-            this.vdcosto.Width = 57;
             // 
             // iva
             // 
@@ -382,7 +367,6 @@
             this.iva.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.iva.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.iva.Visible = false;
-            this.iva.Width = 42;
             // 
             // pago
             // 
@@ -395,7 +379,6 @@
             this.pago.ReadOnly = true;
             this.pago.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.pago.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pago.Width = 38;
             // 
             // pendiente
             // 
@@ -408,7 +391,6 @@
             this.pendiente.ReadOnly = true;
             this.pendiente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.pendiente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pendiente.Width = 61;
             // 
             // Transf
             // 
@@ -422,7 +404,6 @@
             this.Transf.ReadOnly = true;
             this.Transf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Transf.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Transf.Width = 43;
             // 
             // Usu_Ins
             // 
@@ -433,7 +414,6 @@
             this.Usu_Ins.ReadOnly = true;
             this.Usu_Ins.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Usu_Ins.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Usu_Ins.Width = 52;
             // 
             // Usu_Mod
             // 
@@ -444,7 +424,6 @@
             this.Usu_Mod.ReadOnly = true;
             this.Usu_Mod.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Usu_Mod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Usu_Mod.Width = 59;
             // 
             // precio
             // 
@@ -456,7 +435,6 @@
             this.precio.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.precio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.precio.Visible = false;
-            this.precio.Width = 59;
             // 
             // id_venta
             // 
@@ -468,7 +446,6 @@
             this.id_venta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.id_venta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.id_venta.Visible = false;
-            this.id_venta.Width = 75;
             // 
             // id_cliente
             // 
@@ -480,7 +457,6 @@
             this.id_cliente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.id_cliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.id_cliente.Visible = false;
-            this.id_cliente.Width = 82;
             // 
             // cajero
             // 
@@ -490,7 +466,6 @@
             this.cajero.Name = "cajero";
             this.cajero.ReadOnly = true;
             this.cajero.Visible = false;
-            this.cajero.Width = 77;
             // 
             // bloqueoCancelacionMonedero
             // 
@@ -500,7 +475,6 @@
             this.bloqueoCancelacionMonedero.Name = "bloqueoCancelacionMonedero";
             this.bloqueoCancelacionMonedero.ReadOnly = true;
             this.bloqueoCancelacionMonedero.Visible = false;
-            this.bloqueoCancelacionMonedero.Width = 250;
             // 
             // bloqueoCancelacionPorFormaDePago
             // 
@@ -510,7 +484,6 @@
             this.bloqueoCancelacionPorFormaDePago.Name = "bloqueoCancelacionPorFormaDePago";
             this.bloqueoCancelacionPorFormaDePago.ReadOnly = true;
             this.bloqueoCancelacionPorFormaDePago.Visible = false;
-            this.bloqueoCancelacionPorFormaDePago.Width = 306;
             // 
             // dtpFecha
             // 
@@ -732,6 +705,8 @@
             // 
             this.chkNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkNombre.AutoSize = true;
+            this.chkNombre.Checked = true;
+            this.chkNombre.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkNombre.Depth = 0;
             this.chkNombre.Location = new System.Drawing.Point(32, 212);
             this.chkNombre.Margin = new System.Windows.Forms.Padding(0);
@@ -750,6 +725,8 @@
             // 
             this.chkFolio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkFolio.AutoSize = true;
+            this.chkFolio.Checked = true;
+            this.chkFolio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolio.Depth = 0;
             this.chkFolio.Location = new System.Drawing.Point(32, 157);
             this.chkFolio.Margin = new System.Windows.Forms.Padding(0);
@@ -768,6 +745,8 @@
             // 
             this.chkFecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkFecha.AutoSize = true;
+            this.chkFecha.Checked = true;
+            this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFecha.Depth = 0;
             this.chkFecha.Location = new System.Drawing.Point(32, 102);
             this.chkFecha.Margin = new System.Windows.Forms.Padding(0);
@@ -787,6 +766,8 @@
             // 
             this.chkFolioVenta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkFolioVenta.AutoSize = true;
+            this.chkFolioVenta.Checked = true;
+            this.chkFolioVenta.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolioVenta.Depth = 0;
             this.chkFolioVenta.Location = new System.Drawing.Point(32, 49);
             this.chkFolioVenta.Margin = new System.Windows.Forms.Padding(0);
