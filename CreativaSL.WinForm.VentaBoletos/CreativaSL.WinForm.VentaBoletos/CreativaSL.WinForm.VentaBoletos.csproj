@@ -564,6 +564,12 @@
     <Compile Include="frmCatCobroMultiFormasPagoV2.Designer.cs">
       <DependentUpon>frmCatCobroMultiFormasPagoV2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCatCobroV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatCobroV2.Designer.cs">
+      <DependentUpon>frmCatCobroV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCatMaletasV2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -756,11 +762,23 @@
     <Compile Include="frmLoginV2.Designer.cs">
       <DependentUpon>frmLoginV2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLoginValidatorV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginValidatorV2.Designer.cs">
+      <DependentUpon>frmLoginValidatorV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMaletasV2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMaletasV2.Designer.cs">
       <DependentUpon>frmMaletasV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNombreBoletoV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNombreBoletoV2.Designer.cs">
+      <DependentUpon>frmNombreBoletoV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmNuevaFechaViaje.cs">
       <SubType>Form</SubType>
@@ -1219,6 +1237,9 @@
     <EmbeddedResource Include="frmCatCobroMultiFormasPagoV2.resx">
       <DependentUpon>frmCatCobroMultiFormasPagoV2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCatCobroV2.resx">
+      <DependentUpon>frmCatCobroV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCatDisenioV2.resx">
       <DependentUpon>frmCatDisenioV2.cs</DependentUpon>
     </EmbeddedResource>
@@ -1278,6 +1299,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoginV2.resx">
       <DependentUpon>frmLoginV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginValidatorV2.resx">
+      <DependentUpon>frmLoginValidatorV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNombreBoletoV2.resx">
+      <DependentUpon>frmNombreBoletoV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevaFechaViajeV2.resx">
       <DependentUpon>frmNuevaFechaViajeV2.cs</DependentUpon>

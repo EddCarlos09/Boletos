@@ -339,7 +339,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.dgvdatosboleto.SelectedRows.Count > 0)
                 {
                     Boleto boleto = this.obtenerDatosBoleto();
-                    frmNombreBoleto frmNombreBoleto = new frmNombreBoleto(boleto);
+                    frmNombreBoletoV2 frmNombreBoleto = new frmNombreBoletoV2(boleto);
                     frmNombreBoleto.ShowDialog();
                     frmNombreBoleto.Dispose();
                     Busqueda_Negocio bn = new Busqueda_Negocio();

@@ -402,6 +402,7 @@
             // 
             // materialLabel9
             // 
+            this.materialLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.materialLabel9.Depth = 0;
@@ -415,6 +416,7 @@
             // 
             // materialLabel11
             // 
+            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -427,6 +429,7 @@
             // 
             // materialCard3
             // 
+            this.materialCard3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard3.Controls.Add(this.btn_Cancelar);
             this.materialCard3.Controls.Add(this.btn_Vender);
@@ -876,6 +879,9 @@
             // 
             // GridViewVentaBoletos
             // 
+            this.GridViewVentaBoletos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GridViewVentaBoletos.AutoSizeTable = false;
             this.GridViewVentaBoletos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GridViewVentaBoletos.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -896,6 +902,9 @@
             // 
             // GridViewViajes
             // 
+            this.GridViewViajes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GridViewViajes.AutoSizeTable = false;
             this.GridViewViajes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GridViewViajes.BorderStyle = System.Windows.Forms.BorderStyle.None;
