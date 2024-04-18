@@ -30,6 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatCamionesV2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnVerDiseñoCamion = new System.Windows.Forms.Button();
             this.txt_mensaje = new System.Windows.Forms.TextBox();
             this.txtCaracteristicas = new MaterialSkin.Controls.MaterialMultiLineTextBox();
             this.cmbDisenio = new MaterialSkin.Controls.MaterialComboBox();
@@ -38,17 +49,6 @@
             this.cmbSubmarcas = new MaterialSkin.Controls.MaterialComboBox();
             this.cmbMarcas = new MaterialSkin.Controls.MaterialComboBox();
             this.cmbTipoCamion = new MaterialSkin.Controls.MaterialComboBox();
-            this.btnVerDiseñoCamion = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,11 +73,140 @@
             this.panel1.Controls.Add(this.cmbSubmarcas);
             this.panel1.Controls.Add(this.cmbMarcas);
             this.panel1.Controls.Add(this.cmbTipoCamion);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1004, 606);
+            this.panel1.Size = new System.Drawing.Size(1004, 593);
             this.panel1.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Gray;
+            this.label6.Location = new System.Drawing.Point(565, 238);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(141, 25);
+            this.label6.TabIndex = 68;
+            this.label6.Text = "Caracteristicas";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(567, 66);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 25);
+            this.label7.TabIndex = 67;
+            this.label7.Text = "Descripción";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Gray;
+            this.label5.Location = new System.Drawing.Point(46, 441);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(146, 25);
+            this.label5.TabIndex = 66;
+            this.label5.Text = "Diseño Camión";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(46, 354);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 25);
+            this.label4.TabIndex = 65;
+            this.label4.Text = "Núm de Camión";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.Location = new System.Drawing.Point(46, 275);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 25);
+            this.label3.TabIndex = 64;
+            this.label3.Text = "Submarca";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gray;
+            this.label2.Location = new System.Drawing.Point(46, 196);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 25);
+            this.label2.TabIndex = 63;
+            this.label2.Text = "Marca";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(46, 116);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 25);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "Tipo Camión";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Navy;
+            this.label9.Location = new System.Drawing.Point(46, 22);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(119, 26);
+            this.label9.TabIndex = 61;
+            this.label9.Text = "Camiones";
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(759, 413);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnCancelar.Size = new System.Drawing.Size(148, 76);
+            this.btnCancelar.TabIndex = 60;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(569, 413);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnGuardar.Size = new System.Drawing.Size(154, 74);
+            this.btnGuardar.TabIndex = 59;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnVerDiseñoCamion
+            // 
+            this.btnVerDiseñoCamion.BackColor = System.Drawing.Color.Transparent;
+            this.btnVerDiseñoCamion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVerDiseñoCamion.BackgroundImage")));
+            this.btnVerDiseñoCamion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVerDiseñoCamion.Location = new System.Drawing.Point(444, 426);
+            this.btnVerDiseñoCamion.Name = "btnVerDiseñoCamion";
+            this.btnVerDiseñoCamion.Size = new System.Drawing.Size(71, 61);
+            this.btnVerDiseñoCamion.TabIndex = 20;
+            this.btnVerDiseñoCamion.UseVisualStyleBackColor = false;
+            this.btnVerDiseñoCamion.Click += new System.EventHandler(this.btnVerDiseñoCamion_Click);
             // 
             // txt_mensaje
             // 
@@ -234,136 +363,6 @@
             this.cmbTipoCamion.TabIndex = 4;
             this.cmbTipoCamion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbTipoCamion_KeyPress);
             // 
-            // btnVerDiseñoCamion
-            // 
-            this.btnVerDiseñoCamion.BackColor = System.Drawing.Color.Transparent;
-            this.btnVerDiseñoCamion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVerDiseñoCamion.BackgroundImage")));
-            this.btnVerDiseñoCamion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnVerDiseñoCamion.Location = new System.Drawing.Point(444, 426);
-            this.btnVerDiseñoCamion.Name = "btnVerDiseñoCamion";
-            this.btnVerDiseñoCamion.Size = new System.Drawing.Size(71, 61);
-            this.btnVerDiseñoCamion.TabIndex = 20;
-            this.btnVerDiseñoCamion.UseVisualStyleBackColor = false;
-            this.btnVerDiseñoCamion.Click += new System.EventHandler(this.btnVerDiseñoCamion_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(569, 413);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnGuardar.Size = new System.Drawing.Size(154, 74);
-            this.btnGuardar.TabIndex = 59;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(759, 413);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnCancelar.Size = new System.Drawing.Size(148, 76);
-            this.btnCancelar.TabIndex = 60;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Navy;
-            this.label9.Location = new System.Drawing.Point(46, 22);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(130, 29);
-            this.label9.TabIndex = 61;
-            this.label9.Text = "Camiones";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(46, 116);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 25);
-            this.label1.TabIndex = 62;
-            this.label1.Text = "Tipo Camión";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(46, 196);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 25);
-            this.label2.TabIndex = 63;
-            this.label2.Text = "Marca";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(46, 275);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 25);
-            this.label3.TabIndex = 64;
-            this.label3.Text = "Submarca";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(46, 354);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 25);
-            this.label4.TabIndex = 65;
-            this.label4.Text = "Núm de Camión";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(46, 441);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 25);
-            this.label5.TabIndex = 66;
-            this.label5.Text = "Diseño Camión";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(567, 66);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 25);
-            this.label7.TabIndex = 67;
-            this.label7.Text = "Descripción";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(565, 238);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 25);
-            this.label6.TabIndex = 68;
-            this.label6.Text = "Caracteristicas";
-            // 
             // frmCatCamionesV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -371,7 +370,7 @@
             this.ClientSize = new System.Drawing.Size(1010, 673);
             this.Controls.Add(this.panel1);
             this.Name = "frmCatCamionesV2";
-            this.Text = "frmCatCamionesV2";
+            this.Text = "Camiones";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

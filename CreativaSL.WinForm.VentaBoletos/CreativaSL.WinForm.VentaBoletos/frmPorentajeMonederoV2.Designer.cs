@@ -49,10 +49,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 449);
+            this.panel1.Size = new System.Drawing.Size(801, 433);
             this.panel1.TabIndex = 0;
             // 
             // btn_Cancelar
@@ -62,7 +61,7 @@
             this.btn_Cancelar.ForeColor = System.Drawing.Color.DimGray;
             this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
             this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Cancelar.Location = new System.Drawing.Point(408, 311);
+            this.btn_Cancelar.Location = new System.Drawing.Point(408, 303);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
             this.btn_Cancelar.Size = new System.Drawing.Size(132, 109);
@@ -79,7 +78,7 @@
             this.btn_Guardar.ForeColor = System.Drawing.Color.DimGray;
             this.btn_Guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.Image")));
             this.btn_Guardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Guardar.Location = new System.Drawing.Point(233, 311);
+            this.btn_Guardar.Location = new System.Drawing.Point(233, 303);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
             this.btn_Guardar.Size = new System.Drawing.Size(129, 109);
@@ -95,9 +94,9 @@
             this.TxtMontoCancelacion.AnimateReadOnly = false;
             this.TxtMontoCancelacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtMontoCancelacion.Depth = 0;
-            this.TxtMontoCancelacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtMontoCancelacion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.TxtMontoCancelacion.LeadingIcon = null;
-            this.TxtMontoCancelacion.Location = new System.Drawing.Point(194, 240);
+            this.TxtMontoCancelacion.Location = new System.Drawing.Point(194, 232);
             this.TxtMontoCancelacion.MaxLength = 50;
             this.TxtMontoCancelacion.MouseState = MaterialSkin.MouseState.OUT;
             this.TxtMontoCancelacion.Multiline = false;
@@ -115,7 +114,7 @@
             this.TxtPorcentajeMonedero.Depth = 0;
             this.TxtPorcentajeMonedero.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.TxtPorcentajeMonedero.LeadingIcon = null;
-            this.TxtPorcentajeMonedero.Location = new System.Drawing.Point(194, 136);
+            this.TxtPorcentajeMonedero.Location = new System.Drawing.Point(194, 128);
             this.TxtPorcentajeMonedero.MaxLength = 50;
             this.TxtPorcentajeMonedero.MouseState = MaterialSkin.MouseState.OUT;
             this.TxtPorcentajeMonedero.Multiline = false;
@@ -132,7 +131,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(293, 213);
+            this.label2.Location = new System.Drawing.Point(293, 205);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(150, 25);
@@ -146,7 +145,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(293, 109);
+            this.label1.Location = new System.Drawing.Point(293, 101);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 25);
@@ -160,7 +159,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(293, 27);
+            this.label4.Location = new System.Drawing.Point(293, 19);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(155, 26);
@@ -174,7 +173,7 @@
             this.ClientSize = new System.Drawing.Size(807, 516);
             this.Controls.Add(this.panel1);
             this.Name = "frmPorentajeMonederoV2";
-            this.Text = "frmPorentajeMonederoV2";
+            this.Text = "Configuración";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

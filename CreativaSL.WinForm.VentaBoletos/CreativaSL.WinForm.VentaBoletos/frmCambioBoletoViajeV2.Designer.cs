@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCambioBoletoViajeV2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvdatosviajeviejo = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvdatosboletosviajenuevo = new System.Windows.Forms.DataGridView();
             this.num2_asientos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.origen2_asientos = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,16 +83,12 @@
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.DtmFechaSalida = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
-            this.dgvdatosviajeviejo = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdatosviajeviejo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboletosviajenuevo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboletosviajeviejo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosviajenuevo)).BeginInit();
             this.materialCard1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvdatosviajeviejo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -122,6 +122,61 @@
             this.panel1.Size = new System.Drawing.Size(1022, 1035);
             this.panel1.TabIndex = 6;
             // 
+            // dgvdatosviajeviejo
+            // 
+            this.dgvdatosviajeviejo.AllowUserToAddRows = false;
+            this.dgvdatosviajeviejo.AllowUserToDeleteRows = false;
+            this.dgvdatosviajeviejo.AllowUserToResizeColumns = false;
+            this.dgvdatosviajeviejo.AllowUserToResizeRows = false;
+            this.dgvdatosviajeviejo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvdatosviajeviejo.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvdatosviajeviejo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvdatosviajeviejo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.dgvdatosviajeviejo.Location = new System.Drawing.Point(34, 634);
+            this.dgvdatosviajeviejo.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvdatosviajeviejo.MultiSelect = false;
+            this.dgvdatosviajeviejo.Name = "dgvdatosviajeviejo";
+            this.dgvdatosviajeviejo.ReadOnly = true;
+            this.dgvdatosviajeviejo.RowHeadersWidth = 51;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dgvdatosviajeviejo.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvdatosviajeviejo.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dgvdatosviajeviejo.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdatosviajeviejo.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdatosviajeviejo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvdatosviajeviejo.Size = new System.Drawing.Size(421, 176);
+            this.dgvdatosviajeviejo.TabIndex = 35;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "terminalOrigen";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Origen";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 76;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "terminalDestino";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Destino";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 82;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "asientosOcupados";
+            this.dataGridViewTextBoxColumn3.HeaderText = "# Ocup";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 78;
+            // 
             // dgvdatosboletosviajenuevo
             // 
             this.dgvdatosboletosviajenuevo.AllowUserToAddRows = false;
@@ -147,8 +202,8 @@
             this.dgvdatosboletosviajenuevo.Name = "dgvdatosboletosviajenuevo";
             this.dgvdatosboletosviajenuevo.ReadOnly = true;
             this.dgvdatosboletosviajenuevo.RowHeadersWidth = 51;
-            dataGridViewCellStyle50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dgvdatosboletosviajenuevo.RowsDefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dgvdatosboletosviajenuevo.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdatosboletosviajenuevo.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvdatosboletosviajenuevo.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosboletosviajenuevo.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -267,8 +322,8 @@
             this.dgvdatosboletosviajeviejo.Name = "dgvdatosboletosviajeviejo";
             this.dgvdatosboletosviajeviejo.ReadOnly = true;
             this.dgvdatosboletosviajeviejo.RowHeadersWidth = 51;
-            dataGridViewCellStyle51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dgvdatosboletosviajeviejo.RowsDefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dgvdatosboletosviajeviejo.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdatosboletosviajeviejo.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvdatosboletosviajeviejo.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosboletosviajeviejo.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -381,8 +436,8 @@
             this.dgvdatosviajenuevo.Name = "dgvdatosviajenuevo";
             this.dgvdatosviajenuevo.ReadOnly = true;
             this.dgvdatosviajenuevo.RowHeadersWidth = 51;
-            dataGridViewCellStyle52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dgvdatosviajenuevo.RowsDefaultCellStyle = dataGridViewCellStyle52;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dgvdatosviajenuevo.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvdatosviajenuevo.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvdatosviajenuevo.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosviajenuevo.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -763,61 +818,6 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "Fecha de salida";
             // 
-            // dgvdatosviajeviejo
-            // 
-            this.dgvdatosviajeviejo.AllowUserToAddRows = false;
-            this.dgvdatosviajeviejo.AllowUserToDeleteRows = false;
-            this.dgvdatosviajeviejo.AllowUserToResizeColumns = false;
-            this.dgvdatosviajeviejo.AllowUserToResizeRows = false;
-            this.dgvdatosviajeviejo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvdatosviajeviejo.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgvdatosviajeviejo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvdatosviajeviejo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
-            this.dgvdatosviajeviejo.Location = new System.Drawing.Point(34, 634);
-            this.dgvdatosviajeviejo.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvdatosviajeviejo.MultiSelect = false;
-            this.dgvdatosviajeviejo.Name = "dgvdatosviajeviejo";
-            this.dgvdatosviajeviejo.ReadOnly = true;
-            this.dgvdatosviajeviejo.RowHeadersWidth = 51;
-            dataGridViewCellStyle49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dgvdatosviajeviejo.RowsDefaultCellStyle = dataGridViewCellStyle49;
-            this.dgvdatosviajeviejo.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dgvdatosviajeviejo.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvdatosviajeviejo.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdatosviajeviejo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdatosviajeviejo.Size = new System.Drawing.Size(421, 176);
-            this.dgvdatosviajeviejo.TabIndex = 35;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "terminalOrigen";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Origen";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 76;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "terminalDestino";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Destino";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 82;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "asientosOcupados";
-            this.dataGridViewTextBoxColumn3.HeaderText = "# Ocup";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 78;
-            // 
             // frmCambioBoletoViajeV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -826,15 +826,15 @@
             this.ClientSize = new System.Drawing.Size(1028, 1102);
             this.Controls.Add(this.panel1);
             this.Name = "frmCambioBoletoViajeV2";
-            this.Text = "frmCambioBoletoViajeV2";
+            this.Text = "Cambios viaje";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdatosviajeviejo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboletosviajenuevo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboletosviajeviejo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosviajenuevo)).EndInit();
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvdatosviajeviejo)).EndInit();
             this.ResumeLayout(false);
 
         }

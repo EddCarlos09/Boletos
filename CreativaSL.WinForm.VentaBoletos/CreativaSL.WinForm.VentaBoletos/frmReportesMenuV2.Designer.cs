@@ -55,7 +55,7 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(37, 106);
+            this.materialLabel1.Location = new System.Drawing.Point(37, 83);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(158, 19);
@@ -66,7 +66,7 @@
             // 
             this.checkBox_Mensual.AutoSize = true;
             this.checkBox_Mensual.Depth = 0;
-            this.checkBox_Mensual.Location = new System.Drawing.Point(40, 139);
+            this.checkBox_Mensual.Location = new System.Drawing.Point(31, 112);
             this.checkBox_Mensual.Margin = new System.Windows.Forms.Padding(0);
             this.checkBox_Mensual.MouseLocation = new System.Drawing.Point(-1, -1);
             this.checkBox_Mensual.MouseState = MaterialSkin.MouseState.HOVER;
@@ -83,7 +83,7 @@
             // 
             this.checkBox_Estadisticos.AutoSize = true;
             this.checkBox_Estadisticos.Depth = 0;
-            this.checkBox_Estadisticos.Location = new System.Drawing.Point(178, 139);
+            this.checkBox_Estadisticos.Location = new System.Drawing.Point(169, 112);
             this.checkBox_Estadisticos.Margin = new System.Windows.Forms.Padding(0);
             this.checkBox_Estadisticos.MouseLocation = new System.Drawing.Point(-1, -1);
             this.checkBox_Estadisticos.MouseState = MaterialSkin.MouseState.HOVER;
@@ -101,7 +101,7 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(28, 188);
+            this.materialLabel2.Location = new System.Drawing.Point(37, 161);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(41, 19);
@@ -118,21 +118,21 @@
             this.materialCard1.Controls.Add(this.btnCaja);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(31, 221);
+            this.materialCard1.Location = new System.Drawing.Point(31, 194);
             this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(817, 124);
+            this.materialCard1.Size = new System.Drawing.Size(817, 153);
             this.materialCard1.TabIndex = 4;
             // 
             // btnBoleto
             // 
             this.btnBoleto.Image = ((System.Drawing.Image)(resources.GetObject("btnBoleto.Image")));
             this.btnBoleto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBoleto.Location = new System.Drawing.Point(651, 17);
+            this.btnBoleto.Location = new System.Drawing.Point(630, 17);
             this.btnBoleto.Name = "btnBoleto";
-            this.btnBoleto.Size = new System.Drawing.Size(134, 90);
+            this.btnBoleto.Size = new System.Drawing.Size(155, 119);
             this.btnBoleto.TabIndex = 4;
             this.btnBoleto.Text = "Boletos";
             this.btnBoleto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -143,9 +143,9 @@
             // 
             this.btn_Vendedores.Image = ((System.Drawing.Image)(resources.GetObject("btn_Vendedores.Image")));
             this.btn_Vendedores.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Vendedores.Location = new System.Drawing.Point(490, 17);
+            this.btn_Vendedores.Location = new System.Drawing.Point(473, 17);
             this.btn_Vendedores.Name = "btn_Vendedores";
-            this.btn_Vendedores.Size = new System.Drawing.Size(134, 90);
+            this.btn_Vendedores.Size = new System.Drawing.Size(151, 119);
             this.btn_Vendedores.TabIndex = 3;
             this.btn_Vendedores.Text = "Vendedores";
             this.btn_Vendedores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -156,9 +156,9 @@
             // 
             this.btnCajaXFechas.Image = ((System.Drawing.Image)(resources.GetObject("btnCajaXFechas.Image")));
             this.btnCajaXFechas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCajaXFechas.Location = new System.Drawing.Point(333, 17);
+            this.btnCajaXFechas.Location = new System.Drawing.Point(317, 17);
             this.btnCajaXFechas.Name = "btnCajaXFechas";
-            this.btnCajaXFechas.Size = new System.Drawing.Size(134, 90);
+            this.btnCajaXFechas.Size = new System.Drawing.Size(150, 119);
             this.btnCajaXFechas.TabIndex = 2;
             this.btnCajaXFechas.Text = "Caja x Fechas";
             this.btnCajaXFechas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -169,9 +169,9 @@
             // 
             this.btn_TotalesCajaDia.Image = ((System.Drawing.Image)(resources.GetObject("btn_TotalesCajaDia.Image")));
             this.btn_TotalesCajaDia.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_TotalesCajaDia.Location = new System.Drawing.Point(177, 17);
+            this.btn_TotalesCajaDia.Location = new System.Drawing.Point(161, 17);
             this.btn_TotalesCajaDia.Name = "btn_TotalesCajaDia";
-            this.btn_TotalesCajaDia.Size = new System.Drawing.Size(134, 90);
+            this.btn_TotalesCajaDia.Size = new System.Drawing.Size(150, 119);
             this.btn_TotalesCajaDia.TabIndex = 1;
             this.btn_TotalesCajaDia.Text = "Totales Caja Dia";
             this.btn_TotalesCajaDia.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -184,7 +184,7 @@
             this.btnCaja.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCaja.Location = new System.Drawing.Point(21, 17);
             this.btnCaja.Name = "btnCaja";
-            this.btnCaja.Size = new System.Drawing.Size(134, 90);
+            this.btnCaja.Size = new System.Drawing.Size(134, 119);
             this.btnCaja.TabIndex = 0;
             this.btnCaja.Text = "Caja";
             this.btnCaja.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -287,7 +287,7 @@
             this.Controls.Add(this.checkBox_Mensual);
             this.Controls.Add(this.materialLabel1);
             this.Name = "frmReportesMenuV2";
-            this.Text = "frmReportesMenuV2";
+            this.Text = "Reportes";
             this.materialCard1.ResumeLayout(false);
             this.materialCard2.ResumeLayout(false);
             this.materialCard3.ResumeLayout(false);

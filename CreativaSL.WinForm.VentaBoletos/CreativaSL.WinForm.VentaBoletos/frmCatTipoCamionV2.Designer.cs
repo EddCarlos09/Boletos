@@ -45,10 +45,9 @@
             this.panel1.Controls.Add(this.TxtNombreTipoCamion);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(794, 383);
+            this.panel1.Size = new System.Drawing.Size(794, 367);
             this.panel1.TabIndex = 0;
             // 
             // btnCancelar
@@ -56,7 +55,7 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(405, 272);
+            this.btnCancelar.Location = new System.Drawing.Point(401, 258);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.btnCancelar.Size = new System.Drawing.Size(148, 76);
@@ -71,7 +70,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(162, 274);
+            this.btnGuardar.Location = new System.Drawing.Point(160, 258);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.btnGuardar.Size = new System.Drawing.Size(154, 74);
@@ -129,7 +128,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "frmCatTipoCamionV2";
-            this.Text = "frmCatTipoCamionV2";
+            this.Text = "Tipo camión";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -65,10 +65,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1003, 584);
+            this.panel1.Size = new System.Drawing.Size(1003, 568);
             this.panel1.TabIndex = 0;
             // 
             // DtmFechaNac
@@ -292,7 +291,7 @@
             this.ClientSize = new System.Drawing.Size(1009, 651);
             this.Controls.Add(this.panel1);
             this.Name = "frmCatChoferesV2";
-            this.Text = "frmCatChoferesV2";
+            this.Text = "Choferes";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

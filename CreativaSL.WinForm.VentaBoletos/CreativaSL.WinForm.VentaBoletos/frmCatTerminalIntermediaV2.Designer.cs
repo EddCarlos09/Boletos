@@ -55,10 +55,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Location = new System.Drawing.Point(3, 81);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(794, 457);
+            this.panel1.Size = new System.Drawing.Size(794, 440);
             this.panel1.TabIndex = 0;
             // 
             // txtTiempo2
@@ -245,7 +244,7 @@
             this.ClientSize = new System.Drawing.Size(800, 524);
             this.Controls.Add(this.panel1);
             this.Name = "frmCatTerminalIntermediaV2";
-            this.Text = "frm";
+            this.Text = "Terminal Intermedia";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
