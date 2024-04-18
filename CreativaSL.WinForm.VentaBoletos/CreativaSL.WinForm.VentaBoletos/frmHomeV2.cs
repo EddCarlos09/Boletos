@@ -101,8 +101,12 @@ namespace CreativaSL.WinForm.VentaBoletos
                         {
                             //this.Inicializar();
                             frmVentasV2 frmv = new frmVentasV2();
-                            frmv.ShowDialog();
-                            frmv.Dispose();
+                            TabPage tabPage = materialTabControl1.TabPages[1]; // Supongamos que el tab deseado está en la posición 0
+                            frmv.TopLevel = false;
+                            tabPage.Controls.Add(frmv);
+                            frmv.FormBorderStyle = FormBorderStyle.None;
+                            frmv.Dock = DockStyle.Fill;
+                            frmv.Show();
                         }
                         else
                         {
@@ -156,8 +160,11 @@ namespace CreativaSL.WinForm.VentaBoletos
 
                         //this.Inicializar();
                         frmApartadosV2 frma = new frmApartadosV2();
-                        frma.ShowDialog();
-                        frma.Dispose();
+                        TabPage tabPage = materialTabControl1.TabPages[3]; // Supongamos que el tab deseado está en la posición 0
+                        frma.TopLevel = false;
+                        tabPage.Controls.Add(frma);
+
+                        frma.Show();
                     }
                     else
                     {
