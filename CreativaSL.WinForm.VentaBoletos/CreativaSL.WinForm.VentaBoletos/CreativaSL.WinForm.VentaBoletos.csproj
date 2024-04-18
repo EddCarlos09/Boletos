@@ -834,6 +834,12 @@
     <Compile Include="frmBusquedaCambio.Designer.cs">
       <DependentUpon>frmBusquedaCambio.cs</DependentUpon>
     </Compile>
+     <Compile Include="frmCaja_AperturaCajaV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaja_AperturaCajaV2.Designer.cs">
+      <DependentUpon>frmCaja_AperturaCajaV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCaja_AperturaCaja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1422,6 +1428,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCaja_AperturaCaja.resx">
       <DependentUpon>frmCaja_AperturaCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaja_AperturaCajaV2.resx">
+      <DependentUpon>frmCaja_AperturaCajaV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCaja_CierreCaja.resx">
       <DependentUpon>frmCaja_CierreCaja.cs</DependentUpon>
