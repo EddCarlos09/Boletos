@@ -115,23 +115,70 @@
             // 
             // TxtFechaFin
             // 
-            this.TxtFechaFin.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TxtFechaFin.Location = new System.Drawing.Point(77, 210);
-            this.TxtFechaFin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TxtFechaFin.Name = "TxtFechaFin";
-            this.TxtFechaFin.Size = new System.Drawing.Size(200, 22);
-            this.TxtFechaFin.TabIndex = 29;
-            this.TxtFechaFin.ValueChanged += new System.EventHandler(this.TxtFechaFin_ValueChanged);
+            this.txtFolio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtFolio.AnimateReadOnly = false;
+            this.txtFolio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtFolio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtFolio.Depth = 0;
+            this.txtFolio.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtFolio.HideSelection = true;
+            this.txtFolio.LeadingIcon = null;
+            this.txtFolio.Location = new System.Drawing.Point(248, 191);
+            this.txtFolio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFolio.MaxLength = 32767;
+            this.txtFolio.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtFolio.Name = "txtFolio";
+            this.txtFolio.PasswordChar = '\0';
+            this.txtFolio.PrefixSuffixText = null;
+            this.txtFolio.ReadOnly = false;
+            this.txtFolio.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtFolio.SelectedText = "";
+            this.txtFolio.SelectionLength = 0;
+            this.txtFolio.SelectionStart = 0;
+            this.txtFolio.ShortcutsEnabled = true;
+            this.txtFolio.Size = new System.Drawing.Size(340, 48);
+            this.txtFolio.TabIndex = 6;
+            this.txtFolio.TabStop = false;
+            this.txtFolio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtFolio.TrailingIcon = null;
+            this.txtFolio.UseSystemPasswordChar = false;
+            this.txtFolio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFolio_KeyPress);
             // 
             // TxtFechaInicio
             // 
-            this.TxtFechaInicio.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TxtFechaInicio.Location = new System.Drawing.Point(77, 110);
-            this.TxtFechaInicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TxtFechaInicio.Name = "TxtFechaInicio";
-            this.TxtFechaInicio.Size = new System.Drawing.Size(200, 22);
-            this.TxtFechaInicio.TabIndex = 28;
-            this.TxtFechaInicio.ValueChanged += new System.EventHandler(this.TxtFechaInicio_ValueChanged);
+            this.btn_Buscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Buscar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.Image")));
+            this.btn_Buscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Buscar.Location = new System.Drawing.Point(652, 133);
+            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Buscar.Name = "btn_Buscar";
+            this.btn_Buscar.Size = new System.Drawing.Size(79, 76);
+            this.btn_Buscar.TabIndex = 11;
+            this.btn_Buscar.Text = "Buscar";
+            this.btn_Buscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Buscar.UseVisualStyleBackColor = true;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportViewer1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.reportViewer1.Location = new System.Drawing.Point(16, 249);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(1);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.ShowBackButton = false;
+            this.reportViewer1.ShowContextMenu = false;
+            this.reportViewer1.ShowCredentialPrompts = false;
+            this.reportViewer1.ShowDocumentMapButton = false;
+            this.reportViewer1.ShowFindControls = false;
+            this.reportViewer1.ShowPageNavigationControls = false;
+            this.reportViewer1.ShowParameterPrompts = false;
+            this.reportViewer1.ShowPromptAreaButton = false;
+            this.reportViewer1.Size = new System.Drawing.Size(937, 281);
+            this.reportViewer1.TabIndex = 12;
             // 
             // cmbTurno
             // 
@@ -148,8 +195,8 @@
             this.cmbTurno.FormattingEnabled = true;
             this.cmbTurno.IntegralHeight = false;
             this.cmbTurno.ItemHeight = 43;
-            this.cmbTurno.Location = new System.Drawing.Point(331, 99);
-            this.cmbTurno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbTurno.Location = new System.Drawing.Point(248, 112);
+            this.cmbTurno.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTurno.MaxDropDownItems = 4;
             this.cmbTurno.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbTurno.Name = "cmbTurno";
@@ -159,39 +206,23 @@
             // 
             // reportViewer1
             // 
-            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.reportViewer1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.reportViewer1.Location = new System.Drawing.Point(8, 267);
-            this.reportViewer1.Margin = new System.Windows.Forms.Padding(1);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.ShowBackButton = false;
-            this.reportViewer1.ShowContextMenu = false;
-            this.reportViewer1.ShowCredentialPrompts = false;
-            this.reportViewer1.ShowDocumentMapButton = false;
-            this.reportViewer1.ShowFindControls = false;
-            this.reportViewer1.ShowPageNavigationControls = false;
-            this.reportViewer1.ShowParameterPrompts = false;
-            this.reportViewer1.ShowPromptAreaButton = false;
-            this.reportViewer1.Size = new System.Drawing.Size(1274, 345);
-            this.reportViewer1.TabIndex = 26;
+            this.TxtFechaInicio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TxtFechaInicio.Location = new System.Drawing.Point(58, 121);
+            this.TxtFechaInicio.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtFechaInicio.Name = "TxtFechaInicio";
+            this.TxtFechaInicio.Size = new System.Drawing.Size(151, 20);
+            this.TxtFechaInicio.TabIndex = 14;
+            this.TxtFechaInicio.ValueChanged += new System.EventHandler(this.TxtFechaInicio_ValueChanged);
             // 
             // btn_Buscar
             // 
-            this.btn_Buscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_Buscar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.Image")));
-            this.btn_Buscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Buscar.Location = new System.Drawing.Point(869, 125);
-            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(105, 94);
-            this.btn_Buscar.TabIndex = 25;
-            this.btn_Buscar.Text = "Buscar";
-            this.btn_Buscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Buscar.UseVisualStyleBackColor = true;
-            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
+            this.TxtFechaFin.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TxtFechaFin.Location = new System.Drawing.Point(58, 202);
+            this.TxtFechaFin.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtFechaFin.Name = "TxtFechaFin";
+            this.TxtFechaFin.Size = new System.Drawing.Size(151, 20);
+            this.TxtFechaFin.TabIndex = 15;
+            this.TxtFechaFin.ValueChanged += new System.EventHandler(this.TxtFechaFin_ValueChanged);
             // 
             // txtFolio
             // 
@@ -226,16 +257,18 @@
             // 
             // LabelFolio
             // 
-            this.LabelFolio.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.LabelFolio.AutoSize = true;
-            this.LabelFolio.Depth = 0;
-            this.LabelFolio.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.LabelFolio.Location = new System.Drawing.Point(327, 162);
-            this.LabelFolio.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LabelFolio.Name = "LabelFolio";
-            this.LabelFolio.Size = new System.Drawing.Size(106, 19);
-            this.LabelFolio.TabIndex = 23;
-            this.LabelFolio.Text = "Folio de Boleto";
+            this.btn_VerTodos.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_VerTodos.Image = ((System.Drawing.Image)(resources.GetObject("btn_VerTodos.Image")));
+            this.btn_VerTodos.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_VerTodos.Location = new System.Drawing.Point(779, 133);
+            this.btn_VerTodos.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_VerTodos.Name = "btn_VerTodos";
+            this.btn_VerTodos.Size = new System.Drawing.Size(79, 76);
+            this.btn_VerTodos.TabIndex = 17;
+            this.btn_VerTodos.Text = "Ver Todo";
+            this.btn_VerTodos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_VerTodos.UseVisualStyleBackColor = true;
+            this.btn_VerTodos.Click += new System.EventHandler(this.btn_VerTodos_Click);
             // 
             // LabelTurno
             // 
@@ -280,10 +313,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1299, 672);
-            this.ControlBox = false;
-            this.Controls.Add(this.materialCard1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ClientSize = new System.Drawing.Size(974, 546);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btn_VerTodos);
+            this.Controls.Add(this.d);
+            this.Controls.Add(this.TxtFechaFin);
+            this.Controls.Add(this.TxtFechaInicio);
+            this.Controls.Add(this.cmbTurno);
+            this.Controls.Add(this.reportViewer1);
+            this.Controls.Add(this.btn_Buscar);
+            this.Controls.Add(this.txtFolio);
+            this.Controls.Add(this.LabelFolio);
+            this.Controls.Add(this.LabelTurno);
+            this.Controls.Add(this.LabelFechaFin);
+            this.Controls.Add(this.LabelFechaInicio);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmReportesV2";
             this.Padding = new System.Windows.Forms.Padding(3, 64, 3, 2);
             this.Text = "frmReportesV2";
