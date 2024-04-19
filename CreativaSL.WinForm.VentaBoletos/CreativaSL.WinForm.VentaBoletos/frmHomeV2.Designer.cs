@@ -239,103 +239,6 @@
             this.asiento4 = new System.Windows.Forms.PictureBox();
             this.asiento2 = new System.Windows.Forms.PictureBox();
             this.asiento1 = new System.Windows.Forms.PictureBox();
-            this.pasilloasiento64 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento63 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento62 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento61 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento65 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento59 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento58 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento57 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento56 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento60 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento55 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento54 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento53 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento52 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento51 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento50 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento49 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento48 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento47 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento46 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento45 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento44 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento43 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento42 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento41 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento40 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento39 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento38 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento37 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento36 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento35 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento34 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento33 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento32 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento31 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento30 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento29 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento28 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento27 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento26 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento25 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento24 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento23 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento22 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento21 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento20 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento19 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento18 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento17 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento16 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento15 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento14 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento13 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento12 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento11 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento10 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento9 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento8 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento7 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento6 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento5 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento4 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento3 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento2 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento1 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox131 = new System.Windows.Forms.TextBox();
-            this.pasillo1 = new System.Windows.Forms.TextBox();
-            this.textBox133 = new System.Windows.Forms.TextBox();
-            this.textBox134 = new System.Windows.Forms.TextBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
-            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.btnAdministrador = new System.Windows.Forms.TabPage();
-            this.btnReportes = new System.Windows.Forms.TabPage();
-            this.btnConfiguracion = new System.Windows.Forms.TabPage();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.imageListmMenu = new System.Windows.Forms.ImageList(this.components);
-            this.backgroundWorkerFechaHora = new System.ComponentModel.BackgroundWorker();
-            this.timerFechaHora = new System.Windows.Forms.Timer(this.components);
-            this.MenuStripCaja = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItemDepositos = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemRetirosCajaLLena = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemRetirosPagos = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemInformacionDeCaja = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemCerrarCaja = new System.Windows.Forms.ToolStripMenuItem();
             this.materialTabControl1.SuspendLayout();
             this.tabPage12.SuspendLayout();
             this.materialCard1.SuspendLayout();
@@ -424,9 +327,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.asiento4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento1)).BeginInit();
-            this.tabPage5.SuspendLayout();
-            this.materialCard5.SuspendLayout();
-            this.MenuStripCaja.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -521,14 +421,15 @@
             // 
             this.materialLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialLabel9.AutoSize = true;
+            this.materialLabel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(1013, 65);
+            this.materialLabel9.Location = new System.Drawing.Point(658, 26);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
-            this.materialLabel9.Size = new System.Drawing.Size(71, 19);
+            this.materialLabel9.Size = new System.Drawing.Size(54, 19);
             this.materialLabel9.TabIndex = 235;
-            this.materialLabel9.Text = "BOLETOS";
+            this.materialLabel9.Text = "Boletos";
             // 
             // materialLabel11
             // 
@@ -536,7 +437,7 @@
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(1040, 511);
+            this.materialLabel11.Location = new System.Drawing.Point(658, 441);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(55, 19);
@@ -561,34 +462,6 @@
             this.materialCard3.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.materialCard3.Size = new System.Drawing.Size(1009, 100);
             this.materialCard3.TabIndex = 241;
-            // 
-            // btn_Cancelar
-            // 
-            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
-            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Cancelar.Location = new System.Drawing.Point(425, 16);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(167, 66);
-            this.btn_Cancelar.TabIndex = 53;
-            this.btn_Cancelar.Text = "CANCELAR";
-            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
-            // 
-            // btn_Vender
-            // 
-            this.btn_Vender.Image = ((System.Drawing.Image)(resources.GetObject("btn_Vender.Image")));
-            this.btn_Vender.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Vender.Location = new System.Drawing.Point(209, 16);
-            this.btn_Vender.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btn_Vender.Name = "btn_Vender";
-            this.btn_Vender.Size = new System.Drawing.Size(167, 66);
-            this.btn_Vender.TabIndex = 52;
-            this.btn_Vender.Text = "VENDER";
-            this.btn_Vender.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Vender.UseVisualStyleBackColor = true;
-            this.btn_Vender.Click += new System.EventHandler(this.btn_Vender_Click);
             // 
             // materialLabel8
             // 
@@ -660,7 +533,6 @@
             this.materialCard2.Controls.Add(this.materialLabel5);
             this.materialCard2.Controls.Add(this.materialLabel1);
             this.materialCard2.Depth = 0;
-            this.materialCard2.Enabled = false;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard2.Location = new System.Drawing.Point(27, 511);
             this.materialCard2.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
@@ -708,7 +580,6 @@
             this.Txt_FechaHoraSistema.Size = new System.Drawing.Size(141, 48);
             this.Txt_FechaHoraSistema.TabIndex = 47;
             this.Txt_FechaHoraSistema.TabStop = false;
-            this.Txt_FechaHoraSistema.Text = "00/00/0000 00:00:00";
             this.Txt_FechaHoraSistema.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Txt_FechaHoraSistema.TrailingIcon = null;
             this.Txt_FechaHoraSistema.UseSystemPasswordChar = false;
@@ -860,19 +731,6 @@
             this.materialCard4.Size = new System.Drawing.Size(609, 428);
             this.materialCard4.TabIndex = 239;
             // 
-            // btn_CancelarBuscarViajes
-            // 
-            this.btn_CancelarBuscarViajes.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_CancelarBuscarViajes.ImageKey = "icons8-cancel-144.png";
-            this.btn_CancelarBuscarViajes.ImageList = this.imageList1;
-            this.btn_CancelarBuscarViajes.Location = new System.Drawing.Point(445, 363);
-            this.btn_CancelarBuscarViajes.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_CancelarBuscarViajes.Name = "btn_CancelarBuscarViajes";
-            this.btn_CancelarBuscarViajes.Size = new System.Drawing.Size(67, 50);
-            this.btn_CancelarBuscarViajes.TabIndex = 44;
-            this.btn_CancelarBuscarViajes.UseVisualStyleBackColor = false;
-            this.btn_CancelarBuscarViajes.Click += new System.EventHandler(this.btn_CancelarBuscarViajes_Click);
-            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -890,19 +748,6 @@
             this.imageList1.Images.SetKeyName(10, "icons8-home-144.png");
             this.imageList1.Images.SetKeyName(11, "icons8-search-300.png");
             this.imageList1.Images.SetKeyName(12, "icons8-cancel-144.png");
-            // 
-            // btn_BuscarViajes
-            // 
-            this.btn_BuscarViajes.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_BuscarViajes.ImageKey = "icons8-search-300.png";
-            this.btn_BuscarViajes.ImageList = this.imageList1;
-            this.btn_BuscarViajes.Location = new System.Drawing.Point(320, 363);
-            this.btn_BuscarViajes.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_BuscarViajes.Name = "btn_BuscarViajes";
-            this.btn_BuscarViajes.Size = new System.Drawing.Size(67, 50);
-            this.btn_BuscarViajes.TabIndex = 43;
-            this.btn_BuscarViajes.UseVisualStyleBackColor = false;
-            this.btn_BuscarViajes.Click += new System.EventHandler(this.btn_BuscarViajes_Click);
             // 
             // dtmFechaSalida
             // 
@@ -1006,20 +851,17 @@
             this.GridViewVentaBoletos.Depth = 0;
             this.GridViewVentaBoletos.FullRowSelect = true;
             this.GridViewVentaBoletos.HideSelection = false;
-            this.GridViewVentaBoletos.Location = new System.Drawing.Point(665, 562);
+            this.GridViewVentaBoletos.Location = new System.Drawing.Point(665, 470);
             this.GridViewVentaBoletos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GridViewVentaBoletos.MinimumSize = new System.Drawing.Size(200, 100);
             this.GridViewVentaBoletos.MouseLocation = new System.Drawing.Point(-1, -1);
             this.GridViewVentaBoletos.MouseState = MaterialSkin.MouseState.OUT;
             this.GridViewVentaBoletos.Name = "GridViewVentaBoletos";
             this.GridViewVentaBoletos.OwnerDraw = true;
-            this.GridViewVentaBoletos.Size = new System.Drawing.Size(814, 295);
+            this.GridViewVentaBoletos.Size = new System.Drawing.Size(738, 357);
             this.GridViewVentaBoletos.TabIndex = 238;
             this.GridViewVentaBoletos.UseCompatibleStateImageBehavior = false;
             this.GridViewVentaBoletos.View = System.Windows.Forms.View.Details;
-            this.GridViewVentaBoletos.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.GridViewVentaBoletos_CellClick);
-            this.GridViewVentaBoletos.SelectedIndexChanged += new System.EventHandler(this.GridViewVentaBoletos_SelectedIndexChanged);
-            this.GridViewVentaBoletos.DoubleClick += new System.EventHandler(this.GridViewVentaBoletos_CellDoubleClick);
             // 
             // GridViewViajes
             // 
@@ -1032,14 +874,14 @@
             this.GridViewViajes.Depth = 0;
             this.GridViewViajes.FullRowSelect = true;
             this.GridViewViajes.HideSelection = false;
-            this.GridViewViajes.Location = new System.Drawing.Point(665, 120);
+            this.GridViewViajes.Location = new System.Drawing.Point(665, 62);
             this.GridViewViajes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GridViewViajes.MinimumSize = new System.Drawing.Size(200, 100);
             this.GridViewViajes.MouseLocation = new System.Drawing.Point(-1, -1);
             this.GridViewViajes.MouseState = MaterialSkin.MouseState.OUT;
             this.GridViewViajes.Name = "GridViewViajes";
             this.GridViewViajes.OwnerDraw = true;
-            this.GridViewViajes.Size = new System.Drawing.Size(814, 373);
+            this.GridViewViajes.Size = new System.Drawing.Size(738, 357);
             this.GridViewViajes.TabIndex = 237;
             this.GridViewViajes.UseCompatibleStateImageBehavior = false;
             this.GridViewViajes.View = System.Windows.Forms.View.Details;
@@ -1217,1098 +1059,6 @@
             this.panel_Camion.Name = "panel_Camion";
             this.panel_Camion.Size = new System.Drawing.Size(325, 720);
             this.panel_Camion.TabIndex = 234;
-            // 
-            // puerta13
-            // 
-            this.puerta13.BackColor = System.Drawing.Color.White;
-            this.puerta13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta13.Location = new System.Drawing.Point(280, 674);
-            this.puerta13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta13.Name = "puerta13";
-            this.puerta13.Size = new System.Drawing.Size(35, 34);
-            this.puerta13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta13.TabIndex = 221;
-            this.puerta13.TabStop = false;
-            this.puerta13.Tag = "0";
-            this.puerta13.Visible = false;
-            // 
-            // puerta12
-            // 
-            this.puerta12.BackColor = System.Drawing.Color.White;
-            this.puerta12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta12.Location = new System.Drawing.Point(280, 622);
-            this.puerta12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta12.Name = "puerta12";
-            this.puerta12.Size = new System.Drawing.Size(35, 34);
-            this.puerta12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta12.TabIndex = 220;
-            this.puerta12.TabStop = false;
-            this.puerta12.Tag = "0";
-            this.puerta12.Visible = false;
-            // 
-            // puerta11
-            // 
-            this.puerta11.BackColor = System.Drawing.Color.White;
-            this.puerta11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta11.Location = new System.Drawing.Point(280, 569);
-            this.puerta11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta11.Name = "puerta11";
-            this.puerta11.Size = new System.Drawing.Size(35, 34);
-            this.puerta11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta11.TabIndex = 219;
-            this.puerta11.TabStop = false;
-            this.puerta11.Tag = "0";
-            this.puerta11.Visible = false;
-            // 
-            // puerta10
-            // 
-            this.puerta10.BackColor = System.Drawing.Color.White;
-            this.puerta10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta10.Location = new System.Drawing.Point(280, 514);
-            this.puerta10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta10.Name = "puerta10";
-            this.puerta10.Size = new System.Drawing.Size(35, 34);
-            this.puerta10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta10.TabIndex = 218;
-            this.puerta10.TabStop = false;
-            this.puerta10.Tag = "0";
-            this.puerta10.Visible = false;
-            // 
-            // puerta9
-            // 
-            this.puerta9.BackColor = System.Drawing.Color.White;
-            this.puerta9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta9.Location = new System.Drawing.Point(280, 462);
-            this.puerta9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta9.Name = "puerta9";
-            this.puerta9.Size = new System.Drawing.Size(35, 34);
-            this.puerta9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta9.TabIndex = 217;
-            this.puerta9.TabStop = false;
-            this.puerta9.Tag = "0";
-            this.puerta9.Visible = false;
-            // 
-            // puerta8
-            // 
-            this.puerta8.BackColor = System.Drawing.Color.White;
-            this.puerta8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta8.Location = new System.Drawing.Point(279, 409);
-            this.puerta8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta8.Name = "puerta8";
-            this.puerta8.Size = new System.Drawing.Size(35, 34);
-            this.puerta8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta8.TabIndex = 216;
-            this.puerta8.TabStop = false;
-            this.puerta8.Tag = "0";
-            this.puerta8.Visible = false;
-            // 
-            // puerta7
-            // 
-            this.puerta7.BackColor = System.Drawing.Color.White;
-            this.puerta7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta7.Location = new System.Drawing.Point(279, 356);
-            this.puerta7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta7.Name = "puerta7";
-            this.puerta7.Size = new System.Drawing.Size(35, 34);
-            this.puerta7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta7.TabIndex = 215;
-            this.puerta7.TabStop = false;
-            this.puerta7.Tag = "0";
-            this.puerta7.Visible = false;
-            // 
-            // puerta6
-            // 
-            this.puerta6.BackColor = System.Drawing.Color.White;
-            this.puerta6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta6.Location = new System.Drawing.Point(279, 303);
-            this.puerta6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta6.Name = "puerta6";
-            this.puerta6.Size = new System.Drawing.Size(35, 34);
-            this.puerta6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta6.TabIndex = 214;
-            this.puerta6.TabStop = false;
-            this.puerta6.Tag = "0";
-            this.puerta6.Visible = false;
-            // 
-            // puerta5
-            // 
-            this.puerta5.BackColor = System.Drawing.Color.White;
-            this.puerta5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta5.Location = new System.Drawing.Point(279, 250);
-            this.puerta5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta5.Name = "puerta5";
-            this.puerta5.Size = new System.Drawing.Size(35, 34);
-            this.puerta5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta5.TabIndex = 213;
-            this.puerta5.TabStop = false;
-            this.puerta5.Tag = "0";
-            this.puerta5.Visible = false;
-            // 
-            // puerta4
-            // 
-            this.puerta4.BackColor = System.Drawing.Color.White;
-            this.puerta4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta4.Location = new System.Drawing.Point(279, 197);
-            this.puerta4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta4.Name = "puerta4";
-            this.puerta4.Size = new System.Drawing.Size(35, 34);
-            this.puerta4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta4.TabIndex = 212;
-            this.puerta4.TabStop = false;
-            this.puerta4.Tag = "0";
-            this.puerta4.Visible = false;
-            // 
-            // puerta3
-            // 
-            this.puerta3.BackColor = System.Drawing.Color.White;
-            this.puerta3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta3.Location = new System.Drawing.Point(277, 144);
-            this.puerta3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta3.Name = "puerta3";
-            this.puerta3.Size = new System.Drawing.Size(35, 34);
-            this.puerta3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta3.TabIndex = 211;
-            this.puerta3.TabStop = false;
-            this.puerta3.Tag = "0";
-            this.puerta3.Visible = false;
-            // 
-            // puerta2
-            // 
-            this.puerta2.BackColor = System.Drawing.Color.White;
-            this.puerta2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta2.Location = new System.Drawing.Point(277, 91);
-            this.puerta2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta2.Name = "puerta2";
-            this.puerta2.Size = new System.Drawing.Size(35, 34);
-            this.puerta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta2.TabIndex = 210;
-            this.puerta2.TabStop = false;
-            this.puerta2.Tag = "0";
-            this.puerta2.Visible = false;
-            // 
-            // puerta1
-            // 
-            this.puerta1.BackColor = System.Drawing.Color.White;
-            this.puerta1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.puerta1.Location = new System.Drawing.Point(277, 38);
-            this.puerta1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.puerta1.Name = "puerta1";
-            this.puerta1.Size = new System.Drawing.Size(35, 34);
-            this.puerta1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.puerta1.TabIndex = 209;
-            this.puerta1.TabStop = false;
-            this.puerta1.Tag = "0";
-            this.puerta1.Visible = false;
-            // 
-            // asiento63
-            // 
-            this.asiento63.BackColor = System.Drawing.Color.White;
-            this.asiento63.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento63.Location = new System.Drawing.Point(117, 674);
-            this.asiento63.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento63.Name = "asiento63";
-            this.asiento63.Size = new System.Drawing.Size(55, 34);
-            this.asiento63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento63.TabIndex = 208;
-            this.asiento63.TabStop = false;
-            this.asiento63.Tag = "0";
-            this.asiento63.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento28
-            // 
-            this.asiento28.BackColor = System.Drawing.Color.White;
-            this.asiento28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento28.Location = new System.Drawing.Point(116, 303);
-            this.asiento28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento28.Name = "asiento28";
-            this.asiento28.Size = new System.Drawing.Size(55, 34);
-            this.asiento28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento28.TabIndex = 207;
-            this.asiento28.TabStop = false;
-            this.asiento28.Tag = "0";
-            this.asiento28.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento33
-            // 
-            this.asiento33.BackColor = System.Drawing.Color.White;
-            this.asiento33.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento33.Location = new System.Drawing.Point(116, 356);
-            this.asiento33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento33.Name = "asiento33";
-            this.asiento33.Size = new System.Drawing.Size(55, 34);
-            this.asiento33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento33.TabIndex = 206;
-            this.asiento33.TabStop = false;
-            this.asiento33.Tag = "0";
-            this.asiento33.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento38
-            // 
-            this.asiento38.BackColor = System.Drawing.Color.White;
-            this.asiento38.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento38.Location = new System.Drawing.Point(116, 409);
-            this.asiento38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento38.Name = "asiento38";
-            this.asiento38.Size = new System.Drawing.Size(55, 34);
-            this.asiento38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento38.TabIndex = 205;
-            this.asiento38.TabStop = false;
-            this.asiento38.Tag = "0";
-            this.asiento38.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento43
-            // 
-            this.asiento43.BackColor = System.Drawing.Color.White;
-            this.asiento43.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento43.Location = new System.Drawing.Point(117, 462);
-            this.asiento43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento43.Name = "asiento43";
-            this.asiento43.Size = new System.Drawing.Size(55, 34);
-            this.asiento43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento43.TabIndex = 204;
-            this.asiento43.TabStop = false;
-            this.asiento43.Tag = "0";
-            this.asiento43.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento48
-            // 
-            this.asiento48.BackColor = System.Drawing.Color.White;
-            this.asiento48.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento48.Location = new System.Drawing.Point(117, 514);
-            this.asiento48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento48.Name = "asiento48";
-            this.asiento48.Size = new System.Drawing.Size(55, 34);
-            this.asiento48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento48.TabIndex = 203;
-            this.asiento48.TabStop = false;
-            this.asiento48.Tag = "0";
-            this.asiento48.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento53
-            // 
-            this.asiento53.BackColor = System.Drawing.Color.White;
-            this.asiento53.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento53.Location = new System.Drawing.Point(117, 569);
-            this.asiento53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento53.Name = "asiento53";
-            this.asiento53.Size = new System.Drawing.Size(55, 34);
-            this.asiento53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento53.TabIndex = 202;
-            this.asiento53.TabStop = false;
-            this.asiento53.Tag = "0";
-            this.asiento53.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento58
-            // 
-            this.asiento58.BackColor = System.Drawing.Color.White;
-            this.asiento58.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento58.Location = new System.Drawing.Point(117, 622);
-            this.asiento58.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento58.Name = "asiento58";
-            this.asiento58.Size = new System.Drawing.Size(55, 34);
-            this.asiento58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento58.TabIndex = 201;
-            this.asiento58.TabStop = false;
-            this.asiento58.Tag = "0";
-            this.asiento58.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento23
-            // 
-            this.asiento23.BackColor = System.Drawing.Color.White;
-            this.asiento23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento23.Location = new System.Drawing.Point(116, 250);
-            this.asiento23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento23.Name = "asiento23";
-            this.asiento23.Size = new System.Drawing.Size(55, 34);
-            this.asiento23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento23.TabIndex = 200;
-            this.asiento23.TabStop = false;
-            this.asiento23.Tag = "0";
-            this.asiento23.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento18
-            // 
-            this.asiento18.BackColor = System.Drawing.Color.White;
-            this.asiento18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento18.Location = new System.Drawing.Point(116, 197);
-            this.asiento18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento18.Name = "asiento18";
-            this.asiento18.Size = new System.Drawing.Size(55, 34);
-            this.asiento18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento18.TabIndex = 199;
-            this.asiento18.TabStop = false;
-            this.asiento18.Tag = "0";
-            this.asiento18.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento13
-            // 
-            this.asiento13.BackColor = System.Drawing.Color.White;
-            this.asiento13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento13.Location = new System.Drawing.Point(115, 144);
-            this.asiento13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento13.Name = "asiento13";
-            this.asiento13.Size = new System.Drawing.Size(55, 34);
-            this.asiento13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento13.TabIndex = 198;
-            this.asiento13.TabStop = false;
-            this.asiento13.Tag = "0";
-            this.asiento13.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento8
-            // 
-            this.asiento8.BackColor = System.Drawing.Color.White;
-            this.asiento8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento8.Location = new System.Drawing.Point(115, 91);
-            this.asiento8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento8.Name = "asiento8";
-            this.asiento8.Size = new System.Drawing.Size(55, 34);
-            this.asiento8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento8.TabIndex = 197;
-            this.asiento8.TabStop = false;
-            this.asiento8.Tag = "0";
-            this.asiento8.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento3
-            // 
-            this.asiento3.BackColor = System.Drawing.Color.White;
-            this.asiento3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento3.Location = new System.Drawing.Point(115, 38);
-            this.asiento3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento3.Name = "asiento3";
-            this.asiento3.Size = new System.Drawing.Size(55, 34);
-            this.asiento3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento3.TabIndex = 196;
-            this.asiento3.TabStop = false;
-            this.asiento3.Tag = "0";
-            this.asiento3.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento65
-            // 
-            this.asiento65.BackColor = System.Drawing.Color.White;
-            this.asiento65.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento65.Location = new System.Drawing.Point(225, 674);
-            this.asiento65.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento65.Name = "asiento65";
-            this.asiento65.Size = new System.Drawing.Size(55, 34);
-            this.asiento65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento65.TabIndex = 194;
-            this.asiento65.TabStop = false;
-            this.asiento65.Tag = "0";
-            this.asiento65.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento64
-            // 
-            this.asiento64.BackColor = System.Drawing.Color.White;
-            this.asiento64.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento64.Location = new System.Drawing.Point(171, 674);
-            this.asiento64.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento64.Name = "asiento64";
-            this.asiento64.Size = new System.Drawing.Size(55, 34);
-            this.asiento64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento64.TabIndex = 193;
-            this.asiento64.TabStop = false;
-            this.asiento64.Tag = "0";
-            this.asiento64.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento62
-            // 
-            this.asiento62.BackColor = System.Drawing.Color.White;
-            this.asiento62.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento62.Location = new System.Drawing.Point(63, 674);
-            this.asiento62.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento62.Name = "asiento62";
-            this.asiento62.Size = new System.Drawing.Size(55, 34);
-            this.asiento62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento62.TabIndex = 192;
-            this.asiento62.TabStop = false;
-            this.asiento62.Tag = "0";
-            this.asiento62.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento61
-            // 
-            this.asiento61.BackColor = System.Drawing.Color.White;
-            this.asiento61.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento61.Location = new System.Drawing.Point(9, 674);
-            this.asiento61.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento61.Name = "asiento61";
-            this.asiento61.Size = new System.Drawing.Size(55, 34);
-            this.asiento61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento61.TabIndex = 191;
-            this.asiento61.TabStop = false;
-            this.asiento61.Tag = "0";
-            this.asiento61.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento60
-            // 
-            this.asiento60.BackColor = System.Drawing.Color.White;
-            this.asiento60.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento60.Location = new System.Drawing.Point(225, 622);
-            this.asiento60.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento60.Name = "asiento60";
-            this.asiento60.Size = new System.Drawing.Size(55, 34);
-            this.asiento60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento60.TabIndex = 190;
-            this.asiento60.TabStop = false;
-            this.asiento60.Tag = "0";
-            this.asiento60.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento59
-            // 
-            this.asiento59.BackColor = System.Drawing.Color.White;
-            this.asiento59.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento59.Location = new System.Drawing.Point(171, 622);
-            this.asiento59.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento59.Name = "asiento59";
-            this.asiento59.Size = new System.Drawing.Size(55, 34);
-            this.asiento59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento59.TabIndex = 189;
-            this.asiento59.TabStop = false;
-            this.asiento59.Tag = "0";
-            this.asiento59.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento57
-            // 
-            this.asiento57.BackColor = System.Drawing.Color.White;
-            this.asiento57.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento57.Location = new System.Drawing.Point(63, 622);
-            this.asiento57.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento57.Name = "asiento57";
-            this.asiento57.Size = new System.Drawing.Size(55, 34);
-            this.asiento57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento57.TabIndex = 188;
-            this.asiento57.TabStop = false;
-            this.asiento57.Tag = "0";
-            this.asiento57.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento56
-            // 
-            this.asiento56.BackColor = System.Drawing.Color.White;
-            this.asiento56.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento56.Location = new System.Drawing.Point(9, 622);
-            this.asiento56.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento56.Name = "asiento56";
-            this.asiento56.Size = new System.Drawing.Size(55, 34);
-            this.asiento56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento56.TabIndex = 187;
-            this.asiento56.TabStop = false;
-            this.asiento56.Tag = "0";
-            this.asiento56.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento55
-            // 
-            this.asiento55.BackColor = System.Drawing.Color.White;
-            this.asiento55.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento55.Location = new System.Drawing.Point(225, 569);
-            this.asiento55.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento55.Name = "asiento55";
-            this.asiento55.Size = new System.Drawing.Size(55, 34);
-            this.asiento55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento55.TabIndex = 186;
-            this.asiento55.TabStop = false;
-            this.asiento55.Tag = "0";
-            this.asiento55.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento54
-            // 
-            this.asiento54.BackColor = System.Drawing.Color.White;
-            this.asiento54.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento54.Location = new System.Drawing.Point(171, 569);
-            this.asiento54.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento54.Name = "asiento54";
-            this.asiento54.Size = new System.Drawing.Size(55, 34);
-            this.asiento54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento54.TabIndex = 185;
-            this.asiento54.TabStop = false;
-            this.asiento54.Tag = "0";
-            this.asiento54.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento52
-            // 
-            this.asiento52.BackColor = System.Drawing.Color.White;
-            this.asiento52.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento52.Location = new System.Drawing.Point(63, 569);
-            this.asiento52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento52.Name = "asiento52";
-            this.asiento52.Size = new System.Drawing.Size(55, 34);
-            this.asiento52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento52.TabIndex = 184;
-            this.asiento52.TabStop = false;
-            this.asiento52.Tag = "0";
-            this.asiento52.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento51
-            // 
-            this.asiento51.BackColor = System.Drawing.Color.White;
-            this.asiento51.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento51.Location = new System.Drawing.Point(9, 569);
-            this.asiento51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento51.Name = "asiento51";
-            this.asiento51.Size = new System.Drawing.Size(55, 34);
-            this.asiento51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento51.TabIndex = 183;
-            this.asiento51.TabStop = false;
-            this.asiento51.Tag = "0";
-            this.asiento51.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento50
-            // 
-            this.asiento50.BackColor = System.Drawing.Color.White;
-            this.asiento50.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento50.Location = new System.Drawing.Point(225, 514);
-            this.asiento50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento50.Name = "asiento50";
-            this.asiento50.Size = new System.Drawing.Size(55, 34);
-            this.asiento50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento50.TabIndex = 182;
-            this.asiento50.TabStop = false;
-            this.asiento50.Tag = "0";
-            this.asiento50.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento49
-            // 
-            this.asiento49.BackColor = System.Drawing.Color.White;
-            this.asiento49.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento49.Location = new System.Drawing.Point(171, 514);
-            this.asiento49.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento49.Name = "asiento49";
-            this.asiento49.Size = new System.Drawing.Size(55, 34);
-            this.asiento49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento49.TabIndex = 181;
-            this.asiento49.TabStop = false;
-            this.asiento49.Tag = "0";
-            this.asiento49.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento47
-            // 
-            this.asiento47.BackColor = System.Drawing.Color.White;
-            this.asiento47.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento47.Location = new System.Drawing.Point(63, 514);
-            this.asiento47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento47.Name = "asiento47";
-            this.asiento47.Size = new System.Drawing.Size(55, 34);
-            this.asiento47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento47.TabIndex = 180;
-            this.asiento47.TabStop = false;
-            this.asiento47.Tag = "0";
-            this.asiento47.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento46
-            // 
-            this.asiento46.BackColor = System.Drawing.Color.White;
-            this.asiento46.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento46.Location = new System.Drawing.Point(9, 514);
-            this.asiento46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento46.Name = "asiento46";
-            this.asiento46.Size = new System.Drawing.Size(55, 34);
-            this.asiento46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento46.TabIndex = 179;
-            this.asiento46.TabStop = false;
-            this.asiento46.Tag = "0";
-            this.asiento46.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento45
-            // 
-            this.asiento45.BackColor = System.Drawing.Color.White;
-            this.asiento45.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento45.Location = new System.Drawing.Point(225, 462);
-            this.asiento45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento45.Name = "asiento45";
-            this.asiento45.Size = new System.Drawing.Size(55, 34);
-            this.asiento45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento45.TabIndex = 178;
-            this.asiento45.TabStop = false;
-            this.asiento45.Tag = "0";
-            this.asiento45.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento44
-            // 
-            this.asiento44.BackColor = System.Drawing.Color.White;
-            this.asiento44.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento44.Location = new System.Drawing.Point(171, 462);
-            this.asiento44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento44.Name = "asiento44";
-            this.asiento44.Size = new System.Drawing.Size(55, 34);
-            this.asiento44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento44.TabIndex = 177;
-            this.asiento44.TabStop = false;
-            this.asiento44.Tag = "0";
-            this.asiento44.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento42
-            // 
-            this.asiento42.BackColor = System.Drawing.Color.White;
-            this.asiento42.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento42.Location = new System.Drawing.Point(63, 462);
-            this.asiento42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento42.Name = "asiento42";
-            this.asiento42.Size = new System.Drawing.Size(55, 34);
-            this.asiento42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento42.TabIndex = 176;
-            this.asiento42.TabStop = false;
-            this.asiento42.Tag = "0";
-            this.asiento42.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento41
-            // 
-            this.asiento41.BackColor = System.Drawing.Color.White;
-            this.asiento41.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento41.Location = new System.Drawing.Point(9, 462);
-            this.asiento41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento41.Name = "asiento41";
-            this.asiento41.Size = new System.Drawing.Size(55, 34);
-            this.asiento41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento41.TabIndex = 175;
-            this.asiento41.TabStop = false;
-            this.asiento41.Tag = "0";
-            this.asiento41.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento40
-            // 
-            this.asiento40.BackColor = System.Drawing.Color.White;
-            this.asiento40.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento40.Location = new System.Drawing.Point(224, 409);
-            this.asiento40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento40.Name = "asiento40";
-            this.asiento40.Size = new System.Drawing.Size(55, 34);
-            this.asiento40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento40.TabIndex = 174;
-            this.asiento40.TabStop = false;
-            this.asiento40.Tag = "0";
-            this.asiento40.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento39
-            // 
-            this.asiento39.BackColor = System.Drawing.Color.White;
-            this.asiento39.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento39.Location = new System.Drawing.Point(171, 409);
-            this.asiento39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento39.Name = "asiento39";
-            this.asiento39.Size = new System.Drawing.Size(55, 34);
-            this.asiento39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento39.TabIndex = 173;
-            this.asiento39.TabStop = false;
-            this.asiento39.Tag = "0";
-            this.asiento39.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento37
-            // 
-            this.asiento37.BackColor = System.Drawing.Color.White;
-            this.asiento37.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento37.Location = new System.Drawing.Point(61, 409);
-            this.asiento37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento37.Name = "asiento37";
-            this.asiento37.Size = new System.Drawing.Size(55, 34);
-            this.asiento37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento37.TabIndex = 172;
-            this.asiento37.TabStop = false;
-            this.asiento37.Tag = "0";
-            this.asiento37.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento36
-            // 
-            this.asiento36.BackColor = System.Drawing.Color.White;
-            this.asiento36.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento36.Location = new System.Drawing.Point(8, 409);
-            this.asiento36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento36.Name = "asiento36";
-            this.asiento36.Size = new System.Drawing.Size(55, 34);
-            this.asiento36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento36.TabIndex = 171;
-            this.asiento36.TabStop = false;
-            this.asiento36.Tag = "0";
-            this.asiento36.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento35
-            // 
-            this.asiento35.BackColor = System.Drawing.Color.White;
-            this.asiento35.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento35.Location = new System.Drawing.Point(224, 356);
-            this.asiento35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento35.Name = "asiento35";
-            this.asiento35.Size = new System.Drawing.Size(55, 34);
-            this.asiento35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento35.TabIndex = 170;
-            this.asiento35.TabStop = false;
-            this.asiento35.Tag = "0";
-            this.asiento35.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento34
-            // 
-            this.asiento34.BackColor = System.Drawing.Color.White;
-            this.asiento34.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento34.Location = new System.Drawing.Point(171, 356);
-            this.asiento34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento34.Name = "asiento34";
-            this.asiento34.Size = new System.Drawing.Size(55, 34);
-            this.asiento34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento34.TabIndex = 169;
-            this.asiento34.TabStop = false;
-            this.asiento34.Tag = "0";
-            this.asiento34.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento32
-            // 
-            this.asiento32.BackColor = System.Drawing.Color.White;
-            this.asiento32.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento32.Location = new System.Drawing.Point(61, 356);
-            this.asiento32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento32.Name = "asiento32";
-            this.asiento32.Size = new System.Drawing.Size(55, 34);
-            this.asiento32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento32.TabIndex = 168;
-            this.asiento32.TabStop = false;
-            this.asiento32.Tag = "0";
-            this.asiento32.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento31
-            // 
-            this.asiento31.BackColor = System.Drawing.Color.White;
-            this.asiento31.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento31.Location = new System.Drawing.Point(8, 356);
-            this.asiento31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento31.Name = "asiento31";
-            this.asiento31.Size = new System.Drawing.Size(55, 34);
-            this.asiento31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento31.TabIndex = 167;
-            this.asiento31.TabStop = false;
-            this.asiento31.Tag = "0";
-            this.asiento31.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento30
-            // 
-            this.asiento30.BackColor = System.Drawing.Color.White;
-            this.asiento30.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento30.Location = new System.Drawing.Point(224, 303);
-            this.asiento30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento30.Name = "asiento30";
-            this.asiento30.Size = new System.Drawing.Size(55, 34);
-            this.asiento30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento30.TabIndex = 166;
-            this.asiento30.TabStop = false;
-            this.asiento30.Tag = "0";
-            this.asiento30.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento29
-            // 
-            this.asiento29.BackColor = System.Drawing.Color.White;
-            this.asiento29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento29.Location = new System.Drawing.Point(171, 303);
-            this.asiento29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento29.Name = "asiento29";
-            this.asiento29.Size = new System.Drawing.Size(55, 34);
-            this.asiento29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento29.TabIndex = 165;
-            this.asiento29.TabStop = false;
-            this.asiento29.Tag = "0";
-            this.asiento29.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento27
-            // 
-            this.asiento27.BackColor = System.Drawing.Color.White;
-            this.asiento27.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento27.Location = new System.Drawing.Point(61, 303);
-            this.asiento27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento27.Name = "asiento27";
-            this.asiento27.Size = new System.Drawing.Size(55, 34);
-            this.asiento27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento27.TabIndex = 164;
-            this.asiento27.TabStop = false;
-            this.asiento27.Tag = "0";
-            this.asiento27.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento26
-            // 
-            this.asiento26.BackColor = System.Drawing.Color.White;
-            this.asiento26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento26.Location = new System.Drawing.Point(8, 303);
-            this.asiento26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento26.Name = "asiento26";
-            this.asiento26.Size = new System.Drawing.Size(55, 34);
-            this.asiento26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento26.TabIndex = 163;
-            this.asiento26.TabStop = false;
-            this.asiento26.Tag = "0";
-            this.asiento26.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento25
-            // 
-            this.asiento25.BackColor = System.Drawing.Color.White;
-            this.asiento25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento25.Location = new System.Drawing.Point(224, 250);
-            this.asiento25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento25.Name = "asiento25";
-            this.asiento25.Size = new System.Drawing.Size(55, 34);
-            this.asiento25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento25.TabIndex = 162;
-            this.asiento25.TabStop = false;
-            this.asiento25.Tag = "0";
-            this.asiento25.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento24
-            // 
-            this.asiento24.BackColor = System.Drawing.Color.White;
-            this.asiento24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento24.Location = new System.Drawing.Point(171, 250);
-            this.asiento24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento24.Name = "asiento24";
-            this.asiento24.Size = new System.Drawing.Size(55, 34);
-            this.asiento24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento24.TabIndex = 161;
-            this.asiento24.TabStop = false;
-            this.asiento24.Tag = "0";
-            this.asiento24.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento22
-            // 
-            this.asiento22.BackColor = System.Drawing.Color.White;
-            this.asiento22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento22.Location = new System.Drawing.Point(61, 250);
-            this.asiento22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento22.Name = "asiento22";
-            this.asiento22.Size = new System.Drawing.Size(55, 34);
-            this.asiento22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento22.TabIndex = 160;
-            this.asiento22.TabStop = false;
-            this.asiento22.Tag = "0";
-            this.asiento22.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento21
-            // 
-            this.asiento21.BackColor = System.Drawing.Color.White;
-            this.asiento21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento21.Location = new System.Drawing.Point(8, 250);
-            this.asiento21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento21.Name = "asiento21";
-            this.asiento21.Size = new System.Drawing.Size(55, 34);
-            this.asiento21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento21.TabIndex = 159;
-            this.asiento21.TabStop = false;
-            this.asiento21.Tag = "0";
-            this.asiento21.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento20
-            // 
-            this.asiento20.BackColor = System.Drawing.Color.White;
-            this.asiento20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento20.Location = new System.Drawing.Point(224, 197);
-            this.asiento20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento20.Name = "asiento20";
-            this.asiento20.Size = new System.Drawing.Size(55, 34);
-            this.asiento20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento20.TabIndex = 158;
-            this.asiento20.TabStop = false;
-            this.asiento20.Tag = "0";
-            this.asiento20.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento19
-            // 
-            this.asiento19.BackColor = System.Drawing.Color.White;
-            this.asiento19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento19.Location = new System.Drawing.Point(171, 197);
-            this.asiento19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento19.Name = "asiento19";
-            this.asiento19.Size = new System.Drawing.Size(55, 34);
-            this.asiento19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento19.TabIndex = 157;
-            this.asiento19.TabStop = false;
-            this.asiento19.Tag = "0";
-            this.asiento19.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento17
-            // 
-            this.asiento17.BackColor = System.Drawing.Color.White;
-            this.asiento17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento17.Location = new System.Drawing.Point(61, 197);
-            this.asiento17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento17.Name = "asiento17";
-            this.asiento17.Size = new System.Drawing.Size(55, 34);
-            this.asiento17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento17.TabIndex = 156;
-            this.asiento17.TabStop = false;
-            this.asiento17.Tag = "0";
-            this.asiento17.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento16
-            // 
-            this.asiento16.BackColor = System.Drawing.Color.White;
-            this.asiento16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento16.Location = new System.Drawing.Point(8, 197);
-            this.asiento16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento16.Name = "asiento16";
-            this.asiento16.Size = new System.Drawing.Size(55, 34);
-            this.asiento16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento16.TabIndex = 155;
-            this.asiento16.TabStop = false;
-            this.asiento16.Tag = "0";
-            this.asiento16.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento15
-            // 
-            this.asiento15.BackColor = System.Drawing.Color.White;
-            this.asiento15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento15.Location = new System.Drawing.Point(223, 144);
-            this.asiento15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento15.Name = "asiento15";
-            this.asiento15.Size = new System.Drawing.Size(55, 34);
-            this.asiento15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento15.TabIndex = 154;
-            this.asiento15.TabStop = false;
-            this.asiento15.Tag = "0";
-            this.asiento15.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento14
-            // 
-            this.asiento14.BackColor = System.Drawing.Color.White;
-            this.asiento14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento14.Location = new System.Drawing.Point(169, 144);
-            this.asiento14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento14.Name = "asiento14";
-            this.asiento14.Size = new System.Drawing.Size(55, 34);
-            this.asiento14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento14.TabIndex = 153;
-            this.asiento14.TabStop = false;
-            this.asiento14.Tag = "0";
-            this.asiento14.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento12
-            // 
-            this.asiento12.BackColor = System.Drawing.Color.White;
-            this.asiento12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento12.Location = new System.Drawing.Point(61, 144);
-            this.asiento12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento12.Name = "asiento12";
-            this.asiento12.Size = new System.Drawing.Size(55, 34);
-            this.asiento12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento12.TabIndex = 152;
-            this.asiento12.TabStop = false;
-            this.asiento12.Tag = "0";
-            this.asiento12.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento11
-            // 
-            this.asiento11.BackColor = System.Drawing.Color.White;
-            this.asiento11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento11.Location = new System.Drawing.Point(7, 144);
-            this.asiento11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento11.Name = "asiento11";
-            this.asiento11.Size = new System.Drawing.Size(55, 34);
-            this.asiento11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento11.TabIndex = 151;
-            this.asiento11.TabStop = false;
-            this.asiento11.Tag = "0";
-            this.asiento11.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento10
-            // 
-            this.asiento10.BackColor = System.Drawing.Color.White;
-            this.asiento10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento10.Location = new System.Drawing.Point(223, 91);
-            this.asiento10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento10.Name = "asiento10";
-            this.asiento10.Size = new System.Drawing.Size(55, 34);
-            this.asiento10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento10.TabIndex = 150;
-            this.asiento10.TabStop = false;
-            this.asiento10.Tag = "0";
-            this.asiento10.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento9
-            // 
-            this.asiento9.BackColor = System.Drawing.Color.White;
-            this.asiento9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento9.Location = new System.Drawing.Point(169, 91);
-            this.asiento9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento9.Name = "asiento9";
-            this.asiento9.Size = new System.Drawing.Size(55, 34);
-            this.asiento9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento9.TabIndex = 149;
-            this.asiento9.TabStop = false;
-            this.asiento9.Tag = "0";
-            this.asiento9.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento7
-            // 
-            this.asiento7.BackColor = System.Drawing.Color.White;
-            this.asiento7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento7.Location = new System.Drawing.Point(61, 91);
-            this.asiento7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento7.Name = "asiento7";
-            this.asiento7.Size = new System.Drawing.Size(55, 34);
-            this.asiento7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento7.TabIndex = 148;
-            this.asiento7.TabStop = false;
-            this.asiento7.Tag = "0";
-            this.asiento7.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento6
-            // 
-            this.asiento6.BackColor = System.Drawing.Color.White;
-            this.asiento6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento6.Location = new System.Drawing.Point(7, 91);
-            this.asiento6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento6.Name = "asiento6";
-            this.asiento6.Size = new System.Drawing.Size(55, 34);
-            this.asiento6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento6.TabIndex = 147;
-            this.asiento6.TabStop = false;
-            this.asiento6.Tag = "0";
-            this.asiento6.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento5
-            // 
-            this.asiento5.BackColor = System.Drawing.Color.White;
-            this.asiento5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento5.Location = new System.Drawing.Point(223, 38);
-            this.asiento5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento5.Name = "asiento5";
-            this.asiento5.Size = new System.Drawing.Size(55, 34);
-            this.asiento5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento5.TabIndex = 146;
-            this.asiento5.TabStop = false;
-            this.asiento5.Tag = "0";
-            this.asiento5.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento4
-            // 
-            this.asiento4.BackColor = System.Drawing.Color.White;
-            this.asiento4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento4.Location = new System.Drawing.Point(169, 38);
-            this.asiento4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento4.Name = "asiento4";
-            this.asiento4.Size = new System.Drawing.Size(55, 34);
-            this.asiento4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento4.TabIndex = 145;
-            this.asiento4.TabStop = false;
-            this.asiento4.Tag = "0";
-            this.asiento4.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento2
-            // 
-            this.asiento2.BackColor = System.Drawing.Color.White;
-            this.asiento2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento2.Location = new System.Drawing.Point(61, 38);
-            this.asiento2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento2.Name = "asiento2";
-            this.asiento2.Size = new System.Drawing.Size(55, 34);
-            this.asiento2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento2.TabIndex = 144;
-            this.asiento2.TabStop = false;
-            this.asiento2.Tag = "0";
-            this.asiento2.Click += new System.EventHandler(this.Boleto_Click);
-            // 
-            // asiento1
-            // 
-            this.asiento1.BackColor = System.Drawing.Color.White;
-            this.asiento1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.asiento1.Location = new System.Drawing.Point(7, 38);
-            this.asiento1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.asiento1.Name = "asiento1";
-            this.asiento1.Size = new System.Drawing.Size(55, 34);
-            this.asiento1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.asiento1.TabIndex = 6;
-            this.asiento1.TabStop = false;
-            this.asiento1.Tag = "0";
-            this.asiento1.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // pasilloasiento64
             // 
@@ -3701,17 +2451,6 @@
             this.imageListmMenu.Images.SetKeyName(11, "icons8-exit-100.png");
             this.imageListmMenu.Images.SetKeyName(12, "icons8-checked-user-male-100.png");
             // 
-            // backgroundWorkerFechaHora
-            // 
-            this.backgroundWorkerFechaHora.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerFechaHora_DoWork);
-            this.backgroundWorkerFechaHora.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerFechaHora_RunWorkerCompleted);
-            // 
-            // timerFechaHora
-            // 
-            this.timerFechaHora.Enabled = true;
-            this.timerFechaHora.Interval = 1000;
-            this.timerFechaHora.Tick += new System.EventHandler(this.timerFechaHora_Tick);
-            // 
             // MenuStripCaja
             // 
             this.MenuStripCaja.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -3766,6 +2505,1152 @@
             this.toolStripMenuItemCerrarCaja.Name = "toolStripMenuItemCerrarCaja";
             this.toolStripMenuItemCerrarCaja.Size = new System.Drawing.Size(278, 32);
             this.toolStripMenuItemCerrarCaja.Text = "Cerrar Caja";
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
+            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Cancelar.Location = new System.Drawing.Point(535, 16);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(264, 69);
+            this.btn_Cancelar.TabIndex = 53;
+            this.btn_Cancelar.Text = "CANCELAR";
+            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // btn_Vender
+            // 
+            this.btn_Vender.Image = ((System.Drawing.Image)(resources.GetObject("btn_Vender.Image")));
+            this.btn_Vender.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Vender.Location = new System.Drawing.Point(242, 16);
+            this.btn_Vender.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btn_Vender.Name = "btn_Vender";
+            this.btn_Vender.Size = new System.Drawing.Size(264, 69);
+            this.btn_Vender.TabIndex = 52;
+            this.btn_Vender.Text = "VENDER";
+            this.btn_Vender.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Vender.UseVisualStyleBackColor = true;
+            this.btn_Vender.Click += new System.EventHandler(this.btn_Vender_Click);
+            // 
+            // btn_CancelarBuscarViajes
+            // 
+            this.btn_CancelarBuscarViajes.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_CancelarBuscarViajes.ImageKey = "icons8-cancel-144.png";
+            this.btn_CancelarBuscarViajes.ImageList = this.imageList1;
+            this.btn_CancelarBuscarViajes.Location = new System.Drawing.Point(445, 363);
+            this.btn_CancelarBuscarViajes.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_CancelarBuscarViajes.Name = "btn_CancelarBuscarViajes";
+            this.btn_CancelarBuscarViajes.Size = new System.Drawing.Size(67, 50);
+            this.btn_CancelarBuscarViajes.TabIndex = 44;
+            this.btn_CancelarBuscarViajes.UseVisualStyleBackColor = false;
+            this.btn_CancelarBuscarViajes.Click += new System.EventHandler(this.btn_CancelarBuscarViajes_Click);
+            // 
+            // btn_BuscarViajes
+            // 
+            this.btn_BuscarViajes.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_BuscarViajes.ImageKey = "icons8-search-300.png";
+            this.btn_BuscarViajes.ImageList = this.imageList1;
+            this.btn_BuscarViajes.Location = new System.Drawing.Point(320, 363);
+            this.btn_BuscarViajes.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_BuscarViajes.Name = "btn_BuscarViajes";
+            this.btn_BuscarViajes.Size = new System.Drawing.Size(67, 50);
+            this.btn_BuscarViajes.TabIndex = 43;
+            this.btn_BuscarViajes.UseVisualStyleBackColor = false;
+            this.btn_BuscarViajes.Click += new System.EventHandler(this.btn_BuscarViajes_Click);
+            // 
+            // puerta13
+            // 
+            this.puerta13.BackColor = System.Drawing.Color.White;
+            this.puerta13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta13.Location = new System.Drawing.Point(280, 674);
+            this.puerta13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta13.Name = "puerta13";
+            this.puerta13.Size = new System.Drawing.Size(35, 34);
+            this.puerta13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta13.TabIndex = 221;
+            this.puerta13.TabStop = false;
+            this.puerta13.Tag = "0";
+            this.puerta13.Visible = false;
+            // 
+            // puerta12
+            // 
+            this.puerta12.BackColor = System.Drawing.Color.White;
+            this.puerta12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta12.Location = new System.Drawing.Point(280, 622);
+            this.puerta12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta12.Name = "puerta12";
+            this.puerta12.Size = new System.Drawing.Size(35, 34);
+            this.puerta12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta12.TabIndex = 220;
+            this.puerta12.TabStop = false;
+            this.puerta12.Tag = "0";
+            this.puerta12.Visible = false;
+            // 
+            // puerta11
+            // 
+            this.puerta11.BackColor = System.Drawing.Color.White;
+            this.puerta11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta11.Location = new System.Drawing.Point(280, 569);
+            this.puerta11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta11.Name = "puerta11";
+            this.puerta11.Size = new System.Drawing.Size(35, 34);
+            this.puerta11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta11.TabIndex = 219;
+            this.puerta11.TabStop = false;
+            this.puerta11.Tag = "0";
+            this.puerta11.Visible = false;
+            // 
+            // puerta10
+            // 
+            this.puerta10.BackColor = System.Drawing.Color.White;
+            this.puerta10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta10.Location = new System.Drawing.Point(280, 514);
+            this.puerta10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta10.Name = "puerta10";
+            this.puerta10.Size = new System.Drawing.Size(35, 34);
+            this.puerta10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta10.TabIndex = 218;
+            this.puerta10.TabStop = false;
+            this.puerta10.Tag = "0";
+            this.puerta10.Visible = false;
+            // 
+            // puerta9
+            // 
+            this.puerta9.BackColor = System.Drawing.Color.White;
+            this.puerta9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta9.Location = new System.Drawing.Point(280, 462);
+            this.puerta9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta9.Name = "puerta9";
+            this.puerta9.Size = new System.Drawing.Size(35, 34);
+            this.puerta9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta9.TabIndex = 217;
+            this.puerta9.TabStop = false;
+            this.puerta9.Tag = "0";
+            this.puerta9.Visible = false;
+            // 
+            // puerta8
+            // 
+            this.puerta8.BackColor = System.Drawing.Color.White;
+            this.puerta8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta8.Location = new System.Drawing.Point(279, 409);
+            this.puerta8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta8.Name = "puerta8";
+            this.puerta8.Size = new System.Drawing.Size(35, 34);
+            this.puerta8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta8.TabIndex = 216;
+            this.puerta8.TabStop = false;
+            this.puerta8.Tag = "0";
+            this.puerta8.Visible = false;
+            // 
+            // puerta7
+            // 
+            this.puerta7.BackColor = System.Drawing.Color.White;
+            this.puerta7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta7.Location = new System.Drawing.Point(279, 356);
+            this.puerta7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta7.Name = "puerta7";
+            this.puerta7.Size = new System.Drawing.Size(35, 34);
+            this.puerta7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta7.TabIndex = 215;
+            this.puerta7.TabStop = false;
+            this.puerta7.Tag = "0";
+            this.puerta7.Visible = false;
+            // 
+            // puerta6
+            // 
+            this.puerta6.BackColor = System.Drawing.Color.White;
+            this.puerta6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta6.Location = new System.Drawing.Point(279, 303);
+            this.puerta6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta6.Name = "puerta6";
+            this.puerta6.Size = new System.Drawing.Size(35, 34);
+            this.puerta6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta6.TabIndex = 214;
+            this.puerta6.TabStop = false;
+            this.puerta6.Tag = "0";
+            this.puerta6.Visible = false;
+            // 
+            // puerta5
+            // 
+            this.puerta5.BackColor = System.Drawing.Color.White;
+            this.puerta5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta5.Location = new System.Drawing.Point(279, 250);
+            this.puerta5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta5.Name = "puerta5";
+            this.puerta5.Size = new System.Drawing.Size(35, 34);
+            this.puerta5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta5.TabIndex = 213;
+            this.puerta5.TabStop = false;
+            this.puerta5.Tag = "0";
+            this.puerta5.Visible = false;
+            // 
+            // puerta4
+            // 
+            this.puerta4.BackColor = System.Drawing.Color.White;
+            this.puerta4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta4.Location = new System.Drawing.Point(279, 197);
+            this.puerta4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta4.Name = "puerta4";
+            this.puerta4.Size = new System.Drawing.Size(35, 34);
+            this.puerta4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta4.TabIndex = 212;
+            this.puerta4.TabStop = false;
+            this.puerta4.Tag = "0";
+            this.puerta4.Visible = false;
+            // 
+            // puerta3
+            // 
+            this.puerta3.BackColor = System.Drawing.Color.White;
+            this.puerta3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta3.Location = new System.Drawing.Point(277, 144);
+            this.puerta3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta3.Name = "puerta3";
+            this.puerta3.Size = new System.Drawing.Size(35, 34);
+            this.puerta3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta3.TabIndex = 211;
+            this.puerta3.TabStop = false;
+            this.puerta3.Tag = "0";
+            this.puerta3.Visible = false;
+            // 
+            // puerta2
+            // 
+            this.puerta2.BackColor = System.Drawing.Color.White;
+            this.puerta2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta2.Location = new System.Drawing.Point(277, 91);
+            this.puerta2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta2.Name = "puerta2";
+            this.puerta2.Size = new System.Drawing.Size(35, 34);
+            this.puerta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta2.TabIndex = 210;
+            this.puerta2.TabStop = false;
+            this.puerta2.Tag = "0";
+            this.puerta2.Visible = false;
+            // 
+            // puerta1
+            // 
+            this.puerta1.BackColor = System.Drawing.Color.White;
+            this.puerta1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.puerta1.Location = new System.Drawing.Point(277, 38);
+            this.puerta1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.puerta1.Name = "puerta1";
+            this.puerta1.Size = new System.Drawing.Size(35, 34);
+            this.puerta1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.puerta1.TabIndex = 209;
+            this.puerta1.TabStop = false;
+            this.puerta1.Tag = "0";
+            this.puerta1.Visible = false;
+            // 
+            // asiento63
+            // 
+            this.asiento63.BackColor = System.Drawing.Color.White;
+            this.asiento63.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento63.Location = new System.Drawing.Point(117, 674);
+            this.asiento63.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento63.Name = "asiento63";
+            this.asiento63.Size = new System.Drawing.Size(55, 34);
+            this.asiento63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento63.TabIndex = 208;
+            this.asiento63.TabStop = false;
+            this.asiento63.Tag = "0";
+            this.asiento63.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento28
+            // 
+            this.asiento28.BackColor = System.Drawing.Color.White;
+            this.asiento28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento28.Location = new System.Drawing.Point(116, 303);
+            this.asiento28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento28.Name = "asiento28";
+            this.asiento28.Size = new System.Drawing.Size(55, 34);
+            this.asiento28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento28.TabIndex = 207;
+            this.asiento28.TabStop = false;
+            this.asiento28.Tag = "0";
+            this.asiento28.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento33
+            // 
+            this.asiento33.BackColor = System.Drawing.Color.White;
+            this.asiento33.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento33.Location = new System.Drawing.Point(116, 356);
+            this.asiento33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento33.Name = "asiento33";
+            this.asiento33.Size = new System.Drawing.Size(55, 34);
+            this.asiento33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento33.TabIndex = 206;
+            this.asiento33.TabStop = false;
+            this.asiento33.Tag = "0";
+            this.asiento33.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento38
+            // 
+            this.asiento38.BackColor = System.Drawing.Color.White;
+            this.asiento38.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento38.Location = new System.Drawing.Point(116, 409);
+            this.asiento38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento38.Name = "asiento38";
+            this.asiento38.Size = new System.Drawing.Size(55, 34);
+            this.asiento38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento38.TabIndex = 205;
+            this.asiento38.TabStop = false;
+            this.asiento38.Tag = "0";
+            this.asiento38.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento43
+            // 
+            this.asiento43.BackColor = System.Drawing.Color.White;
+            this.asiento43.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento43.Location = new System.Drawing.Point(117, 462);
+            this.asiento43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento43.Name = "asiento43";
+            this.asiento43.Size = new System.Drawing.Size(55, 34);
+            this.asiento43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento43.TabIndex = 204;
+            this.asiento43.TabStop = false;
+            this.asiento43.Tag = "0";
+            this.asiento43.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento48
+            // 
+            this.asiento48.BackColor = System.Drawing.Color.White;
+            this.asiento48.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento48.Location = new System.Drawing.Point(117, 514);
+            this.asiento48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento48.Name = "asiento48";
+            this.asiento48.Size = new System.Drawing.Size(55, 34);
+            this.asiento48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento48.TabIndex = 203;
+            this.asiento48.TabStop = false;
+            this.asiento48.Tag = "0";
+            this.asiento48.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento53
+            // 
+            this.asiento53.BackColor = System.Drawing.Color.White;
+            this.asiento53.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento53.Location = new System.Drawing.Point(117, 569);
+            this.asiento53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento53.Name = "asiento53";
+            this.asiento53.Size = new System.Drawing.Size(55, 34);
+            this.asiento53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento53.TabIndex = 202;
+            this.asiento53.TabStop = false;
+            this.asiento53.Tag = "0";
+            this.asiento53.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento58
+            // 
+            this.asiento58.BackColor = System.Drawing.Color.White;
+            this.asiento58.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento58.Location = new System.Drawing.Point(117, 622);
+            this.asiento58.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento58.Name = "asiento58";
+            this.asiento58.Size = new System.Drawing.Size(55, 34);
+            this.asiento58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento58.TabIndex = 201;
+            this.asiento58.TabStop = false;
+            this.asiento58.Tag = "0";
+            this.asiento58.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento23
+            // 
+            this.asiento23.BackColor = System.Drawing.Color.White;
+            this.asiento23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento23.Location = new System.Drawing.Point(116, 250);
+            this.asiento23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento23.Name = "asiento23";
+            this.asiento23.Size = new System.Drawing.Size(55, 34);
+            this.asiento23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento23.TabIndex = 200;
+            this.asiento23.TabStop = false;
+            this.asiento23.Tag = "0";
+            this.asiento23.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento18
+            // 
+            this.asiento18.BackColor = System.Drawing.Color.White;
+            this.asiento18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento18.Location = new System.Drawing.Point(116, 197);
+            this.asiento18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento18.Name = "asiento18";
+            this.asiento18.Size = new System.Drawing.Size(55, 34);
+            this.asiento18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento18.TabIndex = 199;
+            this.asiento18.TabStop = false;
+            this.asiento18.Tag = "0";
+            this.asiento18.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento13
+            // 
+            this.asiento13.BackColor = System.Drawing.Color.White;
+            this.asiento13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento13.Location = new System.Drawing.Point(115, 144);
+            this.asiento13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento13.Name = "asiento13";
+            this.asiento13.Size = new System.Drawing.Size(55, 34);
+            this.asiento13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento13.TabIndex = 198;
+            this.asiento13.TabStop = false;
+            this.asiento13.Tag = "0";
+            this.asiento13.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento8
+            // 
+            this.asiento8.BackColor = System.Drawing.Color.White;
+            this.asiento8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento8.Location = new System.Drawing.Point(115, 91);
+            this.asiento8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento8.Name = "asiento8";
+            this.asiento8.Size = new System.Drawing.Size(55, 34);
+            this.asiento8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento8.TabIndex = 197;
+            this.asiento8.TabStop = false;
+            this.asiento8.Tag = "0";
+            this.asiento8.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento3
+            // 
+            this.asiento3.BackColor = System.Drawing.Color.White;
+            this.asiento3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento3.Location = new System.Drawing.Point(115, 38);
+            this.asiento3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento3.Name = "asiento3";
+            this.asiento3.Size = new System.Drawing.Size(55, 34);
+            this.asiento3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento3.TabIndex = 196;
+            this.asiento3.TabStop = false;
+            this.asiento3.Tag = "0";
+            this.asiento3.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento65
+            // 
+            this.asiento65.BackColor = System.Drawing.Color.White;
+            this.asiento65.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento65.Location = new System.Drawing.Point(225, 674);
+            this.asiento65.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento65.Name = "asiento65";
+            this.asiento65.Size = new System.Drawing.Size(55, 34);
+            this.asiento65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento65.TabIndex = 194;
+            this.asiento65.TabStop = false;
+            this.asiento65.Tag = "0";
+            this.asiento65.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento64
+            // 
+            this.asiento64.BackColor = System.Drawing.Color.White;
+            this.asiento64.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento64.Location = new System.Drawing.Point(171, 674);
+            this.asiento64.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento64.Name = "asiento64";
+            this.asiento64.Size = new System.Drawing.Size(55, 34);
+            this.asiento64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento64.TabIndex = 193;
+            this.asiento64.TabStop = false;
+            this.asiento64.Tag = "0";
+            this.asiento64.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento62
+            // 
+            this.asiento62.BackColor = System.Drawing.Color.White;
+            this.asiento62.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento62.Location = new System.Drawing.Point(63, 674);
+            this.asiento62.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento62.Name = "asiento62";
+            this.asiento62.Size = new System.Drawing.Size(55, 34);
+            this.asiento62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento62.TabIndex = 192;
+            this.asiento62.TabStop = false;
+            this.asiento62.Tag = "0";
+            this.asiento62.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento61
+            // 
+            this.asiento61.BackColor = System.Drawing.Color.White;
+            this.asiento61.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento61.Location = new System.Drawing.Point(9, 674);
+            this.asiento61.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento61.Name = "asiento61";
+            this.asiento61.Size = new System.Drawing.Size(55, 34);
+            this.asiento61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento61.TabIndex = 191;
+            this.asiento61.TabStop = false;
+            this.asiento61.Tag = "0";
+            this.asiento61.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento60
+            // 
+            this.asiento60.BackColor = System.Drawing.Color.White;
+            this.asiento60.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento60.Location = new System.Drawing.Point(225, 622);
+            this.asiento60.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento60.Name = "asiento60";
+            this.asiento60.Size = new System.Drawing.Size(55, 34);
+            this.asiento60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento60.TabIndex = 190;
+            this.asiento60.TabStop = false;
+            this.asiento60.Tag = "0";
+            this.asiento60.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento59
+            // 
+            this.asiento59.BackColor = System.Drawing.Color.White;
+            this.asiento59.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento59.Location = new System.Drawing.Point(171, 622);
+            this.asiento59.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento59.Name = "asiento59";
+            this.asiento59.Size = new System.Drawing.Size(55, 34);
+            this.asiento59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento59.TabIndex = 189;
+            this.asiento59.TabStop = false;
+            this.asiento59.Tag = "0";
+            this.asiento59.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento57
+            // 
+            this.asiento57.BackColor = System.Drawing.Color.White;
+            this.asiento57.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento57.Location = new System.Drawing.Point(63, 622);
+            this.asiento57.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento57.Name = "asiento57";
+            this.asiento57.Size = new System.Drawing.Size(55, 34);
+            this.asiento57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento57.TabIndex = 188;
+            this.asiento57.TabStop = false;
+            this.asiento57.Tag = "0";
+            this.asiento57.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento56
+            // 
+            this.asiento56.BackColor = System.Drawing.Color.White;
+            this.asiento56.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento56.Location = new System.Drawing.Point(9, 622);
+            this.asiento56.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento56.Name = "asiento56";
+            this.asiento56.Size = new System.Drawing.Size(55, 34);
+            this.asiento56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento56.TabIndex = 187;
+            this.asiento56.TabStop = false;
+            this.asiento56.Tag = "0";
+            this.asiento56.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento55
+            // 
+            this.asiento55.BackColor = System.Drawing.Color.White;
+            this.asiento55.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento55.Location = new System.Drawing.Point(225, 569);
+            this.asiento55.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento55.Name = "asiento55";
+            this.asiento55.Size = new System.Drawing.Size(55, 34);
+            this.asiento55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento55.TabIndex = 186;
+            this.asiento55.TabStop = false;
+            this.asiento55.Tag = "0";
+            this.asiento55.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento54
+            // 
+            this.asiento54.BackColor = System.Drawing.Color.White;
+            this.asiento54.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento54.Location = new System.Drawing.Point(171, 569);
+            this.asiento54.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento54.Name = "asiento54";
+            this.asiento54.Size = new System.Drawing.Size(55, 34);
+            this.asiento54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento54.TabIndex = 185;
+            this.asiento54.TabStop = false;
+            this.asiento54.Tag = "0";
+            this.asiento54.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento52
+            // 
+            this.asiento52.BackColor = System.Drawing.Color.White;
+            this.asiento52.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento52.Location = new System.Drawing.Point(63, 569);
+            this.asiento52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento52.Name = "asiento52";
+            this.asiento52.Size = new System.Drawing.Size(55, 34);
+            this.asiento52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento52.TabIndex = 184;
+            this.asiento52.TabStop = false;
+            this.asiento52.Tag = "0";
+            this.asiento52.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento51
+            // 
+            this.asiento51.BackColor = System.Drawing.Color.White;
+            this.asiento51.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento51.Location = new System.Drawing.Point(9, 569);
+            this.asiento51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento51.Name = "asiento51";
+            this.asiento51.Size = new System.Drawing.Size(55, 34);
+            this.asiento51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento51.TabIndex = 183;
+            this.asiento51.TabStop = false;
+            this.asiento51.Tag = "0";
+            this.asiento51.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento50
+            // 
+            this.asiento50.BackColor = System.Drawing.Color.White;
+            this.asiento50.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento50.Location = new System.Drawing.Point(225, 514);
+            this.asiento50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento50.Name = "asiento50";
+            this.asiento50.Size = new System.Drawing.Size(55, 34);
+            this.asiento50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento50.TabIndex = 182;
+            this.asiento50.TabStop = false;
+            this.asiento50.Tag = "0";
+            this.asiento50.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento49
+            // 
+            this.asiento49.BackColor = System.Drawing.Color.White;
+            this.asiento49.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento49.Location = new System.Drawing.Point(171, 514);
+            this.asiento49.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento49.Name = "asiento49";
+            this.asiento49.Size = new System.Drawing.Size(55, 34);
+            this.asiento49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento49.TabIndex = 181;
+            this.asiento49.TabStop = false;
+            this.asiento49.Tag = "0";
+            this.asiento49.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento47
+            // 
+            this.asiento47.BackColor = System.Drawing.Color.White;
+            this.asiento47.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento47.Location = new System.Drawing.Point(63, 514);
+            this.asiento47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento47.Name = "asiento47";
+            this.asiento47.Size = new System.Drawing.Size(55, 34);
+            this.asiento47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento47.TabIndex = 180;
+            this.asiento47.TabStop = false;
+            this.asiento47.Tag = "0";
+            this.asiento47.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento46
+            // 
+            this.asiento46.BackColor = System.Drawing.Color.White;
+            this.asiento46.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento46.Location = new System.Drawing.Point(9, 514);
+            this.asiento46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento46.Name = "asiento46";
+            this.asiento46.Size = new System.Drawing.Size(55, 34);
+            this.asiento46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento46.TabIndex = 179;
+            this.asiento46.TabStop = false;
+            this.asiento46.Tag = "0";
+            this.asiento46.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento45
+            // 
+            this.asiento45.BackColor = System.Drawing.Color.White;
+            this.asiento45.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento45.Location = new System.Drawing.Point(225, 462);
+            this.asiento45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento45.Name = "asiento45";
+            this.asiento45.Size = new System.Drawing.Size(55, 34);
+            this.asiento45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento45.TabIndex = 178;
+            this.asiento45.TabStop = false;
+            this.asiento45.Tag = "0";
+            this.asiento45.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento44
+            // 
+            this.asiento44.BackColor = System.Drawing.Color.White;
+            this.asiento44.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento44.Location = new System.Drawing.Point(171, 462);
+            this.asiento44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento44.Name = "asiento44";
+            this.asiento44.Size = new System.Drawing.Size(55, 34);
+            this.asiento44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento44.TabIndex = 177;
+            this.asiento44.TabStop = false;
+            this.asiento44.Tag = "0";
+            this.asiento44.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento42
+            // 
+            this.asiento42.BackColor = System.Drawing.Color.White;
+            this.asiento42.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento42.Location = new System.Drawing.Point(63, 462);
+            this.asiento42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento42.Name = "asiento42";
+            this.asiento42.Size = new System.Drawing.Size(55, 34);
+            this.asiento42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento42.TabIndex = 176;
+            this.asiento42.TabStop = false;
+            this.asiento42.Tag = "0";
+            this.asiento42.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento41
+            // 
+            this.asiento41.BackColor = System.Drawing.Color.White;
+            this.asiento41.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento41.Location = new System.Drawing.Point(9, 462);
+            this.asiento41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento41.Name = "asiento41";
+            this.asiento41.Size = new System.Drawing.Size(55, 34);
+            this.asiento41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento41.TabIndex = 175;
+            this.asiento41.TabStop = false;
+            this.asiento41.Tag = "0";
+            this.asiento41.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento40
+            // 
+            this.asiento40.BackColor = System.Drawing.Color.White;
+            this.asiento40.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento40.Location = new System.Drawing.Point(224, 409);
+            this.asiento40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento40.Name = "asiento40";
+            this.asiento40.Size = new System.Drawing.Size(55, 34);
+            this.asiento40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento40.TabIndex = 174;
+            this.asiento40.TabStop = false;
+            this.asiento40.Tag = "0";
+            this.asiento40.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento39
+            // 
+            this.asiento39.BackColor = System.Drawing.Color.White;
+            this.asiento39.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento39.Location = new System.Drawing.Point(171, 409);
+            this.asiento39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento39.Name = "asiento39";
+            this.asiento39.Size = new System.Drawing.Size(55, 34);
+            this.asiento39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento39.TabIndex = 173;
+            this.asiento39.TabStop = false;
+            this.asiento39.Tag = "0";
+            this.asiento39.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento37
+            // 
+            this.asiento37.BackColor = System.Drawing.Color.White;
+            this.asiento37.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento37.Location = new System.Drawing.Point(61, 409);
+            this.asiento37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento37.Name = "asiento37";
+            this.asiento37.Size = new System.Drawing.Size(55, 34);
+            this.asiento37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento37.TabIndex = 172;
+            this.asiento37.TabStop = false;
+            this.asiento37.Tag = "0";
+            this.asiento37.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento36
+            // 
+            this.asiento36.BackColor = System.Drawing.Color.White;
+            this.asiento36.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento36.Location = new System.Drawing.Point(8, 409);
+            this.asiento36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento36.Name = "asiento36";
+            this.asiento36.Size = new System.Drawing.Size(55, 34);
+            this.asiento36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento36.TabIndex = 171;
+            this.asiento36.TabStop = false;
+            this.asiento36.Tag = "0";
+            this.asiento36.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento35
+            // 
+            this.asiento35.BackColor = System.Drawing.Color.White;
+            this.asiento35.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento35.Location = new System.Drawing.Point(224, 356);
+            this.asiento35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento35.Name = "asiento35";
+            this.asiento35.Size = new System.Drawing.Size(55, 34);
+            this.asiento35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento35.TabIndex = 170;
+            this.asiento35.TabStop = false;
+            this.asiento35.Tag = "0";
+            this.asiento35.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento34
+            // 
+            this.asiento34.BackColor = System.Drawing.Color.White;
+            this.asiento34.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento34.Location = new System.Drawing.Point(171, 356);
+            this.asiento34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento34.Name = "asiento34";
+            this.asiento34.Size = new System.Drawing.Size(55, 34);
+            this.asiento34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento34.TabIndex = 169;
+            this.asiento34.TabStop = false;
+            this.asiento34.Tag = "0";
+            this.asiento34.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento32
+            // 
+            this.asiento32.BackColor = System.Drawing.Color.White;
+            this.asiento32.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento32.Location = new System.Drawing.Point(61, 356);
+            this.asiento32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento32.Name = "asiento32";
+            this.asiento32.Size = new System.Drawing.Size(55, 34);
+            this.asiento32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento32.TabIndex = 168;
+            this.asiento32.TabStop = false;
+            this.asiento32.Tag = "0";
+            this.asiento32.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento31
+            // 
+            this.asiento31.BackColor = System.Drawing.Color.White;
+            this.asiento31.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento31.Location = new System.Drawing.Point(8, 356);
+            this.asiento31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento31.Name = "asiento31";
+            this.asiento31.Size = new System.Drawing.Size(55, 34);
+            this.asiento31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento31.TabIndex = 167;
+            this.asiento31.TabStop = false;
+            this.asiento31.Tag = "0";
+            this.asiento31.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento30
+            // 
+            this.asiento30.BackColor = System.Drawing.Color.White;
+            this.asiento30.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento30.Location = new System.Drawing.Point(224, 303);
+            this.asiento30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento30.Name = "asiento30";
+            this.asiento30.Size = new System.Drawing.Size(55, 34);
+            this.asiento30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento30.TabIndex = 166;
+            this.asiento30.TabStop = false;
+            this.asiento30.Tag = "0";
+            this.asiento30.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento29
+            // 
+            this.asiento29.BackColor = System.Drawing.Color.White;
+            this.asiento29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento29.Location = new System.Drawing.Point(171, 303);
+            this.asiento29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento29.Name = "asiento29";
+            this.asiento29.Size = new System.Drawing.Size(55, 34);
+            this.asiento29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento29.TabIndex = 165;
+            this.asiento29.TabStop = false;
+            this.asiento29.Tag = "0";
+            this.asiento29.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento27
+            // 
+            this.asiento27.BackColor = System.Drawing.Color.White;
+            this.asiento27.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento27.Location = new System.Drawing.Point(61, 303);
+            this.asiento27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento27.Name = "asiento27";
+            this.asiento27.Size = new System.Drawing.Size(55, 34);
+            this.asiento27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento27.TabIndex = 164;
+            this.asiento27.TabStop = false;
+            this.asiento27.Tag = "0";
+            this.asiento27.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento26
+            // 
+            this.asiento26.BackColor = System.Drawing.Color.White;
+            this.asiento26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento26.Location = new System.Drawing.Point(8, 303);
+            this.asiento26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento26.Name = "asiento26";
+            this.asiento26.Size = new System.Drawing.Size(55, 34);
+            this.asiento26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento26.TabIndex = 163;
+            this.asiento26.TabStop = false;
+            this.asiento26.Tag = "0";
+            this.asiento26.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento25
+            // 
+            this.asiento25.BackColor = System.Drawing.Color.White;
+            this.asiento25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento25.Location = new System.Drawing.Point(224, 250);
+            this.asiento25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento25.Name = "asiento25";
+            this.asiento25.Size = new System.Drawing.Size(55, 34);
+            this.asiento25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento25.TabIndex = 162;
+            this.asiento25.TabStop = false;
+            this.asiento25.Tag = "0";
+            this.asiento25.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento24
+            // 
+            this.asiento24.BackColor = System.Drawing.Color.White;
+            this.asiento24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento24.Location = new System.Drawing.Point(171, 250);
+            this.asiento24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento24.Name = "asiento24";
+            this.asiento24.Size = new System.Drawing.Size(55, 34);
+            this.asiento24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento24.TabIndex = 161;
+            this.asiento24.TabStop = false;
+            this.asiento24.Tag = "0";
+            this.asiento24.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento22
+            // 
+            this.asiento22.BackColor = System.Drawing.Color.White;
+            this.asiento22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento22.Location = new System.Drawing.Point(61, 250);
+            this.asiento22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento22.Name = "asiento22";
+            this.asiento22.Size = new System.Drawing.Size(55, 34);
+            this.asiento22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento22.TabIndex = 160;
+            this.asiento22.TabStop = false;
+            this.asiento22.Tag = "0";
+            this.asiento22.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento21
+            // 
+            this.asiento21.BackColor = System.Drawing.Color.White;
+            this.asiento21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento21.Location = new System.Drawing.Point(8, 250);
+            this.asiento21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento21.Name = "asiento21";
+            this.asiento21.Size = new System.Drawing.Size(55, 34);
+            this.asiento21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento21.TabIndex = 159;
+            this.asiento21.TabStop = false;
+            this.asiento21.Tag = "0";
+            this.asiento21.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento20
+            // 
+            this.asiento20.BackColor = System.Drawing.Color.White;
+            this.asiento20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento20.Location = new System.Drawing.Point(224, 197);
+            this.asiento20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento20.Name = "asiento20";
+            this.asiento20.Size = new System.Drawing.Size(55, 34);
+            this.asiento20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento20.TabIndex = 158;
+            this.asiento20.TabStop = false;
+            this.asiento20.Tag = "0";
+            this.asiento20.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento19
+            // 
+            this.asiento19.BackColor = System.Drawing.Color.White;
+            this.asiento19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento19.Location = new System.Drawing.Point(171, 197);
+            this.asiento19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento19.Name = "asiento19";
+            this.asiento19.Size = new System.Drawing.Size(55, 34);
+            this.asiento19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento19.TabIndex = 157;
+            this.asiento19.TabStop = false;
+            this.asiento19.Tag = "0";
+            this.asiento19.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento17
+            // 
+            this.asiento17.BackColor = System.Drawing.Color.White;
+            this.asiento17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento17.Location = new System.Drawing.Point(61, 197);
+            this.asiento17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento17.Name = "asiento17";
+            this.asiento17.Size = new System.Drawing.Size(55, 34);
+            this.asiento17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento17.TabIndex = 156;
+            this.asiento17.TabStop = false;
+            this.asiento17.Tag = "0";
+            this.asiento17.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento16
+            // 
+            this.asiento16.BackColor = System.Drawing.Color.White;
+            this.asiento16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento16.Location = new System.Drawing.Point(8, 197);
+            this.asiento16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento16.Name = "asiento16";
+            this.asiento16.Size = new System.Drawing.Size(55, 34);
+            this.asiento16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento16.TabIndex = 155;
+            this.asiento16.TabStop = false;
+            this.asiento16.Tag = "0";
+            this.asiento16.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento15
+            // 
+            this.asiento15.BackColor = System.Drawing.Color.White;
+            this.asiento15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento15.Location = new System.Drawing.Point(223, 144);
+            this.asiento15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento15.Name = "asiento15";
+            this.asiento15.Size = new System.Drawing.Size(55, 34);
+            this.asiento15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento15.TabIndex = 154;
+            this.asiento15.TabStop = false;
+            this.asiento15.Tag = "0";
+            this.asiento15.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento14
+            // 
+            this.asiento14.BackColor = System.Drawing.Color.White;
+            this.asiento14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento14.Location = new System.Drawing.Point(169, 144);
+            this.asiento14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento14.Name = "asiento14";
+            this.asiento14.Size = new System.Drawing.Size(55, 34);
+            this.asiento14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento14.TabIndex = 153;
+            this.asiento14.TabStop = false;
+            this.asiento14.Tag = "0";
+            this.asiento14.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento12
+            // 
+            this.asiento12.BackColor = System.Drawing.Color.White;
+            this.asiento12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento12.Location = new System.Drawing.Point(61, 144);
+            this.asiento12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento12.Name = "asiento12";
+            this.asiento12.Size = new System.Drawing.Size(55, 34);
+            this.asiento12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento12.TabIndex = 152;
+            this.asiento12.TabStop = false;
+            this.asiento12.Tag = "0";
+            this.asiento12.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento11
+            // 
+            this.asiento11.BackColor = System.Drawing.Color.White;
+            this.asiento11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento11.Location = new System.Drawing.Point(7, 144);
+            this.asiento11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento11.Name = "asiento11";
+            this.asiento11.Size = new System.Drawing.Size(55, 34);
+            this.asiento11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento11.TabIndex = 151;
+            this.asiento11.TabStop = false;
+            this.asiento11.Tag = "0";
+            this.asiento11.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento10
+            // 
+            this.asiento10.BackColor = System.Drawing.Color.White;
+            this.asiento10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento10.Location = new System.Drawing.Point(223, 91);
+            this.asiento10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento10.Name = "asiento10";
+            this.asiento10.Size = new System.Drawing.Size(55, 34);
+            this.asiento10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento10.TabIndex = 150;
+            this.asiento10.TabStop = false;
+            this.asiento10.Tag = "0";
+            this.asiento10.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento9
+            // 
+            this.asiento9.BackColor = System.Drawing.Color.White;
+            this.asiento9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento9.Location = new System.Drawing.Point(169, 91);
+            this.asiento9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento9.Name = "asiento9";
+            this.asiento9.Size = new System.Drawing.Size(55, 34);
+            this.asiento9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento9.TabIndex = 149;
+            this.asiento9.TabStop = false;
+            this.asiento9.Tag = "0";
+            this.asiento9.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento7
+            // 
+            this.asiento7.BackColor = System.Drawing.Color.White;
+            this.asiento7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento7.Location = new System.Drawing.Point(61, 91);
+            this.asiento7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento7.Name = "asiento7";
+            this.asiento7.Size = new System.Drawing.Size(55, 34);
+            this.asiento7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento7.TabIndex = 148;
+            this.asiento7.TabStop = false;
+            this.asiento7.Tag = "0";
+            this.asiento7.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento6
+            // 
+            this.asiento6.BackColor = System.Drawing.Color.White;
+            this.asiento6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento6.Location = new System.Drawing.Point(7, 91);
+            this.asiento6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento6.Name = "asiento6";
+            this.asiento6.Size = new System.Drawing.Size(55, 34);
+            this.asiento6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento6.TabIndex = 147;
+            this.asiento6.TabStop = false;
+            this.asiento6.Tag = "0";
+            this.asiento6.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento5
+            // 
+            this.asiento5.BackColor = System.Drawing.Color.White;
+            this.asiento5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento5.Location = new System.Drawing.Point(223, 38);
+            this.asiento5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento5.Name = "asiento5";
+            this.asiento5.Size = new System.Drawing.Size(55, 34);
+            this.asiento5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento5.TabIndex = 146;
+            this.asiento5.TabStop = false;
+            this.asiento5.Tag = "0";
+            this.asiento5.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento4
+            // 
+            this.asiento4.BackColor = System.Drawing.Color.White;
+            this.asiento4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento4.Location = new System.Drawing.Point(169, 38);
+            this.asiento4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento4.Name = "asiento4";
+            this.asiento4.Size = new System.Drawing.Size(55, 34);
+            this.asiento4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento4.TabIndex = 145;
+            this.asiento4.TabStop = false;
+            this.asiento4.Tag = "0";
+            this.asiento4.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento2
+            // 
+            this.asiento2.BackColor = System.Drawing.Color.White;
+            this.asiento2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento2.Location = new System.Drawing.Point(61, 38);
+            this.asiento2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento2.Name = "asiento2";
+            this.asiento2.Size = new System.Drawing.Size(55, 34);
+            this.asiento2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento2.TabIndex = 144;
+            this.asiento2.TabStop = false;
+            this.asiento2.Tag = "0";
+            this.asiento2.Click += new System.EventHandler(this.Boleto_Click);
+            // 
+            // asiento1
+            // 
+            this.asiento1.BackColor = System.Drawing.Color.White;
+            this.asiento1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.asiento1.Location = new System.Drawing.Point(7, 38);
+            this.asiento1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.asiento1.Name = "asiento1";
+            this.asiento1.Size = new System.Drawing.Size(55, 34);
+            this.asiento1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.asiento1.TabIndex = 6;
+            this.asiento1.TabStop = false;
+            this.asiento1.Tag = "0";
+            this.asiento1.Click += new System.EventHandler(this.Boleto_Click);
             // 
             // frmHomeV2
             // 
@@ -3878,10 +3763,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.asiento4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.asiento1)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            this.materialCard5.ResumeLayout(false);
-            this.materialCard5.PerformLayout();
-            this.MenuStripCaja.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -4083,8 +3964,6 @@
         private System.Windows.Forms.TextBox pasillo1;
         private System.Windows.Forms.TextBox textBox133;
         private System.Windows.Forms.TextBox textBox134;
-        private System.ComponentModel.BackgroundWorker backgroundWorkerFechaHora;
-        private System.Windows.Forms.Timer timerFechaHora;
         private System.Windows.Forms.ImageList imageListmMenu;
         private System.Windows.Forms.ContextMenuStrip MenuStripCaja;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemDepositos;
