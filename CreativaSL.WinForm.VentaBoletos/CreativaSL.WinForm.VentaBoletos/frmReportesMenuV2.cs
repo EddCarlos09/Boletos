@@ -19,7 +19,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             InitializeComponent();
             loadMaterial(this);
             this.TopMost = true;
-            this.IsMdiContainer = true;
+            this.IsMdiContainer = false;
             this.checkBox_Mensual.Checked = true;
         }
         #region Eventos

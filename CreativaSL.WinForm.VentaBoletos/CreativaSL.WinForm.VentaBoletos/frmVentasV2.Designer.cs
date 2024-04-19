@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentasV2));
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.dgvdatosboleto = new System.Windows.Forms.DataGridView();
@@ -124,12 +124,12 @@
             this.materialCard1.Controls.Add(this.materialLabel1);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(2, 15);
+            this.materialCard1.Location = new System.Drawing.Point(12, 15);
             this.materialCard1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
-            this.materialCard1.Size = new System.Drawing.Size(926, 647);
+            this.materialCard1.Size = new System.Drawing.Size(916, 647);
             this.materialCard1.TabIndex = 0;
             // 
             // dgvdatosboleto
@@ -170,23 +170,23 @@
             this.cajero,
             this.bloqueoCancelacionMonedero,
             this.bloqueoCancelacionPorFormaDePago});
-            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle65.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle65.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle65.Format = "C2";
-            dataGridViewCellStyle65.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle65.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle65.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdatosboleto.DefaultCellStyle = dataGridViewCellStyle65;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle10.Format = "C2";
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdatosboleto.DefaultCellStyle = dataGridViewCellStyle10;
             this.dgvdatosboleto.Location = new System.Drawing.Point(13, 314);
-            this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(2);
             this.dgvdatosboleto.MultiSelect = false;
             this.dgvdatosboleto.Name = "dgvdatosboleto";
             this.dgvdatosboleto.ReadOnly = true;
             this.dgvdatosboleto.RowHeadersWidth = 51;
-            dataGridViewCellStyle66.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dgvdatosboleto.RowsDefaultCellStyle = dataGridViewCellStyle66;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dgvdatosboleto.RowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -273,9 +273,9 @@
             // fecha_salidaV
             // 
             this.fecha_salidaV.DataPropertyName = "fecha_salidaV";
-            dataGridViewCellStyle56.Format = "d";
-            dataGridViewCellStyle56.NullValue = null;
-            this.fecha_salidaV.DefaultCellStyle = dataGridViewCellStyle56;
+            dataGridViewCellStyle1.Format = "d";
+            dataGridViewCellStyle1.NullValue = null;
+            this.fecha_salidaV.DefaultCellStyle = dataGridViewCellStyle1;
             this.fecha_salidaV.HeaderText = "Fecha";
             this.fecha_salidaV.MinimumWidth = 6;
             this.fecha_salidaV.Name = "fecha_salidaV";
@@ -309,9 +309,9 @@
             // asiento
             // 
             this.asiento.DataPropertyName = "asiento";
-            dataGridViewCellStyle57.Format = "N0";
-            dataGridViewCellStyle57.NullValue = null;
-            this.asiento.DefaultCellStyle = dataGridViewCellStyle57;
+            dataGridViewCellStyle2.Format = "N0";
+            dataGridViewCellStyle2.NullValue = null;
+            this.asiento.DefaultCellStyle = dataGridViewCellStyle2;
             this.asiento.HeaderText = "Asiento";
             this.asiento.MinimumWidth = 6;
             this.asiento.Name = "asiento";
@@ -323,8 +323,8 @@
             // fechaNacimiento
             // 
             this.fechaNacimiento.DataPropertyName = "fechaNacimiento";
-            dataGridViewCellStyle58.Format = "d";
-            this.fechaNacimiento.DefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle3.Format = "d";
+            this.fechaNacimiento.DefaultCellStyle = dataGridViewCellStyle3;
             this.fechaNacimiento.HeaderText = "Fecha_Nacimiento";
             this.fechaNacimiento.MinimumWidth = 6;
             this.fechaNacimiento.Name = "fechaNacimiento";
@@ -356,9 +356,9 @@
             // boletocosto
             // 
             this.boletocosto.DataPropertyName = "boletocosto";
-            dataGridViewCellStyle59.Format = "C2";
-            dataGridViewCellStyle59.NullValue = null;
-            this.boletocosto.DefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.boletocosto.DefaultCellStyle = dataGridViewCellStyle4;
             this.boletocosto.HeaderText = "Precio";
             this.boletocosto.MinimumWidth = 6;
             this.boletocosto.Name = "boletocosto";
@@ -370,8 +370,8 @@
             // vdcosto
             // 
             this.vdcosto.DataPropertyName = "vdcosto";
-            dataGridViewCellStyle60.Format = "C2";
-            this.vdcosto.DefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle5.Format = "C2";
+            this.vdcosto.DefaultCellStyle = dataGridViewCellStyle5;
             this.vdcosto.HeaderText = "Costo";
             this.vdcosto.MinimumWidth = 6;
             this.vdcosto.Name = "vdcosto";
@@ -384,8 +384,8 @@
             // iva
             // 
             this.iva.DataPropertyName = "iva";
-            dataGridViewCellStyle61.Format = "C2";
-            this.iva.DefaultCellStyle = dataGridViewCellStyle61;
+            dataGridViewCellStyle6.Format = "C2";
+            this.iva.DefaultCellStyle = dataGridViewCellStyle6;
             this.iva.HeaderText = "IVA";
             this.iva.MinimumWidth = 6;
             this.iva.Name = "iva";
@@ -398,8 +398,8 @@
             // pago
             // 
             this.pago.DataPropertyName = "pago";
-            dataGridViewCellStyle62.Format = "C2";
-            this.pago.DefaultCellStyle = dataGridViewCellStyle62;
+            dataGridViewCellStyle7.Format = "C2";
+            this.pago.DefaultCellStyle = dataGridViewCellStyle7;
             this.pago.HeaderText = "Pago";
             this.pago.MinimumWidth = 6;
             this.pago.Name = "pago";
@@ -411,8 +411,8 @@
             // pendiente
             // 
             this.pendiente.DataPropertyName = "pendiente";
-            dataGridViewCellStyle63.Format = "C2";
-            this.pendiente.DefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle8.Format = "C2";
+            this.pendiente.DefaultCellStyle = dataGridViewCellStyle8;
             this.pendiente.HeaderText = "Pendiente";
             this.pendiente.MinimumWidth = 6;
             this.pendiente.Name = "pendiente";
@@ -424,9 +424,9 @@
             // Transf
             // 
             this.Transf.DataPropertyName = "Transf";
-            dataGridViewCellStyle64.Format = "N0";
-            dataGridViewCellStyle64.NullValue = null;
-            this.Transf.DefaultCellStyle = dataGridViewCellStyle64;
+            dataGridViewCellStyle9.Format = "N0";
+            dataGridViewCellStyle9.NullValue = null;
+            this.Transf.DefaultCellStyle = dataGridViewCellStyle9;
             this.Transf.HeaderText = "Transf";
             this.Transf.MinimumWidth = 6;
             this.Transf.Name = "Transf";
@@ -526,8 +526,8 @@
             // dtpFecha
             // 
             this.dtpFecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dtpFecha.Location = new System.Drawing.Point(169, 114);
-            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpFecha.Location = new System.Drawing.Point(164, 114);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(188, 20);
             this.dtpFecha.TabIndex = 19;
@@ -551,8 +551,8 @@
             this.btn_CambiarNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_CambiarNombre.Image = ((System.Drawing.Image)(resources.GetObject("btn_CambiarNombre.Image")));
             this.btn_CambiarNombre.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_CambiarNombre.Location = new System.Drawing.Point(564, 146);
-            this.btn_CambiarNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_CambiarNombre.Location = new System.Drawing.Point(559, 146);
+            this.btn_CambiarNombre.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CambiarNombre.Name = "btn_CambiarNombre";
             this.btn_CambiarNombre.Size = new System.Drawing.Size(82, 76);
             this.btn_CambiarNombre.TabIndex = 16;
@@ -566,8 +566,8 @@
             this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(669, 146);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Location = new System.Drawing.Point(664, 146);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(82, 76);
             this.btnSalir.TabIndex = 15;
@@ -581,8 +581,8 @@
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(564, 146);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Location = new System.Drawing.Point(559, 146);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(82, 76);
             this.button6.TabIndex = 16;
@@ -595,8 +595,8 @@
             this.btnImprimir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnImprimir.Location = new System.Drawing.Point(770, 55);
-            this.btnImprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnImprimir.Location = new System.Drawing.Point(765, 55);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(2);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(82, 76);
             this.btnImprimir.TabIndex = 14;
@@ -610,8 +610,8 @@
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(669, 146);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Location = new System.Drawing.Point(664, 146);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(82, 76);
             this.button5.TabIndex = 15;
@@ -624,8 +624,8 @@
             this.btnCancelarB.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelarB.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarB.Image")));
             this.btnCancelarB.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarB.Location = new System.Drawing.Point(669, 55);
-            this.btnCancelarB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelarB.Location = new System.Drawing.Point(664, 55);
+            this.btnCancelarB.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelarB.Name = "btnCancelarB";
             this.btnCancelarB.Size = new System.Drawing.Size(82, 76);
             this.btnCancelarB.TabIndex = 13;
@@ -639,8 +639,8 @@
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(770, 55);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Location = new System.Drawing.Point(765, 55);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(82, 76);
             this.button4.TabIndex = 14;
@@ -653,8 +653,8 @@
             this.btnCancelarA.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelarA.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarA.Image")));
             this.btnCancelarA.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarA.Location = new System.Drawing.Point(564, 55);
-            this.btnCancelarA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelarA.Location = new System.Drawing.Point(559, 55);
+            this.btnCancelarA.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelarA.Name = "btnCancelarA";
             this.btnCancelarA.Size = new System.Drawing.Size(82, 76);
             this.btnCancelarA.TabIndex = 12;
@@ -668,8 +668,8 @@
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(669, 55);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Location = new System.Drawing.Point(664, 55);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(82, 76);
             this.button3.TabIndex = 13;
@@ -682,8 +682,8 @@
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(564, 55);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Location = new System.Drawing.Point(559, 55);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(82, 76);
             this.button2.TabIndex = 12;
@@ -697,7 +697,7 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(693, 11);
+            this.materialLabel2.Location = new System.Drawing.Point(688, 11);
             this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
@@ -710,8 +710,8 @@
             this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(407, 93);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar.Location = new System.Drawing.Point(402, 93);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(79, 76);
             this.btnBuscar.TabIndex = 10;
@@ -730,8 +730,8 @@
             this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreCliente.HideSelection = true;
             this.txtNombreCliente.LeadingIcon = null;
-            this.txtNombreCliente.Location = new System.Drawing.Point(169, 212);
-            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreCliente.Location = new System.Drawing.Point(164, 212);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreCliente.MaxLength = 32767;
             this.txtNombreCliente.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreCliente.Name = "txtNombreCliente";
@@ -760,8 +760,8 @@
             this.txtFolioBoleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFolioBoleto.HideSelection = true;
             this.txtFolioBoleto.LeadingIcon = null;
-            this.txtFolioBoleto.Location = new System.Drawing.Point(169, 157);
-            this.txtFolioBoleto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFolioBoleto.Location = new System.Drawing.Point(164, 157);
+            this.txtFolioBoleto.Margin = new System.Windows.Forms.Padding(2);
             this.txtFolioBoleto.MaxLength = 32767;
             this.txtFolioBoleto.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFolioBoleto.Name = "txtFolioBoleto";
@@ -790,8 +790,8 @@
             this.txt_folioVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_folioVenta.HideSelection = true;
             this.txt_folioVenta.LeadingIcon = null;
-            this.txt_folioVenta.Location = new System.Drawing.Point(169, 49);
-            this.txt_folioVenta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_folioVenta.Location = new System.Drawing.Point(164, 49);
+            this.txt_folioVenta.Margin = new System.Windows.Forms.Padding(2);
             this.txt_folioVenta.MaxLength = 32767;
             this.txt_folioVenta.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_folioVenta.Name = "txt_folioVenta";
@@ -818,7 +818,7 @@
             this.chkNombre.Checked = true;
             this.chkNombre.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkNombre.Depth = 0;
-            this.chkNombre.Location = new System.Drawing.Point(32, 212);
+            this.chkNombre.Location = new System.Drawing.Point(27, 212);
             this.chkNombre.Margin = new System.Windows.Forms.Padding(0);
             this.chkNombre.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkNombre.MouseState = MaterialSkin.MouseState.HOVER;
@@ -838,7 +838,7 @@
             this.chkFolio.Checked = true;
             this.chkFolio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolio.Depth = 0;
-            this.chkFolio.Location = new System.Drawing.Point(32, 157);
+            this.chkFolio.Location = new System.Drawing.Point(27, 157);
             this.chkFolio.Margin = new System.Windows.Forms.Padding(0);
             this.chkFolio.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFolio.MouseState = MaterialSkin.MouseState.HOVER;
@@ -858,7 +858,7 @@
             this.chkFecha.Checked = true;
             this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFecha.Depth = 0;
-            this.chkFecha.Location = new System.Drawing.Point(32, 102);
+            this.chkFecha.Location = new System.Drawing.Point(27, 102);
             this.chkFecha.Margin = new System.Windows.Forms.Padding(0);
             this.chkFecha.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFecha.MouseState = MaterialSkin.MouseState.HOVER;
@@ -879,7 +879,7 @@
             this.chkFolioVenta.Checked = true;
             this.chkFolioVenta.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolioVenta.Depth = 0;
-            this.chkFolioVenta.Location = new System.Drawing.Point(32, 49);
+            this.chkFolioVenta.Location = new System.Drawing.Point(27, 49);
             this.chkFolioVenta.Margin = new System.Windows.Forms.Padding(0);
             this.chkFolioVenta.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFolioVenta.MouseState = MaterialSkin.MouseState.HOVER;
@@ -897,7 +897,7 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(43, 11);
+            this.materialLabel1.Location = new System.Drawing.Point(38, 11);
             this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
@@ -912,7 +912,7 @@
             this.ClientSize = new System.Drawing.Size(931, 665);
             this.ControlBox = false;
             this.Controls.Add(this.materialCard1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmVentasV2";
             this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
             this.Text = "frmVentasV2";

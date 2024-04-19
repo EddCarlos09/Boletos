@@ -65,14 +65,13 @@
             this.materialCard1.Controls.Add(this.materialLabel2);
             this.materialCard1.Controls.Add(this.materialCard2);
             this.materialCard1.Depth = 0;
-            this.materialCard1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(3, 64);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Location = new System.Drawing.Point(2, 20);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(1459, 503);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard1.Size = new System.Drawing.Size(1094, 441);
             this.materialCard1.TabIndex = 0;
             // 
             // dgvClientes
@@ -94,13 +93,12 @@
             this.Clasificacion,
             this.FechaNacimiento,
             this.fechaAlta});
-            this.dgvClientes.Location = new System.Drawing.Point(18, 204);
-            this.dgvClientes.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvClientes.Location = new System.Drawing.Point(14, 166);
             this.dgvClientes.MultiSelect = false;
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 51;
             this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClientes.Size = new System.Drawing.Size(1423, 281);
+            this.dgvClientes.Size = new System.Drawing.Size(1067, 228);
             this.dgvClientes.TabIndex = 2;
             // 
             // IDCliente
@@ -197,7 +195,8 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(572, 181);
+            this.materialLabel2.Location = new System.Drawing.Point(429, 147);
+            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(155, 19);
@@ -218,12 +217,12 @@
             this.materialCard2.Controls.Add(this.LblTipoBusqueda);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(14, 14);
-            this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard2.Location = new System.Drawing.Point(10, 11);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
-            this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard2.Size = new System.Drawing.Size(1431, 117);
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard2.Size = new System.Drawing.Size(1073, 95);
             this.materialCard2.TabIndex = 0;
             // 
             // btnAsignarTarjeta
@@ -231,9 +230,10 @@
             this.btnAsignarTarjeta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAsignarTarjeta.Image = ((System.Drawing.Image)(resources.GetObject("btnAsignarTarjeta.Image")));
             this.btnAsignarTarjeta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAsignarTarjeta.Location = new System.Drawing.Point(1151, 6);
+            this.btnAsignarTarjeta.Location = new System.Drawing.Point(863, 5);
+            this.btnAsignarTarjeta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAsignarTarjeta.Name = "btnAsignarTarjeta";
-            this.btnAsignarTarjeta.Size = new System.Drawing.Size(110, 94);
+            this.btnAsignarTarjeta.Size = new System.Drawing.Size(82, 76);
             this.btnAsignarTarjeta.TabIndex = 21;
             this.btnAsignarTarjeta.Text = "Asignar Tarjeta";
             this.btnAsignarTarjeta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -245,9 +245,10 @@
             this.btnNuevo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnNuevo.Location = new System.Drawing.Point(1020, 6);
+            this.btnNuevo.Location = new System.Drawing.Point(765, 5);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(110, 94);
+            this.btnNuevo.Size = new System.Drawing.Size(82, 76);
             this.btnNuevo.TabIndex = 20;
             this.btnNuevo.Text = "Agregar";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -259,9 +260,10 @@
             this.btnEliminar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEliminar.Location = new System.Drawing.Point(887, 6);
+            this.btnEliminar.Location = new System.Drawing.Point(665, 5);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(110, 94);
+            this.btnEliminar.Size = new System.Drawing.Size(82, 76);
             this.btnEliminar.TabIndex = 19;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -273,9 +275,10 @@
             this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(1282, 6);
+            this.btnSalir.Location = new System.Drawing.Point(962, 5);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(110, 94);
+            this.btnSalir.Size = new System.Drawing.Size(82, 76);
             this.btnSalir.TabIndex = 18;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -287,9 +290,10 @@
             this.btnModificar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
             this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnModificar.Location = new System.Drawing.Point(752, 6);
+            this.btnModificar.Location = new System.Drawing.Point(564, 5);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(110, 94);
+            this.btnModificar.Size = new System.Drawing.Size(82, 76);
             this.btnModificar.TabIndex = 17;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -301,9 +305,10 @@
             this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(624, 6);
+            this.btnBuscar.Location = new System.Drawing.Point(468, 5);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(105, 94);
+            this.btnBuscar.Size = new System.Drawing.Size(79, 76);
             this.btnBuscar.TabIndex = 15;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -319,7 +324,8 @@
             this.TxtBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.TxtBusqueda.HideSelection = true;
             this.TxtBusqueda.LeadingIcon = null;
-            this.TxtBusqueda.Location = new System.Drawing.Point(326, 32);
+            this.TxtBusqueda.Location = new System.Drawing.Point(244, 26);
+            this.TxtBusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtBusqueda.MaxLength = 32767;
             this.TxtBusqueda.MouseState = MaterialSkin.MouseState.OUT;
             this.TxtBusqueda.Name = "TxtBusqueda";
@@ -331,7 +337,7 @@
             this.TxtBusqueda.SelectionLength = 0;
             this.TxtBusqueda.SelectionStart = 0;
             this.TxtBusqueda.ShortcutsEnabled = true;
-            this.TxtBusqueda.Size = new System.Drawing.Size(250, 48);
+            this.TxtBusqueda.Size = new System.Drawing.Size(188, 48);
             this.TxtBusqueda.TabIndex = 14;
             this.TxtBusqueda.TabStop = false;
             this.TxtBusqueda.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -352,11 +358,12 @@
             this.CmbTipoBusqueda.FormattingEnabled = true;
             this.CmbTipoBusqueda.IntegralHeight = false;
             this.CmbTipoBusqueda.ItemHeight = 43;
-            this.CmbTipoBusqueda.Location = new System.Drawing.Point(175, 29);
+            this.CmbTipoBusqueda.Location = new System.Drawing.Point(131, 24);
+            this.CmbTipoBusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmbTipoBusqueda.MaxDropDownItems = 4;
             this.CmbTipoBusqueda.MouseState = MaterialSkin.MouseState.OUT;
             this.CmbTipoBusqueda.Name = "CmbTipoBusqueda";
-            this.CmbTipoBusqueda.Size = new System.Drawing.Size(121, 49);
+            this.CmbTipoBusqueda.Size = new System.Drawing.Size(92, 49);
             this.CmbTipoBusqueda.StartIndex = 0;
             this.CmbTipoBusqueda.TabIndex = 13;
             // 
@@ -365,7 +372,8 @@
             this.LblTipoBusqueda.AutoSize = true;
             this.LblTipoBusqueda.Depth = 0;
             this.LblTipoBusqueda.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.LblTipoBusqueda.Location = new System.Drawing.Point(26, 46);
+            this.LblTipoBusqueda.Location = new System.Drawing.Point(20, 37);
+            this.LblTipoBusqueda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblTipoBusqueda.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblTipoBusqueda.Name = "LblTipoBusqueda";
             this.LblTipoBusqueda.Size = new System.Drawing.Size(112, 19);
@@ -374,11 +382,14 @@
             // 
             // frm_v3_Cliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1465, 570);
+            this.ClientSize = new System.Drawing.Size(1099, 463);
+            this.ControlBox = false;
             this.Controls.Add(this.materialCard1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frm_v3_Cliente";
+            this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
             this.Text = "frm_v3_Cliente";
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
