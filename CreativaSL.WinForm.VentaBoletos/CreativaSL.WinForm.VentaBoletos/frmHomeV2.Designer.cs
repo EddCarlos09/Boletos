@@ -594,7 +594,7 @@
             this.Txt_FechaHoraSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_FechaHoraSistema.HideSelection = true;
             this.Txt_FechaHoraSistema.LeadingIcon = null;
-            this.Txt_FechaHoraSistema.Location = new System.Drawing.Point(35, 226);
+            this.Txt_FechaHoraSistema.Location = new System.Drawing.Point(11, 226);
             this.Txt_FechaHoraSistema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_FechaHoraSistema.MaxLength = 32767;
             this.Txt_FechaHoraSistema.MouseState = MaterialSkin.MouseState.OUT;
@@ -607,7 +607,7 @@
             this.Txt_FechaHoraSistema.SelectionLength = 0;
             this.Txt_FechaHoraSistema.SelectionStart = 0;
             this.Txt_FechaHoraSistema.ShortcutsEnabled = true;
-            this.Txt_FechaHoraSistema.Size = new System.Drawing.Size(141, 48);
+            this.Txt_FechaHoraSistema.Size = new System.Drawing.Size(265, 48);
             this.Txt_FechaHoraSistema.TabIndex = 47;
             this.Txt_FechaHoraSistema.TabStop = false;
             this.Txt_FechaHoraSistema.Text = "00/00/0000 00:00:00";
@@ -625,7 +625,7 @@
             this.Txt_Recorrido.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_Recorrido.HideSelection = true;
             this.Txt_Recorrido.LeadingIcon = null;
-            this.Txt_Recorrido.Location = new System.Drawing.Point(259, 226);
+            this.Txt_Recorrido.Location = new System.Drawing.Point(320, 226);
             this.Txt_Recorrido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_Recorrido.MaxLength = 32767;
             this.Txt_Recorrido.MouseState = MaterialSkin.MouseState.OUT;

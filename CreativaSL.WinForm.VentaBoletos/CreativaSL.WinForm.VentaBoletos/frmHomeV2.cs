@@ -59,6 +59,9 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
 
         #region Variables
+        //Nuevo
+        private DateTimePicker currentDateTimePicker;
+
         private string IDViajeDiseñoAux = "";
         private int numPisoActual = 1;
         private int numPisoAux = 0;
@@ -1494,94 +1497,136 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                //if (e.RowIndex != -1)
-                //{
-                //    if (e.ColumnIndex != 8)
-                //    {
-                //        int Verificador = 1;
-                //        if (MessageBox.Show("¿Desea eliminar este boleto? ", "Eliminar boleto", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                //        {
-                //            Home_Negocio home = new Home_Negocio();
-                //            DataTable DatosAux = new DataTable();
 
-                //            DatosAux.Columns.Add("IDBoleto", typeof(string));
-                //            DatosAux.Columns.Add("IDViaje", typeof(string));
-                //            DatosAux.Columns.Add("FechaSalida", typeof(DateTime));
-                //            DatosAux.Columns.Add("HoraSalida", typeof(string));
-                //            DatosAux.Columns.Add("IDTarifa", typeof(string));
-                //            DatosAux.Columns.Add("IDTipoTarifa", typeof(int));
-                //            DatosAux.Columns.Add("NumCamion", typeof(string));
-                //            DatosAux.Columns.Add("TipoLinea", typeof(string));
-                //            DatosAux.Columns.Add("Asiento", typeof(int));
-                //            DatosAux.Columns.Add("DescripcionIndice", typeof(string));
-                //            DatosAux.Columns.Add("IDCamionDiseño", typeof(string));
-                //            DatosAux.Columns.Add("FechaSalidaV", typeof(DateTime));
-                //            DatosAux.Columns.Add("FechaSalidaV2", typeof(string));
-                //            DatosAux.Columns.Add("HoraSalidaV", typeof(string));
-                //            DatosAux.Columns.Add("FechaLLegadaV", typeof(DateTime));
-                //            DatosAux.Columns.Add("FechaLLegadaV2", typeof(string));
-                //            DatosAux.Columns.Add("HoraLLegadaV", typeof(string));
-                //            DatosAux.Columns.Add("Origen", typeof(string));
-                //            DatosAux.Columns.Add("Destino", typeof(string));
-                //            DatosAux.Columns.Add("Precio", typeof(float));
-                //            DatosAux.Columns.Add("Descuentos", typeof(float));
-                //            DatosAux.Columns.Add("TipoDescuento", typeof(int));
-                //            DatosAux.Columns.Add("Nombre", typeof(string));
-                //            DatosAux.Columns.Add("FechaNacimiento", typeof(DateTime));
-                //            DatosAux.Columns.Add("NumeroTelefono", typeof(string));
-                //            DatosAux.Columns.Add("IDStatus", typeof(int));
-                //            DatosAux.Columns.Add("Anticipo", typeof(float));
-                //            DatosAux.Columns.Add("IDBoletoTransferencia", typeof(string));
-                //            DatosAux.Columns.Add("PagoExtra", typeof(float));
-                //            DatosAux.Columns.Add("IDTipoCamion", typeof(string));
-                //            DatosAux.Columns.Add("codigoTarjeta", typeof(string));
+                foreach (ListViewItem item in GridViewVentaBoletos.SelectedItems)
+                {
+                    var ffffffff = item;
 
-                //            //Rows por Items, Cells por SubItems y Value por Text ***********
-                //            DatosAux.Rows.Add(
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDBoleto"].Text.ToString(),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDViaje"].Text.ToString(),
-                //                Convert.ToDateTime(GridViewVentaBoletos.Items[e.RowIndex].SubItems["FechaSalida"].Text.ToString()),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["HoraSalida"].Text.ToString(),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDTarifa"].Text.ToString(),
-                //                Convert.ToInt32(GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDTipoTarifa"].Text.ToString()),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["NumCamion"].Text.ToString(),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["TipoLinea"].Text.ToString(),
-                //                Convert.ToInt32(GridViewVentaBoletos.Items[e.RowIndex].SubItems["Asiento"].Text.ToString()),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["DescripcionIndice"].Text.ToString(),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDCamionDiseño"].Text.ToString(),
-                //                Convert.ToDateTime(GridViewVentaBoletos.Items[e.RowIndex].SubItems["FechaSalidaV"].Text.ToString()),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["FechaSalidaV2"].Text.ToString(),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["HoraSalidaV"].Text.ToString(),
-                //                Convert.ToDateTime(GridViewVentaBoletos.Items[e.RowIndex].SubItems["FechaLLegadaV"].Text.ToString()),
-                //                Convert.ToDateTime(GridViewVentaBoletos.Items[e.RowIndex].SubItems["FechaLLegadaV"].Text.ToString()).ToShortDateString(),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["HoraLLegadaV"].Text.ToString(),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["Origen"].Text.ToString(),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["Destino"].Text.ToString(),
-                //                Convert.ToSingle(GridViewVentaBoletos.Items[e.RowIndex].SubItems["Precio"].Text.ToString()),
-                //                Convert.ToSingle(GridViewVentaBoletos.Items[e.RowIndex].SubItems["Descuentos"].Text.ToString()),
-                //                Convert.ToInt32(GridViewVentaBoletos.Items[e.RowIndex].SubItems["TipoDescuento"].Text.ToString()),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["Nombre"].Text.ToString(),
-                //                Convert.ToDateTime(GridViewVentaBoletos.Items[e.RowIndex].SubItems["FechaNacimiento"].Text.ToString()),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["NumeroTelefono"].Text.ToString(),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDStatus"].Text.ToString(),
-                //                Convert.ToSingle(GridViewVentaBoletos.Items[e.RowIndex].SubItems["Anticipo"].Text.ToString()),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDBoletoTransferencia"].Text.ToString(),
-                //                Convert.ToSingle(GridViewVentaBoletos.Items[e.RowIndex].SubItems["PagoExtra"].Text.ToString()),
-                //                GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDTipoCamion"].Text.ToString()
-                //                );
-                //            home.EliminarAsientosApartados(Comun.Conexion, DatosAux, ref Verificador);
-                //            if (Verificador == 0)
-                //            {
-                //                PictureBox PictureBoxAux;
-                //                PictureBoxAux = (PictureBox)this.FindControl(this, GridViewVentaBoletos.Items[e.RowIndex].SubItems["DescripcionIndice"].Text.ToString());
-                //                //PictureBoxAux = (PictureBox)this.FindControl(this, GridViewVentaBoletos.Rows[e.RowIndex].Cells["DescripcionIndice"].Value.ToString());
-                //                PictureBoxAux.Image = global::CreativaSL.WinForm.VentaBoletos.Properties.Resources.disponible;
-                //                PictureBoxAux.Tag = "1";
-                //                GridViewVentaBoletos.Items.Remove(GridViewVentaBoletos.Items[e.RowIndex]);
-                //                //GridViewVentaBoletos.Rows.Remove(GridViewVentaBoletos.Rows[e.RowIndex]);
-                //            }
+                    //if (e.RowIndex != -1)
+                    //{
+                    //    if (e.ColumnIndex != 8)
+                    //    {
+                    int Verificador = 1;
+                    if (MessageBox.Show("¿Desea eliminar este boleto? ", "Eliminar boleto", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        Home_Negocio home = new Home_Negocio();
+                        DataTable DatosAux = new DataTable();
 
-                //        }
+                        DatosAux.Columns.Add("IDBoleto", typeof(string));
+                        DatosAux.Columns.Add("IDViaje", typeof(string));
+                        DatosAux.Columns.Add("FechaSalida", typeof(DateTime));
+                        DatosAux.Columns.Add("HoraSalida", typeof(string));
+                        DatosAux.Columns.Add("IDTarifa", typeof(string));
+                        DatosAux.Columns.Add("IDTipoTarifa", typeof(int));
+                        DatosAux.Columns.Add("NumCamion", typeof(string));
+                        DatosAux.Columns.Add("TipoLinea", typeof(string));
+                        DatosAux.Columns.Add("Asiento", typeof(int));
+                        DatosAux.Columns.Add("DescripcionIndice", typeof(string));
+                        DatosAux.Columns.Add("IDCamionDiseño", typeof(string));
+                        DatosAux.Columns.Add("FechaSalidaV", typeof(DateTime));
+                        DatosAux.Columns.Add("FechaSalidaV2", typeof(string));
+                        DatosAux.Columns.Add("HoraSalidaV", typeof(string));
+                        DatosAux.Columns.Add("FechaLLegadaV", typeof(DateTime));
+                        DatosAux.Columns.Add("FechaLLegadaV2", typeof(string));
+                        DatosAux.Columns.Add("HoraLLegadaV", typeof(string));
+                        DatosAux.Columns.Add("Origen", typeof(string));
+                        DatosAux.Columns.Add("Destino", typeof(string));
+                        DatosAux.Columns.Add("Precio", typeof(float));
+                        DatosAux.Columns.Add("Descuentos", typeof(float));
+                        DatosAux.Columns.Add("TipoDescuento", typeof(int));
+                        DatosAux.Columns.Add("Nombre", typeof(string));
+                        DatosAux.Columns.Add("FechaNacimiento", typeof(DateTime));
+                        DatosAux.Columns.Add("NumeroTelefono", typeof(string));
+                        DatosAux.Columns.Add("IDStatus", typeof(int));
+                        DatosAux.Columns.Add("Anticipo", typeof(float));
+                        DatosAux.Columns.Add("IDBoletoTransferencia", typeof(string));
+                        DatosAux.Columns.Add("PagoExtra", typeof(float));
+                        DatosAux.Columns.Add("IDTipoCamion", typeof(string));
+                        DatosAux.Columns.Add("codigoTarjeta", typeof(string));
+
+                        var Names = new List<string> { "Nombre 0", "FechaNacimiento 1", "NumeroTelefono 2", "Asiento 3", "TipoLinea 4", "Origen 5", "FechaSalidaV2 6", "HoraSalidaV 7", "Destino 8", "Precio 9", "Descuentos 10",
+                            "DescripcionIndice 11", "IDViaje 12", "IDCamionDiseño 13", "NumCamion 14", "TipoLinea 15", "FechaLLegadaV 16", "FechaLLegadaV2 17", "HoraLLegadaV 18", "TipoDescuento 19", "IDBoleto 20",
+                            "FechaSalidaV 21", "IDTarifa 22", "IDTipoTarifa 23", "IDStatus 24", "Anticipo 25", "IDBoletoTransferencia 26", "FechaSalida 27", "HoraSalida 28", "PagoExtra 29", "IDTipoCamion 30" };
+
+                        //Rows por Items, Cells por SubItems y Value por Text ***********
+                        DatosAux.Rows.Add(
+
+                            item.SubItems[20].Text.ToString(),
+                            item.SubItems[12].Text.ToString(),
+                            Convert.ToDateTime(item.SubItems[27].Text.ToString()),
+                            item.SubItems[28].Text.ToString(),
+                            item.SubItems[22].Text.ToString(),
+                            Convert.ToInt32(item.SubItems[23].Text.ToString()),
+                            item.SubItems[14].Text.ToString(),
+                            item.SubItems[4].Text.ToString(),
+                            Convert.ToInt32(item.SubItems[3].Text.ToString()),
+                            item.SubItems[11].Text.ToString(),
+                            item.SubItems[13].Text.ToString(),
+                            Convert.ToDateTime(item.SubItems[21].Text.ToString()),
+                            item.SubItems[6].Text.ToString(),
+                            item.SubItems[7].Text.ToString(),
+                            Convert.ToDateTime(item.SubItems[16].Text.ToString()),
+                            Convert.ToDateTime(item.SubItems[16].Text.ToString()).ToShortDateString(),
+                            item.SubItems[18].Text.ToString(),
+                            item.SubItems[5].Text.ToString(),
+                            item.SubItems[8].Text.ToString(),
+                            Convert.ToSingle(item.SubItems[9].Text.ToString()),
+                            Convert.ToSingle(item.SubItems[10].Text.ToString()),
+                            Convert.ToInt32(item.SubItems[19].Text.ToString()),
+                            item.SubItems[0].Text.ToString(),
+                            Convert.ToDateTime(item.SubItems[1].Text.ToString()),
+                            item.SubItems[2].Text.ToString(),
+                            item.SubItems[24].Text.ToString(),
+                            Convert.ToSingle(item.SubItems[25].Text.ToString()),
+                            item.SubItems[16].Text.ToString(),
+                            Convert.ToSingle(item.SubItems[29].Text.ToString()),
+                            item.SubItems[30].Text.ToString()
+
+                            //GridViewVentaBoletos.Items[GridViewVentaBoletos.SelectedItems].SubItems["IDBoleto"].Text.ToString(),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDViaje"].Text.ToString(),
+                            //Convert.ToDateTime(GridViewVentaBoletos.Items[e.RowIndex].SubItems["FechaSalida"].Text.ToString()),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["HoraSalida"].Text.ToString(),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDTarifa"].Text.ToString(),
+                            //Convert.ToInt32(GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDTipoTarifa"].Text.ToString()),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["NumCamion"].Text.ToString(),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["TipoLinea"].Text.ToString(),
+                            //Convert.ToInt32(GridViewVentaBoletos.Items[e.RowIndex].SubItems["Asiento"].Text.ToString()),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["DescripcionIndice"].Text.ToString(),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDCamionDiseño"].Text.ToString(),
+                            //Convert.ToDateTime(GridViewVentaBoletos.Items[e.RowIndex].SubItems["FechaSalidaV"].Text.ToString()),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["FechaSalidaV2"].Text.ToString(),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["HoraSalidaV"].Text.ToString(),
+                            //Convert.ToDateTime(GridViewVentaBoletos.Items[e.RowIndex].SubItems["FechaLLegadaV"].Text.ToString()),
+                            //Convert.ToDateTime(GridViewVentaBoletos.Items[e.RowIndex].SubItems["FechaLLegadaV"].Text.ToString()).ToShortDateString(),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["HoraLLegadaV"].Text.ToString(),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["Origen"].Text.ToString(),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["Destino"].Text.ToString(),
+                            //Convert.ToSingle(GridViewVentaBoletos.Items[e.RowIndex].SubItems["Precio"].Text.ToString()),
+                            //Convert.ToSingle(GridViewVentaBoletos.Items[e.RowIndex].SubItems["Descuentos"].Text.ToString()),
+                            //Convert.ToInt32(GridViewVentaBoletos.Items[e.RowIndex].SubItems["TipoDescuento"].Text.ToString()),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["Nombre"].Text.ToString(),
+                            //Convert.ToDateTime(GridViewVentaBoletos.Items[e.RowIndex].SubItems["FechaNacimiento"].Text.ToString()),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["NumeroTelefono"].Text.ToString(),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDStatus"].Text.ToString(),
+                            //Convert.ToSingle(GridViewVentaBoletos.Items[e.RowIndex].SubItems["Anticipo"].Text.ToString()),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDBoletoTransferencia"].Text.ToString(),
+                            //Convert.ToSingle(GridViewVentaBoletos.Items[e.RowIndex].SubItems["PagoExtra"].Text.ToString()),
+                            //GridViewVentaBoletos.Items[e.RowIndex].SubItems["IDTipoCamion"].Text.ToString()
+                            );
+                        home.EliminarAsientosApartados(Comun.Conexion, DatosAux, ref Verificador);
+                        if (Verificador == 0)
+                        {
+                            PictureBox PictureBoxAux;
+                            PictureBoxAux = (PictureBox)this.FindControl(this, item.SubItems[11].Text.ToString());
+                            //PictureBoxAux = (PictureBox)this.FindControl(this, GridViewVentaBoletos.Rows[e.RowIndex].Cells["DescripcionIndice"].Value.ToString());
+                            PictureBoxAux.Image = global::CreativaSL.WinForm.VentaBoletos.Properties.Resources.disponible;
+                            PictureBoxAux.Tag = "1";
+                            GridViewVentaBoletos.Items.Remove(GridViewVentaBoletos.SelectedItems[0]);
+                            //GridViewVentaBoletos.Rows.Remove(GridViewVentaBoletos.Rows[e.RowIndex]);
+                        }
+
+                    }
+                }
                 //    }
                 //}
             }
@@ -1593,6 +1638,10 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
         private void dateTimePicker_OnTextChange(object sender, EventArgs e)
         {
+            foreach (ListViewItem item in GridViewVentaBoletos.SelectedItems)
+            {
+                item.SubItems[1].Text = oDateTimePicker.Text.ToString();
+            }
             //GridViewVentaBoletos.CurrentCell.Value = oDateTimePicker.Text.ToString();
         }
 
@@ -1715,22 +1764,10 @@ namespace CreativaSL.WinForm.VentaBoletos
 
                 this.GridViewViajes.Items.Clear();
 
-                //DataTable lista = new DataTable();
-                //if (mostrarDatosBusqueda == true)
-                //{
-                //    lista = this.lstAuxBuscadorChoferes;
-                //}
-                //else
-                //{
                 catalogoNegocio.LlenarGridSalidas(Comun.Conexion, ref home, IDTerminalOrigen, IDTerminalDestino, FechaBusqueda);
 
-                //Chofer_Negocio.LlenarGridChofer(Comun.Conexion, ref Choferes);
                 lstAuxDatosViajes = home.Salidas;
 
-                //lista = lstAuxDatosViajes;
-                //}
-
-                // Agregar filas al ListView
                 foreach (DataRow fila in lstAuxDatosViajes.Rows)
                 {
 
@@ -1943,6 +1980,8 @@ namespace CreativaSL.WinForm.VentaBoletos
                     this.GridViewVentaBoletos.Items.Add(item);
 
                 }
+
+                this.GridViewVentaBoletos.Items[0].Selected = true;
             }
             catch (Exception ex)
             {
@@ -1965,12 +2004,12 @@ namespace CreativaSL.WinForm.VentaBoletos
                 this.GridViewVentaBoletos.Columns[0].Width = 150;
                 this.GridViewVentaBoletos.Columns[1].Width = 110;
                 this.GridViewVentaBoletos.Columns[2].Width = 100;
-                this.GridViewVentaBoletos.Columns[3].Width = 40;
+                this.GridViewVentaBoletos.Columns[3].Width = 60;
                 this.GridViewVentaBoletos.Columns[4].Width = 100;
                 this.GridViewVentaBoletos.Columns[5].Width = 80;
                 this.GridViewVentaBoletos.Columns[6].Width = 110;
                 this.GridViewVentaBoletos.Columns[7].Width = 100;
-                this.GridViewVentaBoletos.Columns[8].Width = 100;
+                this.GridViewVentaBoletos.Columns[8].Width = 140;
                 this.GridViewVentaBoletos.Columns[9].Width = 80;
                 //this.GridViewVentaBoletos.Columns[9].DefaultCellStyle.Format = "c";
                 this.GridViewVentaBoletos.Columns[10].Width = 80;
@@ -2385,8 +2424,8 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                //if (!this.backgroundWorkerFechaHora.IsBusy)
-                //    this.backgroundWorkerFechaHora.RunWorkerAsync();
+                if (!this.backgroundWorkerFechaHora.IsBusy)
+                    this.backgroundWorkerFechaHora.RunWorkerAsync();
             }
             catch (Exception ex)
             {
@@ -2427,7 +2466,12 @@ namespace CreativaSL.WinForm.VentaBoletos
 
         private void GridViewVentaBoletos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (currentDateTimePicker != null)
+            {
+                currentDateTimePicker.Visible = false;
+                currentDateTimePicker = null;
+            }
+
             foreach (ListViewItem item in GridViewVentaBoletos.SelectedItems)
             {
                 int columnaSubitem = Columna_DataTimePicker;
@@ -2436,27 +2480,15 @@ namespace CreativaSL.WinForm.VentaBoletos
                 {
                     ListViewItem.ListViewSubItem subItem = item.SubItems[columnaSubitem];
 
-                    // Calculamos las coordenadas y dimensiones del subítem dentro del ítem
-                    Rectangle subItemBounds = new Rectangle(subItem.Bounds.Left - item.Bounds.Left,
-                                                             subItem.Bounds.Top - item.Bounds.Top,
-                                                             subItem.Bounds.Width,
-                                                             subItem.Bounds.Height);
-
-                    // Creamos y configuramos el DateTimePicker
+                    Rectangle subItemBounds = new Rectangle(subItem.Bounds.Left - item.Bounds.Left, subItem.Bounds.Top - item.Bounds.Top, subItem.Bounds.Width, subItem.Bounds.Height);
                     oDateTimePicker = new DateTimePicker();
                     oDateTimePicker.Format = DateTimePickerFormat.Short;
                     oDateTimePicker.TextChanged += new EventHandler(dateTimePicker_OnTextChange);
-
-                    // Ajustamos la posición y el tamaño del DateTimePicker basado en el subítem
                     oDateTimePicker.Size = subItemBounds.Size;
-                    oDateTimePicker.Location = new Point(item.Bounds.Left + subItemBounds.Left,
-                                                         item.Bounds.Top + subItemBounds.Top);
-
-                    // Agregamos el DateTimePicker al MaterialListView (o al controlador apropiado)
+                    oDateTimePicker.Location = new Point(item.Bounds.Left + subItemBounds.Left, item.Bounds.Top + subItemBounds.Top);
                     GridViewVentaBoletos.Controls.Add(oDateTimePicker);
-
-                    // Manejamos el evento CloseUp para el DateTimePicker
                     oDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);
+                    currentDateTimePicker = oDateTimePicker;
                 }
             }
         }
