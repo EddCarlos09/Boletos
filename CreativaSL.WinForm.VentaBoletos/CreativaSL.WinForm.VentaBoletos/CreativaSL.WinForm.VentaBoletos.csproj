@@ -834,7 +834,7 @@
     <Compile Include="frmBusquedaCambio.Designer.cs">
       <DependentUpon>frmBusquedaCambio.cs</DependentUpon>
     </Compile>
-     <Compile Include="frmCaja_AperturaCajaV2.cs">
+    <Compile Include="frmCaja_AperturaCajaV2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCaja_AperturaCajaV2.Designer.cs">
@@ -1364,6 +1364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentaBoletoSF.resx">
       <DependentUpon>frmVentaBoletoSF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentaBoletoV2.resx">
+      <DependentUpon>frmVentaBoletoV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentaGrupal.resx">
       <DependentUpon>frmVentaGrupal.cs</DependentUpon>

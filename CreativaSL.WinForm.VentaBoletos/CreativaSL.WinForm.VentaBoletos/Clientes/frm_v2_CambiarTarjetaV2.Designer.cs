@@ -34,10 +34,10 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.txtNumTarjeta = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.txt_mensaje = new System.Windows.Forms.TextBox();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.btn_Guardar = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.txt_mensaje = new System.Windows.Forms.TextBox();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.materialCard1.SuspendLayout();
@@ -159,6 +159,37 @@
             this.materialCard1.Size = new System.Drawing.Size(839, 154);
             this.materialCard1.TabIndex = 12139;
             // 
+            // btn_Guardar
+            // 
+            this.btn_Guardar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.Image")));
+            this.btn_Guardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Guardar.Location = new System.Drawing.Point(642, 30);
+            this.btn_Guardar.Name = "btn_Guardar";
+            this.btn_Guardar.Size = new System.Drawing.Size(110, 94);
+            this.btn_Guardar.TabIndex = 12141;
+            this.btn_Guardar.Text = "Aceptar";
+            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Guardar.UseVisualStyleBackColor = true;
+            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.btn_Cancelar.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
+            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Cancelar.Location = new System.Drawing.Point(497, 30);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
+            this.btn_Cancelar.Size = new System.Drawing.Size(116, 94);
+            this.btn_Cancelar.TabIndex = 12140;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
             // txt_mensaje
             // 
             this.txt_mensaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -186,37 +217,6 @@
             this.materialLabel3.Size = new System.Drawing.Size(113, 19);
             this.materialLabel3.TabIndex = 12140;
             this.materialLabel3.Text = "Asignar Tarjeta ";
-            // 
-            // btn_Guardar
-            // 
-            this.btn_Guardar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_Guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Guardar.Image")));
-            this.btn_Guardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Guardar.Location = new System.Drawing.Point(642, 30);
-            this.btn_Guardar.Name = "btn_Guardar";
-            this.btn_Guardar.Size = new System.Drawing.Size(110, 94);
-            this.btn_Guardar.TabIndex = 12141;
-            this.btn_Guardar.Text = "Aceptar";
-            this.btn_Guardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Guardar.UseVisualStyleBackColor = true;
-            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
-            // 
-            // btn_Cancelar
-            // 
-            this.btn_Cancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            this.btn_Cancelar.ForeColor = System.Drawing.Color.DimGray;
-            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
-            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Cancelar.Location = new System.Drawing.Point(503, 30);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
-            this.btn_Cancelar.Size = new System.Drawing.Size(110, 94);
-            this.btn_Cancelar.TabIndex = 12140;
-            this.btn_Cancelar.Text = "Cancelar";
-            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // btnBuscar
             // 
@@ -258,7 +258,7 @@
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frm_v2_CambiarTarjetaV2";
-            this.Text = "frm_v2_CambiarTarjetaV2";
+            this.Text = "Cambiar Tarjeta";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmAsignarTarjetaV2_KeyPress);
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
