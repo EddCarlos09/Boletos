@@ -124,12 +124,12 @@
             this.materialCard1.Controls.Add(this.materialLabel1);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(12, 15);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard1.Location = new System.Drawing.Point(16, 18);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
-            this.materialCard1.Size = new System.Drawing.Size(916, 647);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard1.Size = new System.Drawing.Size(1221, 796);
             this.materialCard1.TabIndex = 0;
             // 
             // dgvdatosboleto
@@ -140,6 +140,8 @@
             this.dgvdatosboleto.AllowUserToResizeRows = false;
             this.dgvdatosboleto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvdatosboleto.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvdatosboleto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvdatosboleto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvdatosboleto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdatosboleto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_boleto,
@@ -179,8 +181,9 @@
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dgvdatosboleto.Location = new System.Drawing.Point(13, 314);
-            this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvdatosboleto.GridColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvdatosboleto.Location = new System.Drawing.Point(17, 386);
+            this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvdatosboleto.MultiSelect = false;
             this.dgvdatosboleto.Name = "dgvdatosboleto";
             this.dgvdatosboleto.ReadOnly = true;
@@ -191,7 +194,7 @@
             this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdatosboleto.Size = new System.Drawing.Size(882, 275);
+            this.dgvdatosboleto.Size = new System.Drawing.Size(1176, 338);
             this.dgvdatosboleto.TabIndex = 20;
             // 
             // id_boleto
@@ -225,7 +228,7 @@
             this.folioVenta.MinimumWidth = 6;
             this.folioVenta.Name = "folioVenta";
             this.folioVenta.ReadOnly = true;
-            this.folioVenta.Width = 85;
+            this.folioVenta.Width = 104;
             // 
             // CodigoBarra
             // 
@@ -236,7 +239,7 @@
             this.CodigoBarra.ReadOnly = true;
             this.CodigoBarra.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.CodigoBarra.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.CodigoBarra.Width = 68;
+            this.CodigoBarra.Width = 85;
             // 
             // Viaje
             // 
@@ -245,7 +248,7 @@
             this.Viaje.MinimumWidth = 6;
             this.Viaje.Name = "Viaje";
             this.Viaje.ReadOnly = true;
-            this.Viaje.Width = 60;
+            this.Viaje.Width = 69;
             // 
             // Origen
             // 
@@ -256,7 +259,7 @@
             this.Origen.ReadOnly = true;
             this.Origen.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Origen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Origen.Width = 44;
+            this.Origen.Width = 53;
             // 
             // Destino
             // 
@@ -268,7 +271,7 @@
             this.Destino.ReadOnly = true;
             this.Destino.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Destino.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Destino.Width = 49;
+            this.Destino.Width = 59;
             // 
             // fecha_salidaV
             // 
@@ -282,7 +285,7 @@
             this.fecha_salidaV.ReadOnly = true;
             this.fecha_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.fecha_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.fecha_salidaV.Width = 43;
+            this.fecha_salidaV.Width = 51;
             // 
             // hora_salidaV
             // 
@@ -293,7 +296,7 @@
             this.hora_salidaV.ReadOnly = true;
             this.hora_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.hora_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.hora_salidaV.Width = 36;
+            this.hora_salidaV.Width = 43;
             // 
             // NombrePersona
             // 
@@ -304,7 +307,7 @@
             this.NombrePersona.ReadOnly = true;
             this.NombrePersona.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.NombrePersona.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NombrePersona.Width = 50;
+            this.NombrePersona.Width = 62;
             // 
             // asiento
             // 
@@ -318,7 +321,7 @@
             this.asiento.ReadOnly = true;
             this.asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.asiento.Width = 48;
+            this.asiento.Width = 58;
             // 
             // fechaNacimiento
             // 
@@ -330,7 +333,7 @@
             this.fechaNacimiento.Name = "fechaNacimiento";
             this.fechaNacimiento.ReadOnly = true;
             this.fechaNacimiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.fechaNacimiento.Width = 121;
+            this.fechaNacimiento.Width = 149;
             // 
             // numeroTelefono
             // 
@@ -339,7 +342,7 @@
             this.numeroTelefono.MinimumWidth = 6;
             this.numeroTelefono.Name = "numeroTelefono";
             this.numeroTelefono.ReadOnly = true;
-            this.numeroTelefono.Width = 74;
+            this.numeroTelefono.Width = 90;
             // 
             // cantidad_venta
             // 
@@ -365,7 +368,7 @@
             this.boletocosto.ReadOnly = true;
             this.boletocosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.boletocosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.boletocosto.Width = 43;
+            this.boletocosto.Width = 52;
             // 
             // vdcosto
             // 
@@ -406,7 +409,7 @@
             this.pago.ReadOnly = true;
             this.pago.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.pago.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pago.Width = 38;
+            this.pago.Width = 46;
             // 
             // pendiente
             // 
@@ -419,7 +422,7 @@
             this.pendiente.ReadOnly = true;
             this.pendiente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.pendiente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pendiente.Width = 61;
+            this.pendiente.Width = 74;
             // 
             // Transf
             // 
@@ -433,7 +436,7 @@
             this.Transf.ReadOnly = true;
             this.Transf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Transf.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Transf.Width = 43;
+            this.Transf.Width = 51;
             // 
             // Usu_Ins
             // 
@@ -444,7 +447,7 @@
             this.Usu_Ins.ReadOnly = true;
             this.Usu_Ins.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Usu_Ins.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Usu_Ins.Width = 52;
+            this.Usu_Ins.Width = 61;
             // 
             // Usu_Mod
             // 
@@ -455,7 +458,7 @@
             this.Usu_Mod.ReadOnly = true;
             this.Usu_Mod.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Usu_Mod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Usu_Mod.Width = 59;
+            this.Usu_Mod.Width = 71;
             // 
             // precio
             // 
@@ -526,10 +529,10 @@
             // dtpFecha
             // 
             this.dtpFecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dtpFecha.Location = new System.Drawing.Point(164, 114);
-            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpFecha.Location = new System.Drawing.Point(219, 140);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(188, 20);
+            this.dtpFecha.Size = new System.Drawing.Size(249, 22);
             this.dtpFecha.TabIndex = 19;
             this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged_1);
             // 
@@ -538,8 +541,7 @@
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(43, 284);
-            this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel3.Location = new System.Drawing.Point(57, 350);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(147, 19);
@@ -551,10 +553,10 @@
             this.btn_CambiarNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_CambiarNombre.Image = ((System.Drawing.Image)(resources.GetObject("btn_CambiarNombre.Image")));
             this.btn_CambiarNombre.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_CambiarNombre.Location = new System.Drawing.Point(559, 146);
-            this.btn_CambiarNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_CambiarNombre.Location = new System.Drawing.Point(745, 180);
+            this.btn_CambiarNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_CambiarNombre.Name = "btn_CambiarNombre";
-            this.btn_CambiarNombre.Size = new System.Drawing.Size(82, 76);
+            this.btn_CambiarNombre.Size = new System.Drawing.Size(109, 94);
             this.btn_CambiarNombre.TabIndex = 16;
             this.btn_CambiarNombre.Text = "Modificar";
             this.btn_CambiarNombre.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -566,10 +568,10 @@
             this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(664, 146);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Location = new System.Drawing.Point(885, 180);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(82, 76);
+            this.btnSalir.Size = new System.Drawing.Size(109, 94);
             this.btnSalir.TabIndex = 15;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -581,10 +583,10 @@
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(559, 146);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Location = new System.Drawing.Point(745, 180);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(82, 76);
+            this.button6.Size = new System.Drawing.Size(109, 94);
             this.button6.TabIndex = 16;
             this.button6.Text = "Modificar";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -595,10 +597,10 @@
             this.btnImprimir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnImprimir.Location = new System.Drawing.Point(765, 55);
-            this.btnImprimir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnImprimir.Location = new System.Drawing.Point(1020, 68);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(82, 76);
+            this.btnImprimir.Size = new System.Drawing.Size(109, 94);
             this.btnImprimir.TabIndex = 14;
             this.btnImprimir.Text = "Reimp";
             this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -610,10 +612,10 @@
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(664, 146);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Location = new System.Drawing.Point(885, 180);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(82, 76);
+            this.button5.Size = new System.Drawing.Size(109, 94);
             this.button5.TabIndex = 15;
             this.button5.Text = "Salir";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -624,10 +626,10 @@
             this.btnCancelarB.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelarB.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarB.Image")));
             this.btnCancelarB.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarB.Location = new System.Drawing.Point(664, 55);
-            this.btnCancelarB.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelarB.Location = new System.Drawing.Point(885, 68);
+            this.btnCancelarB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelarB.Name = "btnCancelarB";
-            this.btnCancelarB.Size = new System.Drawing.Size(82, 76);
+            this.btnCancelarB.Size = new System.Drawing.Size(109, 94);
             this.btnCancelarB.TabIndex = 13;
             this.btnCancelarB.Text = "Canc. B";
             this.btnCancelarB.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -639,10 +641,10 @@
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(765, 55);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Location = new System.Drawing.Point(1020, 68);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(82, 76);
+            this.button4.Size = new System.Drawing.Size(109, 94);
             this.button4.TabIndex = 14;
             this.button4.Text = "Reimp";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -653,10 +655,10 @@
             this.btnCancelarA.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelarA.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarA.Image")));
             this.btnCancelarA.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarA.Location = new System.Drawing.Point(559, 55);
-            this.btnCancelarA.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelarA.Location = new System.Drawing.Point(745, 68);
+            this.btnCancelarA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelarA.Name = "btnCancelarA";
-            this.btnCancelarA.Size = new System.Drawing.Size(82, 76);
+            this.btnCancelarA.Size = new System.Drawing.Size(109, 94);
             this.btnCancelarA.TabIndex = 12;
             this.btnCancelarA.Text = "Canc. A";
             this.btnCancelarA.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -668,10 +670,10 @@
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(664, 55);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(885, 68);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 76);
+            this.button3.Size = new System.Drawing.Size(109, 94);
             this.button3.TabIndex = 13;
             this.button3.Text = "Canc. B";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -682,10 +684,10 @@
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(559, 55);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(745, 68);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 76);
+            this.button2.Size = new System.Drawing.Size(109, 94);
             this.button2.TabIndex = 12;
             this.button2.Text = "Canc. A";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -697,8 +699,7 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(688, 11);
-            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel2.Location = new System.Drawing.Point(917, 14);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(65, 19);
@@ -710,10 +711,10 @@
             this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(402, 93);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscar.Location = new System.Drawing.Point(536, 114);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(79, 76);
+            this.btnBuscar.Size = new System.Drawing.Size(105, 94);
             this.btnBuscar.TabIndex = 10;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -730,8 +731,8 @@
             this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreCliente.HideSelection = true;
             this.txtNombreCliente.LeadingIcon = null;
-            this.txtNombreCliente.Location = new System.Drawing.Point(164, 212);
-            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombreCliente.Location = new System.Drawing.Point(219, 261);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreCliente.MaxLength = 32767;
             this.txtNombreCliente.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreCliente.Name = "txtNombreCliente";
@@ -743,7 +744,7 @@
             this.txtNombreCliente.SelectionLength = 0;
             this.txtNombreCliente.SelectionStart = 0;
             this.txtNombreCliente.ShortcutsEnabled = true;
-            this.txtNombreCliente.Size = new System.Drawing.Size(188, 48);
+            this.txtNombreCliente.Size = new System.Drawing.Size(251, 48);
             this.txtNombreCliente.TabIndex = 9;
             this.txtNombreCliente.TabStop = false;
             this.txtNombreCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -760,8 +761,8 @@
             this.txtFolioBoleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFolioBoleto.HideSelection = true;
             this.txtFolioBoleto.LeadingIcon = null;
-            this.txtFolioBoleto.Location = new System.Drawing.Point(164, 157);
-            this.txtFolioBoleto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFolioBoleto.Location = new System.Drawing.Point(219, 193);
+            this.txtFolioBoleto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFolioBoleto.MaxLength = 32767;
             this.txtFolioBoleto.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFolioBoleto.Name = "txtFolioBoleto";
@@ -773,7 +774,7 @@
             this.txtFolioBoleto.SelectionLength = 0;
             this.txtFolioBoleto.SelectionStart = 0;
             this.txtFolioBoleto.ShortcutsEnabled = true;
-            this.txtFolioBoleto.Size = new System.Drawing.Size(188, 48);
+            this.txtFolioBoleto.Size = new System.Drawing.Size(251, 48);
             this.txtFolioBoleto.TabIndex = 8;
             this.txtFolioBoleto.TabStop = false;
             this.txtFolioBoleto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -790,8 +791,8 @@
             this.txt_folioVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_folioVenta.HideSelection = true;
             this.txt_folioVenta.LeadingIcon = null;
-            this.txt_folioVenta.Location = new System.Drawing.Point(164, 49);
-            this.txt_folioVenta.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_folioVenta.Location = new System.Drawing.Point(219, 60);
+            this.txt_folioVenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_folioVenta.MaxLength = 32767;
             this.txt_folioVenta.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_folioVenta.Name = "txt_folioVenta";
@@ -803,7 +804,7 @@
             this.txt_folioVenta.SelectionLength = 0;
             this.txt_folioVenta.SelectionStart = 0;
             this.txt_folioVenta.ShortcutsEnabled = true;
-            this.txt_folioVenta.Size = new System.Drawing.Size(188, 48);
+            this.txt_folioVenta.Size = new System.Drawing.Size(251, 48);
             this.txt_folioVenta.TabIndex = 6;
             this.txt_folioVenta.TabStop = false;
             this.txt_folioVenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -818,7 +819,7 @@
             this.chkNombre.Checked = true;
             this.chkNombre.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkNombre.Depth = 0;
-            this.chkNombre.Location = new System.Drawing.Point(27, 212);
+            this.chkNombre.Location = new System.Drawing.Point(36, 261);
             this.chkNombre.Margin = new System.Windows.Forms.Padding(0);
             this.chkNombre.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkNombre.MouseState = MaterialSkin.MouseState.HOVER;
@@ -838,7 +839,7 @@
             this.chkFolio.Checked = true;
             this.chkFolio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolio.Depth = 0;
-            this.chkFolio.Location = new System.Drawing.Point(27, 157);
+            this.chkFolio.Location = new System.Drawing.Point(36, 193);
             this.chkFolio.Margin = new System.Windows.Forms.Padding(0);
             this.chkFolio.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFolio.MouseState = MaterialSkin.MouseState.HOVER;
@@ -858,7 +859,7 @@
             this.chkFecha.Checked = true;
             this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFecha.Depth = 0;
-            this.chkFecha.Location = new System.Drawing.Point(27, 102);
+            this.chkFecha.Location = new System.Drawing.Point(36, 126);
             this.chkFecha.Margin = new System.Windows.Forms.Padding(0);
             this.chkFecha.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFecha.MouseState = MaterialSkin.MouseState.HOVER;
@@ -879,7 +880,7 @@
             this.chkFolioVenta.Checked = true;
             this.chkFolioVenta.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolioVenta.Depth = 0;
-            this.chkFolioVenta.Location = new System.Drawing.Point(27, 49);
+            this.chkFolioVenta.Location = new System.Drawing.Point(36, 60);
             this.chkFolioVenta.Margin = new System.Windows.Forms.Padding(0);
             this.chkFolioVenta.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFolioVenta.MouseState = MaterialSkin.MouseState.HOVER;
@@ -897,8 +898,7 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(38, 11);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel1.Location = new System.Drawing.Point(51, 14);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(72, 19);
@@ -907,14 +907,14 @@
             // 
             // frmVentasV2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 665);
+            this.ClientSize = new System.Drawing.Size(1241, 818);
             this.ControlBox = false;
             this.Controls.Add(this.materialCard1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmVentasV2";
-            this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
+            this.Padding = new System.Windows.Forms.Padding(3, 64, 3, 2);
             this.Text = "frmVentasV2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmVentasV2_Load);

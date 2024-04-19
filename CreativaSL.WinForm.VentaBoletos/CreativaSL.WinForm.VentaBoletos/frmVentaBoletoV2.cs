@@ -230,7 +230,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 float monederocliente = float.Parse(this.Txt_Monedero.Text, NumberStyles.Currency);
                 float nuevoMonedero = float.Parse(this.Txt_NewMonedero.Text, NumberStyles.Currency);
                 string nombrecliente = this.TxtNombreCliente.Text;
-                frmCatCobroMultiFormasPago frmC = new frmCatCobroMultiFormasPago(float.Parse(this.Txt_Total.Text, NumberStyles.Currency), TotalPagar, Pendiente, monederocliente, nombrecliente, nuevoMonedero);
+                frmCatCobroMultiFormasPagoV2 frmC = new frmCatCobroMultiFormasPagoV2(float.Parse(this.Txt_Total.Text, NumberStyles.Currency), TotalPagar, Pendiente, monederocliente, nombrecliente, nuevoMonedero);
                 frmC.ShowDialog();
                 if (frmC.DialogResult == DialogResult.OK)
                 {
@@ -583,7 +583,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (MessageBox.Show("Este boleto ya tiene aplicado un pago extra, ¿ desea eliminar el pago extra ? ", "¿Aplicar otro Descuento?", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
-                            frmPagoExtra frmpe = new frmPagoExtra();
+                            frmPagoExtraV2 frmpe = new frmPagoExtraV2();
                             frmpe.ShowDialog();
                             if (frmpe.getBanPagoExtra())
                             {
@@ -600,7 +600,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     }
                     else
                     {
-                        frmPagoExtra frmpe = new frmPagoExtra();
+                        frmPagoExtraV2 frmpe = new frmPagoExtraV2();
                         frmpe.ShowDialog();
                         if (frmpe.getBanPagoExtra())
                         {
@@ -624,7 +624,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                         Precio = Convert.ToSingle(row.Cells["Precio"].Value);
                         Anticipo = Convert.ToSingle(row.Cells["Anticipo"].Value);
                     }
-                    frmPagoExtra frmpe = new frmPagoExtra();
+                    frmPagoExtraV2 frmpe = new frmPagoExtraV2();
                     frmpe.ShowDialog();
                     if (frmpe.getBanPagoExtra())
                     {
@@ -670,7 +670,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (MessageBox.Show("Este boleto ya tiene aplicado un anticipo, ¿ desea eliminar el anticipo ?", "¿Aplicar nuevo Anticipo?", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
-                            frmAnticipoGenerico frmd = new frmAnticipoGenerico();
+                            frmAnticipoGenericoV2 frmd = new frmAnticipoGenericoV2();
                             frmd.ShowDialog();
                             if (frmd.getBanAnticipo())
                             {
@@ -701,7 +701,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     }
                     else
                     {
-                        frmAnticipoGenerico frmd = new frmAnticipoGenerico();
+                        frmAnticipoGenericoV2 frmd = new frmAnticipoGenericoV2();
                         frmd.ShowDialog();
                         if (frmd.getBanAnticipo())
                         {
@@ -809,7 +809,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                         {
                             if (MessageBox.Show("Este boleto ya tiene aplicado un descuento, ¿ desea eliminar el descuento ?", "¿Aplicar nuevo Descuento?", MessageBoxButtons.YesNo) == DialogResult.Yes)
                             {
-                                frmDescuentoGenerico frmd = new frmDescuentoGenerico();
+                                frmDescuentoGenericoV2 frmd = new frmDescuentoGenericoV2();
                                 frmd.ShowDialog();
                                 if (frmd.getBanDescuento())
                                 {
@@ -834,7 +834,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                         }
                         else
                         {
-                            frmDescuentoGenerico frmd = new frmDescuentoGenerico();
+                            frmDescuentoGenericoV2 frmd = new frmDescuentoGenericoV2();
                             frmd.ShowDialog();
                             if (frmd.getBanDescuento())
                             {
@@ -874,7 +874,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         float descuentoGrupal = 0.0F;
 
-                        frmDescuentoGenerico frmd = new frmDescuentoGenerico();
+                        frmDescuentoGenericoV2 frmd = new frmDescuentoGenericoV2();
                         frmd.ShowDialog();
                         if (frmd.getBanDescuento())
                         {
@@ -1061,7 +1061,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     float Anticipo = 0F;
                     string IDTipoCamion = "";
                     string IDBoletoActual = "";
-                    frmBusquedaCambio frmb = new frmBusquedaCambio();
+                    frmBusquedaCambioV2 frmb = new frmBusquedaCambioV2();
                     frmb.ShowDialog();
                     if (frmb.getBanCambio())
                     {
