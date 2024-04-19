@@ -98,6 +98,7 @@
             this.btn_VerTodos.Text = "Ver Todo";
             this.btn_VerTodos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_VerTodos.UseVisualStyleBackColor = true;
+            this.btn_VerTodos.Click += new System.EventHandler(this.btn_VerTodos_Click);
             // 
             // d
             // 
@@ -120,6 +121,7 @@
             this.TxtFechaFin.Name = "TxtFechaFin";
             this.TxtFechaFin.Size = new System.Drawing.Size(200, 22);
             this.TxtFechaFin.TabIndex = 29;
+            this.TxtFechaFin.ValueChanged += new System.EventHandler(this.TxtFechaFin_ValueChanged);
             // 
             // TxtFechaInicio
             // 
@@ -129,6 +131,7 @@
             this.TxtFechaInicio.Name = "TxtFechaInicio";
             this.TxtFechaInicio.Size = new System.Drawing.Size(200, 22);
             this.TxtFechaInicio.TabIndex = 28;
+            this.TxtFechaInicio.ValueChanged += new System.EventHandler(this.TxtFechaInicio_ValueChanged);
             // 
             // cmbTurno
             // 
@@ -188,6 +191,7 @@
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_Buscar.UseVisualStyleBackColor = true;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
             // txtFolio
             // 
@@ -218,6 +222,7 @@
             this.txtFolio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtFolio.TrailingIcon = null;
             this.txtFolio.UseSystemPasswordChar = false;
+            this.txtFolio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFolio_KeyPress);
             // 
             // LabelFolio
             // 
