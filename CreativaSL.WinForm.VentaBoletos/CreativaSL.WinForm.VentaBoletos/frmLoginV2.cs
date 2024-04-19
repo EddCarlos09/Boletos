@@ -78,7 +78,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                             {
                                 if (usuario.Crearid_caja == false)
                                 {
-                                    frmCaja_AperturaCaja aperturaCaja = new frmCaja_AperturaCaja();
+                                    frmCaja_AperturaCajaV2 aperturaCaja = new frmCaja_AperturaCajaV2();
                                     aperturaCaja.ShowDialog();
                                     aperturaCaja.Dispose();
                                 }
