@@ -1613,7 +1613,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.Venta() == false)
                 {
                     this.Inicializar();
-                    frmDepositosRetiros deposito = new frmDepositosRetiros(1);
+                    frmDepositosRetirosV2 deposito = new frmDepositosRetirosV2(1);
                     deposito.ShowDialog();
                     deposito.Dispose();
                 }
@@ -1634,7 +1634,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.Venta() == false)
                 {
                     this.Inicializar();
-                    frmDepositosRetiros retiro = new frmDepositosRetiros(2);
+                    frmDepositosRetirosV2 retiro = new frmDepositosRetirosV2(2);
                     retiro.ShowDialog();
                     retiro.Dispose();
                 }
@@ -1655,7 +1655,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.Venta() == false)
                 {
                     this.Inicializar();
-                    frmDepositosRetiros retiro = new frmDepositosRetiros(3);
+                    frmDepositosRetirosV2 retiro = new frmDepositosRetirosV2(3);
                     retiro.ShowDialog();
                     retiro.Dispose();
                 }
