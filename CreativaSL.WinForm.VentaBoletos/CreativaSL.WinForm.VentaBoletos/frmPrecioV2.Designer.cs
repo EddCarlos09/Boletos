@@ -220,7 +220,7 @@
             this.brn_Cancelar.Location = new System.Drawing.Point(123, 560);
             this.brn_Cancelar.Name = "brn_Cancelar";
             this.brn_Cancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
-            this.brn_Cancelar.Size = new System.Drawing.Size(119, 94);
+            this.brn_Cancelar.Size = new System.Drawing.Size(110, 94);
             this.brn_Cancelar.TabIndex = 66;
             this.brn_Cancelar.Text = "Cancelar";
             this.brn_Cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
