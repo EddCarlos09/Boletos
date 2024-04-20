@@ -679,5 +679,14 @@ namespace CreativaSL.WinForm.VentaBoletos.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+
+        internal static System.Drawing.Bitmap bathroom
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("bathroom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

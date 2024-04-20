@@ -198,7 +198,7 @@
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Aceptar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Aceptar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.Image")));
             this.btn_Aceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_Aceptar.Location = new System.Drawing.Point(314, 560);
@@ -212,7 +212,7 @@
             // 
             // brn_Cancelar
             // 
-            this.brn_Cancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.brn_Cancelar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.brn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.brn_Cancelar.ForeColor = System.Drawing.Color.DimGray;
             this.brn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("brn_Cancelar.Image")));
