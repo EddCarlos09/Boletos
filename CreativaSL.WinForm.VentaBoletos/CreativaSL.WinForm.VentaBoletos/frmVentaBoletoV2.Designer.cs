@@ -604,9 +604,6 @@
             this.GridViewVentaBoletos.AllowUserToResizeColumns = false;
             this.GridViewVentaBoletos.AllowUserToResizeRows = false;
             this.GridViewVentaBoletos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.GridViewVentaBoletos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.GridViewVentaBoletos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GridViewVentaBoletos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.GridViewVentaBoletos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridViewVentaBoletos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -641,7 +638,6 @@
             this.Column10,
             this.Column11});
             this.GridViewVentaBoletos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GridViewVentaBoletos.GridColor = System.Drawing.SystemColors.ControlLightLight;
             this.GridViewVentaBoletos.Location = new System.Drawing.Point(14, 14);
             this.GridViewVentaBoletos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GridViewVentaBoletos.MultiSelect = false;
