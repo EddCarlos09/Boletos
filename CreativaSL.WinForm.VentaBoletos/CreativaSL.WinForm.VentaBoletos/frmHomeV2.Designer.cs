@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHomeV2));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage12 = new System.Windows.Forms.TabPage();
@@ -48,15 +49,15 @@
             this.Txt_TiempoVenta = new MaterialSkin.Controls.MaterialTextBox2();
             this.checkBoxVentaGrupal = new MaterialSkin.Controls.MaterialCheckbox();
             this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
-            this.imageList1 = new System.Windows.Forms.ImageList();
+            this.materialButton7 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.dtmFechaSalida = new System.Windows.Forms.DateTimePicker();
             this.cmbComboDestino = new MaterialSkin.Controls.MaterialComboBox();
             this.cmbComboOrigen = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialButton7 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.Txt_FechaHoraSistema = new MaterialSkin.Controls.MaterialTextBox2();
@@ -67,7 +68,7 @@
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.panel_Camion = new CreativaSL.LibControls.WinForms.Panel_Creativa();
+            this.panel_Camion = new CreativaSL.LibControls.WinForms.Panel_Creativa(this.components);
             this.puerta13 = new System.Windows.Forms.PictureBox();
             this.puerta12 = new System.Windows.Forms.PictureBox();
             this.puerta11 = new System.Windows.Forms.PictureBox();
@@ -234,10 +235,10 @@
             this.btnConfiguracion = new System.Windows.Forms.TabPage();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.imageListmMenu = new System.Windows.Forms.ImageList();
+            this.imageListmMenu = new System.Windows.Forms.ImageList(this.components);
             this.backgroundWorkerFechaHora = new System.ComponentModel.BackgroundWorker();
-            this.timerFechaHora = new System.Windows.Forms.Timer();
-            this.MenuStripCaja = new System.Windows.Forms.ContextMenuStrip();
+            this.timerFechaHora = new System.Windows.Forms.Timer(this.components);
+            this.MenuStripCaja = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemDepositos = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemRetirosCajaLLena = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemRetirosPagos = new System.Windows.Forms.ToolStripMenuItem();
@@ -470,24 +471,22 @@
             // 
             // GridViewVentaBoletos
             // 
-            this.GridViewVentaBoletos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.GridViewVentaBoletos.AutoSizeTable = false;
             this.GridViewVentaBoletos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GridViewVentaBoletos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GridViewVentaBoletos.Depth = 0;
+            this.GridViewVentaBoletos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GridViewVentaBoletos.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GridViewVentaBoletos.FullRowSelect = true;
             this.GridViewVentaBoletos.HideSelection = false;
-            this.GridViewVentaBoletos.Location = new System.Drawing.Point(665, 562);
-            this.GridViewVentaBoletos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GridViewVentaBoletos.MinimumSize = new System.Drawing.Size(200, 100);
+            this.GridViewVentaBoletos.Location = new System.Drawing.Point(14, 14);
+            this.GridViewVentaBoletos.Margin = new System.Windows.Forms.Padding(2);
+            this.GridViewVentaBoletos.MinimumSize = new System.Drawing.Size(150, 81);
             this.GridViewVentaBoletos.MouseLocation = new System.Drawing.Point(-1, -1);
             this.GridViewVentaBoletos.MouseState = MaterialSkin.MouseState.OUT;
             this.GridViewVentaBoletos.Name = "GridViewVentaBoletos";
             this.GridViewVentaBoletos.OwnerDraw = true;
-            this.GridViewVentaBoletos.Size = new System.Drawing.Size(814, 295);
+            this.GridViewVentaBoletos.Size = new System.Drawing.Size(451, 176);
             this.GridViewVentaBoletos.TabIndex = 238;
             this.GridViewVentaBoletos.UseCompatibleStateImageBehavior = false;
             this.GridViewVentaBoletos.View = System.Windows.Forms.View.Details;
@@ -500,7 +499,7 @@
             this.materialLabel10.AutoSize = true;
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel10.Location = new System.Drawing.Point(1605, 26);
+            this.materialLabel10.Location = new System.Drawing.Point(1100, 24);
             this.materialLabel10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel10.Name = "materialLabel10";
@@ -524,24 +523,22 @@
             // 
             // GridViewViajes
             // 
-            this.GridViewViajes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.GridViewViajes.AutoSizeTable = false;
             this.GridViewViajes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GridViewViajes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GridViewViajes.Depth = 0;
+            this.GridViewViajes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GridViewViajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GridViewViajes.FullRowSelect = true;
             this.GridViewViajes.HideSelection = false;
-            this.GridViewViajes.Location = new System.Drawing.Point(665, 120);
-            this.GridViewViajes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GridViewViajes.MinimumSize = new System.Drawing.Size(200, 100);
+            this.GridViewViajes.Location = new System.Drawing.Point(14, 14);
+            this.GridViewViajes.Margin = new System.Windows.Forms.Padding(2);
+            this.GridViewViajes.MinimumSize = new System.Drawing.Size(150, 81);
             this.GridViewViajes.MouseLocation = new System.Drawing.Point(-1, -1);
             this.GridViewViajes.MouseState = MaterialSkin.MouseState.OUT;
             this.GridViewViajes.Name = "GridViewViajes";
             this.GridViewViajes.OwnerDraw = true;
-            this.GridViewViajes.Size = new System.Drawing.Size(814, 373);
+            this.GridViewViajes.Size = new System.Drawing.Size(451, 279);
             this.GridViewViajes.TabIndex = 237;
             this.GridViewViajes.UseCompatibleStateImageBehavior = false;
             this.GridViewViajes.View = System.Windows.Forms.View.Details;
@@ -586,7 +583,7 @@
             this.btn_Cancelar.Location = new System.Drawing.Point(319, 13);
             this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(125, 54);
+            this.btn_Cancelar.Size = new System.Drawing.Size(139, 54);
             this.btn_Cancelar.TabIndex = 53;
             this.btn_Cancelar.Text = "CANCELAR";
             this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -686,6 +683,46 @@
             this.materialCard4.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard4.Size = new System.Drawing.Size(457, 319);
             this.materialCard4.TabIndex = 239;
+            // 
+            // materialButton7
+            // 
+            this.materialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton7.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton7.Depth = 0;
+            this.materialButton7.HighEmphasis = true;
+            this.materialButton7.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton7.Icon")));
+            this.materialButton7.Location = new System.Drawing.Point(246, 251);
+            this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton7.Name = "materialButton7";
+            this.materialButton7.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton7.Size = new System.Drawing.Size(124, 36);
+            this.materialButton7.TabIndex = 46;
+            this.materialButton7.Text = "Cancelar";
+            this.materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton7.UseAccentColor = false;
+            this.materialButton7.UseVisualStyleBackColor = true;
+            this.materialButton7.Click += new System.EventHandler(this.btn_CancelarBuscarViajes_Click);
+            // 
+            // materialButton6
+            // 
+            this.materialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton6.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton6.Depth = 0;
+            this.materialButton6.HighEmphasis = true;
+            this.materialButton6.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton6.Icon")));
+            this.materialButton6.Location = new System.Drawing.Point(103, 251);
+            this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton6.Name = "materialButton6";
+            this.materialButton6.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton6.Size = new System.Drawing.Size(105, 36);
+            this.materialButton6.TabIndex = 45;
+            this.materialButton6.Text = "Buscar";
+            this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.materialButton6.UseAccentColor = false;
+            this.materialButton6.UseVisualStyleBackColor = true;
+            this.materialButton6.Click += new System.EventHandler(this.btn_BuscarViajes_Click);
             // 
             // imageList1
             // 
@@ -798,46 +835,6 @@
             this.materialLabel2.Size = new System.Drawing.Size(114, 19);
             this.materialLabel2.TabIndex = 33;
             this.materialLabel2.Text = "Fecha de Salida";
-            // 
-            // materialButton7
-            // 
-            this.materialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton7.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton7.Depth = 0;
-            this.materialButton7.HighEmphasis = true;
-            this.materialButton7.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton7.Icon")));
-            this.materialButton7.Location = new System.Drawing.Point(246, 251);
-            this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton7.Name = "materialButton7";
-            this.materialButton7.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton7.Size = new System.Drawing.Size(124, 36);
-            this.materialButton7.TabIndex = 46;
-            this.materialButton7.Text = "Cancelar";
-            this.materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
-            this.materialButton7.UseAccentColor = false;
-            this.materialButton7.UseVisualStyleBackColor = true;
-            this.materialButton7.Click += new System.EventHandler(this.btn_CancelarBuscarViajes_Click);
-            // 
-            // materialButton6
-            // 
-            this.materialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton6.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton6.Depth = 0;
-            this.materialButton6.HighEmphasis = true;
-            this.materialButton6.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton6.Icon")));
-            this.materialButton6.Location = new System.Drawing.Point(103, 251);
-            this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton6.Name = "materialButton6";
-            this.materialButton6.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton6.Size = new System.Drawing.Size(105, 36);
-            this.materialButton6.TabIndex = 45;
-            this.materialButton6.Text = "Buscar";
-            this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
-            this.materialButton6.UseAccentColor = false;
-            this.materialButton6.UseVisualStyleBackColor = true;
-            this.materialButton6.Click += new System.EventHandler(this.btn_BuscarViajes_Click);
             // 
             // materialCard2
             // 
