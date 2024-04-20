@@ -1073,7 +1073,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                         VentaBoletosAux.ventaGrupal = checkBoxVentaGrupal.Checked;
                         VentaBoletosAux.BoletosDetalle = NuevaVenta;
                         VentaBoletosAux.boletosGrupal = boletoGrupal;
-                        frmVentaBoleto frmvb = new frmVentaBoleto(VentaBoletosAux, ClienteActual);
+                        frmVentaBoletoV2 frmvb = new frmVentaBoletoV2(VentaBoletosAux, ClienteActual);
                         frmvb.ShowDialog();
                         if (frmvb.getBanventa())
                         {
@@ -1328,6 +1328,11 @@ namespace CreativaSL.WinForm.VentaBoletos
                 // SelectedRows por SelectedItems, Cells por SubItems y Value por Text **************
                 if (GridViewViajes.SelectedItems.Count > 0)
                 {
+                    var Names = new List<string> { "camion 0", "precioNormal1 1", "terminalOrigen 2", "fechaOrigenV 3", "horaOrigenV 4", "terminalDestino 5", "fechaDestinoV 6", "horaDestinoV 7", "tipoTerminal 8", "numAsiento 9", "precioInfantil1 10",
+                        "precioTerceraEdad1 11", "precioEspecial1 12", "precioNormal2 13", "precioInfantil2 14", "precioTerceraEdad2 15", "precioEspecial2 16", "nombreViaje 17", "numCamion 18", "tiempoMinutos 19", "numPiso 20",
+                        "id_tipoViaje 21", "id_tipoTerminal 22", "id_viaje 23", "id_ruta 24", "id_camion 25", "id_disenioCamion 26", "id_terminalOrigen 27", "id_terminalDestino 28", "id_terminalXruta 29", "id_tarifa 30",
+                        "ordenOrigen 31", "ordenDestino 32", "fechaOrigen 33", "horaOrigen 34", "numAsientos 35", "recorridoViaje 36", "id_tipoCamion 37" };
+
                     homes.IDBoleto = "";
                     homes.NombreViaje = this.GridViewViajes.SelectedItems[0].SubItems[17].Text.ToString();
                     homes.IDViaje = this.GridViewViajes.SelectedItems[0].SubItems[23].Text.ToString();
@@ -1493,7 +1498,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void GridViewVentaBoletos_CellDoubleClick(object sender, EventArgs e)
+        private void GridViewVentaBoletos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -1657,7 +1662,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.Venta() == false)
                 {
                     this.Inicializar();
-                    frmDepositosRetiros deposito = new frmDepositosRetiros(1);
+                    frmDepositosRetirosV2 deposito = new frmDepositosRetirosV2(1);
                     deposito.ShowDialog();
                     deposito.Dispose();
                 }
@@ -1678,7 +1683,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.Venta() == false)
                 {
                     this.Inicializar();
-                    frmDepositosRetiros retiro = new frmDepositosRetiros(2);
+                    frmDepositosRetirosV2 retiro = new frmDepositosRetirosV2(2);
                     retiro.ShowDialog();
                     retiro.Dispose();
                 }
@@ -1699,7 +1704,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.Venta() == false)
                 {
                     this.Inicializar();
-                    frmDepositosRetiros retiro = new frmDepositosRetiros(3);
+                    frmDepositosRetirosV2 retiro = new frmDepositosRetirosV2(3);
                     retiro.ShowDialog();
                     retiro.Dispose();
                 }
@@ -1778,6 +1783,10 @@ namespace CreativaSL.WinForm.VentaBoletos
 
                         string nombre = fila[field].ToString();
                         dataList.Add(nombre);
+                        if (i == 3)
+                        {
+                            // dataList.Add(" ");
+                        }
                     }
 
                     string[] valores = dataList.ToArray();
@@ -1809,27 +1818,23 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-
-                this.GridViewViajes.Items.Clear();
-                this.GridViewViajes.Columns.Clear();
-                
                 var Headertexts = new List<string> { "Tipo Línea", "Precio", "Origen", "Fecha", "Hr Salida", "Destino", "Fecha", "Hora", "Tipo Viaje" };
                 var Names = new List<string> { "camion", "precioNormal1", "terminalOrigen", "fechaOrigenV", "horaOrigenV", "terminalDestino", "fechaDestinoV", "horaDestinoV", "tipoTerminal", "numAsiento", "precioInfantil1", "precioTerceraEdad1", "precioEspecial1", "precioNormal2", "precioInfantil2", "precioTerceraEdad2", "precioEspecial2", "nombreViaje", "numCamion", "tiempoMinutos", "numPiso", "id_tipoViaje", "id_tipoTerminal", "id_viaje", "id_ruta", "id_camion", "id_disenioCamion", "id_terminalOrigen", "id_terminalDestino", "id_terminalXruta", "id_tarifa", "ordenOrigen", "ordenDestino", "fechaOrigen", "horaOrigen", "numAsientos", "recorridoViaje", "id_tipoCamion" };
                 this.dbFieldList = Names;
 
                 this.RecorrerForGridViewViajes(Headertexts, 1);
-                //this.RecorrerForGridViewViajes(Names, 2);
-                //this.RecorrerForGridViewViajes(Names, 3);
+                this.RecorrerForGridViewViajes(Names, 2);
+                this.RecorrerForGridViewViajes(Names, 3);
 
                 this.GridViewViajes.Columns[0].Width = 100;
                 this.GridViewViajes.Columns[1].Width = 80;
                 //this.GridViewViajes.Columns[1].DefaultCellStyle.Format = "c";
-                this.GridViewViajes.Columns[2].Width = 80;
-                this.GridViewViajes.Columns[3].Width = 110;
-                this.GridViewViajes.Columns[4].Width = 100;
-                this.GridViewViajes.Columns[5].Width = 140;
-                this.GridViewViajes.Columns[6].Width = 110;
-                this.GridViewViajes.Columns[7].Width = 90;
+                this.GridViewViajes.Columns[2].Width = 70;
+                this.GridViewViajes.Columns[3].Width = 70;
+                this.GridViewViajes.Columns[4].Width = 70;
+                this.GridViewViajes.Columns[5].Width = 100;
+                this.GridViewViajes.Columns[6].Width = 100;
+                this.GridViewViajes.Columns[7].Width = 100;
                 this.GridViewViajes.Columns[8].Width = 100;
                 //this.GridViewViajes.Columns[9].Visible = false;
                 //this.GridViewViajes.Columns[10].Visible = false;
@@ -1992,11 +1997,8 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                this.GridViewVentaBoletos.Items.Clear();
-                this.GridViewVentaBoletos.Columns.Clear();
-
                 var Headertexts = new List<string> { "Nombre_Cliente", "Fecha Nac", "Teléfono", "#", "Tipo Línea", "Origen", "Fec Salida", "Hr Salida", "Destino", "Precio", "Desc" };
-                var Names = new List<string> { "Nombre", "FechaNacimiento", "NumeroTelefono", "Asiento", "TipoLinea", "Origen", "FechaSalidaV2", "HoraSalidaV", "Destino", "Precio", "Descuentos", "DescripcionIndice", "IDViaje", "IDCamionDiseño", "NumCamion", "TipoLinea", "FechaLLegadaV", "FechaLLegadaV2", "HoraLLegadaV", "TipoDescuento", "IDBoleto", "FechaSalidaV", "IDTarifa", "IDTipoTarifa", "IDStatus", "Anticipo", "IDBoletoTransferencia", "FechaSalida", "HoraSalida", "PagoExtra", "IDTipoCamion" };
+                var Names = new List<string> { "Nombre", "FechaNacimiento", "NumeroTelefono", "Asiento", "TipoLinea", "Origen", "FechaSalidaV2", "HoraSalidaV", "Destino", "Precio", "Descuentos", "DescripcionIndice", "IDViaje", "IDCamionDiseño", "NumCamion", "TipoLinea", "FechaLLegadaV", "FechaLLegada2V", "HoraLLegadaV", "TipoDescuento", "IDBoleto", "FechaSalidaV", "IDTarifa", "IDTipoTarifa", "IDStatus", "Anticipo", "IDBoletoTransferencia", "FechaSalida", "HoraSalida", "PagoExtra", "IDTipoCamion" };
                 this.dbFieldList2 = Names;
                 this.RecorrerForGridViewVentaBoletos(Headertexts, 1);
                 //this.RecorrerForGridViewVentaBoletos(Names, 2);
@@ -2434,29 +2436,28 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
         #endregion
-
-        private void GridViewVentaBoletos_CellClick(object sender, ColumnClickEventArgs e)
+        private void GridViewVentaBoletos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
                 //GridViewVentaBoletos.Columns[Columna_DataTimePicker].ReadOnly = true;
-                //oDateTimePicker_CloseUp(sender, e);
-                //if (e.ColumnIndex == Columna_DataTimePicker)
-                //{
-                //    if (e.RowIndex >= 0)
-                //    {
-                //        oDateTimePicker = new DateTimePicker();
-                //        GridViewVentaBoletos.Controls.Add(oDateTimePicker);
-                //        oDateTimePicker.Visible = false;
-                //        oDateTimePicker.Format = DateTimePickerFormat.Short;
-                //        oDateTimePicker.TextChanged += new EventHandler(dateTimePicker_OnTextChange);
-                //        oDateTimePicker.Visible = true;
-                //        Rectangle oRectangle = GridViewVentaBoletos.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);
-                //        oDateTimePicker.Size = new Size(oRectangle.Width, oRectangle.Height);
-                //        oDateTimePicker.Location = new Point(oRectangle.X, oRectangle.Y);
-                //        oDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);
-                //    }
-                //}
+                oDateTimePicker_CloseUp(sender, e);
+                if (e.ColumnIndex == Columna_DataTimePicker)
+                {
+                    if (e.RowIndex >= 0)
+                    {
+                        oDateTimePicker = new DateTimePicker();
+                        GridViewVentaBoletos.Controls.Add(oDateTimePicker);
+                        oDateTimePicker.Visible = false;
+                        oDateTimePicker.Format = DateTimePickerFormat.Short;
+                        oDateTimePicker.TextChanged += new EventHandler(dateTimePicker_OnTextChange);
+                        oDateTimePicker.Visible = true;
+                        //Rectangle oRectangle = GridViewVentaBoletos.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);
+                        //oDateTimePicker.Size = new Size(oRectangle.Width, oRectangle.Height);
+                        //oDateTimePicker.Location = new Point(oRectangle.X, oRectangle.Y);
+                        oDateTimePicker.CloseUp += new EventHandler(oDateTimePicker_CloseUp);
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -2555,7 +2556,15 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
 
-        
+        private void frmHome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void asiento7_ChangeUICues(object sender, UICuesEventArgs e)
+        {
+
+        }
 
         private void materialTabControl1_Click(object sender, EventArgs e)
         {

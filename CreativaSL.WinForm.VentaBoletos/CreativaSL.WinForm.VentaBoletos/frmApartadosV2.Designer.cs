@@ -114,12 +114,12 @@
             this.materialCard1.Controls.Add(this.materialLabel1);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(12, 13);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard1.Location = new System.Drawing.Point(16, 16);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
-            this.materialCard1.Size = new System.Drawing.Size(917, 649);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.materialCard1.Size = new System.Drawing.Size(1223, 799);
             this.materialCard1.TabIndex = 1;
             // 
             // dgvdatosboleto
@@ -170,8 +170,8 @@
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dgvdatosboleto.Location = new System.Drawing.Point(32, 323);
-            this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvdatosboleto.Location = new System.Drawing.Point(43, 398);
+            this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvdatosboleto.MultiSelect = false;
             this.dgvdatosboleto.Name = "dgvdatosboleto";
             this.dgvdatosboleto.ReadOnly = true;
@@ -182,7 +182,7 @@
             this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdatosboleto.Size = new System.Drawing.Size(883, 274);
+            this.dgvdatosboleto.Size = new System.Drawing.Size(1177, 337);
             this.dgvdatosboleto.TabIndex = 20;
             // 
             // id_boleto
@@ -195,6 +195,7 @@
             this.id_boleto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.id_boleto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.id_boleto.Visible = false;
+            this.id_boleto.Width = 125;
             // 
             // id_ventadetalle
             // 
@@ -206,6 +207,7 @@
             this.id_ventadetalle.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.id_ventadetalle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.id_ventadetalle.Visible = false;
+            this.id_ventadetalle.Width = 125;
             // 
             // folioVenta
             // 
@@ -214,7 +216,7 @@
             this.folioVenta.MinimumWidth = 6;
             this.folioVenta.Name = "folioVenta";
             this.folioVenta.ReadOnly = true;
-            this.folioVenta.Width = 85;
+            this.folioVenta.Width = 104;
             // 
             // CodigoBarra
             // 
@@ -225,7 +227,7 @@
             this.CodigoBarra.ReadOnly = true;
             this.CodigoBarra.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.CodigoBarra.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.CodigoBarra.Width = 68;
+            this.CodigoBarra.Width = 85;
             // 
             // Viaje
             // 
@@ -234,7 +236,7 @@
             this.Viaje.MinimumWidth = 6;
             this.Viaje.Name = "Viaje";
             this.Viaje.ReadOnly = true;
-            this.Viaje.Width = 60;
+            this.Viaje.Width = 69;
             // 
             // Origen
             // 
@@ -245,7 +247,7 @@
             this.Origen.ReadOnly = true;
             this.Origen.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Origen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Origen.Width = 44;
+            this.Origen.Width = 53;
             // 
             // Destino
             // 
@@ -257,7 +259,7 @@
             this.Destino.ReadOnly = true;
             this.Destino.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Destino.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Destino.Width = 49;
+            this.Destino.Width = 59;
             // 
             // fecha_salidaV
             // 
@@ -271,7 +273,7 @@
             this.fecha_salidaV.ReadOnly = true;
             this.fecha_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.fecha_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.fecha_salidaV.Width = 43;
+            this.fecha_salidaV.Width = 51;
             // 
             // hora_salidaV
             // 
@@ -282,7 +284,7 @@
             this.hora_salidaV.ReadOnly = true;
             this.hora_salidaV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.hora_salidaV.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.hora_salidaV.Width = 36;
+            this.hora_salidaV.Width = 43;
             // 
             // NombrePersona
             // 
@@ -293,7 +295,7 @@
             this.NombrePersona.ReadOnly = true;
             this.NombrePersona.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.NombrePersona.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NombrePersona.Width = 50;
+            this.NombrePersona.Width = 62;
             // 
             // asiento
             // 
@@ -307,7 +309,7 @@
             this.asiento.ReadOnly = true;
             this.asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.asiento.Width = 48;
+            this.asiento.Width = 58;
             // 
             // fechaNacimiento
             // 
@@ -318,7 +320,7 @@
             this.fechaNacimiento.MinimumWidth = 6;
             this.fechaNacimiento.Name = "fechaNacimiento";
             this.fechaNacimiento.ReadOnly = true;
-            this.fechaNacimiento.Width = 121;
+            this.fechaNacimiento.Width = 149;
             // 
             // numeroTelefono
             // 
@@ -327,7 +329,7 @@
             this.numeroTelefono.MinimumWidth = 6;
             this.numeroTelefono.Name = "numeroTelefono";
             this.numeroTelefono.ReadOnly = true;
-            this.numeroTelefono.Width = 74;
+            this.numeroTelefono.Width = 90;
             // 
             // cantidad_venta
             // 
@@ -339,6 +341,7 @@
             this.cantidad_venta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.cantidad_venta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.cantidad_venta.Visible = false;
+            this.cantidad_venta.Width = 125;
             // 
             // boletocosto
             // 
@@ -352,7 +355,7 @@
             this.boletocosto.ReadOnly = true;
             this.boletocosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.boletocosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.boletocosto.Width = 43;
+            this.boletocosto.Width = 52;
             // 
             // vdcosto
             // 
@@ -366,6 +369,7 @@
             this.vdcosto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.vdcosto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.vdcosto.Visible = false;
+            this.vdcosto.Width = 125;
             // 
             // iva
             // 
@@ -379,6 +383,7 @@
             this.iva.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.iva.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.iva.Visible = false;
+            this.iva.Width = 125;
             // 
             // pago
             // 
@@ -391,7 +396,7 @@
             this.pago.ReadOnly = true;
             this.pago.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.pago.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pago.Width = 38;
+            this.pago.Width = 46;
             // 
             // pendiente
             // 
@@ -404,7 +409,7 @@
             this.pendiente.ReadOnly = true;
             this.pendiente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.pendiente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pendiente.Width = 61;
+            this.pendiente.Width = 74;
             // 
             // Transf
             // 
@@ -418,7 +423,7 @@
             this.Transf.ReadOnly = true;
             this.Transf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Transf.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Transf.Width = 43;
+            this.Transf.Width = 51;
             // 
             // Usu_Ins
             // 
@@ -429,7 +434,7 @@
             this.Usu_Ins.ReadOnly = true;
             this.Usu_Ins.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Usu_Ins.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Usu_Ins.Width = 52;
+            this.Usu_Ins.Width = 61;
             // 
             // Usu_Mod
             // 
@@ -440,7 +445,7 @@
             this.Usu_Mod.ReadOnly = true;
             this.Usu_Mod.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Usu_Mod.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Usu_Mod.Width = 59;
+            this.Usu_Mod.Width = 71;
             // 
             // precio
             // 
@@ -452,6 +457,7 @@
             this.precio.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.precio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.precio.Visible = false;
+            this.precio.Width = 125;
             // 
             // id_venta
             // 
@@ -463,6 +469,7 @@
             this.id_venta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.id_venta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.id_venta.Visible = false;
+            this.id_venta.Width = 125;
             // 
             // id_cliente
             // 
@@ -474,6 +481,7 @@
             this.id_cliente.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.id_cliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.id_cliente.Visible = false;
+            this.id_cliente.Width = 125;
             // 
             // cajero
             // 
@@ -483,6 +491,7 @@
             this.cajero.Name = "cajero";
             this.cajero.ReadOnly = true;
             this.cajero.Visible = false;
+            this.cajero.Width = 125;
             // 
             // bloqueoCancelacionMonedero
             // 
@@ -492,6 +501,7 @@
             this.bloqueoCancelacionMonedero.Name = "bloqueoCancelacionMonedero";
             this.bloqueoCancelacionMonedero.ReadOnly = true;
             this.bloqueoCancelacionMonedero.Visible = false;
+            this.bloqueoCancelacionMonedero.Width = 125;
             // 
             // bloqueoCancelacionPorFormaDePago
             // 
@@ -501,13 +511,14 @@
             this.bloqueoCancelacionPorFormaDePago.Name = "bloqueoCancelacionPorFormaDePago";
             this.bloqueoCancelacionPorFormaDePago.ReadOnly = true;
             this.bloqueoCancelacionPorFormaDePago.Visible = false;
+            this.bloqueoCancelacionPorFormaDePago.Width = 125;
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(169, 114);
-            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpFecha.Location = new System.Drawing.Point(225, 140);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(188, 20);
+            this.dtpFecha.Size = new System.Drawing.Size(249, 22);
             this.dtpFecha.TabIndex = 19;
             this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
@@ -516,8 +527,7 @@
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(43, 284);
-            this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel3.Location = new System.Drawing.Point(57, 350);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(147, 19);
@@ -529,10 +539,10 @@
             this.btnPagoOnline.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnPagoOnline.Image = ((System.Drawing.Image)(resources.GetObject("btnPagoOnline.Image")));
             this.btnPagoOnline.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPagoOnline.Location = new System.Drawing.Point(559, 146);
-            this.btnPagoOnline.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPagoOnline.Location = new System.Drawing.Point(745, 180);
+            this.btnPagoOnline.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPagoOnline.Name = "btnPagoOnline";
-            this.btnPagoOnline.Size = new System.Drawing.Size(82, 84);
+            this.btnPagoOnline.Size = new System.Drawing.Size(109, 103);
             this.btnPagoOnline.TabIndex = 16;
             this.btnPagoOnline.Text = "Pago Online";
             this.btnPagoOnline.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -544,10 +554,10 @@
             this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(664, 146);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Location = new System.Drawing.Point(885, 180);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(82, 84);
+            this.btnSalir.Size = new System.Drawing.Size(109, 103);
             this.btnSalir.TabIndex = 15;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -559,10 +569,10 @@
             this.btnPagoEfectivo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnPagoEfectivo.Image = ((System.Drawing.Image)(resources.GetObject("btnPagoEfectivo.Image")));
             this.btnPagoEfectivo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPagoEfectivo.Location = new System.Drawing.Point(770, 51);
-            this.btnPagoEfectivo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPagoEfectivo.Location = new System.Drawing.Point(1027, 63);
+            this.btnPagoEfectivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPagoEfectivo.Name = "btnPagoEfectivo";
-            this.btnPagoEfectivo.Size = new System.Drawing.Size(82, 83);
+            this.btnPagoEfectivo.Size = new System.Drawing.Size(109, 102);
             this.btnPagoEfectivo.TabIndex = 14;
             this.btnPagoEfectivo.Text = "Pago Efectivo";
             this.btnPagoEfectivo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -574,10 +584,10 @@
             this.btnCancelarB.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelarB.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarB.Image")));
             this.btnCancelarB.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarB.Location = new System.Drawing.Point(664, 49);
-            this.btnCancelarB.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelarB.Location = new System.Drawing.Point(885, 60);
+            this.btnCancelarB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelarB.Name = "btnCancelarB";
-            this.btnCancelarB.Size = new System.Drawing.Size(82, 83);
+            this.btnCancelarB.Size = new System.Drawing.Size(109, 102);
             this.btnCancelarB.TabIndex = 13;
             this.btnCancelarB.Text = "Canc. B";
             this.btnCancelarB.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -589,10 +599,10 @@
             this.btnCancelarA.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelarA.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarA.Image")));
             this.btnCancelarA.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarA.Location = new System.Drawing.Point(559, 49);
-            this.btnCancelarA.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelarA.Location = new System.Drawing.Point(745, 60);
+            this.btnCancelarA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelarA.Name = "btnCancelarA";
-            this.btnCancelarA.Size = new System.Drawing.Size(82, 83);
+            this.btnCancelarA.Size = new System.Drawing.Size(109, 102);
             this.btnCancelarA.TabIndex = 12;
             this.btnCancelarA.Text = "Canc. A";
             this.btnCancelarA.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -605,8 +615,7 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(688, 11);
-            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel2.Location = new System.Drawing.Point(917, 14);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(65, 19);
@@ -618,10 +627,10 @@
             this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBuscar.Location = new System.Drawing.Point(402, 93);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscar.Location = new System.Drawing.Point(536, 114);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(79, 76);
+            this.btnBuscar.Size = new System.Drawing.Size(105, 94);
             this.btnBuscar.TabIndex = 10;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -638,8 +647,8 @@
             this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreCliente.HideSelection = true;
             this.txtNombreCliente.LeadingIcon = null;
-            this.txtNombreCliente.Location = new System.Drawing.Point(164, 212);
-            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombreCliente.Location = new System.Drawing.Point(219, 261);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreCliente.MaxLength = 32767;
             this.txtNombreCliente.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreCliente.Name = "txtNombreCliente";
@@ -651,7 +660,7 @@
             this.txtNombreCliente.SelectionLength = 0;
             this.txtNombreCliente.SelectionStart = 0;
             this.txtNombreCliente.ShortcutsEnabled = true;
-            this.txtNombreCliente.Size = new System.Drawing.Size(188, 48);
+            this.txtNombreCliente.Size = new System.Drawing.Size(251, 48);
             this.txtNombreCliente.TabIndex = 9;
             this.txtNombreCliente.TabStop = false;
             this.txtNombreCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -668,8 +677,8 @@
             this.txtFolioBoleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFolioBoleto.HideSelection = true;
             this.txtFolioBoleto.LeadingIcon = null;
-            this.txtFolioBoleto.Location = new System.Drawing.Point(164, 157);
-            this.txtFolioBoleto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFolioBoleto.Location = new System.Drawing.Point(219, 193);
+            this.txtFolioBoleto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFolioBoleto.MaxLength = 32767;
             this.txtFolioBoleto.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFolioBoleto.Name = "txtFolioBoleto";
@@ -681,7 +690,7 @@
             this.txtFolioBoleto.SelectionLength = 0;
             this.txtFolioBoleto.SelectionStart = 0;
             this.txtFolioBoleto.ShortcutsEnabled = true;
-            this.txtFolioBoleto.Size = new System.Drawing.Size(188, 48);
+            this.txtFolioBoleto.Size = new System.Drawing.Size(251, 48);
             this.txtFolioBoleto.TabIndex = 8;
             this.txtFolioBoleto.TabStop = false;
             this.txtFolioBoleto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -698,8 +707,8 @@
             this.txt_folioVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_folioVenta.HideSelection = true;
             this.txt_folioVenta.LeadingIcon = null;
-            this.txt_folioVenta.Location = new System.Drawing.Point(164, 49);
-            this.txt_folioVenta.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_folioVenta.Location = new System.Drawing.Point(219, 60);
+            this.txt_folioVenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_folioVenta.MaxLength = 32767;
             this.txt_folioVenta.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_folioVenta.Name = "txt_folioVenta";
@@ -711,7 +720,7 @@
             this.txt_folioVenta.SelectionLength = 0;
             this.txt_folioVenta.SelectionStart = 0;
             this.txt_folioVenta.ShortcutsEnabled = true;
-            this.txt_folioVenta.Size = new System.Drawing.Size(188, 48);
+            this.txt_folioVenta.Size = new System.Drawing.Size(251, 48);
             this.txt_folioVenta.TabIndex = 6;
             this.txt_folioVenta.TabStop = false;
             this.txt_folioVenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -725,7 +734,7 @@
             this.chkNombre.Checked = true;
             this.chkNombre.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkNombre.Depth = 0;
-            this.chkNombre.Location = new System.Drawing.Point(27, 212);
+            this.chkNombre.Location = new System.Drawing.Point(36, 261);
             this.chkNombre.Margin = new System.Windows.Forms.Padding(0);
             this.chkNombre.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkNombre.MouseState = MaterialSkin.MouseState.HOVER;
@@ -745,7 +754,7 @@
             this.chkFolio.Checked = true;
             this.chkFolio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolio.Depth = 0;
-            this.chkFolio.Location = new System.Drawing.Point(27, 157);
+            this.chkFolio.Location = new System.Drawing.Point(36, 193);
             this.chkFolio.Margin = new System.Windows.Forms.Padding(0);
             this.chkFolio.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFolio.MouseState = MaterialSkin.MouseState.HOVER;
@@ -765,7 +774,7 @@
             this.chkFecha.Checked = true;
             this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFecha.Depth = 0;
-            this.chkFecha.Location = new System.Drawing.Point(27, 102);
+            this.chkFecha.Location = new System.Drawing.Point(36, 126);
             this.chkFecha.Margin = new System.Windows.Forms.Padding(0);
             this.chkFecha.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFecha.MouseState = MaterialSkin.MouseState.HOVER;
@@ -786,7 +795,7 @@
             this.chkFolioVenta.Checked = true;
             this.chkFolioVenta.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFolioVenta.Depth = 0;
-            this.chkFolioVenta.Location = new System.Drawing.Point(27, 49);
+            this.chkFolioVenta.Location = new System.Drawing.Point(36, 60);
             this.chkFolioVenta.Margin = new System.Windows.Forms.Padding(0);
             this.chkFolioVenta.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkFolioVenta.MouseState = MaterialSkin.MouseState.HOVER;
@@ -804,8 +813,7 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(38, 11);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel1.Location = new System.Drawing.Point(51, 14);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(72, 19);
@@ -814,14 +822,14 @@
             // 
             // frmApartadosV2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 665);
+            this.ClientSize = new System.Drawing.Size(1241, 818);
             this.ControlBox = false;
             this.Controls.Add(this.materialCard1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmApartadosV2";
-            this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
+            this.Padding = new System.Windows.Forms.Padding(3, 64, 3, 2);
             this.Text = "frmApartadosV2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmApartadosV2_Load);
