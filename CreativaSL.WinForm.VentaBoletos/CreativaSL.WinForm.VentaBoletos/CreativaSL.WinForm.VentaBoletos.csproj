@@ -1044,6 +1044,12 @@
     <Compile Include="frmPagoExtra.Designer.cs">
       <DependentUpon>frmPagoExtra.cs</DependentUpon>
     </Compile>
+      <Compile Include="frmPagoExtraV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagoExtraV2.Designer.cs">
+      <DependentUpon>frmPagoExtraV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPorcentajeMonedero.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1552,6 +1558,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPagoExtra.resx">
       <DependentUpon>frmPagoExtra.cs</DependentUpon>
+    </EmbeddedResource>
+      <EmbeddedResource Include="frmPagoExtraV2.resx">
+      <DependentUpon>frmPagoExtraV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPorcentajeMonedero.resx">
       <DependentUpon>frmPorcentajeMonedero.cs</DependentUpon>
