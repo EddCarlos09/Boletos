@@ -1853,6 +1853,8 @@
     <Content Include="Resources\documents\Heco.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\sanitario.png" />
+    <None Include="Resources\sanitarioOutline.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

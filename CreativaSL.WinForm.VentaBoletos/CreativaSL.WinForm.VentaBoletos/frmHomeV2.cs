@@ -2178,9 +2178,9 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         PictureBoxAux = (PictureBox)this.FindControl(this, row["descripcion"].ToString());
                         Numero = PictureBoxAux.Name.Replace("asiento", "");
-                        PictureBoxAux.BackColor = Color.GreenYellow;
-                        PictureBoxAux.Image = global::CreativaSL.WinForm.VentaBoletos.Properties.Resources.wc;
-
+                        //PictureBoxAux.BackColor = Color.LightGray;
+                        PictureBoxAux.Image = global::CreativaSL.WinForm.VentaBoletos.Properties.Resources.sanitarioOutline;
+                       
                         if (IDViajeDiseñoAux != homes.IDViaje || numPisoAux != numPisoActual)
                         {
                             TextBox TextAux = (TextBox)this.FindControl(this, "pasilloasiento" + Numero);

@@ -623,6 +623,26 @@ namespace CreativaSL.WinForm.VentaBoletos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sanitario {
+            get {
+                object obj = ResourceManager.GetObject("sanitario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sanitarioOutline {
+            get {
+                object obj = ResourceManager.GetObject("sanitarioOutline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap segundo_piso {
             get {
                 object obj = ResourceManager.GetObject("segundo_piso", resourceCulture);
