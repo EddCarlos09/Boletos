@@ -46,7 +46,7 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(180, 44);
+            this.materialLabel1.Location = new System.Drawing.Point(297, 63);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(135, 19);
@@ -168,7 +168,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(419, 324);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 5);
-            this.btnCancelar.Size = new System.Drawing.Size(126, 94);
+            this.btnCancelar.Size = new System.Drawing.Size(110, 94);
             this.btnCancelar.TabIndex = 63;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
