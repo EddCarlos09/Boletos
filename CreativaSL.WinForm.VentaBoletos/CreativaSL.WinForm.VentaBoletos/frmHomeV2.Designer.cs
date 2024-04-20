@@ -38,6 +38,8 @@
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_Vender = new System.Windows.Forms.Button();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.Txt_TiempoVenta = new MaterialSkin.Controls.MaterialTextBox2();
             this.checkBoxVentaGrupal = new MaterialSkin.Controls.MaterialCheckbox();
@@ -51,7 +53,9 @@
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
+            this.btn_CancelarBuscarViajes = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btn_BuscarViajes = new System.Windows.Forms.Button();
             this.dtmFechaSalida = new System.Windows.Forms.DateTimePicker();
             this.cmbComboDestino = new MaterialSkin.Controls.MaterialComboBox();
             this.cmbComboOrigen = new MaterialSkin.Controls.MaterialComboBox();
@@ -62,105 +66,6 @@
             this.GridViewViajes = new MaterialSkin.Controls.MaterialListView();
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.panel_Camion = new CreativaSL.LibControls.WinForms.Panel_Creativa(this.components);
-            this.pasilloasiento64 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento63 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento62 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento61 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento65 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento59 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento58 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento57 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento56 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento60 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento55 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento54 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento53 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento52 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento51 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento50 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento49 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento48 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento47 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento46 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento45 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento44 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento43 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento42 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento41 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento40 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento39 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento38 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento37 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento36 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento35 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento34 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento33 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento32 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento31 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento30 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento29 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento28 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento27 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento26 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento25 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento24 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento23 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento22 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento21 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento20 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento19 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento18 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento17 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento16 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento15 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento14 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento13 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento12 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento11 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento10 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento9 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento8 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento7 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento6 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento5 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento4 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento3 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento2 = new System.Windows.Forms.TextBox();
-            this.pasilloasiento1 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox131 = new System.Windows.Forms.TextBox();
-            this.pasillo1 = new System.Windows.Forms.TextBox();
-            this.textBox133 = new System.Windows.Forms.TextBox();
-            this.textBox134 = new System.Windows.Forms.TextBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
-            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.btnAdministrador = new System.Windows.Forms.TabPage();
-            this.btnReportes = new System.Windows.Forms.TabPage();
-            this.btnConfiguracion = new System.Windows.Forms.TabPage();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.imageListmMenu = new System.Windows.Forms.ImageList(this.components);
-            this.MenuStripCaja = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItemDepositos = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemRetirosCajaLLena = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemRetirosPagos = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemInformacionDeCaja = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemCerrarCaja = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
-            this.btn_Vender = new System.Windows.Forms.Button();
-            this.btn_CancelarBuscarViajes = new System.Windows.Forms.Button();
-            this.btn_BuscarViajes = new System.Windows.Forms.Button();
             this.puerta13 = new System.Windows.Forms.PictureBox();
             this.puerta12 = new System.Windows.Forms.PictureBox();
             this.puerta11 = new System.Windows.Forms.PictureBox();
@@ -343,9 +248,6 @@
             this.materialCard2.SuspendLayout();
             this.materialCard4.SuspendLayout();
             this.panel_Camion.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.materialCard5.SuspendLayout();
-            this.MenuStripCaja.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.puerta13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.puerta12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.puerta11)).BeginInit();
@@ -692,7 +594,7 @@
             this.Txt_FechaHoraSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_FechaHoraSistema.HideSelection = true;
             this.Txt_FechaHoraSistema.LeadingIcon = null;
-            this.Txt_FechaHoraSistema.Location = new System.Drawing.Point(35, 226);
+            this.Txt_FechaHoraSistema.Location = new System.Drawing.Point(11, 226);
             this.Txt_FechaHoraSistema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_FechaHoraSistema.MaxLength = 32767;
             this.Txt_FechaHoraSistema.MouseState = MaterialSkin.MouseState.OUT;
@@ -705,7 +607,7 @@
             this.Txt_FechaHoraSistema.SelectionLength = 0;
             this.Txt_FechaHoraSistema.SelectionStart = 0;
             this.Txt_FechaHoraSistema.ShortcutsEnabled = true;
-            this.Txt_FechaHoraSistema.Size = new System.Drawing.Size(141, 48);
+            this.Txt_FechaHoraSistema.Size = new System.Drawing.Size(265, 48);
             this.Txt_FechaHoraSistema.TabIndex = 47;
             this.Txt_FechaHoraSistema.TabStop = false;
             this.Txt_FechaHoraSistema.Text = "00/00/0000 00:00:00";
@@ -723,7 +625,7 @@
             this.Txt_Recorrido.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_Recorrido.HideSelection = true;
             this.Txt_Recorrido.LeadingIcon = null;
-            this.Txt_Recorrido.Location = new System.Drawing.Point(259, 226);
+            this.Txt_Recorrido.Location = new System.Drawing.Point(320, 226);
             this.Txt_Recorrido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_Recorrido.MaxLength = 32767;
             this.Txt_Recorrido.MouseState = MaterialSkin.MouseState.OUT;
@@ -997,8 +899,8 @@
             // 
             // GridViewVentaBoletos
             // 
-            this.GridViewVentaBoletos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.GridViewVentaBoletos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GridViewVentaBoletos.AutoSizeTable = false;
             this.GridViewVentaBoletos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -1023,8 +925,8 @@
             // 
             // GridViewViajes
             // 
-            this.GridViewViajes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.GridViewViajes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GridViewViajes.AutoSizeTable = false;
             this.GridViewViajes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -3796,10 +3698,6 @@
             this.materialCard4.PerformLayout();
             this.panel_Camion.ResumeLayout(false);
             this.panel_Camion.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.materialCard5.ResumeLayout(false);
-            this.materialCard5.PerformLayout();
-            this.MenuStripCaja.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.puerta13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.puerta12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.puerta11)).EndInit();
