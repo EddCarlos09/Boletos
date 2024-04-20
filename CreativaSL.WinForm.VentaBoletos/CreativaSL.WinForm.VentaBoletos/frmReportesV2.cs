@@ -848,10 +848,5 @@ namespace CreativaSL.WinForm.VentaBoletos
                 MessageBox.Show(ex.Message, "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void btn_Buscar_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

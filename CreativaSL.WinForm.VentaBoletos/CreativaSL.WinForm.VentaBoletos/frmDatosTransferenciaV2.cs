@@ -6,30 +6,30 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using static CreativaSL.WinForm.VentaBoletos.MaterialUI;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using CreativaSL.Dll.VentaBoletosGlobal;
 using CreativaSL.Dll.VentaBoletosNegocio;
+using static System.Windows.Forms.Design.AxImporter;
 using System.Collections;
-using Syncfusion.Windows.Forms.Tools.Win32API;
 
 namespace CreativaSL.WinForm.VentaBoletos
 {
-    public partial class frmDatosTarjetaV2 : MaterialForm
+    public partial class frmDatosTransferenciaV2 : MaterialForm
     {
         #region Variables
-
         private FormaPago _datos;
         public FormaPago datos
         {
             get { return _datos; }
             set { _datos = value; }
         }
+
         int opcion = 0;
         #endregion
         #region Constructor
-        public frmDatosTarjetaV2()
+        public frmDatosTransferenciaV2()
         {
             try
             {
@@ -43,23 +43,17 @@ namespace CreativaSL.WinForm.VentaBoletos
                 this.label1.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
                 this.label2.ForeColor = Color.DimGray;
                 this.label2.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
-                this.label5.ForeColor = Color.DimGray;
-                this.label5.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
-                this.label6.ForeColor = Color.DimGray;
-                this.label6.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
-                this.label7.ForeColor = Color.DimGray;
-                this.label7.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
                 this.label8.ForeColor = Color.DimGray;
                 this.label8.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
-
-                this.txt_mensaje.BackColor = Color.FromArgb(255, 192, 192);
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+           
         }
-        public frmDatosTarjetaV2(FormaPago fp, int op)
+
+        public frmDatosTransferenciaV2(FormaPago fp, int op)
         {
             try
             {
@@ -75,7 +69,6 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
         #endregion
         #region Eventos
-
         #region Evento Click
         private void btnAceptar_Click(object sender, EventArgs e)
         {
@@ -95,6 +88,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //this.DialogResult = DialogResult.Abort;
             }
         }
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -110,7 +104,6 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
         #endregion
-
         #region Eventos KeyPress
         private void cmbBancos_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -136,12 +129,12 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 if (e.KeyChar == (Char)13)
                 {
-                    this.txtNumTarjeta.Focus();
+                    this.cmbBancos.Focus();
                 }
                 else
                 {
                     Validaciones val = new Validaciones();
-                    val.SoloNumerico(e);
+                    val.SoloTexto(e);
                 }
             }
             catch (Exception ex)
@@ -155,7 +148,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 if (e.KeyChar == (Char)13)
                 {
-                    this.btnAceptar.Focus();
+                    this.btnAceptar_Click(null, null);
                 }
                 else
                 {
@@ -169,43 +162,6 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
         private void txtNumAutorizacion_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            try
-            {
-                if (e.KeyChar == (Char)13)
-                {
-                    this.cmbDocumento.Focus();
-                }
-                else
-                {
-                    Validaciones val = new Validaciones();
-                    val.SoloNumerico(e);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        private void cmbDocumento_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            try
-            {
-                if (e.KeyChar == (Char)13)
-                {
-                    this.txtDNI.Focus();
-                }
-                else
-                {
-                    e.Handled = true;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        private void txtNumTarjeta_KeyPress(object sender, KeyPressEventArgs e)
         {
             try
             {
@@ -225,14 +181,21 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
         #endregion
-
         #region Evento Load
-        private void frmDatosTarjeta_Load(object sender, EventArgs e)
+        private void frmDatosCheque_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                this.CargarComboBancos();
+                this.ActiveControl = this.txtNumCheque;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.DialogResult = DialogResult.Abort;
+            }
         }
         #endregion
-
         #region Eventos Validating
         private void txtMonto_Validating(object sender, CancelEventArgs e)
         {
@@ -247,11 +210,25 @@ namespace CreativaSL.WinForm.VentaBoletos
                 throw ex;
             }
         }
+        private void txtNumCheque_Validating(object sender, CancelEventArgs e)
+        {
+            try
+            {
+                //if (this.ValidarFolioTransaccion()) //Si el folio de transaccion ya existe, informar.
+                //{
+                //    this.txt_mensaje.Visible = true;
+                //    this.txt_mensaje.Text = "El folio de transacción ya ha sido ingresado previamente. Verifique la información.";
+                //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error. Contacte a Soporte Técnico. Detalles del error: " + ex.Message,
+                    "Sistema Venta de Boletos v1.2", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         #endregion
-
         #endregion
         #region Métodos
-
         private void CargarComboBancos()
         {
             try
@@ -269,24 +246,6 @@ namespace CreativaSL.WinForm.VentaBoletos
                 throw ex;
             }
         }
-
-        private void LlenarComboDocumentos()
-        {
-            try
-            {
-                TipoDocumento datos = new TipoDocumento();
-                TipoDocumento_Negocio tn = new TipoDocumento_Negocio();
-                datos.conexion = Comun.Conexion;
-                this.cmbDocumento.ValueMember = "id_tipoDocumento";
-                this.cmbDocumento.DisplayMember = "descripcion";
-                this.cmbDocumento.DataSource = tn.LlenarComboDocumentos(datos);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
         private void CargarDatos()
         {
             try
@@ -295,15 +254,9 @@ namespace CreativaSL.WinForm.VentaBoletos
                 {
                     if (datos != null)
                     {
-                        this.txtDNI.Text = datos.folioIFE;
-                        this.txtNumAutorizacion.Text = datos.autorizacion;
+                        this.txtNumCheque.Text = datos.numCheque;
                         this.cmbBancos.SelectedItem = datos.banco;
                         this.txtMonto.Text = string.Format("{0:F2}", datos.monto);
-                        this.txtMonto.ReadOnly = true;
-                    }
-                    else
-                    {
-                        datos = new FormaPago();
                     }
                 }
             }
@@ -312,79 +265,36 @@ namespace CreativaSL.WinForm.VentaBoletos
                 throw ex;
             }
         }
-
         private Hashtable ValidarDatos()
         {
             try
             {
                 Hashtable errores = new Hashtable();
-                Validaciones val = new Validaciones();
-                if (string.IsNullOrEmpty(this.txtNumAutorizacion.Text))
-                    errores.Add(1, "Ingrese el número de autorización. ");
-                if (this.cmbDocumento.SelectedIndex == -1)
-                    errores.Add(2, "Seleccione un tipo de Identificación. ");
-                else
-                {
-                    TipoDocumento td = new TipoDocumento();
-                    td = (TipoDocumento)this.cmbDocumento.SelectedItem;
-                    if (string.IsNullOrEmpty(td.id_tipoDocumento))
-                        errores.Add(2, "Seleccione un tipo de Identificación. ");
-                }
-
-                if (string.IsNullOrEmpty(this.txtDNI.Text) || string.IsNullOrWhiteSpace(this.txtDNI.Text))
-                    errores.Add(3, "Ingrese el núm. de Identificación. ");
-                else
-                {
-                    TipoDocumento td = new TipoDocumento();
-                    td = (TipoDocumento)this.cmbDocumento.SelectedItem;
-                    if (!string.IsNullOrEmpty(td.id_tipoDocumento))
-                    {
-                        switch (td.id_tipoDocumento)
-                        {
-                            case "307F5273-3028-45DD-8019-3A0A890AC8AC":
-                                if (!val.ValidarIFE(this.txtDNI.Text))
-                                    errores.Add(3, "Núm. de INE no válido.");
-                                break;
-                            case "6135947D-27BC-4146-8082-A2E55B07D087":
-                                if (!val.ValidarLicenciaConducir(this.txtDNI.Text))
-                                    errores.Add(3, "Núm. de Licencia no válido.");
-                                break;
-                            case "FB4FB831-7E8B-4E66-8B0C-B5C3F31A3A13":
-                                if (!val.ValidarCedulaProfesional(this.txtDNI.Text))
-                                    errores.Add(3, "Núm. de Cédula Profesional no válido.");
-                                break;
-                        }
-                    }
-                }
-
-                if (string.IsNullOrEmpty(this.txtNumTarjeta.Text) || string.IsNullOrWhiteSpace(this.txtNumTarjeta.Text))
-                    errores.Add(4, "Ingrese el núm. de la tarjeta. ");
-                else
-                {
-                    if (!val.ValidarTarjetaCreditoDebito(this.txtNumTarjeta.Text))
-                        errores.Add(4, "El número de la tarjeta no es correcto. ");
-                }
                 if (this.cmbBancos.SelectedIndex == -1)
-                    errores.Add(5, "Seleccione una banco de la lista. ");
+                    errores.Add(1, "Seleccione una banco de la lista. ");
                 else
                 {
                     Banco banco = new Banco();
                     banco = (Banco)this.cmbBancos.SelectedItem;
                     if (banco.idBanco == 0)
-                        errores.Add(5, "Seleccione una banco de la lista. ");
+                        errores.Add(1, "Seleccione una banco de la lista. ");
                 }
+                if (string.IsNullOrEmpty(this.txtNumCheque.Text))
+                    errores.Add(2, "Ingrese el número de autorización. ");
                 decimal monto = 0;
                 decimal.TryParse(this.txtMonto.Text, out monto);
                 if (monto <= 0)
-                    errores.Add(6, "Ingrese un monto válido mayor a 0. ");
+                    errores.Add(4, "Ingrese un monto válido mayor a " + string.Format("{0:c}", 0) + ".");
                 else
                     if (opcion == 0)
                 {
-                    if (monto > (decimal)datos.monto)
+                    if ((float)monto > datos.monto)
                     {
-                        errores.Add(6, "Ingrese un monto menor o igual a " + string.Format("{0:c}", datos.monto) + ".");
+                        errores.Add(4, "Ingrese un monto menor a " + string.Format("{0:c}", datos.monto) + ".");
                     }
                 }
+                //if (this.ValidarFolioTransaccion())
+                //    errores.Add(5, "El folio de transacción ya ha sido ingresado previamente. Verifique la información.");
                 return errores;
             }
             catch (Exception ex)
@@ -392,7 +302,6 @@ namespace CreativaSL.WinForm.VentaBoletos
                 throw ex;
             }
         }
-
         private void MostrarMensajeError(Hashtable errores)
         {
             try
@@ -414,12 +323,10 @@ namespace CreativaSL.WinForm.VentaBoletos
                 throw ex;
             }
         }
-
         private void ObtenerDatos()
         {
             try
             {
-                datos = new FormaPago();
                 if (this.cmbBancos.SelectedIndex == -1)
                     datos.banco = new Banco();
                 else
@@ -431,39 +338,33 @@ namespace CreativaSL.WinForm.VentaBoletos
                     else
                         datos.banco = banco;
                 }
-                if (this.cmbDocumento.SelectedIndex == -1)
-                    datos.tipoDocumento = new TipoDocumento();
-                else
-                {
-                    TipoDocumento td = new TipoDocumento();
-                    td = (TipoDocumento)this.cmbDocumento.SelectedItem;
-                    if (string.IsNullOrEmpty(td.id_tipoDocumento))
-                        datos.tipoDocumento = new TipoDocumento();
-                    else
-                        datos.tipoDocumento = td;
-                }
-                if (string.IsNullOrEmpty(this.txtNumAutorizacion.Text))
+                if (string.IsNullOrEmpty(this.txtNumCheque.Text))
                     datos.autorizacion = string.Empty;
                 else
-                    datos.autorizacion = this.txtNumAutorizacion.Text;
-                if (string.IsNullOrEmpty(this.txtDNI.Text) || string.IsNullOrWhiteSpace(this.txtDNI.Text))
-                    datos.folioIFE = string.Empty;
-                else
-                    datos.folioIFE = this.txtDNI.Text;
+                    datos.autorizacion = this.txtNumCheque.Text;
                 decimal monto = 0;
                 decimal.TryParse(this.txtMonto.Text, out monto);
                 datos.monto = (float)monto;
-                if (string.IsNullOrEmpty(this.txtNumTarjeta.Text) || string.IsNullOrWhiteSpace(this.txtNumTarjeta.Text))
-                    datos.numtarjeta = string.Empty;
-                else
-                    datos.numtarjeta = this.txtNumTarjeta.Text;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
-
+        private bool ValidarFolioTransaccion()
+        {
+            try
+            {
+                Busqueda datos = new Busqueda(Comun.Conexion);
+                Busqueda_Negocio bn = new Busqueda_Negocio();
+                datos = bn.ValidarFolioTransferencia(this.txtNumCheque.Text, datos.strcnx);
+                return datos.Validador;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         #endregion
     }
 }
