@@ -583,7 +583,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (MessageBox.Show("Este boleto ya tiene aplicado un pago extra, ¿ desea eliminar el pago extra ? ", "¿Aplicar otro Descuento?", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
-                            frmPagoExtra frmpe = new frmPagoExtra();
+                            frmPagoExtraV2 frmpe = new frmPagoExtraV2();
                             frmpe.ShowDialog();
                             if (frmpe.getBanPagoExtra())
                             {
