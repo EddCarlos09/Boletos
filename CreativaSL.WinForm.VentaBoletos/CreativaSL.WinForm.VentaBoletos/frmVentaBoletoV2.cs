@@ -600,7 +600,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     }
                     else
                     {
-                        frmPagoExtra frmpe = new frmPagoExtra();
+                        frmPagoExtraV2 frmpe = new frmPagoExtraV2();
                         frmpe.ShowDialog();
                         if (frmpe.getBanPagoExtra())
                         {
@@ -624,7 +624,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                         Precio = Convert.ToSingle(row.Cells["Precio"].Value);
                         Anticipo = Convert.ToSingle(row.Cells["Anticipo"].Value);
                     }
-                    frmPagoExtra frmpe = new frmPagoExtra();
+                    frmPagoExtraV2 frmpe = new frmPagoExtraV2();
                     frmpe.ShowDialog();
                     if (frmpe.getBanPagoExtra())
                     {

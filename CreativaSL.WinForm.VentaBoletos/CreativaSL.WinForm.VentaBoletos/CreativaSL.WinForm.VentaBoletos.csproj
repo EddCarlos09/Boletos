@@ -708,7 +708,7 @@
     <Compile Include="frmConfiguracionV2.Designer.cs">
       <DependentUpon>frmConfiguracionV2.cs</DependentUpon>
     </Compile>
-       <Compile Include="frmDatosTarjetaV2.cs">
+    <Compile Include="frmDatosTarjetaV2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDatosTarjetaV2.Designer.cs">
@@ -1044,7 +1044,7 @@
     <Compile Include="frmPagoExtra.Designer.cs">
       <DependentUpon>frmPagoExtra.cs</DependentUpon>
     </Compile>
-      <Compile Include="frmPagoExtraV2.cs">
+    <Compile Include="frmPagoExtraV2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPagoExtraV2.Designer.cs">
@@ -1336,7 +1336,7 @@
     <EmbeddedResource Include="frmCatTipoCamionV2.resx">
       <DependentUpon>frmCatTipoCamionV2.cs</DependentUpon>
     </EmbeddedResource>
-     <EmbeddedResource Include="frmDatosTarjetaV2.resx">
+    <EmbeddedResource Include="frmDatosTarjetaV2.resx">
       <DependentUpon>frmDatosTarjetaV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatUsuariosV2.resx">
@@ -1416,6 +1416,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentaBoletoSF.resx">
       <DependentUpon>frmVentaBoletoSF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentaBoletoV2.resx">
+      <DependentUpon>frmVentaBoletoV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentaGrupal.resx">
       <DependentUpon>frmVentaGrupal.cs</DependentUpon>
@@ -1559,7 +1562,7 @@
     <EmbeddedResource Include="frmPagoExtra.resx">
       <DependentUpon>frmPagoExtra.cs</DependentUpon>
     </EmbeddedResource>
-      <EmbeddedResource Include="frmPagoExtraV2.resx">
+    <EmbeddedResource Include="frmPagoExtraV2.resx">
       <DependentUpon>frmPagoExtraV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPorcentajeMonedero.resx">

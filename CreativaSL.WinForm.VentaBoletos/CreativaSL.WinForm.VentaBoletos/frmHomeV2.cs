@@ -1073,7 +1073,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                         VentaBoletosAux.ventaGrupal = checkBoxVentaGrupal.Checked;
                         VentaBoletosAux.BoletosDetalle = NuevaVenta;
                         VentaBoletosAux.boletosGrupal = boletoGrupal;
-                        frmVentaBoleto frmvb = new frmVentaBoleto(VentaBoletosAux, ClienteActual);
+                        frmVentaBoletoV2 frmvb = new frmVentaBoletoV2(VentaBoletosAux, ClienteActual);
                         frmvb.ShowDialog();
                         if (frmvb.getBanventa())
                         {
