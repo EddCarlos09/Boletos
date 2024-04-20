@@ -41,6 +41,7 @@
             this.btn_CambioBoleto = new System.Windows.Forms.Button();
             this.btn_DescuentoCompleto = new System.Windows.Forms.Button();
             this.btn_DescuentoGenerico = new System.Windows.Forms.Button();
+            this.btn_PagoExtra = new System.Windows.Forms.Button();
             this.Txt_Total = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel21 = new MaterialSkin.Controls.MaterialLabel();
             this.Txt_CobroExtra = new MaterialSkin.Controls.MaterialTextBox2();
@@ -103,7 +104,6 @@
             this.TxtNombreCliente = new MaterialSkin.Controls.MaterialTextBox2();
             this.TxtCodigoCliente = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.btn_PagoExtra = new System.Windows.Forms.Button();
             this.materialCard1.SuspendLayout();
             this.materialCard3.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -313,13 +313,26 @@
             this.btn_DescuentoGenerico.UseVisualStyleBackColor = true;
             this.btn_DescuentoGenerico.Click += new System.EventHandler(this.btn_DescuentoGenerico_Click);
             // 
+            // btn_PagoExtra
+            // 
+            this.btn_PagoExtra.Image = ((System.Drawing.Image)(resources.GetObject("btn_PagoExtra.Image")));
+            this.btn_PagoExtra.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_PagoExtra.Location = new System.Drawing.Point(14, 16);
+            this.btn_PagoExtra.Name = "btn_PagoExtra";
+            this.btn_PagoExtra.Size = new System.Drawing.Size(133, 94);
+            this.btn_PagoExtra.TabIndex = 0;
+            this.btn_PagoExtra.Text = "Pago Extra";
+            this.btn_PagoExtra.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_PagoExtra.UseVisualStyleBackColor = true;
+            this.btn_PagoExtra.Click += new System.EventHandler(this.btn_PagoExtra_Click);
+            // 
             // Txt_Total
             // 
             this.Txt_Total.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Txt_Total.AnimateReadOnly = false;
             this.Txt_Total.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Txt_Total.Depth = 0;
-            this.Txt_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Txt_Total.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Txt_Total.LeadingIcon = null;
             this.Txt_Total.Location = new System.Drawing.Point(462, 811);
             this.Txt_Total.MaxLength = 50;
@@ -1310,19 +1323,6 @@
             this.materialLabel1.Size = new System.Drawing.Size(120, 19);
             this.materialLabel1.TabIndex = 46;
             this.materialLabel1.Text = "Venta de Boletos";
-            // 
-            // btn_PagoExtra
-            // 
-            this.btn_PagoExtra.Image = ((System.Drawing.Image)(resources.GetObject("btn_PagoExtra.Image")));
-            this.btn_PagoExtra.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_PagoExtra.Location = new System.Drawing.Point(14, 16);
-            this.btn_PagoExtra.Name = "btn_PagoExtra";
-            this.btn_PagoExtra.Size = new System.Drawing.Size(133, 94);
-            this.btn_PagoExtra.TabIndex = 0;
-            this.btn_PagoExtra.Text = "Pago Extra";
-            this.btn_PagoExtra.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_PagoExtra.UseVisualStyleBackColor = true;
-            this.btn_PagoExtra.Click += new System.EventHandler(this.btn_PagoExtra_Click);
             // 
             // frmVentaBoletoV2
             // 
