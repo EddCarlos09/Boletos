@@ -429,6 +429,6 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
         #endregion
-    
+
     }
 }
