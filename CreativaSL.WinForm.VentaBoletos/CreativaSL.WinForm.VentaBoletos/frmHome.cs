@@ -627,7 +627,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.Venta() == false)
                 {
                     this.Inicializar();
-                    frmVentasV2 frmv = new frmVentasV2();
+                    frmVentas frmv = new frmVentas();
                     frmv.ShowDialog();
                     frmv.Dispose();
                 }

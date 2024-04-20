@@ -67,7 +67,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     txtCodigoTarjeta.Visible = false;
                     txtNombreCliente.Visible = false;
                     BtnBuscar.Visible = false;
-                    this.Size = new Size(461, 210);
+                    this.Size = new Size(661, 410);
                 }
                 else
                 {

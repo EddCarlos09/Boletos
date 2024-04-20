@@ -714,12 +714,6 @@
     <Compile Include="frmDatosTarjeta.Designer.cs">
       <DependentUpon>frmDatosTarjeta.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDatosTarjetaV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDatosTarjetaV2.Designer.cs">
-      <DependentUpon>frmDatosTarjetaV2.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmDatosTransferencia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1044,12 +1038,6 @@
     <Compile Include="frmPagoExtra.Designer.cs">
       <DependentUpon>frmPagoExtra.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPagoExtraV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPagoExtraV2.Designer.cs">
-      <DependentUpon>frmPagoExtraV2.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmPorcentajeMonedero.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1345,9 +1333,6 @@
     <EmbeddedResource Include="frmDatosTarjeta.resx">
       <DependentUpon>frmDatosTarjeta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDatosTarjetaV2.resx">
-      <DependentUpon>frmDatosTarjetaV2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmDatosTransferencia.resx">
       <DependentUpon>frmDatosTransferencia.cs</DependentUpon>
     </EmbeddedResource>
@@ -1377,6 +1362,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHomeV2.resx">
       <DependentUpon>frmHomeV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoginV2.resx">
       <DependentUpon>frmLoginV2.cs</DependentUpon>
@@ -1392,9 +1378,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMaletasV2.resx">
       <DependentUpon>frmMaletasV2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPagoExtraV2.resx">
-      <DependentUpon>frmPagoExtraV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPorentajeMonederoV2.resx">
       <DependentUpon>frmPorentajeMonederoV2.cs</DependentUpon>
@@ -1418,9 +1401,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentaBoletoSF.resx">
       <DependentUpon>frmVentaBoletoSF.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmVentaBoletoV2.resx">
-      <DependentUpon>frmVentaBoletoV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentaGrupal.resx">
       <DependentUpon>frmVentaGrupal.cs</DependentUpon>

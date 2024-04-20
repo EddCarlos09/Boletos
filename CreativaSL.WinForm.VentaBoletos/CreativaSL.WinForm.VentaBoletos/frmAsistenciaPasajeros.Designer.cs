@@ -68,9 +68,8 @@
             this.panelTitle_Creativa1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelTitle_Creativa1.LinearGradientModeBgk = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.panelTitle_Creativa1.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle_Creativa1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelTitle_Creativa1.Name = "panelTitle_Creativa1";
-            this.panelTitle_Creativa1.Size = new System.Drawing.Size(1179, 92);
+            this.panelTitle_Creativa1.Size = new System.Drawing.Size(884, 75);
             this.panelTitle_Creativa1.SizeLine = 3;
             this.panelTitle_Creativa1.SizeTitle = 20;
             this.panelTitle_Creativa1.TabIndex = 1;
@@ -80,11 +79,10 @@
             // txt_folio
             // 
             this.txt_folio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_folio.Location = new System.Drawing.Point(756, 44);
-            this.txt_folio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_folio.Location = new System.Drawing.Point(567, 36);
             this.txt_folio.MaxLength = 500;
             this.txt_folio.Name = "txt_folio";
-            this.txt_folio.Size = new System.Drawing.Size(325, 32);
+            this.txt_folio.Size = new System.Drawing.Size(245, 27);
             this.txt_folio.TabIndex = 7;
             this.txt_folio.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_folio_KeyDown);
             this.txt_folio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_folio_KeyPress);
@@ -94,10 +92,9 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(660, 44);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(495, 36);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(59, 26);
+            this.label15.Size = new System.Drawing.Size(49, 22);
             this.label15.TabIndex = 5;
             this.label15.Text = "Folio";
             // 
@@ -107,10 +104,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(780, 15);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(585, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(250, 22);
+            this.label2.Size = new System.Drawing.Size(195, 18);
             this.label2.TabIndex = 6;
             this.label2.Text = "Ingrese el Folio del Boleto";
             // 
@@ -118,11 +114,10 @@
             // 
             this.CmbViaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbViaje.FormattingEnabled = true;
-            this.CmbViaje.ItemHeight = 26;
-            this.CmbViaje.Location = new System.Drawing.Point(155, 42);
-            this.CmbViaje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CmbViaje.ItemHeight = 20;
+            this.CmbViaje.Location = new System.Drawing.Point(116, 34);
             this.CmbViaje.Name = "CmbViaje";
-            this.CmbViaje.Size = new System.Drawing.Size(340, 34);
+            this.CmbViaje.Size = new System.Drawing.Size(256, 28);
             this.CmbViaje.TabIndex = 1;
             this.CmbViaje.SelectedValueChanged += new System.EventHandler(this.CmbViaje_SelectedValueChanged);
             // 
@@ -130,10 +125,9 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(32, 44);
-            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label44.Location = new System.Drawing.Point(24, 36);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(61, 26);
+            this.label44.Size = new System.Drawing.Size(50, 22);
             this.label44.TabIndex = 0;
             this.label44.Text = "Viaje";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -148,10 +142,9 @@
             this.panelTitle_Creativa2.DrawGradient = false;
             this.panelTitle_Creativa2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelTitle_Creativa2.LinearGradientModeBgk = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.panelTitle_Creativa2.Location = new System.Drawing.Point(0, 92);
-            this.panelTitle_Creativa2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTitle_Creativa2.Location = new System.Drawing.Point(0, 75);
             this.panelTitle_Creativa2.Name = "panelTitle_Creativa2";
-            this.panelTitle_Creativa2.Size = new System.Drawing.Size(1179, 661);
+            this.panelTitle_Creativa2.Size = new System.Drawing.Size(884, 537);
             this.panelTitle_Creativa2.SizeLine = 3;
             this.panelTitle_Creativa2.SizeTitle = 20;
             this.panelTitle_Creativa2.TabIndex = 2;
@@ -164,10 +157,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(447, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(335, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 22);
+            this.label1.Size = new System.Drawing.Size(209, 18);
             this.label1.TabIndex = 15;
             this.label1.Text = "Listado Asistencia Pasajeros";
             // 
@@ -196,26 +188,23 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvdatosboleto.Location = new System.Drawing.Point(12, 48);
-            this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdatosboleto.Location = new System.Drawing.Point(9, 39);
             this.dgvdatosboleto.MultiSelect = false;
             this.dgvdatosboleto.Name = "dgvdatosboleto";
             this.dgvdatosboleto.ReadOnly = true;
-            this.dgvdatosboleto.RowHeadersWidth = 51;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dgvdatosboleto.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvdatosboleto.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosboleto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdatosboleto.Size = new System.Drawing.Size(1153, 603);
+            this.dgvdatosboleto.Size = new System.Drawing.Size(865, 490);
             this.dgvdatosboleto.TabIndex = 14;
             // 
             // id_boleto
             // 
             this.id_boleto.DataPropertyName = "id_boleto";
             this.id_boleto.HeaderText = "id_boleto";
-            this.id_boleto.MinimumWidth = 6;
             this.id_boleto.Name = "id_boleto";
             this.id_boleto.ReadOnly = true;
             this.id_boleto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -230,50 +219,45 @@
             dataGridViewCellStyle1.NullValue = null;
             this.asiento.DefaultCellStyle = dataGridViewCellStyle1;
             this.asiento.HeaderText = "Asiento";
-            this.asiento.MinimumWidth = 6;
             this.asiento.Name = "asiento";
             this.asiento.ReadOnly = true;
             this.asiento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.asiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.asiento.Width = 84;
+            this.asiento.Width = 69;
             // 
             // CodigoBarra
             // 
             this.CodigoBarra.DataPropertyName = "folio";
             this.CodigoBarra.HeaderText = "Folio";
-            this.CodigoBarra.MinimumWidth = 6;
             this.CodigoBarra.Name = "CodigoBarra";
             this.CodigoBarra.ReadOnly = true;
             this.CodigoBarra.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.CodigoBarra.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.CodigoBarra.Width = 60;
+            this.CodigoBarra.Width = 49;
             // 
             // NombrePersona
             // 
             this.NombrePersona.DataPropertyName = "cliente_nombre";
             this.NombrePersona.HeaderText = "Nombre";
-            this.NombrePersona.MinimumWidth = 6;
             this.NombrePersona.Name = "NombrePersona";
             this.NombrePersona.ReadOnly = true;
             this.NombrePersona.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.NombrePersona.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NombrePersona.Width = 87;
+            this.NombrePersona.Width = 71;
             // 
             // numeroTelefono
             // 
             this.numeroTelefono.DataPropertyName = "numeroTelefono";
             this.numeroTelefono.HeaderText = "Teléfono";
-            this.numeroTelefono.MinimumWidth = 6;
             this.numeroTelefono.Name = "numeroTelefono";
             this.numeroTelefono.ReadOnly = true;
             this.numeroTelefono.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.numeroTelefono.Width = 95;
+            this.numeroTelefono.Width = 77;
             // 
             // asistencia
             // 
             this.asistencia.DataPropertyName = "asistencia";
             this.asistencia.HeaderText = "asistencia";
-            this.asistencia.MinimumWidth = 6;
             this.asistencia.Name = "asistencia";
             this.asistencia.ReadOnly = true;
             this.asistencia.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -283,20 +267,18 @@
             // Status
             // 
             this.Status.HeaderText = "Status";
-            this.Status.MinimumWidth = 6;
             this.Status.Name = "Status";
             this.Status.ReadOnly = true;
-            this.Status.Width = 74;
+            this.Status.Width = 62;
             // 
             // frmAsistenciaPasajeros
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1179, 753);
+            this.ClientSize = new System.Drawing.Size(884, 612);
             this.Controls.Add(this.panelTitle_Creativa2);
             this.Controls.Add(this.panelTitle_Creativa1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAsistenciaPasajeros";
@@ -319,6 +301,7 @@
         private System.Windows.Forms.TextBox txt_folio;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox CmbViaje;
         private System.Windows.Forms.Label label44;
         private LibControls.WinForms.PanelTitle_Creativa panelTitle_Creativa2;
         private System.Windows.Forms.DataGridView dgvdatosboleto;
@@ -330,6 +313,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroTelefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn asistencia;
         private System.Windows.Forms.DataGridViewImageColumn Status;
-        private System.Windows.Forms.ComboBox CmbViaje;
     }
 }

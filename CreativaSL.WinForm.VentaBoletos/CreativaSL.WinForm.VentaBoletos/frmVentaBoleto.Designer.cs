@@ -163,7 +163,7 @@
             this.label21.ForeColor = System.Drawing.Color.Navy;
             this.label21.Location = new System.Drawing.Point(466, 270);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(86, 26);
+            this.label21.Size = new System.Drawing.Size(73, 21);
             this.label21.TabIndex = 0;
             this.label21.Text = "Totales";
             // 
@@ -174,7 +174,7 @@
             this.label19.ForeColor = System.Drawing.Color.Navy;
             this.label19.Location = new System.Drawing.Point(397, 4);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(180, 26);
+            this.label19.Size = new System.Drawing.Size(154, 21);
             this.label19.TabIndex = 0;
             this.label19.Text = "Datos del Boleto";
             // 
@@ -184,7 +184,7 @@
             this.Txt_CobroExtra.Location = new System.Drawing.Point(424, 372);
             this.Txt_CobroExtra.Name = "Txt_CobroExtra";
             this.Txt_CobroExtra.ReadOnly = true;
-            this.Txt_CobroExtra.Size = new System.Drawing.Size(210, 30);
+            this.Txt_CobroExtra.Size = new System.Drawing.Size(210, 26);
             this.Txt_CobroExtra.TabIndex = 18;
             this.Txt_CobroExtra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -195,7 +195,7 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(324, 376);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(115, 20);
+            this.label13.Size = new System.Drawing.Size(98, 17);
             this.label13.TabIndex = 0;
             this.label13.Text = "Cobro Extra:";
             // 
@@ -205,7 +205,7 @@
             this.Txt_Anticipo.Location = new System.Drawing.Point(424, 340);
             this.Txt_Anticipo.Name = "Txt_Anticipo";
             this.Txt_Anticipo.ReadOnly = true;
-            this.Txt_Anticipo.Size = new System.Drawing.Size(210, 30);
+            this.Txt_Anticipo.Size = new System.Drawing.Size(210, 26);
             this.Txt_Anticipo.TabIndex = 17;
             this.Txt_Anticipo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -216,7 +216,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(351, 344);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 20);
+            this.label8.Size = new System.Drawing.Size(71, 17);
             this.label8.TabIndex = 0;
             this.label8.Text = "Anticipo:";
             // 
@@ -265,7 +265,6 @@
             this.GridViewVentaBoletos.MultiSelect = false;
             this.GridViewVentaBoletos.Name = "GridViewVentaBoletos";
             this.GridViewVentaBoletos.ReadOnly = true;
-            this.GridViewVentaBoletos.RowHeadersWidth = 51;
             this.GridViewVentaBoletos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.GridViewVentaBoletos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.GridViewVentaBoletos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -277,259 +276,230 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn1.Width = 6;
+            this.dataGridViewTextBoxColumn1.Width = 5;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn2.Width = 6;
+            this.dataGridViewTextBoxColumn2.Width = 5;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.HeaderText = "";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn3.Width = 6;
+            this.dataGridViewTextBoxColumn3.Width = 5;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.HeaderText = "";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn4.Width = 6;
+            this.dataGridViewTextBoxColumn4.Width = 5;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.HeaderText = "";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn5.Width = 6;
+            this.dataGridViewTextBoxColumn5.Width = 5;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.HeaderText = "";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn6.Width = 6;
+            this.dataGridViewTextBoxColumn6.Width = 5;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.HeaderText = "";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
             this.dataGridViewTextBoxColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn7.Width = 6;
+            this.dataGridViewTextBoxColumn7.Width = 5;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.HeaderText = "";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             this.dataGridViewTextBoxColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn8.Width = 6;
+            this.dataGridViewTextBoxColumn8.Width = 5;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.HeaderText = "";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.ReadOnly = true;
             this.dataGridViewTextBoxColumn9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn9.Width = 6;
+            this.dataGridViewTextBoxColumn9.Width = 5;
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.HeaderText = "";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.ReadOnly = true;
             this.dataGridViewTextBoxColumn10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn10.Width = 6;
+            this.dataGridViewTextBoxColumn10.Width = 5;
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.HeaderText = "";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
             this.dataGridViewTextBoxColumn11.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn11.Width = 6;
+            this.dataGridViewTextBoxColumn11.Width = 5;
             // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.HeaderText = "";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             this.dataGridViewTextBoxColumn12.ReadOnly = true;
             this.dataGridViewTextBoxColumn12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn12.Width = 6;
+            this.dataGridViewTextBoxColumn12.Width = 5;
             // 
             // dataGridViewTextBoxColumn13
             // 
             this.dataGridViewTextBoxColumn13.HeaderText = "";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.ReadOnly = true;
             this.dataGridViewTextBoxColumn13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn13.Width = 6;
+            this.dataGridViewTextBoxColumn13.Width = 5;
             // 
             // dataGridViewTextBoxColumn14
             // 
             this.dataGridViewTextBoxColumn14.HeaderText = "";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
             this.dataGridViewTextBoxColumn14.ReadOnly = true;
             this.dataGridViewTextBoxColumn14.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn14.Width = 6;
+            this.dataGridViewTextBoxColumn14.Width = 5;
             // 
             // dataGridViewTextBoxColumn15
             // 
             this.dataGridViewTextBoxColumn15.HeaderText = "";
-            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             this.dataGridViewTextBoxColumn15.ReadOnly = true;
             this.dataGridViewTextBoxColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn15.Width = 6;
+            this.dataGridViewTextBoxColumn15.Width = 5;
             // 
             // dataGridViewTextBoxColumn16
             // 
             this.dataGridViewTextBoxColumn16.HeaderText = "";
-            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
             this.dataGridViewTextBoxColumn16.ReadOnly = true;
             this.dataGridViewTextBoxColumn16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn16.Width = 6;
+            this.dataGridViewTextBoxColumn16.Width = 5;
             // 
             // dataGridViewTextBoxColumn17
             // 
             this.dataGridViewTextBoxColumn17.HeaderText = "";
-            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             this.dataGridViewTextBoxColumn17.ReadOnly = true;
             this.dataGridViewTextBoxColumn17.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn17.Width = 6;
+            this.dataGridViewTextBoxColumn17.Width = 5;
             // 
             // dataGridViewTextBoxColumn18
             // 
             this.dataGridViewTextBoxColumn18.HeaderText = "";
-            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             this.dataGridViewTextBoxColumn18.ReadOnly = true;
             this.dataGridViewTextBoxColumn18.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn18.Width = 6;
+            this.dataGridViewTextBoxColumn18.Width = 5;
             // 
             // dataGridViewTextBoxColumn19
             // 
             this.dataGridViewTextBoxColumn19.HeaderText = "";
-            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
             this.dataGridViewTextBoxColumn19.ReadOnly = true;
             this.dataGridViewTextBoxColumn19.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn19.Width = 6;
+            this.dataGridViewTextBoxColumn19.Width = 5;
             // 
             // dataGridViewTextBoxColumn20
             // 
             this.dataGridViewTextBoxColumn20.HeaderText = "";
-            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
             this.dataGridViewTextBoxColumn20.ReadOnly = true;
             this.dataGridViewTextBoxColumn20.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn20.Width = 6;
+            this.dataGridViewTextBoxColumn20.Width = 5;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "";
-            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column1.Width = 6;
+            this.Column1.Width = 5;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "";
-            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column2.Width = 6;
+            this.Column2.Width = 5;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "";
-            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column3.Width = 6;
+            this.Column3.Width = 5;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "";
-            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column4.Width = 6;
+            this.Column4.Width = 5;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "";
-            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column5.Width = 6;
+            this.Column5.Width = 5;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "";
-            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             this.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column6.Width = 6;
+            this.Column6.Width = 5;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "";
-            this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column7.Width = 6;
+            this.Column7.Width = 5;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "";
-            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             this.Column8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column8.Width = 6;
+            this.Column8.Width = 5;
             // 
             // Column9
             // 
             this.Column9.HeaderText = "";
-            this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
             this.Column9.Visible = false;
@@ -538,18 +508,16 @@
             // Column10
             // 
             this.Column10.HeaderText = "";
-            this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
-            this.Column10.Width = 23;
+            this.Column10.Width = 19;
             // 
             // Column11
             // 
             this.Column11.HeaderText = "";
-            this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
-            this.Column11.Width = 23;
+            this.Column11.Width = 19;
             // 
             // Txt_Descuento
             // 
@@ -557,7 +525,7 @@
             this.Txt_Descuento.Location = new System.Drawing.Point(424, 308);
             this.Txt_Descuento.Name = "Txt_Descuento";
             this.Txt_Descuento.ReadOnly = true;
-            this.Txt_Descuento.Size = new System.Drawing.Size(210, 30);
+            this.Txt_Descuento.Size = new System.Drawing.Size(210, 26);
             this.Txt_Descuento.TabIndex = 16;
             this.Txt_Descuento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -568,7 +536,7 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(331, 312);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(105, 20);
+            this.label12.Size = new System.Drawing.Size(90, 17);
             this.label12.TabIndex = 0;
             this.label12.Text = "Descuento:";
             // 
@@ -579,7 +547,7 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(666, 308);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 20);
+            this.label11.Size = new System.Drawing.Size(50, 17);
             this.label11.TabIndex = 0;
             this.label11.Text = "Total:";
             // 
@@ -590,7 +558,7 @@
             this.Txt_Total.Location = new System.Drawing.Point(668, 330);
             this.Txt_Total.Name = "Txt_Total";
             this.Txt_Total.ReadOnly = true;
-            this.Txt_Total.Size = new System.Drawing.Size(317, 91);
+            this.Txt_Total.Size = new System.Drawing.Size(317, 74);
             this.Txt_Total.TabIndex = 19;
             this.Txt_Total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -601,7 +569,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(11, 346);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 20);
+            this.label9.Size = new System.Drawing.Size(78, 17);
             this.label9.TabIndex = 0;
             this.label9.Text = "SubTotal:";
             // 
@@ -612,7 +580,7 @@
             this.Txt_SubTotal.Location = new System.Drawing.Point(92, 342);
             this.Txt_SubTotal.Name = "Txt_SubTotal";
             this.Txt_SubTotal.ReadOnly = true;
-            this.Txt_SubTotal.Size = new System.Drawing.Size(210, 30);
+            this.Txt_SubTotal.Size = new System.Drawing.Size(210, 26);
             this.Txt_SubTotal.TabIndex = 15;
             this.Txt_SubTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -622,7 +590,7 @@
             this.Txt_Cantidad.Location = new System.Drawing.Point(92, 313);
             this.Txt_Cantidad.Name = "Txt_Cantidad";
             this.Txt_Cantidad.ReadOnly = true;
-            this.Txt_Cantidad.Size = new System.Drawing.Size(210, 30);
+            this.Txt_Cantidad.Size = new System.Drawing.Size(210, 26);
             this.Txt_Cantidad.TabIndex = 14;
             this.Txt_Cantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -633,7 +601,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(12, 317);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 20);
+            this.label7.Size = new System.Drawing.Size(77, 17);
             this.label7.TabIndex = 0;
             this.label7.Text = "Cantidad:";
             // 
@@ -668,7 +636,7 @@
             this.label23.ForeColor = System.Drawing.Color.Navy;
             this.label23.Location = new System.Drawing.Point(769, 12);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(182, 26);
+            this.label23.Size = new System.Drawing.Size(156, 21);
             this.label23.TabIndex = 0;
             this.label23.Text = "Acciones Ventas";
             // 
@@ -679,7 +647,7 @@
             this.label22.ForeColor = System.Drawing.Color.Navy;
             this.label22.Location = new System.Drawing.Point(258, 15);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(190, 26);
+            this.label22.Size = new System.Drawing.Size(163, 21);
             this.label22.TabIndex = 0;
             this.label22.Text = "Acciones Boletos";
             // 
@@ -962,7 +930,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(11, 30);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 20);
+            this.label4.Size = new System.Drawing.Size(108, 17);
             this.label4.TabIndex = 0;
             this.label4.Text = "Núm. Camión:";
             // 
@@ -972,7 +940,7 @@
             this.Txt_NumCamion.Location = new System.Drawing.Point(124, 27);
             this.Txt_NumCamion.Name = "Txt_NumCamion";
             this.Txt_NumCamion.ReadOnly = true;
-            this.Txt_NumCamion.Size = new System.Drawing.Size(200, 30);
+            this.Txt_NumCamion.Size = new System.Drawing.Size(200, 26);
             this.Txt_NumCamion.TabIndex = 7;
             this.Txt_NumCamion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -983,7 +951,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(342, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 20);
+            this.label1.Size = new System.Drawing.Size(116, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Fec.Hr. Salida:";
             // 
@@ -993,7 +961,7 @@
             this.Txt_FechaHoraSalida.Location = new System.Drawing.Point(484, 30);
             this.Txt_FechaHoraSalida.Name = "Txt_FechaHoraSalida";
             this.Txt_FechaHoraSalida.ReadOnly = true;
-            this.Txt_FechaHoraSalida.Size = new System.Drawing.Size(200, 30);
+            this.Txt_FechaHoraSalida.Size = new System.Drawing.Size(200, 26);
             this.Txt_FechaHoraSalida.TabIndex = 9;
             this.Txt_FechaHoraSalida.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1004,7 +972,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(342, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 20);
+            this.label2.Size = new System.Drawing.Size(134, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Fec. Hr. Llegada:";
             // 
@@ -1014,7 +982,7 @@
             this.Txt_FechaHoraLlegada.Location = new System.Drawing.Point(484, 65);
             this.Txt_FechaHoraLlegada.Name = "Txt_FechaHoraLlegada";
             this.Txt_FechaHoraLlegada.ReadOnly = true;
-            this.Txt_FechaHoraLlegada.Size = new System.Drawing.Size(200, 30);
+            this.Txt_FechaHoraLlegada.Size = new System.Drawing.Size(200, 26);
             this.Txt_FechaHoraLlegada.TabIndex = 10;
             this.Txt_FechaHoraLlegada.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1025,7 +993,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(6, 62);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 20);
+            this.label3.Size = new System.Drawing.Size(113, 17);
             this.label3.TabIndex = 0;
             this.label3.Text = "Tipo de Línea:";
             // 
@@ -1035,7 +1003,7 @@
             this.Txt_TipoLinea.Location = new System.Drawing.Point(124, 58);
             this.Txt_TipoLinea.Name = "Txt_TipoLinea";
             this.Txt_TipoLinea.ReadOnly = true;
-            this.Txt_TipoLinea.Size = new System.Drawing.Size(200, 30);
+            this.Txt_TipoLinea.Size = new System.Drawing.Size(200, 26);
             this.Txt_TipoLinea.TabIndex = 8;
             this.Txt_TipoLinea.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1046,7 +1014,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(713, 33);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 20);
+            this.label5.Size = new System.Drawing.Size(62, 17);
             this.label5.TabIndex = 0;
             this.label5.Text = "Origen:";
             // 
@@ -1056,7 +1024,7 @@
             this.Txt_Origen.Location = new System.Drawing.Point(795, 33);
             this.Txt_Origen.Name = "Txt_Origen";
             this.Txt_Origen.ReadOnly = true;
-            this.Txt_Origen.Size = new System.Drawing.Size(200, 30);
+            this.Txt_Origen.Size = new System.Drawing.Size(200, 26);
             this.Txt_Origen.TabIndex = 11;
             this.Txt_Origen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1067,7 +1035,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(713, 67);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 20);
+            this.label6.Size = new System.Drawing.Size(68, 17);
             this.label6.TabIndex = 0;
             this.label6.Text = "Destino:";
             // 
@@ -1077,7 +1045,7 @@
             this.Txt_Destino.Location = new System.Drawing.Point(795, 70);
             this.Txt_Destino.Name = "Txt_Destino";
             this.Txt_Destino.ReadOnly = true;
-            this.Txt_Destino.Size = new System.Drawing.Size(200, 30);
+            this.Txt_Destino.Size = new System.Drawing.Size(200, 26);
             this.Txt_Destino.TabIndex = 12;
             this.Txt_Destino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1117,7 +1085,7 @@
             this.label18.ForeColor = System.Drawing.Color.Navy;
             this.label18.Location = new System.Drawing.Point(437, 5);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(164, 26);
+            this.label18.Size = new System.Drawing.Size(141, 21);
             this.label18.TabIndex = 0;
             this.label18.Text = "Datos del Viaje";
             // 
@@ -1128,7 +1096,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(840, 35);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 20);
+            this.label10.Size = new System.Drawing.Size(113, 17);
             this.label10.TabIndex = 0;
             this.label10.Text = "Tiempo Venta:";
             // 
@@ -1192,7 +1160,7 @@
             this.label17.ForeColor = System.Drawing.Color.Navy;
             this.label17.Location = new System.Drawing.Point(419, 3);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(184, 26);
+            this.label17.Size = new System.Drawing.Size(159, 21);
             this.label17.TabIndex = 0;
             this.label17.Text = "Datos del Cliente";
             // 
@@ -1202,7 +1170,7 @@
             this.Txt_NewMonedero.Location = new System.Drawing.Point(531, 71);
             this.Txt_NewMonedero.Name = "Txt_NewMonedero";
             this.Txt_NewMonedero.ReadOnly = true;
-            this.Txt_NewMonedero.Size = new System.Drawing.Size(104, 30);
+            this.Txt_NewMonedero.Size = new System.Drawing.Size(104, 26);
             this.Txt_NewMonedero.TabIndex = 4;
             this.Txt_NewMonedero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1213,7 +1181,7 @@
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(380, 75);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(171, 20);
+            this.label15.Size = new System.Drawing.Size(150, 17);
             this.label15.TabIndex = 0;
             this.label15.Text = "$ Nuevo Monedero:";
             // 
@@ -1222,7 +1190,7 @@
             this.Txt_Monedero.BackColor = System.Drawing.Color.PaleGreen;
             this.Txt_Monedero.Location = new System.Drawing.Point(531, 35);
             this.Txt_Monedero.Name = "Txt_Monedero";
-            this.Txt_Monedero.Size = new System.Drawing.Size(104, 30);
+            this.Txt_Monedero.Size = new System.Drawing.Size(104, 26);
             this.Txt_Monedero.TabIndex = 3;
             this.Txt_Monedero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1233,7 +1201,7 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(431, 39);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(113, 20);
+            this.label16.Size = new System.Drawing.Size(99, 17);
             this.label16.TabIndex = 0;
             this.label16.Text = "$ Monedero:";
             // 
@@ -1277,7 +1245,7 @@
             this.TxtNombreCliente.Location = new System.Drawing.Point(145, 71);
             this.TxtNombreCliente.Name = "TxtNombreCliente";
             this.TxtNombreCliente.ReadOnly = true;
-            this.TxtNombreCliente.Size = new System.Drawing.Size(232, 30);
+            this.TxtNombreCliente.Size = new System.Drawing.Size(232, 26);
             this.TxtNombreCliente.TabIndex = 2;
             this.TxtNombreCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1288,7 +1256,7 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(76, 75);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(74, 20);
+            this.label14.Size = new System.Drawing.Size(63, 17);
             this.label14.TabIndex = 0;
             this.label14.Text = "Cliente:";
             // 
@@ -1297,7 +1265,7 @@
             this.TxtCodigoCliente.BackColor = System.Drawing.Color.PaleGreen;
             this.TxtCodigoCliente.Location = new System.Drawing.Point(145, 35);
             this.TxtCodigoCliente.Name = "TxtCodigoCliente";
-            this.TxtCodigoCliente.Size = new System.Drawing.Size(232, 30);
+            this.TxtCodigoCliente.Size = new System.Drawing.Size(232, 26);
             this.TxtCodigoCliente.TabIndex = 1;
             this.TxtCodigoCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1308,7 +1276,7 @@
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(22, 38);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(138, 20);
+            this.label20.Size = new System.Drawing.Size(118, 17);
             this.label20.TabIndex = 0;
             this.label20.Text = "Código Cliente:";
             // 
@@ -1318,7 +1286,7 @@
             // 
             // frmVentaBoleto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(1008, 729);
