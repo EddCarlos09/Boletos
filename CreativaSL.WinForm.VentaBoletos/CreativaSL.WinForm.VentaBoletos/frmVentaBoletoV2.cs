@@ -670,7 +670,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         if (MessageBox.Show("Este boleto ya tiene aplicado un anticipo, ¿ desea eliminar el anticipo ?", "¿Aplicar nuevo Anticipo?", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
-                            frmAnticipoGenerico frmd = new frmAnticipoGenerico();
+                            frmAnticipoGenericoV2 frmd = new frmAnticipoGenericoV2();
                             frmd.ShowDialog();
                             if (frmd.getBanAnticipo())
                             {
@@ -701,7 +701,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     }
                     else
                     {
-                        frmAnticipoGenerico frmd = new frmAnticipoGenerico();
+                        frmAnticipoGenericoV2 frmd = new frmAnticipoGenericoV2();
                         frmd.ShowDialog();
                         if (frmd.getBanAnticipo())
                         {
@@ -746,7 +746,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                         Descuentos = Convert.ToSingle(row.Cells["Descuentos"].Value);
                         CobroExtra = Convert.ToSingle(row.Cells["PagoExtra"].Value);
                     }
-                    frmAnticipoGenerico frmd = new frmAnticipoGenerico();
+                    frmAnticipoGenericoV2 frmd = new frmAnticipoGenericoV2();
                     frmd.ShowDialog();
                     if (frmd.getBanAnticipo())
                     {
@@ -786,7 +786,7 @@ namespace CreativaSL.WinForm.VentaBoletos
         }
         private void btn_DescuentoGenerico_Click(object sender, EventArgs e)
         {
-                try
+            try
             {
                 float AuxDescuento = 0.0F;
                 float Precio = 0F;
@@ -834,7 +834,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                         }
                         else
                         {
-                            frmDescuentoGenerico frmd = new frmDescuentoGenerico();
+                            frmDescuentoGenericoV2 frmd = new frmDescuentoGenericoV2();
                             frmd.ShowDialog();
                             if (frmd.getBanDescuento())
                             {
@@ -874,7 +874,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     {
                         float descuentoGrupal = 0.0F;
 
-                        frmDescuentoGenerico frmd = new frmDescuentoGenerico();
+                        frmDescuentoGenericoV2 frmd = new frmDescuentoGenericoV2();
                         frmd.ShowDialog();
                         if (frmd.getBanDescuento())
                         {
@@ -1061,7 +1061,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     float Anticipo = 0F;
                     string IDTipoCamion = "";
                     string IDBoletoActual = "";
-                    frmBusquedaCambio frmb = new frmBusquedaCambio();
+                    frmBusquedaCambioV2 frmb = new frmBusquedaCambioV2();
                     frmb.ShowDialog();
                     if (frmb.getBanCambio())
                     {
@@ -1421,7 +1421,7 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                frmBuscarCliente catBuscarCliente = new frmBuscarCliente();
+                frmBuscarClienteV2 catBuscarCliente = new frmBuscarClienteV2();
                 catBuscarCliente.ShowDialog();
                 if (catBuscarCliente.getBanDatos())
                 {

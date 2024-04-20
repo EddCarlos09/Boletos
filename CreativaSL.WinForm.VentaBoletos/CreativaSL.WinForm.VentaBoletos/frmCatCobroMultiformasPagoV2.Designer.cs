@@ -302,6 +302,7 @@
             this.chkTarjeta.TabIndex = 17;
             this.chkTarjeta.Text = "Pago Tarjeta:";
             this.chkTarjeta.UseVisualStyleBackColor = true;
+            this.chkTarjeta.CheckedChanged += new System.EventHandler(this.chkTarjeta_CheckedChanged);
             // 
             // chkTransferencia
             // 
@@ -318,6 +319,7 @@
             this.chkTransferencia.TabIndex = 16;
             this.chkTransferencia.Text = "Pago:";
             this.chkTransferencia.UseVisualStyleBackColor = true;
+            this.chkTransferencia.CheckedChanged += new System.EventHandler(this.chkTransferencia_CheckedChanged);
             // 
             // Txt_Cambio
             // 
