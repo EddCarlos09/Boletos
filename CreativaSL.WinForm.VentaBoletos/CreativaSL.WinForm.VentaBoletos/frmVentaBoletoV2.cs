@@ -746,7 +746,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                         Descuentos = Convert.ToSingle(row.Cells["Descuentos"].Value);
                         CobroExtra = Convert.ToSingle(row.Cells["PagoExtra"].Value);
                     }
-                    frmAnticipoGenerico frmd = new frmAnticipoGenerico();
+                    frmAnticipoGenericoV2 frmd = new frmAnticipoGenericoV2();
                     frmd.ShowDialog();
                     if (frmd.getBanAnticipo())
                     {
@@ -1421,7 +1421,7 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                frmBuscarCliente catBuscarCliente = new frmBuscarCliente();
+                frmBuscarClienteV2 catBuscarCliente = new frmBuscarClienteV2();
                 catBuscarCliente.ShowDialog();
                 if (catBuscarCliente.getBanDatos())
                 {

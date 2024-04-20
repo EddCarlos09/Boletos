@@ -6,15 +6,15 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using static CreativaSL.WinForm.VentaBoletos.MaterialUI;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CreativaSL.Dll.VentaBoletosGlobal;
 using CreativaSL.Dll.VentaBoletosNegocio;
-using static CreativaSL.WinForm.VentaBoletos.MaterialUI;
 
 namespace CreativaSL.WinForm.VentaBoletos
 {
-    public partial class frmCaja_AperturaCajaV2 : MaterialForm
+    public partial class frmCaja_CierreCajaV2 : MaterialForm
     {
         private Caja caja;
         private bool _Exception = true;
@@ -24,12 +24,13 @@ namespace CreativaSL.WinForm.VentaBoletos
             set { _Exception = value; }
         }
         #region Constructor
-        public frmCaja_AperturaCajaV2()
+        public frmCaja_CierreCajaV2()
         {
             try
             {
                 InitializeComponent();
                 this.inicializar();
+
                 loadMaterial(this);
                 this.label2.ForeColor = Color.Navy;
                 this.label2.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
@@ -70,6 +71,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 this.label20.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
                 this.label22.ForeColor = Color.DimGray;
                 this.label22.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
+
             }
             catch (Exception ex)
             {
@@ -84,14 +86,13 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                this.guardarAperturaCaja();
+                this.guardarCierreCaja();
                 this.Exception = false;
                 this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
             }
         }
 
@@ -169,7 +170,14 @@ namespace CreativaSL.WinForm.VentaBoletos
 
         private void TxtM100P_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            try
+            {
+                this.permitirSoloNumeros(e);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void TxtB20P_KeyPress(object sender, KeyPressEventArgs e)
@@ -320,7 +328,14 @@ namespace CreativaSL.WinForm.VentaBoletos
 
         private void TxtM100P_KeyUp(object sender, KeyEventArgs e)
         {
-
+            try
+            {
+                this.calcularTotalOnPressKey(e);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void TxtM20P_KeyUp(object sender, KeyEventArgs e)
@@ -395,6 +410,19 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
 
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
         #endregion
 
         #region Metodos
@@ -415,8 +443,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 throw ex;
             }
         }
-
-        private void guardarAperturaCaja()
+        private void guardarCierreCaja()
         {
             try
             {
@@ -424,9 +451,9 @@ namespace CreativaSL.WinForm.VentaBoletos
                 int verificador = 0;
                 this.obtenerDatos(caja);
                 Caja_Negocio caja_negocio = new Caja_Negocio();
-                caja_negocio.GuardarAperturaCaja(caja, Comun.Conexion, ref verificador);
+                caja_negocio.GuardarCierreCaja(caja, Comun.Conexion, ref verificador);
                 if (verificador != 0)
-                    this.mensaje("Error a la hora de insertar datos en caja");
+                    this.mensaje("Error a la hora de cerrar datos en caja");
             }
             catch (Exception ex)
             {
@@ -655,8 +682,9 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                TextBox txt = (TextBox)sender;
-                if (txt.Text == "")
+                MaterialSkin.Controls.MaterialTextBox txt = (MaterialSkin.Controls.MaterialTextBox)sender;
+                // TextBox txt = (TextBox)sender;
+                if (string.IsNullOrEmpty(txt.Text))
                 {
                     txt.Text = "0";
                 }

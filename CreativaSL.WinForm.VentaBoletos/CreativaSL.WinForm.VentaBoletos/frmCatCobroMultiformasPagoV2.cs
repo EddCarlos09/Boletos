@@ -496,7 +496,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.chkTarjeta.Checked)
                 {
                     this.DatosTarjeta.monto = TotalPagar;
-                    frmDatosTarjeta dt = new frmDatosTarjeta(DatosTarjeta, 0);
+                    frmDatosTarjetaV2 dt = new frmDatosTarjetaV2(DatosTarjeta, 0);
                     dt.ShowDialog();
                     dt.Dispose();
                     if (dt.DialogResult == DialogResult.OK)
