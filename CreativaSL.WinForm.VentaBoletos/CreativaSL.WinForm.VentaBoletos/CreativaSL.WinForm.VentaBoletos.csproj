@@ -708,6 +708,12 @@
     <Compile Include="frmConfiguracionV2.Designer.cs">
       <DependentUpon>frmConfiguracionV2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDatosCajaV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosCajaV2.Designer.cs">
+      <DependentUpon>frmDatosCajaV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDatosTarjetaV2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1109,6 +1115,12 @@
     <Compile Include="frmUsuariosDatos.Designer.cs">
       <DependentUpon>frmUsuariosDatos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUsuariosDatosV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuariosDatosV2.Designer.cs">
+      <DependentUpon>frmUsuariosDatosV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVentaBoletoSF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1336,6 +1348,9 @@
     <EmbeddedResource Include="frmCatTipoCamionV2.resx">
       <DependentUpon>frmCatTipoCamionV2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosCajaV2.resx">
+      <DependentUpon>frmDatosCajaV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDatosTarjetaV2.resx">
       <DependentUpon>frmDatosTarjetaV2.cs</DependentUpon>
     </EmbeddedResource>
@@ -1413,6 +1428,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportesV2.resx">
       <DependentUpon>frmReportesV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuariosDatosV2.resx">
+      <DependentUpon>frmUsuariosDatosV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentaBoletoSF.resx">
       <DependentUpon>frmVentaBoletoSF.cs</DependentUpon>

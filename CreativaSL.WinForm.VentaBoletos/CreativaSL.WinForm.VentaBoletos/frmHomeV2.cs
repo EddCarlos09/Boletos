@@ -1719,7 +1719,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 if (this.Venta() == false)
                 {
-                    frmDatosCaja frmdc = new frmDatosCaja();
+                    frmDatosCajaV2 frmdc = new frmDatosCajaV2();
                     frmdc.ShowDialog();
                     frmdc.Dispose();
                 }

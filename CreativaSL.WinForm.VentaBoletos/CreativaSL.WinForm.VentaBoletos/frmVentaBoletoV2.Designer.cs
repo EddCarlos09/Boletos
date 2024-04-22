@@ -162,7 +162,7 @@
             // 
             // materialLabel23
             // 
-            this.materialLabel23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel23.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.materialLabel23.AutoSize = true;
             this.materialLabel23.Depth = 0;
             this.materialLabel23.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -175,7 +175,7 @@
             // 
             // materialLabel22
             // 
-            this.materialLabel22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel22.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.materialLabel22.AutoSize = true;
             this.materialLabel22.Depth = 0;
             this.materialLabel22.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -188,7 +188,7 @@
             // 
             // materialCard3
             // 
-            this.materialCard3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialCard3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard3.Controls.Add(this.btn_Cancelar);
             this.materialCard3.Controls.Add(this.btn_Vender);
@@ -244,7 +244,7 @@
             // 
             // materialCard2
             // 
-            this.materialCard2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialCard2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard2.Controls.Add(this.btn_Anticipo);
             this.materialCard2.Controls.Add(this.btn_CambioBoleto);
@@ -328,7 +328,7 @@
             // 
             // Txt_Total
             // 
-            this.Txt_Total.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Txt_Total.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Txt_Total.AnimateReadOnly = false;
             this.Txt_Total.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Txt_Total.Depth = 0;
@@ -346,7 +346,7 @@
             // 
             // materialLabel21
             // 
-            this.materialLabel21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel21.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.materialLabel21.AutoSize = true;
             this.materialLabel21.Depth = 0;
             this.materialLabel21.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -359,7 +359,7 @@
             // 
             // Txt_CobroExtra
             // 
-            this.Txt_CobroExtra.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Txt_CobroExtra.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Txt_CobroExtra.AnimateReadOnly = false;
             this.Txt_CobroExtra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Txt_CobroExtra.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -388,7 +388,7 @@
             // 
             // materialLabel20
             // 
-            this.materialLabel20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel20.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.materialLabel20.AutoSize = true;
             this.materialLabel20.Depth = 0;
             this.materialLabel20.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -401,7 +401,7 @@
             // 
             // Txt_Anticipo
             // 
-            this.Txt_Anticipo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Txt_Anticipo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Txt_Anticipo.AnimateReadOnly = false;
             this.Txt_Anticipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Txt_Anticipo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -430,7 +430,7 @@
             // 
             // materialLabel19
             // 
-            this.materialLabel19.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel19.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.materialLabel19.AutoSize = true;
             this.materialLabel19.Depth = 0;
             this.materialLabel19.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -443,7 +443,7 @@
             // 
             // Txt_Descuento
             // 
-            this.Txt_Descuento.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Txt_Descuento.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Txt_Descuento.AnimateReadOnly = false;
             this.Txt_Descuento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Txt_Descuento.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -472,7 +472,7 @@
             // 
             // materialLabel18
             // 
-            this.materialLabel18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel18.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.materialLabel18.AutoSize = true;
             this.materialLabel18.Depth = 0;
             this.materialLabel18.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -485,7 +485,7 @@
             // 
             // Txt_SubTotal
             // 
-            this.Txt_SubTotal.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Txt_SubTotal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Txt_SubTotal.AnimateReadOnly = false;
             this.Txt_SubTotal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Txt_SubTotal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -514,7 +514,7 @@
             // 
             // materialLabel17
             // 
-            this.materialLabel17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel17.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.materialLabel17.AutoSize = true;
             this.materialLabel17.Depth = 0;
             this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -527,7 +527,7 @@
             // 
             // Txt_Cantidad
             // 
-            this.Txt_Cantidad.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Txt_Cantidad.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Txt_Cantidad.AnimateReadOnly = false;
             this.Txt_Cantidad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Txt_Cantidad.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -556,7 +556,7 @@
             // 
             // materialLabel16
             // 
-            this.materialLabel16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel16.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.materialLabel16.AutoSize = true;
             this.materialLabel16.Depth = 0;
             this.materialLabel16.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -569,7 +569,7 @@
             // 
             // materialLabel15
             // 
-            this.materialLabel15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel15.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.materialLabel15.AutoSize = true;
             this.materialLabel15.Depth = 0;
             this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -604,6 +604,8 @@
             this.GridViewVentaBoletos.AllowUserToResizeColumns = false;
             this.GridViewVentaBoletos.AllowUserToResizeRows = false;
             this.GridViewVentaBoletos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.GridViewVentaBoletos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.GridViewVentaBoletos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.GridViewVentaBoletos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridViewVentaBoletos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -1180,6 +1182,7 @@
             // btn_Busqueda
             // 
             this.btn_Busqueda.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Busqueda.Image = ((System.Drawing.Image)(resources.GetObject("btn_Busqueda.Image")));
             this.btn_Busqueda.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_Busqueda.Location = new System.Drawing.Point(1311, 49);
             this.btn_Busqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
