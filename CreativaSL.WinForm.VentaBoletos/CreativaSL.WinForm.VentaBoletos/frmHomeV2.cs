@@ -1741,7 +1741,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 if (this.Venta() == false)
                 {
                     this.Inicializar();
-                    frmCaja_CierreCaja frmcajaCierre = new frmCaja_CierreCaja();
+                    frmCaja_CierreCajaV2 frmcajaCierre = new frmCaja_CierreCajaV2();
                     frmcajaCierre.ShowDialog();
                     frmcajaCierre.Dispose();
                     this.Close();
