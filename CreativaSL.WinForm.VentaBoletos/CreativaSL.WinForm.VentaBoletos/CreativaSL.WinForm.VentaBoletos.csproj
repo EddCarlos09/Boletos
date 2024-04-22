@@ -1930,6 +1930,25 @@
     </Content>
     <None Include="Resources\sanitario.png" />
     <None Include="Resources\sanitarioOutline.png" />
+    <None Include="Resources\icons8-delete-90.png" />
+    <None Include="Resources\icons8-add-100.png" />
+    <None Include="Resources\icons8-search-100.png" />
+    <None Include="Resources\icons8-group-objects-96.png" />
+    <None Include="Resources\icons8-traveler-96.png" />
+    <None Include="Resources\icons8-users-96.png" />
+    <None Include="Resources\icons8-client-96.png" />
+    <None Include="Resources\icons8-route-64.png" />
+    <None Include="Resources\icons8-price-100.png" />
+    <None Include="Resources\icons8-smart-card-100.png" />
+    <None Include="Resources\icons8-design-96 %281%29.png" />
+    <None Include="Resources\icons8-train-station-96.png" />
+    <None Include="Resources\icons8-driver-96.png" />
+    <None Include="Resources\icons8-bus-50.png" />
+    <None Include="Resources\icons8-bus-96.png" />
+    <None Include="Resources\icons8-group-96.png" />
+    <None Include="Resources\icons8-person-96.png" />
+    <None Include="Resources\icons8-settings-96.png" />
+    <None Include="Resources\icons8-home-96.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

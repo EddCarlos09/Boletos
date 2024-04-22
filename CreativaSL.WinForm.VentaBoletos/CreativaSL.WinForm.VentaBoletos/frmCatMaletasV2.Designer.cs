@@ -28,10 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCatMaletasV2));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.btn_Salir = new System.Windows.Forms.Button();
+            this.btnImprimirC = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btn_Agregar = new System.Windows.Forms.Button();
+            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.Txt_TotalMaletas = new MaterialSkin.Controls.MaterialTextBox2();
+            this.Txt_NumeroMaletas = new MaterialSkin.Controls.MaterialTextBox2();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -60,16 +70,6 @@
             this.txt_linea = new MaterialSkin.Controls.MaterialTextBox2();
             this.txt_folioBoleto = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.Txt_NumeroMaletas = new MaterialSkin.Controls.MaterialTextBox2();
-            this.Txt_TotalMaletas = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
-            this.btn_Agregar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnImprimir = new System.Windows.Forms.Button();
-            this.btnImprimirC = new System.Windows.Forms.Button();
-            this.btn_Salir = new System.Windows.Forms.Button();
             this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosMaletas)).BeginInit();
             this.SuspendLayout();
@@ -113,22 +113,201 @@
             this.materialCard1.Depth = 0;
             this.materialCard1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(3, 64);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Location = new System.Drawing.Point(2, 52);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(1098, 1035);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard1.Size = new System.Drawing.Size(824, 840);
             this.materialCard1.TabIndex = 0;
+            // 
+            // btn_Salir
+            // 
+            this.btn_Salir.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
+            this.btn_Salir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Salir.Location = new System.Drawing.Point(693, 721);
+            this.btn_Salir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(84, 91);
+            this.btn_Salir.TabIndex = 41;
+            this.btn_Salir.Text = "Cancelar";
+            this.btn_Salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            // 
+            // btnImprimirC
+            // 
+            this.btnImprimirC.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnImprimirC.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimirC.Image")));
+            this.btnImprimirC.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnImprimirC.Location = new System.Drawing.Point(526, 721);
+            this.btnImprimirC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnImprimirC.Name = "btnImprimirC";
+            this.btnImprimirC.Size = new System.Drawing.Size(84, 91);
+            this.btnImprimirC.TabIndex = 40;
+            this.btnImprimirC.Text = "ImprimirC";
+            this.btnImprimirC.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnImprimirC.UseVisualStyleBackColor = true;
+            this.btnImprimirC.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
+            this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnImprimir.Location = new System.Drawing.Point(358, 721);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(84, 91);
+            this.btnImprimir.TabIndex = 39;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnEliminar.Location = new System.Drawing.Point(196, 721);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(84, 91);
+            this.btnEliminar.TabIndex = 38;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
+            // 
+            // btn_Agregar
+            // 
+            this.btn_Agregar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.Image")));
+            this.btn_Agregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Agregar.Location = new System.Drawing.Point(39, 721);
+            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Agregar.Name = "btn_Agregar";
+            this.btn_Agregar.Size = new System.Drawing.Size(84, 91);
+            this.btn_Agregar.TabIndex = 37;
+            this.btn_Agregar.Text = "Nuevo";
+            this.btn_Agregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Agregar.UseVisualStyleBackColor = true;
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
+            // 
+            // materialLabel8
+            // 
+            this.materialLabel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel8.AutoSize = true;
+            this.materialLabel8.Depth = 0;
+            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel8.Location = new System.Drawing.Point(52, 694);
+            this.materialLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel8.Name = "materialLabel8";
+            this.materialLabel8.Size = new System.Drawing.Size(65, 19);
+            this.materialLabel8.TabIndex = 36;
+            this.materialLabel8.Text = "Acciones";
+            // 
+            // materialLabel7
+            // 
+            this.materialLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel7.Location = new System.Drawing.Point(338, 605);
+            this.materialLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(38, 19);
+            this.materialLabel7.TabIndex = 35;
+            this.materialLabel7.Text = "Total";
+            // 
+            // materialLabel6
+            // 
+            this.materialLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel6.Location = new System.Drawing.Point(52, 605);
+            this.materialLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(139, 19);
+            this.materialLabel6.TabIndex = 34;
+            this.materialLabel6.Text = "Número de Maletas";
+            // 
+            // Txt_TotalMaletas
+            // 
+            this.Txt_TotalMaletas.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Txt_TotalMaletas.AnimateReadOnly = false;
+            this.Txt_TotalMaletas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Txt_TotalMaletas.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Txt_TotalMaletas.Depth = 0;
+            this.Txt_TotalMaletas.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Txt_TotalMaletas.HideSelection = true;
+            this.Txt_TotalMaletas.LeadingIcon = null;
+            this.Txt_TotalMaletas.Location = new System.Drawing.Point(329, 633);
+            this.Txt_TotalMaletas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_TotalMaletas.MaxLength = 32767;
+            this.Txt_TotalMaletas.MouseState = MaterialSkin.MouseState.OUT;
+            this.Txt_TotalMaletas.Name = "Txt_TotalMaletas";
+            this.Txt_TotalMaletas.PasswordChar = '\0';
+            this.Txt_TotalMaletas.PrefixSuffixText = null;
+            this.Txt_TotalMaletas.ReadOnly = false;
+            this.Txt_TotalMaletas.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Txt_TotalMaletas.SelectedText = "";
+            this.Txt_TotalMaletas.SelectionLength = 0;
+            this.Txt_TotalMaletas.SelectionStart = 0;
+            this.Txt_TotalMaletas.ShortcutsEnabled = true;
+            this.Txt_TotalMaletas.Size = new System.Drawing.Size(203, 48);
+            this.Txt_TotalMaletas.TabIndex = 33;
+            this.Txt_TotalMaletas.TabStop = false;
+            this.Txt_TotalMaletas.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Txt_TotalMaletas.TrailingIcon = null;
+            this.Txt_TotalMaletas.UseSystemPasswordChar = false;
+            this.Txt_TotalMaletas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_PrecioMaleta_KeyPress);
+            // 
+            // Txt_NumeroMaletas
+            // 
+            this.Txt_NumeroMaletas.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Txt_NumeroMaletas.AnimateReadOnly = false;
+            this.Txt_NumeroMaletas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Txt_NumeroMaletas.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Txt_NumeroMaletas.Depth = 0;
+            this.Txt_NumeroMaletas.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.Txt_NumeroMaletas.HideSelection = true;
+            this.Txt_NumeroMaletas.LeadingIcon = null;
+            this.Txt_NumeroMaletas.Location = new System.Drawing.Point(47, 633);
+            this.Txt_NumeroMaletas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_NumeroMaletas.MaxLength = 32767;
+            this.Txt_NumeroMaletas.MouseState = MaterialSkin.MouseState.OUT;
+            this.Txt_NumeroMaletas.Name = "Txt_NumeroMaletas";
+            this.Txt_NumeroMaletas.PasswordChar = '\0';
+            this.Txt_NumeroMaletas.PrefixSuffixText = null;
+            this.Txt_NumeroMaletas.ReadOnly = false;
+            this.Txt_NumeroMaletas.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Txt_NumeroMaletas.SelectedText = "";
+            this.Txt_NumeroMaletas.SelectionLength = 0;
+            this.Txt_NumeroMaletas.SelectionStart = 0;
+            this.Txt_NumeroMaletas.ShortcutsEnabled = true;
+            this.Txt_NumeroMaletas.Size = new System.Drawing.Size(203, 48);
+            this.Txt_NumeroMaletas.TabIndex = 32;
+            this.Txt_NumeroMaletas.TabStop = false;
+            this.Txt_NumeroMaletas.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Txt_NumeroMaletas.TrailingIcon = null;
+            this.Txt_NumeroMaletas.UseSystemPasswordChar = false;
             // 
             // button6
             // 
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(981, 1559);
+            this.button6.Location = new System.Drawing.Point(736, 1266);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(105, 95);
+            this.button6.Size = new System.Drawing.Size(79, 77);
             this.button6.TabIndex = 31;
             this.button6.Text = "Cancelar";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -139,9 +318,10 @@
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(762, 1559);
+            this.button5.Location = new System.Drawing.Point(572, 1266);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(105, 95);
+            this.button5.Size = new System.Drawing.Size(79, 77);
             this.button5.TabIndex = 30;
             this.button5.Text = "Imprimir C";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -152,9 +332,10 @@
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(545, 1559);
+            this.button3.Location = new System.Drawing.Point(409, 1266);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 95);
+            this.button3.Size = new System.Drawing.Size(79, 77);
             this.button3.TabIndex = 29;
             this.button3.Text = "Imprimir";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -165,9 +346,10 @@
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(325, 1559);
+            this.button2.Location = new System.Drawing.Point(244, 1266);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 95);
+            this.button2.Size = new System.Drawing.Size(79, 77);
             this.button2.TabIndex = 28;
             this.button2.Text = "Eliminar";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -178,9 +360,10 @@
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(109, 1559);
+            this.button1.Location = new System.Drawing.Point(82, 1266);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 95);
+            this.button1.Size = new System.Drawing.Size(79, 77);
             this.button1.TabIndex = 27;
             this.button1.Text = "Nuevo";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -192,7 +375,8 @@
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel5.Location = new System.Drawing.Point(106, 1514);
+            this.materialLabel5.Location = new System.Drawing.Point(80, 1229);
+            this.materialLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(65, 19);
@@ -209,7 +393,8 @@
             this.materialTextBox211.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox211.HideSelection = true;
             this.materialTextBox211.LeadingIcon = null;
-            this.materialTextBox211.Location = new System.Drawing.Point(421, 1436);
+            this.materialTextBox211.Location = new System.Drawing.Point(316, 1166);
+            this.materialTextBox211.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.materialTextBox211.MaxLength = 32767;
             this.materialTextBox211.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox211.Name = "materialTextBox211";
@@ -221,7 +406,7 @@
             this.materialTextBox211.SelectionLength = 0;
             this.materialTextBox211.SelectionStart = 0;
             this.materialTextBox211.ShortcutsEnabled = true;
-            this.materialTextBox211.Size = new System.Drawing.Size(250, 48);
+            this.materialTextBox211.Size = new System.Drawing.Size(188, 48);
             this.materialTextBox211.TabIndex = 25;
             this.materialTextBox211.TabStop = false;
             this.materialTextBox211.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -238,7 +423,8 @@
             this.materialTextBox210.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox210.HideSelection = true;
             this.materialTextBox210.LeadingIcon = null;
-            this.materialTextBox210.Location = new System.Drawing.Point(96, 1436);
+            this.materialTextBox210.Location = new System.Drawing.Point(72, 1166);
+            this.materialTextBox210.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.materialTextBox210.MaxLength = 32767;
             this.materialTextBox210.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox210.Name = "materialTextBox210";
@@ -250,7 +436,7 @@
             this.materialTextBox210.SelectionLength = 0;
             this.materialTextBox210.SelectionStart = 0;
             this.materialTextBox210.ShortcutsEnabled = true;
-            this.materialTextBox210.Size = new System.Drawing.Size(250, 48);
+            this.materialTextBox210.Size = new System.Drawing.Size(188, 48);
             this.materialTextBox210.TabIndex = 24;
             this.materialTextBox210.TabStop = false;
             this.materialTextBox210.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -263,7 +449,8 @@
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(433, 1389);
+            this.materialLabel4.Location = new System.Drawing.Point(325, 1128);
+            this.materialLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(38, 19);
@@ -276,7 +463,8 @@
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(106, 1389);
+            this.materialLabel3.Location = new System.Drawing.Point(80, 1128);
+            this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(139, 19);
@@ -303,17 +491,16 @@
             this.Precio,
             this.id_maleta,
             this.id_boleto});
-            this.dgvdatosMaletas.Location = new System.Drawing.Point(42, 363);
-            this.dgvdatosMaletas.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvdatosMaletas.Location = new System.Drawing.Point(32, 295);
             this.dgvdatosMaletas.Name = "dgvdatosMaletas";
             this.dgvdatosMaletas.RowHeadersWidth = 51;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dgvdatosMaletas.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dgvdatosMaletas.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvdatosMaletas.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvdatosMaletas.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdatosMaletas.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdatosMaletas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdatosMaletas.Size = new System.Drawing.Size(1006, 358);
+            this.dgvdatosMaletas.Size = new System.Drawing.Size(754, 290);
             this.dgvdatosMaletas.TabIndex = 21;
             // 
             // folio_Maleta
@@ -346,9 +533,9 @@
             // Precio
             // 
             this.Precio.DataPropertyName = "precio";
-            dataGridViewCellStyle11.Format = "C2";
-            dataGridViewCellStyle11.NullValue = null;
-            this.Precio.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Format = "C2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.Precio.DefaultCellStyle = dataGridViewCellStyle5;
             this.Precio.HeaderText = "Precio";
             this.Precio.MinimumWidth = 6;
             this.Precio.Name = "Precio";
@@ -378,7 +565,8 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(56, 327);
+            this.materialLabel2.Location = new System.Drawing.Point(42, 266);
+            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(104, 19);
@@ -396,7 +584,8 @@
             this.txt_asiento.HideSelection = true;
             this.txt_asiento.Hint = "Asiento";
             this.txt_asiento.LeadingIcon = null;
-            this.txt_asiento.Location = new System.Drawing.Point(749, 258);
+            this.txt_asiento.Location = new System.Drawing.Point(562, 210);
+            this.txt_asiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_asiento.MaxLength = 32767;
             this.txt_asiento.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_asiento.Name = "txt_asiento";
@@ -408,7 +597,7 @@
             this.txt_asiento.SelectionLength = 0;
             this.txt_asiento.SelectionStart = 0;
             this.txt_asiento.ShortcutsEnabled = true;
-            this.txt_asiento.Size = new System.Drawing.Size(250, 48);
+            this.txt_asiento.Size = new System.Drawing.Size(188, 48);
             this.txt_asiento.TabIndex = 19;
             this.txt_asiento.TabStop = false;
             this.txt_asiento.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -426,7 +615,8 @@
             this.txt_precio.HideSelection = true;
             this.txt_precio.Hint = "Precio";
             this.txt_precio.LeadingIcon = null;
-            this.txt_precio.Location = new System.Drawing.Point(388, 258);
+            this.txt_precio.Location = new System.Drawing.Point(291, 210);
+            this.txt_precio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_precio.MaxLength = 32767;
             this.txt_precio.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_precio.Name = "txt_precio";
@@ -438,7 +628,7 @@
             this.txt_precio.SelectionLength = 0;
             this.txt_precio.SelectionStart = 0;
             this.txt_precio.ShortcutsEnabled = true;
-            this.txt_precio.Size = new System.Drawing.Size(250, 48);
+            this.txt_precio.Size = new System.Drawing.Size(188, 48);
             this.txt_precio.TabIndex = 18;
             this.txt_precio.TabStop = false;
             this.txt_precio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -456,7 +646,8 @@
             this.txt_nombre.HideSelection = true;
             this.txt_nombre.Hint = "Nombre";
             this.txt_nombre.LeadingIcon = null;
-            this.txt_nombre.Location = new System.Drawing.Point(42, 258);
+            this.txt_nombre.Location = new System.Drawing.Point(32, 210);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_nombre.MaxLength = 32767;
             this.txt_nombre.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_nombre.Name = "txt_nombre";
@@ -468,7 +659,7 @@
             this.txt_nombre.SelectionLength = 0;
             this.txt_nombre.SelectionStart = 0;
             this.txt_nombre.ShortcutsEnabled = true;
-            this.txt_nombre.Size = new System.Drawing.Size(250, 48);
+            this.txt_nombre.Size = new System.Drawing.Size(188, 48);
             this.txt_nombre.TabIndex = 17;
             this.txt_nombre.TabStop = false;
             this.txt_nombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -486,7 +677,8 @@
             this.txt_hora.HideSelection = true;
             this.txt_hora.Hint = "Hora";
             this.txt_hora.LeadingIcon = null;
-            this.txt_hora.Location = new System.Drawing.Point(749, 165);
+            this.txt_hora.Location = new System.Drawing.Point(562, 134);
+            this.txt_hora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_hora.MaxLength = 32767;
             this.txt_hora.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_hora.Name = "txt_hora";
@@ -498,7 +690,7 @@
             this.txt_hora.SelectionLength = 0;
             this.txt_hora.SelectionStart = 0;
             this.txt_hora.ShortcutsEnabled = true;
-            this.txt_hora.Size = new System.Drawing.Size(250, 48);
+            this.txt_hora.Size = new System.Drawing.Size(188, 48);
             this.txt_hora.TabIndex = 16;
             this.txt_hora.TabStop = false;
             this.txt_hora.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -516,7 +708,8 @@
             this.txt_fecha.HideSelection = true;
             this.txt_fecha.Hint = "Fecha";
             this.txt_fecha.LeadingIcon = null;
-            this.txt_fecha.Location = new System.Drawing.Point(388, 165);
+            this.txt_fecha.Location = new System.Drawing.Point(291, 134);
+            this.txt_fecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_fecha.MaxLength = 32767;
             this.txt_fecha.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_fecha.Name = "txt_fecha";
@@ -528,7 +721,7 @@
             this.txt_fecha.SelectionLength = 0;
             this.txt_fecha.SelectionStart = 0;
             this.txt_fecha.ShortcutsEnabled = true;
-            this.txt_fecha.Size = new System.Drawing.Size(250, 48);
+            this.txt_fecha.Size = new System.Drawing.Size(188, 48);
             this.txt_fecha.TabIndex = 15;
             this.txt_fecha.TabStop = false;
             this.txt_fecha.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -546,7 +739,8 @@
             this.txt_destino.HideSelection = true;
             this.txt_destino.Hint = "Destino";
             this.txt_destino.LeadingIcon = null;
-            this.txt_destino.Location = new System.Drawing.Point(42, 165);
+            this.txt_destino.Location = new System.Drawing.Point(32, 134);
+            this.txt_destino.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_destino.MaxLength = 32767;
             this.txt_destino.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_destino.Name = "txt_destino";
@@ -558,7 +752,7 @@
             this.txt_destino.SelectionLength = 0;
             this.txt_destino.SelectionStart = 0;
             this.txt_destino.ShortcutsEnabled = true;
-            this.txt_destino.Size = new System.Drawing.Size(250, 48);
+            this.txt_destino.Size = new System.Drawing.Size(188, 48);
             this.txt_destino.TabIndex = 14;
             this.txt_destino.TabStop = false;
             this.txt_destino.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -576,7 +770,8 @@
             this.txt_origen.HideSelection = true;
             this.txt_origen.Hint = "Origen";
             this.txt_origen.LeadingIcon = null;
-            this.txt_origen.Location = new System.Drawing.Point(749, 71);
+            this.txt_origen.Location = new System.Drawing.Point(562, 58);
+            this.txt_origen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_origen.MaxLength = 32767;
             this.txt_origen.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_origen.Name = "txt_origen";
@@ -588,7 +783,7 @@
             this.txt_origen.SelectionLength = 0;
             this.txt_origen.SelectionStart = 0;
             this.txt_origen.ShortcutsEnabled = true;
-            this.txt_origen.Size = new System.Drawing.Size(250, 48);
+            this.txt_origen.Size = new System.Drawing.Size(188, 48);
             this.txt_origen.TabIndex = 13;
             this.txt_origen.TabStop = false;
             this.txt_origen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -606,7 +801,8 @@
             this.txt_linea.HideSelection = true;
             this.txt_linea.Hint = "Linea";
             this.txt_linea.LeadingIcon = null;
-            this.txt_linea.Location = new System.Drawing.Point(388, 71);
+            this.txt_linea.Location = new System.Drawing.Point(291, 58);
+            this.txt_linea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_linea.MaxLength = 32767;
             this.txt_linea.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_linea.Name = "txt_linea";
@@ -618,7 +814,7 @@
             this.txt_linea.SelectionLength = 0;
             this.txt_linea.SelectionStart = 0;
             this.txt_linea.ShortcutsEnabled = true;
-            this.txt_linea.Size = new System.Drawing.Size(250, 48);
+            this.txt_linea.Size = new System.Drawing.Size(188, 48);
             this.txt_linea.TabIndex = 12;
             this.txt_linea.TabStop = false;
             this.txt_linea.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -636,7 +832,8 @@
             this.txt_folioBoleto.HideSelection = true;
             this.txt_folioBoleto.Hint = "Folio";
             this.txt_folioBoleto.LeadingIcon = null;
-            this.txt_folioBoleto.Location = new System.Drawing.Point(42, 71);
+            this.txt_folioBoleto.Location = new System.Drawing.Point(32, 58);
+            this.txt_folioBoleto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_folioBoleto.MaxLength = 32767;
             this.txt_folioBoleto.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_folioBoleto.Name = "txt_folioBoleto";
@@ -648,7 +845,7 @@
             this.txt_folioBoleto.SelectionLength = 0;
             this.txt_folioBoleto.SelectionStart = 0;
             this.txt_folioBoleto.ShortcutsEnabled = true;
-            this.txt_folioBoleto.Size = new System.Drawing.Size(250, 48);
+            this.txt_folioBoleto.Size = new System.Drawing.Size(188, 48);
             this.txt_folioBoleto.TabIndex = 11;
             this.txt_folioBoleto.TabStop = false;
             this.txt_folioBoleto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -661,189 +858,24 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(60, 19);
+            this.materialLabel1.Location = new System.Drawing.Point(45, 15);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(100, 19);
             this.materialLabel1.TabIndex = 10;
             this.materialLabel1.Text = "Datos Boletos";
             // 
-            // Txt_NumeroMaletas
-            // 
-            this.Txt_NumeroMaletas.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Txt_NumeroMaletas.AnimateReadOnly = false;
-            this.Txt_NumeroMaletas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Txt_NumeroMaletas.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.Txt_NumeroMaletas.Depth = 0;
-            this.Txt_NumeroMaletas.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.Txt_NumeroMaletas.HideSelection = true;
-            this.Txt_NumeroMaletas.LeadingIcon = null;
-            this.Txt_NumeroMaletas.Location = new System.Drawing.Point(63, 779);
-            this.Txt_NumeroMaletas.MaxLength = 32767;
-            this.Txt_NumeroMaletas.MouseState = MaterialSkin.MouseState.OUT;
-            this.Txt_NumeroMaletas.Name = "Txt_NumeroMaletas";
-            this.Txt_NumeroMaletas.PasswordChar = '\0';
-            this.Txt_NumeroMaletas.PrefixSuffixText = null;
-            this.Txt_NumeroMaletas.ReadOnly = false;
-            this.Txt_NumeroMaletas.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Txt_NumeroMaletas.SelectedText = "";
-            this.Txt_NumeroMaletas.SelectionLength = 0;
-            this.Txt_NumeroMaletas.SelectionStart = 0;
-            this.Txt_NumeroMaletas.ShortcutsEnabled = true;
-            this.Txt_NumeroMaletas.Size = new System.Drawing.Size(271, 48);
-            this.Txt_NumeroMaletas.TabIndex = 32;
-            this.Txt_NumeroMaletas.TabStop = false;
-            this.Txt_NumeroMaletas.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Txt_NumeroMaletas.TrailingIcon = null;
-            this.Txt_NumeroMaletas.UseSystemPasswordChar = false;
-            // 
-            // Txt_TotalMaletas
-            // 
-            this.Txt_TotalMaletas.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Txt_TotalMaletas.AnimateReadOnly = false;
-            this.Txt_TotalMaletas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Txt_TotalMaletas.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.Txt_TotalMaletas.Depth = 0;
-            this.Txt_TotalMaletas.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.Txt_TotalMaletas.HideSelection = true;
-            this.Txt_TotalMaletas.LeadingIcon = null;
-            this.Txt_TotalMaletas.Location = new System.Drawing.Point(439, 779);
-            this.Txt_TotalMaletas.MaxLength = 32767;
-            this.Txt_TotalMaletas.MouseState = MaterialSkin.MouseState.OUT;
-            this.Txt_TotalMaletas.Name = "Txt_TotalMaletas";
-            this.Txt_TotalMaletas.PasswordChar = '\0';
-            this.Txt_TotalMaletas.PrefixSuffixText = null;
-            this.Txt_TotalMaletas.ReadOnly = false;
-            this.Txt_TotalMaletas.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Txt_TotalMaletas.SelectedText = "";
-            this.Txt_TotalMaletas.SelectionLength = 0;
-            this.Txt_TotalMaletas.SelectionStart = 0;
-            this.Txt_TotalMaletas.ShortcutsEnabled = true;
-            this.Txt_TotalMaletas.Size = new System.Drawing.Size(271, 48);
-            this.Txt_TotalMaletas.TabIndex = 33;
-            this.Txt_TotalMaletas.TabStop = false;
-            this.Txt_TotalMaletas.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Txt_TotalMaletas.TrailingIcon = null;
-            this.Txt_TotalMaletas.UseSystemPasswordChar = false;
-            this.Txt_TotalMaletas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_PrecioMaleta_KeyPress);
-            // 
-            // materialLabel6
-            // 
-            this.materialLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialLabel6.AutoSize = true;
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.Location = new System.Drawing.Point(70, 745);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(139, 19);
-            this.materialLabel6.TabIndex = 34;
-            this.materialLabel6.Text = "Número de Maletas";
-            // 
-            // materialLabel7
-            // 
-            this.materialLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialLabel7.AutoSize = true;
-            this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.Location = new System.Drawing.Point(450, 745);
-            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(38, 19);
-            this.materialLabel7.TabIndex = 35;
-            this.materialLabel7.Text = "Total";
-            // 
-            // materialLabel8
-            // 
-            this.materialLabel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.materialLabel8.AutoSize = true;
-            this.materialLabel8.Depth = 0;
-            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel8.Location = new System.Drawing.Point(70, 854);
-            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel8.Name = "materialLabel8";
-            this.materialLabel8.Size = new System.Drawing.Size(65, 19);
-            this.materialLabel8.TabIndex = 36;
-            this.materialLabel8.Text = "Acciones";
-            // 
-            // btn_Agregar
-            // 
-            this.btn_Agregar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_Agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Agregar.Image")));
-            this.btn_Agregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Agregar.Location = new System.Drawing.Point(52, 887);
-            this.btn_Agregar.Name = "btn_Agregar";
-            this.btn_Agregar.Size = new System.Drawing.Size(112, 112);
-            this.btn_Agregar.TabIndex = 37;
-            this.btn_Agregar.Text = "Nuevo";
-            this.btn_Agregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Agregar.UseVisualStyleBackColor = true;
-            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
-            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEliminar.Location = new System.Drawing.Point(261, 887);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(112, 112);
-            this.btnEliminar.TabIndex = 38;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
-            this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnImprimir.Location = new System.Drawing.Point(478, 887);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(112, 112);
-            this.btnImprimir.TabIndex = 39;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
-            // 
-            // btnImprimirC
-            // 
-            this.btnImprimirC.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnImprimirC.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimirC.Image")));
-            this.btnImprimirC.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnImprimirC.Location = new System.Drawing.Point(702, 887);
-            this.btnImprimirC.Name = "btnImprimirC";
-            this.btnImprimirC.Size = new System.Drawing.Size(112, 112);
-            this.btnImprimirC.TabIndex = 40;
-            this.btnImprimirC.Text = "ImprimirC";
-            this.btnImprimirC.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnImprimirC.UseVisualStyleBackColor = true;
-            this.btnImprimirC.Click += new System.EventHandler(this.btnImprimir_Click);
-            // 
-            // btn_Salir
-            // 
-            this.btn_Salir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
-            this.btn_Salir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_Salir.Location = new System.Drawing.Point(924, 887);
-            this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(112, 112);
-            this.btn_Salir.TabIndex = 41;
-            this.btn_Salir.Text = "Cancelar";
-            this.btn_Salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Salir.UseVisualStyleBackColor = true;
-            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
-            // 
             // frmCatMaletasV2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 1102);
+            this.ClientSize = new System.Drawing.Size(828, 894);
             this.Controls.Add(this.materialCard1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmCatMaletasV2";
-            this.Text = "frmCatMaletasV2";
+            this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
+            this.Text = "Agregar Maleta";
             this.Load += new System.EventHandler(this.frmCatMaletasV2_Load);
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
