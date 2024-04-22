@@ -73,15 +73,9 @@
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.btn_CambiarNombre = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.btnCancelarB = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.btnCancelarA = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtNombreCliente = new MaterialSkin.Controls.MaterialTextBox2();
@@ -103,15 +97,9 @@
             this.materialCard1.Controls.Add(this.dtpFecha);
             this.materialCard1.Controls.Add(this.materialLabel3);
             this.materialCard1.Controls.Add(this.btn_CambiarNombre);
-            this.materialCard1.Controls.Add(this.btnSalir);
-            this.materialCard1.Controls.Add(this.button6);
             this.materialCard1.Controls.Add(this.btnImprimir);
-            this.materialCard1.Controls.Add(this.button5);
             this.materialCard1.Controls.Add(this.btnCancelarB);
-            this.materialCard1.Controls.Add(this.button4);
             this.materialCard1.Controls.Add(this.btnCancelarA);
-            this.materialCard1.Controls.Add(this.button3);
-            this.materialCard1.Controls.Add(this.button2);
             this.materialCard1.Controls.Add(this.materialLabel2);
             this.materialCard1.Controls.Add(this.btnBuscar);
             this.materialCard1.Controls.Add(this.txtNombreCliente);
@@ -551,7 +539,7 @@
             this.btn_CambiarNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_CambiarNombre.Image = ((System.Drawing.Image)(resources.GetObject("btn_CambiarNombre.Image")));
             this.btn_CambiarNombre.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_CambiarNombre.Location = new System.Drawing.Point(559, 146);
+            this.btn_CambiarNombre.Location = new System.Drawing.Point(559, 157);
             this.btn_CambiarNombre.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CambiarNombre.Name = "btn_CambiarNombre";
             this.btn_CambiarNombre.Size = new System.Drawing.Size(82, 76);
@@ -561,41 +549,12 @@
             this.btn_CambiarNombre.UseVisualStyleBackColor = true;
             this.btn_CambiarNombre.Click += new System.EventHandler(this.btn_CambiarNombre_Click);
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(664, 146);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(82, 76);
-            this.btnSalir.TabIndex = 15;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // button6
-            // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(559, 146);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(82, 76);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "Modificar";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // btnImprimir
             // 
             this.btnImprimir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnImprimir.Location = new System.Drawing.Point(765, 55);
+            this.btnImprimir.Location = new System.Drawing.Point(775, 58);
             this.btnImprimir.Margin = new System.Windows.Forms.Padding(2);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(82, 76);
@@ -605,26 +564,12 @@
             this.btnImprimir.UseVisualStyleBackColor = true;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
-            // button5
-            // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(664, 146);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(82, 76);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "Salir";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // btnCancelarB
             // 
             this.btnCancelarB.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelarB.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarB.Image")));
             this.btnCancelarB.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarB.Location = new System.Drawing.Point(664, 55);
+            this.btnCancelarB.Location = new System.Drawing.Point(669, 58);
             this.btnCancelarB.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelarB.Name = "btnCancelarB";
             this.btnCancelarB.Size = new System.Drawing.Size(82, 76);
@@ -634,26 +579,12 @@
             this.btnCancelarB.UseVisualStyleBackColor = true;
             this.btnCancelarB.Click += new System.EventHandler(this.btnCancelarB_Click);
             // 
-            // button4
-            // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(765, 55);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(82, 76);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Reimp";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // btnCancelarA
             // 
             this.btnCancelarA.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancelarA.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarA.Image")));
             this.btnCancelarA.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarA.Location = new System.Drawing.Point(559, 55);
+            this.btnCancelarA.Location = new System.Drawing.Point(559, 58);
             this.btnCancelarA.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelarA.Name = "btnCancelarA";
             this.btnCancelarA.Size = new System.Drawing.Size(82, 76);
@@ -662,34 +593,6 @@
             this.btnCancelarA.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelarA.UseVisualStyleBackColor = true;
             this.btnCancelarA.Click += new System.EventHandler(this.btnCancelarA_Click);
-            // 
-            // button3
-            // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(664, 55);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 76);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Canc. B";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(559, 55);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 76);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Canc. A";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // materialLabel2
             // 
@@ -938,14 +841,8 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtFolioBoleto;
         private System.Windows.Forms.Button btnBuscar;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private System.Windows.Forms.Button btn_CambiarNombre;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Button btnCancelarB;
         private System.Windows.Forms.Button btnCancelarA;
