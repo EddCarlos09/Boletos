@@ -14,6 +14,22 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <PublishUrl>C:\Respaldo disco duro\documentos\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -61,6 +77,18 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>73C2A0F36431455D36D7DAB8A0997C7076D0CA5B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CreativaSL.WinForm.VentaBoletos_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AForge">
@@ -546,6 +574,12 @@
     <Compile Include="frmAnticipoGenericoV2.Designer.cs">
       <DependentUpon>frmAnticipoGenericoV2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAsignarCajaV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsignarCajaV2.Designer.cs">
+      <DependentUpon>frmAsignarCajaV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuscarClienteV2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -587,6 +621,12 @@
     </Compile>
     <Compile Include="frmCatCobroV2.Designer.cs">
       <DependentUpon>frmCatCobroV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatMaletasNuevasV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatMaletasNuevasV2.Designer.cs">
+      <DependentUpon>frmCatMaletasNuevasV2.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCatMaletasV2.cs">
       <SubType>Form</SubType>
@@ -1109,6 +1149,12 @@
     <Compile Include="frmReportesV2.Designer.cs">
       <DependentUpon>frmReportesV2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTipoObjetoV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoObjetoV2.Designer.cs">
+      <DependentUpon>frmTipoObjetoV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUsuariosDatos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1276,6 +1322,9 @@
     <EmbeddedResource Include="frmApartadosV2.resx">
       <DependentUpon>frmApartadosV2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAsignarCajaV2.resx">
+      <DependentUpon>frmAsignarCajaV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAsistenciaPasajeros.resx">
       <DependentUpon>frmAsistenciaPasajeros.cs</DependentUpon>
     </EmbeddedResource>
@@ -1323,6 +1372,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatDisenioV2.resx">
       <DependentUpon>frmCatDisenioV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCatMaletasNuevasV2.resx">
+      <DependentUpon>frmCatMaletasNuevasV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCatMaletasV2.resx">
       <DependentUpon>frmCatMaletasV2.cs</DependentUpon>
@@ -1428,6 +1480,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportesV2.resx">
       <DependentUpon>frmReportesV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoObjetoV2.resx">
+      <DependentUpon>frmTipoObjetoV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuariosDatosV2.resx">
       <DependentUpon>frmUsuariosDatosV2.cs</DependentUpon>
@@ -1632,6 +1687,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="CreativaSL.WinForm.VentaBoletos_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Apartados.datasource" />
     <None Include="Properties\DataSources\CreativaSL.Dll.VentaBoletosGlobal.Boleto.datasource" />
@@ -2089,6 +2145,18 @@
       <Project>{187b21a6-9469-49bc-ac88-59fd91502627}</Project>
       <Name>CreativaSL.Dll.VentaBoletosNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

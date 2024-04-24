@@ -66,7 +66,7 @@
             this.panelTitle_Creativa2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelTitle_Creativa2.LinearGradientModeBgk = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.panelTitle_Creativa2.Location = new System.Drawing.Point(4, 79);
-            this.panelTitle_Creativa2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTitle_Creativa2.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitle_Creativa2.Name = "panelTitle_Creativa2";
             this.panelTitle_Creativa2.Size = new System.Drawing.Size(734, 474);
             this.panelTitle_Creativa2.SizeLine = 3;
@@ -79,7 +79,7 @@
             // 
             this.Txt_NumeroMaletas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_NumeroMaletas.Location = new System.Drawing.Point(195, 255);
-            this.Txt_NumeroMaletas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Txt_NumeroMaletas.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_NumeroMaletas.MaxLength = 10;
             this.Txt_NumeroMaletas.Name = "Txt_NumeroMaletas";
             this.Txt_NumeroMaletas.Size = new System.Drawing.Size(347, 32);
@@ -118,7 +118,7 @@
             this.btn_Salir.KeyButton = System.Windows.Forms.Keys.None;
             this.btn_Salir.KeyButtonView = false;
             this.btn_Salir.Location = new System.Drawing.Point(296, 370);
-            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Salir.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Salir.ModeGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btn_Salir.MouseOverColor = System.Drawing.Color.YellowGreen;
             this.btn_Salir.Name = "btn_Salir";
@@ -147,7 +147,7 @@
             // 
             this.Txt_PrecioMaleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_PrecioMaleta.Location = new System.Drawing.Point(195, 315);
-            this.Txt_PrecioMaleta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Txt_PrecioMaleta.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_PrecioMaleta.MaxLength = 10;
             this.Txt_PrecioMaleta.Name = "Txt_PrecioMaleta";
             this.Txt_PrecioMaleta.Size = new System.Drawing.Size(347, 32);
@@ -170,7 +170,7 @@
             // 
             this.Txt_Descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Descripcion.Location = new System.Drawing.Point(195, 89);
-            this.Txt_Descripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Txt_Descripcion.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_Descripcion.MaxLength = 500;
             this.Txt_Descripcion.Multiline = true;
             this.Txt_Descripcion.Name = "Txt_Descripcion";
@@ -211,7 +211,7 @@
             this.btn_Agregar.KeyButton = System.Windows.Forms.Keys.None;
             this.btn_Agregar.KeyButtonView = false;
             this.btn_Agregar.Location = new System.Drawing.Point(169, 369);
-            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Agregar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Agregar.ModeGradient = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btn_Agregar.MouseOverColor = System.Drawing.Color.YellowGreen;
             this.btn_Agregar.Name = "btn_Agregar";
@@ -228,7 +228,7 @@
             // 
             this.Txt_Folio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Folio.Location = new System.Drawing.Point(195, 48);
-            this.Txt_Folio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Txt_Folio.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_Folio.MaxLength = 25;
             this.Txt_Folio.Name = "Txt_Folio";
             this.Txt_Folio.Size = new System.Drawing.Size(347, 32);
@@ -256,7 +256,7 @@
             this.ClientSize = new System.Drawing.Size(742, 557);
             this.Controls.Add(this.panelTitle_Creativa2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCatMaletasNueva";
@@ -277,12 +277,12 @@
         private System.Windows.Forms.TextBox Txt_Descripcion;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox Txt_Folio;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox Txt_PrecioMaleta;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
         private LibControls.WinForms.Button_Creativa btn_Salir;
         private System.Windows.Forms.TextBox Txt_NumeroMaletas;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label9;
     }
 }
