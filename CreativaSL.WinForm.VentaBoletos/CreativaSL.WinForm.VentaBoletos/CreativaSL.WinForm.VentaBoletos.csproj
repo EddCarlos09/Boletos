@@ -774,6 +774,12 @@
     <Compile Include="frmDescuentoGenericoV2.Designer.cs">
       <DependentUpon>frmDescuentoGenericoV2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFacturaV1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturaV1.Designer.cs">
+      <DependentUpon>frmFacturaV1.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFechasViajesDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1375,6 +1381,9 @@
     <EmbeddedResource Include="frmDatosViajeV2.resx">
       <DependentUpon>frmDatosViajeV2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturaV1.resx">
+      <DependentUpon>frmFacturaV1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFechaViajeDetalleV2.resx">
       <DependentUpon>frmFechaViajeDetalleV2.cs</DependentUpon>
     </EmbeddedResource>
@@ -1928,6 +1937,11 @@
     <Content Include="Resources\documents\Heco.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll" />
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll" />
+    <Content Include="SqlServerTypes\x86\msvcr120.dll" />
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll" />
     <None Include="Resources\sanitario.png" />
     <None Include="Resources\sanitarioOutline.png" />
     <None Include="Resources\icons8-delete-90.png" />
@@ -1949,19 +1963,6 @@
     <None Include="Resources\icons8-person-96.png" />
     <None Include="Resources\icons8-settings-96.png" />
     <None Include="Resources\icons8-home-96.png" />
-    <Content Include="SqlServerTypes\readme.htm" />
-    <Content Include="SqlServerTypes\x64\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\ImagenDefault.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

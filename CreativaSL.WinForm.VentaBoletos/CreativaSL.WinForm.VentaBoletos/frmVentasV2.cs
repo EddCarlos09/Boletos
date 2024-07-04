@@ -378,5 +378,31 @@ namespace CreativaSL.WinForm.VentaBoletos
                 MessageBox.Show(ex.Message.ToString(), "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void Facturarbtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (this.dgvdatosboleto.SelectedRows.Count > 0)
+                {
+                    Boleto boleto = this.obtenerDatosBoleto();
+                    frmFacturaV1 frmFactura = new frmFacturaV1(boleto);
+                    frmFactura.ShowDialog();
+                    frmFactura.Dispose();
+                    Busqueda_Negocio bn = new Busqueda_Negocio();
+                    Busqueda datos = new Busqueda(Comun.Conexion);
+                    datos = bn.BuscarBoletos(this.obtenerDatos());
+                    this.llenarGridBoletos(datos);
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione una fila del grid", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
