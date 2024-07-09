@@ -50,9 +50,11 @@ namespace CreativaSL.WinForm.VentaBoletos
                 this.TxtRFC.Text = infoBoletos.RFC.ToString();
                 this.TxtCelular.Text = infoBoletos.TelefonoCelular.ToString();
                 this.TxtColonia.Text = infoBoletos.Colonia.ToString();
-                this.CmbEstado.Text = infoBoletos.EstadoDesc.ToString();
+                this.txtEstado.Text = infoBoletos.EstadoDesc.ToString();
                 this.TxtEmpresa.Text = infoBoletos.Empresa.ToString();
-                
+                this.txtCiudad.Text = infoBoletos.MunicipioDesc.ToString();
+
+
                 this.DtmFechaNac.Value = infoBoletos.FechaNacimiento;
                 //this.DtmFechaNac.Value = infoBoletos.fechaNacimientoV;
                 //this.txt_C_numerotelefono.Text = infoBoletos.numeroTelefono.ToString();
