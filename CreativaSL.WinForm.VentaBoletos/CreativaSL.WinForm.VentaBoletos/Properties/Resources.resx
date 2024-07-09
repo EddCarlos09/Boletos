@@ -286,15 +286,6 @@
   <data name="ImagenDefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ImagenDefault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GLOBES_GREEN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Estatus\GLOBES_GREEN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GLOBES_ORANGE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Estatus\GLOBES_ORANGE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GLOBES_RED" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Estatus\GLOBES_RED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GLOBES_YELLOW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Estatus\GLOBES_YELLOW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -303,5 +294,14 @@
   </data>
   <data name="sanitarioOutline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sanitarioOutline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GLOBES_GREEN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Estatus\GLOBES_GREEN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GLOBES_ORANGE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Estatus\GLOBES_ORANGE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GLOBES_RED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Estatus\GLOBES_RED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
