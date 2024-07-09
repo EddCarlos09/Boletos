@@ -385,14 +385,27 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
                 if (this.dgvdatosboleto.SelectedRows.Count > 0)
                 {
-                    Boleto boleto = this.obtenerDatosBoleto();
-                    frmFacturaV1 frmFactura = new frmFacturaV1(boleto);
-                    frmFactura.ShowDialog();
-                    frmFactura.Dispose();
-                    Busqueda_Negocio bn = new Busqueda_Negocio();
-                    Busqueda datos = new Busqueda(Comun.Conexion);
-                    datos = bn.BuscarBoletos(this.obtenerDatos());
-                    this.llenarGridBoletos(datos);
+                    var cellValue = this.dgvdatosboleto.SelectedRows[0].Cells["id_cliente"].Value;
+                    if (cellValue != null && int.TryParse(cellValue.ToString(), out int idCliente))
+                    {
+                        // Obtener los datos del cliente
+                        Busqueda_Negocio bn = new Busqueda_Negocio();
+                        V2Cliente cliente = bn.ObtenerDatosCliente(idCliente);
+
+                        // Abrir el formulario de factura y pasar los datos del cliente
+                        frmFacturaV1 frmFactura = new frmFacturaV1(cliente);
+                        frmFactura.ShowDialog();
+                        frmFactura.Dispose();
+
+                        // Actualizar el grid de boletos
+                        Busqueda datos = new Busqueda(Comun.Conexion);
+                        datos = bn.BuscarBoletos(this.obtenerDatos());
+                        this.llenarGridBoletos(datos);
+                    }
+                    else
+                    {
+                        MessageBox.Show("El valor de id_cliente no es válido.", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
                 else
                 {

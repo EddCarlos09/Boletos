@@ -103,6 +103,12 @@ namespace CreativaSL.Dll.VentaBoletosGlobal
             get { return _IDPais; }
             set { _IDPais = value; }
         }
+        private string _PaisDesc;
+        public string PaisDesc
+        {
+            get { return _PaisDesc; }
+            set { _PaisDesc = value; }
+        }
         private string _Email;
         public string Email
         {

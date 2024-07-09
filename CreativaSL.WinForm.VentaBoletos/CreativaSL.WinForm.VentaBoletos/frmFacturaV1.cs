@@ -14,12 +14,12 @@ namespace CreativaSL.WinForm.VentaBoletos
 {
     public partial class frmFacturaV1 : MaterialForm
     {
-        private Boleto infoBoletos;
+        private V2Cliente infoBoletos;
         private Validaciones Val;
-        public frmFacturaV1(Boleto Boleto)
+        public frmFacturaV1(V2Cliente cliente)
         {
             InitializeComponent();
-            this.infoBoletos = Boleto;
+            this.infoBoletos = cliente;
             loadMaterial(this);
             this.Inicializar();
         }
@@ -28,7 +28,7 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                if (infoBoletos.id_boleto != null)
+                if (infoBoletos.IDCliente != null)
                 {
                     this.LLenarDatos();
                 }
@@ -42,9 +42,18 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
             try
             {
-                this.TxtNombre.Text = infoBoletos.cliente_nombre.ToString();
-                this.TxtTelefono.Text = infoBoletos.numeroTelefono.ToString();
-                this.DtmFechaNac.Value = infoBoletos.fechaNacimientoV;
+                this.TxtNombre.Text = infoBoletos.Nombre.ToString();
+                this.TxtTelefono.Text = infoBoletos.Telefono.ToString();
+                this.TxtCP.Text = infoBoletos.CodigoPostal.ToString();
+                this.TxtDomicilio.Text = infoBoletos.Domicilio.ToString();
+                this.TxtEmail.Text = infoBoletos.Email.ToString();
+                this.TxtRFC.Text = infoBoletos.RFC.ToString();
+                this.TxtCelular.Text = infoBoletos.TelefonoCelular.ToString();
+                this.TxtColonia.Text = infoBoletos.Colonia.ToString();
+                this.CmbEstado.Text = infoBoletos.EstadoDesc.ToString();
+                this.TxtEmpresa.Text = infoBoletos.Empresa.ToString();
+                
+                this.DtmFechaNac.Value = infoBoletos.FechaNacimiento;
                 //this.DtmFechaNac.Value = infoBoletos.fechaNacimientoV;
                 //this.txt_C_numerotelefono.Text = infoBoletos.numeroTelefono.ToString();
             }
@@ -54,5 +63,10 @@ namespace CreativaSL.WinForm.VentaBoletos
             }
         }
         #endregion
+
+        private void CmbEstado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

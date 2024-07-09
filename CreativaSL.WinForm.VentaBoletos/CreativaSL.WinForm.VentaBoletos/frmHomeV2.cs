@@ -1995,7 +1995,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                 this.GridViewVentaBoletos.Items.Clear();
                 this.GridViewVentaBoletos.Columns.Clear();
 
-                var Headertexts = new List<string> { "Nombre_Cliente", "Fecha Nac", "Teléfono", "#", "Tipo Línea", "Origen", "Fec Salida", "Hr Salida", "Destino", "Precio", "Desc" };
+                var Headertexts = new List<string> { "Nombre_Cliente", "Fecha Nac","id_cliente", "Teléfono", "#", "Tipo Línea", "Origen", "Fec Salida", "Hr Salida", "Destino", "Precio", "Desc" };
                 var Names = new List<string> { "Nombre", "FechaNacimiento", "NumeroTelefono", "Asiento", "TipoLinea", "Origen", "FechaSalidaV2", "HoraSalidaV", "Destino", "Precio", "Descuentos", "DescripcionIndice", "IDViaje", "IDCamionDiseño", "NumCamion", "TipoLinea", "FechaLLegadaV", "FechaLLegadaV2", "HoraLLegadaV", "TipoDescuento", "IDBoleto", "FechaSalidaV", "IDTarifa", "IDTipoTarifa", "IDStatus", "Anticipo", "IDBoletoTransferencia", "FechaSalida", "HoraSalida", "PagoExtra", "IDTipoCamion" };
                 this.dbFieldList2 = Names;
                 this.RecorrerForGridViewVentaBoletos(Headertexts, 1);
