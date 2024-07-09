@@ -65,6 +65,7 @@ namespace CreativaSL.Dll.VentaBoletosNegocio
                         cliente.PaisDesc = reader["pais"].ToString();
                         cliente.Empresa = reader["empresa"].ToString();
                         cliente.FechaNacimiento = (DateTime)reader["fechaNacimiento"];
+       
                         // Continúa con el resto de los campos necesarios
                     }
                     reader.Close();

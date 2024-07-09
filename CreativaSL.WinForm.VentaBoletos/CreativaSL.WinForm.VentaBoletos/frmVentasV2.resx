@@ -120,16 +120,16 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Facturarbtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAG/SURBVGhD7ZU/TgJBGMVppCHyxyxHsdMzQCQgEQkewVIr
-        S9cCCikkQQpJpPAWxngTd609wciYh1lnHwb54EPj/JJfAgXvvVF2yHg8nn9ANTbPU001MnuVyOx/vF7z
-        +0psnlAv57NAWdTLYeEaol4OC9cQ9XJYuIaol+MG586GZuu0v1Jz58MvHVbUy3GD2YBV6PagXo4bbP9a
-        bIBE1f+AlqiXw8I1RL0cFq4h6uWwcA1RL4eFa4h6OW7wMr8D7JZJZqneQstco3MPgCzVA2iJejksXEPU
-        y3GDF30G5n1tkv7qZ2ChAyBL9QBaol4OC9cQ9XLcYP87QLJUD6Al6uWwcA1RL4eFa4h6OSxcQ9TLYeFJ
-        F7mV3IfU/cxGH+LZTfKdqQM4n9noAdYl6uWwcA1RL4eFa4j6H1C/yAa17lW51o3LtZ6ZycI1TG6YGgUH
-        vdBuxNo0QeM6DBp948rCNWRb7EbMTVM6vIl3mgPjysI1ZFtKzcEr5qYptkZRqTUyrruPbxuRbSke3b5g
-        bppC+y4stMfGlYVryLYUjseXmEuoP2S3O5Mw37mP8icTM5OFa5jcYDfZbXYj1no8nr9PJvMOcLrHdGTE
-        TMEAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAb9JREFUaEPtlT9OAkEYxWmkIfLHLEex0zNAJCARCR7BUitL1wIKKSRBCkmk8BbG
+        eBN3rT3ByJiHWWcfBvngQ+P8kl8CBe+9UXbIeDyef0A1Ns9TTTUye5XI7H+8XvP7SmyeUC/ns0BZ1Mth
+        4RqiXg4L1xD1cli4hqiX4wbnzoZm67S/UnPnwy8dVtTLcYPZgFXo9qBejhts/1psgETV/4CWqJfDwjVE
+        vRwWriHq5bBwDVEvh4VriHo5bvAyvwPslklmqd5Cy1yjcw+ALNUDaIl6OSxcQ9TLcYMXfQbmfW2S/upn
+        YKEDIEv1AFqiXg4L1xD1ctxg/ztAslQPoCXq5bBwDVEvh4VriHo5LFxD1Mth4UkXuZXch9T9zEYf4tlN
+        8p2pAzif2egB1iXq5bBwDVEvh4VriPofUL/IBrXuVbnWjcu1npnJwjVMbpgaBQe90G7E2jRB4zoMGn3j
+        ysI1ZFvsRsxNUzq8iXeaA+PKwjVkW0rNwSvmpim2RlGpNTKuu49vG5FtKR7dvmBumkL7Liy0x8aVhWvI
+        thSOx5eYS6g/ZLc7kzDfuY/yJxMzk4VrmNxgN9ltdiPWejyev08m8w5wusd0ZMRMwQAAAABJRU5ErkJg
+        gg==
 </value>
   </data>
   <metadata name="folioVenta.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

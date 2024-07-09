@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentasV2));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -39,8 +40,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentasV2));
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.Facturarbtn = new System.Windows.Forms.Button();
             this.dgvdatosboleto = new System.Windows.Forms.DataGridView();
             this.id_boleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_ventadetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,7 +87,6 @@
             this.chkFecha = new MaterialSkin.Controls.MaterialCheckbox();
             this.chkFolioVenta = new MaterialSkin.Controls.MaterialCheckbox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.Facturarbtn = new System.Windows.Forms.Button();
             this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboleto)).BeginInit();
             this.SuspendLayout();
@@ -121,6 +121,21 @@
             this.materialCard1.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.materialCard1.Size = new System.Drawing.Size(1221, 796);
             this.materialCard1.TabIndex = 0;
+            // 
+            // Facturarbtn
+            // 
+            this.Facturarbtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Facturarbtn.Image = ((System.Drawing.Image)(resources.GetObject("Facturarbtn.Image")));
+            this.Facturarbtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Facturarbtn.Location = new System.Drawing.Point(892, 193);
+            this.Facturarbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Facturarbtn.Name = "Facturarbtn";
+            this.Facturarbtn.Size = new System.Drawing.Size(109, 94);
+            this.Facturarbtn.TabIndex = 21;
+            this.Facturarbtn.Text = "Facturar";
+            this.Facturarbtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Facturarbtn.UseVisualStyleBackColor = true;
+            this.Facturarbtn.Click += new System.EventHandler(this.Facturarbtn_Click);
             // 
             // dgvdatosboleto
             // 
@@ -806,21 +821,6 @@
             this.materialLabel1.Size = new System.Drawing.Size(72, 19);
             this.materialLabel1.TabIndex = 1;
             this.materialLabel1.Text = "Busqueda";
-            // 
-            // Facturarbtn
-            // 
-            this.Facturarbtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Facturarbtn.Image = ((System.Drawing.Image)(resources.GetObject("Facturarbtn.Image")));
-            this.Facturarbtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Facturarbtn.Location = new System.Drawing.Point(892, 193);
-            this.Facturarbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Facturarbtn.Name = "Facturarbtn";
-            this.Facturarbtn.Size = new System.Drawing.Size(109, 94);
-            this.Facturarbtn.TabIndex = 21;
-            this.Facturarbtn.Text = "Facturar";
-            this.Facturarbtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Facturarbtn.UseVisualStyleBackColor = true;
-            this.Facturarbtn.Click += new System.EventHandler(this.Facturarbtn_Click);
             // 
             // frmVentasV2
             // 

@@ -53,9 +53,12 @@ namespace CreativaSL.WinForm.VentaBoletos
                 this.txtEstado.Text = infoBoletos.EstadoDesc.ToString();
                 this.TxtEmpresa.Text = infoBoletos.Empresa.ToString();
                 this.txtCiudad.Text = infoBoletos.MunicipioDesc.ToString();
-
-
+                this.txtPais.Text = infoBoletos.PaisDesc.ToString();
+                this.txtFolioBoleto.Text = infoBoletos.FolioBoleto.ToString();
                 this.DtmFechaNac.Value = infoBoletos.FechaNacimiento;
+                this.txtOrigen.Text = infoBoletos.Origen.ToString();
+                this.txtDestino.Text = infoBoletos.Destino.ToString();
+                
                 //this.DtmFechaNac.Value = infoBoletos.fechaNacimientoV;
                 //this.txt_C_numerotelefono.Text = infoBoletos.numeroTelefono.ToString();
             }
@@ -70,5 +73,7 @@ namespace CreativaSL.WinForm.VentaBoletos
         {
 
         }
+
+    
     }
 }

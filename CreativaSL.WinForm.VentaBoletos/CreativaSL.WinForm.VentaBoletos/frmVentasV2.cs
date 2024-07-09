@@ -391,7 +391,10 @@ namespace CreativaSL.WinForm.VentaBoletos
                         // Obtener los datos del cliente
                         Busqueda_Negocio bn = new Busqueda_Negocio();
                         V2Cliente cliente = bn.ObtenerDatosCliente(idCliente);
-
+                        var datosBol = this.obtenerDatosBoleto();
+                        cliente.Origen = datosBol.origen;
+                        cliente.Destino = datosBol.destino;
+                        cliente.FolioBoleto = datosBol.folio;
                         // Abrir el formulario de factura y pasar los datos del cliente
                         frmFacturaV1 frmFactura = new frmFacturaV1(cliente);
                         frmFactura.ShowDialog();
