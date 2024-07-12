@@ -126,6 +126,12 @@ namespace CreativaSL.Dll.VentaBoletosGlobal
             set { _asiento = value; }
         }
 
+        private int _cantidadVenta; 
+        public int cantidadVenta
+        {
+            get { return _cantidadVenta; }
+            set { _cantidadVenta = value; }
+        }
         private string _horaSalida;
 
         public string horaSalida
