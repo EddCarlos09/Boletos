@@ -81,6 +81,7 @@
     <Compile Include="Comun_Negocio.cs" />
     <Compile Include="Configuracion_Negocio.cs" />
     <Compile Include="DisenioCamion_Negocio.cs" />
+    <Compile Include="Factura_Negocio.cs" />
     <Compile Include="Home_Negocio.cs" />
     <Compile Include="LoginValidator_Negocio.cs" />
     <Compile Include="Login_Negocio.cs" />

@@ -1,6 +1,7 @@
 ﻿using CreativaSL.Dll.VentaBoletosGlobal;
 using CreativaSL.Dll.VentaBoletosNegocio;
 using MaterialSkin.Controls;
+using Syncfusion.ProjIO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -177,6 +178,7 @@ namespace CreativaSL.WinForm.VentaBoletos
                     boleto.bloqueoCancelacionPorFormaDePago = Convert.ToInt32(dgvdatosboleto.SelectedRows[0].Cells["bloqueoCancelacionPorFormaDePago"].Value.ToString());
                     boleto.fechaNacimientoV = Convert.ToDateTime(dgvdatosboleto.SelectedRows[0].Cells["fechaNacimiento"].Value.ToString());
                     boleto.numeroTelefono = dgvdatosboleto.SelectedRows[0].Cells["numeroTelefono"].Value.ToString();
+                    boleto.cantidadVenta = Convert.ToInt32(dgvdatosboleto.SelectedRows[0].Cells["cantidad_venta"].Value.ToString());
                 }
                 return boleto;
             }
@@ -392,11 +394,28 @@ namespace CreativaSL.WinForm.VentaBoletos
                         Busqueda_Negocio bn = new Busqueda_Negocio();
                         V2Cliente cliente = bn.ObtenerDatosCliente(idCliente);
                         var datosBol = this.obtenerDatosBoleto();
+
+                        FacturaDatos facturaDatos = new FacturaDatos
+                        {
+                            Cliente = cliente,
+                            ClaveProdServ = "78111802",
+                            NoIdentificacion = datosBol.folio,
+                            Cantidad = datosBol.cantidadVenta,
+                            ClaveUnidad = "EA",
+                            Unidad = "Elemento",
+                            Descripcion = "Venta de boletos",
+                            ValorUnitario = datosBol.precioIva,
+                            Importe = datosBol.precioIva,
+                            ObjetoImp = 02,
+
+                        };
+
                         cliente.Origen = datosBol.origen;
                         cliente.Destino = datosBol.destino;
                         cliente.FolioBoleto = datosBol.folio;
+                        cliente.IDCliente =  idCliente;
                         // Abrir el formulario de factura y pasar los datos del cliente
-                        frmFacturaV1 frmFactura = new frmFacturaV1(cliente);
+                        frmFacturaV1 frmFactura = new frmFacturaV1(facturaDatos);
                         frmFactura.ShowDialog();
                         frmFactura.Dispose();
 

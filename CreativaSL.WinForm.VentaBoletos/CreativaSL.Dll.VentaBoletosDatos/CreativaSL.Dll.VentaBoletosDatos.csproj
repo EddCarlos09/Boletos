@@ -87,6 +87,7 @@
     <Compile Include="Comun_Datos.cs" />
     <Compile Include="Configuracion_Datos.cs" />
     <Compile Include="DisenioCamion_Datos.cs" />
+    <Compile Include="Factura_Datos.cs" />
     <Compile Include="Home_Datos.cs" />
     <Compile Include="LoginValidator_Datos.cs" />
     <Compile Include="Login_Datos.cs" />
