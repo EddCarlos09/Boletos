@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,6 +16,7 @@ namespace CreativaSL.Dll.VentaBoletosGlobal
         public int _id_cliente;
         public string _serie;
         public string _folio;
+        public string _uuid_factura;
         public DateTime _fecha_emision;
         public string _no_certificado;
         public string _forma_pago;
@@ -61,6 +63,11 @@ namespace CreativaSL.Dll.VentaBoletosGlobal
         {
             get { return _folio; }
             set { _folio = value; }
+        }
+        public string uuid_factura
+        {
+            get { return _uuid_factura; }
+            set { _uuid_factura = value;}
         }
         public DateTime fecha_emision
         {
