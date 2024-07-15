@@ -347,6 +347,23 @@ namespace CreativaSL.WinForm.VentaBoletos
                 case 11:
                     try
                     {
+
+                        CatalogoFactura fac = new CatalogoFactura();
+                        TabPage tabPage = materialTabControl1.TabPages[11]; // Supongamos que el tab deseado está en la posición 0
+                        fac.TopLevel = false;
+                        tabPage.Controls.Add(fac);
+                        fac.FormBorderStyle = FormBorderStyle.None;
+                        fac.Dock = DockStyle.Fill;
+                        fac.Show();
+                    }
+                    catch(Exception ex)
+                    {
+
+                    }
+                    break;
+                case 12:
+                    try
+                    {
                         if (this.Venta() == false)
                         {
                             this.Exception = false;

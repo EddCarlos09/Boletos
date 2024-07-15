@@ -498,6 +498,12 @@
   <ItemGroup>
     <Compile Include="ApiResponse.cs" />
     <Compile Include="buttonRadius.cs" />
+    <Compile Include="CatalogoFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogoFactura.Designer.cs">
+      <DependentUpon>CatalogoFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClasesAux\LogError.cs" />
     <Compile Include="Clientes\frm_v2_AsignarTarjeta.cs">
       <SubType>Form</SubType>
@@ -1314,6 +1320,9 @@
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Validaciones.cs" />
+    <EmbeddedResource Include="CatalogoFactura.resx">
+      <DependentUpon>CatalogoFactura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes\frm_v2_AsignarTarjeta.resx">
       <DependentUpon>frm_v2_AsignarTarjeta.cs</DependentUpon>
     </EmbeddedResource>
