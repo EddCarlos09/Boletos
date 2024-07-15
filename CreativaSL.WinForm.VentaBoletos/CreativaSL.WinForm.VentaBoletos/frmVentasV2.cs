@@ -420,5 +420,12 @@ namespace CreativaSL.WinForm.VentaBoletos
                 MessageBox.Show(ex.Message, "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+
+        private void btnAdministarFac_Click(object sender, EventArgs e)
+        {
+            CatalogoFactura fac = new CatalogoFactura();
+            fac.ShowDialog();
+        }
     }
 }

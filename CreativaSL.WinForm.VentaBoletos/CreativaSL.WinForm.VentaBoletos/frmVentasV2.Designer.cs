@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentasV2));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -40,7 +39,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentasV2));
+            this.btnAdministrarFac = new MaterialSkin.Controls.MaterialCard();
             this.Facturarbtn = new System.Windows.Forms.Button();
             this.dgvdatosboleto = new System.Windows.Forms.DataGridView();
             this.id_boleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,40 +87,42 @@
             this.chkFecha = new MaterialSkin.Controls.MaterialCheckbox();
             this.chkFolioVenta = new MaterialSkin.Controls.MaterialCheckbox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialCard1.SuspendLayout();
+            this.btnAdministarFac = new System.Windows.Forms.Button();
+            this.btnAdministrarFac.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboleto)).BeginInit();
             this.SuspendLayout();
             // 
-            // materialCard1
+            // btnAdministrarFac
             // 
-            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard1.Controls.Add(this.Facturarbtn);
-            this.materialCard1.Controls.Add(this.dgvdatosboleto);
-            this.materialCard1.Controls.Add(this.dtpFecha);
-            this.materialCard1.Controls.Add(this.materialLabel3);
-            this.materialCard1.Controls.Add(this.btn_CambiarNombre);
-            this.materialCard1.Controls.Add(this.btnImprimir);
-            this.materialCard1.Controls.Add(this.btnCancelarB);
-            this.materialCard1.Controls.Add(this.btnCancelarA);
-            this.materialCard1.Controls.Add(this.materialLabel2);
-            this.materialCard1.Controls.Add(this.btnBuscar);
-            this.materialCard1.Controls.Add(this.txtNombreCliente);
-            this.materialCard1.Controls.Add(this.txtFolioBoleto);
-            this.materialCard1.Controls.Add(this.txt_folioVenta);
-            this.materialCard1.Controls.Add(this.chkNombre);
-            this.materialCard1.Controls.Add(this.chkFolio);
-            this.materialCard1.Controls.Add(this.chkFecha);
-            this.materialCard1.Controls.Add(this.chkFolioVenta);
-            this.materialCard1.Controls.Add(this.materialLabel1);
-            this.materialCard1.Depth = 0;
-            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(16, 18);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.materialCard1.Size = new System.Drawing.Size(1221, 796);
-            this.materialCard1.TabIndex = 0;
+            this.btnAdministrarFac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAdministrarFac.Controls.Add(this.btnAdministarFac);
+            this.btnAdministrarFac.Controls.Add(this.Facturarbtn);
+            this.btnAdministrarFac.Controls.Add(this.dgvdatosboleto);
+            this.btnAdministrarFac.Controls.Add(this.dtpFecha);
+            this.btnAdministrarFac.Controls.Add(this.materialLabel3);
+            this.btnAdministrarFac.Controls.Add(this.btn_CambiarNombre);
+            this.btnAdministrarFac.Controls.Add(this.btnImprimir);
+            this.btnAdministrarFac.Controls.Add(this.btnCancelarB);
+            this.btnAdministrarFac.Controls.Add(this.btnCancelarA);
+            this.btnAdministrarFac.Controls.Add(this.materialLabel2);
+            this.btnAdministrarFac.Controls.Add(this.btnBuscar);
+            this.btnAdministrarFac.Controls.Add(this.txtNombreCliente);
+            this.btnAdministrarFac.Controls.Add(this.txtFolioBoleto);
+            this.btnAdministrarFac.Controls.Add(this.txt_folioVenta);
+            this.btnAdministrarFac.Controls.Add(this.chkNombre);
+            this.btnAdministrarFac.Controls.Add(this.chkFolio);
+            this.btnAdministrarFac.Controls.Add(this.chkFecha);
+            this.btnAdministrarFac.Controls.Add(this.chkFolioVenta);
+            this.btnAdministrarFac.Controls.Add(this.materialLabel1);
+            this.btnAdministrarFac.Depth = 0;
+            this.btnAdministrarFac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnAdministrarFac.Location = new System.Drawing.Point(16, 18);
+            this.btnAdministrarFac.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.btnAdministrarFac.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAdministrarFac.Name = "btnAdministrarFac";
+            this.btnAdministrarFac.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.btnAdministrarFac.Size = new System.Drawing.Size(1221, 796);
+            this.btnAdministrarFac.TabIndex = 0;
             // 
             // Facturarbtn
             // 
@@ -822,21 +824,36 @@
             this.materialLabel1.TabIndex = 1;
             this.materialLabel1.Text = "Busqueda";
             // 
+            // btnAdministarFac
+            // 
+            this.btnAdministarFac.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnAdministarFac.Image = ((System.Drawing.Image)(resources.GetObject("btnAdministarFac.Image")));
+            this.btnAdministarFac.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAdministarFac.Location = new System.Drawing.Point(1033, 196);
+            this.btnAdministarFac.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdministarFac.Name = "btnAdministarFac";
+            this.btnAdministarFac.Size = new System.Drawing.Size(109, 113);
+            this.btnAdministarFac.TabIndex = 22;
+            this.btnAdministarFac.Text = "Adinistrar Facturas";
+            this.btnAdministarFac.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAdministarFac.UseVisualStyleBackColor = true;
+            this.btnAdministarFac.Click += new System.EventHandler(this.btnAdministarFac_Click);
+            // 
             // frmVentasV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1241, 818);
             this.ControlBox = false;
-            this.Controls.Add(this.materialCard1);
+            this.Controls.Add(this.btnAdministrarFac);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmVentasV2";
             this.Padding = new System.Windows.Forms.Padding(3, 64, 3, 2);
             this.Text = "frmVentasV2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmVentasV2_Load);
-            this.materialCard1.ResumeLayout(false);
-            this.materialCard1.PerformLayout();
+            this.btnAdministrarFac.ResumeLayout(false);
+            this.btnAdministrarFac.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboleto)).EndInit();
             this.ResumeLayout(false);
 
@@ -844,7 +861,7 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialCard materialCard1;
+        private MaterialSkin.Controls.MaterialCard btnAdministrarFac;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialCheckbox chkNombre;
         private MaterialSkin.Controls.MaterialCheckbox chkFolio;
@@ -891,5 +908,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn bloqueoCancelacionMonedero;
         private System.Windows.Forms.DataGridViewTextBoxColumn bloqueoCancelacionPorFormaDePago;
         private System.Windows.Forms.Button Facturarbtn;
+        private System.Windows.Forms.Button btnAdministarFac;
     }
 }
