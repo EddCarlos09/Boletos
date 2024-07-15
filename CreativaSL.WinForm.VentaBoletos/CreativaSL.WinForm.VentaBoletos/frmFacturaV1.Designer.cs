@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFacturaV1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,8 +115,17 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1651, 808);
+            this.panel1.Size = new System.Drawing.Size(1651, 805);
             this.panel1.TabIndex = 1;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(1324, 137);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(250, 313);
+            this.webBrowser1.TabIndex = 165;
+            this.webBrowser1.Visible = false;
             // 
             // label17
             // 
@@ -292,14 +301,15 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(466, 765);
+            this.btnCancelar.Location = new System.Drawing.Point(466, 762);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnCancelar.Size = new System.Drawing.Size(123, 47);
+            this.btnCancelar.Size = new System.Drawing.Size(149, 47);
             this.btnCancelar.TabIndex = 153;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -307,10 +317,10 @@
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(231, 765);
+            this.btnGuardar.Location = new System.Drawing.Point(231, 762);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnGuardar.Size = new System.Drawing.Size(123, 47);
+            this.btnGuardar.Size = new System.Drawing.Size(132, 47);
             this.btnGuardar.TabIndex = 152;
             this.btnGuardar.Text = "Facturar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -647,14 +657,6 @@
             this.label1.Size = new System.Drawing.Size(156, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Datos Cliente";
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Location = new System.Drawing.Point(1324, 137);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(250, 313);
-            this.webBrowser1.TabIndex = 165;
             // 
             // frmFacturaV1
             // 
