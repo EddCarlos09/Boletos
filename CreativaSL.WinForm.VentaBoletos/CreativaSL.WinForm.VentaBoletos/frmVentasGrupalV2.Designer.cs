@@ -29,13 +29,25 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentasGrupalV2));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentasGrupalV2));
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.dgvdatosboleto = new System.Windows.Forms.DataGridView();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnPagoEfectivo = new System.Windows.Forms.Button();
+            this.btnCancelarA = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtNombreCliente = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtFolioBoleto = new MaterialSkin.Controls.MaterialTextBox2();
+            this.chkNombre = new MaterialSkin.Controls.MaterialCheckbox();
+            this.chkFolio = new MaterialSkin.Controls.MaterialCheckbox();
+            this.chkFecha = new MaterialSkin.Controls.MaterialCheckbox();
+            this.Facturarbtn = new System.Windows.Forms.Button();
             this.folio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,17 +66,7 @@
             this.IDStatusCobro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDStatusPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeroBoletos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnPagoEfectivo = new System.Windows.Forms.Button();
-            this.btnCancelarA = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtNombreCliente = new MaterialSkin.Controls.MaterialTextBox2();
-            this.txtFolioBoleto = new MaterialSkin.Controls.MaterialTextBox2();
-            this.chkNombre = new MaterialSkin.Controls.MaterialCheckbox();
-            this.chkFolio = new MaterialSkin.Controls.MaterialCheckbox();
-            this.chkFecha = new MaterialSkin.Controls.MaterialCheckbox();
+            this.id_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatosboleto)).BeginInit();
             this.SuspendLayout();
@@ -72,6 +74,7 @@
             // materialCard1
             // 
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard1.Controls.Add(this.Facturarbtn);
             this.materialCard1.Controls.Add(this.dgvdatosboleto);
             this.materialCard1.Controls.Add(this.dtpFecha);
             this.materialCard1.Controls.Add(this.materialLabel3);
@@ -121,8 +124,9 @@
             this.bloqueoCancelacionPorFormaDePago,
             this.IDStatusCobro,
             this.IDStatusPago,
-            this.numeroBoletos});
-            this.dgvdatosboleto.Location = new System.Drawing.Point(22, 335);
+            this.numeroBoletos,
+            this.id_cliente});
+            this.dgvdatosboleto.Location = new System.Drawing.Point(29, 330);
             this.dgvdatosboleto.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdatosboleto.MultiSelect = false;
             this.dgvdatosboleto.Name = "dgvdatosboleto";
@@ -137,186 +141,6 @@
             this.dgvdatosboleto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvdatosboleto.Size = new System.Drawing.Size(1167, 334);
             this.dgvdatosboleto.TabIndex = 44;
-            // 
-            // folio
-            // 
-            this.folio.DataPropertyName = "folio";
-            this.folio.HeaderText = "Folio";
-            this.folio.MinimumWidth = 6;
-            this.folio.Name = "folio";
-            this.folio.ReadOnly = true;
-            this.folio.Width = 66;
-            // 
-            // fechaVenta
-            // 
-            this.fechaVenta.DataPropertyName = "fec_venta";
-            this.fechaVenta.HeaderText = "Fecha_Venta";
-            this.fechaVenta.MinimumWidth = 6;
-            this.fechaVenta.Name = "fechaVenta";
-            this.fechaVenta.ReadOnly = true;
-            this.fechaVenta.Width = 116;
-            // 
-            // nombre
-            // 
-            this.nombre.DataPropertyName = "nombre";
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.MinimumWidth = 6;
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            this.nombre.Width = 85;
-            // 
-            // numeroTelefono
-            // 
-            this.numeroTelefono.DataPropertyName = "numeroTelefono";
-            this.numeroTelefono.HeaderText = "Número_Teléfono";
-            this.numeroTelefono.MinimumWidth = 6;
-            this.numeroTelefono.Name = "numeroTelefono";
-            this.numeroTelefono.ReadOnly = true;
-            this.numeroTelefono.Width = 145;
-            // 
-            // fechaNacimiento
-            // 
-            this.fechaNacimiento.DataPropertyName = "fechaNacimiento";
-            this.fechaNacimiento.HeaderText = "Fecha_Nacimiento";
-            this.fechaNacimiento.MinimumWidth = 6;
-            this.fechaNacimiento.Name = "fechaNacimiento";
-            this.fechaNacimiento.ReadOnly = true;
-            this.fechaNacimiento.Width = 149;
-            // 
-            // total
-            // 
-            this.total.DataPropertyName = "total";
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.total.DefaultCellStyle = dataGridViewCellStyle1;
-            this.total.HeaderText = "Total";
-            this.total.MinimumWidth = 6;
-            this.total.Name = "total";
-            this.total.ReadOnly = true;
-            this.total.Width = 67;
-            // 
-            // cobroCancelacion
-            // 
-            this.cobroCancelacion.DataPropertyName = "cobroCancelacion";
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = "C2";
-            this.cobroCancelacion.DefaultCellStyle = dataGridViewCellStyle2;
-            this.cobroCancelacion.HeaderText = "Cobro_Canc.";
-            this.cobroCancelacion.MinimumWidth = 6;
-            this.cobroCancelacion.Name = "cobroCancelacion";
-            this.cobroCancelacion.ReadOnly = true;
-            this.cobroCancelacion.Width = 114;
-            // 
-            // retornoCancelacion
-            // 
-            this.retornoCancelacion.DataPropertyName = "retornoCancelacion";
-            dataGridViewCellStyle3.Format = "C2";
-            dataGridViewCellStyle3.NullValue = "C2";
-            this.retornoCancelacion.DefaultCellStyle = dataGridViewCellStyle3;
-            this.retornoCancelacion.HeaderText = "Retorno_Canc.";
-            this.retornoCancelacion.MinimumWidth = 6;
-            this.retornoCancelacion.Name = "retornoCancelacion";
-            this.retornoCancelacion.ReadOnly = true;
-            this.retornoCancelacion.Visible = false;
-            this.retornoCancelacion.Width = 142;
-            // 
-            // pendiente
-            // 
-            this.pendiente.DataPropertyName = "pendiente";
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.pendiente.DefaultCellStyle = dataGridViewCellStyle4;
-            this.pendiente.HeaderText = "Pendiente";
-            this.pendiente.MinimumWidth = 6;
-            this.pendiente.Name = "pendiente";
-            this.pendiente.ReadOnly = true;
-            this.pendiente.Width = 97;
-            // 
-            // status
-            // 
-            this.status.DataPropertyName = "status";
-            this.status.HeaderText = "Estatus";
-            this.status.MinimumWidth = 6;
-            this.status.Name = "status";
-            this.status.ReadOnly = true;
-            this.status.Width = 80;
-            // 
-            // Usu_Ins
-            // 
-            this.Usu_Ins.DataPropertyName = "usuins";
-            this.Usu_Ins.HeaderText = "Usu_Ins";
-            this.Usu_Ins.MinimumWidth = 6;
-            this.Usu_Ins.Name = "Usu_Ins";
-            this.Usu_Ins.ReadOnly = true;
-            this.Usu_Ins.Width = 84;
-            // 
-            // Usu_Mod
-            // 
-            this.Usu_Mod.DataPropertyName = "usuupd";
-            this.Usu_Mod.HeaderText = "Usu_Mod";
-            this.Usu_Mod.MinimumWidth = 6;
-            this.Usu_Mod.Name = "Usu_Mod";
-            this.Usu_Mod.ReadOnly = true;
-            this.Usu_Mod.Width = 94;
-            // 
-            // bloqueoCancelacionMonedero
-            // 
-            this.bloqueoCancelacionMonedero.DataPropertyName = "bloqueoCancelacionMonedero";
-            this.bloqueoCancelacionMonedero.HeaderText = "bloqueoCancelacionMonedero";
-            this.bloqueoCancelacionMonedero.MinimumWidth = 6;
-            this.bloqueoCancelacionMonedero.Name = "bloqueoCancelacionMonedero";
-            this.bloqueoCancelacionMonedero.ReadOnly = true;
-            this.bloqueoCancelacionMonedero.Visible = false;
-            this.bloqueoCancelacionMonedero.Width = 250;
-            // 
-            // id_venta
-            // 
-            this.id_venta.DataPropertyName = "id_venta";
-            this.id_venta.HeaderText = "id_venta";
-            this.id_venta.MinimumWidth = 6;
-            this.id_venta.Name = "id_venta";
-            this.id_venta.ReadOnly = true;
-            this.id_venta.Visible = false;
-            this.id_venta.Width = 94;
-            // 
-            // bloqueoCancelacionPorFormaDePago
-            // 
-            this.bloqueoCancelacionPorFormaDePago.DataPropertyName = "bloqueoCancelacionPorFormaDePago";
-            this.bloqueoCancelacionPorFormaDePago.HeaderText = "bloqueoCancelacionPorFormaDePago";
-            this.bloqueoCancelacionPorFormaDePago.MinimumWidth = 6;
-            this.bloqueoCancelacionPorFormaDePago.Name = "bloqueoCancelacionPorFormaDePago";
-            this.bloqueoCancelacionPorFormaDePago.ReadOnly = true;
-            this.bloqueoCancelacionPorFormaDePago.Visible = false;
-            this.bloqueoCancelacionPorFormaDePago.Width = 306;
-            // 
-            // IDStatusCobro
-            // 
-            this.IDStatusCobro.DataPropertyName = "IDStatusCobro";
-            this.IDStatusCobro.HeaderText = "IDStatusCobro";
-            this.IDStatusCobro.MinimumWidth = 6;
-            this.IDStatusCobro.Name = "IDStatusCobro";
-            this.IDStatusCobro.ReadOnly = true;
-            this.IDStatusCobro.Visible = false;
-            this.IDStatusCobro.Width = 141;
-            // 
-            // IDStatusPago
-            // 
-            this.IDStatusPago.DataPropertyName = "IDStatusPago";
-            this.IDStatusPago.HeaderText = "IDStatusPago";
-            this.IDStatusPago.MinimumWidth = 6;
-            this.IDStatusPago.Name = "IDStatusPago";
-            this.IDStatusPago.ReadOnly = true;
-            this.IDStatusPago.Visible = false;
-            this.IDStatusPago.Width = 135;
-            // 
-            // numeroBoletos
-            // 
-            this.numeroBoletos.DataPropertyName = "numeroBoletos";
-            this.numeroBoletos.HeaderText = "Núm. Boletos";
-            this.numeroBoletos.MinimumWidth = 6;
-            this.numeroBoletos.Name = "numeroBoletos";
-            this.numeroBoletos.ReadOnly = true;
-            this.numeroBoletos.Width = 116;
             // 
             // dtpFecha
             // 
@@ -511,6 +335,211 @@
             this.chkFecha.UseVisualStyleBackColor = true;
             this.chkFecha.CheckedChanged += new System.EventHandler(this.chkFecha_CheckedChanged);
             // 
+            // Facturarbtn
+            // 
+            this.Facturarbtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Facturarbtn.Image = ((System.Drawing.Image)(resources.GetObject("Facturarbtn.Image")));
+            this.Facturarbtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Facturarbtn.Location = new System.Drawing.Point(718, 161);
+            this.Facturarbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Facturarbtn.Name = "Facturarbtn";
+            this.Facturarbtn.Size = new System.Drawing.Size(109, 94);
+            this.Facturarbtn.TabIndex = 45;
+            this.Facturarbtn.Text = "Facturar";
+            this.Facturarbtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Facturarbtn.UseVisualStyleBackColor = true;
+            this.Facturarbtn.Click += new System.EventHandler(this.Facturarbtn_Click);
+            // 
+            // folio
+            // 
+            this.folio.DataPropertyName = "folio";
+            this.folio.HeaderText = "Folio";
+            this.folio.MinimumWidth = 6;
+            this.folio.Name = "folio";
+            this.folio.ReadOnly = true;
+            this.folio.Width = 66;
+            // 
+            // fechaVenta
+            // 
+            this.fechaVenta.DataPropertyName = "fec_venta";
+            this.fechaVenta.HeaderText = "Fecha_Venta";
+            this.fechaVenta.MinimumWidth = 6;
+            this.fechaVenta.Name = "fechaVenta";
+            this.fechaVenta.ReadOnly = true;
+            this.fechaVenta.Width = 116;
+            // 
+            // nombre
+            // 
+            this.nombre.DataPropertyName = "nombre";
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.MinimumWidth = 6;
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            this.nombre.Width = 85;
+            // 
+            // numeroTelefono
+            // 
+            this.numeroTelefono.DataPropertyName = "numeroTelefono";
+            this.numeroTelefono.HeaderText = "Número_Teléfono";
+            this.numeroTelefono.MinimumWidth = 6;
+            this.numeroTelefono.Name = "numeroTelefono";
+            this.numeroTelefono.ReadOnly = true;
+            this.numeroTelefono.Width = 145;
+            // 
+            // fechaNacimiento
+            // 
+            this.fechaNacimiento.DataPropertyName = "fechaNacimiento";
+            this.fechaNacimiento.HeaderText = "Fecha_Nacimiento";
+            this.fechaNacimiento.MinimumWidth = 6;
+            this.fechaNacimiento.Name = "fechaNacimiento";
+            this.fechaNacimiento.ReadOnly = true;
+            this.fechaNacimiento.Width = 149;
+            // 
+            // total
+            // 
+            this.total.DataPropertyName = "total";
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.total.DefaultCellStyle = dataGridViewCellStyle1;
+            this.total.HeaderText = "Total";
+            this.total.MinimumWidth = 6;
+            this.total.Name = "total";
+            this.total.ReadOnly = true;
+            this.total.Width = 67;
+            // 
+            // cobroCancelacion
+            // 
+            this.cobroCancelacion.DataPropertyName = "cobroCancelacion";
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.NullValue = "C2";
+            this.cobroCancelacion.DefaultCellStyle = dataGridViewCellStyle2;
+            this.cobroCancelacion.HeaderText = "Cobro_Canc.";
+            this.cobroCancelacion.MinimumWidth = 6;
+            this.cobroCancelacion.Name = "cobroCancelacion";
+            this.cobroCancelacion.ReadOnly = true;
+            this.cobroCancelacion.Width = 114;
+            // 
+            // retornoCancelacion
+            // 
+            this.retornoCancelacion.DataPropertyName = "retornoCancelacion";
+            dataGridViewCellStyle3.Format = "C2";
+            dataGridViewCellStyle3.NullValue = "C2";
+            this.retornoCancelacion.DefaultCellStyle = dataGridViewCellStyle3;
+            this.retornoCancelacion.HeaderText = "Retorno_Canc.";
+            this.retornoCancelacion.MinimumWidth = 6;
+            this.retornoCancelacion.Name = "retornoCancelacion";
+            this.retornoCancelacion.ReadOnly = true;
+            this.retornoCancelacion.Visible = false;
+            this.retornoCancelacion.Width = 125;
+            // 
+            // pendiente
+            // 
+            this.pendiente.DataPropertyName = "pendiente";
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.pendiente.DefaultCellStyle = dataGridViewCellStyle4;
+            this.pendiente.HeaderText = "Pendiente";
+            this.pendiente.MinimumWidth = 6;
+            this.pendiente.Name = "pendiente";
+            this.pendiente.ReadOnly = true;
+            this.pendiente.Width = 97;
+            // 
+            // status
+            // 
+            this.status.DataPropertyName = "status";
+            this.status.HeaderText = "Estatus";
+            this.status.MinimumWidth = 6;
+            this.status.Name = "status";
+            this.status.ReadOnly = true;
+            this.status.Width = 80;
+            // 
+            // Usu_Ins
+            // 
+            this.Usu_Ins.DataPropertyName = "usuins";
+            this.Usu_Ins.HeaderText = "Usu_Ins";
+            this.Usu_Ins.MinimumWidth = 6;
+            this.Usu_Ins.Name = "Usu_Ins";
+            this.Usu_Ins.ReadOnly = true;
+            this.Usu_Ins.Width = 84;
+            // 
+            // Usu_Mod
+            // 
+            this.Usu_Mod.DataPropertyName = "usuupd";
+            this.Usu_Mod.HeaderText = "Usu_Mod";
+            this.Usu_Mod.MinimumWidth = 6;
+            this.Usu_Mod.Name = "Usu_Mod";
+            this.Usu_Mod.ReadOnly = true;
+            this.Usu_Mod.Width = 94;
+            // 
+            // bloqueoCancelacionMonedero
+            // 
+            this.bloqueoCancelacionMonedero.DataPropertyName = "bloqueoCancelacionMonedero";
+            this.bloqueoCancelacionMonedero.HeaderText = "bloqueoCancelacionMonedero";
+            this.bloqueoCancelacionMonedero.MinimumWidth = 6;
+            this.bloqueoCancelacionMonedero.Name = "bloqueoCancelacionMonedero";
+            this.bloqueoCancelacionMonedero.ReadOnly = true;
+            this.bloqueoCancelacionMonedero.Visible = false;
+            this.bloqueoCancelacionMonedero.Width = 223;
+            // 
+            // id_venta
+            // 
+            this.id_venta.DataPropertyName = "id_venta";
+            this.id_venta.HeaderText = "id_venta";
+            this.id_venta.MinimumWidth = 6;
+            this.id_venta.Name = "id_venta";
+            this.id_venta.ReadOnly = true;
+            this.id_venta.Visible = false;
+            this.id_venta.Width = 87;
+            // 
+            // bloqueoCancelacionPorFormaDePago
+            // 
+            this.bloqueoCancelacionPorFormaDePago.DataPropertyName = "bloqueoCancelacionPorFormaDePago";
+            this.bloqueoCancelacionPorFormaDePago.HeaderText = "bloqueoCancelacionPorFormaDePago";
+            this.bloqueoCancelacionPorFormaDePago.MinimumWidth = 6;
+            this.bloqueoCancelacionPorFormaDePago.Name = "bloqueoCancelacionPorFormaDePago";
+            this.bloqueoCancelacionPorFormaDePago.ReadOnly = true;
+            this.bloqueoCancelacionPorFormaDePago.Visible = false;
+            this.bloqueoCancelacionPorFormaDePago.Width = 272;
+            // 
+            // IDStatusCobro
+            // 
+            this.IDStatusCobro.DataPropertyName = "IDStatusCobro";
+            this.IDStatusCobro.HeaderText = "IDStatusCobro";
+            this.IDStatusCobro.MinimumWidth = 6;
+            this.IDStatusCobro.Name = "IDStatusCobro";
+            this.IDStatusCobro.ReadOnly = true;
+            this.IDStatusCobro.Visible = false;
+            this.IDStatusCobro.Width = 123;
+            // 
+            // IDStatusPago
+            // 
+            this.IDStatusPago.DataPropertyName = "IDStatusPago";
+            this.IDStatusPago.HeaderText = "IDStatusPago";
+            this.IDStatusPago.MinimumWidth = 6;
+            this.IDStatusPago.Name = "IDStatusPago";
+            this.IDStatusPago.ReadOnly = true;
+            this.IDStatusPago.Visible = false;
+            this.IDStatusPago.Width = 119;
+            // 
+            // numeroBoletos
+            // 
+            this.numeroBoletos.DataPropertyName = "numeroBoletos";
+            this.numeroBoletos.HeaderText = "Núm. Boletos";
+            this.numeroBoletos.MinimumWidth = 6;
+            this.numeroBoletos.Name = "numeroBoletos";
+            this.numeroBoletos.ReadOnly = true;
+            this.numeroBoletos.Width = 116;
+            // 
+            // id_cliente
+            // 
+            this.id_cliente.DataPropertyName = "id_cliente";
+            this.id_cliente.HeaderText = "id_cliente";
+            this.id_cliente.MinimumWidth = 6;
+            this.id_cliente.Name = "id_cliente";
+            this.id_cliente.ReadOnly = true;
+            this.id_cliente.Visible = false;
+            this.id_cliente.Width = 93;
+            // 
             // frmVentasGrupalV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -534,6 +563,18 @@
 
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private System.Windows.Forms.DataGridView dgvdatosboleto;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnPagoEfectivo;
+        private System.Windows.Forms.Button btnCancelarA;
+        private System.Windows.Forms.Button btnBuscar;
+        private MaterialSkin.Controls.MaterialTextBox2 txtNombreCliente;
+        private MaterialSkin.Controls.MaterialTextBox2 txtFolioBoleto;
+        private MaterialSkin.Controls.MaterialCheckbox chkNombre;
+        private MaterialSkin.Controls.MaterialCheckbox chkFolio;
+        private MaterialSkin.Controls.MaterialCheckbox chkFecha;
+        private System.Windows.Forms.Button Facturarbtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn folio;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaVenta;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
@@ -552,16 +593,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IDStatusCobro;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDStatusPago;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroBoletos;
-        private System.Windows.Forms.DateTimePicker dtpFecha;
-        private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnPagoEfectivo;
-        private System.Windows.Forms.Button btnCancelarA;
-        private System.Windows.Forms.Button btnBuscar;
-        private MaterialSkin.Controls.MaterialTextBox2 txtNombreCliente;
-        private MaterialSkin.Controls.MaterialTextBox2 txtFolioBoleto;
-        private MaterialSkin.Controls.MaterialCheckbox chkNombre;
-        private MaterialSkin.Controls.MaterialCheckbox chkFolio;
-        private MaterialSkin.Controls.MaterialCheckbox chkFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_cliente;
     }
 }

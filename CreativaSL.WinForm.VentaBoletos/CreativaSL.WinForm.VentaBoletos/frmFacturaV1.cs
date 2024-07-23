@@ -33,7 +33,7 @@ namespace CreativaSL.WinForm.VentaBoletos
             InitializeComponent();
             
             this.infoBoletos = cliente;
-            Model = new Factura_Negocio(Comun.Conexion, false, 0, infoBoletos.Cliente.IDCliente, Comun.Id_U);
+            Model = new Factura_Negocio(Comun.Conexion, Comun.Id_U);
             loadMaterial(this);
             this.Inicializar();
         }
@@ -68,10 +68,10 @@ namespace CreativaSL.WinForm.VentaBoletos
                 this.TxtEmpresa.Text = infoBoletos.Cliente.Empresa.ToString();
                 this.txtCiudad.Text = infoBoletos.Cliente.MunicipioDesc.ToString();
                 this.txtPais.Text = infoBoletos.Cliente.PaisDesc.ToString();
-                this.txtFolioBoleto.Text = infoBoletos.Cliente.FolioBoleto.ToString();
+              //  this.txtFolioBoleto.Text = infoBoletos.Cliente.FolioBoleto.ToString();
                 this.DtmFechaNac.Value = infoBoletos.Cliente.FechaNacimiento;
-                this.txtOrigen.Text = infoBoletos.Cliente.Origen.ToString();
-                this.txtDestino.Text = infoBoletos.Cliente.Destino.ToString();
+               // this.txtOrigen.Text = infoBoletos.Cliente.Origen.ToString();
+                //this.txtDestino.Text = infoBoletos.Cliente.Destino.ToString();
 
          
                 /* DATOS PARA MANDAR A CREAR LA FACTURA TIMBRADA*/
@@ -515,22 +515,7 @@ wesdLOCh0BLD9itmCve3A1FGR4+stO2ANUoiI3w3Tv2yQSg4bjeDlJ08lXaaFCLW
                 MessageBox.Show("El campo País está vacío.");
                 return false;
             }
-            if (string.IsNullOrWhiteSpace(txtFolioBoleto.Text))
-            {
-                MessageBox.Show("El campo Folio del Boleto está vacío.");
-                return false;
-            }
-            if (string.IsNullOrWhiteSpace(txtOrigen.Text))
-            {
-                MessageBox.Show("El campo Origen está vacío.");
-                return false;
-            }
-            if (string.IsNullOrWhiteSpace(txtDestino.Text))
-            {
-                MessageBox.Show("El campo Destino está vacío.");
-                return false;
-            }
-
+            
             return true;
         }
 

@@ -41,6 +41,8 @@ namespace CreativaSL.Dll.VentaBoletosGlobal
         public string _xmlFactura; 
         private DateTime _fecins;
         private string _usuins;
+        private bool _Activo;
+        private string _statusFactura;
 
         public int id
         {

@@ -22,10 +22,9 @@ namespace CreativaSL.Dll.VentaBoletosNegocio
 
         #region Constructor
 
-        public Factura_Negocio(string _Conexion, bool _NuevoRegistro, int _FacturaId,int _clienteId, string _UserID)
+        public Factura_Negocio(string _Conexion, string _UserID)
         {
             Conexion = _Conexion;
-            NuevoRegistro = _NuevoRegistro;
             UserID = _UserID;
         }
 
@@ -37,6 +36,19 @@ namespace CreativaSL.Dll.VentaBoletosNegocio
             {
                 Factura_Datos Datos = new Factura_Datos();
                 Datos.GuardarFactura(Conexion, Factura, ref Verificador);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error InsertarCliente" + ex.Message);
+            }
+        }
+
+        public void CancelarFactura(int id)
+        {
+            try
+            {
+                Factura_Datos Datos = new Factura_Datos();
+                Datos.ActualizarEstadoFactura(Conexion,id);
             }
             catch (Exception ex)
             {

@@ -68,6 +68,7 @@
             this.btnCancelarTimbrado.TabIndex = 2;
             this.btnCancelarTimbrado.Text = "Cancelar Timbrado";
             this.btnCancelarTimbrado.UseVisualStyleBackColor = true;
+            this.btnCancelarTimbrado.Click += new System.EventHandler(this.btnCancelarFactura);
             // 
             // CatalogoFactura
             // 

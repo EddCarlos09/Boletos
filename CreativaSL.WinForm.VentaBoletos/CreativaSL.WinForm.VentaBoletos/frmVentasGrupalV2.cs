@@ -428,6 +428,69 @@ namespace CreativaSL.WinForm.VentaBoletos
                 throw ex;
             }
         }
+
+        private void Facturarbtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (this.dgvdatosboleto.SelectedRows.Count > 0)
+                {
+                    var cellValue = this.dgvdatosboleto.SelectedRows[0].Cells["id_cliente"].Value;
+                    if (cellValue != null && int.TryParse(cellValue.ToString(), out int idCliente))
+                    {
+
+                        var cantidad = (int)dgvdatosboleto.SelectedRows[0].Cells["numeroBoletos"].Value;
+                        var total = (decimal)dgvdatosboleto.SelectedRows[0].Cells["total"].Value;
+                        var valor_unitario = total / cantidad;
+                        var folio = dgvdatosboleto.SelectedRows[0].Cells["folio"].Value.ToString();
+
+                        // Obtener los datos del cliente
+                        Busqueda_Negocio bn = new Busqueda_Negocio();
+                        V2Cliente cliente = bn.ObtenerDatosCliente(idCliente);
+                        var datosBol = this.obtenerDatos();
+
+                        FacturaDatos facturaDatos = new FacturaDatos
+                        {
+                            Cliente = cliente,
+                            ClaveProdServ = "78111802",
+                            NoIdentificacion = folio,
+                            Cantidad = cantidad,
+                            ClaveUnidad = "EA",
+                            Unidad = "Elemento",
+                            Descripcion = "Venta de boletos",
+                            ValorUnitario = (float)valor_unitario,
+                            Importe = (float)total,
+                            ObjetoImp = 02,
+
+                        };
+
+                      
+                        cliente.IDCliente = idCliente;
+                        // Abrir el formulario de factura y pasar los datos del cliente
+                        frmFacturaV1 frmFactura = new frmFacturaV1(facturaDatos);
+                        frmFactura.ShowDialog();
+                        frmFactura.Dispose();
+
+                        // Actualizar el grid de boletos
+                        Busqueda datos = new Busqueda(Comun.Conexion);
+                        datos = bn.BuscarBoletos(this.obtenerDatos());
+                        this.llenarGridVentaGrupal(datos);
+                    }
+                    else
+                    {
+                        MessageBox.Show("El valor de id_cliente no es válido.", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione una fila del grid", "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Sistema Punto de Venta CSL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
         #endregion
 
     }

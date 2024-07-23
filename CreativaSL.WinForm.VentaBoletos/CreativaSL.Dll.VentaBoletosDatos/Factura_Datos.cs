@@ -29,5 +29,20 @@ namespace CreativaSL.Dll.VentaBoletosDatos
                 throw ex;
             }
         }
+
+        public void ActualizarEstadoFactura(string Conexion,int id)
+        {
+            try
+            {
+                object[] Valores = { id };
+
+                object res = SqlHelper.ExecuteScalar(Conexion, "sp_ActualizarEstadoFactura", Valores);
+            }
+           
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
