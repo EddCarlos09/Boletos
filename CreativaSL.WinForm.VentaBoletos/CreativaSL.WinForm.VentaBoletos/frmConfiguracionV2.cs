@@ -217,5 +217,10 @@ namespace CreativaSL.WinForm.VentaBoletos
             {
             }
         }
+
+        private void txturlimg_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
