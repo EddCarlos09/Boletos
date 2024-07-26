@@ -80,6 +80,7 @@
     <Compile Include="Camion.cs" />
     <Compile Include="CatEstados.cs" />
     <Compile Include="CatMunicipio.cs" />
+    <Compile Include="DatosFacturaEmisor.cs" />
     <Compile Include="Facturas.cs" />
     <Compile Include="FormaPago.cs" />
     <Compile Include="ReportesBoletosViajeHecotours.cs" />

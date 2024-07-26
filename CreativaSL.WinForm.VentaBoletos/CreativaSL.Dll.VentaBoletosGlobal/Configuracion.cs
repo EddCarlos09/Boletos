@@ -122,5 +122,65 @@ namespace CreativaSL.Dll.VentaBoletosGlobal
             get { return _idCaja; }
             set { _idCaja = value; }
         }
+
+        private string _calle;
+        public string calle
+        {
+            get { return _calle; }
+            set { _calle = value; }
+        }
+        private string _noExterior;
+        public string noExterior
+        {
+            get { return _noExterior; }
+            set { _noExterior = value; }
+        }
+
+        private string _noInterior;
+        public string noInterior
+        {
+            get { return _noInterior; }
+            set { _noInterior = value; }
+        }
+
+        private string _colonia;
+        public string colonia
+        {
+            get { return _colonia; }
+            set { _colonia = value; }
+        }
+
+        private string _localidad;
+        public string localidad
+        {
+            get { return _localidad; }
+            set { _localidad = value; }
+        }
+        private string _municipio;
+        public string municipio
+        {
+            get { return _municipio; }
+            set { _municipio = value; }
+        }
+
+        private string _estado;
+        public string estado
+        {
+            get { return _estado; }
+            set { _estado = value; }
+        }
+
+        private string _pais;
+        public string pais
+        {
+            get { return _pais; }
+            set { _pais = value; }
+        }
+        private string _telefono;
+        public string telefono
+        {
+            get { return _telefono; }
+            set { _telefono = value; }
+        }
     }
 }

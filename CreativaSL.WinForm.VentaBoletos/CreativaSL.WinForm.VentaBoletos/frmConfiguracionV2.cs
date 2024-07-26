@@ -28,6 +28,37 @@ namespace CreativaSL.WinForm.VentaBoletos
             this.CargarCombos();
             this.inicializar();
             loadMaterial(this);
+
+            // Añadir TabControl
+            TabControl tabControl = new TabControl();
+            tabControl.Dock = DockStyle.Fill;
+
+            // Crear TabPages
+            TabPage tabPage1 = new TabPage("Configuración");
+            TabPage tabPage2 = new TabPage("Configuración factura");
+
+            // Añadir TabPages al TabControl
+            tabControl.TabPages.Add(tabPage1);
+            tabControl.TabPages.Add(tabPage2);
+
+            // Añadir TabControl al formulario
+            this.Controls.Add(tabControl);
+
+            // Mover controles existentes al tabPage1
+            foreach (Control control in this.Controls)
+            {
+                if (!(control is TabControl))
+                {
+                    tabPage1.Controls.Add(control);
+                }
+            }
+            // Añadir el formulario secundario al tabPage2
+            frmFacturaDatos facturaDatosForm = new frmFacturaDatos();
+            facturaDatosForm.TopLevel = false;
+            facturaDatosForm.FormBorderStyle = FormBorderStyle.None;
+            facturaDatosForm.Dock = DockStyle.Fill;
+            tabPage2.Controls.Add(facturaDatosForm);
+            facturaDatosForm.Show();
         }
 
 

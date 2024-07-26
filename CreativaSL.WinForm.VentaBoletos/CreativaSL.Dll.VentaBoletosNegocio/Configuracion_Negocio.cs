@@ -35,5 +35,32 @@ namespace CreativaSL.Dll.VentaBoletosNegocio
                 throw new Exception(ex.Message);
             }
         }
+
+        public DatosFacturaEmisor obtenerFacturaDatos(DatosFacturaEmisor actual)
+        {
+            try
+            {
+                Configuracion_Datos cd = new Configuracion_Datos();
+                return cd.obtenerConfiguracionFactura(actual);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public DatosFacturaEmisor agregarFacturaDatos(DatosFacturaEmisor actual)
+        {
+            try
+            {
+                Configuracion_Datos cd = new Configuracion_Datos();
+                return cd.agregarConfiguracionEmisor(actual);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
     }
 }

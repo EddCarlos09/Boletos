@@ -858,6 +858,12 @@
     <Compile Include="frmDescuentoGenericoV2.Designer.cs">
       <DependentUpon>frmDescuentoGenericoV2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFacturaDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturaDatos.Designer.cs">
+      <DependentUpon>frmFacturaDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFacturaV1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1480,6 +1486,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatosViajeV2.resx">
       <DependentUpon>frmDatosViajeV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturaDatos.resx">
+      <DependentUpon>frmFacturaDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFacturaV1.resx">
       <DependentUpon>frmFacturaV1.cs</DependentUpon>
